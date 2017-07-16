@@ -8,12 +8,23 @@ section.team {
             color: $brand-google-plus;
         }
     }
+    .image {
+        margin: auto;
+        margin-bottom: 20px !important;
+        height: 150px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
     .name {
-        font-size: 24px
+        font-size: 14px;
+        margin: auto;
     }
     .description {
         margin-top: 20px;
         text-align: justify;
+        font-size: 12px;
     }
     .social-media {
         margin-top: 20px;
