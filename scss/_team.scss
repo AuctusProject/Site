@@ -1,0 +1,38 @@
+// Styling for the features section
+section.team {
+    text-align: center;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 50px;
+        i {
+            color: $brand-google-plus;
+        }
+    }
+    .name {
+        font-size: 24px
+    }
+    .description {
+        margin-top: 20px;
+        text-align: justify;
+    }
+    .social-media {
+        margin-top: 20px;
+        a {
+            font-size: 16px;
+            line-height: 30px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            color: white;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    }
+    .social-media.linkedin a{
+        background: #00748d
+    }
+    .social-media.linkedin a:hover{
+        color: #00748d;
+        background: white;
+    }
+}

@@ -76,3 +76,13 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $gray-darker;
 }
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto; 
+    display:block;
+}
