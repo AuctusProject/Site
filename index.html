@@ -20,6 +20,8 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
+    <link rel="stylesheet" href="vendor/aos/dist/aos.css" />
+
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
@@ -28,15 +30,15 @@
 
     <!-- Temporary navbar container fix -->
     <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
+        .navbar-toggler {
+            z-index: 1;
         }
-    }
+
+        @media (max-width: 576px) {
+            nav>.container {
+                width: 100%;
+            }
+        }
     </style>
 
 </head>
@@ -45,7 +47,8 @@
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample"
+            aria-expanded="false" aria-label="Toggle navigation">
             Menu <i class="fa fa-bars"></i>
         </button>
         <div class="container">
@@ -59,15 +62,15 @@
                         <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
-                                        <li class="nav-item">
-                        <a class="nav-link" href="#contact">Roadmap</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Roadmap</a>
                     </li>
-                                        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Github</a>
                     </li>
-                                        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Blog</a>
                     </li>
                     <li class="nav-item">
@@ -85,7 +88,7 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>Smart Contracts powered Pension Funds</h1>
-                            <h2>The Auctus Platform will be a global smart contracts based platform for pension funds.<br><br> Through smart contract auditable code the platform will ensure full transparency and compliance.</h2><br>
+                            <h2>The Auctus Platform will be a global smart contracts based platform for pension funds.<br><br>                                Through smart contract auditable code the platform will ensure full transparency and compliance.</h2><br>
                             <a href="#download" class="btn btn-outline btn-xl">Download the whitepaper</a>
                         </div>
                     </div>
@@ -109,7 +112,7 @@
         </div>
     </header>
 
-    <section class="download bg-primary text-center" id="download">
+<!--     <section class="download bg-primary text-center" id="download">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
@@ -123,59 +126,59 @@
             </div>
         </div>
     </section>
-
+ -->
     <section class="features" id="features">
         <div class="container">
             <div class="section-heading text-center">
                 <h2>Unlimited Features, Unlimited Fun</h2>
-                <p class="text-muted">Check out what you can do with this app theme!</p>
+                <p class="text-muted">Smart contracts with pension funds terms and conditions that assure trust in the enforceability of the contract</p>
                 <hr>
             </div>
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-6">
+                        <div class="row" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                            <div class="col-lg-4">
                                 <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
+                                    <i class=" icon-eye text-primary"></i>
                                     <h3>Fully Transparent</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                    <p class="text-muted"></p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-4">
                                 <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
+                                    <i class="icon-magnifier  text-primary"></i>
                                     <h3>Easily auditable and compliant</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                                    <p class="text-muted">Ongoing compliance monitoring of all transactions. Tansaction activity record that cannot be altered and is easily auditable.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="feature-item">
+                                    <i class="icon-ban text-primary"></i>
+                                    <h3>No hidden fees</h3>
+                                    <p class="text-muted"> Funds can’t charge hidden fees. Know exactly what you are paying in fees.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6">
+                        <div class="row" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                            <div class="col-lg-4">
                                 <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Flexibility to use your pension pot</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                                    <i class="icon-size-fullscreen text-primary"></i>
+                                    <h3>More flexible and scalable infrastructure</h3>
+                                    <p class="text-muted">Resulting in economies of scale with reduced administrative costs.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-4">
                                 <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>No hidden fees</h3>
+                                    <i class="fa fa-exchange text-primary"></i>
+                                    <h3> Transfer your pension</h3>
+                                    <p class="text-muted">Easy and fast portability to another pension fund.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="feature-item">
+                                    <i class="  icon-speedometer text-primary"></i>
+                                    <h3>Faster processing for retirement, death benefits</h3>
                                     <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
                                 </div>
                             </div>
@@ -297,6 +300,90 @@
     </div>
 </section>
 
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Team</h2>
+            <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                
+            </div>
+        </div>
+    </section>
 
     <section class="contact bg-primary" id="contact">
         <div class="container">
@@ -339,6 +426,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/aos/dist/aos.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>

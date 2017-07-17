@@ -35,4 +35,6 @@
         }
     });
 
+    AOS.init();
+
 })(jQuery); // End of use strict

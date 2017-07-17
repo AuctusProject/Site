@@ -21,10 +21,12 @@ section.features {
         }
     }
     .feature-item {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         text-align: center;
         h3 {
             font-size: 30px;
+            margin-top: 30px;
+            min-height: 80px;
         }
         i {
             font-size: 80px;
