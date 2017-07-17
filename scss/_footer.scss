@@ -1,7 +1,7 @@
 // Styling for the footer
 footer {
     padding: 25px 0;
-    text-align: center;
+    min-height: 300px;
     color: fade-out(white, .7);
     background-color: $gray-darker;
     p {
@@ -10,6 +10,9 @@ footer {
     }
     ul {
         margin-bottom: 0;
+        list-style-type: none;
+        padding: 0px;
+        margin-top: 20px;
         li {
             a {
                 font-size: 12px;
