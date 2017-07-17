@@ -1,136 +1,536 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hero - Free Bulma template</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bulma.css">
-  <link rel="stylesheet" type="text/css" href="css/hero.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Auctus Platform</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <link rel="stylesheet" href="vendor/aos/dist/aos.css" />
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.min.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav>.container {
+                width: 100%;
+            }
+        }
+    </style>
+
 </head>
-<body>
-  <section class="hero is-primary is-large header-image">
-    <div class="hero-head">
-      <header class="nav">
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample"
+            aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fa fa-bars"></i>
+        </button>
         <div class="container">
-          <div class="nav-left">
-            <a class="nav-item" href="index.html">
-              <img src="images/bulma-white.png" alt="Logo">
-            </a>
-          </div>
-          <span class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-          <div class="nav-right nav-menu">
-            <a class="nav-item is-active">
-              Home
-            </a>
-            <a class="nav-item">
-              Examples
-            </a>
-            <a class="nav-item">
-              Documentation
-            </a>
-            <span class="nav-item">
-              <a class="button is-info is-outlined is-inverted">
-                <span class="icon">
-                  <i class="fa fa-github"></i>
-                </span>
-                <span>Download</span>
-              </a>
-            </span>
-          </div>
+            <a class="navbar-brand" href="#page-top">Auctus Platform</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Whitepaper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </header>
-    </div>
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title is-2">
-          Hero Heading
-        </h1>
-        <h2 class="subtitle is-5">
-          A hero description could go here.
-        </h2>
-        <p>
-          <a class="button is-outlined">
-            <span class="icon">
-              <i class="fa fa-download"></i> 
-            </span>
-            <span>
-              Download
-            </span>
-          </a>
-        </p>
-      </div>
-    </div>
-  </section>
-  <div class="hero-cta">
-    <nav class="level">
-      <div class="level-item has-text-centered">
-        <p class="title">Call to action here! <a class="button is-primary"><span class="icon"><i class="fa fa-download"></i></span><span>Intent</span></a></p>
-      </div>
     </nav>
-  </div>
-  <div class="section main">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-4">
-          <div class="panel">
-            <div class="panel-block section">
-              <p class="has-text-centered"><i class="fa fa-camera-retro icon-block"></i></p>
-              <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
-              <br>
-              <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="panel">
-            <div class="panel-block section">
-              <p class="has-text-centered"><i class="fa fa-bar-chart icon-block"></i></p>
-              <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
-              <br>
-              <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
-            </div>
-          </div>
 
-        </div>
-        <div class="column is-4">
-          <div class="panel">
-            <div class="panel-block section">
-              <p class="has-text-centered"><i class="fa fa-cloud icon-block"></i></p>
-              <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
-              <br>
-              <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
+    <header class="masthead">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1>Smart Contracts powered Pension Funds</h1>
+                            <h2>The Auctus Platform will be a global smart contracts based platform for pension funds.<br><br>                                Through smart contract auditable code the platform will ensure full transparency and compliance.</h2><br>
+                            <a href="#download" class="btn btn-outline btn-xl">Download the whitepaper</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+            <!--          <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                 
+                                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="button">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+                </div>
             </div>
-          </div>
-
         </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-        </p>
-        <p>
-          <a class="icon" href="https://github.com/jgthms/bulma">
-            <i class="fa fa-github"></i>
-          </a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script async type="text/javascript" src="js/bulma.js"></script>
+    </header>
+
+    <!--     <section class="download bg-primary text-center" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
+                    <p>Our app is available on any mobile device! Download now to get started!</p>
+                    <div class="badges">
+                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Advantages</h2>
+                <p class="text-muted">Smart contracts with pension funds terms and conditions that assure trust in the enforceability of the contract</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container-fluid">
+                        <div class="row" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                            <div class="col-lg-4">
+                                <div class="feature-item">
+                                    <i class=" icon-eye text-primary"></i>
+                                    <h3>Fully Transparent</h3>
+                                    <p class="text-muted"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="feature-item">
+                                    <i class="icon-magnifier  text-primary"></i>
+                                    <h3>Easily auditable and compliant</h3>
+                                    <p class="text-muted"> Tansaction activity record that cannot
+                                        be altered and is easily auditable.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="feature-item">
+                                    <i class="icon-ban text-primary"></i>
+                                    <h3>No hidden fees</h3>
+                                    <p class="text-muted"> Funds can’t charge hidden fees. Know exactly what you are paying in fees.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                            <div class="col-lg-4">
+                                <div class="feature-item">
+                                    <i class="icon-size-fullscreen text-primary"></i>
+                                    <h3>More flexible and scalable infrastructure</h3>
+                                    <p class="text-muted">Resulting in economies of scale with reduced administrative costs.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="feature-item">
+                                    <i class="fa fa-exchange text-primary"></i>
+                                    <h3> Transfer your pension</h3>
+                                    <p class="text-muted">Easy and fast portability to another pension fund.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="feature-item">
+                                    <i class="  icon-speedometer text-primary"></i>
+                                    <h3>Faster processing for retirement, death benefits</h3>
+                                    <p class="text-muted">Automatically triggers payments at retirement or release funds to the chosen beneficiary on death.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary">
+            <div class="container">
+                <h2>Crowdsale Details</h2>
+                <a href="#contact" class="btn btn-outline btn-xl">..</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="timeline" id="timeline">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Roadmap</h2>
+                <hr>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge info small"></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Q3 2017</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                            <li>Initial Token sale</li>
+                            <li>Partnerships with exchanges </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info"></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Q3 2017</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Development of first Smart contract-Powered Pension Fund (Auctus Retirement Fund) </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge info"></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Q1 2018</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                            <li>Onboarding of traditional assets</li>
+                            <li>Fiat payment gateway integration </li>
+                            <li>Hiring specialized law firms across the major markets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info"></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Q2 2018</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                            <li>Development of Auctus Platform</li>
+                            <li>Partnerships with traditional pension funds for smart-contract customization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge info"></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Q3 2018</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                            <li>Launch of Auctus Platform com utilização por fundos tradicionais</li>
+                            <li>Expand Auctus Platform adoption in main markets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                  <li class="timeline-inverted">
+                    <div class="timeline-badge info"></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Q4 2018</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                            <li>Launch of Annuities Marketplace</li>
+                            <li>Pension-backed loans scheme development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline">
+                
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Further Developments</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Integrated risk management tool for pension funds</li>
+                                <li>Solutions for financial advisers</li>
+                                <li>Self Invested Personal Pension scheme</li>
+                            </ul>  
+                        </div>
+                    </div>
+                </li>
+
+         
+            </ul>
+        </div>
+    </section>
+
+    <section class="team bg-primary" id="team">
+        <div class="container">
+            <h2>Team</h2>
+            <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="http://icons.iconarchive.com/icons/yellowicon/tmnt/512/Donatelo-icon.png" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Vinicius Melo - Business Development</strong></span>
+                            </div>
+                            <div class="description">
+                                Vinicius Melo é formado em Engenharia Mecânica pela UFMG em 2016 e atua como Analista de Investimento em um dos principais fundos de pensão no Brasil.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                        <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <div class="image">
+                            <img class="img-responsive img-circle" height="150" src="img/team/daniel_figueiredo.jpg" />
+                        </div>
+                        <div class="">
+                            <div class="name">
+                                <span><strong>Daniel Duarte - Smart Contracts Expert</strong></span>
+                            </div>
+                            <div class="description">
+                                Daniel Duarte Figueiredo é formado em Engenharia de Controle e Automação pela UFMG em 2012 e atua na empresa dti digital
+                                como engenheiro de software sênior.
+                            </div>
+                            <div class="social-media linkedin">
+                                <a><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="contact bg-primary" id="contact">
+        <div class="container">
+            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+            <ul class="list-inline list-social">
+                <li class="list-inline-item social-twitter">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item social-facebook">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item social-google-plus">
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>-->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>Auctus Platform</span>
+                </div>
+                <div class="col-md-6">
+                    <span>Social Links</span>
+                    <ul class="list">
+                        <li class="list-inline-item social-facebook">
+                            <a href="http://fb.me/AuctusProject"><i class="fa fa-facebook"></i> Facebook</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://twitter.com/AuctusProject"><i class="fa fa-twitter"></i> Twitter</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://www.reddit.com/user/AuctusProject/"><i class="fa fa-reddit"></i> Reddit</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://medium.com/auctus"><i class="fa fa-medium"></i> Blog</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://github.com/AuctusProject"><i class="fa fa-github"></i> Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/aos/dist/aos.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+
 </body>
+
 </html>
