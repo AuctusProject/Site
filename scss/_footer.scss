@@ -8,6 +8,9 @@ footer {
         font-size: 12px;
         margin: 0;
     }
+    span {
+        font-size: 18px;
+    }
     ul {
         margin-bottom: 0;
         list-style-type: none;
@@ -15,13 +18,19 @@ footer {
         margin-top: 20px;
         li {
             a {
-                font-size: 12px;
+                font-size: 15px !important;
                 color: fade-out(white, .7);
                 &:hover,
                 &:focus,
                 &:active,
                 &.active {
                     text-decoration: none;
+                }
+                span {
+                    font-size: 15px;
+                }
+                i {
+                    min-width: 35px;
                 }
             }
         }
