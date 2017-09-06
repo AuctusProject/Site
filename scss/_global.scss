@@ -3,4 +3,18 @@ html,
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Helvetica Neue'
+}
+
+h2 {
+    font-family: 'Helvetica Neue Bold';
+    font-size: 36px !important;
+    color: rgba(0, 45, 120, 1);
+}
+
+h3 {
+    font-family: 'Helvetica Neue Light';
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    color: black;
 }
