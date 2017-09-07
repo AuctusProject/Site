@@ -1,69 +1,216 @@
 // Styling for the masthead
+
+.header-circles {
+    position:absolute;
+    top:55%
+}
 header.masthead {
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
     width: 100%;
     min-height: auto;
     color: white;
-    background: url('../img/bg-pattern.png'), $theme-secondary;
-    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    .header-content {
+    background: #0884cd; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace 58%, #ffffff 83%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace 58%, #ffffff 83%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace 58%, #ffffff 83%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace 58%, #ffffff 90%); /* Standard syntax */
+    .top-header {
+        background: transparent;
+        height: 85px;
+
+
+        img.top-left {
+            padding-left: 50%;
+        }
+
+        img.logo {
+            vertical-align: top;
+            margin: 25px 0 0 0;
+        }
+
+        .quarter-circle {
+            background-color: white;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            top: 0px;
+            right: 0px;
+            position: absolute;
+            display: block;
+            height: 100px;
+            width: 110px;
+
+            i.fa-bars {
+                color: #002d78;
+                font-size: 45px;
+                position: absolute;
+                right: 30px;
+                top: 10px;
+                cursor:pointer;
+            }
+        }
+
+        .pearchment {
+            position: absolute;
+            top: 92px;
+            left: 10px;
+            display: block;
+        }
+
+        .pig {
+            position: absolute;
+            bottom: 5px;
+            left: -273px;
+            display: block;
+        }
+
+        .retired {
+            position: absolute;
+            bottom: -125px;
+            left: -300px;
+            display: block;
+        }
+
+        .couple {
+            position: absolute;
+            bottom: 210px;
+            left: 105px;
+            display: block;
+        }
+    }
+
+    .main-left-container {
+        height: calc(100% - 85px);
+
+        .text-container {
+            padding-top: 10%;
+
+            h1 {
+                font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+                font-size: 37pt;
+                color: white;
+                margin-bottom: 20pt
+            }
+
+            h2 {
+                font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+                font-size: 20pt !important;
+                color: white;
+                margin: 0;
+            }
+
+            h3 {
+                font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+                font-size: 13pt !important;
+                color: white;
+                margin: 0;
+            }
+
+            .button-div {
+                display: inline-block;
+                border-radius: 8px;
+                border: 2px solid white;
+                margin-top: 70pt;
+                font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+                font-size: 14pt !important;
+                padding: 15px;
+                color: white;
+
+                i.fa {
+                    margin-right: 13px;
+                }
+            }
+
+            .button-div:hover {
+                cursor: pointer;
+                color: #d7d6d6;
+                border: 2px solid #d7d6d6;
+            }
+        }
+
+        .waves {
+            position: absolute;
+            bottom: 8px;
+            left: -168px;
+        }
+    }
+
+    .right-blue-panel {
+        background: #04148c; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(168deg, #04148c, #0884cd); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(168deg, #04148c, #0884cd); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(168deg, #04148c, #0884cd); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(168deg, #04148c, #0884cd); /* Standard syntax */
+        height: 620%;
+        z-index: 10;
+
+        .navigation-icons {
+            padding-left: 10%;
+
+            i.fa {
+                display: inline-block;
+                font-size: 25px;
+                color: #00fcfc;
+                margin: 20px 10px;
+            }
+
+            i.fa:hover {
+                cursor: pointer;
+                border-radius: 60px;
+                box-shadow: 0px 0px 10px #00fcfc;
+            }
+        }
+    }
+    /* .header-content {
         position: relative;
         padding: 150px 0 50px;
         text-align: center;
+
         .header-content-inner {
             position: relative;
             max-width: 500px;
             margin: 0 auto;
+
             h1 {
                 font-size: 30px;
                 margin-top: 0;
                 margin-bottom: 30px;
             }
+
             .list-badges {
                 margin-bottom: 25px;
+
                 img {
                     height: 50px;
                     margin-bottom: 25px;
                 }
             }
         }
-    }
-    .device-container {
-        max-width: 300px;
-        margin: 0 auto 100px;
-        .screen img {
-            border-radius: 3px;
-        }
-    }
+    }*/
     @media (min-width: 768px) {
         min-height: 100%;
+
         .header-content {
             height: 100vh;
             min-height: 600px;
             padding: 0;
             text-align: left;
+
+
+
             .header-content-inner {
                 position: absolute;
                 top: 50%;
                 max-width: none;
                 margin: 0;
                 transform: translateY(-50%);
+
                 h1 {
                     font-size: 35px;
                 }
             }
-        }
-        .device-container {
-            max-width: none;
-            max-height: calc(100vh - 100px);
-            margin: 100px auto 0;
-        }
-    }
-    @media (min-width: 992px) {
-        .header-content .header-content-inner h1 {
-            font-size: 50px;
         }
     }
 }
