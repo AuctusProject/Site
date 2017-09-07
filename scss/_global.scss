@@ -24,6 +24,14 @@ h3 {
     color: black;
 }
 
+.section-heading.inverted h2 {
+    color: rgba(9, 216, 186, 1);
+}
+
+.section-heading.inverted h3 {
+    color: white;
+}
+
 section {
     padding-top: 10rem;
 }

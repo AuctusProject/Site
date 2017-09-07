@@ -1,0 +1,74 @@
+// Styling for the download section
+section.countdown {
+    padding-bottom: 100px;
+    background-color: darkblue;
+
+    .timer {
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .line {
+        border-top: 2px solid #00BDFF;
+    }
+
+    .time-part {
+        display: inline-block;
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .box {
+        width: 150px;
+        height: 160px;
+        border: 2px solid rgba(9, 216, 186, 1);
+        border-radius: 5px;
+        display: inline-block;
+
+        .time-value {
+            font-family: 'Helvetica Neue Light';
+            font-size: 80px;
+            line-height: 110px;
+            color: rgba(9, 216, 186, 1);
+        }
+
+        .time-label {
+            font-family: 'Helvetica Neue Light';
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    .time-part:after {
+        content: '';
+        position: relative;
+        width: 46px;
+        height: 2px;
+        background-color: #09d8ba;
+        top: -84px;
+        left: 150px;
+        display: block;
+    }
+
+    .time-part:first-child:before {
+        content: '';
+        position: relative;
+        height: 2px;
+        background-color: #09d8ba;
+        top: 78px;
+        right: 98px;
+        display: block;
+        width: 250px;
+        right: 250px;
+    }
+
+    .time-part:last-child:after {
+        width: 2000px;
+        left: 148px;
+    }
+
+    .line-after {
+    }
+}
+
