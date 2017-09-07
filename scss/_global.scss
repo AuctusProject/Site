@@ -25,7 +25,7 @@ h3 {
 }
 
 section {
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 .section-heading {
@@ -58,4 +58,14 @@ hr {
 .dots {
     background: url('../img/dots.png') repeat-x;
     height: 20px;
+}
+
+.dots.bottom{
+    position: relative !important;
+    bottom: 0;
+}
+
+.dots-vert {
+    background: url('../img/dots-vertical.png') repeat-y;
+    width: 92px;
 }

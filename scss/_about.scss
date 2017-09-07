@@ -10,14 +10,15 @@ section.about {
     background : linear-gradient(168.67deg, rgba(255, 255, 255, 1) 22.35%, rgba(157, 230, 255, 1) 58.05%, rgba(158, 242, 240, 1) 75.95%, rgba(255, 255, 255, 1) 93.96%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#FFFFFF' , GradientType=1);
 
-    min-height: 1260px;    
+    min-height: 1260px;
     
     .white-box {
-        min-height: 245px !important;
+        min-height: 265px !important;
         margin: 40px;
         .content{
-            padding-top: 20px;
+            padding-top: 40px;
             padding-bottom: 20px;
+            min-height: 245px;
         }
     }
 
@@ -29,5 +30,18 @@ section.about {
         width: 90px;
         position: absolute;
         left: calc(50% - 45px);
+    }
+
+    .dots-vert {
+        position: absolute;
+        top: -40px;
+        right: 0%;
+        height: 134px;
+    }
+
+    .auctus-wm {
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 }
