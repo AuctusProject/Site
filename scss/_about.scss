@@ -1,45 +1,47 @@
 // Styling for the features section
-section.features {
-    .section-heading {
-        margin-bottom: 100px;
-        h2 {
-            margin-top: 0;
-        }
-        p {
-            margin-bottom: 0;
-        }
-    }
-    .device-container,
-    .feature-item {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    .device-container {
-        margin-bottom: 100px;
-        @media(min-width: 992px) {
-            margin-bottom: 0;
-        }
-    }
-    .feature-item {
-        margin-bottom: 50px;
-        text-align: center;
-        h3 {
-            font-size: 30px;
-            margin-top: 30px;
-            min-height: 80px;
-        }
-        i {
-            font-size: 80px;
-            background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-            background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+section.about {
+
+    background : -moz-linear-gradient(44.48% 12.16% -78.67deg,rgba(255, 255, 255, 1) 22.35%,rgba(157, 230, 255, 1) 58.05%,rgba(158, 242, 240, 1) 75.95%,rgba(255, 255, 255, 1) 93.96%);
+    background : -webkit-linear-gradient(-78.67deg, rgba(255, 255, 255, 1) 22.35%, rgba(157, 230, 255, 1) 58.05%, rgba(158, 242, 240, 1) 75.95%, rgba(255, 255, 255, 1) 93.96%);
+    background : -webkit-gradient(linear,44.48% 12.16% ,56.58% 95.11% ,color-stop(0.2235,rgba(255, 255, 255, 1) ),color-stop(0.5805,rgba(157, 230, 255, 1) ),color-stop(0.7595,rgba(158, 242, 240, 1) ),color-stop(0.9396,rgba(255, 255, 255, 1) ));
+    background : -o-linear-gradient(-78.67deg, rgba(255, 255, 255, 1) 22.35%, rgba(157, 230, 255, 1) 58.05%, rgba(158, 242, 240, 1) 75.95%, rgba(255, 255, 255, 1) 93.96%);
+    background : -ms-linear-gradient(-78.67deg, rgba(255, 255, 255, 1) 22.35%, rgba(157, 230, 255, 1) 58.05%, rgba(158, 242, 240, 1) 75.95%, rgba(255, 255, 255, 1) 93.96%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFFFFF' ,GradientType=0)";
+    background : linear-gradient(168.67deg, rgba(255, 255, 255, 1) 22.35%, rgba(157, 230, 255, 1) 58.05%, rgba(158, 242, 240, 1) 75.95%, rgba(255, 255, 255, 1) 93.96%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#FFFFFF' , GradientType=1);
+
+    min-height: 1260px;
+    
+    .white-box {
+        min-height: 265px !important;
+        margin: 40px;
+        .content{
+            padding-top: 40px;
+            padding-bottom: 20px;
+            min-height: 245px;
         }
     }
-    @media(min-width: 992px) {
-        .device-container,
-        .feature-item {
-            max-width: none;
-        }
+
+    .row.boxes{
+        padding: 10px;
+    }
+
+    .dots{
+        width: 90px;
+        position: absolute;
+        left: calc(50% - 45px);
+    }
+
+    .dots-vert {
+        position: absolute;
+        top: -40px;
+        right: 0%;
+        height: 134px;
+    }
+
+    .auctus-wm {
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 }
