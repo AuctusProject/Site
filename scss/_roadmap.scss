@@ -1,6 +1,14 @@
 // Styling for the download section
 section.roadmap {
-    margin-bottom: 100px;   
+    margin-bottom: 100px;  
+    
+    .year{
+        color: #1439AF;
+        font-family: 'Myriad Pro Bold';
+        font-size: 20px;
+        top: -4px;
+    }
+
     .box {
         -webkit-box-shadow: 0px 0px 7px 0px rgba(179,179,179,1);
         -moz-box-shadow: 0px 0px 7px 0px rgba(179,179,179,1);

@@ -36,8 +36,10 @@ section {
     padding-top: 10rem;
 }
 
-.section-heading {
-    margin-bottom: 5rem;
+@media (min-width: 768px){
+    .section-heading {
+        margin-bottom: 5rem;
+    }
 }
 
 hr {
