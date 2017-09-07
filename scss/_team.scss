@@ -1,49 +1,18 @@
 // Styling for the features section
 section.team {
     text-align: center;
-    h2 {
-        margin-top: 0;
-        margin-bottom: 50px;
-        i {
-            color: $brand-google-plus;
-        }
-    }
-    .image {
-        margin: auto;
-        margin-bottom: 20px !important;
-        height: 150px;
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
+    
     .name {
+        margin-top: 10px;
+        font-family: 'Helvetica Neue Bold';
+        font-size: 20px;
+    }
+
+    .position {
+        font-family: 'Helvetica Neue Light';
         font-size: 14px;
-        margin: auto;
-    }
-    .description {
-        margin-top: 20px;
-        text-align: justify;
-        font-size: 12px;
-    }
-    .social-media {
-        margin-top: 20px;
-        a {
-            font-size: 16px;
-            line-height: 30px;
-            display: block;
-            width: 30px;
-            height: 30px;
-            color: white;
-            border-radius: 100%;
-            cursor: pointer;
-        }
-    }
-    .social-media.linkedin a{
-        background: #00748d
-    }
-    .social-media.linkedin a:hover{
-        color: #00748d;
-        background: white;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        margin-bottom: 60px;
     }
 }

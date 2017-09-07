@@ -34,6 +34,15 @@ section {
     }
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-circle.border {
+    padding: 5px;
+    border: 2px solid black;
+}
+
 hr {
     border-top: 4px solid #00BDFF;
 }
