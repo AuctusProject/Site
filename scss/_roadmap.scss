@@ -17,34 +17,53 @@ section.roadmap {
     .box.right{
         padding-left: 40px;
     }
-    .box.left:after{
-        content: 'after';
-        width:80px;
-        line-height:40px;
-        height:2px;
-        background:#cccccc;
-        position:absolute;
-        top:50%;
-        right:-80px;
-        color:#FFF;
-        text-align:center
+
+    @media (max-width: 768px){
+        .box {
+            margin-top: 30px;
+        }
     }
 
-    .box.right:after{
-        content: 'after';
-        width:70px;
-        line-height:40px;
-        height:2px;
-        background:#cccccc;
-        position:absolute;
-        top:50%;
-        left:-70px;
-        color:#FFF;
-        text-align:center
+    @media (min-width: 768px){
+        .box.left:after{
+            content: 'after';
+            width:80px;
+            height:3px;
+            background:#cccccc;
+            position:absolute;
+            top:50%;
+            right:-80px;
+            color:#FFF;
+            text-align:center
+        }
+
+        .box.right:after{
+            content: 'after';
+            width:70px;
+            height:3px;
+            background:#cccccc;
+            position:absolute;
+            top:50%;
+            left:-70px;
+            color:#FFF;
+            text-align:center
+        }
     }
-    .box.right.first:after{
-        height:3px !important;
-    }
+
+    @media (min-width: 768px) {
+        .box.right.first{
+            top:-75px;
+        }
+        .box.right{
+            top:-230px;
+        }
+        .box.left{
+            top:-154px;
+        }
+        .box.left.first {
+            top: 0px;
+        }
+	}
 
     span.heading{
         font-family: 'Helvetica Neue Bold';
@@ -56,7 +75,7 @@ section.roadmap {
     }
 
     .dots {
-        width: 180px;
+        width: 50%;
     }
     .dots.pull-right{
         margin-right: 50px;
@@ -94,39 +113,41 @@ section.roadmap {
         position: relative;
     }
 
-    .lines {
-        position: absolute;
-        left: 50%;
-        top: 24.3%;
-    }
+    @media (min-width: 768px){
 
-    .roadmap-line {
-        background : #CCCCCC;
-        width : 7px;
-        height: 110px;
-        position: relative;
-        margin-top: 40px;
-    }
-    .roadmap-line:after{
-        content:"";
-        width:200px;
-        width: 20px;
-        height:20px;
-        border-radius: 50%;
-        position:absolute;
-        top:-30px;
-        left:-5px;
-        color:#FFF;
-        text-align:center;
-    }
-    .roadmap-line.active{
-        background : #0BE6D0 !important;
-    }
-    .roadmap-line.active:after{
-        background : #0BE6D0 !important;
-    }
-    .roadmap-line:after{
-        background : #CCCCCC !important;
-    }
+        .lines {
+            position: absolute;
+            left: 50%;
+            top: 24.3%;
+        }
 
+        .roadmap-line {
+            background : #CCCCCC;
+            width : 7px;
+            height: 110px;
+            position: relative;
+            margin-top: 40px;
+        }
+        .roadmap-line:after{
+            content:"";
+            width:200px;
+            width: 20px;
+            height:20px;
+            border-radius: 50%;
+            position:absolute;
+            top:-30px;
+            left:-5px;
+            color:#FFF;
+            text-align:center;
+        }
+        .roadmap-line.active{
+            background : #0BE6D0 !important;
+        }
+        .roadmap-line.active:after{
+            background : #0BE6D0 !important;
+        }
+        .roadmap-line:after{
+            background : #CCCCCC !important;
+        }
+    }
 }
