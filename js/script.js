@@ -7,7 +7,10 @@
         var presaleDate = Date.UTC(2017, 9, 3, 15);
         
         var diff = presaleDate - new Date().getTime();
-
+        if (diff < 0) {
+            updateCountdown(0, 0, 0, 0);
+            clearInterval(interval);
+        }
         var secondInMiliseconds = 1000;
         var minuteInMiliseconds = 60 * secondInMiliseconds;
         var hourInMiliseconds = 60 * minuteInMiliseconds;
@@ -17,10 +20,10 @@
         diff -= days * (dayInMiliseconds);
 
         var hours = Math.floor(diff / hourInMiliseconds);
-        diff -= hours * (1000 * 60 * 60);
+        diff -= hours * (hourInMiliseconds);
 
-        var mins = Math.floor(diff / hourInMiliseconds);
-        diff -= mins * hourInMiliseconds;
+        var mins = Math.floor(diff / minuteInMiliseconds);
+        diff -= mins * minuteInMiliseconds;
 
         var seconds = Math.floor(diff / secondInMiliseconds);
         diff -= seconds * secondInMiliseconds;
