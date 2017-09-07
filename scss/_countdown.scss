@@ -1,6 +1,5 @@
-// Styling for the download section
 section.countdown {
-    padding-bottom: 100px;
+    padding-bottom: 10em;
     background: #0884cd; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Safari 5.1 to 6.0  60%*/
     background: -o-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Opera 11.1 to 12.0 */
@@ -11,19 +10,22 @@ section.countdown {
         overflow: hidden;
     }
 
-    .line {
-        border-top: 2px solid #00BDFF;
+    .timer > div {
+        text-align: center;
+        display: inline-block;
     }
 
     .time-part {
         display: inline-block;
-        width: 150px;
+        width: 148px;
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .box {
-        width: 150px;
+        width: 148px;
         height: 160px;
         border: 2px solid rgba(9, 216, 186, 1);
         border-radius: 5px;
@@ -43,35 +45,33 @@ section.countdown {
         }
     }
 
-    .time-part:after {
-        content: '';
-        position: relative;
-        width: 46px;
-        height: 2px;
-        background-color: #09d8ba;
-        top: -84px;
-        left: 150px;
-        display: block;
-    }
+    @media (min-width: 768px) {
+        .time-part:after {
+            content: '';
+            position: relative;
+            width: 46px;
+            height: 2px;
+            background-color: #09d8ba;
+            top: -84px;
+            left: 148px;
+            display: block;
+        }
 
-    .time-part:first-child:before {
-        content: '';
-        position: relative;
-        height: 2px;
-        background-color: #09d8ba;
-        top: 78px;
-        right: 98px;
-        display: block;
-        width: 250px;
-        right: 250px;
-    }
+        .days:before {
+            content: '';
+            position: relative;
+            height: 2px;
+            background-color: #09d8ba;
+            top: 78px;
+            right: 98px;
+            display: block;
+            width: 250px;
+            right: 250px;
+        }
 
-    .time-part:last-child:after {
-        width: 2000px;
-        left: 148px;
-    }
-
-    .line-after {
+        .seconds:after {
+            width: 2000px;
+            left: 148px;
+        }
     }
 }
-
