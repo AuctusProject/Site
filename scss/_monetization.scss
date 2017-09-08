@@ -1,0 +1,22 @@
+section.monetization {
+    /*background: darkblue;*/
+    padding-bottom: 12em;
+    .item {
+        display: inline-block;
+        margin: 0 50px 0 50px;
+    }
+
+    .circle {
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 180px;
+        width: 180px;
+    }
+
+    .description {
+        margin-top: 20px;
+        font-family: 'Helvetica Neue Bold';
+        font-size: 22px !important;
+        color: white;
+    }
+}

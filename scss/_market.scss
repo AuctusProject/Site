@@ -1,0 +1,180 @@
+section.market {
+    .waves-img-left {
+        position: absolute;
+        z-index: -1;
+        float: left;
+        padding-top: 60px;
+    }
+
+    .waves-img-right {
+        position: absolute;
+        z-index: -1;
+        float: right;
+        padding-top: 60px;
+        left: calc(100% - 160px);
+    }
+
+    .market-card-wrapper {
+        display: inline-block;
+        position: relative;
+    }
+
+    .market-card {
+        vertical-align: top;
+        margin: 10px 40px 10px 40px;
+        background: white;
+        max-width: 480px;
+        width: calc(100% - 80px);
+        min-height: 340px;
+        -webkit-box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.7);
+        -moz-box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.7);
+        box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.7);
+        display: inline-block;
+    }
+
+    @media (min-width: 768px) {
+        .market-card {
+            width: 480px;
+        }
+    }
+
+    .cards {
+        text-align: center;
+    }
+
+    .content {
+        font-family: 'Helvetica Neue Bold';
+        height: calc(100% - 140px);
+        margin-top: 100px;
+
+        .pig-img {
+            display: inline-block;
+            margin-bottom: 48px;
+        }
+
+        .bar-charts {
+            display: inline-block;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+
+            .bar-chart-item {
+                display: inline-block;
+
+                .bar {
+                    background: rgb(0,173,255);
+                    background: -webkit-linear-gradient(140deg, rgb(0,173,255) 25%, rgb(0,200,255) 75%); /* For Safari 5.1 to 6.0  60%*/
+                    background: -o-linear-gradient(140deg, rgb(0,173,255) 25%, rgb(0,200,255) 75%); /* For Opera 11.1 to 12.0 */
+                    background: -moz-linear-gradient(140deg, rgb(0,173,255) 25%, rgb(0,200,255) 75%); /* For Firefox 3.6 to 15 */
+                    background: linear-gradient(140deg, rgb(0,173,255) 25%, rgb(0,200,255) 75%); /* Standard syntax */
+                    width: 60px;
+                    margin: auto;
+                }
+
+                .db-bar {
+                    height: 42px;
+                }
+
+                .dc-bar {
+                    height: 76px;
+                }
+
+                img {
+                    position: relative;
+                    top: -26px;
+                }
+            }
+
+            .percentage-label {
+                font-size: 14px !important;
+                color: black;
+                margin-top: 10px;
+            }
+
+            .asset-description {
+                font-family: 'Helvetica Neue Light';
+                font-size: 14px !important;
+                color: black;
+            }
+        }
+
+        img {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .content-text {
+            display: inline-block;
+            width: 214px;
+
+
+            .black-text {
+                font-size: 16px !important;
+                color: black;
+            }
+
+            .gray-text {
+                font-size: 20px !important;
+                color: rgb(153,153,153);
+            }
+
+            .center-text {
+                font-family: 'Helvetica Neue Light';
+                font-size: 16px !important;
+                color: rgb(153,153,153);
+            }
+
+            .center-text:before {
+                content: '';
+                position: relative;
+                height: 3px;
+                background-color: #09d8ba;
+                top: -4px;
+                display: inline-block;
+                width: 30px;
+                left: -26px;
+            }
+
+            .center-text:after {
+                content: '';
+                position: relative;
+                height: 3px;
+                background-color: #09d8ba;
+                top: -4px;
+                display: inline-block;
+                width: 30px;
+                left: 26px;
+            }
+        }
+
+        .pie-chart {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            .percentage-label {
+                font-size: 14px !important;
+                margin-top: 10px;
+                margin-right: 15px;
+                display: inline-block;
+
+                .db-label {
+                    height: 10px;
+                    background-image: url('../img/market/dots.png');
+                }
+
+                .dc-label {
+                    height: 10px;
+                    background: rgb(0,94,206);
+                }
+            }
+        }
+    }
+
+    .dots {
+        width: 200px;
+        left: calc(50% - 100px);
+        position: relative;
+    }
+}

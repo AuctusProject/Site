@@ -24,12 +24,47 @@ h3 {
     color: black;
 }
 
+.section-heading.inverted h2 {
+    color: rgba(9, 216, 186, 1);
+}
+
+.section-heading.inverted h3 {
+    color: white;
+}
+
+.section-heading.inverted-white h2 {
+    color: white;
+}
+
+.section-heading.inverted h3 {
+    color: white;
+}
+
+.section-heading.inverted hr {
+    border-top: 4px solid white;
+}
+
 section {
     padding-top: 10rem;
 }
 
-.section-heading {
-    margin-bottom: 5rem;
+.section-content {
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .section-heading {
+        margin-bottom: 5rem;
+    }
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-circle.border {
+    padding: 5px;
+    border: 2px solid black;
 }
 
 hr {
@@ -55,6 +90,10 @@ hr {
     }
 }  
 
+.text-white, .text-white h2, .text-white h3 {
+    color: white;
+}
+
 .dots {
     background: url('../img/dots.png') repeat-x;
     height: 20px;
@@ -68,4 +107,73 @@ hr {
 .dots-vert {
     background: url('../img/dots-vertical.png') repeat-y;
     width: 92px;
+}
+
+.transition-gradient-after {
+    height: 10em;
+    background: #ffffff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, #ffffff 25%, rgb(216,249,255) 75%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(0deg, #ffffff 25%, rgb(216,249,255) 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, #ffffff 25%, rgb(216,249,255) 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, #ffffff 25%, rgb(216,249,255) 75%); /* Standard syntax */
+}
+
+.transition-gradient-before {
+    height: 10em;
+    background: #ffffff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* Standard syntax */
+}
+
+.adjust-top{
+    position:relative;
+    top:-80px;
+    z-index:-2;
+}
+
+.background-market-monetization {
+    position: relative;
+    overflow: hidden;
+
+    .transition-gradient-before {
+        position: absolute;
+        top: 350px;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .transition-gradient-after{
+        z-index: -2;
+        width: 100%;
+    }
+}
+
+.background-market-monetization-first,
+.background-market-monetization-second{
+    display: block;
+    width: calc(100% + 160px);
+    position: absolute;
+    height: calc(100% - 590px);
+    z-index: -1;
+    top: 510px;
+    left: -80px;
+    background: #0884cd; /* For browsers that do not support gradients */
+}
+
+.background-market-monetization-first {
+    transform: rotate(5deg);
+    background: -webkit-linear-gradient(60deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(60deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(60deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(60deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* Standard syntax */
+}
+
+.background-market-monetization-second {
+    transform: rotate(-5deg);
+    background: -webkit-linear-gradient(70deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(70deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(70deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(70deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* Standard syntax */
 }
