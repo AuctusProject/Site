@@ -32,8 +32,24 @@ h3 {
     color: white;
 }
 
+.section-heading.inverted-white h2 {
+    color: white;
+}
+
+.section-heading.inverted h3 {
+    color: white;
+}
+
+.section-heading.inverted hr {
+    border-top: 4px solid white;
+}
+
 section {
     padding-top: 10rem;
+}
+
+.section-content {
+    text-align: center;
 }
 
 @media (min-width: 768px){
@@ -105,4 +121,55 @@ hr {
     background: -o-linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* Standard syntax */
+}
+
+.adjust-top{
+    position:relative;
+    top:-70px;
+    z-index:-2;
+}
+
+.background-market-monetization {
+    position: relative;
+    overflow: hidden;
+
+    .transition-gradient-before {
+        position: absolute;
+        top: 395px;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .transition-gradient-after{
+        z-index: -2;
+        width: 100%;
+    }
+}
+
+.background-market-monetization-first,
+.background-market-monetization-second{
+    display: block;
+    width: calc(100% + 140px);
+    position: absolute;
+    height: calc(100% - 625px);
+    z-index: -1;
+    top: 555px;
+    left: -70px;
+    background: #0884cd; /* For browsers that do not support gradients */
+}
+
+.background-market-monetization-first {
+    transform: rotate(5deg);
+    background: -webkit-linear-gradient(85deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(85deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(85deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(85deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* Standard syntax */
+}
+
+.background-market-monetization-second {
+    transform: rotate(-5deg);
+    background: -webkit-linear-gradient(95deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(95deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(95deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(95deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* Standard syntax */
 }

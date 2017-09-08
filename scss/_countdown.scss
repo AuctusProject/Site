@@ -52,7 +52,7 @@ section.countdown {
             width: 46px;
             height: 2px;
             background-color: #09d8ba;
-            top: -84px;
+            top: -82px;
             left: 148px;
             display: block;
         }
@@ -62,15 +62,15 @@ section.countdown {
             position: relative;
             height: 2px;
             background-color: #09d8ba;
-            top: 78px;
+            top: 80px;
             right: 98px;
             display: block;
-            width: 250px;
-            right: 250px;
+            width: 1000px;
+            right: 1000px;
         }
 
         .seconds:after {
-            width: 2000px;
+            width: 1000px;
             left: 148px;
         }
     }
