@@ -24,6 +24,14 @@ h3 {
     color: black;
 }
 
+.section-heading.inverted h2 {
+    color: rgba(9, 216, 186, 1);
+}
+
+.section-heading.inverted h3 {
+    color: white;
+}
+
 section {
     padding-top: 10rem;
 }
@@ -83,4 +91,22 @@ hr {
 .dots-vert {
     background: url('../img/dots-vertical.png') repeat-y;
     width: 92px;
+}
+
+.transition-gradient-after {
+    height: 10em;
+    background: #ffffff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, #ffffff 25%, rgb(216,249,255) 75%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(0deg, #ffffff 25%, rgb(216,249,255) 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, #ffffff 25%, rgb(216,249,255) 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, #ffffff 25%, rgb(216,249,255) 75%); /* Standard syntax */
+}
+
+.transition-gradient-before {
+    height: 10em;
+    background: #ffffff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* Standard syntax */
 }
