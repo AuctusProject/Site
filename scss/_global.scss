@@ -129,7 +129,7 @@ hr {
 
 .adjust-top{
     position:relative;
-    top:-70px;
+    top:-80px;
     z-index:-2;
 }
 
@@ -139,7 +139,7 @@ hr {
 
     .transition-gradient-before {
         position: absolute;
-        top: 395px;
+        top: 350px;
         z-index: -1;
         width: 100%;
     }
@@ -153,12 +153,12 @@ hr {
 .background-market-monetization-first,
 .background-market-monetization-second{
     display: block;
-    width: calc(100% + 140px);
+    width: calc(100% + 160px);
     position: absolute;
-    height: calc(100% - 625px);
+    height: calc(100% - 590px);
     z-index: -1;
-    top: 555px;
-    left: -70px;
+    top: 510px;
+    left: -80px;
     background: #0884cd; /* For browsers that do not support gradients */
 }
 
