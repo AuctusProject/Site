@@ -32,9 +32,9 @@
     };
 
     function updateCountdown(days, hours, minutes, seconds) {
-        $(".time-part.days .time-value").html(days.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }));
-        $(".time-part.hours .time-value").html(hours.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }));
-        $(".time-part.minutes .time-value").html(minutes.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }));
-        $(".time-part.seconds .time-value").html(seconds.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }));
+        $(".time-part.days .time-value").html(days);
+        $(".time-part.hours .time-value").html(hours);
+        $(".time-part.minutes .time-value").html(minutes);
+        $(".time-part.seconds .time-value").html(seconds);
     }
 })(jQuery); // End of use strict
