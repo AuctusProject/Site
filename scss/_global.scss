@@ -177,3 +177,15 @@ hr {
     background: -moz-linear-gradient(70deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(70deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* Standard syntax */
 }
+
+@media (max-width: 768px) {
+    .web-only {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
