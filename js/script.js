@@ -36,5 +36,12 @@
         $(".time-part.hours .time-value").html(hours);
         $(".time-part.minutes .time-value").html(minutes);
         $(".time-part.seconds .time-value").html(seconds);
-    }
+    };
+
+    $('#btn-join-whitelist').click(showJoinWhitelistModal);
+
 })(jQuery); // End of use strict
+
+function showJoinWhitelistModal() {
+    $('#joinWhitelistModal').modal('show');
+}

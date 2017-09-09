@@ -18,7 +18,7 @@ var banner = ['/*!\n',
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-    return gulp.src('scss/new-age.scss')
+    return gulp.src('scss/style.scss')
         .pipe(sass())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-    return gulp.src('css/new-age.css')
+    return gulp.src('css/style.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))

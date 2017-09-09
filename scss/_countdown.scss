@@ -1,5 +1,5 @@
 section.countdown {
-    padding-bottom: 10em;
+    padding-bottom: 5em;
     background: #0884cd; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Safari 5.1 to 6.0  60%*/
     background: -o-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Opera 11.1 to 12.0 */
@@ -22,6 +22,21 @@ section.countdown {
         margin-right: 20px;
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+
+    .join-whitelist {
+        text-align: center;
+        margin-top: 50px;
+
+        button {
+            padding: 15px 100px 15px 100px;
+            font-family: 'Helvetica Neue Bold';
+            font-size: 24px;
+            background: #07dce0;
+            color: #002d78;
+            cursor: pointer;
+            border: 0;
+        }
     }
 
     .box {
