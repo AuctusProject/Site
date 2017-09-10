@@ -219,6 +219,11 @@ hr {
 .no-padding {
   padding: 0; }
 
+/* line 197, ../scss/_global.scss */
+a.wp-button {
+  color: white;
+  text-decoration: none; }
+
 /* line 2, ../scss/_about.scss */
 section.about {
   background: -moz-linear-gradient(44.48% 12.16% -78.67deg, white 22.35%, #9de6ff 58.05%, #9ef2f0 75.95%, white 93.96%);
