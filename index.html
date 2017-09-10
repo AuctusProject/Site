@@ -26,7 +26,7 @@
         }
 
         @media (max-width: 576px) {
-            nav > .container {
+            nav>.container {
                 width: 100%;
             }
         }
@@ -41,16 +41,28 @@
             <div class="row ">
                 <div class="col-sm-12">
                     <div class="header-content">
-                       
+
                         <div class="top-left">
-                            <img class="img-responsive  " src="img/header/topleftdots.png" />
+                            <img class="img-responsive" src="img/header/topleftdots.png" />
                         </div>
-                        <div class="quarter-circle">
-                            <i class="fa fa-bars"></i>
-                        </div>
-                        <div id="topMenu" class="open">
-                            <div class="menu-wrap" style="display: block;">
-                                <div class="menu-blob" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <div id="topMenu" class="">
+                            <div class="menu-btn quarter-circle" onclick="$('#topMenu').toggleClass('open');">
+                                <i class="fa fa-bars" id="bars"></i>
+                                <i class="fa fa-close" id="close"></i>
+                            </div>
+                            <div class="menu-container">
+                                <div class="menu-content">
+                                    <nav>
+                                        <ul>
+                                            <li><span class="icon-arrow-right arr"></span><a href="#about">What is Auctus Project?</a></li>
+                                            <li><span class="icon-arrow-right arr"></span><a href="#market">Market Overview</a></li>
+                                            <li><span class="icon-arrow-right arr"></span><a href="#monetization">Monetization</a></li>
+                                            <li><span class="icon-arrow-right arr"></span><a href="#roadmap">Roadmap</a></li>
+                                            <li><span class="icon-arrow-right arr"></span><a href="#countdown">Token Sale Overview</a></li>
+                                            <li><span class="icon-arrow-right arr"></span><a href="#team">The Auctus Team</a></li>
+                                            <li><span class="icon-arrow-right arr"></span><a href="">Blog</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -58,29 +70,31 @@
                         <div class="top-header">
                             <img class="img-responsive logo" src="img/header/headerlogo.png" />
                         </div>
-                       <div class="row main-container">
+                        <div class="row main-container">
                             <div class="col-sm-2">
                             </div>
                             <div class="col-sm-6 text-container">
                                 <h2>SMART CONTRACTS POWERED</h2>
                                 <h1>PENSION FUNDS</h1>
-                                <h3 class="web-only col-md-7 no-padding">Through smart contract auditable code the Auctus Platform will ensure full transparency and compliance</h3>
+                                <h3 class="web-only col-md-7 no-padding">Through smart contract auditable code the Auctus Platform will ensure full transparency and
+                                    compliance
+                                </h3>
                                 <!-- <h3 class="mobile-only">Auctus Platform will be a global smart contracts based platform for pension funds.</h3> -->
                                 <div class="button-div">
                                     <i class="fa fa-file-o"></i> Download the whitepapper
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                               <div class="right-blue-panel">
-                                   <div class="navigation-icons web-only">
-                                       <i class="fa fa-twitter"></i>
-                                       <i class="fa fa-medium"></i>
-                                       <i class="fa fa-slack"></i>
-                                       <i class="fa fa-github"></i>
-                                       <i class="fa fa-facebook"></i>
-                                   </div>
-                               </div>
-                           </div>
+                                <div class="right-blue-panel">
+                                    <div class="navigation-icons web-only">
+                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-medium"></i>
+                                        <i class="fa fa-slack"></i>
+                                        <i class="fa fa-github"></i>
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,10 +119,15 @@
 
                         <div class="row-fluid clearfix">
                             <p>
-                                The Auctus Project was created with the mission of Improving the pension market by increasing transparency and eliminating common problems such as corporate governance issues, corruption, fraud, bribery, bureaucracy as well as lowering operational costs.
+                                The Auctus Project was created with the mission of Improving the pension market by increasing transparency and eliminating
+                                common problems such as corporate governance issues, corruption, fraud, bribery, bureaucracy
+                                as well as lowering operational costs.
                             </p>
                             <p>
-                                Through smart contract auditable code, the platform will ensure full transparency and compliance to the fund rules and also allow calculations for contributions, employer match and benefits as well as other features, such as investment profiles, beneficiaries designation (in case of death), administration fees calculations and portability between funds.
+                                Through smart contract auditable code, the platform will ensure full transparency and compliance to the fund rules and also
+                                allow calculations for contributions, employer match and benefits as well as other features,
+                                such as investment profiles, beneficiaries designation (in case of death), administration
+                                fees calculations and portability between funds.
                             </p>
                         </div>
                         <div class="row clearfix boxes">
@@ -188,7 +207,7 @@
         <!-- <img src="img/auctus-wm.png" class="auctus-wm"></div>  -->
     </section>
 
-    
+
     <div class="background-market-monetization">
         <div class="transition-gradient-before"></div>
         <div class="background-market-monetization-first"></div>
@@ -204,7 +223,7 @@
             <div class="section-content">
                 <div class="market-card-wrapper">
                     <img class="waves-img-left" src="img/market/waves.png" />
-                    <div class="market-card">                        
+                    <div class="market-card">
                         <div class="dots"></div>
                         <div class="content">
                             <div class="bar-charts">
@@ -262,7 +281,7 @@
                             </div>
                         </div>
                         <div class="dots"></div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </section>
