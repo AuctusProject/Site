@@ -94,7 +94,18 @@
     display: block;
     z-index: 100;
 
+    @media (max-width: 1200px ) {
+        -moz-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        top: 50px;
+        right: -260px;
+    }
+
+  
     @media (max-width: 768px) {
+        display: block;
         -moz-transform: scale(0.4);
         -o-transform: scale(0.4);
         -webkit-transform: scale(0.4);
@@ -170,8 +181,9 @@
 
 .text-container {
     padding: 200px 0 0 15%;
-    z-index: 10000;
+    z-index: 1000;
     width: 68%;
+    position: relative;
 
     h1 {
         font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
