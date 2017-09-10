@@ -1,3 +1,5 @@
 node_modules
 bower_components
 /.vs
+css/style.min.css
+css/style.min.css.map

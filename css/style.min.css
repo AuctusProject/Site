@@ -176,9 +176,9 @@ hr {
   display: block;
   width: calc(100% + 160px);
   position: absolute;
-  height: calc(100% - 590px);
+  height: calc(100% - 420px);
   z-index: -1;
-  top: 510px;
+  top: 340px;
   left: -80px;
   background: #0884cd;
   /* For browsers that do not support gradients */ }
@@ -218,6 +218,11 @@ hr {
 /* line 193, ../scss/_global.scss */
 .no-padding {
   padding: 0; }
+
+/* line 197, ../scss/_global.scss */
+a.wp-button {
+  color: white;
+  text-decoration: none; }
 
 /* line 2, ../scss/_about.scss */
 section.about {
@@ -353,9 +358,19 @@ section.about {
   right: -12%;
   display: block;
   z-index: 100; }
+  @media (max-width: 1200px) {
+    /* line 90, ../scss/_masthead.scss */
+    .pig {
+      -moz-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
+      top: 50px;
+      right: -260px; } }
   @media (max-width: 768px) {
     /* line 90, ../scss/_masthead.scss */
     .pig {
+      display: block;
       -moz-transform: scale(0.4);
       -o-transform: scale(0.4);
       -webkit-transform: scale(0.4);
@@ -364,7 +379,7 @@ section.about {
       left: 50%;
       margin-left: -435px; } }
 
-/* line 109, ../scss/_masthead.scss */
+/* line 120, ../scss/_masthead.scss */
 .quarter-circle {
   background-color: white;
   border-bottom-left-radius: 100%;
@@ -376,7 +391,7 @@ section.about {
   height: 90px;
   width: 100px;
   z-index: 10000; }
-  /* line 121, ../scss/_masthead.scss */
+  /* line 132, ../scss/_masthead.scss */
   .quarter-circle i {
     color: #002d78;
     font-size: 45px;
@@ -385,18 +400,18 @@ section.about {
     top: 10px;
     cursor: pointer; }
   @media (max-width: 768px) {
-    /* line 109, ../scss/_masthead.scss */
+    /* line 120, ../scss/_masthead.scss */
     .quarter-circle {
       height: 60px;
       width: 65px; }
-      /* line 134, ../scss/_masthead.scss */
+      /* line 145, ../scss/_masthead.scss */
       .quarter-circle i.fa-bars {
         font-size: 27px;
         position: absolute;
         right: 15px;
         top: 10px; } }
 
-/* line 144, ../scss/_masthead.scss */
+/* line 155, ../scss/_masthead.scss */
 .button-div {
   display: inline-block;
   border-radius: 8px;
@@ -408,61 +423,62 @@ section.about {
   color: white;
   z-index: 1000; }
   @media (max-width: 768px) {
-    /* line 144, ../scss/_masthead.scss */
+    /* line 155, ../scss/_masthead.scss */
     .button-div {
       margin-top: 65%; } }
-  /* line 159, ../scss/_masthead.scss */
+  /* line 170, ../scss/_masthead.scss */
   .button-div i.fa {
     margin-right: 13px; }
 
-/* line 164, ../scss/_masthead.scss */
+/* line 175, ../scss/_masthead.scss */
 .button-div:hover {
   z-index: 1000;
   cursor: pointer;
   color: #d7d6d6;
   border: 2px solid #d7d6d6; }
 
-/* line 171, ../scss/_masthead.scss */
+/* line 182, ../scss/_masthead.scss */
 .text-container {
   padding: 200px 0 0 15%;
-  z-index: 10000;
-  width: 68%; }
-  /* line 176, ../scss/_masthead.scss */
+  z-index: 1000;
+  width: 68%;
+  position: relative; }
+  /* line 188, ../scss/_masthead.scss */
   .text-container h1 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
     color: white;
     margin-bottom: 20pt; }
-  /* line 183, ../scss/_masthead.scss */
+  /* line 195, ../scss/_masthead.scss */
   .text-container h2 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 20pt !important;
     color: white;
     margin: 0; }
-  /* line 190, ../scss/_masthead.scss */
+  /* line 202, ../scss/_masthead.scss */
   .text-container h3 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 13pt !important;
     color: white;
     margin: 0; }
   @media (max-width: 768px) {
-    /* line 171, ../scss/_masthead.scss */
+    /* line 182, ../scss/_masthead.scss */
     .text-container {
       text-align: center;
       padding: 150px 0 0 0;
       margin-left: unset !important;
       width: 100%; }
-      /* line 203, ../scss/_masthead.scss */
+      /* line 215, ../scss/_masthead.scss */
       .text-container h1 {
         font-size: 27pt; }
-      /* line 207, ../scss/_masthead.scss */
+      /* line 219, ../scss/_masthead.scss */
       .text-container h2 {
         font-size: 15pt !important; }
-      /* line 211, ../scss/_masthead.scss */
+      /* line 223, ../scss/_masthead.scss */
       .text-container h3 {
         font-size: 13pt !important; } }
 
-/* line 220, ../scss/_masthead.scss */
+/* line 232, ../scss/_masthead.scss */
 header.masthead {
   min-height: 100%;
   position: relative;
@@ -480,7 +496,7 @@ header.masthead {
   background: linear-gradient(168deg, #04148c 5%, #0884cd 40%, #0bdace 80%, #ffffff 105%);
   /* Standard syntax */ }
   @media (max-width: 768px) {
-    /* line 220, ../scss/_masthead.scss */
+    /* line 232, ../scss/_masthead.scss */
     header.masthead {
       background: #0884cd;
       /* For browsers that do not support gradients */
@@ -492,29 +508,29 @@ header.masthead {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace);
       /* Standard syntax */ } }
-  /* line 239, ../scss/_masthead.scss */
+  /* line 251, ../scss/_masthead.scss */
   header.masthead .top-header {
     background: transparent;
     height: 85px; }
     @media (max-width: 768px) {
-      /* line 239, ../scss/_masthead.scss */
+      /* line 251, ../scss/_masthead.scss */
       header.masthead .top-header {
         text-align: center;
         margin-left: unset !important; } }
-  /* line 249, ../scss/_masthead.scss */
+  /* line 261, ../scss/_masthead.scss */
   header.masthead .header-content {
     height: 100vh;
     min-height: 600px;
     padding: 0;
     text-align: left; }
-    /* line 257, ../scss/_masthead.scss */
+    /* line 269, ../scss/_masthead.scss */
     header.masthead .header-content .header-content-inner {
       position: absolute;
       top: 50%;
       max-width: none;
       margin: 0;
       transform: translateY(-50%); }
-      /* line 264, ../scss/_masthead.scss */
+      /* line 276, ../scss/_masthead.scss */
       header.masthead .header-content .header-content-inner h1 {
         font-size: 35px; }
 
@@ -895,11 +911,11 @@ section.roadmap {
   /* line 27, ../scss/_roadmap.scss */
   section.roadmap .box.right {
     padding-left: 40px; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     /* line 32, ../scss/_roadmap.scss */
     section.roadmap .box {
       margin-top: 30px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     /* line 38, ../scss/_roadmap.scss */
     section.roadmap .box.left:after {
       content: 'after';
@@ -910,8 +926,9 @@ section.roadmap {
       top: 50%;
       right: -80px;
       color: #FFF;
-      text-align: center; }
-    /* line 50, ../scss/_roadmap.scss */
+      text-align: center;
+      z-index: -1; }
+    /* line 51, ../scss/_roadmap.scss */
     section.roadmap .box.right:after {
       content: 'after';
       width: 70px;
@@ -921,75 +938,76 @@ section.roadmap {
       top: 50%;
       left: -70px;
       color: #FFF;
-      text-align: center; } }
-  @media (min-width: 768px) {
-    /* line 64, ../scss/_roadmap.scss */
+      text-align: center;
+      z-index: -1; } }
+  @media (min-width: 992px) {
+    /* line 66, ../scss/_roadmap.scss */
     section.roadmap .box.right.first {
       top: -75px; }
-    /* line 68, ../scss/_roadmap.scss */
+    /* line 70, ../scss/_roadmap.scss */
     section.roadmap .box.right {
       top: -230px; }
-    /* line 72, ../scss/_roadmap.scss */
+    /* line 74, ../scss/_roadmap.scss */
     section.roadmap .box.left {
       top: -154px; }
-    /* line 76, ../scss/_roadmap.scss */
+    /* line 78, ../scss/_roadmap.scss */
     section.roadmap .box.left.first {
       top: 0px; } }
-  /* line 81, ../scss/_roadmap.scss */
+  /* line 83, ../scss/_roadmap.scss */
   section.roadmap span.heading {
     font-family: 'Helvetica Neue Bold';
     font-size: 35px; }
-  /* line 86, ../scss/_roadmap.scss */
+  /* line 88, ../scss/_roadmap.scss */
   section.roadmap .green {
     color: #09D8BA; }
-  /* line 90, ../scss/_roadmap.scss */
+  /* line 92, ../scss/_roadmap.scss */
   section.roadmap .dots {
     width: 50%; }
-  /* line 94, ../scss/_roadmap.scss */
+  /* line 96, ../scss/_roadmap.scss */
   section.roadmap .dots.pull-right {
     margin-right: 50px; }
-    /* line 97, ../scss/_roadmap.scss */
+    /* line 99, ../scss/_roadmap.scss */
     section.roadmap .dots.pull-right span {
       position: relative;
       right: -50px; }
-  /* line 103, ../scss/_roadmap.scss */
+  /* line 105, ../scss/_roadmap.scss */
   section.roadmap .dots.pull-left {
     margin-left: 50px; }
-    /* line 106, ../scss/_roadmap.scss */
+    /* line 108, ../scss/_roadmap.scss */
     section.roadmap .dots.pull-left span {
       position: relative;
       left: -50px; }
-  /* line 113, ../scss/_roadmap.scss */
+  /* line 115, ../scss/_roadmap.scss */
   section.roadmap .vertical-line.right {
     border-right: 2px solid black;
     margin-right: 10px; }
-    /* line 117, ../scss/_roadmap.scss */
+    /* line 119, ../scss/_roadmap.scss */
     section.roadmap .vertical-line.right span {
       margin-right: 20px; }
-  /* line 122, ../scss/_roadmap.scss */
+  /* line 124, ../scss/_roadmap.scss */
   section.roadmap .vertical-line.left {
     border-left: 2px solid black;
     margin-left: 10px; }
-    /* line 126, ../scss/_roadmap.scss */
+    /* line 128, ../scss/_roadmap.scss */
     section.roadmap .vertical-line.left span {
       margin-left: 20px; }
-  /* line 131, ../scss/_roadmap.scss */
+  /* line 133, ../scss/_roadmap.scss */
   section.roadmap .row.right, section.roadmap .row.left {
     position: relative; }
-  @media (min-width: 768px) {
-    /* line 137, ../scss/_roadmap.scss */
+  @media (min-width: 992px) {
+    /* line 139, ../scss/_roadmap.scss */
     section.roadmap .lines {
       position: absolute;
       left: 50%;
       top: 24.3%; }
-    /* line 143, ../scss/_roadmap.scss */
+    /* line 145, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line {
       background: #CCCCCC;
       width: 7px;
       height: 110px;
       position: relative;
       margin-top: 40px; }
-    /* line 151, ../scss/_roadmap.scss */
+    /* line 153, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line:after {
       content: "";
       width: 200px;
@@ -1001,13 +1019,13 @@ section.roadmap {
       left: -5px;
       color: #FFF;
       text-align: center; }
-    /* line 164, ../scss/_roadmap.scss */
+    /* line 166, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.active {
       background: #0BE6D0 !important; }
-    /* line 168, ../scss/_roadmap.scss */
+    /* line 170, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.active:after {
       background: #0BE6D0 !important; }
-    /* line 172, ../scss/_roadmap.scss */
+    /* line 174, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line:after {
       background: #CCCCCC !important; } }
 
@@ -1111,177 +1129,186 @@ section.token-sale-overview {
   section.token-sale-overview img {
     max-width: 100%; }
 
-/* line 2, ../scss/_market.scss */
-section.market .waves-img-left {
-  position: absolute;
-  z-index: -1;
-  float: left;
-  padding-top: 60px; }
-/* line 9, ../scss/_market.scss */
-section.market .waves-img-right {
-  position: absolute;
-  z-index: -1;
-  float: right;
-  padding-top: 60px;
-  left: calc(100% - 160px); }
-/* line 17, ../scss/_market.scss */
-section.market .market-card-wrapper {
-  display: inline-block;
-  position: relative;
-  vertical-align: top; }
-/* line 23, ../scss/_market.scss */
-section.market .market-card {
-  vertical-align: top;
-  margin: 10px 40px 10px 40px;
-  background: white;
-  max-width: 480px;
-  width: calc(100% - 80px);
-  min-height: 340px;
-  -webkit-box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
-  -moz-box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
-  box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
-  display: inline-block; }
-@media (min-width: 768px) {
-  /* line 37, ../scss/_market.scss */
+/* line 1, ../scss/_market.scss */
+section.market {
+  padding-top: 0; }
+  /* line 4, ../scss/_market.scss */
+  section.market .waves-img-left {
+    position: absolute;
+    z-index: -1;
+    float: left;
+    padding-top: 60px; }
+  /* line 11, ../scss/_market.scss */
+  section.market .waves-img-right {
+    position: absolute;
+    z-index: -1;
+    float: right;
+    padding-top: 60px;
+    left: calc(100% - 160px); }
+  /* line 19, ../scss/_market.scss */
+  section.market .market-card-wrapper {
+    display: inline-block;
+    position: relative;
+    vertical-align: top; }
+  /* line 25, ../scss/_market.scss */
   section.market .market-card {
-    width: 480px; } }
-/* line 42, ../scss/_market.scss */
-section.market .cards {
-  text-align: center; }
-/* line 46, ../scss/_market.scss */
-section.market .content {
-  font-family: 'Helvetica Neue Bold';
-  height: calc(100% - 140px);
-  margin-top: 100px; }
-  /* line 51, ../scss/_market.scss */
-  section.market .content .pig-img {
-    display: inline-block;
-    margin-bottom: 48px; }
-  /* line 56, ../scss/_market.scss */
-  section.market .content .bar-charts {
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px; }
-    /* line 62, ../scss/_market.scss */
-    section.market .content .bar-charts .bar-chart-item {
-      display: inline-block; }
-      /* line 65, ../scss/_market.scss */
-      section.market .content .bar-charts .bar-chart-item .bar {
-        background: #00adff;
-        background: -webkit-linear-gradient(140deg, #00adff 25%, #00c8ff 75%);
-        /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(140deg, #00adff 25%, #00c8ff 75%);
-        /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(140deg, #00adff 25%, #00c8ff 75%);
-        /* For Firefox 3.6 to 15 */
-        background: linear-gradient(140deg, #00adff 25%, #00c8ff 75%);
-        /* Standard syntax */
-        width: 60px;
-        margin: auto; }
-      /* line 75, ../scss/_market.scss */
-      section.market .content .bar-charts .bar-chart-item .db-bar {
-        height: 42px; }
-      /* line 79, ../scss/_market.scss */
-      section.market .content .bar-charts .bar-chart-item .dc-bar {
-        height: 76px; }
-      /* line 83, ../scss/_market.scss */
-      section.market .content .bar-charts .bar-chart-item img {
-        position: relative;
-        top: -26px; }
-    /* line 89, ../scss/_market.scss */
-    section.market .content .bar-charts .percentage-label {
-      font-size: 14px !important;
-      color: black;
-      margin-top: 10px; }
-    /* line 95, ../scss/_market.scss */
-    section.market .content .bar-charts .asset-description {
-      font-family: 'Helvetica Neue Light';
-      font-size: 14px !important;
-      color: black; }
-  /* line 102, ../scss/_market.scss */
-  section.market .content img {
     vertical-align: top;
+    margin: 10px 40px 10px 40px;
+    background: white;
+    max-width: 480px;
+    width: calc(100% - 80px);
+    min-height: 340px;
+    -webkit-box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
+    -moz-box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
+    box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
     display: inline-block; }
-  /* line 107, ../scss/_market.scss */
-  section.market .content .content-text {
-    display: inline-block;
-    width: 214px; }
-    /* line 112, ../scss/_market.scss */
-    section.market .content .content-text .black-text {
-      font-size: 16px !important;
-      color: black; }
-    /* line 117, ../scss/_market.scss */
-    section.market .content .content-text .gray-text {
-      font-size: 20px !important;
-      color: #999999; }
-    /* line 122, ../scss/_market.scss */
-    section.market .content .content-text .center-text {
-      font-family: 'Helvetica Neue Light';
-      font-size: 16px !important;
-      color: #999999; }
-    /* line 128, ../scss/_market.scss */
-    section.market .content .content-text .center-text:before {
-      content: '';
-      position: relative;
-      height: 3px;
-      background-color: #09d8ba;
-      top: -4px;
+  @media (min-width: 768px) {
+    /* line 39, ../scss/_market.scss */
+    section.market .market-card {
+      width: 480px; } }
+  /* line 44, ../scss/_market.scss */
+  section.market .cards {
+    text-align: center; }
+  /* line 48, ../scss/_market.scss */
+  section.market .content {
+    font-family: 'Helvetica Neue Bold';
+    height: calc(100% - 140px);
+    margin-top: 100px; }
+    /* line 53, ../scss/_market.scss */
+    section.market .content .pig-img {
       display: inline-block;
-      width: 30px;
-      left: -26px; }
-    /* line 139, ../scss/_market.scss */
-    section.market .content .content-text .center-text:after {
-      content: '';
-      position: relative;
-      height: 3px;
-      background-color: #09d8ba;
-      top: -4px;
+      margin-bottom: 48px; }
+    /* line 58, ../scss/_market.scss */
+    section.market .content .bar-charts {
       display: inline-block;
-      width: 30px;
-      left: 26px; }
-  /* line 151, ../scss/_market.scss */
-  section.market .content .pie-chart {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 20px;
-    margin-right: 20px; }
-    /* line 157, ../scss/_market.scss */
-    section.market .content .pie-chart .percentage-label {
-      font-size: 14px !important;
-      margin-top: 10px;
+      margin-left: 15px;
       margin-right: 15px;
+      margin-bottom: 15px; }
+      /* line 64, ../scss/_market.scss */
+      section.market .content .bar-charts .bar-chart-item {
+        display: inline-block; }
+        /* line 67, ../scss/_market.scss */
+        section.market .content .bar-charts .bar-chart-item .bar {
+          background: #00adff;
+          background: -webkit-linear-gradient(140deg, #00adff 25%, #00c8ff 75%);
+          /* For Safari 5.1 to 6.0  60%*/
+          background: -o-linear-gradient(140deg, #00adff 25%, #00c8ff 75%);
+          /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(140deg, #00adff 25%, #00c8ff 75%);
+          /* For Firefox 3.6 to 15 */
+          background: linear-gradient(140deg, #00adff 25%, #00c8ff 75%);
+          /* Standard syntax */
+          width: 60px;
+          margin: auto; }
+        /* line 77, ../scss/_market.scss */
+        section.market .content .bar-charts .bar-chart-item .db-bar {
+          height: 42px; }
+        /* line 81, ../scss/_market.scss */
+        section.market .content .bar-charts .bar-chart-item .dc-bar {
+          height: 76px; }
+        /* line 85, ../scss/_market.scss */
+        section.market .content .bar-charts .bar-chart-item img {
+          position: relative;
+          top: -26px; }
+      /* line 91, ../scss/_market.scss */
+      section.market .content .bar-charts .percentage-label {
+        font-size: 14px !important;
+        color: black;
+        margin-top: 10px; }
+      /* line 97, ../scss/_market.scss */
+      section.market .content .bar-charts .asset-description {
+        font-family: 'Helvetica Neue Light';
+        font-size: 14px !important;
+        color: black; }
+    /* line 104, ../scss/_market.scss */
+    section.market .content img {
+      vertical-align: top;
       display: inline-block; }
-      /* line 163, ../scss/_market.scss */
-      section.market .content .pie-chart .percentage-label .db-label {
-        height: 10px;
-        background-image: url("../img/market/dots.png"); }
-      /* line 168, ../scss/_market.scss */
-      section.market .content .pie-chart .percentage-label .dc-label {
-        height: 10px;
-        background: #005ece; }
-/* line 176, ../scss/_market.scss */
-section.market .dots {
-  width: 200px;
-  left: calc(50% - 100px);
-  position: relative; }
+    /* line 109, ../scss/_market.scss */
+    section.market .content .content-text {
+      display: inline-block;
+      width: 214px; }
+      /* line 114, ../scss/_market.scss */
+      section.market .content .content-text .black-text {
+        font-size: 16px !important;
+        color: black; }
+      /* line 119, ../scss/_market.scss */
+      section.market .content .content-text .gray-text {
+        font-size: 20px !important;
+        color: #999999; }
+      /* line 124, ../scss/_market.scss */
+      section.market .content .content-text .center-text {
+        font-family: 'Helvetica Neue Light';
+        font-size: 16px !important;
+        color: #999999; }
+      /* line 130, ../scss/_market.scss */
+      section.market .content .content-text .center-text:before {
+        content: '';
+        position: relative;
+        height: 3px;
+        background-color: #09d8ba;
+        top: -4px;
+        display: inline-block;
+        width: 30px;
+        left: -26px; }
+      /* line 141, ../scss/_market.scss */
+      section.market .content .content-text .center-text:after {
+        content: '';
+        position: relative;
+        height: 3px;
+        background-color: #09d8ba;
+        top: -4px;
+        display: inline-block;
+        width: 30px;
+        left: 26px; }
+    /* line 153, ../scss/_market.scss */
+    section.market .content .pie-chart {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 20px;
+      margin-right: 20px; }
+      /* line 159, ../scss/_market.scss */
+      section.market .content .pie-chart .percentage-label {
+        font-size: 14px !important;
+        margin-top: 10px;
+        margin-right: 15px;
+        display: inline-block; }
+        /* line 165, ../scss/_market.scss */
+        section.market .content .pie-chart .percentage-label .db-label {
+          height: 10px;
+          background-image: url("../img/market/dots.png"); }
+        /* line 170, ../scss/_market.scss */
+        section.market .content .pie-chart .percentage-label .dc-label {
+          height: 10px;
+          background: #005ece; }
+  /* line 178, ../scss/_market.scss */
+  section.market .dots {
+    width: 200px;
+    left: calc(50% - 100px);
+    position: relative; }
 
 /* line 1, ../scss/_monetization.scss */
 section.monetization {
   /*background: darkblue;*/
   padding-bottom: 12em; }
-  /* line 4, ../scss/_monetization.scss */
+  /* line 5, ../scss/_monetization.scss */
   section.monetization .item {
     display: inline-block;
     margin: 0 50px 0 50px; }
-  /* line 9, ../scss/_monetization.scss */
+  /* line 10, ../scss/_monetization.scss */
   section.monetization .circle {
     border: 2px solid white;
     border-radius: 50%;
     height: 180px;
     width: 180px;
-    margin: 0 auto; }
-  /* line 17, ../scss/_monetization.scss */
+    margin: 0 auto;
+    padding: 40px; }
+    /* line 17, ../scss/_monetization.scss */
+    section.monetization .circle i {
+      color: white;
+      margin: auto;
+      font-size: 100px; }
+  /* line 24, ../scss/_monetization.scss */
   section.monetization .description {
     margin-top: 20px;
     font-family: 'Helvetica Neue Bold';
