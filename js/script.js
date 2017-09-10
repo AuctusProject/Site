@@ -38,15 +38,3 @@
         $(".time-part.seconds .time-value").html(seconds);
     };
 })(jQuery); // End of use strict
-
-function showMailingPopUp() {
-    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-    document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-	document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-    require(["mojo/signup-forms/Loader"], function (L) {
-        L.start({
-            "baseUrl": "mc.us16.list-manage.com", "uuid": "e6c2bc48f91f09fab4afe5bee",
-            "lid": "63a6a00141"
-        })
-    });
-};
