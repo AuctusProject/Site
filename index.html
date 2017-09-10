@@ -18,7 +18,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.min.css" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <!--<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">-->
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -45,68 +45,56 @@
 
     <header class="masthead ">
         <div class="device-container">
-            <div class="row ">
-                <div class="col-sm-12">
-                    <div class="header-content">
+            <div class="top-left">
+                <img class="img-responsive" src="img/header/topleftdots.png" />
+            </div>
+            <div class="top-header">
+                <img class="img-responsive logo" src="img/header/headerlogo.png" />
+            </div>
 
-                        <div class="top-left">
-                            <img class="img-responsive" src="img/header/topleftdots.png" />
-                        </div>
-                        <div id="topMenu" class="">
-                            <div class="menu-btn quarter-circle" onclick="$('#topMenu').toggleClass('open');">
-                                <i class="fa fa-bars" id="bars"></i>
-                                <i class="fa fa-close" id="close"></i>
-                            </div>
-                            <div class="menu-container">
-                                <div class="menu-content">
-                                    <nav>
-                                        <ul>
-                                            <li><span class="icon-arrow-right arr"></span><a href="#about">What is Auctus Project?</a></li>
-                                            <li><span class="icon-arrow-right arr"></span><a href="#market">Market Overview</a></li>
-                                            <li><span class="icon-arrow-right arr"></span><a href="#monetization">Monetization</a></li>
-                                            <li><span class="icon-arrow-right arr"></span><a href="#roadmap">Roadmap</a></li>
-                                            <li><span class="icon-arrow-right arr"></span><a href="#countdown">Token Sale Overview</a></li>
-                                            <li><span class="icon-arrow-right arr"></span><a href="#team">The Auctus Team</a></li>
-                                            <li><span class="icon-arrow-right arr"></span><a href="">Blog</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="top-header">
-                            <img class="img-responsive logo" src="img/header/headerlogo.png" />
-                        </div>
-                        <div class="row main-container">
-                            <div class="col-sm-2">
-                            </div>
-                            <div class="col-sm-6 text-container">
-                                <h2>SMART CONTRACTS POWERED</h2>
-                                <h1>PENSION FUNDS</h1>
-                                <h3 class="web-only col-md-7 no-padding">Through smart contract auditable code the Auctus Platform will ensure full transparency and
-                                    compliance
-                                </h3>
-                                <!-- <h3 class="mobile-only">Auctus Platform will be a global smart contracts based platform for pension funds.</h3> -->
-                                <div class="button-div">
-                                    <i class="fa fa-file-o"></i> Download the whitepapper
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="right-blue-panel">
-                                    <div class="navigation-icons web-only">
-                                        <i class="fa fa-twitter"></i>
-                                        <i class="fa fa-medium"></i>
-                                        <i class="fa fa-slack"></i>
-                                        <i class="fa fa-github"></i>
-                                        <i class="fa fa-facebook"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+           <div id="topMenu">
+                <div class="menu-btn quarter-circle" onclick="$('#topMenu').toggleClass('open');">
+                    <i class="fa fa-bars" id="bars"></i>
+                    <i class="fa fa-close" id="close"></i>
+                </div>
+                <div class="menu-container">
+                    <div class="menu-content">
+                        <nav>
+                            <ul>
+                                <li><span class="icon-arrow-right arr"></span><a href="#about">What is Auctus Project?</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#market">Market Overview</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#monetization">Monetization</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#roadmap">Roadmap</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#countdown">Token Sale Overview</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#team">The Auctus Team</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="">Blog</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
+           <div class="text-container">
+                <h2>SMART CONTRACTS POWERED</h2>
+                <h1>PENSION FUNDS</h1>
+                <h3 class="web-only col-md-7 no-padding">
+                    Through smart contract auditable code the Auctus Platform will ensure full transparency and
+                    compliance
+                </h3>
+                <!-- <h3 class="mobile-only">Auctus Platform will be a global smart contracts based platform for pension funds.</h3> -->
+                <div class="button-div">
+                    <i class="fa fa-file-o"></i> Download the whitepapper
+                </div>
+            </div>
         </div>
+        <!--<div class="right-blue-panel">
+            <div class="navigation-icons web-only">
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-medium"></i>
+                <i class="fa fa-slack"></i>
+                <i class="fa fa-github"></i>
+                <i class="fa fa-facebook"></i>
+            </div>
+        </div>-->
         <div>
             <img class="pig" src="img/header/pig.png" />
         </div>
@@ -752,8 +740,8 @@
             </form>
         </div>
     </div>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'MMERGE1'; ftypes[1] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    <!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'MMERGE1'; ftypes[1] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>-->
 </body>
 
 </html>

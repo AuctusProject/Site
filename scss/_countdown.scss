@@ -29,13 +29,17 @@ section.countdown {
         margin-top: 50px;
 
         button {
-            padding: 15px 100px 15px 100px;
+            padding: 15px 0px;
             font-family: 'Helvetica Neue Bold';
             font-size: 24px;
             background: #07dce0;
             color: #002d78;
             cursor: pointer;
             border: 0;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
 
