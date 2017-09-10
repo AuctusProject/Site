@@ -1037,7 +1037,7 @@ section.countdown {
     margin-top: 50px; }
     /* line 31, ../scss/_countdown.scss */
     section.countdown .join-whitelist button {
-      padding: 15px 0px;
+      padding: 15px 65px;
       font-family: 'Helvetica Neue Bold';
       font-size: 24px;
       background: #07dce0;
@@ -1047,27 +1047,28 @@ section.countdown {
       @media (max-width: 768px) {
         /* line 31, ../scss/_countdown.scss */
         section.countdown .join-whitelist button {
+          padding: 15px 0px;
           width: 100%; } }
-  /* line 46, ../scss/_countdown.scss */
+  /* line 47, ../scss/_countdown.scss */
   section.countdown .box {
     width: 148px;
     height: 160px;
     border: 2px solid #09d8ba;
     border-radius: 5px;
     display: inline-block; }
-    /* line 53, ../scss/_countdown.scss */
+    /* line 54, ../scss/_countdown.scss */
     section.countdown .box .time-value {
       font-family: 'Helvetica Neue Light';
       font-size: 80px;
       line-height: 110px;
       color: #09d8ba; }
-    /* line 60, ../scss/_countdown.scss */
+    /* line 61, ../scss/_countdown.scss */
     section.countdown .box .time-label {
       font-family: 'Helvetica Neue Light';
       color: white;
       font-size: 20px; }
   @media (min-width: 768px) {
-    /* line 68, ../scss/_countdown.scss */
+    /* line 69, ../scss/_countdown.scss */
     section.countdown .time-part:after {
       content: '';
       position: relative;
@@ -1077,7 +1078,7 @@ section.countdown {
       top: -82px;
       left: 148px;
       display: block; }
-    /* line 79, ../scss/_countdown.scss */
+    /* line 80, ../scss/_countdown.scss */
     section.countdown .days:before {
       content: '';
       position: relative;
@@ -1088,7 +1089,7 @@ section.countdown {
       display: block;
       width: 1000px;
       right: 1000px; }
-    /* line 91, ../scss/_countdown.scss */
+    /* line 92, ../scss/_countdown.scss */
     section.countdown .seconds:after {
       width: 1000px;
       left: 148px; } }
