@@ -23,8 +23,8 @@
     #topMenu .menu-container {
         top: 0;
         right: 0;
-        width: 800px;
-        height: 1000px;
+        width:40%;
+        height: 100%;
     }
     #topMenu .menu-container .menu-content {
         width: 1350px;
@@ -37,16 +37,21 @@
 
 #topMenu .menu-container .menu-content {
     position: absolute;
+    right: 0px;
     background-color: #002d78;
     overflow: hidden;
     z-index: 10003;
-    width: 100%;
     height: 100%;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
 }
 
 #topMenu .menu-container .menu-content ul {
     top: 100px;
-    margin: 100px;
+    margin: 100px 0 0 35px;
 }
 
 #topMenu .menu-container .menu-content ul > li{
@@ -80,6 +85,11 @@
     display: none;
 }
 
-#topMenu.open #close{
-    display: block;
+#topMenu.open {
+    width: 100%;
+    height: 100%;
+
+    #close {
+        display: block;
+    }
 }

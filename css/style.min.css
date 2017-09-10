@@ -802,8 +802,8 @@ footer {
   #topMenu .menu-container {
     top: 0;
     right: 0;
-    width: 800px;
-    height: 1000px; }
+    width: 40%;
+    height: 100%; }
 
   /* line 29, ../scss/_menu.scss */
   #topMenu .menu-container .menu-content {
@@ -815,51 +815,60 @@ footer {
 /* line 38, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content {
   position: absolute;
+  right: 0px;
   background-color: #002d78;
   overflow: hidden;
   z-index: 10003;
-  width: 100%;
-  height: 100%; }
-
-/* line 47, ../scss/_menu.scss */
-#topMenu .menu-container .menu-content ul {
-  top: 100px;
-  margin: 100px; }
+  height: 100%;
+  width: 100%; }
+  @media (max-width: 768px) {
+    /* line 38, ../scss/_menu.scss */
+    #topMenu .menu-container .menu-content {
+      width: 80%; } }
 
 /* line 52, ../scss/_menu.scss */
+#topMenu .menu-container .menu-content ul {
+  top: 100px;
+  margin: 100px 0 0 35px; }
+
+/* line 57, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content ul > li {
   margin: 20px;
   list-style: none; }
 
-/* line 57, ../scss/_menu.scss */
+/* line 62, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content ul > li > a {
   color: white;
   font-size: 20px;
   font-family: 'Helvetica Neue Light'; }
 
-/* line 63, ../scss/_menu.scss */
+/* line 68, ../scss/_menu.scss */
 .menu-btn {
   position: fixed;
   z-index: 10003; }
 
-/* line 68, ../scss/_menu.scss */
+/* line 73, ../scss/_menu.scss */
 #topMenu.open .menu-btn {
   background: #002d78; }
-  /* line 70, ../scss/_menu.scss */
+  /* line 75, ../scss/_menu.scss */
   #topMenu.open .menu-btn i {
     color: white; }
 
-/* line 75, ../scss/_menu.scss */
+/* line 80, ../scss/_menu.scss */
 #topMenu #close {
   display: none; }
 
-/* line 79, ../scss/_menu.scss */
+/* line 84, ../scss/_menu.scss */
 #topMenu.open #bars {
   display: none; }
 
-/* line 83, ../scss/_menu.scss */
-#topMenu.open #close {
-  display: block; }
+/* line 88, ../scss/_menu.scss */
+#topMenu.open {
+  width: 100%;
+  height: 100%; }
+  /* line 92, ../scss/_menu.scss */
+  #topMenu.open #close {
+    display: block; }
 
 /* line 2, ../scss/_roadmap.scss */
 section.roadmap {
