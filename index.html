@@ -18,8 +18,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.min.css" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <!--<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">-->
-
+    
     <!-- Temporary navbar container fix -->
     <style>
         .navbar-toggler {
@@ -30,12 +29,6 @@
             nav>.container {
                 width: 100%;
             }
-        }
-
-        #mc_embed_signup {
-            background: #fff;
-            clear: left;
-            font: 14px Helvetica,Arial,sans-serif;
         }
     </style>
 
@@ -209,6 +202,47 @@
         </div>
         <!-- <img src="img/auctus-wm.png" class="auctus-wm"></div>  -->
     </section>
+    <section class="countdown" id="countdown">
+        <div class="section-heading inverted text-center">
+            <h2>THE PRE-ICO IS COMING.</h2>
+            <h3>SAVE THE DATE</h3>
+            <hr width="100px" />
+        </div>
+        <div class="timer">
+            <div>
+                <div class="time-part days">
+                    <div class="box">
+                        <div class="time-value">0</div>
+                        <div class="time-label">DAYS</div>
+                    </div>
+                </div>
+                <div class="time-part hours">
+                    <div class="box">
+                        <div class="time-value">0</div>
+                        <div class="time-label">HOURS</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="time-part minutes">
+                    <div class="box">
+                        <div class="time-value">0</div>
+                        <div class="time-label">MINUTES</div>
+                    </div>
+                </div>
+                <div class="time-part seconds">
+                    <div class="box">
+                        <div class="time-value">0</div>
+                        <div class="time-label">SECONDS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="join-whitelist">
+            <button id="open-mc-popup" onclick="showMailingPopUp(); return false;" class="btn btn-secondary" type="button">JOIN THE WHITELIST</button>
+        </div>
+    </section>
+    <div class="transition-gradient-after"></div>
 
 
     <div class="background-market-monetization">
@@ -226,6 +260,23 @@
             <div class="section-content">
                 <div class="market-card-wrapper">
                     <img class="waves-img-left" src="img/market/waves.png" />
+                    <div class="market-card">
+                        <div class="dots"></div>
+                        <div class="content">
+                            <img class="pig-img" src="img/market/pig.png" />
+                            <div class="content-text">
+                                <div class="black-text">PENSION FUND ASSETS IN</div>
+                                <div class="gray-text">22 MAJOR MARKETS</div>
+                                <div class="center-text">GREW TO</div>
+                                <div class="gray-text">U$ 36.4 TRILLION</div>
+                                <div class="black-text">AT YEAR END 2016.</div>
+                            </div>
+                        </div>
+                        <div class="dots"></div>
+                    </div>
+                </div>
+                <div class="market-card-wrapper">
+                    <img class="waves-img-right" src="img/market/waves.png" />
                     <div class="market-card">
                         <div class="dots"></div>
                         <div class="content">
@@ -264,23 +315,6 @@
                                         <div class="dc-label"></div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="dots"></div>
-                    </div>
-                </div>
-                <div class="market-card-wrapper">
-                    <img class="waves-img-right" src="img/market/waves.png" />
-                    <div class="market-card">
-                        <div class="dots"></div>
-                        <div class="content">
-                            <img class="pig-img" src="img/market/pig.png" />
-                            <div class="content-text">
-                                <div class="black-text">PENSION FUND ASSETS IN</div>
-                                <div class="gray-text">22 MAJOR MARKETS</div>
-                                <div class="center-text">GREW TO</div>
-                                <div class="gray-text">U$ 36.4 TRILLION</div>
-                                <div class="black-text">AT YEAR END 2016.</div>
                             </div>
                         </div>
                         <div class="dots"></div>
@@ -400,48 +434,7 @@
         </div>
         <!-- <img src="img/auctus-wm.png" class="auctus-wm"></div>  -->
     </section>
-    <div class="transition-gradient-before"></div>
-    <section class="countdown" id="countdown">
-        <div class="section-heading inverted text-center">
-            <h2>THE PRE-ICO IS COMING.</h2>
-            <h3>SAVE THE DATE</h3>
-            <hr width="100px" />
-        </div>
-        <div class="timer">
-            <div>
-                <div class="time-part days">
-                    <div class="box">
-                        <div class="time-value">0</div>
-                        <div class="time-label">DAYS</div>
-                    </div>
-                </div>
-                <div class="time-part hours">
-                    <div class="box">
-                        <div class="time-value">0</div>
-                        <div class="time-label">HOURS</div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="time-part minutes">
-                    <div class="box">
-                        <div class="time-value">0</div>
-                        <div class="time-label">MINUTES</div>
-                    </div>
-                </div>
-                <div class="time-part seconds">
-                    <div class="box">
-                        <div class="time-value">0</div>
-                        <div class="time-label">SECONDS</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="join-whitelist">
-            <button id="open-mc-popup" onclick="showMailingPopUp(); return false;" class="btn btn-secondary" type="button">JOIN THE WHITELIST</button>
-        </div>
-    </section>
-    <div class="transition-gradient-after"></div>
+    
     <section class="token-sale-overview" id="token-sale-overview">
         <div class="container">
             <div class="section-heading text-center">
@@ -651,25 +644,28 @@
     </section>
 
     <section class="newsletter" id="newsletter">
-        <div class="back">
-            <div class="container">
-                <div class="text-white section-heading text-center">
-                    <h2>BE THE FIRST TO GET THE NEWS</h2>
-                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
-                </div>
-                <div class="row clearfix">
-                    <div class="offset-md-3 input-group col-md-6">
-                        <input type="text" class="form-control" placeholder="Enter your email" aria-label="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="button">SUBSCRIBE</button>
-                        </span>
+        <form action="//auctus.us16.list-manage.com/subscribe/post?u=e6c2bc48f91f09fab4afe5bee&amp;id=b39ba220eb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="back">
+                <div class="container">
+                    <div class="text-white section-heading text-center">
+                        <h2>BE THE FIRST TO GET THE NEWS</h2>
+                        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
                     </div>
+                    <div class="row clearfix">
+                        <div class="offset-md-3 input-group col-md-6">
+                            <input name="EMAIL" class="required email form-control" id="mce-EMAIL" type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                            <span class="input-group-btn">
+                                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">SUBSCRIBE</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e6c2bc48f91f09fab4afe5bee_b39ba220eb" tabindex="-1" value=""></div>
+                </div>
+                <div class="auctus-wm">
+                    <img src="img/newsletter/auctus-wm2.png"></img>
                 </div>
             </div>
-            <div class="auctus-wm">
-                <img src="img/newsletter/auctus-wm2.png"></img>
-            </div>
-        </div>
+        </form>
     </section>
 
     <footer>
@@ -706,7 +702,7 @@
 
     <script src="js/script.min.js"></script>
     
-    <!--<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>-->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
     <script>
         function showMailingPopUp() {
             document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
