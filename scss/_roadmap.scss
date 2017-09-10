@@ -28,13 +28,13 @@ section.roadmap {
         padding-left: 40px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
         .box {
             margin-top: 30px;
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         .box.left:after {
             content: 'after';
             width: 80px;
@@ -44,7 +44,8 @@ section.roadmap {
             top: 50%;
             right: -80px;
             color: #FFF;
-            text-align: center
+            text-align: center;
+            z-index: -1;
         }
 
         .box.right:after {
@@ -56,11 +57,12 @@ section.roadmap {
             top: 50%;
             left: -70px;
             color: #FFF;
-            text-align: center
+            text-align: center;
+            z-index: -1;
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         .box.right.first {
             top: -75px;
         }
@@ -132,7 +134,7 @@ section.roadmap {
         position: relative;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
 
         .lines {
             position: absolute;

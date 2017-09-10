@@ -18,7 +18,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.min.css" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <!--<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">-->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -126,7 +126,7 @@
                             </p>
                         </div>
                         <div class="row clearfix boxes">
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="white-box text-center">
                                     <div class="dots"></div>
                                     <div class="content">
@@ -137,7 +137,7 @@
                                     <div class="dots bottom"></div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="white-box text-center">
                                     <div class="dots"></div>
                                     <div class="content">
@@ -148,7 +148,7 @@
                                     <div class="dots bottom"></div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="white-box text-center">
                                     <div class="dots"></div>
                                     <div class="content">
@@ -159,9 +159,7 @@
                                     <div class="dots bottom"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row clearfix boxes">
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="white-box text-center">
                                     <div class="dots"></div>
                                     <div class="content">
@@ -172,7 +170,7 @@
                                     <div class="dots bottom"></div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="white-box text-center">
                                     <div class="dots"></div>
                                     <div class="content">
@@ -183,7 +181,7 @@
                                     <div class="dots bottom"></div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="white-box text-center">
                                     <div class="dots"></div>
                                     <div class="content">
@@ -328,7 +326,7 @@
                 <div class="col-lg-12">
                     <div class="container-fluid">
                         <div class="row clearfix left">
-                            <div class="offset-md-1 col-md-4 box left first">
+                            <div class="offset-lg-1 col-lg-4 box left first">
                                 <div class="dots pull-right">
                                     <span class="year">2017</span>
                                 </div>
@@ -343,7 +341,7 @@
                             </div>
                         </div>
                         <div class="row clearfix right">
-                            <div class="offset-md-7 col-md-4 box right first">
+                            <div class="offset-lg-7 col-lg-4 box right first">
                                 <div class="dots pull-left">
                                     <span class="year">2017</span>
                                 </div>
@@ -358,7 +356,7 @@
                             </div>
                         </div>
                         <div class="row clearfix left">
-                            <div class="offset-md-1 col-md-4 box left">
+                            <div class="offset-lg-1 col-lg-4 box left">
                                 <div class="dots pull-right">
                                     <span class="year">2017</span>
                                 </div>
@@ -373,7 +371,7 @@
                             </div>
                         </div>
                         <div class="row clearfix right">
-                            <div class="offset-md-7 col-md-4 box right">
+                            <div class="offset-lg-7 col-lg-4 box right">
                                 <div class="dots pull-left">
                                     <span class="year">2017</span>
                                 </div>
@@ -688,7 +686,21 @@
 
     <script src="js/script.min.js"></script>
     
-    <!--<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>-->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script>
+        function showMailingPopUp() {
+            document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+            document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+            document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+            require(["mojo/signup-forms/Loader"], function (L) {
+                L.start({
+                    "baseUrl": "mc.us16.list-manage.com", "uuid": "e6c2bc48f91f09fab4afe5bee",
+                    "lid": "63a6a00141"
+                })
+            });
+        };
+    </script>
+    
 </body>
 
 </html>
