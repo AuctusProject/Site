@@ -1,6 +1,7 @@
 section.monetization {
     /*background: darkblue;*/
     padding-bottom: 12em;
+
     .item {
         display: inline-block;
         margin: 0 50px 0 50px;
@@ -12,6 +13,12 @@ section.monetization {
         height: 180px;
         width: 180px;
         margin: 0 auto;
+        padding:40px;
+        i {
+            color: white;
+            margin: auto; 
+            font-size: 100px;
+        }
     }
 
     .description {
