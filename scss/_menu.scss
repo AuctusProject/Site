@@ -1,9 +1,10 @@
 #topMenu {
     position: fixed;
     z-index: 10001;
+    width:100%;
 }
 
-#topMenu.open .menu-container{
+#topMenu.open .menu-container {
     display: block;
 }
 
@@ -20,25 +21,23 @@
         right: 0px;
         top: 0px;
     }
+
     #topMenu .menu-container {
         top: 0;
         right: 0;
-        width:40%;
+        width: 40%;
         height: 100%;
     }
+
     #topMenu .menu-container .menu-content {
         width: 1350px;
         height: 1533px;
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
     }
 }
 
 #topMenu .menu-container .menu-content {
     position: absolute;
     right: 0px;
-    background-color: #002d78;
     overflow: hidden;
     z-index: 10003;
     height: 100%;
@@ -51,37 +50,53 @@
 
 #topMenu .menu-container .menu-content ul {
     top: 100px;
-    margin: 100px 0 0 35px;
+    text-align: center;
+    margin: 40px 0 0 35px;
 }
 
-#topMenu .menu-container .menu-content ul > li{
-    margin: 20px;
+#topMenu .menu-container .menu-content ul > li {
+    margin: 30px;
     list-style: none;
 }
 
+#topMenu .menu-container .menu-content ul {
+    margin: 30px;
+    list-style: none;
+}
+
+#topMenu .menu-container .menu-content ul > li > img {
+    margin-bottom: 30px;
+}
+
 #topMenu .menu-container .menu-content ul > li > a {
-    color: white;
+    color: #0addab;
     font-size: 20px;
-    font-family: 'Helvetica Neue Light';
+    font-family: 'Helvetica Neue Bold';
+}
+
+#topMenu .menu-container .menu-content ul > li > a:hover {
+    color: white !important;
 }
 
 .menu-btn {
     position: fixed;
+    right: 0px;
     z-index: 10003;
 }
 
-#topMenu.open .menu-btn{
+#topMenu.open .menu-btn {
     background: #002d78;
+
     i {
-        color: white;
+        color: #0addab;
     }
 }
 
-#topMenu #close{
+#topMenu #close {
     display: none;
 }
 
-#topMenu.open #bars{
+#topMenu.open #bars {
     display: none;
 }
 

@@ -45,15 +45,20 @@
                 <img class="img-responsive logo" src="img/header/headerlogo.png" />
             </div>
 
-            <div id="topMenu">
-                <div class="menu-btn quarter-circle" onclick="$('#topMenu').toggleClass('open'); ">
-                    <i class="fa fa-bars" id="bars"></i>
-                    <i class="fa fa-close" id="close"></i>
+           <div id="topMenu">
+               
+                <div class="quarter-circle" >
                 </div>
+               <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+                   <i class="fa fa-bars" id="bars"></i>
+                   <i class="fa fa-close" id="close"></i>
+               </div>
                 <div class="menu-container">
                     <div class="menu-content">
+                       
                         <nav>
                             <ul>
+                                <li><img src="img/header/greenlogo.png" /></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="#about">What is Auctus Project?</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="#market">Market Overview</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="#monetization">Monetization</a></li>
@@ -241,7 +246,7 @@
             </div>
         </div>
         <div class="join-whitelist">
-            <button id="open-mc-popup" onclick="window.open('https://eepurl.com/c1-5u9','_blank'); return false;" class="btn btn-secondary" type="button">JOIN THE WHITELIST</button>
+            <a target="_blank" id="open-mc-popup" href="https://eepurl.com/c1-5u9" class="btn btn-secondary">JOIN THE WHITELIST</a>
         </div>
     </section>
     <div class="transition-gradient-after"></div>
