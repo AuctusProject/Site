@@ -45,9 +45,9 @@
                 <img class="img-responsive logo" src="img/header/headerlogo.png" />
             </div>
 
-            <div id="topMenu">
-
-                <div class="quarter-circle">
+           <div id="topMenu">
+                
+                <div class="quarter-circle" >
                 </div>
                 <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
                     <i class="fa fa-bars" id="bars"></i>
@@ -65,7 +65,7 @@
                                 <li><span class="icon-arrow-right arr"></span><a href="#roadmap">Roadmap</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="#countdown">Token Sale Overview</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="#team">The Auctus Team</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="https://medium.com/auctus">Blog</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="https://medium.com/auctus" target="_blank">Blog</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -763,6 +763,11 @@
     <script src="js/script.min.js"></script>
 
     <script>
+        $("#topMenu").click(function (e) {
+            if (e.target !== this)
+                return;
+            $('#topMenu').toggleClass('open');
+        });
         $('a').click(function () {
             $('html, body').animate({
                 scrollTop: $($(this).attr('href')).offset().top

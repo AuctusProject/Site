@@ -25,7 +25,7 @@
     #topMenu .menu-container {
         top: 0;
         right: 0;
-        width: 40%;
+        width: 450px;
         height: 100%;
     }
 
@@ -51,16 +51,16 @@
 #topMenu .menu-container .menu-content ul {
     top: 100px;
     text-align: center;
-    margin: 40px 0 0 35px;
+    margin: 30px;
+    list-style: none;
+
+    @media(max-width:768px) {
+        margin: 0 0 0 -50px;
+    }
 }
 
 #topMenu .menu-container .menu-content ul > li {
-    margin: 30px;
-    list-style: none;
-}
-
-#topMenu .menu-container .menu-content ul {
-    margin: 30px;
+    margin: 20px;
     list-style: none;
 }
 
@@ -69,13 +69,14 @@
 }
 
 #topMenu .menu-container .menu-content ul > li > a {
-    color: #0addab;
+    color: white;
     font-size: 20px;
     font-family: 'Helvetica Neue Bold';
 }
 
 #topMenu .menu-container .menu-content ul > li > a:hover {
-    color: white !important;
+    color: #0addab !important;
+    
 }
 
 .menu-btn {
@@ -88,7 +89,7 @@
     background: #002d78;
 
     i {
-        color: #0addab;
+        color: white;
     }
 }
 
