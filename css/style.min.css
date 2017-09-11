@@ -363,6 +363,15 @@ section.about {
   right: -12%;
   display: block;
   z-index: 100; }
+  @media (min-width: 1500px) {
+    /* line 90, ../scss/_masthead.scss */
+    .pig {
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      top: 200px;
+      right: 0; } }
   @media (max-width: 1200px) {
     /* line 90, ../scss/_masthead.scss */
     .pig {
@@ -384,7 +393,7 @@ section.about {
       left: 50%;
       margin-left: -435px; } }
 
-/* line 119, ../scss/_masthead.scss */
+/* line 128, ../scss/_masthead.scss */
 .quarter-circle {
   background-color: white;
   border-bottom-left-radius: 100%;
@@ -397,12 +406,12 @@ section.about {
   width: 100px;
   z-index: 10000; }
   @media (max-width: 768px) {
-    /* line 119, ../scss/_masthead.scss */
+    /* line 128, ../scss/_masthead.scss */
     .quarter-circle {
       height: 60px;
       width: 65px; } }
 
-/* line 139, ../scss/_masthead.scss */
+/* line 148, ../scss/_masthead.scss */
 #topMenu i {
   color: #002d78;
   font-size: 45px;
@@ -411,14 +420,14 @@ section.about {
   top: 10px;
   cursor: pointer; }
 @media (max-width: 768px) {
-  /* line 149, ../scss/_masthead.scss */
+  /* line 158, ../scss/_masthead.scss */
   #topMenu i.fa-bars {
     font-size: 27px;
     position: absolute;
     right: 15px;
     top: 10px; } }
 
-/* line 159, ../scss/_masthead.scss */
+/* line 168, ../scss/_masthead.scss */
 #topMenu.open .quarter-circle {
   background: #04148c;
   background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
@@ -435,7 +444,7 @@ section.about {
   width: 900px;
   height: 1000px;
   z-index: 10000; }
-  /* line 176, ../scss/_masthead.scss */
+  /* line 185, ../scss/_masthead.scss */
   #topMenu.open .quarter-circle i {
     color: #002d78;
     font-size: 45px;
@@ -444,19 +453,19 @@ section.about {
     top: 10px;
     cursor: pointer; }
   @media (max-width: 768px) {
-    /* line 159, ../scss/_masthead.scss */
+    /* line 168, ../scss/_masthead.scss */
     #topMenu.open .quarter-circle {
       height: 180%;
       width: 150%;
       right: -60%; }
-      /* line 190, ../scss/_masthead.scss */
+      /* line 199, ../scss/_masthead.scss */
       #topMenu.open .quarter-circle i.fa-bars {
         font-size: 27px;
         position: absolute;
         right: -385px;
         top: -170px; } }
 
-/* line 200, ../scss/_masthead.scss */
+/* line 209, ../scss/_masthead.scss */
 .button-div {
   display: inline-block;
   border-radius: 8px;
@@ -468,62 +477,62 @@ section.about {
   color: white;
   z-index: 1000; }
   @media (max-width: 768px) {
-    /* line 200, ../scss/_masthead.scss */
+    /* line 209, ../scss/_masthead.scss */
     .button-div {
       margin-top: 65%; } }
-  /* line 215, ../scss/_masthead.scss */
+  /* line 224, ../scss/_masthead.scss */
   .button-div i.fa {
     margin-right: 13px; }
 
-/* line 220, ../scss/_masthead.scss */
+/* line 229, ../scss/_masthead.scss */
 .button-div:hover {
   z-index: 1000;
   cursor: pointer;
   color: #d7d6d6;
   border: 2px solid #d7d6d6; }
 
-/* line 227, ../scss/_masthead.scss */
+/* line 236, ../scss/_masthead.scss */
 .text-container {
   padding: 200px 0 0 15%;
   z-index: 1000;
   width: 68%;
   position: relative; }
-  /* line 233, ../scss/_masthead.scss */
+  /* line 242, ../scss/_masthead.scss */
   .text-container h1 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
     color: white;
     margin-bottom: 20pt; }
-  /* line 240, ../scss/_masthead.scss */
+  /* line 249, ../scss/_masthead.scss */
   .text-container h2 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 20pt !important;
     color: white;
     margin: 0; }
-  /* line 247, ../scss/_masthead.scss */
+  /* line 256, ../scss/_masthead.scss */
   .text-container h3 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 13pt !important;
     color: white;
     margin: 0; }
   @media (max-width: 768px) {
-    /* line 227, ../scss/_masthead.scss */
+    /* line 236, ../scss/_masthead.scss */
     .text-container {
       text-align: center;
       padding: 150px 0 0 0;
       margin-left: unset !important;
       width: 100%; }
-      /* line 260, ../scss/_masthead.scss */
+      /* line 269, ../scss/_masthead.scss */
       .text-container h1 {
         font-size: 27pt; }
-      /* line 264, ../scss/_masthead.scss */
+      /* line 273, ../scss/_masthead.scss */
       .text-container h2 {
         font-size: 15pt !important; }
-      /* line 268, ../scss/_masthead.scss */
+      /* line 277, ../scss/_masthead.scss */
       .text-container h3 {
         font-size: 13pt !important; } }
 
-/* line 277, ../scss/_masthead.scss */
+/* line 286, ../scss/_masthead.scss */
 header.masthead {
   min-height: 100%;
   position: relative;
@@ -541,7 +550,7 @@ header.masthead {
   background: linear-gradient(168deg, #04148c 5%, #0884cd 40%, #0bdace 80%, #ffffff 105%);
   /* Standard syntax */ }
   @media (max-width: 768px) {
-    /* line 277, ../scss/_masthead.scss */
+    /* line 286, ../scss/_masthead.scss */
     header.masthead {
       background: #0884cd;
       /* For browsers that do not support gradients */
@@ -553,29 +562,29 @@ header.masthead {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace);
       /* Standard syntax */ } }
-  /* line 296, ../scss/_masthead.scss */
+  /* line 305, ../scss/_masthead.scss */
   header.masthead .top-header {
     background: transparent;
     height: 85px; }
     @media (max-width: 768px) {
-      /* line 296, ../scss/_masthead.scss */
+      /* line 305, ../scss/_masthead.scss */
       header.masthead .top-header {
         text-align: center;
         margin-left: unset !important; } }
-  /* line 306, ../scss/_masthead.scss */
+  /* line 315, ../scss/_masthead.scss */
   header.masthead .header-content {
     height: 100vh;
     min-height: 600px;
     padding: 0;
     text-align: left; }
-    /* line 314, ../scss/_masthead.scss */
+    /* line 323, ../scss/_masthead.scss */
     header.masthead .header-content .header-content-inner {
       position: absolute;
       top: 50%;
       max-width: none;
       margin: 0;
       transform: translateY(-50%); }
-      /* line 321, ../scss/_masthead.scss */
+      /* line 330, ../scss/_masthead.scss */
       header.masthead .header-content .header-content-inner h1 {
         font-size: 35px; }
 
@@ -864,7 +873,7 @@ footer {
   #topMenu .menu-container {
     top: 0;
     right: 0;
-    width: 40%;
+    width: 450px;
     height: 100%; }
 
   /* line 32, ../scss/_menu.scss */
