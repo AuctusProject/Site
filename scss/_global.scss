@@ -153,12 +153,12 @@ hr {
 .background-market-monetization-first,
 .background-market-monetization-second{
     display: block;
-    width: calc(100% + 160px);
+    width: calc(100% + 200px);
     position: absolute;
     height: calc(100% - 420px);
     z-index: -1;
     top: 340px;
-    left: -80px;
+    left: -100px;
     background: #0884cd; /* For browsers that do not support gradients */
 }
 

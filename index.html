@@ -241,7 +241,7 @@
             </div>
         </div>
         <div class="join-whitelist">
-            <button id="open-mc-popup" onclick="showMailingPopUp(); return false;" class="btn btn-secondary" type="button">JOIN THE WHITELIST</button>
+            <button id="open-mc-popup" onclick="window.open('https://eepurl.com/c1-5u9','_blank'); return false;" class="btn btn-secondary" type="button">JOIN THE WHITELIST</button>
         </div>
     </section>
     <div class="transition-gradient-after"></div>
@@ -751,24 +751,7 @@
 
     <script src="js/script.min.js"></script>
 
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
     <script>
-        function showMailingPopUp() {
-            $('#open-mc-popup').prop('disabled', 'disabled');
-            document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-            document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-            document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-            require(["mojo/signup-forms/Loader"], function (L) {
-                setTimeout(function () {
-                    $('#open-mc-popup').prop('disabled', '');
-                }, 3000);
-                L.start({
-                    "baseUrl": "mc.us16.list-manage.com", "uuid": "e6c2bc48f91f09fab4afe5bee",
-                    "lid": "63a6a00141"
-                })
-            });
-        };
-
         $('a').click(function () {
             $('html, body').animate({
                 scrollTop: $($(this).attr('href')).offset().top
