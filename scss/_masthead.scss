@@ -183,8 +183,9 @@
     }
 
     @media (max-width: 768px) {
-        height: 800px;
-        width: 800px;
+        height: 180%;
+        width: 150%;
+        right: -60%;
 
         i.fa-bars {
             font-size: 27px;
