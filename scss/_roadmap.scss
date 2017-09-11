@@ -17,6 +17,7 @@ section.roadmap {
         padding-top: 40px;
         padding-bottom: 40px;
         min-height: 200px;
+        height: 100%;
     }
 
     .box.left {
@@ -28,7 +29,7 @@ section.roadmap {
         padding-left: 40px;
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         .box {
             margin-top: 30px;
         }
@@ -62,21 +63,43 @@ section.roadmap {
         }
     }
 
+
+    @media (min-width: 1200px) {
+        .box.left.second {
+            top: -112px !important;
+        }
+
+        .box.left.third {
+            top: -61px !important;
+        }
+
+        .box.right.third {
+            top: 90px !important;
+        }
+    }
+
     @media (min-width: 992px) {
         .box.right.first {
-            top: -75px;
+            margin-top: 138px;
         }
 
-        .box.right {
-            top: -230px;
+        .box.right.second {
+            top: 51px;
         }
 
-        .box.left {
-            top: -154px;
+        .box.right.third {
+            top: 77px;
         }
 
         .box.left.first {
-            top: 0px;
+        }
+
+        .box.left.second {
+            top: -125px;
+        }
+
+        .box.left.third {
+            top: -86px;
         }
     }
 
@@ -115,23 +138,23 @@ section.roadmap {
     .vertical-line.right {
         border-right: 2px solid black;
         margin-right: 10px;
-
-        span {
-            margin-right: 20px;
-        }
+        padding-right: 20px;
     }
 
     .vertical-line.left {
         border-left: 2px solid black;
         margin-left: 10px;
-
-        span {
-            margin-left: 20px;
-        }
+        padding-left: 20px;
     }
 
     .row.right, .row.left {
         position: relative;
+    }
+
+    @media(min-width: 1200px) {
+        .roadmap-line.higher {
+            height: 110px !important;
+        }
     }
 
     @media (min-width: 992px) {
@@ -139,7 +162,18 @@ section.roadmap {
         .lines {
             position: absolute;
             left: 50%;
-            top: 24.3%;
+        }
+
+        .lines.second {
+            top: 6px;
+        }
+
+        .lines.first {
+            top: 95px;
+        }
+
+        .lines.third {
+            top: 33px;
         }
 
         .roadmap-line {
@@ -150,6 +184,10 @@ section.roadmap {
             margin-top: 40px;
         }
 
+        .roadmap-line.higher {
+            height: 135px;
+        }
+
         .roadmap-line:after {
             content: "";
             width: 200px;
@@ -158,7 +196,7 @@ section.roadmap {
             border-radius: 50%;
             position: absolute;
             top: -30px;
-            left: -5px;
+            left: -6px;
             color: #FFF;
             text-align: center;
         }

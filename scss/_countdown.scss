@@ -28,7 +28,7 @@ section.countdown {
         text-align: center;
         margin-top: 50px;
 
-        button {
+        a {
             padding: 15px 65px;
             font-family: 'Helvetica Neue Bold';
             font-size: 24px;
@@ -36,10 +36,17 @@ section.countdown {
             color: #002d78;
             cursor: pointer;
             border: 0;
+            max-width: 380px;
 
             @media (max-width: 768px) {
                 padding: 15px 0px;
+                width: 80%;
+            }
+
+            @media (max-width: 380px) {
+                padding: 15px 0px;
                 width: 100%;
+                border-radius: 0;
             }
         }
     }
