@@ -5,13 +5,17 @@
 }
 
 #topMenu.open .menu-container {
-    display: block;
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+    transition: all 1.5s;
 }
 
 #topMenu .menu-container {
     position: absolute;
     z-index: 10002;
-    display: none;
+    visibility:hidden;
+    opacity: 0;
     width: 100%;
     height: 100%;
 }
@@ -94,7 +98,8 @@
 }
 
 #topMenu #close {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 #topMenu.open #bars {
@@ -106,6 +111,8 @@
     height: 100%;
 
     #close {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 1.5s;
     }
 }
