@@ -152,6 +152,10 @@ section.roadmap {
         position: relative;
     }
 
+    .milestones span{
+        font-family: 'Helvetica Neue Light';
+    }
+
     @media(min-width: 1200px) {
         .roadmap-line.higher {
             height: 110px !important;
