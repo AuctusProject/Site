@@ -26,7 +26,7 @@
         }
 
         @media (max-width: 576px) {
-            nav>.container {
+            nav > .container {
                 width: 100%;
             }
         }
@@ -49,13 +49,13 @@
                 
                 <div class="quarter-circle" >
                 </div>
-               <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
-                   <i class="fa fa-bars" id="bars"></i>
-                   <i class="fa fa-close" id="close"></i>
-               </div>
+                <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+                    <i class="fa fa-bars" id="bars"></i>
+                    <i class="fa fa-close" id="close"></i>
+                </div>
                 <div class="menu-container">
                     <div class="menu-content">
-                       
+
                         <nav>
                             <ul>
                                 <li><img src="img/header/greenlogo.png" /></li>
@@ -269,7 +269,7 @@
                     <img class="waves-img-left" src="img/market/waves.png" />
                     <div class="market-card">
                         <div class="dots"></div>
-                        <div class="content">
+                        <div class="content content-margin">
                             <img class="pig-img" src="img/market/pig.png" />
                             <div class="content-text">
                                 <div class="black-text">PENSION FUND ASSETS IN</div>
@@ -287,6 +287,11 @@
                     <div class="market-card">
                         <div class="dots"></div>
                         <div class="content">
+                            <div class="market-card-title">
+                                <div class="cgar-title">CGAR 2005-2015</div>
+                                <div class="anual-growth-rate">COMPUND ANUAL GROWTH RATE</div>
+                            </div>
+                            <div class="charts-space"></div>
                             <div class="bar-charts">
                                 <div class="bar-chart-item">
                                     <div class="percentage-label">2.6%</div>
@@ -305,6 +310,7 @@
                                     <div class="asset-description">DC ASSETS</div>
                                 </div>
                             </div>
+                            <div class="charts-space"></div>
                             <div class="pie-chart">
                                 <img src="img/market/graph.png" />
                                 <div class="pie-chart-legend">
@@ -385,8 +391,8 @@
                                 <span class="heading green">QUARTER 3</span>
                                 <br>
                                 <div class="vertical-line right">
-                                    <span class="text-right">Pre-Sale</span><br/>
-                                    <span class="text-right">Auctus Demo Development</span><br/>
+                                    <span class="text-right">Pre-Sale</span><br />
+                                    <span class="text-right">Auctus Demo Development</span><br />
                                     <span class="text-right">Strategic Partnerships</span>
                                 </div>
                             </div>
@@ -404,8 +410,8 @@
                                 <span class="heading green">QUARTER 4</span>
                                 <br>
                                 <div class="vertical-line left">
-                                    <span class="text-right">Auctus Demo Launch</span><br/>
-                                    <span class="text-right">Initial Token Sale</span><br/>
+                                    <span class="text-right">Auctus Demo Launch</span><br />
+                                    <span class="text-right">Initial Token Sale</span><br />
                                     <span class="text-right">Partnerships with Exchanges</span><br />
                                     <span class="text-right">Development of Alpha Auctus Platform</span><br />
                                 </div>
@@ -694,7 +700,7 @@
 
     <section class="newsletter" id="newsletter">
         <form action="//auctus.us16.list-manage.com/subscribe/post?u=e6c2bc48f91f09fab4afe5bee&amp;id=b39ba220eb" method="post" id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="back">
                 <div class="container">
                     <div class="text-white section-heading text-center">
@@ -704,7 +710,7 @@
                     <div class="row clearfix">
                         <div class="offset-md-3 input-group col-md-6">
                             <input name="EMAIL" class="required email form-control" id="mce-EMAIL" type="text" class="form-control" placeholder="Enter your email"
-                                aria-label="Enter your email">
+                                   aria-label="Enter your email">
                             <span class="input-group-btn">
                                 <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">SUBSCRIBE</button>
                             </span>
@@ -771,11 +777,11 @@
 
     </script>
     <script>
-        (function (i, s, o, g, r, a, m) {        
-i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)        
-}, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-106121445-1', 'auto');
