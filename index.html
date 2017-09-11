@@ -46,14 +46,19 @@
             </div>
 
            <div id="topMenu">
-                <div class="menu-btn quarter-circle" onclick="$('#topMenu').toggleClass('open'); ">
-                    <i class="fa fa-bars" id="bars"></i>
-                    <i class="fa fa-close" id="close"></i>
+               
+                <div class="quarter-circle" >
                 </div>
+               <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+                   <i class="fa fa-bars" id="bars"></i>
+                   <i class="fa fa-close" id="close"></i>
+               </div>
                 <div class="menu-container">
                     <div class="menu-content">
+                       
                         <nav>
                             <ul>
+                                <li><img src="img/header/greenlogo.png" /></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="#about">What is Auctus Project?</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="#market">Market Overview</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="#monetization">Monetization</a></li>
@@ -722,7 +727,19 @@
             });
         };
     </script>
-    
+    <!--Google Analytics-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-106121445-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 
 </html>
