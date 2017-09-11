@@ -136,6 +136,7 @@
     height: 90px;
     width: 100px;
     z-index: 10000;
+    transition: all 0.5s;
 
     @media (max-width: 768px) {
         height: 60px;
@@ -181,6 +182,7 @@
     width: 900px;
     height: 1000px;
     z-index: 10000;
+    transition: all 1s;
 
     i {
         color: #002d78;

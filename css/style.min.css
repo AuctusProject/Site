@@ -404,14 +404,15 @@ section.about {
   right: 0px;
   height: 90px;
   width: 100px;
-  z-index: 10000; }
+  z-index: 10000;
+  transition: all 0.5s; }
   @media (max-width: 768px) {
     /* line 128, ../scss/_masthead.scss */
     .quarter-circle {
       height: 60px;
       width: 65px; } }
 
-/* line 148, ../scss/_masthead.scss */
+/* line 149, ../scss/_masthead.scss */
 #topMenu i {
   color: #002d78;
   font-size: 45px;
@@ -420,14 +421,14 @@ section.about {
   top: 10px;
   cursor: pointer; }
 @media (max-width: 768px) {
-  /* line 158, ../scss/_masthead.scss */
+  /* line 159, ../scss/_masthead.scss */
   #topMenu i.fa-bars {
     font-size: 27px;
     position: absolute;
     right: 15px;
     top: 10px; } }
 
-/* line 168, ../scss/_masthead.scss */
+/* line 169, ../scss/_masthead.scss */
 #topMenu.open .quarter-circle {
   background: #04148c;
   background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
@@ -443,8 +444,9 @@ section.about {
   top: -350px;
   width: 900px;
   height: 1000px;
-  z-index: 10000; }
-  /* line 185, ../scss/_masthead.scss */
+  z-index: 10000;
+  transition: all 1s; }
+  /* line 187, ../scss/_masthead.scss */
   #topMenu.open .quarter-circle i {
     color: #002d78;
     font-size: 45px;
@@ -453,19 +455,19 @@ section.about {
     top: 10px;
     cursor: pointer; }
   @media (max-width: 768px) {
-    /* line 168, ../scss/_masthead.scss */
+    /* line 169, ../scss/_masthead.scss */
     #topMenu.open .quarter-circle {
       height: 180%;
       width: 150%;
       right: -60%; }
-      /* line 199, ../scss/_masthead.scss */
+      /* line 201, ../scss/_masthead.scss */
       #topMenu.open .quarter-circle i.fa-bars {
         font-size: 27px;
         position: absolute;
         right: -385px;
         top: -170px; } }
 
-/* line 209, ../scss/_masthead.scss */
+/* line 211, ../scss/_masthead.scss */
 .button-div {
   display: inline-block;
   border-radius: 8px;
@@ -477,62 +479,62 @@ section.about {
   color: white;
   z-index: 1000; }
   @media (max-width: 768px) {
-    /* line 209, ../scss/_masthead.scss */
+    /* line 211, ../scss/_masthead.scss */
     .button-div {
       margin-top: 65%; } }
-  /* line 224, ../scss/_masthead.scss */
+  /* line 226, ../scss/_masthead.scss */
   .button-div i.fa {
     margin-right: 13px; }
 
-/* line 229, ../scss/_masthead.scss */
+/* line 231, ../scss/_masthead.scss */
 .button-div:hover {
   z-index: 1000;
   cursor: pointer;
   color: #d7d6d6;
   border: 2px solid #d7d6d6; }
 
-/* line 236, ../scss/_masthead.scss */
+/* line 238, ../scss/_masthead.scss */
 .text-container {
   padding: 200px 0 0 15%;
   z-index: 1000;
   width: 68%;
   position: relative; }
-  /* line 242, ../scss/_masthead.scss */
+  /* line 244, ../scss/_masthead.scss */
   .text-container h1 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
     color: white;
     margin-bottom: 20pt; }
-  /* line 249, ../scss/_masthead.scss */
+  /* line 251, ../scss/_masthead.scss */
   .text-container h2 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 20pt !important;
     color: white;
     margin: 0; }
-  /* line 256, ../scss/_masthead.scss */
+  /* line 258, ../scss/_masthead.scss */
   .text-container h3 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 13pt !important;
     color: white;
     margin: 0; }
   @media (max-width: 768px) {
-    /* line 236, ../scss/_masthead.scss */
+    /* line 238, ../scss/_masthead.scss */
     .text-container {
       text-align: center;
       padding: 150px 0 0 0;
       margin-left: unset !important;
       width: 100%; }
-      /* line 269, ../scss/_masthead.scss */
+      /* line 271, ../scss/_masthead.scss */
       .text-container h1 {
         font-size: 27pt; }
-      /* line 273, ../scss/_masthead.scss */
+      /* line 275, ../scss/_masthead.scss */
       .text-container h2 {
         font-size: 15pt !important; }
-      /* line 277, ../scss/_masthead.scss */
+      /* line 279, ../scss/_masthead.scss */
       .text-container h3 {
         font-size: 13pt !important; } }
 
-/* line 286, ../scss/_masthead.scss */
+/* line 288, ../scss/_masthead.scss */
 header.masthead {
   min-height: 100%;
   position: relative;
@@ -550,7 +552,7 @@ header.masthead {
   background: linear-gradient(168deg, #04148c 5%, #0884cd 40%, #0bdace 80%, #ffffff 105%);
   /* Standard syntax */ }
   @media (max-width: 768px) {
-    /* line 286, ../scss/_masthead.scss */
+    /* line 288, ../scss/_masthead.scss */
     header.masthead {
       background: #0884cd;
       /* For browsers that do not support gradients */
@@ -562,29 +564,29 @@ header.masthead {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace);
       /* Standard syntax */ } }
-  /* line 305, ../scss/_masthead.scss */
+  /* line 307, ../scss/_masthead.scss */
   header.masthead .top-header {
     background: transparent;
     height: 85px; }
     @media (max-width: 768px) {
-      /* line 305, ../scss/_masthead.scss */
+      /* line 307, ../scss/_masthead.scss */
       header.masthead .top-header {
         text-align: center;
         margin-left: unset !important; } }
-  /* line 315, ../scss/_masthead.scss */
+  /* line 317, ../scss/_masthead.scss */
   header.masthead .header-content {
     height: 100vh;
     min-height: 600px;
     padding: 0;
     text-align: left; }
-    /* line 323, ../scss/_masthead.scss */
+    /* line 325, ../scss/_masthead.scss */
     header.masthead .header-content .header-content-inner {
       position: absolute;
       top: 50%;
       max-width: none;
       margin: 0;
       transform: translateY(-50%); }
-      /* line 330, ../scss/_masthead.scss */
+      /* line 332, ../scss/_masthead.scss */
       header.masthead .header-content .header-content-inner h1 {
         font-size: 35px; }
 
@@ -853,34 +855,38 @@ footer {
 
 /* line 7, ../scss/_menu.scss */
 #topMenu.open .menu-container {
-  display: block; }
+  /*display: block;*/
+  visibility: visible;
+  opacity: 1;
+  transition: all 1.5s; }
 
-/* line 11, ../scss/_menu.scss */
+/* line 14, ../scss/_menu.scss */
 #topMenu .menu-container {
   position: absolute;
   z-index: 10002;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   width: 100%;
   height: 100%; }
 
 @media (min-width: 768px) {
-  /* line 20, ../scss/_menu.scss */
+  /* line 24, ../scss/_menu.scss */
   #topMenu {
     right: 0px;
     top: 0px; }
 
-  /* line 25, ../scss/_menu.scss */
+  /* line 29, ../scss/_menu.scss */
   #topMenu .menu-container {
     top: 0;
     right: 0;
     width: 450px;
     height: 100%; }
 
-  /* line 32, ../scss/_menu.scss */
+  /* line 36, ../scss/_menu.scss */
   #topMenu .menu-container .menu-content {
     width: 1350px;
     height: 1533px; } }
-/* line 38, ../scss/_menu.scss */
+/* line 42, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content {
   position: absolute;
   right: 0px;
@@ -889,68 +895,71 @@ footer {
   height: 100%;
   width: 100%; }
   @media (max-width: 768px) {
-    /* line 38, ../scss/_menu.scss */
+    /* line 42, ../scss/_menu.scss */
     #topMenu .menu-container .menu-content {
       width: 80%; } }
 
-/* line 51, ../scss/_menu.scss */
+/* line 55, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content ul {
   top: 100px;
   text-align: center;
   margin: 30px;
   list-style: none; }
   @media (max-width: 768px) {
-    /* line 51, ../scss/_menu.scss */
+    /* line 55, ../scss/_menu.scss */
     #topMenu .menu-container .menu-content ul {
       margin: 0 0 0 -50px; } }
 
-/* line 62, ../scss/_menu.scss */
+/* line 66, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content ul > li {
   margin: 20px;
   list-style: none; }
 
-/* line 67, ../scss/_menu.scss */
+/* line 71, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content ul > li > img {
   margin-bottom: 30px; }
 
-/* line 71, ../scss/_menu.scss */
+/* line 75, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content ul > li > a {
   color: white;
   font-size: 20px;
   font-family: 'Helvetica Neue Bold'; }
 
-/* line 77, ../scss/_menu.scss */
+/* line 81, ../scss/_menu.scss */
 #topMenu .menu-container .menu-content ul > li > a:hover {
   color: #0addab !important; }
 
-/* line 82, ../scss/_menu.scss */
+/* line 86, ../scss/_menu.scss */
 .menu-btn {
   position: fixed;
   right: 0px;
   z-index: 10003; }
 
-/* line 88, ../scss/_menu.scss */
+/* line 92, ../scss/_menu.scss */
 #topMenu.open .menu-btn {
   background: #002d78; }
-  /* line 91, ../scss/_menu.scss */
+  /* line 95, ../scss/_menu.scss */
   #topMenu.open .menu-btn i {
     color: white; }
 
-/* line 96, ../scss/_menu.scss */
-#topMenu #close {
-  display: none; }
-
 /* line 100, ../scss/_menu.scss */
+#topMenu #close {
+  visibility: hidden;
+  opacity: 0; }
+
+/* line 105, ../scss/_menu.scss */
 #topMenu.open #bars {
   display: none; }
 
-/* line 104, ../scss/_menu.scss */
+/* line 109, ../scss/_menu.scss */
 #topMenu.open {
   width: 100%;
   height: 100%; }
-  /* line 108, ../scss/_menu.scss */
+  /* line 113, ../scss/_menu.scss */
   #topMenu.open #close {
-    display: block; }
+    visibility: visible;
+    opacity: 1;
+    transition: all 1.5s; }
 
 /* line 2, ../scss/_roadmap.scss */
 section.roadmap {
