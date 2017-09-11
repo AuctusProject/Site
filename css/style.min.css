@@ -1408,6 +1408,7 @@ section.monetization {
   /* line 24, ../scss/_monetization.scss */
   section.monetization .description {
     margin-top: 20px;
+    margin-bottom: 45px;
     font-family: 'Helvetica Neue Bold';
     font-size: 22px !important;
     color: white; }
