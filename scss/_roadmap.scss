@@ -67,15 +67,15 @@ section.roadmap {
 
     @media (min-width: 1200px) {
         .box.left.second {
-            top: -112px !important;
+            top: -101px !important;
         }
 
         .box.left.third {
-            top: -61px !important;
+            top: -43px !important;
         }
 
         .box.right.third {
-            top: 90px !important;
+            top: 108px !important;
         }
     }
 
@@ -85,7 +85,7 @@ section.roadmap {
         }
 
         .box.right.second {
-            top: 51px;
+            top: 50px;
         }
 
         .box.right.third {
@@ -100,7 +100,7 @@ section.roadmap {
         }
 
         .box.left.third {
-            top: -86px;
+            top: -75px;
         }
     }
 
@@ -152,13 +152,17 @@ section.roadmap {
         position: relative;
     }
 
-    .milestones span{
+    .milestones span {
         font-family: 'Helvetica Neue Light';
     }
 
     @media(min-width: 1200px) {
         .roadmap-line.higher {
             height: 110px !important;
+        }
+
+        .lines.third {
+            top: 52px !important;
         }
     }
 
@@ -178,7 +182,7 @@ section.roadmap {
         }
 
         .lines.third {
-            top: 33px;
+            top: 32px;
         }
 
         .roadmap-line {
