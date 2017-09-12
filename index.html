@@ -750,6 +750,10 @@
     <script src="js/script.min.js"></script>
 
     <script>
+        $(".menu-content a").click(function (e) {
+            if ($(window).width() <= 768)
+            $('#topMenu').toggleClass('open');
+        });
         $("#topMenu").click(function (e) {
             if (e.target !== this)
                 return;
