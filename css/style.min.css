@@ -400,22 +400,25 @@ section.about {
 .quarter-circle {
   background-color: white;
   border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
   position: absolute;
-  right: 0px;
-  height: 90px;
-  width: 100px;
+  right: -100px;
+  top: -90px;
+  height: 180px;
+  width: 200px;
   z-index: 10000;
   transition: all 0.5s; }
   @media (max-width: 768px) {
     /* line 130, ../scss/_masthead.scss */
     .quarter-circle {
-      height: 60px;
-      width: 65px; } }
+      right: -60px;
+      top: -65px;
+      height: 120px;
+      width: 130px; } }
 
-/* line 151, ../scss/_masthead.scss */
+/* line 154, ../scss/_masthead.scss */
 #topMenu i {
   color: #002d78;
   font-size: 45px;
@@ -424,14 +427,14 @@ section.about {
   top: 10px;
   cursor: pointer; }
 @media (max-width: 768px) {
-  /* line 161, ../scss/_masthead.scss */
+  /* line 164, ../scss/_masthead.scss */
   #topMenu i.fa-bars {
     font-size: 27px;
     position: absolute;
     right: 15px;
     top: 10px; } }
 
-/* line 171, ../scss/_masthead.scss */
+/* line 174, ../scss/_masthead.scss */
 #topMenu.open .quarter-circle {
   background: #04148c;
   background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
@@ -449,7 +452,7 @@ section.about {
   height: 1000px;
   z-index: 10000;
   transition: all 1s; }
-  /* line 189, ../scss/_masthead.scss */
+  /* line 192, ../scss/_masthead.scss */
   #topMenu.open .quarter-circle i {
     color: #002d78;
     font-size: 45px;
@@ -458,19 +461,19 @@ section.about {
     top: 10px;
     cursor: pointer; }
   @media (max-width: 768px) {
-    /* line 171, ../scss/_masthead.scss */
+    /* line 174, ../scss/_masthead.scss */
     #topMenu.open .quarter-circle {
+      right: -60%;
       height: 180%;
-      width: 150%;
-      right: -60%; }
-      /* line 203, ../scss/_masthead.scss */
+      width: 150%; }
+      /* line 206, ../scss/_masthead.scss */
       #topMenu.open .quarter-circle i.fa-bars {
         font-size: 27px;
         position: absolute;
         right: -385px;
         top: -170px; } }
 
-/* line 213, ../scss/_masthead.scss */
+/* line 216, ../scss/_masthead.scss */
 .button-div {
   display: inline-block;
   border-radius: 8px;
@@ -482,62 +485,62 @@ section.about {
   color: white;
   z-index: 1000; }
   @media (max-width: 768px) {
-    /* line 213, ../scss/_masthead.scss */
+    /* line 216, ../scss/_masthead.scss */
     .button-div {
       margin-top: 65%; } }
-  /* line 228, ../scss/_masthead.scss */
+  /* line 231, ../scss/_masthead.scss */
   .button-div i.fa {
     margin-right: 13px; }
 
-/* line 233, ../scss/_masthead.scss */
+/* line 236, ../scss/_masthead.scss */
 .button-div:hover {
   z-index: 1000;
   cursor: pointer;
   color: #d7d6d6;
   border: 2px solid #d7d6d6; }
 
-/* line 240, ../scss/_masthead.scss */
+/* line 243, ../scss/_masthead.scss */
 .text-container {
   padding: 200px 0 0 15%;
   z-index: 1000;
   width: 68%;
   position: relative; }
-  /* line 246, ../scss/_masthead.scss */
+  /* line 249, ../scss/_masthead.scss */
   .text-container h1 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
     color: white;
     margin-bottom: 20pt; }
-  /* line 253, ../scss/_masthead.scss */
+  /* line 256, ../scss/_masthead.scss */
   .text-container h2 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 20pt !important;
     color: white;
     margin: 0; }
-  /* line 260, ../scss/_masthead.scss */
+  /* line 263, ../scss/_masthead.scss */
   .text-container h3 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 13pt !important;
     color: white;
     margin: 0; }
   @media (max-width: 768px) {
-    /* line 240, ../scss/_masthead.scss */
+    /* line 243, ../scss/_masthead.scss */
     .text-container {
       text-align: center;
       padding: 150px 0 0 0;
       margin-left: unset !important;
       width: 100%; }
-      /* line 273, ../scss/_masthead.scss */
+      /* line 276, ../scss/_masthead.scss */
       .text-container h1 {
         font-size: 27pt; }
-      /* line 277, ../scss/_masthead.scss */
+      /* line 280, ../scss/_masthead.scss */
       .text-container h2 {
         font-size: 15pt !important; }
-      /* line 281, ../scss/_masthead.scss */
+      /* line 284, ../scss/_masthead.scss */
       .text-container h3 {
         font-size: 13pt !important; } }
 
-/* line 290, ../scss/_masthead.scss */
+/* line 293, ../scss/_masthead.scss */
 header.masthead {
   min-height: 100%;
   position: relative;
@@ -555,7 +558,7 @@ header.masthead {
   background: linear-gradient(168deg, #04148c 5%, #0884cd 40%, #0bdace 80%, #ffffff 105%);
   /* Standard syntax */ }
   @media (max-width: 768px) {
-    /* line 290, ../scss/_masthead.scss */
+    /* line 293, ../scss/_masthead.scss */
     header.masthead {
       background: #0884cd;
       /* For browsers that do not support gradients */
@@ -567,29 +570,29 @@ header.masthead {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace);
       /* Standard syntax */ } }
-  /* line 309, ../scss/_masthead.scss */
+  /* line 312, ../scss/_masthead.scss */
   header.masthead .top-header {
     background: transparent;
     height: 85px; }
     @media (max-width: 768px) {
-      /* line 309, ../scss/_masthead.scss */
+      /* line 312, ../scss/_masthead.scss */
       header.masthead .top-header {
         text-align: center;
         margin-left: unset !important; } }
-  /* line 319, ../scss/_masthead.scss */
+  /* line 322, ../scss/_masthead.scss */
   header.masthead .header-content {
     height: 100vh;
     min-height: 600px;
     padding: 0;
     text-align: left; }
-    /* line 327, ../scss/_masthead.scss */
+    /* line 330, ../scss/_masthead.scss */
     header.masthead .header-content .header-content-inner {
       position: absolute;
       top: 50%;
       max-width: none;
       margin: 0;
       transform: translateY(-50%); }
-      /* line 334, ../scss/_masthead.scss */
+      /* line 337, ../scss/_masthead.scss */
       header.masthead .header-content .header-content-inner h1 {
         font-size: 35px; }
 

@@ -130,19 +130,22 @@
 .quarter-circle {
     background-color: white;
     border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
     position: absolute;
-    right: 0px;
-    height: 90px;
-    width: 100px;
+    right: -100px;
+    top: -90px;
+    height: 180px;
+    width: 200px;
     z-index: 10000;
     transition: all 0.5s;
 
     @media (max-width: 768px) {
-        height: 60px;
-        width: 65px;
+        right: -60px;
+        top: -65px;
+        height: 120px;
+        width: 130px;
     }
 }
 
@@ -196,9 +199,9 @@
     }
 
     @media (max-width: 768px) {
+        right: -60%;
         height: 180%;
         width: 150%;
-        right: -60%;
 
         i.fa-bars {
             font-size: 27px;
