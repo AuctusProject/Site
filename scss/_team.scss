@@ -1,7 +1,7 @@
 // Styling for the features section
 section.team {
     text-align: center;
-    
+
     .name {
         margin-top: 10px;
         font-family: 'Helvetica Neue Bold';
@@ -16,6 +16,10 @@ section.team {
         margin-bottom: 60px;
     }
 
+    .image {
+        margin-left: 40px;
+    }
+
     .image:after {
         content: url('../img/team/linkedin-icon.png');
         position: relative;
@@ -23,6 +27,7 @@ section.team {
         right: 26px;
         top: 0px;
     }
+
     .image.behance:after {
         content: url('../img/team/behance-icon.png');
         position: relative;

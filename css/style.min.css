@@ -772,13 +772,16 @@ section.team {
     margin-top: 5px;
     margin-bottom: 60px; }
   /* line 19, ../scss/_team.scss */
+  section.team .image {
+    margin-left: 40px; }
+  /* line 23, ../scss/_team.scss */
   section.team .image:after {
     content: url("../img/team/linkedin-icon.png");
     position: relative;
     z-index: 100;
     right: 26px;
     top: 0px; }
-  /* line 26, ../scss/_team.scss */
+  /* line 31, ../scss/_team.scss */
   section.team .image.behance:after {
     content: url("../img/team/behance-icon.png");
     position: relative;
