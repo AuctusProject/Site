@@ -3,24 +3,30 @@ footer {
     position: relative;
     top: -200px;
 
-    .navigation-icons i {
-        font-size: 25px;
-        border: 2px solid #002d78;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        padding-top: 7px;
-        margin: 10px 10px;
-        color: #002d78;
+    .navigation-icons {
+        a {
+            text-decoration: unset;
+
+            i {
+                font-size: 25px;
+                border: 2px solid #002d78;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                padding-top: 7px;
+                margin: 10px 10px;
+                color: #002d78;
+            }
+        }
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         .navigation-icons {
             margin-top: 20px;
         }
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         .logo {
             text-align: center;
         }

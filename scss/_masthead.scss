@@ -59,7 +59,9 @@
 
     .navigation-icons {
         padding-left: 5%;
-
+        a {
+            text-decoration:unset;
+        }
         i.fa {
             display: inline-block;
             font-size: 25px;
