@@ -1188,14 +1188,29 @@ section.countdown {
   background: linear-gradient(140deg, #04148c 25%, #0884cd 75%);
   /* Standard syntax */ }
   /* line 8, ../scss/_countdown.scss */
+  section.countdown .section-heading {
+    margin-bottom: 4rem; }
+  /* line 12, ../scss/_countdown.scss */
+  section.countdown .sales-date {
+    padding-top: 15px;
+    font-size: 18px !important; }
+    /* line 16, ../scss/_countdown.scss */
+    section.countdown .sales-date span {
+      color: #09d8ba;
+      font-weight: bold; }
+      @media (max-width: 768px) {
+        /* line 16, ../scss/_countdown.scss */
+        section.countdown .sales-date span {
+          margin: 10px 0px; } }
+  /* line 26, ../scss/_countdown.scss */
   section.countdown .timer {
     text-align: center;
     overflow: hidden; }
-  /* line 13, ../scss/_countdown.scss */
+  /* line 31, ../scss/_countdown.scss */
   section.countdown .timer > div {
     text-align: center;
     display: inline-block; }
-  /* line 18, ../scss/_countdown.scss */
+  /* line 36, ../scss/_countdown.scss */
   section.countdown .time-part {
     display: inline-block;
     width: 148px;
@@ -1203,11 +1218,11 @@ section.countdown {
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 27, ../scss/_countdown.scss */
+  /* line 45, ../scss/_countdown.scss */
   section.countdown .join-whitelist {
     text-align: center;
     margin-top: 50px; }
-    /* line 31, ../scss/_countdown.scss */
+    /* line 49, ../scss/_countdown.scss */
     section.countdown .join-whitelist a {
       padding: 15px 65px;
       font-family: 'Helvetica Neue Bold';
@@ -1218,36 +1233,36 @@ section.countdown {
       border: 0;
       max-width: 380px; }
       @media (max-width: 768px) {
-        /* line 31, ../scss/_countdown.scss */
+        /* line 49, ../scss/_countdown.scss */
         section.countdown .join-whitelist a {
           padding: 15px 0px;
           width: 80%; } }
       @media (max-width: 380px) {
-        /* line 31, ../scss/_countdown.scss */
+        /* line 49, ../scss/_countdown.scss */
         section.countdown .join-whitelist a {
           padding: 15px 0px;
           width: 100%;
           border-radius: 0; } }
-  /* line 54, ../scss/_countdown.scss */
+  /* line 72, ../scss/_countdown.scss */
   section.countdown .box {
     width: 148px;
     height: 160px;
     border: 2px solid #09d8ba;
     border-radius: 5px;
     display: inline-block; }
-    /* line 61, ../scss/_countdown.scss */
+    /* line 79, ../scss/_countdown.scss */
     section.countdown .box .time-value {
       font-family: 'Helvetica Neue Light';
       font-size: 80px;
       line-height: 110px;
       color: #09d8ba; }
-    /* line 68, ../scss/_countdown.scss */
+    /* line 86, ../scss/_countdown.scss */
     section.countdown .box .time-label {
       font-family: 'Helvetica Neue Light';
       color: white;
       font-size: 20px; }
   @media (min-width: 768px) {
-    /* line 76, ../scss/_countdown.scss */
+    /* line 94, ../scss/_countdown.scss */
     section.countdown .time-part:after {
       content: '';
       position: relative;
@@ -1257,7 +1272,7 @@ section.countdown {
       top: -82px;
       left: 148px;
       display: block; }
-    /* line 87, ../scss/_countdown.scss */
+    /* line 105, ../scss/_countdown.scss */
     section.countdown .days:before {
       content: '';
       position: relative;
@@ -1268,7 +1283,7 @@ section.countdown {
       display: block;
       width: 1000px;
       right: 1000px; }
-    /* line 99, ../scss/_countdown.scss */
+    /* line 117, ../scss/_countdown.scss */
     section.countdown .seconds:after {
       width: 1000px;
       left: 148px; } }

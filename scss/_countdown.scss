@@ -5,6 +5,24 @@ section.countdown {
     background: -o-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* Standard syntax */
+    .section-heading {
+        margin-bottom: 4rem;
+    }
+
+    .sales-date {
+        padding-top: 15px;
+        font-size: 18px !important;
+
+        span {
+            color: #09d8ba;
+            font-weight: bold;
+
+            @media (max-width: 768px) {
+                margin: 10px 0px;
+            }
+        }
+    }
+
     .timer {
         text-align: center;
         overflow: hidden;
