@@ -15,4 +15,19 @@ section.team {
         margin-top: 5px;
         margin-bottom: 60px;
     }
+
+    .image:after {
+        content: url('../img/team/linkedin-icon.png');
+        position: relative;
+        z-index: 100;
+        right: 20px;
+        top: 0px;
+    }
+    .image.behance:after {
+        content: url('../img/team/behance-icon.png');
+        position: relative;
+        z-index: 100;
+        right: 20px;
+        top: 0px;
+    }
 }
