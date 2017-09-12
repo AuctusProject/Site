@@ -768,7 +768,7 @@ section.team {
     margin-top: 5px;
     margin-bottom: 60px; }
 
-/* line 2, ../scss/_newsletter.scss */
+/* line 1, ../scss/_newsletter.scss */
 section.newsletter {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,91edff+50,ffffff+100 */
   background: #ffffff;
@@ -782,7 +782,7 @@ section.newsletter {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
   /* IE6-9 */
   height: 950px; }
-  /* line 13, ../scss/_newsletter.scss */
+  /* line 10, ../scss/_newsletter.scss */
   section.newsletter .back {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04148c+0,0649d4+100 */
     background: #04148c;
@@ -796,23 +796,27 @@ section.newsletter {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04148c', endColorstr='#0649d4',GradientType=0 );
     /* IE6-9 */
     height: 537px; }
-  /* line 24, ../scss/_newsletter.scss */
+  /* line 20, ../scss/_newsletter.scss */
   section.newsletter .section-heading {
     padding-top: 150px; }
-    /* line 26, ../scss/_newsletter.scss */
+    /* line 23, ../scss/_newsletter.scss */
     section.newsletter .section-heading h3 {
       margin-top: 25px; }
   @media (max-width: 768px) {
-    /* line 32, ../scss/_newsletter.scss */
+    /* line 29, ../scss/_newsletter.scss */
     section.newsletter .input-group {
       margin-top: 50px; } }
-  /* line 37, ../scss/_newsletter.scss */
+  /* line 34, ../scss/_newsletter.scss */
   section.newsletter input {
     height: 70px;
     border: 0px;
     font-size: 24px;
     font-family: 'Helvetica Neue Light'; }
-  /* line 45, ../scss/_newsletter.scss */
+    @media (max-width: 768px) {
+      /* line 34, ../scss/_newsletter.scss */
+      section.newsletter input {
+        font-size: 22px; } }
+  /* line 46, ../scss/_newsletter.scss */
   section.newsletter .input-group-btn button {
     background: #07dce0;
     border: 0px;
@@ -821,11 +825,11 @@ section.newsletter {
     font-family: 'Helvetica Neue Bold';
     color: #002d78;
     cursor: pointer; }
-  /* line 57, ../scss/_newsletter.scss */
+  /* line 58, ../scss/_newsletter.scss */
   section.newsletter .auctus-wm img {
     margin-top: -370px; }
   @media (max-width: 768px) {
-    /* line 63, ../scss/_newsletter.scss */
+    /* line 64, ../scss/_newsletter.scss */
     section.newsletter .auctus-wm {
       display: none; } }
 
@@ -833,10 +837,14 @@ section.newsletter {
 footer {
   position: relative;
   top: -200px; }
-  /* line 7, ../scss/_footer.scss */
+  @media (max-width: 768px) {
+    /* line 6, ../scss/_footer.scss */
+    footer .navigation-icons {
+      padding-top: 10px; } }
+  /* line 11, ../scss/_footer.scss */
   footer .navigation-icons a {
     text-decoration: unset; }
-    /* line 10, ../scss/_footer.scss */
+    /* line 14, ../scss/_footer.scss */
     footer .navigation-icons a i {
       font-size: 25px;
       border: 2px solid #002d78;
@@ -844,14 +852,18 @@ footer {
       width: 40px;
       height: 40px;
       padding-top: 7px;
-      margin: 10px 10px;
+      margin: 10px;
       color: #002d78; }
+      @media (max-width: 768px) {
+        /* line 14, ../scss/_footer.scss */
+        footer .navigation-icons a i {
+          margin: 5px; } }
   @media (max-width: 768px) {
-    /* line 24, ../scss/_footer.scss */
+    /* line 32, ../scss/_footer.scss */
     footer .navigation-icons {
       margin-top: 20px; } }
   @media (max-width: 768px) {
-    /* line 30, ../scss/_footer.scss */
+    /* line 38, ../scss/_footer.scss */
     footer .logo {
       text-align: center; } }
 
