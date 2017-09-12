@@ -4,7 +4,7 @@ section.monetization {
 
     .item {
         display: inline-block;
-        margin: 0 50px 0 50px;
+        // margin: 0 50px 0 50px;
     }
 
     .circle {
@@ -13,7 +13,7 @@ section.monetization {
         height: 180px;
         width: 180px;
         margin: 0 auto;
-        padding-top:40px;
+        // padding-top:40px;
         i {
             color: white;
             margin: auto; 
@@ -27,5 +27,9 @@ section.monetization {
         font-family: 'Helvetica Neue Bold';
         font-size: 22px !important;
         color: white;
+    }
+
+    .icon img {
+        margin-top: 13px;
     }
 }
