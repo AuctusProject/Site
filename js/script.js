@@ -38,3 +38,26 @@
         $(".time-part.seconds .time-value").html(seconds);
     };
 })(jQuery); // End of use strict
+
+function joinWhitelist() {
+    openNewTab("https://auctus.us16.list-manage2.com/subscribe?u=e6c2bc48f91f09fab4afe5bee&id=63a6a00141");
+    registerClickEvent('JoinWhitelist');
+}
+
+function downloadWhitepaper(){
+    openNewTab("https://dl.auctus.org/Auctus_Whitepaper.pdf");
+    registerClickEvent('Whitepaper');
+}
+
+function openNewTab(url) {
+    window.open(url, "_blank");
+}
+
+
+function registerClickEvent(category) {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: category,
+        eventAction: 'click'
+    });
+}

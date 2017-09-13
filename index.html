@@ -81,7 +81,7 @@
                     Through smart contract auditable code the Auctus Platform will ensure full transparency and compliance
                 </h3>
                 <div class="button-div">
-                    <a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank" class="wp-button"><i class="fa fa-file-o"></i> Download the whitepaper</a>
+                    <a onclick="downloadWhitepaper()" class="wp-button"><i class="fa fa-file-o"></i> Download the whitepaper</a>
                 </div>
             </div>
         </div>
@@ -264,8 +264,7 @@
             </div>
         </div>
         <div class="join-whitelist">
-            <a target="_blank" id="open-mc-popup" href="https://auctus.us16.list-manage2.com/subscribe?u=e6c2bc48f91f09fab4afe5bee&id=63a6a00141"
-                class="btn btn-secondary">JOIN THE WHITELIST</a>
+            <a onclick="joinWhitelist()" id="open-mc-popup" class="btn btn-secondary">JOIN THE WHITELIST</a>
         </div>
     </section>
 
@@ -783,9 +782,12 @@
             $('#topMenu').toggleClass('open');
         });
         $('a').click(function () {
-            $('html, body').animate({
-                scrollTop: $($(this).attr('href')).offset().top
-            }, 500);
+            var href = $(this).attr('href');
+            if (href) {
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 500);
+            }
             return false;
         });
     </script>
