@@ -491,60 +491,61 @@ section.about {
   @media (max-width: 768px) {
     /* line 216, ../scss/_masthead.scss */
     .button-div {
-      margin-top: 65%; } }
-  /* line 231, ../scss/_masthead.scss */
+      margin-top: 65%;
+      margin-bottom: 40px; } }
+  /* line 232, ../scss/_masthead.scss */
   .button-div i.fa {
     margin-right: 13px; }
 
-/* line 236, ../scss/_masthead.scss */
+/* line 237, ../scss/_masthead.scss */
 .button-div:hover {
   z-index: 1000;
   cursor: pointer;
   color: #d7d6d6;
   border: 2px solid #d7d6d6; }
 
-/* line 243, ../scss/_masthead.scss */
+/* line 244, ../scss/_masthead.scss */
 .text-container {
   padding: 200px 0 0 15%;
   z-index: 1000;
   width: 68%;
   position: relative; }
-  /* line 249, ../scss/_masthead.scss */
+  /* line 250, ../scss/_masthead.scss */
   .text-container h1 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
     color: white;
     margin-bottom: 20pt; }
-  /* line 256, ../scss/_masthead.scss */
+  /* line 257, ../scss/_masthead.scss */
   .text-container h2 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 20pt !important;
     color: white;
     margin: 0; }
-  /* line 263, ../scss/_masthead.scss */
+  /* line 264, ../scss/_masthead.scss */
   .text-container h3 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 13pt !important;
     color: white;
     margin: 0; }
   @media (max-width: 768px) {
-    /* line 243, ../scss/_masthead.scss */
+    /* line 244, ../scss/_masthead.scss */
     .text-container {
       text-align: center;
       padding: 150px 0 0 0;
       margin-left: unset !important;
       width: 100%; }
-      /* line 276, ../scss/_masthead.scss */
+      /* line 277, ../scss/_masthead.scss */
       .text-container h1 {
         font-size: 27pt; }
-      /* line 280, ../scss/_masthead.scss */
+      /* line 281, ../scss/_masthead.scss */
       .text-container h2 {
         font-size: 15pt !important; }
-      /* line 284, ../scss/_masthead.scss */
+      /* line 285, ../scss/_masthead.scss */
       .text-container h3 {
         font-size: 13pt !important; } }
 
-/* line 293, ../scss/_masthead.scss */
+/* line 294, ../scss/_masthead.scss */
 header.masthead {
   min-height: 100%;
   position: relative;
@@ -562,7 +563,7 @@ header.masthead {
   background: linear-gradient(168deg, #04148c 5%, #0884cd 40%, #0bdace 80%, #ffffff 105%);
   /* Standard syntax */ }
   @media (max-width: 768px) {
-    /* line 293, ../scss/_masthead.scss */
+    /* line 294, ../scss/_masthead.scss */
     header.masthead {
       background: #0884cd;
       /* For browsers that do not support gradients */
@@ -574,29 +575,29 @@ header.masthead {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace);
       /* Standard syntax */ } }
-  /* line 312, ../scss/_masthead.scss */
+  /* line 313, ../scss/_masthead.scss */
   header.masthead .top-header {
     background: transparent;
     height: 85px; }
     @media (max-width: 768px) {
-      /* line 312, ../scss/_masthead.scss */
+      /* line 313, ../scss/_masthead.scss */
       header.masthead .top-header {
         text-align: center;
         margin-left: unset !important; } }
-  /* line 322, ../scss/_masthead.scss */
+  /* line 323, ../scss/_masthead.scss */
   header.masthead .header-content {
     height: 100vh;
     min-height: 600px;
     padding: 0;
     text-align: left; }
-    /* line 330, ../scss/_masthead.scss */
+    /* line 331, ../scss/_masthead.scss */
     header.masthead .header-content .header-content-inner {
       position: absolute;
       top: 50%;
       max-width: none;
       margin: 0;
       transform: translateY(-50%); }
-      /* line 337, ../scss/_masthead.scss */
+      /* line 338, ../scss/_masthead.scss */
       header.masthead .header-content .header-content-inner h1 {
         font-size: 35px; }
 
@@ -788,6 +789,21 @@ section.team {
     z-index: 100;
     right: 26px;
     top: 0px; }
+
+/* line 39, ../scss/_team.scss */
+img.v {
+  position: fixed;
+  z-index: 100000;
+  bottom: -440px;
+  left: -235px;
+  transform: rotate(21deg);
+  transition: all 0.2s; }
+
+/* line 48, ../scss/_team.scss */
+img.v.visible {
+  transition: all 0.2s;
+  bottom: -36px !important;
+  left: -21px !important; }
 
 /* line 1, ../scss/_newsletter.scss */
 section.newsletter {
@@ -1006,13 +1022,17 @@ footer {
 section.roadmap {
   padding-top: 0;
   padding-bottom: 10em; }
-  /* line 6, ../scss/_roadmap.scss */
+  @media (max-width: 768px) {
+    /* line 2, ../scss/_roadmap.scss */
+    section.roadmap {
+      padding-bottom: 1em; } }
+  /* line 10, ../scss/_roadmap.scss */
   section.roadmap .year {
     color: #1439AF;
     font-family: 'Myriad Pro Bold';
     font-size: 20px;
     top: -4px; }
-  /* line 13, ../scss/_roadmap.scss */
+  /* line 17, ../scss/_roadmap.scss */
   section.roadmap .box {
     -webkit-box-shadow: 0px 0px 7px 0px #b3b3b3;
     -moz-box-shadow: 0px 0px 7px 0px #b3b3b3;
@@ -1022,19 +1042,19 @@ section.roadmap {
     padding-bottom: 40px;
     min-height: 200px;
     height: 100%; }
-  /* line 24, ../scss/_roadmap.scss */
+  /* line 28, ../scss/_roadmap.scss */
   section.roadmap .box.left {
     padding-right: 40px;
     text-align: right; }
-  /* line 29, ../scss/_roadmap.scss */
+  /* line 33, ../scss/_roadmap.scss */
   section.roadmap .box.right {
     padding-left: 40px; }
   @media (max-width: 991px) {
-    /* line 34, ../scss/_roadmap.scss */
+    /* line 38, ../scss/_roadmap.scss */
     section.roadmap .box {
       margin-top: 30px; } }
   @media (min-width: 992px) {
-    /* line 40, ../scss/_roadmap.scss */
+    /* line 44, ../scss/_roadmap.scss */
     section.roadmap .box.left:after {
       content: 'after';
       width: 80px;
@@ -1046,7 +1066,7 @@ section.roadmap {
       color: #FFF;
       text-align: center;
       z-index: -1; }
-    /* line 53, ../scss/_roadmap.scss */
+    /* line 57, ../scss/_roadmap.scss */
     section.roadmap .box.right:after {
       content: 'after';
       width: 70px;
@@ -1059,103 +1079,103 @@ section.roadmap {
       text-align: center;
       z-index: -1; } }
   @media (min-width: 1200px) {
-    /* line 69, ../scss/_roadmap.scss */
+    /* line 73, ../scss/_roadmap.scss */
     section.roadmap .box.left.second {
       top: -101px !important; }
-    /* line 73, ../scss/_roadmap.scss */
+    /* line 77, ../scss/_roadmap.scss */
     section.roadmap .box.left.third {
       top: -43px !important; }
-    /* line 77, ../scss/_roadmap.scss */
+    /* line 81, ../scss/_roadmap.scss */
     section.roadmap .box.right.third {
       top: 108px !important; } }
   @media (min-width: 992px) {
-    /* line 83, ../scss/_roadmap.scss */
+    /* line 87, ../scss/_roadmap.scss */
     section.roadmap .box.right.first {
       margin-top: 138px; }
-    /* line 87, ../scss/_roadmap.scss */
+    /* line 91, ../scss/_roadmap.scss */
     section.roadmap .box.right.second {
       top: 50px; }
-    /* line 91, ../scss/_roadmap.scss */
+    /* line 95, ../scss/_roadmap.scss */
     section.roadmap .box.right.third {
       top: 77px; }
-    /* line 98, ../scss/_roadmap.scss */
+    /* line 102, ../scss/_roadmap.scss */
     section.roadmap .box.left.second {
       top: -125px; }
-    /* line 102, ../scss/_roadmap.scss */
+    /* line 106, ../scss/_roadmap.scss */
     section.roadmap .box.left.third {
       top: -75px; } }
-  /* line 107, ../scss/_roadmap.scss */
+  /* line 111, ../scss/_roadmap.scss */
   section.roadmap span.heading {
     font-family: 'Helvetica Neue Bold';
     font-size: 35px; }
-  /* line 112, ../scss/_roadmap.scss */
+  /* line 116, ../scss/_roadmap.scss */
   section.roadmap .green {
     color: #09D8BA; }
-  /* line 116, ../scss/_roadmap.scss */
+  /* line 120, ../scss/_roadmap.scss */
   section.roadmap .dots {
     width: 50%; }
-  /* line 120, ../scss/_roadmap.scss */
+  /* line 124, ../scss/_roadmap.scss */
   section.roadmap .dots.pull-right {
     margin-right: 50px; }
-    /* line 123, ../scss/_roadmap.scss */
+    /* line 127, ../scss/_roadmap.scss */
     section.roadmap .dots.pull-right span {
       position: relative;
       right: -50px; }
-  /* line 129, ../scss/_roadmap.scss */
+  /* line 133, ../scss/_roadmap.scss */
   section.roadmap .dots.pull-left {
     margin-left: 50px; }
-    /* line 132, ../scss/_roadmap.scss */
+    /* line 136, ../scss/_roadmap.scss */
     section.roadmap .dots.pull-left span {
       position: relative;
       left: -50px; }
-  /* line 139, ../scss/_roadmap.scss */
+  /* line 143, ../scss/_roadmap.scss */
   section.roadmap .vertical-line.right {
     border-right: 2px solid black;
     margin-right: 10px;
     padding-right: 20px; }
-  /* line 145, ../scss/_roadmap.scss */
+  /* line 149, ../scss/_roadmap.scss */
   section.roadmap .vertical-line.left {
     border-left: 2px solid black;
     margin-left: 10px;
     padding-left: 20px; }
-  /* line 151, ../scss/_roadmap.scss */
+  /* line 155, ../scss/_roadmap.scss */
   section.roadmap .row.right, section.roadmap .row.left {
     position: relative; }
-  /* line 155, ../scss/_roadmap.scss */
+  /* line 159, ../scss/_roadmap.scss */
   section.roadmap .milestones span {
     font-family: 'Helvetica Neue Light'; }
   @media (min-width: 1200px) {
-    /* line 160, ../scss/_roadmap.scss */
+    /* line 164, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.higher {
       height: 110px !important; }
-    /* line 164, ../scss/_roadmap.scss */
+    /* line 168, ../scss/_roadmap.scss */
     section.roadmap .lines.third {
       top: 52px !important; } }
   @media (min-width: 992px) {
-    /* line 171, ../scss/_roadmap.scss */
+    /* line 175, ../scss/_roadmap.scss */
     section.roadmap .lines {
       position: absolute;
       left: 50%; }
-    /* line 176, ../scss/_roadmap.scss */
+    /* line 180, ../scss/_roadmap.scss */
     section.roadmap .lines.second {
       top: 6px; }
-    /* line 180, ../scss/_roadmap.scss */
+    /* line 184, ../scss/_roadmap.scss */
     section.roadmap .lines.first {
       top: 95px; }
-    /* line 184, ../scss/_roadmap.scss */
+    /* line 188, ../scss/_roadmap.scss */
     section.roadmap .lines.third {
       top: 32px; }
-    /* line 188, ../scss/_roadmap.scss */
+    /* line 192, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line {
       background: #CCCCCC;
       width: 7px;
       height: 110px;
       position: relative;
       margin-top: 40px; }
-    /* line 196, ../scss/_roadmap.scss */
+    /* line 200, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.higher {
       height: 135px; }
-    /* line 200, ../scss/_roadmap.scss */
+    /* line 204, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line:after {
       content: "";
       width: 200px;
@@ -1167,13 +1187,13 @@ section.roadmap {
       left: -6px;
       color: #FFF;
       text-align: center; }
-    /* line 213, ../scss/_roadmap.scss */
+    /* line 217, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.active {
       background: #0BE6D0 !important; }
-    /* line 217, ../scss/_roadmap.scss */
+    /* line 221, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.active:after {
       background: #0BE6D0 !important; }
-    /* line 221, ../scss/_roadmap.scss */
+    /* line 225, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line:after {
       background: #CCCCCC !important; } }
 
@@ -1294,7 +1314,196 @@ section.countdown {
 /* line 1, ../scss/_tokensaleoverview.scss */
 section.token-sale-overview {
   padding-bottom: 10em; }
-  /* line 4, ../scss/_tokensaleoverview.scss */
+  @media (max-width: 768px) {
+    /* line 1, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview {
+      padding-bottom: 1em; } }
+  /* line 8, ../scss/_tokensaleoverview.scss */
+  section.token-sale-overview .dots {
+    background: url(../img/dots.png) repeat-x;
+    height: 20px;
+    margin: 10px 0px; }
+  /* line 14, ../scss/_tokensaleoverview.scss */
+  section.token-sale-overview .box {
+    -webkit-box-shadow: 0px 0px 7px 0px #b3b3b3;
+    -moz-box-shadow: 0px 0px 7px 0px #b3b3b3;
+    box-shadow: 0px 0px 7px 0px #b3b3b3;
+    margin: 30px;
+    border-radius: 7px;
+    padding: 10px 20px;
+    min-height: 200px;
+    height: 45%; }
+    @media (max-width: 768px) {
+      /* line 14, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .box {
+        height: 50%; } }
+    /* line 28, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .sale-title {
+      margin-bottom: 20px;
+      min-width: 86.5px; }
+      /* line 32, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .box .sale-title span {
+        color: #1439AF;
+        font-family: 'Helvetica Neue Bold';
+        font-size: 14pt;
+        top: -4px; }
+    /* line 41, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box > div {
+      padding-left: 10px; }
+    /* line 45, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .image-div {
+      text-align: center;
+      padding: 5px 11px; }
+      /* line 49, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .box .image-div img {
+        margin-bottom: 5px; }
+      /* line 53, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .box .image-div span {
+        font-family: "Helvetica Neue Light";
+        font-size: 20pt; }
+        /* line 57, ../scss/_tokensaleoverview.scss */
+        section.token-sale-overview .box .image-div span b {
+          font-family: "Helvetica Neue Bold";
+          font-size: 21pt; }
+      /* line 63, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .box .image-div span.ico {
+        margin-left: -10px; }
+    /* line 68, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .sub-title {
+      font-family: "Helvetica Neue Light";
+      font-size: 8pt !important; }
+    /* line 73, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box hr {
+      margin: 0;
+      border-color: #0BE6D0; }
+    /* line 78, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box hr.ico {
+      border-color: #00BDFF; }
+    /* line 84, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .boundaries span {
+      font-family: "Helvetica Neue Bold";
+      font-size: 11pt;
+      font-weight: bold; }
+    /* line 90, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .boundaries > div {
+      text-align: center; }
+    /* line 94, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .boundaries span.ico {
+      font-family: "Helvetica Neue Light"; }
+    /* line 99, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .dot {
+      top: 23px;
+      position: absolute; }
+    /* line 104, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .dot.left {
+      left: 16px; }
+    /* line 108, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .dot.right {
+      right: 21px; }
+    /* line 112, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .boundaries-panel {
+      margin: 23pt 14px 0px 8px;
+      border-style: solid;
+      border-width: 0px 3px;
+      height: 55px;
+      padding-top: 12px;
+      text-align: center; }
+      /* line 120, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .box .boundaries-panel > div {
+        margin: 0px 4px 6px 4px;
+        height: 43px;
+        background-repeat: repeat; }
+      /* line 126, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .box .boundaries-panel > div.defined {
+        background: #0884cd;
+        /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(90deg, #00bdff 30%, #0be7ce 100%);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(90deg, #00bdff 30%, #0be7ce 100%);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(90deg, #00bdff 30%, #0be7ce 100%);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(90deg, #00bdff 30%, #0be7ce 100%);
+        /* Standard syntax */ }
+      /* line 134, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .box .boundaries-panel .sub-title {
+        font-family: "Helvetica Neue Light";
+        font-size: 8pt !important; }
+    /* line 140, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box .boundaries-panel.ico {
+      margin-top: 5pt; }
+    /* line 144, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .box > .row:first-child > div:last-child {
+      width: 58%; }
+  /* line 149, ../scss/_tokensaleoverview.scss */
+  section.token-sale-overview .vesting-div {
+    height: 200px; }
+    @media (max-width: 768px) {
+      /* line 153, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .vesting-div > div {
+        padding-left: 0px; } }
+  /* line 159, ../scss/_tokensaleoverview.scss */
+  section.token-sale-overview .chart {
+    padding-top: 30px; }
+  @media (max-width: 768px) {
+    /* line 164, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .clearfix > div:last-child {
+      padding-top: 60px; } }
+  /* line 169, ../scss/_tokensaleoverview.scss */
+  section.token-sale-overview .vesting {
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    background-color: #EAEAEA; }
+    @media (max-width: 768px) {
+      /* line 169, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .vesting {
+        height: 230px;
+        bottom: -65px; } }
+    /* line 181, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .vesting .vesting-title {
+      text-align: center;
+      width: 100%;
+      padding-top: 10px; }
+      /* line 186, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .vesting .vesting-title span {
+        color: #1439AF;
+        font-family: 'Helvetica Neue Bold';
+        font-size: 14pt;
+        top: -4px; }
+      /* line 193, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .vesting .vesting-title hr {
+        width: 120px;
+        margin: 0 auto 15px auto; }
+        @media (max-width: 768px) {
+          /* line 193, ../scss/_tokensaleoverview.scss */
+          section.token-sale-overview .vesting .vesting-title hr {
+            margin-bottom: 0 auto 15px auto; } }
+    /* line 203, ../scss/_tokensaleoverview.scss */
+    section.token-sale-overview .vesting .row {
+      font-size: 10pt;
+      margin: 8px; }
+      @media (max-width: 768px) {
+        /* line 203, ../scss/_tokensaleoverview.scss */
+        section.token-sale-overview .vesting .row {
+          margin: 12px auto; } }
+      /* line 211, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .vesting .row div:first-child {
+        font-family: 'Helvetica Neue Bold';
+        text-align: right; }
+        @media (max-width: 768px) {
+          /* line 211, ../scss/_tokensaleoverview.scss */
+          section.token-sale-overview .vesting .row div:first-child {
+            text-align: center; } }
+      /* line 220, ../scss/_tokensaleoverview.scss */
+      section.token-sale-overview .vesting .row div:last-child {
+        margin: auto; }
+        @media (max-width: 768px) {
+          /* line 220, ../scss/_tokensaleoverview.scss */
+          section.token-sale-overview .vesting .row div:last-child {
+            text-align: center; } }
+  /* line 230, ../scss/_tokensaleoverview.scss */
   section.token-sale-overview img {
     max-width: 100%; }
 
@@ -1502,17 +1711,18 @@ section.monetization {
     width: 180px;
     margin: 0 auto; }
     /* line 17, ../scss/_monetization.scss */
-    section.monetization .circle i {
-      color: white;
-      margin: auto;
-      font-size: 100px; }
-  /* line 24, ../scss/_monetization.scss */
+    section.monetization .circle img {
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); }
+  /* line 25, ../scss/_monetization.scss */
   section.monetization .description {
     margin-top: 20px;
     margin-bottom: 45px;
     font-family: 'Helvetica Neue Bold';
     font-size: 22px !important;
     color: white; }
-  /* line 32, ../scss/_monetization.scss */
+  /* line 33, ../scss/_monetization.scss */
   section.monetization .icon img {
     margin-top: 13px; }

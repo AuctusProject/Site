@@ -1,8 +1,233 @@
 section.token-sale-overview {
-    padding-bottom:10em;
+    padding-bottom: 10em;
 
-    img{
-        max-width:100%;
+    @media(max-width:768px) {
+        padding-bottom: 1em;
     }
-    
+
+    .dots {
+        background: url(../img/dots.png) repeat-x;
+        height: 20px;
+        margin: 10px 0px;
+    }
+
+    .box {
+        -webkit-box-shadow: 0px 0px 7px 0px #b3b3b3;
+        -moz-box-shadow: 0px 0px 7px 0px #b3b3b3;
+        box-shadow: 0px 0px 7px 0px #b3b3b3;
+        margin: 30px;
+        border-radius: 7px;
+        padding: 10px 20px;
+        min-height: 200px;
+        height: 45%;
+
+        @media(max-width:768px) {
+            height: 50%;
+        }
+
+        .sale-title {
+            margin-bottom: 20px;
+            min-width: 86.5px;
+
+            span {
+                color: #1439AF;
+                font-family: 'Helvetica Neue Bold';
+                font-size: 14pt;
+                top: -4px;
+            }
+        }
+
+
+        > div {
+            padding-left: 10px;
+        }
+
+        .image-div {
+            text-align: center;
+            padding: 5px 11px;
+
+            img {
+                margin-bottom: 5px;
+            }
+
+            span {
+                font-family: "Helvetica Neue Light";
+                font-size: 20pt;
+
+                b {
+                    font-family: "Helvetica Neue Bold";
+                    font-size: 21pt;
+                }
+            }
+
+            span.ico {
+                margin-left: -10px;
+            }
+        }
+
+        .sub-title {
+            font-family: "Helvetica Neue Light";
+            font-size: 8pt !important;
+        }
+
+        hr {
+            margin: 0;
+            border-color: #0BE6D0;
+        }
+
+        hr.ico {
+            border-color: #00BDFF;
+        }
+
+
+        .boundaries {
+            span {
+                font-family: "Helvetica Neue Bold";
+                font-size: 11pt;
+                font-weight: bold;
+            }
+
+            > div {
+                text-align: center;
+            }
+
+            span.ico {
+                font-family: "Helvetica Neue Light";
+            }
+        }
+
+        .dot {
+            top: 23px;
+            position: absolute;
+        }
+
+        .dot.left {
+            left: 16px;
+        }
+
+        .dot.right {
+            right: 21px;
+        }
+
+        .boundaries-panel {
+            margin: 23pt 14px 0px 8px;
+            border-style: solid;
+            border-width: 0px 3px;
+            height: 55px;
+            padding-top: 12px;
+            text-align: center;
+
+            > div {
+                margin: 0px 4px 6px 4px;
+                height: 43px;
+                background-repeat: repeat;
+            }
+
+            > div.defined {
+                background: #0884cd; /* For browsers that do not support gradients */
+                background: -webkit-linear-gradient( 90deg, #00bdff 30%, #0be7ce 100%); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient( 90deg, #00bdff 30%, #0be7ce 100%); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient( 90deg, #00bdff 30%, #0be7ce 100%); /* For Firefox 3.6 to 15 */
+                background: linear-gradient( 90deg, #00bdff 30%, #0be7ce 100%); /* Standard syntax */
+            }
+
+            .sub-title {
+                font-family: "Helvetica Neue Light";
+                font-size: 8pt !important;
+            }
+        }
+
+        .boundaries-panel.ico {
+            margin-top: 5pt;
+        }
+
+        > .row:first-child > div:last-child {
+            width: 58%;
+        }
+    }
+
+    .vesting-div {
+        height: 200px;
+
+        @media (max-width:768px) {
+            > div {
+                padding-left: 0px;
+            }
+        }
+    }
+
+    .chart {
+        padding-top: 30px;
+    }
+
+    @media(max-width:768px) {
+        .clearfix > div:last-child {
+            padding-top: 60px;
+        }
+    }
+
+    .vesting {
+        height: 180px;
+        width: 100%;
+        position: absolute;
+        bottom: -10px;
+        background-color: #EAEAEA;
+
+        @media (max-width:768px) {
+            height: 230px;
+            bottom: -65px;
+        }
+
+        .vesting-title {
+            text-align: center;
+            width: 100%;
+            padding-top: 10px;
+
+            span {
+                color: #1439AF;
+                font-family: 'Helvetica Neue Bold';
+                font-size: 14pt;
+                top: -4px;
+            }
+
+            hr {
+                width: 120px;
+                margin: 0 auto 15px auto;
+
+                @media (max-width:768px) {
+                    margin-bottom: 0 auto 15px auto;
+                }
+            }
+        }
+
+        .row {
+            font-size: 10pt;
+            margin: 8px;
+
+            @media (max-width:768px) {
+                margin: 12px auto;
+            }
+
+            div:first-child {
+                font-family: 'Helvetica Neue Bold';
+                text-align: right;
+
+                @media(max-width:768px) {
+                    text-align: center;
+                }
+            }
+
+            div:last-child {
+                margin: auto;
+
+                @media(max-width:768px) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
 }

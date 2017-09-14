@@ -36,3 +36,17 @@ section.team {
         top: 0px;
     }
 }
+img.v {
+    position: fixed;
+    z-index: 100000;
+    bottom: -440px;
+    left: -235px;
+    transform: rotate(21deg);
+    transition: all 0.2s;
+}
+
+img.v.visible {
+    transition: all 0.2s;
+    bottom: -36px !important;
+    left: -21px !important;
+}

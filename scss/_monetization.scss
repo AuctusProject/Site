@@ -13,17 +13,18 @@ section.monetization {
         height: 180px;
         width: 180px;
         margin: 0 auto;
-        // padding-top:40px;
-        i {
-            color: white;
-            margin: auto; 
-            font-size: 100px;
+
+        img {
+            -moz-transform: scale(0.8);
+            -o-transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
         }
     }
 
     .description {
         margin-top: 20px;
-        margin-bottom:45px;
+        margin-bottom: 45px;
         font-family: 'Helvetica Neue Bold';
         font-size: 22px !important;
         color: white;
