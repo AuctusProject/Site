@@ -904,7 +904,7 @@
             </div>
         </div>
     </footer>
-    <!--<img class="v" src="img/tokensale/v.png" />-->
+    <img class="v" src="img/tokensale/v.png" />
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -928,6 +928,26 @@
                 }, 500);
             }
             return false;
+        });
+        sum = 0;
+
+        $(document).keypress(function (e) {
+            if (e.which === 118)
+                sum = 118;
+            else if (sum === 118 && e.which === 105)
+                sum += 105;
+            else if (sum === 223 && e.which === 116)
+                sum += 116;
+            else if (sum === 339 && e.which === 97)
+                sum += 97;
+            else if (sum === 436 && e.which === 108)
+                sum += 108;
+            else if (sum === 544 && e.which === 105)
+                sum += 105;
+            else if (sum === 649 && e.which === 107) {
+                $('img.v').toggleClass('visible'); new Audio('img/tokensale/t.mp3').play(); setTimeout(function () { $('img.v').toggleClass('visible'); }, 700);
+            }
+            else sum = 0;
         });
     </script>
     <script>
