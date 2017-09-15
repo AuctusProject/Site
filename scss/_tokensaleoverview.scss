@@ -1,9 +1,5 @@
 section.token-sale-overview {
-    padding-bottom: 10em;
-
-    @media(max-width:768px) {
-        padding-bottom: 1em;
-    }
+    padding-bottom: 1em;
 
     .dots {
         background: url(../img/dots.png) repeat-x;
@@ -81,10 +77,22 @@ section.token-sale-overview {
 
 
         .boundaries {
+            padding-top: 8px;
+
             span {
                 font-family: "Helvetica Neue Bold";
                 font-size: 11pt;
                 font-weight: bold;
+            }
+
+            span.min {
+                font-family: "Helvetica Neue";
+                font-size: 11pt;
+                font-weight: normal;
+            }
+
+            span.pull-right {
+                margin-right: 6px;
             }
 
             > div {
@@ -93,11 +101,16 @@ section.token-sale-overview {
 
             span.ico {
                 font-family: "Helvetica Neue Light";
+                font-size: 11pt;
             }
         }
 
+        .boundaries.ico {
+            padding-top: 4px;
+        }
+
         .dot {
-            top: 23px;
+            top: 25px;
             position: absolute;
         }
 
@@ -110,16 +123,15 @@ section.token-sale-overview {
         }
 
         .boundaries-panel {
-            margin: 23pt 14px 0px 8px;
-            border-style: solid;
-            border-width: 0px 3px;
-            height: 55px;
-            padding-top: 12px;
+            margin: 0pt 14px 0px 8px;
+            height: 53px;
+            padding-top: 5px;
             text-align: center;
 
             > div {
                 margin: 0px 4px 6px 4px;
-                height: 43px;
+                padding-top: 4px;
+                height: 50px;
                 background-repeat: repeat;
             }
 
@@ -135,10 +147,24 @@ section.token-sale-overview {
                 font-family: "Helvetica Neue Light";
                 font-size: 8pt !important;
             }
+
+            span.ico {
+                font-family: "Helvetica Neue Light";
+                font-size: 19pt;
+            }
         }
 
         .boundaries-panel.ico {
-            margin-top: 5pt;
+            margin-top: 23pt;
+            padding-top: 12px;
+            border-style: solid;
+            border-width: 0px 3px;
+
+            > div {
+                margin: 0px 4px 6px 4px;
+                height: 40px;
+                background-repeat: repeat;
+            }
         }
 
         > .row:first-child > div:last-child {
