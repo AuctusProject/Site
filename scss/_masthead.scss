@@ -127,6 +127,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .button-div {
+        margin-bottom: 30px;
+    }
+}
+
 .quarter-circle {
     background-color: white;
     border-bottom-left-radius: 100%;
