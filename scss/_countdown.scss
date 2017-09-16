@@ -41,6 +41,11 @@ section.countdown {
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    @media (max-width: 768px) {
+        .join-whitelist{
+            margin: 15px;
+        }
+    }
 
     .join-whitelist {
         text-align: center;
