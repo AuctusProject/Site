@@ -49,14 +49,6 @@ header.faq-masthead {
         }
     }
 
-
-
-
-
-
-
-
-
     .top-left {
         position: absolute;
         margin-left: 6%;
@@ -356,5 +348,14 @@ section.faq {
                 padding-left: 20px;
             }
         }
+    }
+
+    .faq-content-link {
+        font-size: 18px !important;
+        color: #292b2c;
+    }
+
+    .faq-content-link:before {
+        content: none !important;
     }
 }

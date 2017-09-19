@@ -56,7 +56,7 @@ section {
     text-align: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .section-heading {
         margin-bottom: 5rem;
     }
@@ -84,15 +84,16 @@ hr {
     -webkit-box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.4);
     -moz-box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.4);
     box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.4);
-    border-radius : 5px;
-  -moz-border-radius : 5px;
-  -webkit-border-radius : 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
     span {
         font-family: 'Helvetica Neue Bold';
         text-transform: uppercase;
         font-size: 14px;
     }
-}  
+}
 
 .text-white, .text-white h2, .text-white h3 {
     color: white;
@@ -103,7 +104,7 @@ hr {
     height: 20px;
 }
 
-.dots.bottom{
+.dots.bottom {
     position: relative !important;
     bottom: 0;
 }
@@ -131,10 +132,10 @@ hr {
     background: linear-gradient(0deg, rgb(216,249,255) 25%, #ffffff 75%); /* Standard syntax */
 }
 
-.adjust-top{
-    position:relative;
-    top:-80px;
-    z-index:-2;
+.adjust-top {
+    position: relative;
+    top: -80px;
+    z-index: -2;
 }
 
 .background-market-monetization {
@@ -148,14 +149,14 @@ hr {
         width: 100%;
     }
 
-    .transition-gradient-after{
+    .transition-gradient-after {
         z-index: -2;
         width: 100%;
     }
 }
 
 .background-market-monetization-first,
-.background-market-monetization-second{
+.background-market-monetization-second {
     display: block;
     width: calc(100% + 200px);
     position: absolute;
@@ -198,7 +199,7 @@ hr {
     padding: 0;
 }
 
-a.wp-button{
+a.wp-button {
     color: white;
     text-decoration: none;
 }
@@ -206,4 +207,8 @@ a.wp-button{
 a.linkedin-button {
     text-decoration: none;
     color: black;
+}
+
+.sections-video-countdown {
+    position: relative;
 }

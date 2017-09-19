@@ -30,7 +30,7 @@
         }
 
         @media (max-width: 576px) {
-            nav>.container {
+            nav > .container {
                 width: 100%;
             }
         }
@@ -42,7 +42,7 @@
 
     <header class="masthead ">
         <div class="device-container" onclick="/*$('img.v').toggleClass('visible'); new Audio('img/tokensale/t.mp3').play(); setTimeout(function () { $('img.v').toggleClass('visible'); }, 700);*/ ">
-            <div class="top-left" >
+            <div class="top-left">
                 <img class="img-responsive" src="img/header/topleftdots.png" />
             </div>
             <div class="top-header">
@@ -86,7 +86,7 @@
                 <h3 class="web-only col-md-7 no-padding">
                     Through smart contract auditable code the Auctus Platform will ensure full transparency and compliance
                 </h3>
-                <div onclick="downloadWhitepaper()" class="button-div" >
+                <div onclick="downloadWhitepaper()" class="button-div">
                     <a onclick="downloadWhitepaper()" class="wp-button"><i class="fa fa-file-o"></i> Download the whitepaper</a>
                 </div>
             </div>
@@ -232,48 +232,60 @@
             </div>
         </div>
     </section>
-    <section class="countdown" id="countdown">
-        <div class="section-heading inverted text-center">
-            <h2>THE PRE-SALE IS COMING</h2>
-            <h3>SAVE THE DATE</h3>
-            <hr width="100px" />
-            <h3 class="sales-date">SALE STARTS ON <br class="mobile-only" /><br class="mobile-only" /><span>OCTOBER 3rd - 02:00 PM GMT</span></h3>
-        </div>
-        <div class="timer">
-            <div>
-                <div class="time-part days">
-                    <div class="box">
-                        <div class="time-value">0</div>
-                        <div class="time-label">DAYS</div>
-                    </div>
-                </div>
-                <div class="time-part hours">
-                    <div class="box">
-                        <div class="time-value">0</div>
-                        <div class="time-label">HOURS</div>
-                    </div>
-                </div>
+    <div class="sections-video-countdown">
+        <div class="blue-background"></div>
+        <section class="video" id="video">
+            <div class="section-heading text-center">
+                <h2>AUCTUS IN ONE MINUTE</h2>
+                <hr width="100px"></hr>
             </div>
-            <div>
-                <div class="time-part minutes">
-                    <div class="box">
-                        <div class="time-value">0</div>
-                        <div class="time-label">MINUTES</div>
-                    </div>
-                </div>
-                <div class="time-part seconds">
-                    <div class="box">
-                        <div class="time-value">0</div>
-                        <div class="time-label">SECONDS</div>
-                    </div>
-                </div>
+            <div class="text-center">
+                <iframe class="video-iframe"  src="https://www.youtube.com/embed/KpjntAKS9XU?start=0&rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
-        </div>
-        <div class="join-whitelist">
-            <a onclick="joinWhitelist()" id="open-mc-popup" class="btn btn-secondary">JOIN THE WHITELIST</a>
-        </div>
-    </section>
+        </section>
 
+        <section class="countdown" id="countdown">
+            <div class="section-heading inverted text-center">
+                <h2>THE PRE-SALE IS COMING</h2>
+                <h3>SAVE THE DATE</h3>
+                <hr width="100px" />
+                <h3 class="sales-date">SALE STARTS ON <br class="mobile-only" /><br class="mobile-only" /><span>OCTOBER 3rd - 02:00 PM GMT</span></h3>
+            </div>
+            <div class="timer">
+                <div>
+                    <div class="time-part days">
+                        <div class="box">
+                            <div class="time-value">0</div>
+                            <div class="time-label">DAYS</div>
+                        </div>
+                    </div>
+                    <div class="time-part hours">
+                        <div class="box">
+                            <div class="time-value">0</div>
+                            <div class="time-label">HOURS</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="time-part minutes">
+                        <div class="box">
+                            <div class="time-value">0</div>
+                            <div class="time-label">MINUTES</div>
+                        </div>
+                    </div>
+                    <div class="time-part seconds">
+                        <div class="box">
+                            <div class="time-value">0</div>
+                            <div class="time-label">SECONDS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="join-whitelist">
+                <a onclick="joinWhitelist()" id="open-mc-popup" class="btn btn-secondary">JOIN THE WHITELIST</a>
+            </div>
+        </section>
+    </div>
 
 
     <div class="background-market-monetization" id="market">
@@ -529,7 +541,7 @@
                     <div class="box">
                         <div class="row">
                             <div class="sale-title pull-left">
-                                <span >PRESALE</span>
+                                <span>PRESALE</span>
                                 <hr />
                             </div>
                             <div class="col-md-9"><div class="dots"></div></div>
@@ -849,7 +861,7 @@
 
     <section class="newsletter" id="newsletter">
         <form action="//auctus.us16.list-manage.com/subscribe/post?u=e6c2bc48f91f09fab4afe5bee&amp;id=b39ba220eb" method="post" id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="back">
                 <div class="container">
                     <div class="text-white section-heading text-center">
@@ -859,7 +871,7 @@
                     <div class="row clearfix">
                         <div class="offset-md-3 input-group col-md-6">
                             <input name="EMAIL" class="required email form-control" id="mce-EMAIL" type="text" class="form-control" placeholder="Enter your email"
-                                aria-label="Enter your email">
+                                   aria-label="Enter your email">
                             <span class="input-group-btn">
                                 <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">SUBSCRIBE</button>
                             </span>
