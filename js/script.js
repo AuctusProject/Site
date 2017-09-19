@@ -38,9 +38,6 @@
         $(".time-part.seconds .time-value").html(seconds);
     };
 
-    $(document).keypress(function (e) {
-        alert(e.which);
-    });
 })(jQuery); // End of use strict
 
 function joinWhitelist() {
