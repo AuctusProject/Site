@@ -1,6 +1,6 @@
 // Styling for the features section
 section.about {
-
+    padding-top:0;
     background : -moz-linear-gradient(44.48% 12.16% -78.67deg,rgba(255, 255, 255, 1) 22.35%,rgba(157, 230, 255, 1) 58.05%,rgba(158, 242, 240, 1) 75.95%,rgba(255, 255, 255, 1) 93.96%);
     background : -webkit-linear-gradient(-78.67deg, rgba(255, 255, 255, 1) 22.35%, rgba(157, 230, 255, 1) 58.05%, rgba(158, 242, 240, 1) 75.95%, rgba(255, 255, 255, 1) 93.96%);
     background : -webkit-gradient(linear,44.48% 12.16% ,56.58% 95.11% ,color-stop(0.2235,rgba(255, 255, 255, 1) ),color-stop(0.5805,rgba(157, 230, 255, 1) ),color-stop(0.7595,rgba(158, 242, 240, 1) ),color-stop(0.9396,rgba(255, 255, 255, 1) ));
