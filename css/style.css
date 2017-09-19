@@ -219,8 +219,7 @@ header.faq-masthead {
       -o-transform: scale(1.2);
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
-      top: 200px;
-      right: 0; } }
+      top: 200px; } }
   @media (max-width: 1200px) {
     .envelope {
       -moz-transform: scale(0.7);
