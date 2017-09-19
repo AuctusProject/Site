@@ -227,8 +227,7 @@ header.faq-masthead {
       -o-transform: scale(0.7);
       -webkit-transform: scale(0.7);
       transform: scale(0.7);
-      top: 50px;
-      right: -260px; } }
+      top: 50px; } }
   @media (max-width: 768px) {
     .envelope {
       display: block;
@@ -274,6 +273,9 @@ section.faq {
     color: #292b2c; }
   section.faq .faq-content-link:before {
     content: none !important; }
+  @media (max-width: 768px) {
+    section.faq h2 {
+      font-size: 23pt !important; } }
 
 @font-face {
   font-family: 'Helvetica Neue Light';

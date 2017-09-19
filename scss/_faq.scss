@@ -291,7 +291,6 @@ header.faq-masthead {
         -webkit-transform: scale(0.7);
         transform: scale(0.7);
         top: 50px;
-        right: -260px;
     }
 
 
@@ -358,4 +357,11 @@ section.faq {
     .faq-content-link:before {
         content: none !important;
     }
+
+    h2 {
+        @media (max-width:768px) {
+            font-size: 23pt !important;
+        }
+    }
 }
+
