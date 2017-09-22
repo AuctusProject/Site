@@ -1,5 +1,5 @@
 section.market {
-    
+
     .waves-img-left {
         position: absolute;
         z-index: -1;
@@ -216,5 +216,11 @@ section.market {
         width: 200px;
         left: calc(50% - 100px);
         position: relative;
+    }
+
+    .market-overview-source {
+        font-size: 12px;
+        color: #fff;
+        margin-top: 25px;
     }
 }
