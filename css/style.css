@@ -203,9 +203,9 @@ header.faq-masthead {
         header.faq-masthead .text-container h1 {
           font-size: 27pt; }
         header.faq-masthead .text-container h2 {
-          font-size: 15pt !important; }
+          font-size: 12pt !important; }
         header.faq-masthead .text-container h3 {
-          font-size: 13pt !important; } }
+          font-size: 10pt !important; } }
 
 .envelope {
   position: absolute;
@@ -242,22 +242,27 @@ section.faq {
   padding-top: 5rem !important; }
   section.faq .item a {
     font-family: "Helvetica Neue";
-    font-size: 23pt;
+    font-size: 20pt;
     color: #002D78;
     text-decoration: none !important; }
     @media (max-width: 768px) {
       section.faq .item a {
-        font-size: 17pt; } }
+        font-size: 14pt; } }
+  section.faq .item p {
+    font-size: 14pt; }
+    @media (max-width: 768px) {
+      section.faq .item p {
+        font-size: 12pt; } }
   section.faq .item a:before {
     font-family: FontAwesome;
-    font-size: 30pt;
+    font-size: 27pt;
     content: "\f105";
     color: black;
     margin-right: 40px; }
     @media (max-width: 768px) {
       section.faq .item a:before {
         margin-right: 15px;
-        font-size: 23pt; } }
+        font-size: 20pt; } }
   section.faq .item > div {
     border-left: solid;
     padding-left: 40px;
@@ -268,13 +273,18 @@ section.faq {
         margin: 15px 0 15px 10px;
         padding-left: 20px; } }
   section.faq .faq-content-link {
-    font-size: 18px !important;
+    font-size: 14pt !important;
     color: #292b2c; }
+    @media (max-width: 768px) {
+      section.faq .faq-content-link {
+        font-size: 12pt !important; } }
   section.faq .faq-content-link:before {
     content: none !important; }
-  @media (max-width: 768px) {
-    section.faq h2 {
-      font-size: 23pt !important; } }
+  section.faq h2 {
+    font-size: 23pt !important; }
+    @media (max-width: 768px) {
+      section.faq h2 {
+        font-size: 17pt !important; } }
 
 @font-face {
   font-family: 'Helvetica Neue Light';

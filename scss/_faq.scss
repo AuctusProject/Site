@@ -259,11 +259,11 @@ header.faq-masthead {
             }
 
             h2 {
-                font-size: 15pt !important;
+                font-size: 12pt !important;
             }
 
             h3 {
-                font-size: 13pt !important;
+                font-size: 10pt !important;
             }
         }
     }
@@ -313,25 +313,33 @@ section.faq {
     .item {
         a {
             font-family: "Helvetica Neue";
-            font-size: 23pt;
+            font-size: 20pt;
             color: #002D78;
             text-decoration: none !important;
 
             @media (max-width:768px) {
-                font-size: 17pt;
+                font-size: 14pt;
+            }
+        }
+
+        p {
+            font-size: 14pt;
+
+            @media (max-width:768px) {
+                font-size: 12pt;
             }
         }
 
         a:before {
             font-family: FontAwesome;
-            font-size: 30pt;
+            font-size: 27pt;
             content: "\f105";
             color: black;
             margin-right: 40px;
 
             @media (max-width:768px) {
                 margin-right: 15px;
-                font-size: 23pt;
+                font-size: 20pt;
             }
         }
 
@@ -349,8 +357,12 @@ section.faq {
     }
 
     .faq-content-link {
-        font-size: 18px !important;
+        font-size: 14pt !important;
         color: #292b2c;
+
+        @media (max-width:768px) {
+            font-size: 12pt !important;
+        }
     }
 
     .faq-content-link:before {
@@ -358,8 +370,10 @@ section.faq {
     }
 
     h2 {
+        font-size: 23pt !important;
+
         @media (max-width:768px) {
-            font-size: 23pt !important;
+            font-size: 17pt !important;
         }
     }
 }
