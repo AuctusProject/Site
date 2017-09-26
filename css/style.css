@@ -1803,3 +1803,21 @@ section.smartcontract {
   .video-iframe {
     width: 800px;
     height: 450px; } }
+
+.confirm-body {
+  background: #eeeeee;
+  text-align: center; }
+  .confirm-body h2 {
+    font-size: 22px !important; }
+  .confirm-body img {
+    margin-top: 20px; }
+  .confirm-body .confirm-card {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px; }
+    .confirm-body .confirm-card .confirm-card-content {
+      font-family: 'Helvetica Neue';
+      font-size: 0.9rem; }

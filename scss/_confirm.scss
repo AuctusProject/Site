@@ -1,0 +1,27 @@
+.confirm-body {
+    background: #eeeeee;
+    text-align: center;
+
+    h2{
+        font-size: 22px !important;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+
+    .confirm-card {
+        background: white;
+        max-width: 600px;
+        margin: auto;
+        border-radius: 5px;
+        text-align: left;
+        padding: 20px;
+
+        .confirm-card-content{
+            font-family: 'Helvetica Neue';
+            font-size: 0.9rem;
+
+        }
+    }
+}

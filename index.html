@@ -135,6 +135,7 @@
                 <h3>SAVE THE DATE</h3>
                 <hr width="100px" />
                 <h3 class="sales-date">SALE STARTS ON <br class="mobile-only" /><br class="mobile-only" /><span>OCTOBER 3rd - 02:00 PM GMT</span></h3>
+                <h3 class="sales-date">WHITELIST REGISTRATION OPEN UNTIL <br class="mobile-only" /><br class="mobile-only" /><span>SEPT 30th</span></h3>
             </div>
             <div class="timer">
                 <div>
@@ -975,7 +976,27 @@
         ga('create', 'UA-106121445-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2025966277638951');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=2025966277638951&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </body>
 
 </html>
