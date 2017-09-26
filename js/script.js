@@ -4,7 +4,7 @@
     var interval = setInterval(onTimer, 1000);
 
     function onTimer() {
-        var presaleDate = Date.UTC(2017, 8, 30, 14);
+        var presaleDate = Date.UTC(2017, 8, 30, 23, 59);
         
         var diff = presaleDate - new Date().getTime();
         if (diff < 0) {
