@@ -3,7 +3,7 @@
     var preSaleInterval = setInterval(onPreSaleTimer, 1000);
 
     function onPreSaleRegistrationTimer() {
-        var date = Date.UTC(2017, 8, 30, 23, 59);
+        var date = Date.UTC(2017, 9, 1, 0, 0);
         
         var element = $('.whitelist-registration-timer');
         var diff = date - new Date().getTime();
