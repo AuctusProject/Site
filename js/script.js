@@ -1,16 +1,33 @@
 (function($) {
-    "use strict"; // Start of use strict    
+    var whiteListRegistrationInterval = setInterval(onPreSaleRegistrationTimer, 1000);
+    var preSaleInterval = setInterval(onPreSaleTimer, 1000);
 
-    var interval = setInterval(onTimer, 1000);
-
-    function onTimer() {
-        var presaleDate = Date.UTC(2017, 8, 30, 23, 59);
+    function onPreSaleRegistrationTimer() {
+        var date = Date.UTC(2017, 8, 30, 23, 59);
         
-        var diff = presaleDate - new Date().getTime();
+        var element = $('.whitelist-registration-timer');
+        var diff = date - new Date().getTime();
         if (diff < 0) {
-            updateCountdown(0, 0, 0, 0);
-            clearInterval(interval);
+            element.css('display', 'none');
+            $('.presale-timer').css('display', 'block');
+            clearInterval(whiteListRegistrationInterval);
         }
+        updateTimer(element, diff);
+    };
+
+    function onPreSaleTimer() {
+        var date = Date.UTC(2017, 9, 3, 14, 00);
+        
+        var element = $('.presale-timer');
+        var diff = date - new Date().getTime();
+        if (diff < 0) {
+            updateCountdown(element, 0, 0, 0, 0);
+            clearInterval(preSaleInterval);
+        }
+        updateTimer(element, diff);
+    };
+
+    function updateTimer(element, diff){
         var secondInMiliseconds = 1000;
         var minuteInMiliseconds = 60 * secondInMiliseconds;
         var hourInMiliseconds = 60 * minuteInMiliseconds;
@@ -28,14 +45,14 @@
         var seconds = Math.floor(diff / secondInMiliseconds);
         diff -= seconds * secondInMiliseconds;
 
-        updateCountdown(days, hours, mins, seconds);
-    };
+        updateCountdown(element, days, hours, mins, seconds);
+    }
 
-    function updateCountdown(days, hours, minutes, seconds) {
-        $(".time-part.days .time-value").html(days);
-        $(".time-part.hours .time-value").html(hours);
-        $(".time-part.minutes .time-value").html(minutes);
-        $(".time-part.seconds .time-value").html(seconds);
+    function updateCountdown(element, days, hours, minutes, seconds) {
+        element.find(".time-part.days .time-value").html(days);
+        element.find(".time-part.hours .time-value").html(hours);
+        element.find(".time-part.minutes .time-value").html(minutes);
+        element.find(".time-part.seconds .time-value").html(seconds);
     };
 
 })(jQuery); // End of use strict
