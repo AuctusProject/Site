@@ -2052,3 +2052,5 @@ header.check-masthead {
     display: none; }
   header.check-masthead #invalidAddress {
     font-weight: bold; }
+  header.check-masthead .text-white a {
+    color: white; }
