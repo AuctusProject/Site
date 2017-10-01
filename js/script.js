@@ -1,30 +1,18 @@
 (function($) {
-    var whiteListRegistrationInterval = setInterval(onPreSaleRegistrationTimer, 1000);
     var preSaleInterval = setInterval(onPreSaleTimer, 1000);
-
-    function onPreSaleRegistrationTimer() {
-        var date = Date.UTC(2017, 9, 1, 0, 0);
-        
-        var element = $('.whitelist-registration-timer');
-        var diff = date - new Date().getTime();
-        if (diff < 0) {
-            element.css('display', 'none');
-            $('.presale-timer').css('display', 'block');
-            clearInterval(whiteListRegistrationInterval);
-        }
-        updateTimer(element, diff);
-    };
 
     function onPreSaleTimer() {
         var date = Date.UTC(2017, 9, 3, 14, 00);
         
-        var element = $('.presale-timer');
+        var element = $('.timer');
         var diff = date - new Date().getTime();
         if (diff < 0) {
             updateCountdown(element, 0, 0, 0, 0);
             clearInterval(preSaleInterval);
         }
-        updateTimer(element, diff);
+        else {
+            updateTimer(element, diff);
+        }
     };
 
     function updateTimer(element, diff){
