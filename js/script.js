@@ -49,6 +49,7 @@
 
     $('#reveal-address').click(function () {
         $('#button-area').hide();
+        $('#checkbox-area').hide();
         $('#address-area').show();
     });
 
