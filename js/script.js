@@ -47,6 +47,11 @@
         onChangeTermsCheckbox();
     });
 
+    $('#reveal-address').click(function () {
+        $('#button-area').hide();
+        $('#address-area').show();
+    });
+
 })(jQuery); // End of use strict
 
 function joinWhitelist() {
