@@ -356,6 +356,12 @@ header.presale-masthead {
         display: block;
     }
 
+    a.btn.not-active {
+        opacity: 0.45;
+        pointer-events: none;
+        cursor: default;
+    }
+
     .bottom-waves {
         min-height: 150px;
         width: 100%;

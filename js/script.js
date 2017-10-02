@@ -2,7 +2,7 @@
     var preSaleInterval = setInterval(onPreSaleTimer, 1000);
 
     function onPreSaleTimer() {
-        var date = Date.UTC(2017, 9, 3, 14, 00);
+        var date = Date.UTC(2017, 9, 6, 14, 00);
         
         var element = $('.timer');
         var diff = date - new Date().getTime();
@@ -43,6 +43,10 @@
         element.find(".time-part.seconds .time-value").html(seconds);
     };
 
+    $(".i-agree-checkbox").change(function () {
+        onChangeTermsCheckbox();
+    });
+
 })(jQuery); // End of use strict
 
 function joinWhitelist() {
@@ -66,4 +70,15 @@ function registerClickEvent(category) {
         eventCategory: category,
         eventAction: 'click'
     });
+}
+
+function onChangeTermsCheckbox() {
+    var allChecked = $('.i-agree-checkbox:checked').length == $('.i-agree-checkbox').length;
+
+    if (allChecked && $('#reveal-address').hasClass('not-active')) {
+        $('#reveal-address').removeClass('not-active');
+    }
+    if (!allChecked && !$('#reveal-address').hasClass('not-active')) {
+        $('#reveal-address').addClass('not-active');
+    }
 }
