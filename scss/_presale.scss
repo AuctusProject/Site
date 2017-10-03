@@ -343,31 +343,123 @@ header.presale-masthead {
     a.btn {
         position: relative;
         z-index: 1000;
-        padding: 15px 65px;
+        padding: 15px 55px;
         font-family: 'Helvetica Neue Bold';
         font-size: 20pt;
         letter-spacing: 3px;
         background: #030387;
         color: #00fcfc;
         cursor: pointer;
-        border: 0;
         max-width: 380px;
         margin: 40px auto;
         display: block;
+        border-radius: 5px;
     }
 
-    a.btn.not-active {
-        opacity: 0.45;
-        pointer-events: none;
-        cursor: default;
+    a.btn:active, a.btn:focus {
+        outline: 0;
+        -moz-outline-style: none
     }
+    
+
+
 
     .bottom-waves {
         min-height: 150px;
         width: 100%;
         position: absolute;
         bottom: 0px;
-        background-image: url("../img/presale/waves.png")
+        background-image: url("../img/presale/waves.png");
+        pointer-events: none;
+    }
+
+    .modal .popup-title{
+        text-align: center;
+        font-family: 'Helvetica Neue Bold';
+        font-size: 26px;
+        color: #002D78;
+    }
+
+    .modal .popup-subtitle{
+        text-align: center;
+        font-family: 'Helvetica Neue Bold';
+        font-size: 16px;
+        color: #4D4D4D;
+    }
+
+    .modal-dialog{
+        max-width: 600px !important;    
+    }
+
+    .modal p{
+        font-family: 'Helvetica Neue Light';
+        color: #4D4D4D;
+        font-size: 14px;
+    }
+
+    .modal-body{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .modal-header {
+        border-bottom: none !important;
+    }
+
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 40px;
+    }
+
+    .popup-footer{
+        text-align: center;
+        margin-bottom: 30px;
+
+        .btn {
+            padding: 15px 45px;
+            font-family: 'Helvetica Neue Bold';
+            font-size: 16pt;
+            letter-spacing: 3px;
+            background: #00B1FF;
+            color: #002D78;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .copy-button {
+            display: none;
+            min-width: 300px;
+        }
+    }
+
+    .address-copy {
+        .ens-address{
+            margin-top: 40px;
+            font-size: 24px;
+            text-align: center;
+            font-family: 'Helvetica Neue Bold';
+        }
+        .separator{
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Helvetica Neue Light';
+        }
+
+        p.text-box{
+            text-align: center;
+            input {
+                padding: 10px;
+                min-width: 500px;
+                text-align: center;
+                font-size: 14pt;
+                font-family: 'Helvetica Neue Light';
+                outline: none;
+            }
+        }
     }
 }
 

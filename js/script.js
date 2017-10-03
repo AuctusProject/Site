@@ -43,17 +43,33 @@
         element.find(".time-part.seconds .time-value").html(seconds);
     };
 
-    $(".i-agree-checkbox").change(function () {
-        onChangeTermsCheckbox();
-    });
+    $('#addressModal').on('hidden.bs.modal', function () {
+        onCloseAgreementPopup();
+    })
 
-    $('#reveal-address').click(function () {
-        $('#button-area').hide();
-        $('#checkbox-area').hide();
-        $('#address-area').show();
-    });
+    new Clipboard('.copy-button');
 
 })(jQuery); // End of use strict
+
+function onAgreePreSale(){
+    $('.agree-terms').css('display', 'none');
+    $('.agree-button').css('display', 'none');
+    $('.address-copy').css('display', 'block');
+    $('.copy-button').css('display', 'block');
+}
+
+function onCloseAgreementPopup(){
+    $('.agree-terms').css('display', 'block');
+    $('.agree-button').css('display', 'block');
+    $('.address-copy').css('display', 'none');
+    $('.copy-button').css('display', 'none');
+}
+
+function onCopyAddress(){
+    $('.copy-button').text('COPIED!');
+}
+
+
 
 function joinWhitelist() {
     openNewTab("https://auctus.us16.list-manage2.com/subscribe?u=e6c2bc48f91f09fab4afe5bee&id=63a6a00141");
@@ -81,15 +97,4 @@ function registerClickEvent(category) {
         eventCategory: category,
         eventAction: 'click'
     });
-}
-
-function onChangeTermsCheckbox() {
-    var allChecked = $('.i-agree-checkbox:checked').length == $('.i-agree-checkbox').length;
-
-    if (allChecked && $('#reveal-address').hasClass('not-active')) {
-        $('#reveal-address').removeClass('not-active');
-    }
-    if (!allChecked && !$('#reveal-address').hasClass('not-active')) {
-        $('#reveal-address').addClass('not-active');
-    }
 }
