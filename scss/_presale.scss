@@ -356,16 +356,15 @@ header.presale-masthead {
         border-radius: 5px;
     }
 
-    a.btn.focus, a.btn:focus{
+    a.btn.focus, a.btn:focus {
         outline: none !important;
         box-shadow: none !important;
         -moz-outline-style: none !important;
     }
 
-    @media (max-width: 768px)
-    {
+    @media (max-width: 768px) {
         a.btn {
-            margin: 20px;
+            margin: 20px auto;
             padding: 15px 30px !important;
         }
     }
@@ -374,7 +373,7 @@ header.presale-masthead {
         outline: 0;
         -moz-outline-style: none
     }
-    
+
 
 
 
@@ -387,31 +386,31 @@ header.presale-masthead {
         pointer-events: none;
     }
 
-    .modal .popup-title{
+    .modal .popup-title {
         text-align: center;
         font-family: 'Helvetica Neue Bold';
         font-size: 26px;
         color: #002D78;
     }
 
-    .modal .popup-subtitle{
+    .modal .popup-subtitle {
         text-align: center;
         font-family: 'Helvetica Neue Bold';
         font-size: 16px;
         color: #4D4D4D;
     }
 
-    .modal-dialog{
-        max-width: 600px !important;    
+    .modal-dialog {
+        max-width: 600px !important;
     }
 
-    .modal p{
+    .modal p {
         font-family: 'Helvetica Neue Light';
         color: #4D4D4D;
         font-size: 14px;
     }
 
-    .modal-body{
+    .modal-body {
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -420,7 +419,7 @@ header.presale-masthead {
         border-bottom: none !important;
     }
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
         .close {
             position: absolute;
             right: 10px;
@@ -429,7 +428,7 @@ header.presale-masthead {
         }
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         .close {
             position: absolute;
             left: 10px !important;
@@ -438,7 +437,7 @@ header.presale-masthead {
         }
     }
 
-    .popup-footer{
+    .popup-footer {
         text-align: center;
         margin-bottom: 30px;
 
@@ -465,19 +464,22 @@ header.presale-masthead {
         .instruction {
             padding-top: 10px;
         }
-        .ens-address{
+
+        .ens-address {
             margin-top: 40px;
             font-size: 24px;
             text-align: center;
             font-family: 'Helvetica Neue Bold';
         }
-        .separator{
+
+        .separator {
             font-size: 18px;
             text-align: center;
             font-family: 'Helvetica Neue Light';
         }
-        @media (min-width: 768px){
-            .separator:before{
+
+        @media (min-width: 768px) {
+            .separator:before {
                 content: '';
                 display: block;
                 width: 90px;
@@ -487,7 +489,8 @@ header.presale-masthead {
                 left: 185px;
                 top: 161px;
             }
-            .separator:after{
+
+            .separator:after {
                 content: '';
                 display: block;
                 width: 90px;
@@ -499,19 +502,26 @@ header.presale-masthead {
             }
         }
 
-        p.text-box{
+        p.text-box {
             text-align: center;
+
             input {
+                width: 500px;
                 padding: 10px;
                 text-align: center;
                 font-size: 14pt;
                 font-family: 'Helvetica Neue Light';
                 outline: none;
                 border: 1px solid #4D4D4D;
-            }
-            @media (min-width: 768px){
-                input {
-                    min-width: 500px;
+
+                @media(max-width:650px) {
+                    width: calc(100% + 80px);
+                    margin-right: -40px;
+                    margin-left: -40px;
+                }
+
+                @media(max-width:530px) {
+                    font-size: 12px;
                 }
             }
         }

@@ -774,8 +774,9 @@ section.about {
 .text-container {
   padding: 200px 0 0 15%;
   z-index: 1000;
-  width: 68%;
-  position: relative; }
+  position: relative;
+  display: inline-block;
+  text-align: center; }
   .text-container h1 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
@@ -788,9 +789,14 @@ section.about {
     margin: 0; }
   .text-container h3 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-    font-size: 13pt !important;
+    font-size: 18pt !important;
     color: white;
     margin: 0; }
+  .text-container .vertical-line {
+    background-color: white;
+    width: 4px;
+    height: 80px;
+    margin: auto; }
   @media (max-width: 768px) {
     .text-container {
       text-align: center;
@@ -802,7 +808,28 @@ section.about {
       .text-container h2 {
         font-size: 15pt !important; }
       .text-container h3 {
-        font-size: 13pt !important; } }
+        font-size: 13pt !important;
+        margin-top: 60%; } }
+  .text-container a.pre-sale-button:hover {
+    text-decoration: none; }
+  .text-container .pre-sale-button-div {
+    position: relative;
+    z-index: 1000;
+    padding: 15px 0;
+    font-family: 'Helvetica Neue Bold';
+    font-size: 18pt;
+    letter-spacing: 3px;
+    background: #030387;
+    color: #00fcfc;
+    cursor: pointer;
+    border: 0;
+    max-width: 360px;
+    margin: 20px auto;
+    display: block;
+    text-align: center; }
+    @media (max-width: 360px) {
+      .text-container .pre-sale-button-div {
+        max-width: 290px; } }
 
 header.masthead {
   min-height: 100%;
@@ -2359,7 +2386,7 @@ header.presale-masthead {
     color: #00fcfc;
     cursor: pointer;
     max-width: 380px;
-    margin: 40px auto;
+    margin: 20px auto;
     display: block;
     border-radius: 5px; }
   header.presale-masthead a.btn.focus, header.presale-masthead a.btn:focus {
@@ -2368,7 +2395,7 @@ header.presale-masthead {
     -moz-outline-style: none !important; }
   @media (max-width: 768px) {
     header.presale-masthead a.btn {
-      margin: 20px;
+      margin: 20px auto;
       padding: 15px 30px !important; } }
   header.presale-masthead a.btn:active, header.presale-masthead a.btn:focus {
     outline: 0;
@@ -2401,11 +2428,18 @@ header.presale-masthead {
     padding-right: 50px; }
   header.presale-masthead .modal-header {
     border-bottom: none !important; }
-  header.presale-masthead .close {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size: 40px; }
+  @media (min-width: 768px) {
+    header.presale-masthead .close {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: 40px; } }
+  @media (max-width: 768px) {
+    header.presale-masthead .close {
+      position: absolute;
+      left: 10px !important;
+      top: 5px;
+      font-size: 40px; } }
   header.presale-masthead .popup-footer {
     text-align: center;
     margin-bottom: 30px; }
@@ -2453,37 +2487,24 @@ header.presale-masthead {
       position: absolute;
       left: 320px;
       top: 161px; } }
-  @media (max-width: 768px) {
-    header.presale-masthead .address-copy .separator:before {
-      content: '';
-      display: block;
-      width: 75px;
-      height: 1px;
-      background: #6f6e6e;
-      position: absolute;
-      left: 85px;
-      top: 200px; }
-    header.presale-masthead .address-copy .separator:after {
-      content: '';
-      display: block;
-      width: 75px;
-      height: 1px;
-      background: #6f6e6e;
-      position: absolute;
-      left: 210px;
-      top: 200px; } }
   header.presale-masthead .address-copy p.text-box {
     text-align: center; }
     header.presale-masthead .address-copy p.text-box input {
+      width: 500px;
       padding: 10px;
       text-align: center;
       font-size: 14pt;
       font-family: 'Helvetica Neue Light';
       outline: none;
       border: 1px solid #4D4D4D; }
-    @media (min-width: 768px) {
-      header.presale-masthead .address-copy p.text-box input {
-        min-width: 500px; } }
+      @media (max-width: 650px) {
+        header.presale-masthead .address-copy p.text-box input {
+          width: calc(100% + 80px);
+          margin-right: -40px;
+          margin-left: -40px; } }
+      @media (max-width: 530px) {
+        header.presale-masthead .address-copy p.text-box input {
+          font-size: 12px; } }
 
 .circle-logo {
   margin: auto;
