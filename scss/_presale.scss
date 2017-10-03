@@ -503,32 +503,177 @@ header.presale-masthead {
 
 section.as-seen-on {
     padding-top: 5rem !important;
-    min-height: 1000px;
+    min-height: 800px;
     background: linear-gradient( #efefef 80%, white 99%); /* Standard syntax */
-   
-
     .links {
         padding: 20px 60px;
         align-content: center;
+
+        @media (max-width: 648px) {
+            padding: 20px 0px;
+        }
 
         .link-box {
             margin: 0 auto 65px auto;
             background-color: white;
             height: 180px;
             width: 320px;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        > div:last-child {
-            padding: 0 16%;
+        @media (min-width: 648px) {
+            > div:last-child {
+                padding: 0 16%;
+            }
+        }
+
+        .merkle {
+            background-image: url(../img/presale/merkle.png);
+        }
+
+        .cryptocoinsnews {
+            background-image: url(../img/presale/cryptocoinsnews.png);
+        }
+
+        .icobench {
+            background-image: url(../img/presale/icobench.png);
+        }
+
+        .cointelegraph {
+            background-image: url(../img/presale/cointelegraph.png);
+        }
+
+        .bitcoinist {
+            background-image: url(../img/presale/bitcoinist.png);
         }
     }
 }
 
 section.resources {
     padding-top: 5rem !important;
-    min-height: 1000px;
-    background-color: white;
+    padding-bottom: 5rem !important;
+    //min-height: 1000px;
+    //background-color: white;
+    .resource-card {
+        vertical-align: top;
+        background: white;
+        max-width: 480px;
+        min-height: 340px;
+        -webkit-box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.7);
+        -moz-box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.7);
+        box-shadow: 0px 15px 30px -2px rgba(15,46,114,0.7);
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid rgb(216,216,216);
+        margin: 30px;
 
-   
+        .dots {
+            width: 80px;
+            left: calc(50% - 40px);
+            position: relative;
+        }
+
+        .resource-card-title {
+            padding-top: 25px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(3,3,135);
+        }
+
+        .resource-img {
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            @media(min-width:473px) {
+                float: left;
+            }
+        }
+
+        .resource-content {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .whitepaper-resource-description, .presentation-resource-description {
+            font-size: 18px;
+        }
+
+        .whitepaper-resource-description {
+            padding: 40px 30px;
+        }
+
+        .presentation-resource-description {
+            padding: 30px 30px;
+        }
+
+        .download-button {
+            position: relative;
+            z-index: 1000;
+            padding: 10px 10px;
+            font-family: 'Helvetica Neue Bold';
+            font-size: 16pt;
+            letter-spacing: 3px;
+            background: #030387;
+            color: #00fcfc;
+            cursor: pointer;
+            border: 0;
+            border-radius: 3px;
+            max-width: 250px;
+            margin: 25px auto;
+            display: block;
+        }
+    }
+
+    @media (min-width: 480px) {
+        .resource-card {
+            width: 400px;
+        }
+    }
+
+    @media (min-width: 560px) {
+        .resource-card {
+            width: 480px;
+        }
+    }
 }
 
+.background-resources {
+    position: relative;
+    overflow: hidden;
+
+    .background-resources-first,
+    .background-resources-second {
+        display: block;
+        width: calc(100% + 200px);
+        position: absolute;
+        height: calc(100% - 100px);
+        z-index: -1;
+        top: 460px;
+        left: -100px;
+        background: #0884cd; /* For browsers that do not support gradients */
+    }
+
+    .background-resources-first {
+        transform: rotate(10deg);
+        background: -webkit-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* Standard syntax */
+    }
+
+    .background-resources-second {
+        transform: rotate(-10deg);
+        background: -webkit-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* Standard syntax */
+    }
+}
+
+footer.presale-footer {
+    position: unset;
+    margin-bottom: 70px;
+}
