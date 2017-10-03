@@ -1771,6 +1771,8 @@ section.monetization {
 
 section.smartcontract {
   margin-bottom: 100px; }
+  section.smartcontract img.sc {
+    width: 100%; }
   @media (max-width: 768px) {
     section.smartcontract img.sc {
       margin-top: 20px;
@@ -2314,27 +2316,88 @@ header.presale-masthead {
   header.presale-masthead a.btn {
     position: relative;
     z-index: 1000;
-    padding: 15px 65px;
+    padding: 15px 55px;
     font-family: 'Helvetica Neue Bold';
     font-size: 20pt;
     letter-spacing: 3px;
     background: #030387;
     color: #00fcfc;
     cursor: pointer;
-    border: 0;
     max-width: 380px;
     margin: 40px auto;
-    display: block; }
-  header.presale-masthead a.btn.not-active {
-    opacity: 0.45;
-    pointer-events: none;
-    cursor: default; }
+    display: block;
+    border-radius: 5px; }
+  header.presale-masthead a.btn:active, header.presale-masthead a.btn:focus {
+    outline: 0;
+    -moz-outline-style: none; }
   header.presale-masthead .bottom-waves {
     min-height: 150px;
     width: 100%;
     position: absolute;
     bottom: 0px;
-    background-image: url("../img/presale/waves.png"); }
+    background-image: url("../img/presale/waves.png");
+    pointer-events: none; }
+  header.presale-masthead .modal .popup-title {
+    text-align: center;
+    font-family: 'Helvetica Neue Bold';
+    font-size: 26px;
+    color: #002D78; }
+  header.presale-masthead .modal .popup-subtitle {
+    text-align: center;
+    font-family: 'Helvetica Neue Bold';
+    font-size: 16px;
+    color: #4D4D4D; }
+  header.presale-masthead .modal-dialog {
+    max-width: 600px !important; }
+  header.presale-masthead .modal p {
+    font-family: 'Helvetica Neue Light';
+    color: #4D4D4D;
+    font-size: 14px; }
+  header.presale-masthead .modal-body {
+    padding-left: 50px;
+    padding-right: 50px; }
+  header.presale-masthead .modal-header {
+    border-bottom: none !important; }
+  header.presale-masthead .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 40px; }
+  header.presale-masthead .popup-footer {
+    text-align: center;
+    margin-bottom: 30px; }
+    header.presale-masthead .popup-footer .btn {
+      padding: 15px 45px;
+      font-family: 'Helvetica Neue Bold';
+      font-size: 16pt;
+      letter-spacing: 3px;
+      background: #00B1FF;
+      color: #002D78;
+      cursor: pointer;
+      margin: 20px auto;
+      display: block;
+      border-radius: 5px; }
+    header.presale-masthead .popup-footer .copy-button {
+      display: none;
+      min-width: 300px; }
+  header.presale-masthead .address-copy .ens-address {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Helvetica Neue Bold'; }
+  header.presale-masthead .address-copy .separator {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Helvetica Neue Light'; }
+  header.presale-masthead .address-copy p.text-box {
+    text-align: center; }
+    header.presale-masthead .address-copy p.text-box input {
+      padding: 10px;
+      min-width: 500px;
+      text-align: center;
+      font-size: 14pt;
+      font-family: 'Helvetica Neue Light';
+      outline: none; }
 
 .circle-logo {
   margin: auto;
@@ -2371,12 +2434,15 @@ header.presale-masthead {
 
 section.as-seen-on {
   padding-top: 5rem !important;
-  min-height: 1000px;
+  min-height: 800px;
   background: linear-gradient(#efefef 80%, white 99%);
   /* Standard syntax */ }
   section.as-seen-on .links {
     padding: 20px 60px;
     align-content: center; }
+    @media (max-width: 648px) {
+      section.as-seen-on .links {
+        padding: 20px 15px; } }
     section.as-seen-on .links .link-box {
       margin: 0 auto 65px auto;
       background-color: white;
@@ -2384,8 +2450,9 @@ section.as-seen-on {
       width: 320px;
       background-position: center;
       background-repeat: no-repeat; }
-    section.as-seen-on .links > div:last-child {
-      padding: 0 16%; }
+    @media (min-width: 648px) {
+      section.as-seen-on .links > div:last-child {
+        padding: 0 16%; } }
     section.as-seen-on .links .merkle {
       background-image: url(../img/presale/merkle.png); }
     section.as-seen-on .links .cryptocoinsnews {
@@ -2466,12 +2533,12 @@ section.resources {
   .background-resources .background-resources-first,
   .background-resources .background-resources-second {
     display: block;
-    width: calc(100% + 200px);
+    width: calc(100% + 800px);
     position: absolute;
     height: calc(100% - 100px);
     z-index: -1;
     top: 460px;
-    left: -100px;
+    left: -400px;
     background: #0884cd;
     /* For browsers that do not support gradients */ }
   .background-resources .background-resources-first {
@@ -2496,5 +2563,5 @@ section.resources {
     /* Standard syntax */ }
 
 footer.presale-footer {
-  top: 0px;
-  padding: 30px; }
+  position: unset;
+  margin-bottom: 70px; }
