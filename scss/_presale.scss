@@ -356,6 +356,12 @@ header.presale-masthead {
         border-radius: 5px;
     }
 
+    a.btn.focus, a.btn:focus{
+        outline: none !important;
+        box-shadow: none !important;
+        -moz-outline-style: none !important;
+    }
+
     @media (max-width: 768px)
     {
         a.btn {
