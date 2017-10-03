@@ -859,26 +859,33 @@ section.about {
 .text-container {
   padding: 200px 0 0 15%;
   z-index: 1000;
-  width: 68%;
-  position: relative; }
-  /* line 256, ../scss/_masthead.scss */
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+  /* line 257, ../scss/_masthead.scss */
   .text-container h1 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
     color: white;
     margin-bottom: 20pt; }
-  /* line 263, ../scss/_masthead.scss */
+  /* line 264, ../scss/_masthead.scss */
   .text-container h2 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 20pt !important;
     color: white;
     margin: 0; }
-  /* line 270, ../scss/_masthead.scss */
+  /* line 271, ../scss/_masthead.scss */
   .text-container h3 {
     font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-    font-size: 13pt !important;
+    font-size: 18pt !important;
     color: white;
     margin: 0; }
+  /* line 279, ../scss/_masthead.scss */
+  .text-container .vertical-line {
+    background-color: white;
+    width: 4px;
+    height: 80px;
+    margin: auto; }
   @media (max-width: 768px) {
     /* line 250, ../scss/_masthead.scss */
     .text-container {
@@ -886,17 +893,38 @@ section.about {
       padding: 150px 0 0 0;
       margin-left: unset !important;
       width: 100%; }
-      /* line 283, ../scss/_masthead.scss */
+      /* line 292, ../scss/_masthead.scss */
       .text-container h1 {
         font-size: 27pt; }
-      /* line 287, ../scss/_masthead.scss */
+      /* line 296, ../scss/_masthead.scss */
       .text-container h2 {
         font-size: 15pt !important; }
-      /* line 291, ../scss/_masthead.scss */
+      /* line 300, ../scss/_masthead.scss */
       .text-container h3 {
-        font-size: 13pt !important; } }
+        font-size: 13pt !important;
+        margin-top: 60%; } }
+  /* line 306, ../scss/_masthead.scss */
+  .text-container .pre-sale-button-div {
+    position: relative;
+    z-index: 1000;
+    padding: 15px 0;
+    font-family: 'Helvetica Neue Bold';
+    font-size: 18pt;
+    letter-spacing: 3px;
+    background: #030387;
+    color: #00fcfc;
+    cursor: pointer;
+    border: 0;
+    max-width: 360px;
+    margin: 20px auto;
+    display: block;
+    text-align: center; }
+    @media (max-width: 360px) {
+      /* line 306, ../scss/_masthead.scss */
+      .text-container .pre-sale-button-div {
+        max-width: 290px; } }
 
-/* line 300, ../scss/_masthead.scss */
+/* line 331, ../scss/_masthead.scss */
 header.masthead {
   min-height: 100%;
   position: relative;
@@ -914,7 +942,7 @@ header.masthead {
   background: linear-gradient(168deg, #04148c 5%, #0884cd 40%, #0bdace 80%, #ffffff 105%);
   /* Standard syntax */ }
   @media (max-width: 768px) {
-    /* line 300, ../scss/_masthead.scss */
+    /* line 331, ../scss/_masthead.scss */
     header.masthead {
       background: #0884cd;
       /* For browsers that do not support gradients */
@@ -926,29 +954,29 @@ header.masthead {
       /* For Firefox 3.6 to 15 */
       background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace);
       /* Standard syntax */ } }
-  /* line 319, ../scss/_masthead.scss */
+  /* line 350, ../scss/_masthead.scss */
   header.masthead .top-header {
     background: transparent;
     height: 85px; }
     @media (max-width: 768px) {
-      /* line 319, ../scss/_masthead.scss */
+      /* line 350, ../scss/_masthead.scss */
       header.masthead .top-header {
         text-align: center;
         margin-left: unset !important; } }
-  /* line 329, ../scss/_masthead.scss */
+  /* line 360, ../scss/_masthead.scss */
   header.masthead .header-content {
     height: 100vh;
     min-height: 600px;
     padding: 0;
     text-align: left; }
-    /* line 337, ../scss/_masthead.scss */
+    /* line 368, ../scss/_masthead.scss */
     header.masthead .header-content .header-content-inner {
       position: absolute;
       top: 50%;
       max-width: none;
       margin: 0;
       transform: translateY(-50%); }
-      /* line 344, ../scss/_masthead.scss */
+      /* line 375, ../scss/_masthead.scss */
       header.masthead .header-content .header-content-inner h1 {
         font-size: 35px; }
 
@@ -2752,7 +2780,7 @@ header.presale-masthead {
     cursor: pointer;
     border: 0;
     max-width: 380px;
-    margin: 40px auto;
+    margin: 20px auto;
     display: block; }
   /* line 359, ../scss/_presale.scss */
   header.presale-masthead a.btn.not-active {
