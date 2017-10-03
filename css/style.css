@@ -2327,6 +2327,14 @@ header.presale-masthead {
     margin: 40px auto;
     display: block;
     border-radius: 5px; }
+  header.presale-masthead a.btn.focus, header.presale-masthead a.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    -moz-outline-style: none !important; }
+  @media (max-width: 768px) {
+    header.presale-masthead a.btn {
+      margin: 20px;
+      padding: 15px 30px !important; } }
   header.presale-masthead a.btn:active, header.presale-masthead a.btn:focus {
     outline: 0;
     -moz-outline-style: none; }
@@ -2380,6 +2388,8 @@ header.presale-masthead {
     header.presale-masthead .popup-footer .copy-button {
       display: none;
       min-width: 300px; }
+  header.presale-masthead .address-copy .instruction {
+    padding-top: 10px; }
   header.presale-masthead .address-copy .ens-address {
     margin-top: 40px;
     font-size: 24px;
@@ -2389,15 +2399,56 @@ header.presale-masthead {
     font-size: 18px;
     text-align: center;
     font-family: 'Helvetica Neue Light'; }
+  @media (min-width: 768px) {
+    header.presale-masthead .address-copy .separator:before {
+      content: '';
+      display: block;
+      width: 90px;
+      height: 1px;
+      background: #6f6e6e;
+      position: absolute;
+      left: 185px;
+      top: 161px; }
+    header.presale-masthead .address-copy .separator:after {
+      content: '';
+      display: block;
+      width: 90px;
+      height: 1px;
+      background: #6f6e6e;
+      position: absolute;
+      left: 320px;
+      top: 161px; } }
+  @media (max-width: 768px) {
+    header.presale-masthead .address-copy .separator:before {
+      content: '';
+      display: block;
+      width: 75px;
+      height: 1px;
+      background: #6f6e6e;
+      position: absolute;
+      left: 85px;
+      top: 200px; }
+    header.presale-masthead .address-copy .separator:after {
+      content: '';
+      display: block;
+      width: 75px;
+      height: 1px;
+      background: #6f6e6e;
+      position: absolute;
+      left: 210px;
+      top: 200px; } }
   header.presale-masthead .address-copy p.text-box {
     text-align: center; }
     header.presale-masthead .address-copy p.text-box input {
       padding: 10px;
-      min-width: 500px;
       text-align: center;
       font-size: 14pt;
       font-family: 'Helvetica Neue Light';
-      outline: none; }
+      outline: none;
+      border: 1px solid #4D4D4D; }
+    @media (min-width: 768px) {
+      header.presale-masthead .address-copy p.text-box input {
+        min-width: 500px; } }
 
 .circle-logo {
   margin: auto;
