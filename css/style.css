@@ -2381,9 +2381,21 @@ section.as-seen-on {
       margin: 0 auto 65px auto;
       background-color: white;
       height: 180px;
-      width: 320px; }
+      width: 320px;
+      background-position: center;
+      background-repeat: no-repeat; }
     section.as-seen-on .links > div:last-child {
       padding: 0 16%; }
+    section.as-seen-on .links .merkle {
+      background-image: url(../img/presale/merkle.png); }
+    section.as-seen-on .links .cryptocoinsnews {
+      background-image: url(../img/presale/cryptocoinsnews.png); }
+    section.as-seen-on .links .icobench {
+      background-image: url(../img/presale/icobench.png); }
+    section.as-seen-on .links .cointelegraph {
+      background-image: url(../img/presale/cointelegraph.png); }
+    section.as-seen-on .links .bitcoinist {
+      background-image: url(../img/presale/bitcoinist.png); }
 
 section.resources {
   padding-top: 5rem !important;
