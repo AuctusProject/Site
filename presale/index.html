@@ -10,7 +10,7 @@
     <meta property="og:title" content="Auctus Project | Smart Contract Powered Pension Funds">
     <meta property="og:description" content="The Auctus Project was created with the mission of improving the pension market by increasing transparency and eliminating common problems such as corporate governance issues, corruption, fraud, bribery, and bureaucracy, as well as lowering operational costs.">
     <meta property="og:image" content="https://dl.auctus.org/auctusite.png">
-    <meta property="og:url" content="https://auctus.org">
+    <meta property="og:url" content="https://presale.auctus.org">
 
     <title>Auctus Project | Smart Contract Powered Pension Funds</title>
 
@@ -30,7 +30,7 @@
         }
 
         @media (max-width: 576px) {
-            nav > .container {
+            nav>.container {
                 width: 100%;
             }
         }
@@ -47,7 +47,7 @@
                 <img class="img-responsive" src="../img/header/topleftdots.png" />
             </div>
             <div class="top-header">
-                <a href="../"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
+                <a href="https://presale.auctus.org"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
             </div>
 
             <div id="topMenu">
@@ -64,13 +64,12 @@
                         <nav>
                             <ul>
                                 <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="../index.html#countdown">JOIN THE WHITELIST</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="../index.html#about">WHAT IS AUCTUS PROJECT?</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="../index.html#market">MARKET OVERVIEW</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="../index.html#monetization">MONETIZATION</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="../index.html#roadmap">ROADMAP</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="../index.html#tokenSale">TOKEN SALE OVERVIEW</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="../index.html#team">THE AUCTUS TEAM</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="https://auctus.org">AUCTUS HOMEPAGE</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#page-top">JOIN THE PRE-SALE</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#resources">WHITEPAPER</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#faq">FAQ</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#tokenSale">TOKEN SALE OVERVIEW</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="#team">THE AUCTUS TEAM</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="https://medium.com/auctus" target="_blank">BLOG</a></li>
                             </ul>
                         </nav>
@@ -104,7 +103,7 @@
             <img class="circle-logo" src="../img/presale/circle-logo.png" />
         </div>
         <div class="text-container">
-            <h1>OUR PRESALE IS LIVE</h1>
+            <h1>OUR PRE-SALE IS LIVE</h1>
         </div>
         <div class="timer">
             <div>
@@ -137,20 +136,72 @@
             </div>
         </div>
         <div class="text-container">
-            <h2>SALE CLOSES ON OCTOBER 6th - 02:00 GMT</h2>
+            <h2>SALE CLOSES ON OCTOBER 6th - 02:00 PM GMT</h2>
         </div>
-        <div id="checkbox-area" class="text-container">
-            <input type="checkbox" class="i-agree-checkbox" />TESTE 1
-            <input type="checkbox" class="i-agree-checkbox" />TESTE 2
+        <div>
+            <!-- <a id="reveal-address" class="btn not-active">JOIN TOKEN SALE</a> -->
+            <a href="#" type="button" class="btn" data-toggle="modal" data-target="#addressModal">
+                JOIN TOKEN SALE
+            </a>
+            <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" onclick="onCloseAgreementPopup()" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="agree-terms">
+                                <p class="popup-title">
+                                    TOKEN SALE AGREEMENT
+                                </p>
+                                <p class="popup-subtitle">
+                                    You acknowledge and agree that:
+                                </p>
+                                <p>
+                                    - You have read the whitepaper
+                                </p>
+                                <p>
+                                    - You are not using an exchange wallet
+                                </p>
+                                <p>
+                                    - Your purchase of AUC complies with applicable laws and regulations in your jurisdiction
+                                </p>
+                                <p>
+                                    - There are risks associated with purchasing AUC owning AUC and using AUC
+                                </p>
+                            </div>
+                            <div class="address-copy" style="display:none;">
+                                <p class="popup-title">
+                                    <span>CONTRACT ADDRESS</span>
+                                </p>
+                                <p class="ens-address">
+                                    <a target="_blank" href="https://etherscan.io/address/auctusproject.eth">auctusproject.eth</a>
+                                </p>
+                                <p class="separator">
+                                    <span>or</span>
+                                </p>
+                                <p class="text-box">
+                                    <input id="eth-address-input" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="0x84D45E60f7036F0DE7dF8ed68E1Ee50471B963BA"></span>
+                                </p>
+                                <p class="instruction">
+                                    - Recommended Gas Limit 150000
+                                </p>
+                                <p>
+                                    - Do not send ETH from any exchanges Poloniex, Kraken, Coinbase, and any similar services
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <button type="button" class="btn agree-button" onclick="onAgreePreSale()">AGREE</button>
+                            <button type="button" class="btn copy-button" data-clipboard-target="#eth-address-input" onclick="onCopyAddress()">COPY ADDRESS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="button-area">
-            <a id="reveal-address" class="btn not-active">JOIN TOKEN SALE</a>
-        </div>
-        <div id="address-area" class="text-container" style="display: none;">
-            <h1>auctusproject.eth</h1>
-            <h3>0x84D45E60f7036F0DE7dF8ed68E1Ee50471B963BA</h3>
-        </div>
-        <div class="bottom-waves "></div>
+        <div class="bottom-waves"></div>
     </header>
     <section class="as-seen-on" id="asSeenOn">
         <div class="section-heading text-center">
@@ -172,8 +223,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4" >
-                    <a  href="https://icobench.com/ico/auctus"  target="_blank">
+                <div class="col-lg-4">
+                    <a href="https://icobench.com/ico/auctus" target="_blank">
                         <div class="link-box icobench">
                         </div>
                     </a>
@@ -181,7 +232,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <a href="https://cointelegraph.com/press-releases/Auctus%20Pension%20Project%20-%20Pre-Sale%20Whitelist%20Closing%20in%2024h" target="_blank">
+                    <a href="https://cointelegraph.com/press-releases/Auctus%20Pension%20Project%20-%20Pre-Sale%20Whitelist%20Closing%20in%2024h"
+                        target="_blank">
                         <div class="link-box cointelegraph">
                         </div>
                     </a>
@@ -195,7 +247,7 @@
             </div>
         </div>
     </section>
-    <div class="background-resources">
+    <div class="background-resources" id="resources">
         <div class="background-resources-first"></div>
         <div class="background-resources-second"></div>
         <section class="resources" id="resources">
@@ -238,14 +290,16 @@
                 <hr width="100px"></hr>
             </div>
             <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                <div class="col-md-6 col-sm-12 pull-right">
+                <div class="col-lg-6 col-sm-12 pull-right">
                     <div class="box">
                         <div class="row">
                             <div class="sale-title pull-left">
-                                <span>PRESALE</span>
+                                <span>PRE-SALE</span>
                                 <hr />
                             </div>
-                            <div class="col-md-9"><div class="dots"></div></div>
+                            <div class="col-md-9">
+                                <div class="dots"></div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
@@ -291,7 +345,9 @@
                                 <span>ICO</span>
                                 <hr class="ico" />
                             </div>
-                            <div class="col-md-9"><div class="dots"></div></div>
+                            <div class="col-md-9">
+                                <div class="dots"></div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
@@ -329,7 +385,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="chart">
@@ -340,7 +396,9 @@
                     <div class="row vesting-div">
                         <div class="col-sm-12">
                             <div class="vesting">
-                                <div class="vesting-title"><span>VESTING</span><hr /></div>
+                                <div class="vesting-title"><span>VESTING</span>
+                                    <hr />
+                                </div>
                                 <div class="row">
                                     <div class="col-md-5 ">TEAM</div>
                                     <div class="col-md-7">2 YEARS VESTING WITH 6 MONTHS CLIFF</div>
@@ -590,6 +648,7 @@
     <img class="v" src="../img/tokensale/v.png" />
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/clipboardjs/dist/clipboard.min.js"></script>
 
     <script src="../js/script.min.js"></script>
 
@@ -612,7 +671,6 @@
             }
             return false;
         });
-
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -626,8 +684,12 @@
         ga('send', 'pageview');
     </script>
     <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
-    <script type="text/javascript">twttr.conversion.trackPid('ny69l', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
-    <script type="text/javascript">twttr.conversion.trackPid('ny637', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+    <script type="text/javascript">
+        twttr.conversion.trackPid('ny69l', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    </script>
+    <script type="text/javascript">
+        twttr.conversion.trackPid('ny637', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    </script>
     <script>
         var i = new Image(); i.src = "https://alb.reddit.com/t.gif?q=CAAHAAABAAoACQAAAAAA6DArAA==&s=WZRd1JXnZRV1jlvXS-XxOhVvuUCEppJaeyGI1Xak6fs=";
     </script>

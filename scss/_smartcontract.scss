@@ -1,15 +1,19 @@
 section.smartcontract {
     margin-bottom: 100px;
 
+    img.sc {
+        width: 100%;
+    }
+
     @media (max-width: 768px) {
-        img.sc{
+        img.sc {
             margin-top: 20px;
             width: 80%;
         }
     }
 
     @media (max-width: 1024px) {
-        img.sc{
+        img.sc {
             width: 95%;
         }
     }
