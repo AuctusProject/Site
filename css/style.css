@@ -293,11 +293,11 @@ section.faq.presale .container h2 {
       font-size: 13pt !important; } }
 
 section.faq.presale .faq-content-link {
-  font-size: 14pt !important;
+  font-size: 12pt !important;
   color: #292b2c; }
   @media (max-width: 768px) {
     section.faq.presale .faq-content-link {
-      font-size: 12pt !important; } }
+      font-size: 10pt !important; } }
 
 section.faq.presale .item a {
   font-size: 14pt; }
