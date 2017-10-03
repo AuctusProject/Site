@@ -2424,9 +2424,11 @@ section.resources {
       color: #030387; }
     section.resources .resource-card .resource-img {
       display: inline-block;
-      float: left;
       padding-left: 30px;
       padding-right: 30px; }
+      @media (min-width: 473px) {
+        section.resources .resource-card .resource-img {
+          float: left; } }
     section.resources .resource-card .resource-content {
       display: inline-block;
       width: 100%; }
