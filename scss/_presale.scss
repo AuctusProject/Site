@@ -555,12 +555,12 @@ section.resources {
     .background-resources-first,
     .background-resources-second {
         display: block;
-        width: calc(100% + 200px);
+        width: calc(100% + 800px);
         position: absolute;
         height: calc(100% - 100px);
         z-index: -1;
         top: 460px;
-        left: -100px;
+        left: -400px;
         background: #0884cd; /* For browsers that do not support gradients */
     }
 
