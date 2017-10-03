@@ -378,3 +378,53 @@ section.faq {
     }
 }
 
+section.faq.presale {
+    .container {
+        h2 {
+            font-size: 17pt !important;
+
+            @media (max-width:768px) {
+                font-size: 13pt !important;
+            }
+        }
+    }
+
+    .faq-content-link {
+        font-size: 14pt !important;
+        color: #292b2c;
+
+        @media (max-width:768px) {
+            font-size: 12pt !important;
+        }
+    }
+
+    .item {
+        a {
+            font-size: 14pt;
+
+            @media (max-width:768px) {
+                font-size: 12pt;
+            }
+        }
+
+        p {
+            font-size: 12pt;
+
+            @media (max-width:768px) {
+                font-size: 10pt;
+            }
+        }
+    }
+
+    a.btn {
+        border: 1px solid #002D78;
+        color: #002D78;
+        width: 120px;
+        margin: 15px;
+    }
+
+    .check-buttons {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
