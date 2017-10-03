@@ -448,6 +448,26 @@ header.presale-masthead {
             text-align: center;
             font-family: 'Helvetica Neue Light';
         }
+        .separator:before{
+            content: '';
+            display: block;
+            width: 90px;
+            height: 1px;
+            background: #6f6e6e;
+            position: absolute;
+            left: 185px;
+            top: 161px;
+        }
+        .separator:after{
+            content: '';
+            display: block;
+            width: 90px;
+            height: 1px;
+            background: #6f6e6e;
+            position: absolute;
+            left: 320px;
+            top: 161px;
+        }
 
         p.text-box{
             text-align: center;

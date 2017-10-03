@@ -63,6 +63,7 @@ function onCloseAgreementPopup(){
     $('.agree-button').css('display', 'block');
     $('.address-copy').css('display', 'none');
     $('.copy-button').css('display', 'none');
+    $('.copy-button').text('COPY ADDRESS');
 }
 
 function onCopyAddress(){
