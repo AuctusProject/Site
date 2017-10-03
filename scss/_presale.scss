@@ -356,6 +356,14 @@ header.presale-masthead {
         border-radius: 5px;
     }
 
+    @media (max-width: 768px)
+    {
+        a.btn {
+            margin: 20px;
+            padding: 15px 30px !important;
+        }
+    }
+
     a.btn:active, a.btn:focus {
         outline: 0;
         -moz-outline-style: none
@@ -437,6 +445,9 @@ header.presale-masthead {
     }
 
     .address-copy {
+        .instruction {
+            padding-top: 10px;
+        }
         .ens-address{
             margin-top: 40px;
             font-size: 24px;
@@ -448,36 +459,65 @@ header.presale-masthead {
             text-align: center;
             font-family: 'Helvetica Neue Light';
         }
-        .separator:before{
-            content: '';
-            display: block;
-            width: 90px;
-            height: 1px;
-            background: #6f6e6e;
-            position: absolute;
-            left: 185px;
-            top: 161px;
+        @media (min-width: 768px){
+            .separator:before{
+                content: '';
+                display: block;
+                width: 90px;
+                height: 1px;
+                background: #6f6e6e;
+                position: absolute;
+                left: 185px;
+                top: 161px;
+            }
+            .separator:after{
+                content: '';
+                display: block;
+                width: 90px;
+                height: 1px;
+                background: #6f6e6e;
+                position: absolute;
+                left: 320px;
+                top: 161px;
+            }
         }
-        .separator:after{
-            content: '';
-            display: block;
-            width: 90px;
-            height: 1px;
-            background: #6f6e6e;
-            position: absolute;
-            left: 320px;
-            top: 161px;
+        @media (max-width: 768px){
+            .separator:before{
+                content: '';
+                display: block;
+                width: 75px;
+                height: 1px;
+                background: #6f6e6e;
+                position: absolute;
+                left: 85px;
+                top: 200px;
+            }
+            .separator:after{
+                content: '';
+                display: block;
+                width: 75px;
+                height: 1px;
+                background: #6f6e6e;
+                position: absolute;
+                left: 210px;
+                top: 200px;
+            }
         }
 
         p.text-box{
             text-align: center;
             input {
                 padding: 10px;
-                min-width: 500px;
                 text-align: center;
                 font-size: 14pt;
                 font-family: 'Helvetica Neue Light';
                 outline: none;
+                border: 1px solid #4D4D4D;
+            }
+            @media (min-width: 768px){
+                input {
+                    min-width: 500px;
+                }
             }
         }
     }
