@@ -417,6 +417,10 @@ section.as-seen-on {
         padding: 20px 60px;
         align-content: center;
 
+        @media (max-width: 648px) {
+            padding: 20px 0px;
+        }
+
         .link-box {
             margin: 0 auto 65px auto;
             background-color: white;
@@ -426,8 +430,10 @@ section.as-seen-on {
             background-repeat: no-repeat;
         }
 
-        > div:last-child {
-            padding: 0 16%;
+        @media (min-width: 648px) {
+            > div:last-child {
+                padding: 0 16%;
+            }
         }
 
         .merkle {
@@ -572,7 +578,7 @@ section.resources {
     }
 }
 
-footer.presale-footer{
-    position:unset;
-    margin-bottom:70px;
+footer.presale-footer {
+    position: unset;
+    margin-bottom: 70px;
 }
