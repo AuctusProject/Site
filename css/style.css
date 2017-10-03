@@ -286,10 +286,10 @@ section.faq {
       section.faq h2 {
         font-size: 17pt !important; } }
 
-section.faq.presale h2 {
+section.faq.presale .container h2 {
   font-size: 17pt !important; }
   @media (max-width: 768px) {
-    section.faq.presale h2 {
+    section.faq.presale .container h2 {
       font-size: 13pt !important; } }
 
 section.faq.presale .faq-content-link {
@@ -2510,10 +2510,11 @@ header.presale-masthead {
   @media (max-width: 768px) {
     .circle-logo {
       display: block;
-      -moz-transform: scale(0.5);
-      -o-transform: scale(0.5);
-      -webkit-transform: scale(0.5);
-      transform: scale(0.5);
+      margin-bottom: -150px;
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
       top: 120px;
       left: 50%;
       margin-left: -260px; } }

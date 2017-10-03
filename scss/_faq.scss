@@ -379,11 +379,13 @@ section.faq {
 }
 
 section.faq.presale {
-    h2 {
-        font-size: 17pt !important;
+    .container {
+        h2 {
+            font-size: 17pt !important;
 
-        @media (max-width:768px) {
-            font-size: 13pt !important;
+            @media (max-width:768px) {
+                font-size: 13pt !important;
+            }
         }
     }
 
