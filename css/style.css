@@ -2054,3 +2054,445 @@ header.check-masthead {
     font-weight: bold; }
   header.check-masthead .text-white a {
     color: white; }
+
+header.presale-masthead {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  background: #0884cd;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(168deg, #04148c 18%, #0884cd 54%, #0bdace 95%, #ffffff 105%);
+  /* For Safari 5.1 to 6.0  60%*/
+  background: -o-linear-gradient(168deg, #04148c 18%, #0884cd 54%, #0bdace 95%, #ffffff 105%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(168deg, #04148c 18%, #0884cd 54%, #0bdace 95%, #ffffff 105%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(168deg, #04148c 18%, #0884cd 54%, #0bdace 95%, #ffffff 105%);
+  /* Standard syntax */ }
+  @media (max-width: 768px) {
+    header.presale-masthead {
+      background: #0884cd;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace);
+      /* For Safari 5.1 to 6.0  60%*/
+      background: -o-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace);
+      /* Standard syntax */ } }
+  header.presale-masthead .top-header {
+    background: transparent;
+    height: 85px; }
+    @media (max-width: 768px) {
+      header.presale-masthead .top-header {
+        text-align: center;
+        margin-left: unset !important; } }
+  header.presale-masthead .header-content {
+    height: 100vh;
+    min-height: 600px;
+    padding: 0;
+    text-align: left; }
+    header.presale-masthead .header-content .header-content-inner {
+      position: absolute;
+      top: 50%;
+      max-width: none;
+      margin: 0;
+      transform: translateY(-50%); }
+      header.presale-masthead .header-content .header-content-inner h1 {
+        font-size: 35px; }
+  header.presale-masthead .top-left {
+    position: absolute;
+    margin-left: 6%;
+    z-index: 100; }
+    @media (max-width: 768px) {
+      header.presale-masthead .top-left {
+        margin-left: -35px;
+        margin-top: -50px; } }
+  header.presale-masthead .top-header {
+    position: absolute;
+    margin-left: 15%;
+    background: transparent;
+    height: 85px;
+    z-index: 100010; }
+    @media (max-width: 768px) {
+      header.presale-masthead .top-header {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        margin-left: unset !important; } }
+    header.presale-masthead .top-header .logo {
+      margin-top: 25px; }
+      @media (max-width: 768px) {
+        header.presale-masthead .top-header .logo {
+          display: block;
+          -moz-transform: scale(0.9);
+          -o-transform: scale(0.9);
+          -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+          margin-left: auto;
+          margin-right: auto; } }
+  header.presale-masthead .right-presale-panel {
+    display: block !important;
+    height: 90%;
+    width: 32%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    header.presale-masthead .right-presale-panel .navigation-icons {
+      padding-left: 5%; }
+      header.presale-masthead .right-presale-panel .navigation-icons a {
+        text-decoration: unset; }
+      header.presale-masthead .right-presale-panel .navigation-icons i.fa {
+        display: inline-block;
+        font-size: 25px;
+        color: #00fcfc;
+        margin: 20px 10px; }
+      header.presale-masthead .right-presale-panel .navigation-icons i.fa:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px #00fcfc; }
+  @media (max-width: 768px) {
+    header.presale-masthead .button-div {
+      margin-bottom: 30px; } }
+  header.presale-masthead #topMenu i {
+    color: #002d78;
+    font-size: 45px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer; }
+  @media (max-width: 768px) {
+    header.presale-masthead #topMenu i.fa-bars {
+      font-size: 27px;
+      position: absolute;
+      right: 15px;
+      top: 10px; } }
+  header.presale-masthead #topMenu.open .quarter-circle {
+    background: #04148c;
+    background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
+    background: -o-linear-gradient(168deg, #04148c, #0884cd);
+    background: -moz-linear-gradient(168deg, #04148c, #0884cd);
+    background: linear-gradient(168deg, #04148c, #0884cd);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    position: absolute;
+    right: -386px;
+    top: -350px;
+    width: 900px;
+    height: 1000px;
+    z-index: 10000;
+    transition: all 1s; }
+    header.presale-masthead #topMenu.open .quarter-circle i {
+      color: #002d78;
+      font-size: 45px;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      cursor: pointer; }
+    @media (max-width: 768px) {
+      header.presale-masthead #topMenu.open .quarter-circle {
+        right: -60%;
+        height: 180%;
+        width: 150%; }
+        header.presale-masthead #topMenu.open .quarter-circle i.fa-bars {
+          font-size: 27px;
+          position: absolute;
+          right: -385px;
+          top: -170px; } }
+  header.presale-masthead .button-div {
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-top: 35pt;
+    font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+    font-size: 14pt !important;
+    padding: 15px;
+    color: white;
+    z-index: 1000; }
+    @media (max-width: 768px) {
+      header.presale-masthead .button-div {
+        margin-top: 65%;
+        margin-bottom: 40px; } }
+    header.presale-masthead .button-div i.fa {
+      margin-right: 13px; }
+  header.presale-masthead .button-div:hover {
+    z-index: 1000;
+    cursor: pointer;
+    color: #d7d6d6;
+    border: 2px solid #d7d6d6; }
+  header.presale-masthead .text-container {
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    position: relative;
+    padding: 0; }
+    header.presale-masthead .text-container h1 {
+      font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+      font-size: 37pt;
+      color: #00fcfc;
+      margin-bottom: 5pt; }
+    header.presale-masthead .text-container h2 {
+      font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+      letter-spacing: 2px;
+      font-size: 20pt !important;
+      color: white;
+      margin: 0; }
+    header.presale-masthead .text-container h3 {
+      font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+      font-size: 13pt !important;
+      color: white;
+      margin: 0; }
+    @media (max-width: 768px) {
+      header.presale-masthead .text-container {
+        text-align: center;
+        padding: 120px 0 0 0;
+        margin-left: unset !important;
+        width: 100%; }
+        header.presale-masthead .text-container h1 {
+          font-size: 27pt; }
+        header.presale-masthead .text-container h2 {
+          font-size: 12pt !important; }
+        header.presale-masthead .text-container h3 {
+          font-size: 10pt !important; } }
+  header.presale-masthead .timer {
+    margin: 20px 0;
+    text-align: center;
+    overflow: hidden; }
+  header.presale-masthead .timer > div {
+    text-align: center;
+    display: inline-block; }
+  header.presale-masthead .time-part {
+    display: inline-block;
+    width: 148px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  header.presale-masthead .box {
+    width: 130px;
+    height: 130px;
+    border: 2px solid #00fcfc;
+    border-radius: 5px;
+    display: inline-block; }
+    header.presale-masthead .box .time-value {
+      font-family: 'Helvetica Neue Light';
+      font-size: 58px;
+      line-height: 88px;
+      color: #00fcfc; }
+    header.presale-masthead .box .time-label {
+      font-family: 'Helvetica Neue Light';
+      color: #00fcfc;
+      font-size: 16px; }
+  @media (min-width: 768px) {
+    header.presale-masthead .time-part:after {
+      content: '';
+      position: relative;
+      width: 64px;
+      height: 2px;
+      background-color: #00fcfc;
+      top: -68px;
+      left: 138px;
+      display: block; }
+    header.presale-masthead .days:before {
+      content: '';
+      position: relative;
+      height: 2px;
+      background-color: #00fcfc;
+      top: 64px;
+      display: block;
+      width: 1000px;
+      right: 990px; }
+    header.presale-masthead .seconds:after {
+      width: 1000px;
+      left: 138px; } }
+  header.presale-masthead a.btn {
+    position: relative;
+    z-index: 1000;
+    padding: 15px 65px;
+    font-family: 'Helvetica Neue Bold';
+    font-size: 20pt;
+    letter-spacing: 3px;
+    background: #030387;
+    color: #00fcfc;
+    cursor: pointer;
+    border: 0;
+    max-width: 380px;
+    margin: 40px auto;
+    display: block; }
+  header.presale-masthead a.btn.not-active {
+    opacity: 0.45;
+    pointer-events: none;
+    cursor: default; }
+  header.presale-masthead .bottom-waves {
+    min-height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-image: url("../img/presale/waves.png"); }
+
+.circle-logo {
+  margin: auto;
+  display: block;
+  z-index: 100;
+  margin-top: -115px;
+  margin-bottom: -35px;
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7); }
+  @media (min-width: 1500px) {
+    .circle-logo {
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); } }
+  @media (max-width: 1200px) {
+    .circle-logo {
+      -moz-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7); } }
+  @media (max-width: 768px) {
+    .circle-logo {
+      display: block;
+      -moz-transform: scale(0.5);
+      -o-transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      top: 120px;
+      left: 50%;
+      margin-left: -260px; } }
+
+section.as-seen-on {
+  padding-top: 5rem !important;
+  min-height: 1000px;
+  background: linear-gradient(#efefef 80%, white 99%);
+  /* Standard syntax */ }
+  section.as-seen-on .links {
+    padding: 20px 60px;
+    align-content: center; }
+    section.as-seen-on .links .link-box {
+      margin: 0 auto 65px auto;
+      background-color: white;
+      height: 180px;
+      width: 320px;
+      background-position: center;
+      background-repeat: no-repeat; }
+    section.as-seen-on .links > div:last-child {
+      padding: 0 16%; }
+    section.as-seen-on .links .merkle {
+      background-image: url(../img/presale/merkle.png); }
+    section.as-seen-on .links .cryptocoinsnews {
+      background-image: url(../img/presale/cryptocoinsnews.png); }
+    section.as-seen-on .links .icobench {
+      background-image: url(../img/presale/icobench.png); }
+    section.as-seen-on .links .cointelegraph {
+      background-image: url(../img/presale/cointelegraph.png); }
+    section.as-seen-on .links .bitcoinist {
+      background-image: url(../img/presale/bitcoinist.png); }
+
+section.resources {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important; }
+  section.resources .resource-card {
+    vertical-align: top;
+    background: white;
+    max-width: 480px;
+    min-height: 340px;
+    -webkit-box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
+    -moz-box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
+    box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.7);
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    margin: 30px; }
+    section.resources .resource-card .dots {
+      width: 80px;
+      left: calc(50% - 40px);
+      position: relative; }
+    section.resources .resource-card .resource-card-title {
+      padding-top: 25px;
+      padding-bottom: 10px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #030387; }
+    section.resources .resource-card .resource-img {
+      display: inline-block;
+      float: left;
+      padding-left: 30px;
+      padding-right: 30px; }
+    section.resources .resource-card .resource-content {
+      display: inline-block;
+      width: 100%; }
+    section.resources .resource-card .whitepaper-resource-description, section.resources .resource-card .presentation-resource-description {
+      font-size: 18px; }
+    section.resources .resource-card .whitepaper-resource-description {
+      padding: 40px 30px; }
+    section.resources .resource-card .presentation-resource-description {
+      padding: 30px 30px; }
+    section.resources .resource-card .download-button {
+      position: relative;
+      z-index: 1000;
+      padding: 10px 10px;
+      font-family: 'Helvetica Neue Bold';
+      font-size: 16pt;
+      letter-spacing: 3px;
+      background: #030387;
+      color: #00fcfc;
+      cursor: pointer;
+      border: 0;
+      border-radius: 3px;
+      max-width: 250px;
+      margin: 25px auto;
+      display: block; }
+  @media (min-width: 480px) {
+    section.resources .resource-card {
+      width: 400px; } }
+  @media (min-width: 560px) {
+    section.resources .resource-card {
+      width: 480px; } }
+
+.background-resources {
+  position: relative;
+  overflow: hidden; }
+  .background-resources .background-resources-first,
+  .background-resources .background-resources-second {
+    display: block;
+    width: calc(100% + 200px);
+    position: absolute;
+    height: calc(100% - 100px);
+    z-index: -1;
+    top: 460px;
+    left: -100px;
+    background: #0884cd;
+    /* For browsers that do not support gradients */ }
+  .background-resources .background-resources-first {
+    transform: rotate(10deg);
+    background: -webkit-linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
+    /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
+    /* Standard syntax */ }
+  .background-resources .background-resources-second {
+    transform: rotate(-10deg);
+    background: -webkit-linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
+    /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
+    /* Standard syntax */ }
+
+footer.presale-footer {
+  top: 0px;
+  padding: 30px; }
