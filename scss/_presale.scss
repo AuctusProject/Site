@@ -252,7 +252,6 @@ header.presale-masthead {
 
         @media (max-width: 768px) {
             text-align: center;
-            padding: 120px 0 0 0;
             margin-left: unset !important;
             width: 100%;
 
@@ -267,6 +266,12 @@ header.presale-masthead {
             h3 {
                 font-size: 10pt !important;
             }
+        }
+    }
+
+    .text-container.title {
+        @media (max-width: 768px) {
+            padding: 120px 0 0 0;
         }
     }
 
@@ -373,9 +378,6 @@ header.presale-masthead {
         outline: 0;
         -moz-outline-style: none
     }
-
-
-
 
     .bottom-waves {
         min-height: 150px;
@@ -540,7 +542,7 @@ header.presale-masthead {
     transform: scale(0.7);
 
     @media (min-width: 1500px ) {
-		margin-bottom: 40px;
+        margin-bottom: 40px;
         -moz-transform: scale(1.2);
         -o-transform: scale(1.2);
         -webkit-transform: scale(1.2);
@@ -557,7 +559,7 @@ header.presale-masthead {
 
     @media (max-width: 768px) {
         display: block;
-		margin-bottom: -150px;
+        margin-bottom: -150px;
         -moz-transform: scale(0.8);
         -o-transform: scale(0.8);
         -webkit-transform: scale(0.8);
