@@ -420,11 +420,22 @@ header.presale-masthead {
         border-bottom: none !important;
     }
 
-    .close {
-        position: absolute;
-        right: 10px;
-        top: 5px;
-        font-size: 40px;
+    @media (min-width: 768px){
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 768px){
+        .close {
+            position: absolute;
+            left: 10px !important;
+            top: 5px;
+            font-size: 40px;
+        }
     }
 
     .popup-footer{
@@ -485,28 +496,6 @@ header.presale-masthead {
                 position: absolute;
                 left: 320px;
                 top: 161px;
-            }
-        }
-        @media (max-width: 768px){
-            .separator:before{
-                content: '';
-                display: block;
-                width: 75px;
-                height: 1px;
-                background: #6f6e6e;
-                position: absolute;
-                left: 85px;
-                top: 200px;
-            }
-            .separator:after{
-                content: '';
-                display: block;
-                width: 75px;
-                height: 1px;
-                background: #6f6e6e;
-                position: absolute;
-                left: 210px;
-                top: 200px;
             }
         }
 
