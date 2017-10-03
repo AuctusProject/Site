@@ -541,6 +541,7 @@ header.presale-masthead {
     transform: scale(0.7);
 
     @media (min-width: 1500px ) {
+		margin-bottom: 40px;
         -moz-transform: scale(1.2);
         -o-transform: scale(1.2);
         -webkit-transform: scale(1.2);
@@ -576,7 +577,7 @@ section.as-seen-on {
         align-content: center;
 
         @media (max-width: 648px) {
-            padding: 20px 0px;
+            padding: 20px 15px;
         }
 
         .link-box {
@@ -713,12 +714,12 @@ section.resources {
     .background-resources-first,
     .background-resources-second {
         display: block;
-        width: calc(100% + 200px);
+        width: calc(100% + 800px);
         position: absolute;
         height: calc(100% - 100px);
         z-index: -1;
         top: 460px;
-        left: -100px;
+        left: -400px;
         background: #0884cd; /* For browsers that do not support gradients */
     }
 
