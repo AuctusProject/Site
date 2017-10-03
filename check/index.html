@@ -30,7 +30,7 @@
         }
 
         @media (max-width: 576px) {
-            nav > .container {
+            nav>.container {
                 width: 100%;
             }
         }
@@ -46,7 +46,7 @@
                 <img class="img-responsive" src="../img/header/topleftdots.png" />
             </div>
             <div class="top-header">
-                <a href="../"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
+                <a href="https://auctus.org/presale"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
             </div>
 
             <div id="topMenu">
@@ -61,15 +61,25 @@
                     <div class="menu-content">
 
                         <nav>
-                            <ul>
+                            <!-- <ul>
                                 <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="../index.html#countdown">JOIN THE WHITELIST</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="https://auctus.org/presale">JOIN THE PRE-SALE</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="../index.html#about">WHAT IS AUCTUS PROJECT?</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="../index.html#market">MARKET OVERVIEW</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="../index.html#monetization">MONETIZATION</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="../index.html#roadmap">ROADMAP</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="../index.html#tokenSale">TOKEN SALE OVERVIEW</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="../index.html#team">THE AUCTUS TEAM</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="https://medium.com/auctus" target="_blank">BLOG</a></li>
+                            </ul> -->
+                            <ul>
+                                <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="https://auctus.org">AUCTUS HOMEPAGE</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="../presale/index.html#page-top">JOIN THE PRE-SALE</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="../presale/index.html#resources">WHITEPAPER</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="https://auctus.org/faq">FAQ</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="../presale/index.html#tokenSale">TOKEN SALE OVERVIEW</a></li>
+                                <li><span class="icon-arrow-right arr"></span><a href="../presale/index.html#team">THE AUCTUS TEAM</a></li>
                                 <li><span class="icon-arrow-right arr"></span><a href="https://medium.com/auctus" target="_blank">BLOG</a></li>
                             </ul>
                         </nav>
@@ -84,8 +94,7 @@
                         </div>
                         <div class="row clearfix">
                             <div class="offset-md-2 input-group col-md-8">
-                                <input id="addressInput" name="Address" class="required address form-control" type="text" placeholder="Address"
-                                       aria-label="Address">
+                                <input id="addressInput" name="Address" class="required address form-control" type="text" placeholder="Address" aria-label="Address">
                                 <span class="input-group-btn">
                                     <button id="checkBtn" type="submit" value="Check" name="check" class="btn btn-secondary">CHECK</button>
                                 </span>
@@ -98,7 +107,8 @@
                                 <div class="text-white text-center">
                                     <h3 id="invalidAddress" style="display: none;">Invalid address</h3>
                                     <h3 id="errorOcurred" style="display: none;">An error ocurred. Please try again later.</h3>
-                                    <h3 id="whitelistedAddress">Your address is whitelisted.  <br>You can participate in the Auctus pre-sale with up to 10 ETH.</h3>
+                                    <h3 id="whitelistedAddress">Your address is whitelisted. <br>You can participate in the Auctus pre-sale with up to
+                                        10 ETH.</h3>
                                     <h3 id="notWhitelistedAddress">Your address is NOT whitelisted.</h3>
                                     <br/>
                                     <h3>
@@ -156,7 +166,6 @@
             }
             return false;
         });
-
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -204,7 +213,7 @@
                 return false;
             }
 
-            
+
 
         })(jQuery); // End of use strict
 
