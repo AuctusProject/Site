@@ -138,65 +138,62 @@
         <div class="text-container">
             <h2>SALE CLOSES ON OCTOBER 6th - 02:00 PM GMT</h2>
         </div>
-        <div>
-            <!-- <a id="reveal-address" class="btn not-active">JOIN TOKEN SALE</a> -->
-            <a href="#" type="button" class="btn" data-toggle="modal" data-target="#addressModal">
-                JOIN PRE-SALE
-            </a>
-            <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" onclick="onCloseAgreementPopup()" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+        <a href="#" type="button" class="btn" data-toggle="modal" data-target="#addressModal">
+            JOIN PRE-SALE
+        </a>
+        <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" onclick="onCloseAgreementPopup()" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="agree-terms">
+                            <p class="popup-title">
+                                TOKEN SALE AGREEMENT
+                            </p>
+                            <p class="popup-subtitle">
+                                You acknowledge and agree that:
+                            </p>
+                            <p>
+                                - You have read the whitepaper
+                            </p>
+                            <p>
+                                - You are not using an exchange wallet
+                            </p>
+                            <p>
+                                - Your purchase of AUC complies with applicable laws and regulations in your jurisdiction
+                            </p>
+                            <p>
+                                - There are risks associated with purchasing AUC, owning AUC and using AUC
+                            </p>
                         </div>
-                        <div class="modal-body">
-                            <div class="agree-terms">
-                                <p class="popup-title">
-                                    TOKEN SALE AGREEMENT
-                                </p>
-                                <p class="popup-subtitle">
-                                    You acknowledge and agree that:
-                                </p>
-                                <p>
-                                    - You have read the whitepaper
-                                </p>
-                                <p>
-                                    - You are not using an exchange wallet
-                                </p>
-                                <p>
-                                    - Your purchase of AUC complies with applicable laws and regulations in your jurisdiction
-                                </p>
-                                <p>
-                                    - There are risks associated with purchasing AUC, owning AUC and using AUC
-                                </p>
-                            </div>
-                            <div class="address-copy" style="display:none;">
-                                <p class="popup-title">
-                                    <span>CONTRACT ADDRESS</span>
-                                </p>
-                                <p class="ens-address">
-                                    <a target="_blank" href="https://etherscan.io/address/auctusproject.eth">auctusproject.eth</a>
-                                </p>
-                                <p class="separator">
-                                    <span>or</span>
-                                </p>
-                                <p class="text-box">
-                                    <input id="eth-address-input" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="0x84D45E60f7036F0DE7dF8ed68E1Ee50471B963BA"></span>
-                                </p>
-                                <p class="instruction">
-                                    - Recommended Gas Limit 150000
-                                </p>
-                                <p>
-                                    - Do not send ETH from any exchanges
-                                </p>
-                            </div>
+                        <div class="address-copy" style="display:none;">
+                            <p class="popup-title">
+                                <span>CONTRACT ADDRESS</span>
+                            </p>
+                            <p class="ens-address">
+                                <a target="_blank" href="https://etherscan.io/address/auctusproject.eth">auctusproject.eth</a>
+                            </p>
+                            <p class="separator">
+                                <span>or</span>
+                            </p>
+                            <p class="text-box">
+                                <input id="eth-address-input" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="0x84D45E60f7036F0DE7dF8ed68E1Ee50471B963BA"></span>
+                            </p>
+                            <p class="instruction">
+                                - Recommended Gas Limit 150000
+                            </p>
+                            <p>
+                                - Do not send ETH from any exchanges
+                            </p>
                         </div>
-                        <div class="popup-footer">
-                            <button type="button" class="btn agree-button" onclick="onAgreePreSale()">AGREE</button>
-                            <button type="button" class="btn copy-button" data-clipboard-target="#eth-address-input" onclick="onCopyAddress()">COPY ADDRESS</button>
-                        </div>
+                    </div>
+                    <div class="popup-footer">
+                        <button type="button" class="btn agree-button" onclick="onAgreePreSale()">AGREE</button>
+                        <button type="button" class="btn copy-button" data-clipboard-target="#eth-address-input" onclick="onCopyAddress()">COPY ADDRESS</button>
                     </div>
                 </div>
             </div>
