@@ -413,8 +413,6 @@ section.as-seen-on {
     padding-top: 5rem !important;
     min-height: 1000px;
     background: linear-gradient( #efefef 80%, white 99%); /* Standard syntax */
-   
-
     .links {
         padding: 20px 60px;
         align-content: center;
@@ -424,10 +422,32 @@ section.as-seen-on {
             background-color: white;
             height: 180px;
             width: 320px;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         > div:last-child {
             padding: 0 16%;
+        }
+
+        .merkle {
+            background-image: url(../img/presale/merkle.png);
+        }
+
+        .cryptocoinsnews {
+            background-image: url(../img/presale/cryptocoinsnews.png);
+        }
+
+        .icobench {
+            background-image: url(../img/presale/icobench.png);
+        }
+
+        .cointelegraph {
+            background-image: url(../img/presale/cointelegraph.png);
+        }
+
+        .bitcoinist {
+            background-image: url(../img/presale/bitcoinist.png);
         }
     }
 }
