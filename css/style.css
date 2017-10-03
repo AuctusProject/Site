@@ -1448,6 +1448,24 @@ section.countdown {
       font-family: 'Helvetica Neue Light';
       color: white;
       font-size: 20px; }
+  section.countdown .join-button {
+    margin-top: 100px; }
+  section.countdown .join-button a:hover, section.countdown .join-button a:focus, section.countdown .join-button a:active {
+    text-decoration: none; }
+  section.countdown .pre-sale-button-div {
+    z-index: 1000;
+    padding: 15px 0;
+    font-family: 'Helvetica Neue Bold';
+    font-size: 18pt;
+    letter-spacing: 3px;
+    background: #030387;
+    color: #00fcfc;
+    cursor: pointer;
+    border: 0;
+    max-width: 360px;
+    margin: 20px auto;
+    display: block;
+    text-align: center; }
   @media (min-width: 768px) {
     section.countdown .time-part:after {
       content: '';
