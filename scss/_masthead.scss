@@ -47,7 +47,7 @@
     z-index: 10;
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
 
     @media (min-width: 768px) {
         background: #04148c; /* For browsers that do not support gradients */
@@ -59,9 +59,11 @@
 
     .navigation-icons {
         padding-left: 5%;
+
         a {
-            text-decoration:unset;
+            text-decoration: unset;
         }
+
         i.fa {
             display: inline-block;
             font-size: 25px;
@@ -167,13 +169,13 @@
     }
 
     @media (max-width: 768px) {
-    i.fa-bars {
-        font-size: 27px;
-        position: absolute;
-        right: 15px;
-        top: 10px;
+        i.fa-bars {
+            font-size: 27px;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
     }
-}
 }
 
 
@@ -250,9 +252,10 @@
 .text-container {
     padding: 200px 0 0 15%;
     z-index: 1000;
-    width: 68%;
+    //width: 68%; //commented for presale
     position: relative;
-
+    display: inline-block; // presale
+    text-align: center; // presale
     h1 {
         font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
         font-size: 37pt;
@@ -269,9 +272,17 @@
 
     h3 {
         font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-        font-size: 13pt !important;
+        // font-size: 13pt !important; //commented presale
+        font-size: 18pt !important;
         color: white;
         margin: 0;
+    }
+
+    .vertical-line {
+        background-color: white;
+        width: 4px;
+        height: 80px;
+        margin: auto;
     }
 
     @media (max-width: 768px) {
@@ -290,6 +301,32 @@
 
         h3 {
             font-size: 13pt !important;
+            margin-top: 60%; //PRESALE
+        }
+    }
+
+    a.pre-sale-button:hover { //presale
+        text-decoration: none;
+    }
+
+    .pre-sale-button-div { //presale
+        position: relative;
+        z-index: 1000;
+        padding: 15px 0;
+        font-family: 'Helvetica Neue Bold';
+        font-size: 18pt;
+        letter-spacing: 3px;
+        background: #030387;
+        color: #00fcfc;
+        cursor: pointer;
+        border: 0;
+        max-width: 360px;
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+
+        @media (max-width: 360px) {
+            max-width: 290px;
         }
     }
 }

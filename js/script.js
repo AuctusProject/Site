@@ -82,6 +82,11 @@ function downloadWhitepaper(){
     registerClickEvent('Whitepaper');
 }
 
+function gotoPresale() {
+    openNewTab("https://auctus.org/presale");
+    registerClickEvent('Presale');
+}
+
 function downloadPresentation() {
     openNewTab("http://dl.auctus.org/Auctus_Project_Overview.pdf");
     registerClickEvent('Presentation');

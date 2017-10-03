@@ -379,20 +379,22 @@ section.faq {
 }
 
 section.faq.presale {
-    h2 {
-        font-size: 17pt !important;
+    .container {
+        h2 {
+            font-size: 17pt !important;
 
-        @media (max-width:768px) {
-            font-size: 13pt !important;
+            @media (max-width:768px) {
+                font-size: 13pt !important;
+            }
         }
     }
 
     .faq-content-link {
-        font-size: 14pt !important;
+        font-size: 12pt !important;
         color: #292b2c;
 
         @media (max-width:768px) {
-            font-size: 12pt !important;
+            font-size: 10pt !important;
         }
     }
 
@@ -418,6 +420,7 @@ section.faq.presale {
         border: 1px solid #002D78;
         color: #002D78;
         width: 120px;
+        margin: 15px;
     }
 
     .check-buttons {
