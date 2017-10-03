@@ -2807,7 +2807,7 @@ header.presale-masthead {
 /* line 412, ../scss/_presale.scss */
 section.as-seen-on {
   padding-top: 5rem !important;
-  min-height: 1000px;
+  min-height: 800px;
   background: linear-gradient(#efefef 80%, white 99%);
   /* Standard syntax */ }
   /* line 416, ../scss/_presale.scss */
@@ -2846,3 +2846,8 @@ section.resources {
   padding-top: 5rem !important;
   min-height: 1000px;
   background-color: white; }
+
+/* line 463, ../scss/_presale.scss */
+footer.presale-footer {
+  position: unset;
+  margin-bottom: 70px; }
