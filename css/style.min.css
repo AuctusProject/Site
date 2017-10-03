@@ -2877,17 +2877,25 @@ header.presale-masthead {
   /* line 419, ../scss/_presale.scss */
   header.presale-masthead .modal-header {
     border-bottom: none !important; }
-  /* line 423, ../scss/_presale.scss */
-  header.presale-masthead .close {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size: 40px; }
-  /* line 430, ../scss/_presale.scss */
+  @media (min-width: 768px) {
+    /* line 424, ../scss/_presale.scss */
+    header.presale-masthead .close {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: 40px; } }
+  @media (max-width: 768px) {
+    /* line 433, ../scss/_presale.scss */
+    header.presale-masthead .close {
+      position: absolute;
+      left: 10px !important;
+      top: 5px;
+      font-size: 40px; } }
+  /* line 441, ../scss/_presale.scss */
   header.presale-masthead .popup-footer {
     text-align: center;
     margin-bottom: 30px; }
-    /* line 434, ../scss/_presale.scss */
+    /* line 445, ../scss/_presale.scss */
     header.presale-masthead .popup-footer .btn {
       padding: 15px 45px;
       font-family: 'Helvetica Neue Bold';
@@ -2899,26 +2907,26 @@ header.presale-masthead {
       margin: 20px auto;
       display: block;
       border-radius: 5px; }
-    /* line 447, ../scss/_presale.scss */
+    /* line 458, ../scss/_presale.scss */
     header.presale-masthead .popup-footer .copy-button {
       display: none;
       min-width: 300px; }
-  /* line 454, ../scss/_presale.scss */
+  /* line 465, ../scss/_presale.scss */
   header.presale-masthead .address-copy .instruction {
     padding-top: 10px; }
-  /* line 457, ../scss/_presale.scss */
+  /* line 468, ../scss/_presale.scss */
   header.presale-masthead .address-copy .ens-address {
     margin-top: 40px;
     font-size: 24px;
     text-align: center;
     font-family: 'Helvetica Neue Bold'; }
-  /* line 463, ../scss/_presale.scss */
+  /* line 474, ../scss/_presale.scss */
   header.presale-masthead .address-copy .separator {
     font-size: 18px;
     text-align: center;
     font-family: 'Helvetica Neue Light'; }
   @media (min-width: 768px) {
-    /* line 469, ../scss/_presale.scss */
+    /* line 480, ../scss/_presale.scss */
     header.presale-masthead .address-copy .separator:before {
       content: '';
       display: block;
@@ -2928,7 +2936,7 @@ header.presale-masthead {
       position: absolute;
       left: 185px;
       top: 161px; }
-    /* line 479, ../scss/_presale.scss */
+    /* line 490, ../scss/_presale.scss */
     header.presale-masthead .address-copy .separator:after {
       content: '';
       display: block;
@@ -2938,31 +2946,10 @@ header.presale-masthead {
       position: absolute;
       left: 320px;
       top: 161px; } }
-  @media (max-width: 768px) {
-    /* line 491, ../scss/_presale.scss */
-    header.presale-masthead .address-copy .separator:before {
-      content: '';
-      display: block;
-      width: 75px;
-      height: 1px;
-      background: #6f6e6e;
-      position: absolute;
-      left: 85px;
-      top: 200px; }
-    /* line 501, ../scss/_presale.scss */
-    header.presale-masthead .address-copy .separator:after {
-      content: '';
-      display: block;
-      width: 75px;
-      height: 1px;
-      background: #6f6e6e;
-      position: absolute;
-      left: 210px;
-      top: 200px; } }
-  /* line 513, ../scss/_presale.scss */
+  /* line 502, ../scss/_presale.scss */
   header.presale-masthead .address-copy p.text-box {
     text-align: center; }
-    /* line 515, ../scss/_presale.scss */
+    /* line 504, ../scss/_presale.scss */
     header.presale-masthead .address-copy p.text-box input {
       padding: 10px;
       text-align: center;
@@ -2971,11 +2958,11 @@ header.presale-masthead {
       outline: none;
       border: 1px solid #4D4D4D; }
     @media (min-width: 768px) {
-      /* line 524, ../scss/_presale.scss */
+      /* line 513, ../scss/_presale.scss */
       header.presale-masthead .address-copy p.text-box input {
         min-width: 500px; } }
 
-/* line 532, ../scss/_presale.scss */
+/* line 521, ../scss/_presale.scss */
 .circle-logo {
   margin: auto;
   display: block;
@@ -2987,7 +2974,7 @@ header.presale-masthead {
   -webkit-transform: scale(0.7);
   transform: scale(0.7); }
   @media (min-width: 1500px) {
-    /* line 532, ../scss/_presale.scss */
+    /* line 521, ../scss/_presale.scss */
     .circle-logo {
       margin-bottom: 40px;
       -moz-transform: scale(1.2);
@@ -2995,14 +2982,14 @@ header.presale-masthead {
       -webkit-transform: scale(1.2);
       transform: scale(1.2); } }
   @media (max-width: 1200px) {
-    /* line 532, ../scss/_presale.scss */
+    /* line 521, ../scss/_presale.scss */
     .circle-logo {
       -moz-transform: scale(0.7);
       -o-transform: scale(0.7);
       -webkit-transform: scale(0.7);
       transform: scale(0.7); } }
   @media (max-width: 768px) {
-    /* line 532, ../scss/_presale.scss */
+    /* line 521, ../scss/_presale.scss */
     .circle-logo {
       display: block;
       margin-bottom: -150px;
@@ -3014,21 +3001,21 @@ header.presale-masthead {
       left: 50%;
       margin-left: -260px; } }
 
-/* line 572, ../scss/_presale.scss */
+/* line 561, ../scss/_presale.scss */
 section.as-seen-on {
   padding-top: 5rem !important;
   min-height: 800px;
   background: linear-gradient(#efefef 80%, white 99%);
   /* Standard syntax */ }
-  /* line 576, ../scss/_presale.scss */
+  /* line 565, ../scss/_presale.scss */
   section.as-seen-on .links {
     padding: 20px 60px;
     align-content: center; }
     @media (max-width: 648px) {
-      /* line 576, ../scss/_presale.scss */
+      /* line 565, ../scss/_presale.scss */
       section.as-seen-on .links {
         padding: 20px 15px; } }
-    /* line 584, ../scss/_presale.scss */
+    /* line 573, ../scss/_presale.scss */
     section.as-seen-on .links .link-box {
       margin: 0 auto 65px auto;
       background-color: white;
@@ -3037,30 +3024,30 @@ section.as-seen-on {
       background-position: center;
       background-repeat: no-repeat; }
     @media (min-width: 648px) {
-      /* line 594, ../scss/_presale.scss */
+      /* line 583, ../scss/_presale.scss */
       section.as-seen-on .links > div:last-child {
         padding: 0 16%; } }
-    /* line 599, ../scss/_presale.scss */
+    /* line 588, ../scss/_presale.scss */
     section.as-seen-on .links .merkle {
       background-image: url(../img/presale/merkle.png); }
-    /* line 603, ../scss/_presale.scss */
+    /* line 592, ../scss/_presale.scss */
     section.as-seen-on .links .cryptocoinsnews {
       background-image: url(../img/presale/cryptocoinsnews.png); }
-    /* line 607, ../scss/_presale.scss */
+    /* line 596, ../scss/_presale.scss */
     section.as-seen-on .links .icobench {
       background-image: url(../img/presale/icobench.png); }
-    /* line 611, ../scss/_presale.scss */
+    /* line 600, ../scss/_presale.scss */
     section.as-seen-on .links .cointelegraph {
       background-image: url(../img/presale/cointelegraph.png); }
-    /* line 615, ../scss/_presale.scss */
+    /* line 604, ../scss/_presale.scss */
     section.as-seen-on .links .bitcoinist {
       background-image: url(../img/presale/bitcoinist.png); }
 
-/* line 621, ../scss/_presale.scss */
+/* line 610, ../scss/_presale.scss */
 section.resources {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important; }
-  /* line 626, ../scss/_presale.scss */
+  /* line 615, ../scss/_presale.scss */
   section.resources .resource-card {
     vertical-align: top;
     background: white;
@@ -3073,41 +3060,41 @@ section.resources {
     border-radius: 5px;
     border: 1px solid #d8d8d8;
     margin: 30px; }
-    /* line 639, ../scss/_presale.scss */
+    /* line 628, ../scss/_presale.scss */
     section.resources .resource-card .dots {
       width: 80px;
       left: calc(50% - 40px);
       position: relative; }
-    /* line 645, ../scss/_presale.scss */
+    /* line 634, ../scss/_presale.scss */
     section.resources .resource-card .resource-card-title {
       padding-top: 25px;
       padding-bottom: 10px;
       font-size: 30px;
       font-weight: bold;
       color: #030387; }
-    /* line 653, ../scss/_presale.scss */
+    /* line 642, ../scss/_presale.scss */
     section.resources .resource-card .resource-img {
       display: inline-block;
       padding-left: 30px;
       padding-right: 30px; }
       @media (min-width: 473px) {
-        /* line 653, ../scss/_presale.scss */
+        /* line 642, ../scss/_presale.scss */
         section.resources .resource-card .resource-img {
           float: left; } }
-    /* line 663, ../scss/_presale.scss */
+    /* line 652, ../scss/_presale.scss */
     section.resources .resource-card .resource-content {
       display: inline-block;
       width: 100%; }
-    /* line 668, ../scss/_presale.scss */
+    /* line 657, ../scss/_presale.scss */
     section.resources .resource-card .whitepaper-resource-description, section.resources .resource-card .presentation-resource-description {
       font-size: 18px; }
-    /* line 672, ../scss/_presale.scss */
+    /* line 661, ../scss/_presale.scss */
     section.resources .resource-card .whitepaper-resource-description {
       padding: 40px 30px; }
-    /* line 676, ../scss/_presale.scss */
+    /* line 665, ../scss/_presale.scss */
     section.resources .resource-card .presentation-resource-description {
       padding: 30px 30px; }
-    /* line 680, ../scss/_presale.scss */
+    /* line 669, ../scss/_presale.scss */
     section.resources .resource-card .download-button {
       position: relative;
       z-index: 1000;
@@ -3124,19 +3111,19 @@ section.resources {
       margin: 25px auto;
       display: block; }
   @media (min-width: 480px) {
-    /* line 699, ../scss/_presale.scss */
+    /* line 688, ../scss/_presale.scss */
     section.resources .resource-card {
       width: 400px; } }
   @media (min-width: 560px) {
-    /* line 705, ../scss/_presale.scss */
+    /* line 694, ../scss/_presale.scss */
     section.resources .resource-card {
       width: 480px; } }
 
-/* line 711, ../scss/_presale.scss */
+/* line 700, ../scss/_presale.scss */
 .background-resources {
   position: relative;
   overflow: hidden; }
-  /* line 715, ../scss/_presale.scss */
+  /* line 704, ../scss/_presale.scss */
   .background-resources .background-resources-first,
   .background-resources .background-resources-second {
     display: block;
@@ -3148,7 +3135,7 @@ section.resources {
     left: -400px;
     background: #0884cd;
     /* For browsers that do not support gradients */ }
-  /* line 727, ../scss/_presale.scss */
+  /* line 716, ../scss/_presale.scss */
   .background-resources .background-resources-first {
     transform: rotate(10deg);
     background: -webkit-linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
@@ -3159,7 +3146,7 @@ section.resources {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
     /* Standard syntax */ }
-  /* line 735, ../scss/_presale.scss */
+  /* line 724, ../scss/_presale.scss */
   .background-resources .background-resources-second {
     transform: rotate(-10deg);
     background: -webkit-linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
@@ -3171,7 +3158,7 @@ section.resources {
     background: linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
     /* Standard syntax */ }
 
-/* line 744, ../scss/_presale.scss */
+/* line 733, ../scss/_presale.scss */
 footer.presale-footer {
   position: unset;
   margin-bottom: 70px; }
