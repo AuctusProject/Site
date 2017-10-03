@@ -541,6 +541,7 @@ header.presale-masthead {
     transform: scale(0.7);
 
     @media (min-width: 1500px ) {
+		margin-bottom: 40px;
         -moz-transform: scale(1.2);
         -o-transform: scale(1.2);
         -webkit-transform: scale(1.2);
