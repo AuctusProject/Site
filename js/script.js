@@ -83,7 +83,7 @@ function downloadWhitepaper(){
 }
 
 function gotoPresale() {
-    openNewTab("https://presale.auctus.org");
+    openNewTab("https://auctus.org/presale");
     registerClickEvent('Presale');
 }
 

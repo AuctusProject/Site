@@ -47,7 +47,7 @@
     z-index: 10;
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
 
     @media (min-width: 768px) {
         background: #04148c; /* For browsers that do not support gradients */
@@ -59,9 +59,11 @@
 
     .navigation-icons {
         padding-left: 5%;
+
         a {
-            text-decoration:unset;
+            text-decoration: unset;
         }
+
         i.fa {
             display: inline-block;
             font-size: 25px;
@@ -167,13 +169,13 @@
     }
 
     @media (max-width: 768px) {
-    i.fa-bars {
-        font-size: 27px;
-        position: absolute;
-        right: 15px;
-        top: 10px;
+        i.fa-bars {
+            font-size: 27px;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
     }
-}
 }
 
 
@@ -301,6 +303,10 @@
             font-size: 13pt !important;
             margin-top: 60%; //PRESALE
         }
+    }
+
+    a.pre-sale-button:hover { //presale
+        text-decoration: none;
     }
 
     .pre-sale-button-div { //presale
