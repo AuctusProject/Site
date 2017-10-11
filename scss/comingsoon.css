@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$theme-secondary".
-        on line 8 of D:\github\AuctusProject\Site\scss\comingsoon.scss
+        on line 8 of C:\Users\vinicius.melo\Documents\Backup\Site\scss\comingsoon.scss
 
 3:     position: relative;
 4:     overflow-y: hidden;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$theme-secondary".
 13:         padding: 150px 0 50px;
 
 Backtrace:
-D:\github\AuctusProject\Site\scss\comingsoon.scss:8
+C:\Users\vinicius.melo\Documents\Backup\Site\scss\comingsoon.scss:8
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$theme-secondary\".\A         on line 8 of D:\github\AuctusProject\Site\scss\comingsoon.scss\A \A 3:     position: relative;\A 4:     overflow-y: hidden;\A 5:     width: 100%;\A 6:     min-height: auto;\A 7:     color: white;\A 8:     background: url('../img/bg-pattern.png'), $theme-secondary;\A 9:     background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);\A 10:     background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);\A 11:     .header-content {\A 12:         position: relative;\A 13:         padding: 150px 0 50px;"; }
+  content: "Error: Undefined variable: \"$theme-secondary\".\A         on line 8 of C:\Users\vinicius.melo\Documents\Backup\Site\scss\comingsoon.scss\A \A 3:     position: relative;\A 4:     overflow-y: hidden;\A 5:     width: 100%;\A 6:     min-height: auto;\A 7:     color: white;\A 8:     background: url('../img/bg-pattern.png'), $theme-secondary;\A 9:     background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);\A 10:     background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);\A 11:     .header-content {\A 12:         position: relative;\A 13:         padding: 150px 0 50px;"; }
