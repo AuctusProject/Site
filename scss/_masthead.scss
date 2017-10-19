@@ -133,6 +133,12 @@
     }
 }
 
+@media (max-width: 385px) {
+    .button-div:last-of-type {
+        margin-top: 0px;
+    }
+}
+
 .quarter-circle {
     background-color: white;
     border-bottom-left-radius: 100%;
