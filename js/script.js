@@ -92,6 +92,11 @@ function downloadPresentation() {
     registerClickEvent('Presentation');
 }
 
+function downloadPresentation() {
+    openNewTab("https://demo.auctus.org");
+    registerClickEvent('Demo');
+}
+
 function openNewTab(url) {
     window.open(url, "_blank");
 }
