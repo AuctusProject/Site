@@ -47,7 +47,7 @@
         onCloseAgreementPopup();
     })
 
-    new Clipboard('.copy-button');
+    // new Clipboard('.copy-button');
 
 })(jQuery); // End of use strict
 
