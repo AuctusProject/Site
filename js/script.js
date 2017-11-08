@@ -1,14 +1,14 @@
 (function($) {
-    var preSaleInterval = setInterval(onPreSaleTimer, 1000);
+    var interval = setInterval(onTimer, 1000);
 
-    function onPreSaleTimer() {
-        var date = Date.UTC(2017, 9, 6, 14, 00);
+    function onTimer() {
+        var date = Date.UTC(2017, 10, 14, 14, 00);
         
         var element = $('.timer');
         var diff = date - new Date().getTime();
         if (diff < 0) {
             updateCountdown(element, 0, 0, 0, 0);
-            clearInterval(preSaleInterval);
+            clearInterval(interval);
         }
         else {
             updateTimer(element, diff);
