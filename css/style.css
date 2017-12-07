@@ -826,20 +826,6 @@ section.about {
     right: 0;
 }
 
-@media (min-width: 768px) {
-    .right-blue-panel {
-        background: #04148c;
-        /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
-        /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(168deg, #04148c, #0884cd);
-        /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(168deg, #04148c, #0884cd);
-        /* For Firefox 3.6 to 15 */
-        background: linear-gradient(168deg, #04148c, #0884cd);
-        /* Standard syntax */
-    }
-}
 
 .right-blue-panel .navigation-icons {
     padding-left: 5%;

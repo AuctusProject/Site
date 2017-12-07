@@ -1,13 +1,19 @@
 section.countdown {
     padding-bottom: 10em;
-    
+
     .section-heading {
         margin-bottom: 4rem;
+        
+        h2{
+            color:#ffffff;
+        }
     }
 
     .sales-date {
         padding-top: 15px;
         font-size: 18px !important;
+        width: 60%;
+        margin: auto;
 
         span {
             color: #09d8ba;
@@ -37,8 +43,9 @@ section.countdown {
         margin-top: 5px;
         margin-bottom: 5px;
     }
+
     @media (max-width: 768px) {
-        .join-whitelist{
+        .join-whitelist {
             margin: 15px;
         }
     }
@@ -95,7 +102,7 @@ section.countdown {
         margin-top: 100px;
     }
 
-    .join-button a:hover, .join-button a:focus, .join-button a:active{
+    .join-button a:hover, .join-button a:focus, .join-button a:active {
         text-decoration: none;
     }
 
