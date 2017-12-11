@@ -36,6 +36,12 @@ header.team-header {
 section.team {
     text-align: center;
     background-color: #efefef;
+    padding-bottom: 5em;
+
+    .team-content{
+        max-width:1200px;
+        margin:auto;
+    }
 
     .team-card {
         margin: 25px;
@@ -53,12 +59,12 @@ section.team {
             width: 100%;
             display: inline-block;
             vertical-align: top;
-            text-align:center;
+            text-align: center;
         }
 
         .card-picture {
             width: 220px;
-            margin-top:20px;
+            margin-top: 20px;
         }
 
         .card-name-position-linkedin {
@@ -71,6 +77,7 @@ section.team {
             display: inline-block;
             width: calc(100% - 80px);
             margin-top: 20px;
+            text-align: left;
         }
 
         .card-linkedin {
@@ -104,7 +111,7 @@ section.team {
             font-size: 12px;
             text-align: center;
             padding: 15px;
-            min-height: 240px;
+            min-height: 245px;
         }
     }
 
@@ -121,39 +128,9 @@ section.team {
         margin-top: 5px;
         margin-bottom: 60px;
     }
-
-    .image {
-        margin-left: 40px;
-    }
-
-    .image:after {
-        content: url('../img/team/linkedin-icon.png');
-        position: relative;
-        z-index: 100;
-        right: 26px;
-        top: 0px;
-    }
-
-    .image.behance:after {
-        content: url('../img/team/behance-icon.png');
-        position: relative;
-        z-index: 100;
-        right: 26px;
-        top: 0px;
-    }
 }
 
-img.v {
-    position: fixed;
-    z-index: 100000;
-    bottom: -440px;
-    left: -235px;
-    transform: rotate(21deg);
-    transition: all 0.2s;
-}
 
-img.v.visible {
-    transition: all 0.2s;
-    bottom: -36px !important;
-    left: -21px !important;
+.remove-padding {
+    padding-top: 0;
 }

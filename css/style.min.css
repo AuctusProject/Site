@@ -1177,8 +1177,13 @@ header.team-header {
 /* line 36, ../scss/_team.scss */
 section.team {
   text-align: center;
-  background-color: #efefef; }
-  /* line 40, ../scss/_team.scss */
+  background-color: #efefef;
+  padding-bottom: 5em; }
+  /* line 41, ../scss/_team.scss */
+  section.team .team-content {
+    max-width: 1200px;
+    margin: auto; }
+  /* line 46, ../scss/_team.scss */
   section.team .team-card {
     margin: 25px;
     width: 320px;
@@ -1190,98 +1195,71 @@ section.team {
     box-shadow: 1px 2px 2px 1px #c1c1c1;
     display: inline-block;
     vertical-align: top; }
-    /* line 52, ../scss/_team.scss */
+    /* line 58, ../scss/_team.scss */
     section.team .team-card .card-picture-name {
       width: 100%;
       display: inline-block;
       vertical-align: top;
       text-align: center; }
-    /* line 59, ../scss/_team.scss */
+    /* line 65, ../scss/_team.scss */
     section.team .team-card .card-picture {
       width: 220px;
       margin-top: 20px; }
-    /* line 64, ../scss/_team.scss */
+    /* line 70, ../scss/_team.scss */
     section.team .team-card .card-name-position-linkedin {
       text-decoration: none;
       width: 100%;
       margin: 20px; }
-    /* line 70, ../scss/_team.scss */
+    /* line 76, ../scss/_team.scss */
     section.team .team-card .card-name-position {
       display: inline-block;
       width: calc(100% - 80px);
-      margin-top: 20px; }
-    /* line 76, ../scss/_team.scss */
+      margin-top: 20px;
+      text-align: left; }
+    /* line 83, ../scss/_team.scss */
     section.team .team-card .card-linkedin {
       content: url("../img/team/linkedin-icon.png");
       display: inline-block; }
-    /* line 81, ../scss/_team.scss */
+    /* line 88, ../scss/_team.scss */
     section.team .team-card .card-name {
       font-family: 'Helvetica Neue Bold';
       font-size: 22px !important;
       line-height: 24px;
       color: #002d78; }
-    /* line 88, ../scss/_team.scss */
+    /* line 95, ../scss/_team.scss */
     section.team .team-card .card-position {
       font-size: 12px !important;
       color: black; }
-    /* line 93, ../scss/_team.scss */
+    /* line 100, ../scss/_team.scss */
     section.team .team-card .card-description {
       display: inline-block; }
-      /* line 96, ../scss/_team.scss */
+      /* line 103, ../scss/_team.scss */
       section.team .team-card .card-description .dots {
         height: 10px;
         width: 50%;
         margin: auto; }
-    /* line 103, ../scss/_team.scss */
+    /* line 110, ../scss/_team.scss */
     section.team .team-card .card-description-content {
       font-size: 12px;
       text-align: center;
       padding: 15px;
-      min-height: 240px; }
-  /* line 111, ../scss/_team.scss */
+      min-height: 245px; }
+  /* line 118, ../scss/_team.scss */
   section.team .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold';
     font-size: 20px; }
-  /* line 117, ../scss/_team.scss */
+  /* line 124, ../scss/_team.scss */
   section.team .position {
     font-family: 'Helvetica Neue Light';
     font-size: 14px;
     letter-spacing: 2px;
     margin-top: 5px;
     margin-bottom: 60px; }
-  /* line 125, ../scss/_team.scss */
-  section.team .image {
-    margin-left: 40px; }
-  /* line 129, ../scss/_team.scss */
-  section.team .image:after {
-    content: url("../img/team/linkedin-icon.png");
-    position: relative;
-    z-index: 100;
-    right: 26px;
-    top: 0px; }
-  /* line 137, ../scss/_team.scss */
-  section.team .image.behance:after {
-    content: url("../img/team/behance-icon.png");
-    position: relative;
-    z-index: 100;
-    right: 26px;
-    top: 0px; }
 
-/* line 146, ../scss/_team.scss */
-img.v {
-  position: fixed;
-  z-index: 100000;
-  bottom: -440px;
-  left: -235px;
-  transform: rotate(21deg);
-  transition: all 0.2s; }
-
-/* line 155, ../scss/_team.scss */
-img.v.visible {
-  transition: all 0.2s;
-  bottom: -36px !important;
-  left: -21px !important; }
+/* line 134, ../scss/_team.scss */
+.remove-padding {
+  padding-top: 0; }
 
 /* line 1, ../scss/_newsletter.scss */
 section.newsletter {
@@ -3296,59 +3274,60 @@ section.advisors {
     /* line 33, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-name-position {
       margin: 10px;
-      display: inline-block; }
-    /* line 38, ../scss/_advisors.scss */
+      display: inline-block;
+      width: calc(100% - 65px); }
+    /* line 39, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-linkedin {
       content: url("../img/team/linkedin-icon.png");
       display: inline-block; }
-    /* line 43, ../scss/_advisors.scss */
+    /* line 44, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-name {
       font-family: 'Helvetica Neue Bold';
       font-size: 22px !important;
       line-height: 24px;
       color: #002d78; }
-    /* line 50, ../scss/_advisors.scss */
+    /* line 51, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-position {
       font-size: 12px !important;
       color: black; }
-    /* line 55, ../scss/_advisors.scss */
+    /* line 56, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-description {
       display: inline-block;
       width: 240px; }
-      /* line 59, ../scss/_advisors.scss */
+      /* line 60, ../scss/_advisors.scss */
       section.advisors .advisor-card .card-description .dots {
         height: 10px;
         width: 50%;
         margin: auto; }
-    /* line 66, ../scss/_advisors.scss */
+    /* line 67, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-description-content {
       font-size: 12px;
       text-align: center;
       padding: 15px;
       min-height: 292px; }
-  /* line 74, ../scss/_advisors.scss */
+  /* line 75, ../scss/_advisors.scss */
   section.advisors .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold';
     font-size: 20px; }
-  /* line 80, ../scss/_advisors.scss */
+  /* line 81, ../scss/_advisors.scss */
   section.advisors .position {
     font-family: 'Helvetica Neue Light';
     font-size: 14px;
     letter-spacing: 2px;
     margin-top: 5px;
     margin-bottom: 60px; }
-  /* line 88, ../scss/_advisors.scss */
+  /* line 89, ../scss/_advisors.scss */
   section.advisors .image {
     margin-left: 40px; }
-  /* line 92, ../scss/_advisors.scss */
+  /* line 93, ../scss/_advisors.scss */
   section.advisors .image:after {
     content: url("../img/team/linkedin-icon.png");
     position: relative;
     z-index: 100;
     right: 26px;
     top: 0px; }
-  /* line 100, ../scss/_advisors.scss */
+  /* line 101, ../scss/_advisors.scss */
   section.advisors .image.behance:after {
     content: url("../img/team/behance-icon.png");
     position: relative;
@@ -3356,7 +3335,7 @@ section.advisors {
     right: 26px;
     top: 0px; }
 
-/* line 109, ../scss/_advisors.scss */
+/* line 110, ../scss/_advisors.scss */
 img.v {
   position: fixed;
   z-index: 100000;
@@ -3365,7 +3344,7 @@ img.v {
   transform: rotate(21deg);
   transition: all 0.2s; }
 
-/* line 118, ../scss/_advisors.scss */
+/* line 119, ../scss/_advisors.scss */
 img.v.visible {
   transition: all 0.2s;
   bottom: -36px !important;
