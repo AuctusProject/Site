@@ -1024,7 +1024,11 @@ header.team-header {
 
 section.team {
   text-align: center;
-  background-color: #efefef; }
+  background-color: #efefef;
+  padding-bottom: 5em; }
+  section.team .team-content {
+    max-width: 1200px;
+    margin: auto; }
   section.team .team-card {
     margin: 25px;
     width: 320px;
@@ -1051,7 +1055,8 @@ section.team {
     section.team .team-card .card-name-position {
       display: inline-block;
       width: calc(100% - 80px);
-      margin-top: 20px; }
+      margin-top: 20px;
+      text-align: left; }
     section.team .team-card .card-linkedin {
       content: url("../img/team/linkedin-icon.png");
       display: inline-block; }
@@ -1073,7 +1078,7 @@ section.team {
       font-size: 12px;
       text-align: center;
       padding: 15px;
-      min-height: 240px; }
+      min-height: 245px; }
   section.team .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold';
@@ -1084,33 +1089,9 @@ section.team {
     letter-spacing: 2px;
     margin-top: 5px;
     margin-bottom: 60px; }
-  section.team .image {
-    margin-left: 40px; }
-  section.team .image:after {
-    content: url("../img/team/linkedin-icon.png");
-    position: relative;
-    z-index: 100;
-    right: 26px;
-    top: 0px; }
-  section.team .image.behance:after {
-    content: url("../img/team/behance-icon.png");
-    position: relative;
-    z-index: 100;
-    right: 26px;
-    top: 0px; }
 
-img.v {
-  position: fixed;
-  z-index: 100000;
-  bottom: -440px;
-  left: -235px;
-  transform: rotate(21deg);
-  transition: all 0.2s; }
-
-img.v.visible {
-  transition: all 0.2s;
-  bottom: -36px !important;
-  left: -21px !important; }
+.remove-padding {
+  padding-top: 0; }
 
 section.newsletter {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,91edff+50,ffffff+100 */
@@ -2774,7 +2755,8 @@ section.advisors {
       text-decoration: none; }
     section.advisors .advisor-card .card-name-position {
       margin: 10px;
-      display: inline-block; }
+      display: inline-block;
+      width: calc(100% - 65px); }
     section.advisors .advisor-card .card-linkedin {
       content: url("../img/team/linkedin-icon.png");
       display: inline-block; }
