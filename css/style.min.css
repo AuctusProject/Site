@@ -912,67 +912,69 @@ header.masthead {
   /* line 266, ../scss/_masthead.scss */
   header.masthead .button-div {
     display: inline-block;
-    border-radius: 8px;
     border: 2px solid white;
     margin-top: 10pt;
-    font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
-    font-size: 14pt !important;
-    padding: 15px;
+    font-family: "Helvetica Neue","HelveticaNeue";
+    font-size: 12pt !important;
+    padding: 70px 15px 15px 15px;
     color: white;
     z-index: 1000;
-    min-width: 146pt; }
-    /* line 278, ../scss/_masthead.scss */
+    min-width: 135pt;
+    text-align: center;
+    height: 110px; }
+    /* line 279, ../scss/_masthead.scss */
     header.masthead .button-div i.fa {
       margin-right: 13px; }
   @media (max-width: 768px) {
-    /* line 284, ../scss/_masthead.scss */
+    /* line 285, ../scss/_masthead.scss */
     header.masthead .button-div:first-of-type {
       margin-top: 65%;
       margin-bottom: 40px; } }
-  /* line 290, ../scss/_masthead.scss */
+  /* line 291, ../scss/_masthead.scss */
   header.masthead .button-div:hover {
     z-index: 1000;
     cursor: pointer;
-    color: #d7d6d6;
-    border: 2px solid #d7d6d6; }
-  /* line 297, ../scss/_masthead.scss */
+    color: #002D78;
+    background-color: white;
+    font-family: "Helvetica Neue Bold","HelveticaNeue-Bold"; }
+  /* line 299, ../scss/_masthead.scss */
   header.masthead .text-container {
     padding: 200px 0 0 15%;
     z-index: 1000;
     width: 68%;
     position: relative; }
-    /* line 303, ../scss/_masthead.scss */
+    /* line 305, ../scss/_masthead.scss */
     header.masthead .text-container h1 {
       font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
       font-size: 37pt;
       color: white;
       margin-bottom: 20pt; }
-    /* line 310, ../scss/_masthead.scss */
+    /* line 312, ../scss/_masthead.scss */
     header.masthead .text-container h2 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 20pt !important;
       color: white;
       margin: 0; }
-    /* line 317, ../scss/_masthead.scss */
+    /* line 319, ../scss/_masthead.scss */
     header.masthead .text-container h3 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 13pt !important;
       color: white;
       margin: 0; }
     @media (max-width: 768px) {
-      /* line 297, ../scss/_masthead.scss */
+      /* line 299, ../scss/_masthead.scss */
       header.masthead .text-container {
         text-align: center;
         padding: 150px 0 0 0;
         margin-left: unset !important;
         width: 100%; }
-        /* line 330, ../scss/_masthead.scss */
+        /* line 332, ../scss/_masthead.scss */
         header.masthead .text-container h1 {
           font-size: 27pt; }
-        /* line 334, ../scss/_masthead.scss */
+        /* line 336, ../scss/_masthead.scss */
         header.masthead .text-container h2 {
           font-size: 15pt !important; }
-        /* line 338, ../scss/_masthead.scss */
+        /* line 340, ../scss/_masthead.scss */
         header.masthead .text-container h3 {
           font-size: 13pt !important; } }
 
@@ -2138,7 +2140,7 @@ section.monetization {
   /* line 25, ../scss/_monetization.scss */
   section.monetization .description {
     margin-top: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
     font-family: 'Helvetica Neue Bold';
     font-size: 22px !important;
     color: white; }

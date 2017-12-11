@@ -265,15 +265,16 @@ header.masthead {
 
     .button-div {
         display: inline-block;
-        border-radius: 8px;
         border: 2px solid white;
         margin-top: 10pt;
-        font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
-        font-size: 14pt !important;
-        padding: 15px;
+        font-family: "Helvetica Neue","HelveticaNeue";
+        font-size: 12pt !important;
+        padding: 70px 15px 15px 15px;
         color: white;
         z-index: 1000;
-        min-width: 146pt;
+        min-width: 135pt;
+        text-align: center;
+        height: 110px;
 
         i.fa {
             margin-right: 13px;
@@ -290,8 +291,9 @@ header.masthead {
     .button-div:hover {
         z-index: 1000;
         cursor: pointer;
-        color: #d7d6d6;
-        border: 2px solid #d7d6d6;
+        color: #002D78;
+        background-color: white;
+        font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     }
 
     .text-container {
