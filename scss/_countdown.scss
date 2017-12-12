@@ -1,11 +1,11 @@
 section.countdown {
-    padding-bottom: 10em;
+    padding-bottom: 5em;
 
     .section-heading {
         margin-bottom: 4rem;
-        
-        h2{
-            color:#ffffff;
+
+        h2 {
+            color: #ffffff;
         }
     }
 
@@ -99,7 +99,9 @@ section.countdown {
     }
 
     .join-button {
-        margin-top: 100px;
+        width: 100%;
+        color: white;
+        margin-bottom: 20px;
     }
 
     .join-button a:hover, .join-button a:focus, .join-button a:active {
@@ -110,16 +112,24 @@ section.countdown {
         z-index: 1000;
         padding: 15px 0;
         font-family: 'Helvetica Neue Bold';
-        font-size: 18pt;
-        letter-spacing: 3px;
+        font-size: 14pt;
+        letter-spacing: 2px;
         background: #030387;
         color: #00fcfc;
         cursor: pointer;
         border: 0;
-        max-width: 360px;
-        margin: 20px auto;
+        max-width: 300px;
+        margin: auto;
         display: block;
         text-align: center;
+    }
+
+    .token-sale-website-button-div {
+        border-color: white;
+        width: 280px;
+        border: solid 1px;
+        padding: 10px;
+        margin: auto;
     }
 
     @media (min-width: 768px) {
@@ -150,5 +160,10 @@ section.countdown {
             width: 1000px;
             left: 148px;
         }
+    }
+
+    label {
+        color: white;
+        width: 100%;
     }
 }
