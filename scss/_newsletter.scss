@@ -5,8 +5,6 @@ section.newsletter {
     background: -webkit-linear-gradient(top, #ffffff 0%,#91edff 50%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #ffffff 0%,#91edff 50%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-    height: 950px;
-
     .back {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04148c+0,0649d4+100 */
         background: #04148c; /* Old browsers */
@@ -25,35 +23,6 @@ section.newsletter {
         }
     }
 
-    @media (max-width: 768px) {
-        .input-group {
-            margin-top: 50px;
-        }
-    }
-
-    input {
-        height: 70px;
-        border: 0px;
-        font-size: 24px;
-        font-family: 'Helvetica Neue Light';
-
-        @media (max-width: 768px) {
-            font-size: 22px;
-        }
-    }
-
-    .input-group-btn {
-        button {
-            background: #07dce0;
-            border: 0px;
-            width: 150px;
-            font-size: 18px;
-            font-family: 'Helvetica Neue Bold';
-            color: #002d78;
-            cursor: pointer;
-        }
-    }
-
     .auctus-wm {
         img {
             margin-top: -370px;
@@ -63,6 +32,12 @@ section.newsletter {
     @media (max-width: 768px) {
         .auctus-wm {
             display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .input-group {
+            margin-top: 50px;
         }
     }
 }

@@ -183,7 +183,7 @@ hr {
     background: linear-gradient(70deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* Standard syntax */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .web-only {
         display: none !important;
     }
@@ -216,4 +216,61 @@ a.linkedin-button {
 
 .check{
     padding-top: 170px;
+}
+
+
+.auctus {
+    input {
+        height: 70px;
+        border: 0px;
+        font-size: 24px;
+        font-family: 'Helvetica Neue Light';
+
+        @media (max-width: 768px) {
+            font-size: 22px;
+        }
+    }
+
+    .input-group-btn {
+        button {
+            background: #07dce0;
+            border: 0px;
+            width: 150px;
+            font-size: 18px;
+            font-family: 'Helvetica Neue Bold';
+            color: #002d78;
+            cursor: pointer;
+        }
+    }
+}
+
+.right-blue-panel {
+    display: block !important;
+    width: 32%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    a {
+        text-decoration: unset;
+    }
+
+    i.fa {
+        display: inline-block;
+        font-size: 25px;
+        color: #00fcfc;
+        margin: 15px 3px;
+        border: 2px solid #00fcfc;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        padding-top: 6px;
+    }
+
+    i.fa:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px #00fcfc;
+    }
 }
