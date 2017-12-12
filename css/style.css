@@ -1675,7 +1675,8 @@ section.retirement {
     MARGIN-TOP: 50px;
     text-align: right; }
     section.retirement .selected-content img {
-      margin: 0 60px 0 0; }
+      margin: 0 60px 0 0;
+      max-height: 375px; }
     section.retirement .selected-content .card {
       box-shadow: 0px 3px 4px #0F0F0F;
       padding: 20px 15px;
@@ -1771,7 +1772,7 @@ section.smartcontract {
   width: 90%;
   height: 450px; }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
   .video-iframe {
     width: 800px;
     height: 450px; } }
@@ -2455,18 +2456,19 @@ section.as-seen-on {
   background: linear-gradient(#efefef 80%, white 99%);
   /* Standard syntax */ }
   section.as-seen-on .links {
-    padding: 20px 60px;
     align-content: center; }
     @media (max-width: 648px) {
       section.as-seen-on .links {
         padding: 20px 15px; } }
     section.as-seen-on .links .link-box {
       margin: 0 auto 65px auto;
+      border: 10px solid white;
       background-color: white;
-      height: 180px;
-      width: 320px;
+      height: 120px;
+      width: 240px;
       background-position: center;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-size: contain; }
     @media (min-width: 648px) {
       section.as-seen-on .links > div:last-child {
         padding: 0 16%; } }

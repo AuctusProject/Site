@@ -46,10 +46,10 @@
             <div class="top-header">
                 <img class="img-responsive logo" src="img/header/headerlogo.png" />
                 <div class="menu">
-                    <a href="./" target="_blank"><span>TRY OUR ALPHA</span></a>
-                    <a href="./" target="_blank"><span>FAQ</span></a>
+                    <a href="https://demo.auctus.org" target="_blank"><span>DEMO</span></a>
+                    <a href="./faq"><span>FAQ</span></a>
                     <a href="./" target="_blank"><span>TOKEN SALE</span></a>
-                    <a href="./" target="_blank"><span>TEAM</span></a>
+                    <a href="./team"><span>TEAM</span></a>
                     <a href="./" target="_blank"><span>MEDIA &amp; NEWS</span></a>
                 </div>
                 <div class="right-blue-panel">
@@ -127,9 +127,9 @@
             <!--<div>
                 <img src="img/tokensale/auctuscoin.png"/>
             </div>-->
-            <div>
+            <div class="container">
                 <div class="row clearfix text-center">
-                    <div class="col-lg-5 text-right-md text-right-lg">
+                    <div class="col-lg-5 text-center-not-lg text-right-md text-right-lg">
                         <img src="img/tokensale/auctuscoin.png" />
                     </div>
                     <div class="col-lg-5">
@@ -140,7 +140,8 @@
                             <div class="text-center join-button">
                                 <a class="pre-sale-button" href="https://chat.auctus.org" target="_blank">
                                     <div class="pre-sale-button-div">
-                                        JOIN ROCKET CHAT
+                                        <img src="img/tokensale/rocketblue.png" height="25" />
+                                        ROCKET.CHAT
                                     </div>
                                 </a>
                             </div>
@@ -199,9 +200,6 @@
     </section>
 
     <div class="background-market-monetization" id="market">
-        <!--<div class="transition-gradient-before"></div>
-        <div class="background-market-monetization-first"></div>
-        <div class="background-market-monetization-second"></div>-->
 
         <section class="retirement">
             <div class="section-heading text-center">
@@ -224,9 +222,10 @@
                     <span meta-title="RELAX AND ENJOY YOUR LIFE"
                           meta-content="We maintain your target allocation, automatically rebalancing your portfolio when needed."
                           meta-id="04">4</span>
-                    <span meta-title="TRY OUR ALPHA"
+                    <span meta-title="TRY OUR DEMO"
                           meta-content="Experience the the benefits of Auctus Platform on a simulation environment."
-                          meta-id="05">5</span>
+                          meta-id="05"
+                          meta-href="https://demo.auctus.org">5</span>
                 </div>
             </div>
             <div class="row selected-content">
@@ -392,37 +391,34 @@
             <h3>AUCTUS ACROSS THE WEB</h3>
             <hr width="100px"></hr>
         </div>
-        <div class="links">
+        <div class="links container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <a href="https://www.bna.com/blockchain-technology-hits-n73014470448/" target="_blank">
                         <div class="link-box bloomberg">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <a href="https://themerkle.com/auctus-an-ethereum-project-disrupting-the-36-4-trillion-pension-market/" target="_blank">
                         <div class="link-box merkle">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <a href="https://www.cryptocoinsnews.com/auctus-reform-pension-market-adding-transparency-via-smart-contracts/" target="_blank">
                         <div class="link-box cryptocoinsnews">
                         </div>
                     </a>
                 </div>
-
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6 offset-lg-2 col-lg-4">
                     <a href="https://cointelegraph.com/press-releases/Auctus%20Pension%20Project%20-%20Pre-Sale%20Whitelist%20Closing%20in%2024h"
                        target="_blank">
                         <div class="link-box cointelegraph">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-12 col-lg-4">
                     <a href="http://bitcoinist.com/auctus-pre-sale-whitelist-closing-48h/" target="_blank">
                         <div class="link-box bitcoinist">
                         </div>
@@ -594,7 +590,18 @@
             function (c) {
                 $(".bullets-container > span").removeClass("selected");
                 $(this).toggleClass("selected");
+                
                 $(".selected-content img").attr("src", "img/retirement/" + $(this).attr("meta-id") + ".png");
+                var href = $(this).attr("meta-href");
+                if (href) {
+                    $(".selected-content img").css('cursor','pointer');
+                    $(".selected-content img").unbind("click").bind('click', function () { openNewTab(href); });
+                    $(".selected-content img").unbind("click").bind('click', function () { openNewTab(href); });
+                }
+                else {
+                    $(".selected-content img").css('cursor', 'unset');
+                    $(".selected-content img").unbind("click");
+                }
                 $(".card-title").text($(this).attr("meta-title"));
                 $(".card-content").text($(this).attr("meta-content"));
             }

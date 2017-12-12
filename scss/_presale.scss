@@ -576,7 +576,6 @@ section.as-seen-on {
     min-height: 800px;
     background: linear-gradient( #efefef 80%, white 99%); /* Standard syntax */
     .links {
-        padding: 20px 60px;
         align-content: center;
 
         @media (max-width: 648px) {
@@ -585,11 +584,13 @@ section.as-seen-on {
 
         .link-box {
             margin: 0 auto 65px auto;
+            border: 10px solid white;
             background-color: white;
-            height: 180px;
-            width: 320px;
+            height: 120px;
+            width: 240px;
             background-position: center;
             background-repeat: no-repeat;
+            background-size: contain;
         }
 
         @media (min-width: 648px) {
