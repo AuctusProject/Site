@@ -506,7 +506,7 @@ hr {
   background: linear-gradient(70deg, #075cee 25%, #0be7ce 75%);
   /* Standard syntax */ }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .web-only {
     display: none !important; } }
 
@@ -531,10 +531,6 @@ a.linkedin-button {
 .check {
   padding-top: 170px; }
 
-@media (max-width: 768px) {
-  .auctus .input-group {
-    margin-top: 50px; } }
-
 .auctus input {
   height: 70px;
   border: 0px;
@@ -552,6 +548,30 @@ a.linkedin-button {
   font-family: 'Helvetica Neue Bold';
   color: #002d78;
   cursor: pointer; }
+
+.right-blue-panel {
+  display: block !important;
+  width: 32%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .right-blue-panel a {
+    text-decoration: unset; }
+  .right-blue-panel i.fa {
+    display: inline-block;
+    font-size: 25px;
+    color: #00fcfc;
+    margin: 15px 3px;
+    border: 2px solid #00fcfc;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding-top: 6px; }
+  .right-blue-panel i.fa:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #00fcfc; }
 
 section.about {
   padding-top: 0;
@@ -675,29 +695,6 @@ header.masthead {
   header.masthead .top-header:hover {
     background: #04148c;
     transition: all 0.2s; }
-  header.masthead .right-blue-panel {
-    display: block !important;
-    width: 32%;
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    right: 0; }
-    header.masthead .right-blue-panel a {
-      text-decoration: unset; }
-    header.masthead .right-blue-panel i.fa {
-      display: inline-block;
-      font-size: 25px;
-      color: #00fcfc;
-      margin: 15px 3px;
-      border: 2px solid #00fcfc;
-      border-radius: 50%;
-      height: 40px;
-      width: 40px;
-      padding-top: 6px; }
-    header.masthead .right-blue-panel i.fa:hover {
-      cursor: pointer;
-      border-radius: 50%;
-      box-shadow: 0px 0px 10px #00fcfc; }
   header.masthead .header-circles {
     position: absolute;
     top: 55%; }
@@ -1068,8 +1065,7 @@ section.newsletter {
   background: linear-gradient(to bottom, #ffffff 0%, #91edff 50%, #ffffff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-  /* IE6-9 */
-  height: 950px; }
+  /* IE6-9 */ }
   section.newsletter .back {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04148c+0,0649d4+100 */
     background: #04148c;
@@ -1092,27 +1088,27 @@ section.newsletter {
   @media (max-width: 768px) {
     section.newsletter .auctus-wm {
       display: none; } }
+  @media (max-width: 768px) {
+    section.newsletter .input-group {
+      margin-top: 50px; } }
 
 footer {
   position: relative;
-  top: -200px; }
-  @media (max-width: 768px) {
-    footer .navigation-icons {
-      padding-top: 10px; } }
-  footer .navigation-icons a {
-    text-decoration: unset; }
-    footer .navigation-icons a i {
-      font-size: 25px;
-      border: 2px solid #002d78;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      padding-top: 7px;
-      margin: 10px;
-      color: #002d78; }
-      @media (max-width: 768px) {
-        footer .navigation-icons a i {
-          margin: 5px; } }
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  footer .navigation-icons {
+    padding-top: 10px; }
+    footer .navigation-icons a {
+      text-decoration: unset; }
+      footer .navigation-icons a i {
+        font-size: 25px;
+        border: 2px solid #002d78;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding-top: 7px;
+        margin: 3px;
+        color: #002d78; }
   @media (max-width: 768px) {
     footer .navigation-icons {
       margin-top: 20px; } }

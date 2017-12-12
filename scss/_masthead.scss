@@ -98,38 +98,6 @@ header.masthead {
         transition: all 0.2s;
     }
 
-    .right-blue-panel {
-        display: block !important;
-        width: 32%;
-        z-index: 10;
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        a {
-            text-decoration: unset;
-        }
-
-        i.fa {
-            display: inline-block;
-            font-size: 25px;
-            color: #00fcfc;
-            margin: 15px 3px;
-            border: 2px solid #00fcfc;
-            border-radius: 50%;
-            height: 40px;
-            width: 40px;
-            padding-top: 6px;
-        }
-
-        i.fa:hover {
-            cursor: pointer;
-            border-radius: 50%;
-            box-shadow: 0px 0px 10px #00fcfc;
-        }
-    }
-
-
     .header-circles {
         position: absolute;
         top: 55%
