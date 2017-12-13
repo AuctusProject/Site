@@ -775,12 +775,13 @@ header.masthead {
         margin: 0;
         width: 100%;
         text-align: center;
-        margin-left: unset !important; } }
-    /* line 62, ../scss/_masthead.scss */
+        margin-left: unset !important;
+        padding-left: 0%; } }
+    /* line 63, ../scss/_masthead.scss */
     header.masthead .top-header .logo {
       margin: 15px 0 5px 0; }
       @media (max-width: 768px) {
-        /* line 62, ../scss/_masthead.scss */
+        /* line 63, ../scss/_masthead.scss */
         header.masthead .top-header .logo {
           display: block;
           -moz-transform: scale(0.9);
@@ -789,32 +790,32 @@ header.masthead {
           transform: scale(0.9);
           margin-left: auto;
           margin-right: auto; } }
-    /* line 76, ../scss/_masthead.scss */
+    /* line 77, ../scss/_masthead.scss */
     header.masthead .top-header .menu {
       display: inline;
       position: relative;
       left: 5%;
       top: 12px;
       text-align: center; }
-      /* line 83, ../scss/_masthead.scss */
+      /* line 84, ../scss/_masthead.scss */
       header.masthead .top-header .menu a > span {
         color: white;
         margin: 12px;
         cursor: pointer;
         font-family: "Helvetica Neue Light","HelveticaNeue-Light"; }
-      /* line 90, ../scss/_masthead.scss */
+      /* line 91, ../scss/_masthead.scss */
       header.masthead .top-header .menu span:hover {
         font-weight: bold;
         transition: all 0.2s; }
-  /* line 97, ../scss/_masthead.scss */
+  /* line 98, ../scss/_masthead.scss */
   header.masthead .top-header:hover {
     background: #04148c;
     transition: all 0.2s; }
   @media (max-width: 768px) {
-    /* line 104, ../scss/_masthead.scss */
+    /* line 105, ../scss/_masthead.scss */
     header.masthead .button-div {
       margin-bottom: 30px; } }
-  /* line 111, ../scss/_masthead.scss */
+  /* line 112, ../scss/_masthead.scss */
   header.masthead .button-div {
     display: inline-block;
     border: 2px solid white;
@@ -827,10 +828,10 @@ header.masthead {
     min-width: 115pt;
     text-align: center;
     height: 110px; }
-    /* line 124, ../scss/_masthead.scss */
+    /* line 125, ../scss/_masthead.scss */
     header.masthead .button-div i.fa {
       margin-right: 13px; }
-    /* line 128, ../scss/_masthead.scss */
+    /* line 129, ../scss/_masthead.scss */
     header.masthead .button-div div {
       height: 50px;
       width: 50px;
@@ -838,71 +839,71 @@ header.masthead {
       margin-bottom: 10px;
       background-repeat: no-repeat;
       background-position: center; }
-    /* line 137, ../scss/_masthead.scss */
+    /* line 138, ../scss/_masthead.scss */
     header.masthead .button-div #demo {
       background-image: url(/img/header/demo-branco.png); }
-    /* line 141, ../scss/_masthead.scss */
+    /* line 142, ../scss/_masthead.scss */
     header.masthead .button-div #presentation {
       background-image: url(/img/header/presentation-branco.png); }
-    /* line 145, ../scss/_masthead.scss */
+    /* line 146, ../scss/_masthead.scss */
     header.masthead .button-div #whitepaper {
       background-image: url(/img/header/wp-branco.png); }
-  /* line 150, ../scss/_masthead.scss */
+  /* line 151, ../scss/_masthead.scss */
   header.masthead .button-div:hover {
     z-index: 1000;
     cursor: pointer;
     color: #002D78;
     background-color: white;
     font-weight: bold; }
-    /* line 157, ../scss/_masthead.scss */
+    /* line 158, ../scss/_masthead.scss */
     header.masthead .button-div:hover #demo {
       background-image: url(/img/header/demo.png); }
-    /* line 161, ../scss/_masthead.scss */
+    /* line 162, ../scss/_masthead.scss */
     header.masthead .button-div:hover #presentation {
       background-image: url(/img/header/presentation.png); }
-    /* line 165, ../scss/_masthead.scss */
+    /* line 166, ../scss/_masthead.scss */
     header.masthead .button-div:hover #whitepaper {
       background-image: url(/img/header/wp.png); }
-  /* line 170, ../scss/_masthead.scss */
+  /* line 171, ../scss/_masthead.scss */
   header.masthead .text-container {
     padding: 200px 0 0 6%;
     width: 68%;
     position: relative; }
-    /* line 175, ../scss/_masthead.scss */
+    /* line 176, ../scss/_masthead.scss */
     header.masthead .text-container h1 {
       font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
       font-size: 37pt;
       color: white;
       margin-bottom: 20pt; }
-    /* line 182, ../scss/_masthead.scss */
+    /* line 183, ../scss/_masthead.scss */
     header.masthead .text-container h2 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 20pt !important;
       color: white;
       margin: 0; }
-    /* line 189, ../scss/_masthead.scss */
+    /* line 190, ../scss/_masthead.scss */
     header.masthead .text-container h3 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 13pt !important;
       color: white;
       margin: 0; }
     @media (max-width: 768px) {
-      /* line 170, ../scss/_masthead.scss */
+      /* line 171, ../scss/_masthead.scss */
       header.masthead .text-container {
         text-align: center;
         padding: 150px 0 0 0;
         margin-left: unset !important;
         width: 100%; }
-        /* line 202, ../scss/_masthead.scss */
+        /* line 203, ../scss/_masthead.scss */
         header.masthead .text-container h1 {
           font-size: 27pt; }
-        /* line 206, ../scss/_masthead.scss */
+        /* line 207, ../scss/_masthead.scss */
         header.masthead .text-container h2 {
           font-size: 15pt !important; }
-        /* line 210, ../scss/_masthead.scss */
+        /* line 211, ../scss/_masthead.scss */
         header.masthead .text-container h3 {
           font-size: 13pt !important; } }
-  /* line 216, ../scss/_masthead.scss */
+  /* line 217, ../scss/_masthead.scss */
   header.masthead .eth-machine {
     position: absolute;
     top: 60px;
@@ -2034,7 +2035,7 @@ section.monetization {
 section.smartcontract {
   margin-bottom: 100px;
   font-family: "Helvetica Neue","HelveticaNeue"; }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     /* line 3, ../scss/_smartcontract.scss */
     section.smartcontract .container {
       padding: 0 100px !important; } }
