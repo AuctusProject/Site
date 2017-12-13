@@ -64,7 +64,7 @@ section.countdown {
 
         a {
             padding: 15px 65px;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
             font-size: 24px;
             background: #07dce0;
             color: #002d78;
@@ -93,14 +93,14 @@ section.countdown {
         display: inline-block;
 
         .time-value {
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             font-size: 80px;
             line-height: 110px;
             color: rgba(9, 216, 186, 1);
         }
 
         .time-label {
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             color: white;
             font-size: 20px;
         }
@@ -119,7 +119,7 @@ section.countdown {
     .pre-sale-button-div {
         z-index: 1000;
         padding: 15px 0;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 14pt;
         letter-spacing: 2px;
         background: #030387;

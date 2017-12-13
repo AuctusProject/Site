@@ -241,7 +241,7 @@ header.faq-masthead {
 section.faq {
   padding-top: 5rem !important; }
   section.faq .item a {
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
     font-size: 20pt;
     color: #002D78;
     text-decoration: none !important; }
@@ -343,19 +343,19 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Helvetica Neue'; }
+  font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
 
 p {
-  font-family: 'Helvetica Neue Light';
+  font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
   font-size: 18px; }
 
 h2 {
-  font-family: 'Helvetica Neue Bold';
+  font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 36px !important;
   color: #002d78; }
 
 h3 {
-  font-family: 'Helvetica Neue Light';
+  font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
   font-size: 15px !important;
   letter-spacing: 2px;
   color: black; }
@@ -410,7 +410,7 @@ hr {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
   .white-box span {
-    font-family: 'Helvetica Neue Bold';
+    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     text-transform: uppercase;
     font-size: 14px; }
 
@@ -535,7 +535,7 @@ a.linkedin-button {
   height: 70px;
   border: 0px;
   font-size: 24px;
-  font-family: 'Helvetica Neue Light'; }
+  font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
   @media (max-width: 768px) {
     .auctus input {
       font-size: 22px; } }
@@ -545,7 +545,7 @@ a.linkedin-button {
   border: 0px;
   width: 150px;
   font-size: 18px;
-  font-family: 'Helvetica Neue Bold';
+  font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   color: #002d78;
   cursor: pointer; }
 
@@ -767,7 +767,7 @@ header.masthead {
     display: inline-block;
     border: 2px solid white;
     margin-top: 10pt;
-    font-family: "Helvetica Neue","HelveticaNeue";
+    font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 12pt !important;
     padding: 15px 0px;
     color: white;
@@ -1085,7 +1085,7 @@ section.team {
       content: url("../img/team/linkedin-icon.png");
       display: inline-block; }
     section.team .team-card .card-name {
-      font-family: 'Helvetica Neue Bold';
+      font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
       font-size: 22px !important;
       line-height: 24px;
       color: #002d78; }
@@ -1105,10 +1105,10 @@ section.team {
       min-height: 245px; }
   section.team .name {
     margin-top: 10px;
-    font-family: 'Helvetica Neue Bold';
+    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 20px; }
   section.team .position {
-    font-family: 'Helvetica Neue Light';
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     font-size: 14px;
     letter-spacing: 2px;
     margin-top: 5px;
@@ -1241,7 +1241,7 @@ footer {
 #topMenu .menu-container .menu-content ul > li > a {
   color: white;
   font-size: 20px;
-  font-family: 'Helvetica Neue Bold'; }
+  font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold'; }
 
 #topMenu .menu-container .menu-content ul > li > a:hover {
   color: #0addab !important; }
@@ -1341,7 +1341,7 @@ section.roadmap {
     section.roadmap .box.left.third {
       top: -75px; } }
   section.roadmap span.heading {
-    font-family: 'Helvetica Neue Bold';
+    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 35px; }
   section.roadmap .green {
     color: #09D8BA; }
@@ -1368,7 +1368,7 @@ section.roadmap {
   section.roadmap .row.right, section.roadmap .row.left {
     position: relative; }
   section.roadmap .milestones span {
-    font-family: 'Helvetica Neue Light'; }
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
   @media (min-width: 1200px) {
     section.roadmap .roadmap-line.higher {
       height: 110px !important; }
@@ -1454,7 +1454,7 @@ section.countdown {
     margin-top: 50px; }
     section.countdown .join-whitelist a {
       padding: 15px 65px;
-      font-family: 'Helvetica Neue Bold';
+      font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
       font-size: 24px;
       background: #07dce0;
       color: #002d78;
@@ -1477,12 +1477,12 @@ section.countdown {
     border-radius: 5px;
     display: inline-block; }
     section.countdown .box .time-value {
-      font-family: 'Helvetica Neue Light';
+      font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
       font-size: 80px;
       line-height: 110px;
       color: #09d8ba; }
     section.countdown .box .time-label {
-      font-family: 'Helvetica Neue Light';
+      font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
       color: white;
       font-size: 20px; }
   section.countdown .join-button {
@@ -1494,7 +1494,7 @@ section.countdown {
   section.countdown .pre-sale-button-div {
     z-index: 1000;
     padding: 15px 0;
-    font-family: 'Helvetica Neue Bold';
+    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 14pt;
     letter-spacing: 2px;
     background: #030387;
@@ -1557,7 +1557,7 @@ section.token-sale-overview {
       min-width: 86.5px; }
       section.token-sale-overview .box .sale-title span {
         color: #1439AF;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 14pt;
         top: -4px; }
     section.token-sale-overview .box > div {
@@ -1568,15 +1568,15 @@ section.token-sale-overview {
       section.token-sale-overview .box .image-div img {
         margin-bottom: 5px; }
       section.token-sale-overview .box .image-div span {
-        font-family: "Helvetica Neue Light";
+        font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
         font-size: 20pt; }
         section.token-sale-overview .box .image-div span b {
-          font-family: "Helvetica Neue Bold";
+          font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
           font-size: 21pt; }
       section.token-sale-overview .box .image-div span.ico {
         margin-left: -10px; }
     section.token-sale-overview .box .sub-title {
-      font-family: "Helvetica Neue Light";
+      font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
       font-size: 8pt !important; }
     section.token-sale-overview .box hr {
       margin: 0;
@@ -1586,11 +1586,11 @@ section.token-sale-overview {
     section.token-sale-overview .box .boundaries {
       padding-top: 8px; }
       section.token-sale-overview .box .boundaries span {
-        font-family: "Helvetica Neue Bold";
+        font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
         font-size: 11pt;
         font-weight: bold; }
       section.token-sale-overview .box .boundaries span.min {
-        font-family: "Helvetica Neue";
+        font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
         font-size: 11pt;
         font-weight: normal; }
       section.token-sale-overview .box .boundaries span.pull-right {
@@ -1598,7 +1598,7 @@ section.token-sale-overview {
       section.token-sale-overview .box .boundaries > div {
         text-align: center; }
       section.token-sale-overview .box .boundaries span.ico {
-        font-family: "Helvetica Neue Light";
+        font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
         font-size: 11pt; }
     section.token-sale-overview .box .boundaries.ico {
       padding-top: 4px;
@@ -1633,10 +1633,10 @@ section.token-sale-overview {
         background: linear-gradient(90deg, #00bdff 30%, #0be7ce 100%);
         /* Standard syntax */ }
       section.token-sale-overview .box .boundaries-panel .sub-title {
-        font-family: "Helvetica Neue Light";
+        font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
         font-size: 8pt !important; }
       section.token-sale-overview .box .boundaries-panel span.ico {
-        font-family: "Helvetica Neue Light";
+        font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
         font-size: 19pt; }
         @media (max-width: 1199px) {
           section.token-sale-overview .box .boundaries-panel span.ico {
@@ -1679,7 +1679,7 @@ section.token-sale-overview {
       padding-top: 10px; }
       section.token-sale-overview .vesting .vesting-title span {
         color: #1439AF;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 14pt;
         top: -4px; }
       section.token-sale-overview .vesting .vesting-title hr {
@@ -1695,7 +1695,7 @@ section.token-sale-overview {
         section.token-sale-overview .vesting .row {
           margin: 12px auto; } }
       section.token-sale-overview .vesting .row div:first-child {
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         text-align: right; }
         @media (max-width: 768px) {
           section.token-sale-overview .vesting .row div:first-child {
@@ -1723,7 +1723,7 @@ section.retirement {
     display: inline-block;
     width: 40px;
     height: 40px;
-    font-family: "Helvetica Neue","HelveticaNeue";
+    font-family: "Helvetica Neue Light","HelveticaNeue-Light";
     font-size: 25px;
     font-weight: bold;
     margin: 0 20px;
@@ -1760,7 +1760,7 @@ section.retirement {
       box-shadow: 0px 3px 4px #0F0F0F;
       padding: 20px 15px;
       background-color: white;
-      font-family: "Helvetica Neue","HelveticaNeue";
+      font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       width: 55%;
       height: 375px;
       text-align: center; }
@@ -1809,7 +1809,7 @@ section.monetization {
     color: white; }
   section.monetization .description {
     margin: 20px 46px;
-    font-family: 'Helvetica Neue', 'HelveticaNeue';
+    font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light';
     font-size: 18px !important;
     color: white; }
   section.monetization .icon img {
@@ -1817,7 +1817,7 @@ section.monetization {
 
 section.smartcontract {
   margin-bottom: 100px;
-  font-family: "Helvetica Neue","HelveticaNeue"; }
+  font-family: "Helvetica Neue Light","HelveticaNeue-Light"; }
   @media (min-width: 768px) {
     section.smartcontract .container {
       padding: 0 100px !important; } }
@@ -1883,7 +1883,7 @@ section.smartcontract {
     text-align: left;
     padding: 20px; }
     .confirm-body .confirm-card .confirm-card-content {
-      font-family: 'Helvetica Neue';
+      font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
       font-size: 0.9rem; }
 
 header.check-masthead {
@@ -2097,7 +2097,7 @@ header.check-masthead {
     height: 70px;
     border: 0px;
     font-size: 24px;
-    font-family: 'Helvetica Neue Light'; }
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
     @media (max-width: 768px) {
       header.check-masthead input {
         font-size: 22px; } }
@@ -2106,7 +2106,7 @@ header.check-masthead {
     border: 0px;
     width: 150px;
     font-size: 18px;
-    font-family: 'Helvetica Neue Bold';
+    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     color: #002d78;
     cursor: pointer; }
   header.check-masthead #whitelistedAddress, header.check-masthead #notWhitelistedAddress, header.check-masthead #invalidAddress, header.check-masthead #errorOcurred {
@@ -2200,12 +2200,12 @@ header.presale-masthead .box {
   border-radius: 5px;
   display: inline-block; }
   header.presale-masthead .box .time-value {
-    font-family: 'Helvetica Neue Light';
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     font-size: 58px;
     line-height: 88px;
     color: #00fcfc; }
   header.presale-masthead .box .time-label {
-    font-family: 'Helvetica Neue Light';
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     color: #00fcfc;
     font-size: 16px; }
 
@@ -2236,7 +2236,7 @@ header.presale-masthead a.btn {
   position: relative;
   z-index: 1000;
   padding: 15px 55px;
-  font-family: 'Helvetica Neue Bold';
+  font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 20pt;
   letter-spacing: 3px;
   background: #030387;
@@ -2271,13 +2271,13 @@ header.presale-masthead .bottom-waves {
 
 header.presale-masthead .modal .popup-title {
   text-align: center;
-  font-family: 'Helvetica Neue Bold';
+  font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 26px;
   color: #002D78; }
 
 header.presale-masthead .modal .popup-subtitle {
   text-align: center;
-  font-family: 'Helvetica Neue Bold';
+  font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 16px;
   color: #4D4D4D; }
 
@@ -2285,7 +2285,7 @@ header.presale-masthead .modal-dialog {
   max-width: 600px !important; }
 
 header.presale-masthead .modal p {
-  font-family: 'Helvetica Neue Light';
+  font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
   color: #4D4D4D;
   font-size: 14px; }
 
@@ -2315,7 +2315,7 @@ header.presale-masthead .popup-footer {
   margin-bottom: 30px; }
   header.presale-masthead .popup-footer .btn {
     padding: 15px 45px;
-    font-family: 'Helvetica Neue Bold';
+    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 16pt;
     letter-spacing: 3px;
     background: #00B1FF;
@@ -2335,12 +2335,12 @@ header.presale-masthead .address-copy .ens-address {
   margin-top: 40px;
   font-size: 24px;
   text-align: center;
-  font-family: 'Helvetica Neue Bold'; }
+  font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold'; }
 
 header.presale-masthead .address-copy .separator {
   font-size: 18px;
   text-align: center;
-  font-family: 'Helvetica Neue Light'; }
+  font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
 
 @media (min-width: 768px) {
   header.presale-masthead .address-copy .separator:before {
@@ -2369,7 +2369,7 @@ header.presale-masthead .address-copy p.text-box {
     padding: 10px;
     text-align: center;
     font-size: 14pt;
-    font-family: 'Helvetica Neue Light';
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     outline: none;
     border: 1px solid #4D4D4D; }
     @media (max-width: 650px) {
@@ -2471,7 +2471,7 @@ section.resources {
       position: relative;
       z-index: 1000;
       padding: 10px 10px;
-      font-family: 'Helvetica Neue Bold';
+      font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
       font-size: 16pt;
       letter-spacing: 3px;
       background: #030387;
@@ -2569,7 +2569,7 @@ section.advisors {
       content: url("../img/team/linkedin-icon.png");
       display: inline-block; }
     section.advisors .advisor-card .card-name {
-      font-family: 'Helvetica Neue Bold';
+      font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
       font-size: 22px !important;
       line-height: 24px;
       color: #002d78; }
@@ -2590,10 +2590,10 @@ section.advisors {
       min-height: 292px; }
   section.advisors .name {
     margin-top: 10px;
-    font-family: 'Helvetica Neue Bold';
+    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 20px; }
   section.advisors .position {
-    font-family: 'Helvetica Neue Light';
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     font-size: 14px;
     letter-spacing: 2px;
     margin-top: 5px;

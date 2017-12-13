@@ -38,9 +38,9 @@ section.team {
     background-color: #efefef;
     padding-bottom: 5em;
 
-    .team-content{
-        max-width:1200px;
-        margin:auto;
+    .team-content {
+        max-width: 1200px;
+        margin: auto;
     }
 
     .team-card {
@@ -86,7 +86,7 @@ section.team {
         }
 
         .card-name {
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
             font-size: 22px !important;
             line-height: 24px;
             color: rgba(0, 45, 120, 1);
@@ -117,12 +117,12 @@ section.team {
 
     .name {
         margin-top: 10px;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 20px;
     }
 
     .position {
-        font-family: 'Helvetica Neue Light';
+        font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
         font-size: 14px;
         letter-spacing: 2px;
         margin-top: 5px;

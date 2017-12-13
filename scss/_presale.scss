@@ -1,6 +1,6 @@
 // Styling for the masthead
 header.presale-masthead {
-    
+
 
     .right-presale-panel {
         display: block !important;
@@ -118,14 +118,14 @@ header.presale-masthead {
         display: inline-block;
 
         .time-value {
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             font-size: 58px;
             line-height: 88px;
             color: #00fcfc;
         }
 
         .time-label {
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             color: #00fcfc;
             font-size: 16px;
         }
@@ -164,7 +164,7 @@ header.presale-masthead {
         position: relative;
         z-index: 1000;
         padding: 15px 55px;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 20pt;
         letter-spacing: 3px;
         background: #030387;
@@ -205,14 +205,14 @@ header.presale-masthead {
 
     .modal .popup-title {
         text-align: center;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 26px;
         color: #002D78;
     }
 
     .modal .popup-subtitle {
         text-align: center;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 16px;
         color: #4D4D4D;
     }
@@ -222,7 +222,7 @@ header.presale-masthead {
     }
 
     .modal p {
-        font-family: 'Helvetica Neue Light';
+        font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
         color: #4D4D4D;
         font-size: 14px;
     }
@@ -260,7 +260,7 @@ header.presale-masthead {
 
         .btn {
             padding: 15px 45px;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
             font-size: 16pt;
             letter-spacing: 3px;
             background: #00B1FF;
@@ -286,13 +286,13 @@ header.presale-masthead {
             margin-top: 40px;
             font-size: 24px;
             text-align: center;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         }
 
         .separator {
             font-size: 18px;
             text-align: center;
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
         }
 
         @media (min-width: 768px) {
@@ -327,7 +327,7 @@ header.presale-masthead {
                 padding: 10px;
                 text-align: center;
                 font-size: 14pt;
-                font-family: 'Helvetica Neue Light';
+                font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
                 outline: none;
                 border: 1px solid #4D4D4D;
 
@@ -471,7 +471,7 @@ section.resources {
             position: relative;
             z-index: 1000;
             padding: 10px 10px;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
             font-size: 16pt;
             letter-spacing: 3px;
             background: #030387;
