@@ -13,10 +13,10 @@ header.masthead {
     background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* Standard syntax */
     @media (max-width: 768px) {
         background: #0884cd; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace ); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace ); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace); /* Standard syntax */
+        background: -webkit-linear-gradient(180deg, #04148c 15%, #0884cd 40%, #0bdace); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(180deg, #04148c 15%, #0884cd 40%, #0bdace ); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(180deg, #04148c 15%, #0884cd 40%, #0bdace); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(180deg, #04148c 15%, #0884cd 40%, #0bdace); /* Standard syntax */
     }
 
 
@@ -57,7 +57,8 @@ header.masthead {
             width: 100%;
             text-align: center;
             margin-left: unset !important;
-            padding-left:0%;
+            padding-left: 0%;
+            position: absolute;
         }
 
         .logo {
@@ -107,6 +108,91 @@ header.masthead {
         }
     }
 
+
+    .quarter-circle {
+        background-color: white;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        position: absolute;
+        right: -100px;
+        top: -90px;
+        height: 180px;
+        width: 200px;
+        z-index: 10000;
+        transition: all 0.5s;
+
+        @media (max-width: 768px) {
+            right: -60px;
+            top: -65px;
+            height: 120px;
+            width: 130px;
+        }
+    }
+
+    #topMenu {
+
+        i {
+            color: #002d78;
+            font-size: 45px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            i.fa-bars {
+                font-size: 27px;
+                position: absolute;
+                right: 15px;
+                top: 10px;
+            }
+        }
+    }
+
+
+    #topMenu.open .quarter-circle {
+        background: #04148c;
+        background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
+        background: -o-linear-gradient(168deg, #04148c, #0884cd);
+        background: -moz-linear-gradient(168deg, #04148c, #0884cd);
+        background: linear-gradient(168deg, #04148c, #0884cd);
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        position: absolute;
+        right: -386px;
+        top: -350px;
+        width: 900px;
+        height: 1000px;
+        z-index: 10000;
+        transition: all 1s;
+
+        i {
+            color: #002d78;
+            font-size: 45px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            right: -60%;
+            height: 180%;
+            width: 150%;
+
+            i.fa-bars {
+                font-size: 27px;
+                position: absolute;
+                right: -385px;
+                top: -170px;
+            }
+        }
+    }
 
 
     .button-div {
@@ -196,7 +282,7 @@ header.masthead {
 
         @media (max-width: 768px) {
             text-align: center;
-            padding: 150px 0 0 0;
+            padding: 120px 0 0 0;
             margin-left: unset !important;
             width: 100%;
 
@@ -215,8 +301,20 @@ header.masthead {
     }
 
     .eth-machine {
-        position: absolute;
-        top: 60px;
-        right: 36px;
+        @media (min-width: 768px) {
+            position: absolute;
+            top: 60px;
+            right: 36px;
+        }
+
+        @media (max-width:768px) {
+            text-align: center;
+            margin-bottom: 20px;
+
+            img {
+                margin-top: -30px;
+                max-width: 80%;
+            }
+        }
     }
 }

@@ -23,6 +23,10 @@ section.retirement {
             border-radius: 20px;
             transition: all 0.2s;
             cursor: pointer;
+
+            @media(max-width:768px) {
+                margin: 0 6px;
+            }
         }
 
         .selected {
@@ -35,12 +39,25 @@ section.retirement {
 
     .selected-content {
         height: 200px;
-        MARGIN-TOP: 50px;
+        margin-top: 50px;
         text-align: right;
+
+        @media(max-width:768px) {
+            height: 415px;
+
+            > div {
+                text-align: center;
+            }
+        }
 
         img {
             margin: 0 60px 0 0;
-            max-height:375px;
+            max-height: 375px;
+
+            @media(max-width:768px) {
+                width: 80%;
+                margin: auto;
+            }
         }
 
         .card {
@@ -51,6 +68,12 @@ section.retirement {
             width: 55%;
             height: 375px;
             text-align: center;
+
+            @media(max-width:768px) {
+                width: 80%;
+                margin: 35px auto;
+                height: 280px;
+            }
 
             .card-title {
                 margin-bottom: .75rem;

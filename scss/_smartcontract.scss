@@ -5,9 +5,16 @@ section.smartcontract {
         }
     }
 
+    @media (max-width: 768px) {
+        img {
+            width: 80%;
+            margin:20px 0;
+        }
+    }
+
     margin-bottom: 100px;
     font-family: "Helvetica Neue","HelveticaNeue";
-    
+
     .content {
         margin: auto;
 
