@@ -44,7 +44,7 @@ header.masthead {
         position: fixed;
         padding-left: 6%;
         background: rgba(4, 20, 140, 0.7);
-        z-index: 100;
+        z-index: 1001;
         transition: all 0.2s;
 
         @media (max-width: 1199px) {

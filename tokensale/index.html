@@ -1,0 +1,657 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The Auctus Project was created with the mission of improving the pension market by increasing transparency and eliminating common problems such as corporate governance issues, corruption, fraud, bribery, and bureaucracy, as well as lowering operational costs.">
+    <meta name="keywords" content="Ethereum,Smart Contract,Smart Contracts,Cryptocurrency,Pension Funds">
+    <meta property="og:title" content="Auctus Project | Smart Contract Powered Pension Funds">
+    <meta property="og:description" content="The Auctus Project was created with the mission of improving the pension market by increasing transparency and eliminating common problems such as corporate governance issues, corruption, fraud, bribery, and bureaucracy, as well as lowering operational costs.">
+    <meta property="og:image" content="https://dl.auctus.org/auctusite.png">
+    <meta property="og:url" content="https://auctus.org/presale">
+
+    <title>Auctus Project | Smart Contract Powered Retirement Plans</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.min.css?v=3" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
+
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav>.container {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+    <header class="masthead presale-masthead">
+        <div id="topMenu" class="mobile-only">
+            <div class="quarter-circle">
+            </div>
+            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+                <i class="fa fa-bars" id="bars"></i>
+                <i class="fa fa-close" id="close"></i>
+            </div>
+            <div class="menu-container">
+                <div class="menu-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="https://demo.auctus.org" target="_blank">DEMO</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="../faq">FAQ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="#">TOKEN SALE</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="../team" target="_blank">TEAM</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="https://blog.auctus.org" target="_blank">BLOG</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="top-header">
+            <a href="../"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
+            <div class="menu web-only">
+                <a href="https://demo.auctus.org" target="_blank"><span>DEMO</span></a>
+                <a href="../faq"><span>FAQ</span></a>
+                <a href="../tokensale" target="_blank"><span>TOKEN SALE</span></a>
+                <a href="./#"><span>TEAM</span></a>
+            </div>
+            <div class="icons-panel web-only">
+                <div class="navigation-icons text-center web-only">
+                    <a href="https://twitter.com/AuctusProject" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/AuctusProject" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://reddit.com/r/AuctusProject" target="_blank">
+                        <i class="fa fa-reddit-alien"></i>
+                    </a>
+                    <a href="https://blog.auctus.org" target="_blank">
+                        <i class="fa fa-medium"></i>
+                    </a>
+                    <a href="https://chat.auctus.org" target="_blank">
+                        <i class="fa fa-rocket"></i>
+                    </a>
+                    <a href="https://www.facebook.com/AuctusProject/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="mailto:contact@auctus.org">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="text-center">
+                <img class="circle-logo" src="../img/presale/circle-logo.png" />
+            </div>
+            <div class="text-container title">
+                <h2>AUCTUS TOKEN SALE IS COMING!</h2><br>
+                <h1>Q1 2018</h1>
+                <h3>We'll soon release more details about it <b>Keep updated!</b><br><br>For now don't forget to join our whitelist</h3>
+            </div>
+            <div class="text-container">
+
+            </div>
+            <a href="http://eepurl.com/c1-5u9" class="btn">
+                Join The Whitelist
+            </a>
+            <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" onclick="onCloseAgreementPopup()" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="agree-terms">
+                                <p class="popup-title">
+                                    TOKEN SALE AGREEMENT
+                                </p>
+                                <p class="popup-subtitle">
+                                    You acknowledge and agree that:
+                                </p>
+                                <p>
+                                    - You have read and understood the Auctus whitepaper
+                                </p>
+                                <p>
+                                    - You are not using an exchange wallet
+                                </p>
+                                <p>
+                                    - Your purchase of AUC complies with applicable laws and regulations in your jurisdiction
+                                </p>
+                                <p>
+                                    - There are risks associated with purchasing AUC, owning AUC and using AUC
+                                </p>
+                            </div>
+                            <div class="address-copy" style="display:none;">
+                                <p class="popup-title">
+                                    <span>CONTRACT ADDRESS</span>
+                                </p>
+                                <p class="ens-address">
+                                    <a target="_blank" href="https://etherscan.io/address/auctusproject.eth">auctusproject.eth</a>
+                                </p>
+                                <p class="separator">
+                                    <span>or</span>
+                                </p>
+                                <p class="text-box">
+                                    <input id="eth-address-input" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="0x84D45E60f7036F0DE7dF8ed68E1Ee50471B963BA"></span>
+                                </p>
+                                <p class="instruction">
+                                    - Only approved whitelist addresses can participate, check your address here:  <a target="_blank" href="../check">https://auctus.org/check</a>
+                                </p>
+                                <p>
+                                    - Recommended Gas Limit 150000
+                                </p>
+                                <p>
+                                    - Do not send ETH from any exchanges
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <button type="button" class="btn agree-button" onclick="onAgreePreSale()">AGREE</button>
+                            <button type="button" class="btn copy-button" data-clipboard-target="#eth-address-input" onclick="onCopyAddress()">COPY ADDRESS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-waves"></div>
+        </div>
+    </header>
+    <section class="as-seen-on" id="asSeenOn">
+        <div class="section-heading text-center">
+            <h2>AS SEEN ON</h2>
+            <h3>AUCTUS ACROSS THE WEB</h3>
+            <hr width="100px"></hr>
+        </div>
+        <div class="links container">
+            <div class="row">
+                <div class="col-6 col-sm-4 offset-lg-1 col-lg-2">
+                    <a href="https://www.bna.com/blockchain-technology-hits-n73014470448/" target="_blank">
+                        <div class="link-box bloomberg">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <a href="https://themerkle.com/auctus-an-ethereum-project-disrupting-the-36-4-trillion-pension-market/" target="_blank">
+                        <div class="link-box merkle">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <a href="https://www.cryptocoinsnews.com/auctus-reform-pension-market-adding-transparency-via-smart-contracts/" target="_blank">
+                        <div class="link-box cryptocoinsnews">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-2">
+                    <a href="https://cointelegraph.com/press-releases/Auctus%20Pension%20Project%20-%20Pre-Sale%20Whitelist%20Closing%20in%2024h"
+                       target="_blank">
+                        <div class="link-box cointelegraph">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <a href="http://bitcoinist.com/auctus-pre-sale-whitelist-closing-48h/" target="_blank">
+                        <div class="link-box bitcoinist">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="background-resources" id="resources">
+        <div class="background-resources-first"></div>
+        <div class="background-resources-second"></div>
+        <section class="resources" id="resources">
+            <div class="section-heading text-center">
+                <h2>RESOURCES</h2>
+                <h3>LEARN ABOUT US!</h3>
+                <hr width="100px"></hr>
+            </div>
+            <div class="links text-center">
+                <div class="resource-card">
+                    <div class="dots"></div>
+                    <div class="resource-card-title">WHITEPAPER</div>
+                    <div class="resource-content">
+                        <img class="resource-img" src="../img/presale/whitepaper.png" />
+                        <div class="whitepaper-resource-description">Read our comprehensive 30-page whitepaper.</div>
+                    </div>
+                    <a class="download-button" onclick="downloadWhitepaper()"><i class="fa fa-file-o"></i>&nbsp;DOWNLOAD</a>
+                    <div class="dots"></div>
+                </div>
+                <div class="resource-card">
+                    <div class="dots"></div>
+                    <div class="resource-card-title">PRESENTATION</div>
+                    <div class="resource-content">
+                        <img class="resource-img" src="../img/presale/presentation.png" />
+                        <div class="presentation-resource-description">Have a look at our user friendly presentation to get a quick overview on Auctus.</div>
+                    </div>
+                    <a class="download-button" onclick="downloadPresentation()"><i class="fa fa-file-o"></i>&nbsp;DOWNLOAD</a>
+                    <div class="dots"></div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <section class="faq presale" id="faq">
+        <div class="section-heading text-center">
+            <h2>F.A.Q.</h2>
+            <hr width="100px"></hr>
+        </div>
+        <div class="container">
+            <div class="row check-buttons">
+                <div class="text-center">
+                    <h2>Check our participation guide</h2>
+                    <a class="btn" target="_blank" href="https://blog.auctus.org/guide-to-securely-participate-in-the-auctus-pre-sale-b9e4ca6854b1">Access</a>
+                </div>
+            </div>
+            <div id="faqAccordion" data-children=".item">
+                <h2>Token Launch and Usage of Raised Funds</h2>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion6" href="#" aria-expanded="false" aria-controls="faqAccordion6">
+                        What is the total supply of AUC tokens?
+                    </a>
+                    <div id="faqAccordion6" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            The total supply of AUC tokens depends of the amount raised in the pre-sale and ICO. 51% of all tokens will be distributed during pre-sale and ICO.
+                            [(ETH raised in pre-sale*2500)+(ETH raised in ICO)*2000]/0.51
+                            <br /><br />
+                            As the hard-cap is 90,000 ETH, the maximum total supply will be 90,000*2500/0.51= 441,176,470.5 AUC
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion7" href="#" aria-expanded="false" aria-controls="faqAccordion7">
+                        Will there be a pre-sale?
+                    </a>
+                    <div id="faqAccordion7" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            Yes, pre-sale will take place on Oct 3rd, 2017. It’s mandatory to register for the whitelist at <a class="faq-content-link" href="https://auctus.org">https://auctus.org</a>. The constraints are set as follows:
+                            <ul>
+                                <li>
+                                    Whitelisted applicants only
+                                </li>
+                                <li>
+                                    25% Bonus
+                                </li>
+                                <li>
+                                    Individual cap = 10 ETH
+                                </li>
+                                <li>
+                                    Pre-sale minimum cap set at 400 ETH. If the minimum cap isn’t reached, funds will be reimbursed.
+                                </li>
+                                <li>
+                                    Token Price: 2500 AUC / ETH
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion8" href="#" aria-expanded="false" aria-controls="faqAccordion8">
+                        When will be the public token sale?
+                    </a>
+                    <div id="faqAccordion8" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            ICO is schedule for Nov 14th, 2017.
+                        </p>
+                        <p class="mb-3">
+                            The constraints are set as follows:
+                            <ul>
+                                <li>
+                                    ICO minimum cap set at 15,000 ETH. If the minimum cap isn’t reached, funds will be reimbursed.
+                                </li>
+                                <li>
+                                    Hard cap of 90,000 ETH
+                                </li>
+                                <li>
+                                    Token Price: 2000 AUC / ETH
+                                </li>
+                                <li>
+                                    Ends: November 28th, 2017, or when maximum cap is reached
+                                </li>
+                            </ul>
+                            More details will be provided in the following weeks. Pre-sale participants will have guaranteed participation in the ICO.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion9" href="#" aria-expanded="false" aria-controls="faqAccordion9">
+                        Is this token sale open to US/China residents?
+                    </a>
+                    <div id="faqAccordion9" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            Participants should check the legality of purchasing AUC tokens in their own jurisdiction.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion10" href="#" aria-expanded="false" aria-controls="faqAccordion10">
+                        What will the pre-sale proceeds be used for?
+                    </a>
+                    <div id="faqAccordion10" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            Up to 1000 ETH raised during pre-sale will be used for initial business set up expenses, PR, marketing services, explainer video and prototyping. Funds exceeding 1000 ETH will be locked by smart contract and attributed to the ICO fundraising.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion11" href="#" aria-expanded="false" aria-controls="faqAccordion11">
+                        When should I claim AUC acquired in pre-sale?
+                    </a>
+                    <div id="faqAccordion11" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            Pre-sale participants will be able to convert pre-sale tokens with the corresponding ICO smart contract function, as soon as the ICO smart contract is deployed.  Detailed pre-sale token migration instructions will be made available on the ICO page: <a class="faq-content-link" href="https://auctus.org">https://auctus.org</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion12" href="#" aria-expanded="false" aria-controls="faqAccordion12">
+                        Which cryptocurrencies will be accepted in the fund raising?
+                    </a>
+                    <div id="faqAccordion12" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            Only ETH will be accepted.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion13" href="#" aria-expanded="false" aria-controls="faqAccordion13">
+                        Will it be possible to issue more tokens after the initial distribution?
+                    </a>
+                    <div id="faqAccordion13" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            No. All AUC tokens will be minted in the initial distribution.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion14" href="#" aria-expanded="false" aria-controls="faqAccordion14">
+                        Will there be a lockup period for AUC tokens sold in the token launch?
+                    </a>
+                    <div id="faqAccordion14" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            No, after distribution is over, AUC tokens allocated to public distribution will be available for transfer.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion15" href="#" aria-expanded="false" aria-controls="faqAccordion15">
+                        What will be the initial distribution of AUC tokens?
+                    </a>
+                    <div id="faqAccordion15" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            <ul>
+                                <li>
+                                    20% of AUC created will be allocated to Auctus’ Core Team: founders, early backers and the development team, for a long term alignment of interests.
+                                </li>
+                                <li>
+                                    51% of all tokens will be distributed during pre-sale and ICO to public contributors.
+                                </li>
+                                <li>
+                                    18% of tokens will be reserved for future stakeholders, to allow for possible capital raises in the future and will be locked via smart contract for 12 months after initial distribution.
+                                </li>
+                                <li>
+                                    9% of tokens are allocated for pre-sale partners and advisors.
+                                </li>
+                                <li>
+                                    2% of tokens are allocated for bounty campaigns to help us spread the word about Auctus. Those tokens will have the same rules as those allocated to public contributors.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion16" href="#" aria-expanded="false" aria-controls="faqAccordion16">
+                        Will there be a lockup period for tokens allocated to the founding team, partners and advisors?
+                    </a>
+                    <div id="faqAccordion16" class="collapse" role="tabpanel">
+                        <p class="mb-3">
+                            AUC tokens allocated to Auctus’ Core Team will not be immediately tradable. They will have 2 years vesting with a 6-month cliff. This means every 6 months, 25% of those tokens will mature .
+                            Tokens allocated to partners and advisors will have 6-month vesting with 3-month cliff.  The vesting rules will be enforced via smart contracts.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="text-center">
+                <h3>IF YOU HAVE ANY ADDITIONAL QUESTIONS, PLEASE CONTACT US AT <a href="mailto:contact@auctus.org">CONTACT@AUCTUS.ORG</a></h3>
+            </div>
+        </div>
+    </section>
+    <section class="token-sale-overview" id="tokenSale">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>TOKEN SALE OVERVIEW</h2>
+                <h3>UNDERSTANDING THE AUCTUS TOKEN DISTRIBUTION</h3>
+                <hr width="100px"></hr>
+            </div>
+            <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
+                <div class="col-lg-6 col-sm-12 pull-right">
+                    <div class="box">
+                        <div class="row">
+                            <div class="sale-title pull-left">
+                                <span>PRE-SALE</span>
+                                <hr />
+                            </div>
+                            <div class="col-md-9">
+                                <div class="dots"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="image-div">
+                                    <img src="../img/tokensale/calendar.png" />
+                                    <hr />
+                                    <span>OCT<b>3rd</b></span>
+                                    <br />
+                                    <span class="sub-title">UNTIL OCT 6TH</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="image-div">
+                                    <img src="../img/tokensale/coin.png" />
+                                    <hr />
+                                    <span>2500</span>
+                                    <br />
+                                    <span class="sub-title">AUC/ETH</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--<img class="dot left" src="../img/tokensale/opendot.png" />
+                                <img class="dot right" src="../img/tokensale/opendot.png" />-->
+                                <div class="boundaries">
+                                    <div>
+                                        <span class="sub-title">MIN CAP</span>
+                                    </div>
+                                    <!--<span class="pull-left">400ETH</span>
+                                    <span class="pull-right"></span>-->
+                                </div>
+                                <div class="boundaries-panel">
+                                    <div class="dots">
+                                        <span class="ico">400 ETH</span>
+                                    </div>
+                                    <span class="sub-title">10ETH / WHITELIST PARTICIPANT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="row">
+                            <div class="sale-title pull-left">
+                                <span>ICO</span>
+                                <hr class="ico" />
+                            </div>
+                            <div class="col-md-9">
+                                <div class="dots"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="image-div">
+                                    <img src="../img/tokensale/calendar.png" />
+                                    <hr class="ico" />
+                                    <span class="ico">Q1 <b>2018</b></span>
+                                    <br />
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="image-div">
+                                    <img src="../img/tokensale/coin.png" />
+                                    <hr class="ico" />
+                                    <span>2000</span>
+                                    <br />
+                                    <span class="sub-title">AUC/ETH</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="dot left" src="../img/tokensale/dot.png" />
+                                <img class="dot right" src="../img/tokensale/dot.png" />
+                                <div class="boundaries ico">
+                                    TO BE ANNOUNCED
+                                </div>
+                                <div class="boundaries-panel ico">
+                                    <div class="defined">
+                                    </div>
+                                    <span class="sub-title"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="chart">
+                                <img src="../img/tokensale/chart.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row vesting-div">
+                        <div class="col-sm-12">
+                            <div class="vesting">
+                                <div class="vesting-title"><span>VESTING</span>
+                                    <hr />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 ">TEAM</div>
+                                    <div class="col-md-7">2 YEARS VESTING WITH 6 MONTHS CLIFF</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 ">RESERVE FOR FUTURE STAKEHOLDERS</div>
+                                    <div class="col-md-7">1 YEAR (IF DEEMED NECESSARY,<br />THESE TOKENS WILL BE BURNED)</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 ">PARTNERSHIPS AND ADVISORING</div>
+                                    <div class="col-md-7">6 MONTHS VESTING WITH 3 MONTHS CLIFF</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="presale-footer">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-1 col-md-6 logo">
+                    <img src="../img/footer/auctus-logo.png"></img>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="navigation-icons">
+                        <a href="https://twitter.com/AuctusProject" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://blog.auctus.org" target="_blank">
+                            <i class="fa fa-medium"></i>
+                        </a>
+                        <a href="https://chat.auctus.org" target="_blank">
+                            <i class="fa fa-slack"></i>
+                        </a>
+                        <a href="https://github.com/AuctusProject" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AuctusProject/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="mailto:contact@auctus.org">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <img class="v" src="../img/tokensale/v.png" />
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/clipboardjs/dist/clipboard.min.js"></script>
+
+    <script src="../js/script.min.js?v=1"></script>
+
+    <script>
+        $(".menu-content a").click(function (e) {
+            if ($(window).width() <= 768)
+                $('#topMenu').toggleClass('open');
+        });
+        $("#topMenu").click(function (e) {
+            if (e.target !== this)
+                return;
+            $('#topMenu').toggleClass('open');
+        });
+        $('a').click(function () {
+            var href = $(this).attr('href');
+            if (href) {
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 500);
+            }
+            return false;
+        });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-106121445-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        twttr.conversion.trackPid('ny69l', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    </script>
+    <script type="text/javascript">
+        twttr.conversion.trackPid('ny637', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    </script>
+    <script>
+        var i = new Image(); i.src = "https://alb.reddit.com/t.gif?q=CAAHAAABAAoACQAAAAAA6DArAA==&s=WZRd1JXnZRV1jlvXS-XxOhVvuUCEppJaeyGI1Xak6fs=";
+    </script>
+</body>
+
+</html>
