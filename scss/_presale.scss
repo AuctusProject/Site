@@ -52,8 +52,7 @@ header.presale-masthead {
             font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
             font-size: 37pt;
             color: #00fcfc;
-            margin-bottom: 5pt;
-            margin-top: 20px;
+            margin: 20pt;
         }
 
         h2 {
@@ -355,6 +354,10 @@ header.presale-masthead {
     margin-right: auto;
     margin-top: -115px;
     margin-bottom: 10px;
+
+    @media (max-width: 700px ) {
+        margin-top: -40px;
+    }
 
     @media (max-width: 500px ) {
         margin-left: calc(50% - 250px);

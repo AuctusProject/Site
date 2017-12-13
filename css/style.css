@@ -1551,11 +1551,7 @@ section.token-sale-overview {
     margin: 30px;
     border-radius: 7px;
     padding: 10px 20px;
-    min-height: 200px;
-    height: 45%; }
-    @media (max-width: 768px) {
-      section.token-sale-overview .box {
-        height: 100%; } }
+    min-height: 200px; }
     section.token-sale-overview .box .sale-title {
       margin-bottom: 20px;
       min-width: 86.5px; }
@@ -1605,7 +1601,9 @@ section.token-sale-overview {
         font-family: "Helvetica Neue Light";
         font-size: 11pt; }
     section.token-sale-overview .box .boundaries.ico {
-      padding-top: 4px; }
+      padding-top: 4px;
+      font-size: 13px;
+      line-height: 24px; }
     section.token-sale-overview .box .dot {
       top: 25px;
       position: absolute; }
@@ -1615,7 +1613,7 @@ section.token-sale-overview {
       right: 21px; }
     section.token-sale-overview .box .boundaries-panel {
       margin: 0pt 14px 0px 8px;
-      height: 53px;
+      /*height: 53px;*/
       padding-top: 5px;
       text-align: center; }
       section.token-sale-overview .box .boundaries-panel > div {
@@ -1640,6 +1638,9 @@ section.token-sale-overview {
       section.token-sale-overview .box .boundaries-panel span.ico {
         font-family: "Helvetica Neue Light";
         font-size: 19pt; }
+        @media (max-width: 1199px) {
+          section.token-sale-overview .box .boundaries-panel span.ico {
+            font-size: 15pt; } }
     section.token-sale-overview .box .boundaries-panel.ico {
       padding-top: 12px;
       border-style: solid;
@@ -1649,7 +1650,9 @@ section.token-sale-overview {
         height: 40px;
         background-repeat: repeat; }
     section.token-sale-overview .box > .row:first-child > div:last-child {
-      width: 58%; }
+      width: calc(100% - 140px);
+      margin-left: 20px;
+      margin-right: 20px; }
   section.token-sale-overview .vesting-div {
     height: 200px; }
     @media (max-width: 768px) {
@@ -2149,8 +2152,7 @@ header.presale-masthead .text-container {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
     color: #00fcfc;
-    margin-bottom: 5pt;
-    margin-top: 20px; }
+    margin: 20pt; }
   header.presale-masthead .text-container h2 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     letter-spacing: 2px;
@@ -2388,6 +2390,9 @@ header.presale-masthead .address-copy p.text-box {
   margin-right: auto;
   margin-top: -115px;
   margin-bottom: 10px; }
+  @media (max-width: 700px) {
+    .circle-logo {
+      margin-top: -40px; } }
   @media (max-width: 500px) {
     .circle-logo {
       margin-left: calc(50% - 250px); } }
