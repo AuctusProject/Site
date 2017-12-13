@@ -1,4 +1,5 @@
 // Styling for the masthead
+
 header.masthead {
     min-height: 100%;
     position: relative;
@@ -80,7 +81,7 @@ header.masthead {
             text-align: center;
 
             a > span {
-                color:white;
+                color: white;
                 margin: 12px;
                 cursor: pointer;
                 font-family: "Helvetica Neue Light","HelveticaNeue-Light";
@@ -98,54 +99,6 @@ header.masthead {
         transition: all 0.2s;
     }
 
-    .header-circles {
-        position: absolute;
-        top: 55%
-    }
-
-    .waves {
-        position: absolute;
-        bottom: 23px;
-        right: 170px;
-    }
-
-    .pig {
-        position: absolute;
-        top: 120px;
-        right: -12%;
-        display: block;
-        z-index: 100;
-
-        @media (min-width: 1500px ) {
-            -moz-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-            top: 200px;
-            right: 0;
-        }
-
-        @media (max-width: 1200px ) {
-            -moz-transform: scale(0.7);
-            -o-transform: scale(0.7);
-            -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-            top: 50px;
-            right: -260px;
-        }
-
-
-        @media (max-width: 768px) {
-            display: block;
-            -moz-transform: scale(0.4);
-            -o-transform: scale(0.4);
-            -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-            top: 75px;
-            left: 50%;
-            margin-left: -435px;
-        }
-    }
 
     @media (max-width: 768px) {
         .button-div {
@@ -161,22 +114,36 @@ header.masthead {
         margin-top: 10pt;
         font-family: "Helvetica Neue","HelveticaNeue";
         font-size: 12pt !important;
-        padding: 70px 15px 15px 15px;
+        padding: 15px 0px;
         color: white;
         z-index: 1000;
-        min-width: 135pt;
+        min-width: 115pt;
         text-align: center;
         height: 110px;
 
         i.fa {
             margin-right: 13px;
         }
-    }
 
-    @media (max-width: 768px) {
-        .button-div:first-of-type {
-            margin-top: 65%;
-            margin-bottom: 40px;
+        div {
+            height: 50px;
+            width: 50px;
+            margin: auto;
+            margin-bottom: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #demo {
+            background-image: url(/img/header/demo-branco.png);
+        }
+
+        #presentation {
+            background-image: url(/img/header/presentation-branco.png);
+        }
+
+        #whitepaper {
+            background-image: url(/img/header/wp-branco.png);
         }
     }
 
@@ -185,7 +152,19 @@ header.masthead {
         cursor: pointer;
         color: #002D78;
         background-color: white;
-        font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+        font-weight:bold;
+
+        #demo {
+            background-image: url(/img/header/demo.png);
+        }
+
+        #presentation {
+            background-image: url(/img/header/presentation.png);
+        }
+
+        #whitepaper {
+            background-image: url(/img/header/wp.png);
+        }
     }
 
     .text-container {

@@ -1,14 +1,13 @@
 section.smartcontract {
-    .container {
-        padding: 0 100px !important;
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 100px !important;
+        }
     }
 
     margin-bottom: 100px;
     font-family: "Helvetica Neue","HelveticaNeue";
-
-
-
-
+    
     .content {
         margin: auto;
 

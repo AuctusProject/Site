@@ -45,14 +45,14 @@
         <div class="device-container">
             <div class="top-header">
                 <img class="img-responsive logo" src="img/header/headerlogo.png" />
-                <div class="menu">
+                <div class="menu web-only">
                     <a href="https://demo.auctus.org" target="_blank"><span>DEMO</span></a>
                     <a href="./faq"><span>FAQ</span></a>
                     <a href="./" target="_blank"><span>TOKEN SALE</span></a>
                     <a href="./team"><span>TEAM</span></a>
                     <a href="./" target="_blank"><span>MEDIA &amp; NEWS</span></a>
                 </div>
-                <div class="right-blue-panel">
+                <div class="icons-panel web-only">
                     <div class="navigation-icons text-center web-only">
                         <a href="https://twitter.com/AuctusProject" target="_blank">
                             <i class="fa fa-twitter"></i>
@@ -87,12 +87,15 @@
                 <br />
                 <div>
                     <div onclick="downloadPresentation()" class="button-div">
+                        <div id="presentation"></div>
                         <a onclick="downloadPresentation()" class="wp-button">PRESENTATION</a>
                     </div>
                     <div onclick="downloadWhitepaper()" class="button-div">
+                        <div id="whitepaper"></div>
                         <a onclick="downloadWhitepaper()" class="wp-button"> WHITEPAPER</a>
                     </div>
                     <div onclick="TryOurDemo()" class="button-div">
+                        <div id="demo"></div>
                         <a onclick="TryOurDemo()" class="wp-button">DEMO</a>
                     </div>
                 </div>
@@ -588,7 +591,7 @@
 
     <script>
         $(".bullets-container > span").hover(
-            function (c) {
+            function () {
                 $(".bullets-container > span").removeClass("selected");
                 $(this).toggleClass("selected");
                 
@@ -596,7 +599,6 @@
                 var href = $(this).attr("meta-href");
                 if (href) {
                     $(".selected-content img").css('cursor','pointer');
-                    $(".selected-content img").unbind("click").bind('click', function () { openNewTab(href); });
                     $(".selected-content img").unbind("click").bind('click', function () { openNewTab(href); });
                 }
                 else {
