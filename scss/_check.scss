@@ -281,7 +281,7 @@ header.check-masthead {
         height: 70px;
         border: 0px;
         font-size: 24px;
-        font-family: 'Helvetica Neue Light';
+        font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
 
         @media (max-width: 768px) {
             font-size: 22px;
@@ -294,7 +294,7 @@ header.check-masthead {
             border: 0px;
             width: 150px;
             font-size: 18px;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
             color: #002d78;
             cursor: pointer;
         }
@@ -308,8 +308,8 @@ header.check-masthead {
         font-weight: bold;
     }
 
-    .text-white a{
-        color:white;
+    .text-white a {
+        color: white;
     }
 }
 

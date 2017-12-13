@@ -19,97 +19,97 @@ section.advisors {
             width: 240px;
         }
 
-            .card-picture-name {
-                width: 240px;
-                display: inline-block;
-                vertical-align: top;
-            }
+        .card-picture-name {
+            width: 240px;
+            display: inline-block;
+            vertical-align: top;
+        }
 
-            .card-picture {
-                border-radius: 3px 0px 0px 0px;
-                height: 240px;
-            }
+        .card-picture {
+            border-radius: 3px 0px 0px 0px;
+            height: 240px;
+        }
 
-            .card-name-position-linkedin {
-                text-decoration: none;
-            }
+        .card-name-position-linkedin {
+            text-decoration: none;
+        }
 
-            .card-name-position {
-                margin: 10px;
-                display: inline-block;
-                width: calc(100% - 65px);
-            }
+        .card-name-position {
+            margin: 10px;
+            display: inline-block;
+            width: calc(100% - 65px);
+        }
 
-            .card-linkedin {
-                content: url("../img/team/linkedin-icon.png");
-                display: inline-block;
-            }
+        .card-linkedin {
+            content: url("../img/team/linkedin-icon.png");
+            display: inline-block;
+        }
 
-            .card-name {
-                font-family: 'Helvetica Neue Bold';
-                font-size: 22px !important;
-                line-height: 24px;
-                color: rgba(0, 45, 120, 1);
-            }
+        .card-name {
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
+            font-size: 22px !important;
+            line-height: 24px;
+            color: rgba(0, 45, 120, 1);
+        }
 
-            .card-position {
-                font-size: 12px !important;
-                color: black;
-            }
+        .card-position {
+            font-size: 12px !important;
+            color: black;
+        }
 
-            .card-description {
-                display: inline-block;
-                width: 240px;
+        .card-description {
+            display: inline-block;
+            width: 240px;
 
-                .dots {
-                    height: 10px;
-                    width: 50%;
-                    margin: auto;
-                }
-            }
-
-            .card-description-content {
-                font-size: 12px;
-                text-align: center;
-                padding: 15px;
-                min-height: 292px;
+            .dots {
+                height: 10px;
+                width: 50%;
+                margin: auto;
             }
         }
 
-        .name {
-            margin-top: 10px;
-            font-family: 'Helvetica Neue Bold';
-            font-size: 20px;
-        }
-
-        .position {
-            font-family: 'Helvetica Neue Light';
-            font-size: 14px;
-            letter-spacing: 2px;
-            margin-top: 5px;
-            margin-bottom: 60px;
-        }
-
-        .image {
-            margin-left: 40px;
-        }
-
-        .image:after {
-            content: url('../img/team/linkedin-icon.png');
-            position: relative;
-            z-index: 100;
-            right: 26px;
-            top: 0px;
-        }
-
-        .image.behance:after {
-            content: url('../img/team/behance-icon.png');
-            position: relative;
-            z-index: 100;
-            right: 26px;
-            top: 0px;
+        .card-description-content {
+            font-size: 12px;
+            text-align: center;
+            padding: 15px;
+            min-height: 292px;
         }
     }
+
+    .name {
+        margin-top: 10px;
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
+        font-size: 20px;
+    }
+
+    .position {
+        font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        margin-bottom: 60px;
+    }
+
+    .image {
+        margin-left: 40px;
+    }
+
+    .image:after {
+        content: url('../img/team/linkedin-icon.png');
+        position: relative;
+        z-index: 100;
+        right: 26px;
+        top: 0px;
+    }
+
+    .image.behance:after {
+        content: url('../img/team/behance-icon.png');
+        position: relative;
+        z-index: 100;
+        right: 26px;
+        top: 0px;
+    }
+}
 
     img.v {
         position: fixed;

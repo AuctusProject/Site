@@ -23,7 +23,7 @@ section.token-sale-overview {
 
             span {
                 color: #1439AF;
-                font-family: 'Helvetica Neue Bold';
+                font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
                 font-size: 14pt;
                 top: -4px;
             }
@@ -43,11 +43,11 @@ section.token-sale-overview {
             }
 
             span {
-                font-family: "Helvetica Neue Light";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 20pt;
 
                 b {
-                    font-family: "Helvetica Neue Bold";
+                    font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
                     font-size: 21pt;
                 }
             }
@@ -58,7 +58,7 @@ section.token-sale-overview {
         }
 
         .sub-title {
-            font-family: "Helvetica Neue Light";
+            font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
             font-size: 8pt !important;
         }
 
@@ -76,13 +76,13 @@ section.token-sale-overview {
             padding-top: 8px;
 
             span {
-                font-family: "Helvetica Neue Bold";
+                font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
                 font-size: 11pt;
                 font-weight: bold;
             }
 
             span.min {
-                font-family: "Helvetica Neue";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 11pt;
                 font-weight: normal;
             }
@@ -96,7 +96,7 @@ section.token-sale-overview {
             }
 
             span.ico {
-                font-family: "Helvetica Neue Light";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 11pt;
             }
         }
@@ -142,12 +142,12 @@ section.token-sale-overview {
             }
 
             .sub-title {
-                font-family: "Helvetica Neue Light";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 8pt !important;
             }
 
             span.ico {
-                font-family: "Helvetica Neue Light";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 19pt;
 
                 @media(max-width:1199px) {
@@ -214,7 +214,7 @@ section.token-sale-overview {
 
             span {
                 color: #1439AF;
-                font-family: 'Helvetica Neue Bold';
+                font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
                 font-size: 14pt;
                 top: -4px;
             }
@@ -238,7 +238,7 @@ section.token-sale-overview {
             }
 
             div:first-child {
-                font-family: 'Helvetica Neue Bold';
+                font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
                 text-align: right;
 
                 @media(max-width:768px) {
