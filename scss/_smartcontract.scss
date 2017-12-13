@@ -8,7 +8,12 @@ section.smartcontract {
     @media (max-width: 768px) {
         img {
             width: 80%;
-            margin:20px 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+        img {
+            margin: 40px 0;
         }
     }
 

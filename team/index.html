@@ -40,49 +40,71 @@
 
 <body id="page-top" class="auctus">
     <header class="masthead team-header">
-        <div class="device-container">
-            <div class="top-header">
-                <img class="img-responsive logo" src="../img/header/headerlogo.png" />
-                <div class="menu">
-                    <a href="./" target="_blank"><span>TRY OUR ALPHA</span></a>
-                    <a href="./" target="_blank"><span>FAQ</span></a>
-                    <a href="./" target="_blank"><span>TOKEN SALE</span></a>
-                    <a href="./" target="_blank"><span>TEAM</span></a>
-                    <a href="./" target="_blank"><span>MEDIA &amp; NEWS</span></a>
-                </div>
-                <div class="right-blue-panel">
-                    <div class="navigation-icons text-center web-only">
-                        <a href="https://twitter.com/AuctusProject" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="https://github.com/AuctusProject" target="_blank">
-                            <i class="fa fa-github"></i>
-                        </a>
-                        <a href="https://reddit.com/r/AuctusProject" target="_blank">
-                            <i class="fa fa-reddit-alien"></i>
-                        </a>
-                        <a href="https://blog.auctus.org" target="_blank">
-                            <i class="fa fa-medium"></i>
-                        </a>
-                        <a href="https://chat.auctus.org" target="_blank">
-                            <i class="fa fa-slack"></i>
-                        </a>
-                        <a href="https://www.facebook.com/AuctusProject/" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="mailto:contact@auctus.org">
-                            <i class="fa fa-envelope-o"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="topMenu" class="mobile-only">
+            <div class="quarter-circle">
             </div>
-            <div class="text-container">
-                <h1>AUCTUS CREW</h1>
-                <h3>RETIREMENT PLANS</h3>
-                <hr width="100px"></hr>
+            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+                <i class="fa fa-bars" id="bars"></i>
+                <i class="fa fa-close" id="close"></i>
+            </div>
+            <div class="menu-container">
+                <div class="menu-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="https://demo.auctus.org" target="_blank">DEMO</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="../faq">FAQ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="../tokensale">TOKEN SALE</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="#" target="_blank">TEAM</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a href="https://blog.auctus.org" target="_blank">BLOG</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-
+        <div class="top-header">
+            <a href="../"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
+            <div class="menu web-only">
+                <a href="https://demo.auctus.org" target="_blank"><span>DEMO</span></a>
+                <a href="./faq"><span>FAQ</span></a>
+                <a href="./tokensale" target="_blank"><span>TOKEN SALE</span></a>
+                <a href="./team"><span>TEAM</span></a>
+            </div>
+            <div class="icons-panel web-only">
+                <div class="navigation-icons text-center web-only">
+                    <a href="https://twitter.com/AuctusProject" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/AuctusProject" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://reddit.com/r/AuctusProject" target="_blank">
+                        <i class="fa fa-reddit-alien"></i>
+                    </a>
+                    <a href="https://blog.auctus.org" target="_blank">
+                        <i class="fa fa-medium"></i>
+                    </a>
+                    <a href="https://chat.auctus.org" target="_blank">
+                        <i class="fa fa-rocket"></i>
+                    </a>
+                    <a href="https://www.facebook.com/AuctusProject/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="mailto:contact@auctus.org">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="device-container">
+                <div class="text-container">
+                    <h1>AUCTUS CREW</h1>
+                    <h3>RETIREMENT PLANS</h3>
+                    <hr width="100px"></hr>
+                </div>
+            </div>
+        </div>
     </header>
     <section class="advisors" id="advisors">
         <div class="section-heading text-center">
@@ -310,7 +332,7 @@
                         Automation Engineering.
                         Ariny is our most productive developer and can virtually program anything. He works
                         relentlessly until a project is completed. He is responsible for defining the structure of the
-                        Ethereum blockchain layer of the platform and is our main programmer. 
+                        Ethereum blockchain layer of the platform and is our main programmer.
                     </div>
                     <div class="dots"></div>
                 </div>

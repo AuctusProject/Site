@@ -506,11 +506,11 @@ hr {
   background: linear-gradient(70deg, #075cee 25%, #0be7ce 75%);
   /* Standard syntax */ }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .web-only {
     display: none !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .mobile-only {
     display: none !important; } }
 
@@ -549,16 +549,17 @@ a.linkedin-button {
   color: #002d78;
   cursor: pointer; }
 
-.right-blue-panel {
+.icons-panel {
   display: block !important;
   width: 32%;
+  min-width: 360px;
   z-index: 10;
   position: absolute;
   top: 0;
   right: 0; }
-  .right-blue-panel a {
+  .icons-panel a {
     text-decoration: unset; }
-  .right-blue-panel i.fa {
+  .icons-panel i.fa {
     display: inline-block;
     font-size: 25px;
     color: #00fcfc;
@@ -568,7 +569,7 @@ a.linkedin-button {
     height: 40px;
     width: 40px;
     padding-top: 6px; }
-  .right-blue-panel i.fa:hover {
+  .icons-panel i.fa:hover {
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0px 0px 10px #00fcfc; }
@@ -613,7 +614,6 @@ section.about {
     margin-bottom: 5pt; }
 
 header.masthead {
-  min-height: 100%;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -628,18 +628,9 @@ header.masthead {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%);
   /* Standard syntax */ }
-  @media (max-width: 768px) {
+  @media (min-width: 992px) {
     header.masthead {
-      background: #0884cd;
-      /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace);
-      /* For Safari 5.1 to 6.0  60%*/
-      background: -o-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace);
-      /* Standard syntax */ } }
+      height: 768px; } }
   header.masthead .header-content {
     height: 100vh;
     min-height: 600px;
@@ -661,15 +652,20 @@ header.masthead {
     background: rgba(4, 20, 140, 0.7);
     z-index: 100;
     transition: all 0.2s; }
-    @media (max-width: 768px) {
+    @media (max-width: 1199px) {
+      header.masthead .top-header {
+        padding-left: 20px; } }
+    @media (max-width: 991px) {
       header.masthead .top-header {
         margin: 0;
         width: 100%;
         text-align: center;
-        margin-left: unset !important; } }
+        margin-left: unset !important;
+        padding-left: 0%;
+        position: absolute; } }
     header.masthead .top-header .logo {
       margin: 15px 0 5px 0; }
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         header.masthead .top-header .logo {
           display: block;
           -moz-transform: scale(0.9);
@@ -689,79 +685,129 @@ header.masthead {
         margin: 12px;
         cursor: pointer;
         font-family: "Helvetica Neue Light","HelveticaNeue-Light"; }
+        @media (max-width: 1199px) {
+          header.masthead .top-header .menu a > span {
+            margin: 2px; } }
       header.masthead .top-header .menu span:hover {
         font-weight: bold;
         transition: all 0.2s; }
   header.masthead .top-header:hover {
     background: #04148c;
     transition: all 0.2s; }
-  header.masthead .header-circles {
-    position: absolute;
-    top: 55%; }
-  header.masthead .waves {
-    position: absolute;
-    bottom: 23px;
-    right: 170px; }
-  header.masthead .pig {
-    position: absolute;
-    top: 120px;
-    right: -12%;
-    display: block;
-    z-index: 100; }
-    @media (min-width: 1500px) {
-      header.masthead .pig {
-        -moz-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-        top: 200px;
-        right: 0; } }
-    @media (max-width: 1200px) {
-      header.masthead .pig {
-        -moz-transform: scale(0.7);
-        -o-transform: scale(0.7);
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-        top: 50px;
-        right: -260px; } }
-    @media (max-width: 768px) {
-      header.masthead .pig {
-        display: block;
-        -moz-transform: scale(0.4);
-        -o-transform: scale(0.4);
-        -webkit-transform: scale(0.4);
-        transform: scale(0.4);
-        top: 75px;
-        left: 50%;
-        margin-left: -435px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     header.masthead .button-div {
       margin-bottom: 30px; } }
+  header.masthead .quarter-circle {
+    background-color: white;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    position: absolute;
+    right: -100px;
+    top: -90px;
+    height: 180px;
+    width: 200px;
+    z-index: 10000;
+    transition: all 0.5s; }
+    @media (max-width: 991px) {
+      header.masthead .quarter-circle {
+        right: -60px;
+        top: -65px;
+        height: 120px;
+        width: 130px; } }
+  header.masthead #topMenu i {
+    color: #002d78;
+    font-size: 45px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer; }
+  @media (max-width: 991px) {
+    header.masthead #topMenu i.fa-bars {
+      font-size: 27px;
+      position: absolute;
+      right: 15px;
+      top: 10px; } }
+  header.masthead #topMenu.open .quarter-circle {
+    background: #04148c;
+    background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
+    background: -o-linear-gradient(168deg, #04148c, #0884cd);
+    background: -moz-linear-gradient(168deg, #04148c, #0884cd);
+    background: linear-gradient(168deg, #04148c, #0884cd);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    position: absolute;
+    right: -386px;
+    top: -350px;
+    width: 900px;
+    height: 1000px;
+    z-index: 10000;
+    transition: all 1s; }
+    header.masthead #topMenu.open .quarter-circle i {
+      color: #002d78;
+      font-size: 45px;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      cursor: pointer; }
+    @media (max-width: 991px) {
+      header.masthead #topMenu.open .quarter-circle {
+        right: -350px;
+        height: 800px;
+        width: 700px; }
+        header.masthead #topMenu.open .quarter-circle i.fa-bars {
+          font-size: 27px;
+          position: absolute;
+          right: -385px;
+          top: -170px; } }
   header.masthead .button-div {
     display: inline-block;
     border: 2px solid white;
     margin-top: 10pt;
     font-family: "Helvetica Neue","HelveticaNeue";
     font-size: 12pt !important;
-    padding: 70px 15px 15px 15px;
+    padding: 15px 0px;
     color: white;
     z-index: 1000;
-    min-width: 135pt;
+    min-width: 115pt;
     text-align: center;
     height: 110px; }
+    @media (max-width: 499px) {
+      header.masthead .button-div {
+        min-width: 80pt;
+        font-size: 10pt !important; } }
     header.masthead .button-div i.fa {
       margin-right: 13px; }
-  @media (max-width: 768px) {
-    header.masthead .button-div:first-of-type {
-      margin-top: 65%;
-      margin-bottom: 40px; } }
+    header.masthead .button-div div {
+      height: 50px;
+      width: 50px;
+      margin: auto;
+      margin-bottom: 10px;
+      background-repeat: no-repeat;
+      background-position: center; }
+    header.masthead .button-div #demo {
+      background-image: url(/img/header/demo-branco.png); }
+    header.masthead .button-div #presentation {
+      background-image: url(/img/header/presentation-branco.png); }
+    header.masthead .button-div #whitepaper {
+      background-image: url(/img/header/wp-branco.png); }
   header.masthead .button-div:hover {
     z-index: 1000;
     cursor: pointer;
     color: #002D78;
     background-color: white;
-    font-family: "Helvetica Neue Bold","HelveticaNeue-Bold"; }
+    font-weight: bold; }
+    header.masthead .button-div:hover #demo {
+      background-image: url(/img/header/demo.png); }
+    header.masthead .button-div:hover #presentation {
+      background-image: url(/img/header/presentation.png); }
+    header.masthead .button-div:hover #whitepaper {
+      background-image: url(/img/header/wp.png); }
   header.masthead .text-container {
+    z-index: 2;
     padding: 200px 0 0 6%;
     width: 68%;
     position: relative; }
@@ -780,10 +826,10 @@ header.masthead {
       font-size: 13pt !important;
       color: white;
       margin: 0; }
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       header.masthead .text-container {
         text-align: center;
-        padding: 150px 0 0 0;
+        padding: 120px 0 0 0;
         margin-left: unset !important;
         width: 100%; }
         header.masthead .text-container h1 {
@@ -793,9 +839,26 @@ header.masthead {
         header.masthead .text-container h3 {
           font-size: 13pt !important; } }
   header.masthead .eth-machine {
-    position: absolute;
-    top: 60px;
-    right: 36px; }
+    z-index: 1;
+    margin-top: 0px; }
+    @media (min-width: 992px) {
+      header.masthead .eth-machine {
+        position: absolute;
+        top: 60px;
+        right: 36px; } }
+    @media (max-width: 991px) {
+      header.masthead .eth-machine {
+        text-align: center;
+        margin-bottom: 20px; }
+        header.masthead .eth-machine img {
+          margin-top: -30px;
+          max-width: 80%; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      header.masthead .eth-machine {
+        right: -140px; }
+        header.masthead .eth-machine img {
+          margin-top: 50px;
+          width: 75%; } }
 
 section.timeline .timeline {
   list-style: none;
@@ -953,25 +1016,25 @@ header.team-header {
   min-height: 0px;
   background: #0884cd;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(180deg, #04148c 25%, #0884cd 70%, #0bdace 98%);
+  background: -webkit-linear-gradient(180deg, #04148c 36%, #0884cd 90%);
   /* For Safari 5.1 to 6.0  60%*/
-  background: -o-linear-gradient(180deg, #04148c 25%, #0884cd 70%, #0bdace 98%);
+  background: -o-linear-gradient(180deg, #04148c 36%, #0884cd 90%);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(180deg, #04148c 25%, #0884cd 70%, #0bdace 98%);
+  background: -moz-linear-gradient(180deg, #04148c 36%, #0884cd 90%);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(180deg, #04148c 25%, #0884cd 70%, #0bdace 98%);
+  background: linear-gradient(180deg, #04148c 36%, #0884cd 90%);
   /* Standard syntax */ }
   @media (max-width: 768px) {
     header.team-header {
       background: #0884cd;
       /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(180deg, #04148c 13%, #0884cd 35%, #0bdace);
+      background: -webkit-linear-gradient(180deg, #04148c 36%, #0884cd 90%);
       /* For Safari 5.1 to 6.0  60%*/
-      background: -o-linear-gradient(180deg, #04148c 13%, #0884cd 35%, #0bdace);
+      background: -o-linear-gradient(180deg, #04148c 36%, #0884cd 90%);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(180deg, #04148c 13%, #0884cd 35%, #0bdace);
+      background: -moz-linear-gradient(180deg, #04148c 36%, #0884cd 90%);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(180deg, #04148c 8%, #0884cd 35%, #0bdace);
+      background: linear-gradient(180deg, #04148c 36%, #0884cd 90%);
       /* Standard syntax */ } }
   header.team-header .text-container {
     padding-top: 150px;
@@ -1135,7 +1198,7 @@ footer {
   width: 100%;
   height: 100%; }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #topMenu {
     right: 0px;
     top: 0px; }
@@ -1155,16 +1218,16 @@ footer {
   z-index: 10003;
   height: 100%;
   width: 100%; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     #topMenu .menu-container .menu-content {
-      width: 80%; } }
+      width: 350px; } }
 
 #topMenu .menu-container .menu-content ul {
   top: 100px;
   text-align: center;
   margin: 30px;
   list-style: none; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     #topMenu .menu-container .menu-content ul {
       margin: 0 0 0 -50px; } }
 
@@ -1358,6 +1421,12 @@ section.countdown {
     font-size: 18px !important;
     width: 60%;
     margin: auto; }
+    @media (max-width: 767px) {
+      section.countdown .sales-date {
+        width: 90%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      section.countdown .sales-date {
+        width: 75%; } }
     section.countdown .sales-date span {
       color: #09d8ba;
       font-weight: bold; }
@@ -1661,6 +1730,9 @@ section.retirement {
     border-radius: 20px;
     transition: all 0.2s;
     cursor: pointer; }
+    @media (max-width: 768px) {
+      section.retirement .bullets-container span {
+        margin: 0 6px; } }
   section.retirement .bullets-container .selected {
     background-color: #00BDFF;
     border: solid 1px #00BDFF;
@@ -1668,11 +1740,20 @@ section.retirement {
     transition: all 0.2s; }
   section.retirement .selected-content {
     height: 200px;
-    MARGIN-TOP: 50px;
+    margin-top: 50px;
     text-align: right; }
+    @media (max-width: 768px) {
+      section.retirement .selected-content {
+        height: 415px; }
+        section.retirement .selected-content > div {
+          text-align: center; } }
     section.retirement .selected-content img {
       margin: 0 60px 0 0;
       max-height: 375px; }
+      @media (max-width: 768px) {
+        section.retirement .selected-content img {
+          width: 80%;
+          margin: auto; } }
     section.retirement .selected-content .card {
       box-shadow: 0px 3px 4px #0F0F0F;
       padding: 20px 15px;
@@ -1681,6 +1762,11 @@ section.retirement {
       width: 55%;
       height: 375px;
       text-align: center; }
+      @media (max-width: 768px) {
+        section.retirement .selected-content .card {
+          width: 80%;
+          margin: 35px auto;
+          height: 280px; } }
       section.retirement .selected-content .card .card-title {
         margin-bottom: .75rem;
         font-size: 24px;
@@ -1730,8 +1816,15 @@ section.monetization {
 section.smartcontract {
   margin-bottom: 100px;
   font-family: "Helvetica Neue","HelveticaNeue"; }
-  section.smartcontract .container {
-    padding: 0 100px !important; }
+  @media (min-width: 768px) {
+    section.smartcontract .container {
+      padding: 0 100px !important; } }
+  @media (max-width: 768px) {
+    section.smartcontract img {
+      width: 80%; } }
+  @media (max-width: 991px) {
+    section.smartcontract img {
+      margin: 40px 0; } }
   section.smartcontract .content {
     margin: auto; }
     section.smartcontract .content .title {
@@ -1766,12 +1859,12 @@ section.smartcontract {
 .video-iframe {
   box-shadow: 0 15px 30px -2px rgba(15, 46, 114, 0.7);
   width: 90%;
-  height: 450px; }
+  height: 400px; }
 
 @media (min-width: 820px) {
   .video-iframe {
     width: 800px;
-    height: 450px; } }
+    height: 400px; } }
 
 .confirm-body {
   background: #eeeeee;
@@ -2448,7 +2541,6 @@ header.presale-masthead {
 
 section.as-seen-on {
   padding-top: 5rem !important;
-  min-height: 800px;
   background: linear-gradient(#efefef 80%, white 99%);
   /* Standard syntax */ }
   section.as-seen-on .links {
@@ -2457,17 +2549,14 @@ section.as-seen-on {
       section.as-seen-on .links {
         padding: 20px 15px; } }
     section.as-seen-on .links .link-box {
-      margin: 0 auto 65px auto;
+      margin: 0 auto 30px auto;
       border: 10px solid white;
       background-color: white;
-      height: 120px;
-      width: 240px;
+      height: 100px;
+      width: 150px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain; }
-    @media (min-width: 648px) {
-      section.as-seen-on .links > div:last-child {
-        padding: 0 16%; } }
     section.as-seen-on .links .merkle {
       background-image: url(../img/presale/merkle.png); }
     section.as-seen-on .links .cryptocoinsnews {

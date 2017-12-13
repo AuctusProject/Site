@@ -1,7 +1,6 @@
 // Styling for the masthead
 
 header.masthead {
-    min-height: 100%;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -11,13 +10,10 @@ header.masthead {
     background: -o-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* Standard syntax */
-    @media (max-width: 768px) {
-        background: #0884cd; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(180deg, #04148c 15%, #0884cd 40%, #0bdace); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(180deg, #04148c 15%, #0884cd 40%, #0bdace ); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(180deg, #04148c 15%, #0884cd 40%, #0bdace); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(180deg, #04148c 15%, #0884cd 40%, #0bdace); /* Standard syntax */
+    @media (min-width: 992px) {
+        height: 768px;
     }
+
 
 
 
@@ -51,8 +47,11 @@ header.masthead {
         z-index: 100;
         transition: all 0.2s;
 
+        @media (max-width: 1199px) {
+            padding-left: 20px;
+        }
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             margin: 0;
             width: 100%;
             text-align: center;
@@ -64,7 +63,7 @@ header.masthead {
         .logo {
             margin: 15px 0 5px 0;
 
-            @media (max-width: 768px) {
+            @media (max-width: 991px) {
                 display: block;
                 -moz-transform: scale(0.9);
                 -o-transform: scale(0.9);
@@ -87,6 +86,10 @@ header.masthead {
                 margin: 12px;
                 cursor: pointer;
                 font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+
+                @media(max-width:1199px) {
+                    margin: 2px;
+                }
             }
 
             span:hover {
@@ -102,7 +105,7 @@ header.masthead {
     }
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
         .button-div {
             margin-bottom: 30px;
         }
@@ -123,7 +126,7 @@ header.masthead {
         z-index: 10000;
         transition: all 0.5s;
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             right: -60px;
             top: -65px;
             height: 120px;
@@ -142,7 +145,7 @@ header.masthead {
             cursor: pointer;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             i.fa-bars {
                 font-size: 27px;
                 position: absolute;
@@ -180,10 +183,10 @@ header.masthead {
             cursor: pointer;
         }
 
-        @media (max-width: 768px) {
-            right: -60%;
-            height: 180%;
-            width: 150%;
+        @media (max-width: 991px) {
+            right: -350px;
+            height: 800px;
+            width: 700px;
 
             i.fa-bars {
                 font-size: 27px;
@@ -207,6 +210,11 @@ header.masthead {
         min-width: 115pt;
         text-align: center;
         height: 110px;
+
+        @media (max-width: 499px) {
+            min-width: 80pt;
+            font-size: 10pt !important;
+        }
 
         i.fa {
             margin-right: 13px;
@@ -255,6 +263,7 @@ header.masthead {
     }
 
     .text-container {
+        z-index: 2;
         padding: 200px 0 0 6%;
         width: 68%;
         position: relative;
@@ -280,7 +289,7 @@ header.masthead {
             margin: 0;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             text-align: center;
             padding: 120px 0 0 0;
             margin-left: unset !important;
@@ -301,19 +310,31 @@ header.masthead {
     }
 
     .eth-machine {
-        @media (min-width: 768px) {
+        z-index: 1;
+        margin-top: 0px;
+
+        @media (min-width: 992px) {
             position: absolute;
             top: 60px;
             right: 36px;
         }
 
-        @media (max-width:768px) {
+        @media (max-width:991px) {
             text-align: center;
             margin-bottom: 20px;
 
             img {
                 margin-top: -30px;
                 max-width: 80%;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width:1199px) {
+            right: -140px;
+
+            img {
+                margin-top: 50px;
+                width: 75%;
             }
         }
     }

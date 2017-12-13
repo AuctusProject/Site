@@ -20,7 +20,7 @@
     height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     #topMenu {
         right: 0px;
         top: 0px;
@@ -47,8 +47,8 @@
     height: 100%;
     width: 100%;
 
-    @media (max-width: 768px) {
-        width: 80%;
+    @media (max-width: 991px) {
+        width: 350px;
     }
 }
 
@@ -58,7 +58,7 @@
     margin: 30px;
     list-style: none;
 
-    @media(max-width:768px) {
+    @media(max-width:991px) {
         margin: 0 0 0 -50px;
     }
 }

@@ -183,13 +183,13 @@ hr {
     background: linear-gradient(70deg, rgb(7,92,238) 25%, rgb(11,231,206) 75%); /* Standard syntax */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .web-only {
         display: none !important;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .mobile-only {
         display: none !important;
     }
@@ -247,6 +247,7 @@ a.linkedin-button {
 .icons-panel {
     display: block !important;
     width: 32%;
+    min-width: 360px;
     z-index: 10;
     position: absolute;
     top: 0;

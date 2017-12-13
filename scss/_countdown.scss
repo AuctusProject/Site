@@ -15,6 +15,14 @@ section.countdown {
         width: 60%;
         margin: auto;
 
+        @media (max-width: 767px) {
+            width: 90%;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 75%;
+        }
+
         span {
             color: #09d8ba;
             font-weight: bold;

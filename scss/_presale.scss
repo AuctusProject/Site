@@ -573,7 +573,7 @@ header.presale-masthead {
 
 section.as-seen-on {
     padding-top: 5rem !important;
-    min-height: 800px;
+    
     background: linear-gradient( #efefef 80%, white 99%); /* Standard syntax */
     .links {
         align-content: center;
@@ -583,20 +583,14 @@ section.as-seen-on {
         }
 
         .link-box {
-            margin: 0 auto 65px auto;
+            margin: 0 auto 30px auto;
             border: 10px solid white;
             background-color: white;
-            height: 120px;
-            width: 240px;
+            height: 100px;
+            width: 150px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-        }
-
-        @media (min-width: 648px) {
-            > div:last-child {
-                padding: 0 16%;
-            }
         }
 
         .merkle {
