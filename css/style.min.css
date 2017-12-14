@@ -1218,7 +1218,7 @@ section.team {
     margin: auto; }
   /* line 46, ../scss/_team.scss */
   section.team .team-card {
-    margin: 25px auto;
+    margin: 25px;
     width: 320px;
     position: relative;
     text-align: left;
@@ -1228,61 +1228,65 @@ section.team {
     box-shadow: 1px 2px 2px 1px #c1c1c1;
     display: inline-block;
     vertical-align: top; }
-    /* line 58, ../scss/_team.scss */
+    @media (max-width: 768px) {
+      /* line 46, ../scss/_team.scss */
+      section.team .team-card {
+        margin: 25px auto; } }
+    /* line 62, ../scss/_team.scss */
     section.team .team-card .card-picture-name {
       width: 100%;
       display: inline-block;
       vertical-align: top;
       text-align: center; }
-    /* line 65, ../scss/_team.scss */
+    /* line 69, ../scss/_team.scss */
     section.team .team-card .card-picture {
       width: 220px;
       margin-top: 20px; }
-    /* line 70, ../scss/_team.scss */
+    /* line 74, ../scss/_team.scss */
     section.team .team-card .card-name-position-linkedin {
       text-decoration: none;
       width: 100%;
       margin: 20px; }
-    /* line 76, ../scss/_team.scss */
+    /* line 80, ../scss/_team.scss */
     section.team .team-card .card-name-position {
       display: inline-block;
       width: calc(100% - 80px);
       margin-top: 20px;
       text-align: left; }
-    /* line 83, ../scss/_team.scss */
+    /* line 87, ../scss/_team.scss */
     section.team .team-card .card-linkedin {
       content: url("../img/team/linkedin-icon.png");
       display: inline-block; }
-    /* line 88, ../scss/_team.scss */
+    /* line 92, ../scss/_team.scss */
     section.team .team-card .card-name {
       font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
       font-size: 22px !important;
       line-height: 24px;
       color: #002d78; }
-    /* line 95, ../scss/_team.scss */
+    /* line 99, ../scss/_team.scss */
     section.team .team-card .card-position {
       font-size: 12px !important;
       color: black; }
-    /* line 100, ../scss/_team.scss */
+    /* line 104, ../scss/_team.scss */
     section.team .team-card .card-description {
       display: inline-block; }
-      /* line 103, ../scss/_team.scss */
+      /* line 107, ../scss/_team.scss */
       section.team .team-card .card-description .dots {
         height: 10px;
         width: 50%;
         margin: auto; }
-    /* line 110, ../scss/_team.scss */
+    /* line 114, ../scss/_team.scss */
     section.team .team-card .card-description-content {
       font-size: 12px;
       text-align: center;
       padding: 15px;
       min-height: 245px; }
-  /* line 118, ../scss/_team.scss */
+  /* line 122, ../scss/_team.scss */
   section.team .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 20px; }
-  /* line 124, ../scss/_team.scss */
+  /* line 128, ../scss/_team.scss */
   section.team .position {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     font-size: 14px;
@@ -1290,7 +1294,7 @@ section.team {
     margin-top: 5px;
     margin-bottom: 60px; }
 
-/* line 134, ../scss/_team.scss */
+/* line 138, ../scss/_team.scss */
 .remove-padding {
   padding-top: 0; }
 

@@ -44,7 +44,7 @@ section.team {
     }
 
     .team-card {
-        margin: 25px auto;
+        margin: 25px;
         width: 320px;
         position: relative;
         text-align: left;
@@ -54,6 +54,10 @@ section.team {
         box-shadow: 1px 2px 2px 1px #c1c1c1;
         display: inline-block;
         vertical-align: top;
+
+        @media (max-width: 768px) {
+            margin: 25px auto;
+        }
 
         .card-picture-name {
             width: 100%;
@@ -131,6 +135,6 @@ section.team {
 }
 
 
-.remove-padding {
-    padding-top: 0;
-}
+    .remove-padding {
+        padding-top: 0;
+    }
