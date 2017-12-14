@@ -1084,6 +1084,9 @@ section.team {
     section.team .team-card .card-linkedin {
       content: url("../img/team/linkedin-icon.png");
       display: inline-block; }
+    section.team .team-card .card-behance {
+      content: url("../img/team/behance-icon.png");
+      display: inline-block; }
     section.team .team-card .card-name {
       font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
       font-size: 22px !important;
