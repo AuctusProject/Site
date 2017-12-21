@@ -42,21 +42,16 @@ header.masthead {
         height: 85px;
         width: 100%;
         position: fixed;
-        padding-left: 6%;
         background: rgba(4, 20, 140, 0.7);
         z-index: 1001;
         transition: all 0.2s;
 
-        @media (max-width: 1199px) {
-            padding-left: 20px;
-        }
 
         @media (max-width: 991px) {
             margin: 0;
             width: 100%;
             text-align: center;
             margin-left: unset !important;
-            padding-left: 0%;
             position: absolute;
         }
 
@@ -197,6 +192,9 @@ header.masthead {
         }
     }
 
+    .container{
+        padding: 0;
+    }
 
     .button-div {
         display: inline-block;
@@ -264,7 +262,7 @@ header.masthead {
 
     .text-container {
         z-index: 2;
-        padding: 200px 0 0 6%;
+        padding: 200px 0 0 0;
         width: 68%;
         position: relative;
 

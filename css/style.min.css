@@ -756,14 +756,9 @@ header.masthead {
     height: 85px;
     width: 100%;
     position: fixed;
-    padding-left: 6%;
     background: rgba(4, 20, 140, 0.7);
     z-index: 1001;
     transition: all 0.2s; }
-    @media (max-width: 1199px) {
-      /* line 41, ../scss/_masthead.scss */
-      header.masthead .top-header {
-        padding-left: 20px; } }
     @media (max-width: 991px) {
       /* line 41, ../scss/_masthead.scss */
       header.masthead .top-header {
@@ -771,13 +766,12 @@ header.masthead {
         width: 100%;
         text-align: center;
         margin-left: unset !important;
-        padding-left: 0%;
         position: absolute; } }
-    /* line 63, ../scss/_masthead.scss */
+    /* line 58, ../scss/_masthead.scss */
     header.masthead .top-header .logo {
       margin: 15px 0 5px 0; }
       @media (max-width: 991px) {
-        /* line 63, ../scss/_masthead.scss */
+        /* line 58, ../scss/_masthead.scss */
         header.masthead .top-header .logo {
           display: block;
           -moz-transform: scale(0.9);
@@ -786,36 +780,36 @@ header.masthead {
           transform: scale(0.9);
           margin-left: auto;
           margin-right: auto; } }
-    /* line 77, ../scss/_masthead.scss */
+    /* line 72, ../scss/_masthead.scss */
     header.masthead .top-header .menu {
       display: inline;
       position: relative;
       left: 5%;
       top: 12px;
       text-align: center; }
-      /* line 84, ../scss/_masthead.scss */
+      /* line 79, ../scss/_masthead.scss */
       header.masthead .top-header .menu a > span {
         color: white;
         margin: 12px;
         cursor: pointer;
         font-family: "Helvetica Neue Light","HelveticaNeue-Light"; }
         @media (max-width: 1199px) {
-          /* line 84, ../scss/_masthead.scss */
+          /* line 79, ../scss/_masthead.scss */
           header.masthead .top-header .menu a > span {
             margin: 2px; } }
-      /* line 95, ../scss/_masthead.scss */
+      /* line 90, ../scss/_masthead.scss */
       header.masthead .top-header .menu span:hover {
         font-weight: bold;
         transition: all 0.2s; }
-  /* line 102, ../scss/_masthead.scss */
+  /* line 97, ../scss/_masthead.scss */
   header.masthead .top-header:hover {
     background: #04148c;
     transition: all 0.2s; }
   @media (max-width: 991px) {
-    /* line 109, ../scss/_masthead.scss */
+    /* line 104, ../scss/_masthead.scss */
     header.masthead .button-div {
       margin-bottom: 30px; } }
-  /* line 115, ../scss/_masthead.scss */
+  /* line 110, ../scss/_masthead.scss */
   header.masthead .quarter-circle {
     background-color: white;
     border-bottom-left-radius: 100%;
@@ -830,13 +824,13 @@ header.masthead {
     z-index: 10000;
     transition: all 0.5s; }
     @media (max-width: 991px) {
-      /* line 115, ../scss/_masthead.scss */
+      /* line 110, ../scss/_masthead.scss */
       header.masthead .quarter-circle {
         right: -60px;
         top: -65px;
         height: 120px;
         width: 130px; } }
-  /* line 139, ../scss/_masthead.scss */
+  /* line 134, ../scss/_masthead.scss */
   header.masthead #topMenu i {
     color: #002d78;
     font-size: 45px;
@@ -845,13 +839,13 @@ header.masthead {
     top: 10px;
     cursor: pointer; }
   @media (max-width: 991px) {
-    /* line 149, ../scss/_masthead.scss */
+    /* line 144, ../scss/_masthead.scss */
     header.masthead #topMenu i.fa-bars {
       font-size: 27px;
       position: absolute;
       right: 15px;
       top: 10px; } }
-  /* line 159, ../scss/_masthead.scss */
+  /* line 154, ../scss/_masthead.scss */
   header.masthead #topMenu.open .quarter-circle {
     background: #04148c;
     background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
@@ -869,7 +863,7 @@ header.masthead {
     height: 1000px;
     z-index: 10000;
     transition: all 1s; }
-    /* line 177, ../scss/_masthead.scss */
+    /* line 172, ../scss/_masthead.scss */
     header.masthead #topMenu.open .quarter-circle i {
       color: #002d78;
       font-size: 45px;
@@ -878,18 +872,21 @@ header.masthead {
       top: 10px;
       cursor: pointer; }
     @media (max-width: 991px) {
-      /* line 159, ../scss/_masthead.scss */
+      /* line 154, ../scss/_masthead.scss */
       header.masthead #topMenu.open .quarter-circle {
         right: -350px;
         height: 800px;
         width: 700px; }
-        /* line 191, ../scss/_masthead.scss */
+        /* line 186, ../scss/_masthead.scss */
         header.masthead #topMenu.open .quarter-circle i.fa-bars {
           font-size: 27px;
           position: absolute;
           right: -385px;
           top: -170px; } }
-  /* line 201, ../scss/_masthead.scss */
+  /* line 195, ../scss/_masthead.scss */
+  header.masthead .container {
+    padding: 0; }
+  /* line 199, ../scss/_masthead.scss */
   header.masthead .button-div {
     display: inline-block;
     border: 2px solid white;
@@ -903,14 +900,14 @@ header.masthead {
     text-align: center;
     height: 110px; }
     @media (max-width: 499px) {
-      /* line 201, ../scss/_masthead.scss */
+      /* line 199, ../scss/_masthead.scss */
       header.masthead .button-div {
         min-width: 80pt;
         font-size: 10pt !important; } }
-    /* line 219, ../scss/_masthead.scss */
+    /* line 217, ../scss/_masthead.scss */
     header.masthead .button-div i.fa {
       margin-right: 13px; }
-    /* line 223, ../scss/_masthead.scss */
+    /* line 221, ../scss/_masthead.scss */
     header.masthead .button-div div {
       height: 50px;
       width: 50px;
@@ -918,95 +915,95 @@ header.masthead {
       margin-bottom: 10px;
       background-repeat: no-repeat;
       background-position: center; }
-    /* line 232, ../scss/_masthead.scss */
+    /* line 230, ../scss/_masthead.scss */
     header.masthead .button-div #demo {
       background-image: url(/img/header/demo-branco.png); }
-    /* line 236, ../scss/_masthead.scss */
+    /* line 234, ../scss/_masthead.scss */
     header.masthead .button-div #presentation {
       background-image: url(/img/header/presentation-branco.png); }
-    /* line 240, ../scss/_masthead.scss */
+    /* line 238, ../scss/_masthead.scss */
     header.masthead .button-div #whitepaper {
       background-image: url(/img/header/wp-branco.png); }
-  /* line 245, ../scss/_masthead.scss */
+  /* line 243, ../scss/_masthead.scss */
   header.masthead .button-div:hover {
     z-index: 1000;
     cursor: pointer;
     color: #002D78;
     background-color: white;
     font-weight: bold; }
-    /* line 252, ../scss/_masthead.scss */
+    /* line 250, ../scss/_masthead.scss */
     header.masthead .button-div:hover #demo {
       background-image: url(/img/header/demo.png); }
-    /* line 256, ../scss/_masthead.scss */
+    /* line 254, ../scss/_masthead.scss */
     header.masthead .button-div:hover #presentation {
       background-image: url(/img/header/presentation.png); }
-    /* line 260, ../scss/_masthead.scss */
+    /* line 258, ../scss/_masthead.scss */
     header.masthead .button-div:hover #whitepaper {
       background-image: url(/img/header/wp.png); }
-  /* line 265, ../scss/_masthead.scss */
+  /* line 263, ../scss/_masthead.scss */
   header.masthead .text-container {
     z-index: 2;
-    padding: 200px 0 0 6%;
+    padding: 200px 0 0 0;
     width: 68%;
     position: relative; }
-    /* line 271, ../scss/_masthead.scss */
+    /* line 269, ../scss/_masthead.scss */
     header.masthead .text-container h1 {
       font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
       font-size: 37pt;
       color: white;
       margin-bottom: 20pt; }
-    /* line 278, ../scss/_masthead.scss */
+    /* line 276, ../scss/_masthead.scss */
     header.masthead .text-container h2 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 20pt !important;
       color: white;
       margin: 0; }
-    /* line 285, ../scss/_masthead.scss */
+    /* line 283, ../scss/_masthead.scss */
     header.masthead .text-container h3 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 13pt !important;
       color: white;
       margin: 0; }
     @media (max-width: 991px) {
-      /* line 265, ../scss/_masthead.scss */
+      /* line 263, ../scss/_masthead.scss */
       header.masthead .text-container {
         text-align: center;
         padding: 120px 0 0 0;
         margin-left: unset !important;
         width: 100%; }
-        /* line 298, ../scss/_masthead.scss */
+        /* line 296, ../scss/_masthead.scss */
         header.masthead .text-container h1 {
           font-size: 27pt; }
-        /* line 302, ../scss/_masthead.scss */
+        /* line 300, ../scss/_masthead.scss */
         header.masthead .text-container h2 {
           font-size: 15pt !important; }
-        /* line 306, ../scss/_masthead.scss */
+        /* line 304, ../scss/_masthead.scss */
         header.masthead .text-container h3 {
           font-size: 13pt !important; } }
-  /* line 312, ../scss/_masthead.scss */
+  /* line 310, ../scss/_masthead.scss */
   header.masthead .eth-machine {
     z-index: 1;
     margin-top: 0px; }
     @media (min-width: 992px) {
-      /* line 312, ../scss/_masthead.scss */
+      /* line 310, ../scss/_masthead.scss */
       header.masthead .eth-machine {
         position: absolute;
         top: 60px;
         right: 36px; } }
     @media (max-width: 991px) {
-      /* line 312, ../scss/_masthead.scss */
+      /* line 310, ../scss/_masthead.scss */
       header.masthead .eth-machine {
         text-align: center;
         margin-bottom: 20px; }
-        /* line 326, ../scss/_masthead.scss */
+        /* line 324, ../scss/_masthead.scss */
         header.masthead .eth-machine img {
           margin-top: -30px;
           max-width: 80%; } }
     @media (min-width: 992px) and (max-width: 1199px) {
-      /* line 312, ../scss/_masthead.scss */
+      /* line 310, ../scss/_masthead.scss */
       header.masthead .eth-machine {
         right: -140px; }
-        /* line 335, ../scss/_masthead.scss */
+        /* line 333, ../scss/_masthead.scss */
         header.masthead .eth-machine img {
           margin-top: 50px;
           width: 75%; } }
