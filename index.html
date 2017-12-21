@@ -54,11 +54,11 @@
                     <nav>
                         <ul>
                             <li><a href="#page-top"><img src="img/header/greenlogo.png" /></a></li>
-                            <li><span class="icon-arrow-right arr"></span><a href="https://demo.auctus.org" target="_blank">DEMO</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a href="../faq">FAQ</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a href="../tokensale">TOKEN SALE</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a href="../team">TEAM</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a href="https://blog.auctus.org" target="_blank">BLOG</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="DEMO" href="https://demo.auctus.org" target="_blank">DEMO</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="FAQ" href="../faq">FAQ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TOKEN SALE" href="../tokensale">TOKEN SALE</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TEAM" href="../team">TEAM</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="BLOG" href="https://blog.auctus.org" target="_blank">BLOG</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -68,10 +68,12 @@
             <div class="container">
                 <a href="#page-top"><img class="img-responsive logo" src="img/header/headerlogo.png" /></a>
                 <div class="menu web-only">
-                    <a href="https://demo.auctus.org" target="_blank"><span>DEMO</span></a>
-                    <a href="./faq"><span>FAQ</span></a>
-                    <a href="./tokensale"><span>TOKEN SALE</span></a>
-                    <a href="./team"><span>TEAM</span></a>
+                    <a href="https://demo.auctus.org" target="_blank"><span i18n="DEMO">DEMO</span></a>
+                    <a href="./faq"><span i18n="FAQ">FAQ</span></a>
+                    <a href="./tokensale"><span i18n="TOKEN SALE">TOKEN SALE</span></a>
+                    <a href="./team"><span i18n="TEAM">TEAM</span></a>
+                    <a onclick="changeLanguage('en-uk')"><span >EN</span></a>
+                    <a onclick="changeLanguage('pt-br')"><span >PT</span></a>
                 </div>
                 <div class="icons-panel web-only">
                     <div class="navigation-icons text-center web-only">
@@ -103,16 +105,16 @@
         <div class="container">
             <div class="device-container">
                 <div class="text-container">
-                    <h2>SMART CONTRACT POWERED</h2>
-                    <h1>RETIREMENT PLANS</h1>
-                    <h3 class="col-lg-7 no-padding">
+                    <h2 i18n="SMART CONTRACT POWERED">SMART CONTRACT POWERED</h2>
+                    <h1 i18n="RETIREMENT PLANS">RETIREMENT PLANS</h1>
+                    <h3 class="col-lg-7 no-padding" i18n="Achieve your retirement">
                         Achieve your retirement goals faster with Auctus’ automated investing service, with optimized portfolios of bonds, stocks and cryptocurrencies.
                     </h3>
                     <br />
                     <div>
                         <div onclick="downloadPresentation()" class="button-div">
                             <div id="presentation"></div>
-                            <a onclick="downloadPresentation()" class="wp-button">PRESENTATION</a>
+                            <a onclick="downloadPresentation()" class="wp-button" i18n="PRESENTATION">PRESENTATION</a>
                         </div>
                         <div onclick="downloadWhitepaper()" class="button-div">
                             <div id="whitepaper"></div>
@@ -238,7 +240,7 @@
             </div>
             <div class="section-content">
                 <div class="bullets-container">
-                    <span class="selected"
+                    <span i18n="SET YOUR RETIREMENT GOALS" class="selected"
                           meta-title="SET YOUR RETIREMENT GOALS"
                           meta-content="Risk/return adjusted recommendations, based on your individual circumstances."
                           meta-id="01">1</span>
@@ -522,7 +524,7 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="js/script.min.js"></script>
-
+    <script src="js/translation.js"></script>
     <script>
         $(".menu-content a").click(function (e) {
             if ($(window).width() <= 768)

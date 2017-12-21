@@ -1,0 +1,20 @@
+﻿i18nData = {
+  "masthead": {
+    "DEMO": "DEMO",
+    "FAQ": "FAQ",
+    "TOKEN SALE": "TOKEN SALE",
+    "TEAM": "TEAM",
+    "BLOG": "BLOG",
+    "PRESENTATION": "PRESENTATION",
+    "RETIREMENT PLANS": "RETIREMENT PLANS",
+    "SMART CONTRACT POWERED": "SMART CONTRACT POWERED",
+    "Achieve your retirement": "Achieve your retirement goals faster with Auctus’ automated investing service, with optimized portfolios of bonds, stocks and cryptocurrencies."
+  },
+
+  "retirement": {
+    "SET YOUR RETIREMENT GOALS": {
+      "meta-title": "SET YOUR RETIREMENT GOALS",
+      "meta-content": "Risk/return adjusted recommendations, based on your individual circumstances."
+    }
+  }
+}
