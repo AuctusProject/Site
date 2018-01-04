@@ -1,0 +1,100 @@
+﻿i18nData = {
+  "masthead": {
+    "DEMO": "演示版",
+    "FAQ": "常见问题",
+    "TOKEN SALE": "代币销售",
+    "TEAM": "团队",
+    "BLOG": "博客",
+    "PRESENTATION": "演示",
+    "WHITEPAPER": "白皮书",
+    "RETIREMENT PLANS": "退休计划",
+    "SMART CONTRACT POWERED": "由智能合约驱动的",
+    "Achieve your retirement": "Auctus 的自动投资服务通过优化型债券、股票和加密货币投资组合助您更快实现自己的退休目标。"
+  },
+  "video": {
+    "AUCTUS OVERVIEW": "AUCTUS 概述"
+  },
+  "countdown": {
+    "AUCTUS TOKEN SALE": "AUCTUS 代币销售",
+    "DATE WILL BE ANNOUNCED SOON": "日期即将公布",
+    "JOIN CONVERSATION ON ROCKET CHAT": "加入 ROCKET.CHAT 聊天",
+    "READ ABOUT AUCTUS TOKEN SALE": "了解关于 AUCTUS 代币销售的详情",
+    "JOIN THE WHITELIST": "加入白名单",
+    "TOKEN SALE WEBSITE": "代币销售网站"
+  },
+  "smartcontract": {
+    "SMART CONTRACT POWERED FEE STRUCTURE": "由智能合约驱动的费用结构",
+    "We use smart contracts to provide": "我们利用智能合同建立成果导向型低费率透明结构。AUC 代币会处于无需信任托管下，只有在机器人顾问准确预测市场时才可以付费。",
+    "BLOCKCHAIN ROBO-ADVISOR AND INVESTMENT TRACKING RECORD": "区块链机器人顾问和投资追踪记录",
+    "Auctus will use blockchain to provide": "Auctus 将使用区块链永久记录所有被提出的投资组合分配以及机器人顾问的市场预测。因此，您可以将预期回报与实际回报进行比较，或者将我们与竞争对手进行对比，以此衡量机器人顾问的表现。"
+  },
+  "retirement": {
+    "RETIREMENT PLAN": "退休计划",
+    "WE HELP YOU ACHIEVE YOUR RETIREMENT": "我们帮助您通过精心挑选的投资组合更快地实现自己的退休目标",
+    "SET YOUR RETIREMENT GOALS": {
+      "meta-title": "设定您的退休目标",
+      "meta-content": "根据您的具体情况提供调整后的风险与回报建议"
+    },
+    "PICK THE INVESTMENTS YOU WANT": {
+      "meta-title": "选择您期待的投资",
+      "meta-content": "选择股票、债券和加密货币，或者挑选由金融专家精选的十几种模板投资组合。"
+    },
+    "GET AN OPTIMIZED PORTFOLIO": {
+      "meta-title": "获得优化型投资组合",
+      "meta-content": "我们建立了优化型投资组合，帮助您在提高回报的同时降低风险。"
+    },
+    "RELAX AND ENJOY YOUR LIFE": {
+      "meta-title": "轻松享受生活",
+      "meta-content": "我们会保持您的目标分配，从而在必要时自动重新平衡您的投资组合。"
+    },
+    "TRY OUR DEMO": {
+      "meta-title": "试用我们的演示版",
+      "meta-content": "在模拟环境中体验 Auctus 平台的优势。"
+    }
+  },
+  "monetization": {
+    "MARKETPLACE": "市场",
+    "FINANCIAL EXPERTS": "金融专家",
+    "Financial advisors can earn AUC": "金融顾问可以通过提供专门的新闻稿、组合建议、实时聊天或电话支持来获取 AUC 代币收入。",
+    "Customers can access on-demand human advice": "客户可以利用 AUC 代币通过应用程序內建的聊天或电话功能来按需进行人工咨询。",
+    "Where the nature of the service involves portfolio": "如果服务的性质涉及组合的建议和预测，则用户仅在预测准确时才付款。",
+    "THIRD-PARTY ROBO-ADVISORS": "第三方机器人顾问",
+    "Third-Party Robo-Advisor providers will be able": "第三方的机器人顾问提供商将能够通过提供定制化投资策略来获得 AUC 代币。",
+    "Customers can access different investment strategies": "客户可以通过基于区块链的可靠追踪记录来访问不同的投资策略。",
+    "The transfer of AUC tokens between the user": "用户和提供商之间的 AUC 代币转移通过使用智能合约和记录以太坊区块链上的预测绑定到结果。"
+  },
+  "roadmap": {
+    "ROADMAP": "路线图",
+    "CHECK THE PROJECT MILESTONES": "查看项目里程碑",
+    "QUARTER 3": "第三季度",
+    "Pre-Sale": "私募",
+    "Advisory Board": "顾问团队",
+    "Auctus Demo lauch": "发布 Auctus 演示版",
+    "QUARTER 4": "第四季度",
+    "Strategic Partnerships": "战略伙伴关系",
+    "Development of Alpha Auctus Platform": "Alpha Auctus 平台开发",
+    "QUARTER 1": "第一季度",
+    "Initial Token Sale": "首次代币发售",
+    "Partnerships with Exchanges": "与交易所的合作关系",
+    "Development start of Beta Auctus Platform": "Beta Auctus 平台开发启动",
+    "QUARTER 2": "第二季度",
+    "Onboarding of traditional assets": "传统资产上线",
+    "Office opening US Asia": "在美国和亚洲开设办事处",
+    "Launch of Beta Auctus Platform": "推出 Beta Auctus 平台",
+    "Start of Retirement Plans Phase": "退休计划阶段启动",
+    "Launch of the Annuities Marketplace": "推出养老金市场"
+  },
+  "as-seen-on": {
+    "AS SEEN ON": "网络报道",
+    "AUCTUS ACROSS THE WEB": "关于 AUCTUS 的"
+  },
+  "newsletter": {
+    "BE THE FIRST TO GET THE NEWS": "率先获悉新闻",
+    "SUBSCRIBE TO OUR NEWSLETTER": "订阅我们的新闻通讯",
+    "EMAIL": {
+      "placeholder": "输入您的电子邮件",
+      "aria-label": "输入您的电子邮件"
+    },
+    "SUBSCRIBE": "订阅"
+  }
+}

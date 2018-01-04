@@ -14,13 +14,13 @@ function changeLanguage(language) {
         sectionData = i18nData[section]
         for (var key in sectionData) {
             keyData = sectionData[key];
-            domElement = $("." + section + " [i18n='" + key + "']");
+            domElements = $("." + section + " [i18n='" + key + "']");
             if (typeof keyData == "string") {
-                domElement.text(keyData);
+                domElements.each(function () { $(this).text(keyData); });
             }
             else {
                 for (var attribute in keyData) {
-                    domElement.attr(attribute, keyData[attribute]);
+                    domElements.each(function () { $(this).attr(attribute, keyData[attribute]); });
                 }
             }
         }
