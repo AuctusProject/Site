@@ -1,20 +1,227 @@
 ﻿i18nData = {
   "masthead": {
-    "DEMO": "DEMO",
-    "FAQ": "FAQ",
-    "TOKEN SALE": "TOKEN SALE",
-    "TEAM": "TEAM",
-    "BLOG": "BLOG",
-    "PRESENTATION": "PRESENTATION",
-    "RETIREMENT PLANS": "RETIREMENT PLANS",
-    "SMART CONTRACT POWERED": "SMART CONTRACT POWERED",
-    "Achieve your retirement": "Achieve your retirement goals faster with Auctus’ automated investing service, with optimized portfolios of bonds, stocks and cryptocurrencies."
+    "DEMO": "演示版",
+    "FAQ": "常见问题",
+    "TOKEN SALE": "",
+    "TEAM": "",
+    "BLOG": "",
+    "PRESENTATION": "",
+    "WHITEPAPER": "",
+    "RETIREMENT PLANS": "",
+    "SMART CONTRACT POWERED": "",
+    "Achieve your retirement": "",
+    "FREQUENTLY ASKED QUESTIONS": "",
+    "Relevant considerations about the project": "",
+    "AUCTUS CREW": ""
+  },
+  "video": {
+    "AUCTUS OVERVIEW": ""
+  },
+  "countdown": {
+    "AUCTUS TOKEN SALE": "",
+    "DATE WILL BE ANNOUNCED SOON": "",
+    "JOIN CONVERSATION ON ROCKET CHAT": "",
+    "READ ABOUT AUCTUS TOKEN SALE": "",
+    "JOIN THE WHITELIST": "",
+    "TOKEN SALE WEBSITE": ""
+  },
+  "smartcontract": {
+    "SMART CONTRACT POWERED FEE STRUCTURE": "",
+    "We use smart contracts to provide": "",
+    "BLOCKCHAIN ROBO-ADVISOR AND INVESTMENT TRACKING RECORD": "",
+    "Auctus will use blockchain to provide": ""
+  },
+  "retirement": {
+    "RETIREMENT PLAN": "",
+    "WE HELP YOU ACHIEVE YOUR RETIREMENT": "",
+    "SET YOUR RETIREMENT GOALS": {
+      "meta-title": "",
+      "meta-content": ""
+    },
+    "PICK THE INVESTMENTS YOU WANT": {
+      "meta-title": "",
+      "meta-content": ""
+    },
+    "GET AN OPTIMIZED PORTFOLIO": {
+      "meta-title": "",
+      "meta-content": ""
+    },
+    "RELAX AND ENJOY YOUR LIFE": {
+      "meta-title": "",
+      "meta-content": ""
+    },
+    "TRY OUR DEMO": {
+      "meta-title": "",
+      "meta-content": ""
+    }
+  },
+  "monetization": {
+    "MARKETPLACE": "",
+    "FINANCIAL EXPERTS": "",
+    "Financial advisors can earn AUC": "",
+    "Customers can access on-demand human advice": "",
+    "Where the nature of the service involves portfolio": "",
+    "THIRD-PARTY ROBO-ADVISORS": "",
+    "Third-Party Robo-Advisor providers will be able": "",
+    "Customers can access different investment strategies": "",
+    "The transfer of AUC tokens between the user": ""
+  },
+  "roadmap": {
+    "ROADMAP": "",
+    "CHECK THE PROJECT MILESTONES": "",
+    "QUARTER 3": "",
+    "Pre-Sale": "",
+    "Advisory Board": "",
+    "Auctus Demo lauch": "",
+    "QUARTER 4": "",
+    "Strategic Partnerships": "",
+    "Development of Alpha Auctus Platform": "",
+    "QUARTER 1": "",
+    "Initial Token Sale": "",
+    "Partnerships with Exchanges": "",
+    "Development start of Beta Auctus Platform": "",
+    "QUARTER 2": "",
+    "Onboarding of traditional assets": "",
+    "Office opening US Asia": "",
+    "Launch of Beta Auctus Platform": "",
+    "Start of Retirement Plans Phase": "",
+    "Launch of the Annuities Marketplace": ""
+  },
+  "as-seen-on": {
+    "AS SEEN ON": "",
+    "AUCTUS ACROSS THE WEB": ""
+  },
+  "newsletter": {
+    "BE THE FIRST TO GET THE NEWS": "",
+    "SUBSCRIBE TO OUR NEWSLETTER": "",
+    "EMAIL": {
+      "placeholder": "",
+      "aria-label": ""
+    },
+    "SUBSCRIBE": ""
+  },
+  ///////////////////////// FAQ //////////////////////////////
+  "faq": {
+    "FREQUENTLY ASKED QUESTIONS": "",
+    "Relevant considerations about the project": "",
+    "About Auctus": "",
+    "What is Auctus": "",
+    "Auctus was created with the mission": "",
+    "The Auctus platform will provide": "",
+    "Whats the meaning behind": "",
+    "Auctus is latin and means growth": "",
+    "Where is Auctus based": "",
+    "Auctus administration is based in": "",
+    "What problem does Auctus solve": "",
+    "Across the globe": "",
+    "Retirement savers are not in control": "",
+    "Auctus Token AUC": "",
+    "How the Auctus token AUC works": "",
+    "The fundamental role of the AUC Token": "",
+    "Every user will need to hold a certain": "",
+    "AUC Tokens stay in a trustless escrow": "",
+    "Token Launch and Usage of Raised Funds": "",
+    "What is the total supply of AUC tokens": "",
+    "The total supply of AUC tokens": "",
+    "Did Auctus had a pre-sale": "",
+    "Pre-sale was held from Oct": "",
+    "ETH raised": "",
+    "Soft cap of": "",
+    "valid transactions completed": "",
+    "=\"distinct addresses\"": "",
+    "An average of": "",
+    "Min cap surpassed by": "",
+    "When will be the public token sale": "",
+    "ICO is schedule to happen on the first quarter of 2018": "",
+    "Is this token sale open to US/China residents": "",
+    "Participants should check the legality": "",
+    "What will the pre-sale proceeds be used for": "",
+    "Up to 1000 ETH raised": "",
+    "When should I claim AUC acquired in pre-sale": "",
+    "Pre-sale participants will be able": "",
+    "Which cryptocurrencies will be accepted": "",
+    "Only ETH will be accepted": "",
+    "Will it be possible to issue more": "",
+    "All AUC tokens will be minted": "",
+    "Will there be a lockup period for AUC tokens": "",
+    "after distribution is over": "",
+    "What will be the initial distribution": "",
+    "of AUC created will be allocated to Auctus": "",
+    "of all tokens will be distributed": "",
+    "of tokens will be reserved for future stakeholders": "",
+    "of tokens are allocated for pre-sale": "",
+    "of tokens are allocated for bounty campaigns": "",
+    "Will there be a lockup period for tokens allocated": "",
+    "AUC tokens allocated to Auctus Core": "",
+    "Team": "",
+    "How can I get involved": "",
+    "You can join our Slack": ""
+  },
+  ////////////////////// presale ////////////////////////////
+  "presale-masthead": {
+    "AUCTUS TOKEN SALE IS COMING": "",
+    "We ll soon release more details about it": "",
+    "Join The Whitelist": ""
   },
 
-  "retirement": {
-    "SET YOUR RETIREMENT GOALS": {
-      "meta-title": "SET YOUR RETIREMENT GOALS",
-      "meta-content": "Risk/return adjusted recommendations, based on your individual circumstances."
-    }
+  "resources": {
+    "RESOURCES": "",
+    "LEARN ABOUT US": "",
+    "WHITEPAPER": "",
+    "Read our comprehensive": "",
+    "PRESENTATION": "",
+    "Have a look at our user friendly presentation": ""
+  },
+
+  "token-sale-overview": {
+    "TOKEN SALE OVERVIEW": "",
+    "UNDERSTANDING THE AUCTUS TOKEN DISTRIBUTION": "",
+    "PRE-SALE": "",
+    "UNTIL OCT 6TH": "",
+    "MIN CAP": "",
+    "WHITELIST PARTICIPANT": "",
+    "TO BE ANNOUNCED": "",
+    "VESTING": "",
+    "TEAM": "",
+    "2 YEARS VESTING WITH 6 MONTHS CLIFF": "",
+    "RESERVE FOR FUTURE STAKEHOLDERS": "",
+    "1 YEAR IF DEEMED NECESSARY": "",
+    "PARTNERSHIPS AND ADVISORING": "",
+    "6 MONTHS VESTING WITH 3 MONTHS CLIFF": ""
+  },
+  /////////////////// TEAM //////////////////////////
+  "advisors": {
+    "AUCTUS ADVISOR BOARD": "",
+    "INDUSTRY EXPERTS ADVISING AUCTUS": "",
+    "PENSION FINTECH ADVISOR": "",
+    "Martijn": "",
+    "PENSION LEGAL ADVISOR": "",
+    "Eric": "",
+    "Adam": "",
+    "FINANCIAL ADVISOR": "",
+    "Steven": "",
+    "AUCTUS TEAM": "",
+    "MEET THE TEAM BEHIND AUCTUS": "",
+    "LEAD DEVELOPER": "",
+    "Felipe": "",
+    "ADVISORY AND PARTNERSHIPS": "",
+    "Raphael": "",
+    "FRONT END ENGINEER": "",
+    "Guilherme": "",
+    "STRATEGY": "",
+    "Vinicius": "",
+    "LEAD ETHEREUM ENGINEER": "",
+    "Ariny": "",
+    "SENIOR SOFTWARE ENGINEER": "",
+    "Daniel Duarte": "",
+    "Thiago": "",
+    "Daniel Vitorino": "",
+    "MARKETING COMMUNITY MANAGER": "",
+    "Ludmila": "",
+    "OPERATIONS": "",
+    "Daniel Boaventura": "",
+    "BRAND INTERACTION DESIGN": "",
+    "Samir": "",
+    "Mariana": ""
   }
 }
