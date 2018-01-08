@@ -159,7 +159,8 @@
   },
   ////////////////////// presale ////////////////////////////
   "presale-masthead": {
-    "AUCTUS TOKEN SALE IS COMING": "AUCTUS 代币销售即将来临！2018 年第一季度",
+    "AUCTUS TOKEN SALE IS COMING": "AUCTUS 代币销售即将来临！",
+    "Q1 2018": "2018 年第一季度",
     "We ll soon release more details about it": "我们即将公布更多细节，敬请期待！\n\n现阶段请务必加入我们的白名单",
     "Join The Whitelist": "加入白名单"
   },
@@ -200,6 +201,8 @@
     "Adam": "Adam 是 Seyfarth Shaw 律师事务所的合伙人，该公司在美国、伦敦、上海、香港、墨尔本和悉尼与 900 多位律师展开合作。Adam 拥有丰富的工作经验，可以就合格退休计划的建立、赞助和维护过程中所出现的法律问题向组织提供建议。他曾针对 ERISA 和内部收入法规遵从性等诸多方面为很多雇主提供过咨询，还通过劳工部和国税局的审计和计划纠正项目为客户提供法务咨询。",
     "FINANCIAL ADVISOR": "财务顾问",
     "Steven": "Steen 是 UNC Charlotte 的金融学副教授，他对数学金融、衍生证券、资产定价和金融计量经济学领域都有着深入的研究。Steven 拥有克莱门森大学数学科学和应用经济学双料博士学位。他曾在诸多学术期刊上发表过文章，包括《衍生品研究回顾》(Review of Derivatives Research)、《期货市场回顾》(Review of Futures Markets)、《风险与保险期刊》(Journal of Risk and Insurance) 以及《资产管理期刊》(Journal of Asset Management)。",
+  },
+  "team": {
     "AUCTUS TEAM": "AUCTUS 团队",
     "MEET THE TEAM BEHIND AUCTUS": "认识 AUCTUS 的幕后功臣",
     "LEAD DEVELOPER": "首席开发人员",
