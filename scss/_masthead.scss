@@ -92,6 +92,37 @@ header.masthead {
                 transition: all 0.2s;
             }
         }
+
+        .translation {
+            display: inline;
+            cursor:pointer;
+            .translation-box {
+                display: inline-table;
+                margin-right: 8px;
+                border-left: solid 1px white;
+                text-align: right;
+                min-width: 100px;
+
+                .fa-language:before {
+                    margin: 0 8px;
+                    font-size: 20px;
+                }
+
+                .language-box {
+
+
+                    :hover {
+                        font-weight: bold;
+                        transition: all 0.2s;
+                        cursor: pointer;
+                    }
+                }
+
+                .hide {
+                    display: none;
+                }
+            }
+        }
     }
 
     .top-header:hover {
@@ -99,6 +130,9 @@ header.masthead {
         transition: all 0.2s;
     }
 
+    .large-header {
+        height: 140px !important;
+    }
 
     @media (max-width: 991px) {
         .button-div {
@@ -192,7 +226,7 @@ header.masthead {
         }
     }
 
-    .container{
+    .container {
         padding: 0;
     }
 
@@ -265,6 +299,7 @@ header.masthead {
         padding: 200px 0 0 0;
         width: 68%;
         position: relative;
+        max-width: 550px;
 
         h1 {
             font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";

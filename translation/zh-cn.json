@@ -181,14 +181,14 @@
     "UNTIL OCT 6TH": "至 10 月 6 日",
     "MIN CAP": "最低下限 400 ETH",
     "WHITELIST PARTICIPANT": "10 个ETH/每位白名单参与者",
-    "TO BE ANNOUNCED": "",
-    "VESTING": "",
-    "TEAM": "",
-    "2 YEARS VESTING WITH 6 MONTHS CLIFF": "",
-    "RESERVE FOR FUTURE STAKEHOLDERS": "",
-    "1 YEAR IF DEEMED NECESSARY": "",
-    "PARTNERSHIPS AND ADVISORING": "",
-    "6 MONTHS VESTING WITH 3 MONTHS CLIFF": ""
+    "TO BE ANNOUNCED": "将被宣布",
+    "VESTING": "归属期",
+    "TEAM": "团队",
+    "2 YEARS VESTING WITH 6 MONTHS CLIFF": "2 年归属期和 6 个月最短生效期",
+    "RESERVE FOR FUTURE STAKEHOLDERS": "保留给未来利益相关方",
+    "1 YEAR IF DEEMED NECESSARY": "1 年（如果认为有必要，这些代币将被销毁）",
+    "PARTNERSHIPS AND ADVISORING": "合作伙伴和顾问",
+    "6 MONTHS VESTING WITH 3 MONTHS CLIFF": "6 个年归属期和 3 个月最短生效期"
   },
   /////////////////// TEAM //////////////////////////
   "advisors": {

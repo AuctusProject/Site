@@ -72,9 +72,17 @@
                     <a href="./faq"><span i18n="FAQ">FAQ</span></a>
                     <a href="./tokensale"><span i18n="TOKEN SALE">TOKEN SALE</span></a>
                     <a href="./team"><span i18n="TEAM">TEAM</span></a>
-                    <a onclick="changeLanguage('en-uk')"><span>EN</span></a>
-                    <a onclick="changeLanguage('zh-cn')"><span >中国</span></a>
-                    <a onclick="changeLanguage('ru-ru')"><span >РУСС</span></a>
+                    <div class="translation">
+                        <div onclick="showTranslateBox('')" class="translation-box">
+                            <i class="fa fa-language"></i><span class="language">ENGLISH</span>
+                            <div class="language-box hide">
+                                <div onclick="changeLanguage('en-uk')"><span id="en-uk">ENGLISH</span></div>
+                                <div onclick="changeLanguage('ru-ru')"><span id="ru-ru">РУССКИЙ</span></div>
+                                <div onclick="changeLanguage('zh-cn')"><span id="zh-cn">中文</span></div>
+                            </div>
+                        </div>
+                        <i onclick="showTranslateBox('')" class="fa fa-caret-down drop-arrow"></i>
+                    </div>
                 </div>
                 <div class="icons-panel web-only">
                     <div class="navigation-icons text-center web-only">
@@ -341,7 +349,7 @@
                             <div class="col-lg-2">
                                 <div class="lines first">
                                     <div class="roadmap-line active"></div>
-                                    <div class="roadmap-line"></div>
+                                    <div class="roadmap-line active"></div>
                                 </div>
                             </div>
                             <div class="col-lg-5 box right first">
@@ -534,8 +542,8 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="js/script.min.js"></script>
     <script src="js/translation.js"></script>
+    <script src="js/script.min.js"></script>
     <script>
         $(".menu-content a").click(function (e) {
             if ($(window).width() <= 768)
@@ -629,24 +637,25 @@
 
     <script>
         $(".bullets-container > span").hover(
-            function () {
-                $(".bullets-container > span").removeClass("selected");
-                $(this).toggleClass("selected");
-                
-                $(".selected-content img").attr("src", "img/retirement/" + $(this).attr("meta-id") + ".png");
-                var href = $(this).attr("meta-href");
-                if (href) {
-                    $(".selected-content img").css('cursor','pointer');
-                    $(".selected-content img").unbind("click").bind('click', function () { openNewTab(href); });
-                }
-                else {
-                    $(".selected-content img").css('cursor', 'unset');
-                    $(".selected-content img").unbind("click");
-                }
-                $(".card-title").text($(this).attr("meta-title"));
-                $(".card-content").text($(this).attr("meta-content"));
+            function () { updateBulletsPanel(this); }
+        );
+        function updateBulletsPanel (obj) {
+            $(".bullets-container > span").removeClass("selected");
+            $(obj).toggleClass("selected");
+
+            $(".selected-content img").attr("src", "img/retirement/" + $(obj).attr("meta-id") + ".png");
+            var href = $(obj).attr("meta-href");
+            if (href) {
+                $(".selected-content img").css('cursor', 'pointer');
+                $(".selected-content img").unbind("click").bind('click', function () { openNewTab(href); });
             }
-        )
+            else {
+                $(".selected-content img").css('cursor', 'unset');
+                $(".selected-content img").unbind("click");
+            }
+            $(".card-title").text($(obj).attr("meta-title"));
+            $(".card-content").text($(obj).attr("meta-content"));
+        }
     </script>
 
 </body>
