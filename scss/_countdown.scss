@@ -1,13 +1,27 @@
 section.countdown {
-    padding-bottom: 10em;
-    
+    padding-bottom: 5em;
+
     .section-heading {
         margin-bottom: 4rem;
+
+        h2 {
+            color: #ffffff;
+        }
     }
 
     .sales-date {
         padding-top: 15px;
         font-size: 18px !important;
+        width: 60%;
+        margin: auto;
+
+        @media (max-width: 767px) {
+            width: 90%;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 75%;
+        }
 
         span {
             color: #09d8ba;
@@ -37,8 +51,9 @@ section.countdown {
         margin-top: 5px;
         margin-bottom: 5px;
     }
+
     @media (max-width: 768px) {
-        .join-whitelist{
+        .join-whitelist {
             margin: 15px;
         }
     }
@@ -49,7 +64,7 @@ section.countdown {
 
         a {
             padding: 15px 65px;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
             font-size: 24px;
             background: #07dce0;
             color: #002d78;
@@ -78,41 +93,51 @@ section.countdown {
         display: inline-block;
 
         .time-value {
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             font-size: 80px;
             line-height: 110px;
             color: rgba(9, 216, 186, 1);
         }
 
         .time-label {
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             color: white;
             font-size: 20px;
         }
     }
 
     .join-button {
-        margin-top: 100px;
+        width: 100%;
+        color: white;
+        margin-bottom: 20px;
     }
 
-    .join-button a:hover, .join-button a:focus, .join-button a:active{
+    .join-button a:hover, .join-button a:focus, .join-button a:active {
         text-decoration: none;
     }
 
     .pre-sale-button-div {
         z-index: 1000;
         padding: 15px 0;
-        font-family: 'Helvetica Neue Bold';
-        font-size: 18pt;
-        letter-spacing: 3px;
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
+        font-size: 14pt;
+        letter-spacing: 2px;
         background: #030387;
         color: #00fcfc;
         cursor: pointer;
         border: 0;
-        max-width: 360px;
-        margin: 20px auto;
+        max-width: 300px;
+        margin: auto;
         display: block;
         text-align: center;
+    }
+
+    .token-sale-website-button-div {
+        border-color: white;
+        width: 280px;
+        border: solid 1px;
+        padding: 10px;
+        margin: auto;
     }
 
     @media (min-width: 768px) {
@@ -143,5 +168,10 @@ section.countdown {
             width: 1000px;
             left: 148px;
         }
+    }
+
+    label {
+        color: white;
+        width: 100%;
     }
 }

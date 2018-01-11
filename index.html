@@ -6,14 +6,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The Auctus Project was created with the mission of improving the retirement market by increasing transparency and eliminating common problems such as corporate governance issues, corruption, fraud, bribery, and bureaucracy, as well as lowering operational costs.">
+    <meta name="description" content="Auctus was created with the mission to put the retirement saver back in control of his retirement plan, by providing the information needed to take well informed decisions, by increasing transparency and automation, as well as increasing trust towards the chosen retirement plan.">
     <meta name="keywords" content="Ethereum,Smart Contract,Smart Contracts,Cryptocurrency,Retirement Plans, Pension Fund, Pension Funds, Blockchain">
-    <meta property="og:title" content="Auctus Project | Smart Contract Powered Retirement Plans">
-    <meta property="og:description" content="The Auctus Project was created with the mission of improving the retirement market by increasing transparency and eliminating common problems such as corporate governance issues, corruption, fraud, bribery, and bureaucracy, as well as lowering operational costs.">
+    <meta property="og:title" content="Auctus | Smart Contract Powered Retirement Plans">
+    <meta property="og:description" content="Auctus was created with the mission to put the retirement saver back in control of his retirement plan, by providing the information needed to take well informed decisions, by increasing transparency and automation, as well as increasing trust towards the chosen retirement plan.">
     <meta property="og:image" content="https://dl.auctus.org/auctusite.png">
     <meta property="og:url" content="https://auctus.org">
 
-    <title>Auctus Project | Smart Contract Powered Retirement Plans</title>
+    <title>Auctus | Smart Contract Powered Retirement Plans</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.min.css?v=3" rel="stylesheet">
+    <link href="css/style.min.css?v=4" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
     <!-- Temporary navbar container fix -->
@@ -39,358 +39,321 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="auctus">
 
     <header class="masthead ">
-        <div class="device-container">
-            <div class="top-left">
-                <img class="img-responsive" src="img/header/topleftdots.png" />
+        <div id="topLanguage" class="mobile-only">
+            <div class="quarter-circle language">
             </div>
-            <div class="top-header">
-                <img class="img-responsive logo" src="img/header/headerlogo.png" />
+            <div class="language-btn" onclick="$('#topLanguage').toggleClass('open'); $('#topMenu.open').toggleClass('open') ">
+                <i class="fa fa-language" id="language"></i>
             </div>
-
-            <div id="topMenu">
-
-                <div class="quarter-circle">
+            <div class="language-container">
+                <div class="language-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('en-uk');$('#topLanguage').toggleClass('open'); ">ENGLISH</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('ru-ru');$('#topLanguage').toggleClass('open'); ">РУССКИЙ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('zh-cn');$('#topLanguage').toggleClass('open'); ">中文</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
-                    <i class="fa fa-bars" id="bars"></i>
-                    <i class="fa fa-close" id="close"></i>
+            </div>
+        </div>
+        <div id="topMenu" class="mobile-only">
+            <div class="quarter-circle menu">
+            </div>
+            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); $('#topLanguage.open').toggleClass('open') ">
+                <i class="fa fa-bars" id="bars"></i>
+                <i class="fa fa-close" id="close"></i>
+            </div>
+            <div class="menu-container">
+                <div class="menu-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="DEMO" href="https://demo.auctus.org" target="_blank">DEMO</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="FAQ" href="../faq">FAQ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TOKEN SALE" href="../tokensale">TOKEN SALE</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TEAM" href="../team">TEAM</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="BLOG" href="https://blog.auctus.org" target="_blank">BLOG</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="menu-container">
-                    <div class="menu-content">
-
-                        <nav>
-                            <ul>
-                                <li><a href="#page-top"><img src="img/header/greenlogo.png" /></a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="#countdown">JOIN THE WHITELIST</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="#about">WHAT IS AUCTUS PROJECT?</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="#market">MARKET OVERVIEW</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="#monetization">MONETIZATION</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="#roadmap">ROADMAP</a></li>
-                                <!--<li><span class="icon-arrow-right arr"></span><a href="#tokenSale">TOKEN SALE OVERVIEW</a></li>-->
-                                <li><span class="icon-arrow-right arr"></span><a href="#team">THE AUCTUS TEAM</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="./faq">FAQ</a></li>
-                                <li><span class="icon-arrow-right arr"></span><a href="https://blog.auctus.org" target="_blank">BLOG</a></li>
-                            </ul>
-                        </nav>
+            </div>
+        </div>
+        <div class="top-header">
+            <div class="container">
+                <a href="#page-top"><img class="img-responsive logo" src="img/header/headerlogo.png" /></a>
+                <div class="menu web-only">
+                    <a href="https://demo.auctus.org" target="_blank"><span i18n="DEMO">DEMO</span></a>
+                    <a href="./faq"><span i18n="FAQ">FAQ</span></a>
+                    <a href="./tokensale"><span i18n="TOKEN SALE">TOKEN SALE</span></a>
+                    <a href="./team"><span i18n="TEAM">TEAM</span></a>
+                    <div class="translation">
+                        <div onclick="showTranslateBox('')" class="translation-box">
+                            <i class="fa fa-language"></i><span class="language">EN</span>
+                            <div class="language-box hide">
+                                <div onclick="changeLanguage('en-uk')"><span id="en-uk">EN</span></div>
+                                <div onclick="changeLanguage('ru-ru')"><span id="ru-ru">RU</span></div>
+                                <div onclick="changeLanguage('zh-cn')"><span id="zh-cn">ZH</span></div>
+                            </div>
+                        </div>
+                        <i onclick="showTranslateBox('')" class="fa fa-caret-down drop-arrow"></i>
+                    </div>
+                </div>
+                <div class="icons-panel web-only">
+                    <div class="navigation-icons text-right web-only">
+                            <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
+                                <i class="fa fa-telegram"></i>
+                            </a>
+                            <a href="https://github.com/AuctusProject" title="Github" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://reddit.com/r/AuctusProject" title="Reddit" target="_blank">
+                                <i class="fa fa-reddit-alien"></i>
+                            </a>
+                            <a href="https://blog.auctus.org" title="Blog" target="_blank">
+                                <i class="fa fa-medium"></i>
+                            </a>
+                            <a href="https://chat.auctus.org" title="Rocket Chat" target="_blank">
+                                <i class="fa fa-rocket"></i>
+                            </a>
+                            <a href="mailto:contact@auctus.org" title="Email">
+                                <i class="fa fa-envelope-o"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <img class="pig" src="img/header/pig.png" />
-            </div>
-            <div class="text-container">
-                <h2>SMART CONTRACT POWERED</h2>
-                <h1>RETIREMENT PLANS</h1>
-                <h3 class="web-only col-md-7 no-padding">
-                    Through smart contract auditable code, the Auctus Platform will ensure full transparency and compliance
-                </h3>
-                <br />
-				<div onclick="downloadPresentation()" class="button-div">
-                    <a onclick="downloadPresentation()" class="wp-button"><i class="fa fa-file-pdf-o "></i> Presentation</a>
-                </div>
-                <br />
-                <div onclick="downloadWhitepaper()" class="button-div">
-                    <a onclick="downloadWhitepaper()" class="wp-button"><i class="fa fa-file-pdf-o"></i> Whitepaper</a>
-                </div>
-				<br />
-				<div onclick="TryOurDemo()" class="button-div">
-                    <a onclick="TryOurDemo()" class="wp-button"><i class="fa fa-external-link"></i> Try our demo!</a>
-                </div>
-            </div>
         </div>
-        <div class="right-blue-panel">
-            <div class="navigation-icons web-only">
-                <a href="https://twitter.com/AuctusProject" target="_blank">
-                    <i class="fa fa-twitter"></i>
-                </a>
-				<a href="https://github.com/AuctusProject" target="_blank">
-                    <i class="fa fa-github"></i>
-                </a>
-				<a href="https://reddit.com/r/AuctusProject" target="_blank">
-                    <i class="fa fa-reddit"></i>
-                </a>
-                <a href="https://blog.auctus.org" target="_blank">
-                    <i class="fa fa-medium"></i>
-                </a>
-                <a href="https://chat.auctus.org" target="_blank">
-                    <i class="fa fa-slack"></i>
-                </a>
-                <a href="https://www.facebook.com/AuctusProject/" target="_blank">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="mailto:contact@auctus.org">
-                    <i class="fa fa-envelope-o"></i>
-                </a>
+        <div class="container">
+            <div class="device-container">
+                <div class="text-container">
+                    <h2 i18n="SMART CONTRACT POWERED">SMART CONTRACT POWERED</h2>
+                    <h1 i18n="RETIREMENT PLANS">RETIREMENT PLANS</h1>
+                    <h3 class="col-lg-7 no-padding" i18n="Achieve your retirement">
+                        Achieve your retirement goals faster with Auctus’ automated investing service, with optimized portfolios of bonds, stocks and cryptocurrencies.
+                    </h3>
+                    <br />
+                    <div>
+                        <div onclick="downloadPresentation()" class="button-div">
+                            <div id="presentation"></div>
+                            <a onclick="downloadPresentation()" class="wp-button" i18n="PRESENTATION">PRESENTATION</a>
+                        </div>
+                        <div onclick="downloadWhitepaper()" class="button-div">
+                            <div id="whitepaper"></div>
+                            <a onclick="downloadWhitepaper()" class="wp-button" i18n="WHITEPAPER">WHITEPAPER</a>
+                        </div>
+                        <div onclick="TryOurDemo()" class="button-div">
+                            <div id="demo"></div>
+                            <a onclick="TryOurDemo()" class="wp-button" i18n="DEMO">DEMO</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="eth-machine">
+                <div class="maquina">
+                    <div class="machine">
+                        <div class="mach"></div>
+                        <div class="ondas">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="circulo"></div>
+                        <div class="circulo c2"></div>
+                        <div class="quadro"></div>
+                        <div class="quadro q2"></div>
+                        <div class="p1"><span></span></div>
+                        <div class="p2"><span></span></div>
+                        <div class="p3"><span></span></div>
+                        <div class="p4"><span></span></div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="eth-machine">
+                <img src="img/header/eth-machine.png" />
+            </div>-->
         </div>
-
-        <img class="img-responsive header-circles web-only" src="img/header/circles.png" />
     </header>
- 
+
     <div class="sections-video-countdown">
         <div class="blue-background"></div>
         <section class="video" id="video">
             <div class="section-heading text-center">
-                <h2>AUCTUS IN ONE MINUTE</h2>
+                <h2 i18n="AUCTUS OVERVIEW">AUCTUS OVERVIEW</h2>
                 <hr width="100px"></hr>
             </div>
             <div class="text-center">
-                <iframe class="video-iframe" src="https://www.youtube.com/embed/KpjntAKS9XU?start=0&rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video-iframe" src="https://www.youtube.com/embed/dqrU1Tn8SiY?start=0&rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
 
         <section class="countdown" id="countdown">
             <div class="section-heading inverted text-center">
-                <h2>AUCTUS TOKEN SALE</h2>
-                <h3>DATE WILL BE ANNOUNCED SOON</h3>
+                <h2 i18n="AUCTUS TOKEN SALE">AUCTUS TOKEN SALE</h2>
+                <h3 i18n="DATE WILL BE ANNOUNCED SOON">DATE WILL BE ANNOUNCED SOON</h3>
                 <hr width="100px" />
                 <h3 class="sales-date"></h3>
-				<h3 class="sales-date">REGISTER FOR THE <br class="mobile-only" />MANDATORY WHITELIST</h3>
+                <h3 class="sales-date"></h3>
             </div>
-			          
-            
-            <div class="text-center join-button">
-                <a class="pre-sale-button" href="http://eepurl.com/c1-5u9" target="_blank">
-                    <div  class="pre-sale-button-div">
-                        JOIN THE WHITELIST
+            <!--<div>
+                <img src="img/tokensale/auctuscoin.png"/>
+            </div>-->
+            <div class="container">
+                <div class="row clearfix text-center">
+                    <div class="col-lg-5 text-center-not-lg text-right-md text-right-lg">
+                        <img src="img/tokensale/auctuscoin.png" />
                     </div>
-                </a>
-            </div>
-        </section>
-    </div>
-    
-    <section class="about" id="about">
-        <div class="transition-gradient-after"></div>
-        <div class="container">
-            <div class="dots-vert"></div>
-            <div class="section-heading text-center">
-                <h2>WELCOME TO THE FUTURE OF RETIREMENT PLANS</h2>
-                <h3>WHAT IS AUCTUS PROJECT?</h3>
-                <hr width="100px" />
-            </div>
-            <div class="row clearfix">
-                <div class="col-lg-12">
-                    <div class="container-fluid">
-
-                        <div class="row-fluid clearfix">
-                            <p>
-                                The Auctus Project was created with the mission of improving the retirement plan industry by increasing transparency and eliminating
-                                common problems such as corporate governance issues, corruption, fraud, bribery, and bureaucracy,
-                                as well as lowering operational costs.
-                            </p>
-
-                            <p>
-                                Through smart contract auditable code, the Auctus platform will ensure full transparency and compliance to fund rules. Furthermore,
-                                it will allow calculations for contributions, employer match, benefits, as well as other
-                                features, such as selection of investment profiles, registration of beneficiary designations
-                                (in case of death), administration fee calculations and easy rollovers.
-                            </p>
+                    <div class="col-lg-5">
+                        <div class="input-group">
+                            <label i18n="JOIN CONVERSATION ON ROCKET CHAT">JOIN CONVERSATION ON ROCKET CHAT</label>
                         </div>
-   
-                        <div class="row clearfix boxes">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="white-box text-center">
-                                    <div class="dots"></div>
-                                    <div class="content">
-                                        <img src="img/ongoing.png" />
-                                        <hr width="100px" />
-                                        <span>ongoing <br>monitoring</span>
+                        <div class="input-group">
+                            <div class="text-center join-button">
+                                <a class="pre-sale-button" href="https://chat.auctus.org" target="_blank">
+                                    <div class="pre-sale-button-div">
+                                        <img src="img/tokensale/rocketblue.png" height="25" />
+                                        ROCKET.CHAT
                                     </div>
-                                    <div class="dots bottom"></div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="white-box text-center">
-                                    <div class="dots"></div>
-                                    <div class="content">
-                                        <img src="img/pig-hidden-fees.png" />
-                                        <hr width="100px" />
-                                        <span>no hidden <br>fees</span>
+                        </div>
+                        <div class="input-group">
+                            <label i18n="READ ABOUT AUCTUS TOKEN SALE">READ ABOUT AUCTUS TOKEN SALE</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="text-center join-button">
+                                <a class="pre-sale-button" href="http://eepurl.com/c1-5u9" target="_blank">
+                                    <div class="pre-sale-button-div" i18n="JOIN THE WHITELIST">
+                                        JOIN THE WHITELIST
                                     </div>
-                                    <div class="dots bottom"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="white-box text-center">
-                                    <div class="dots"></div>
-                                    <div class="content">
-                                        <img src="img/faster-processing.png" />
-                                        <hr width="100px"></hr>
-                                        <span>faster processing <br>for benefits</span>
-                                    </div>
-                                    <div class="dots bottom"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="white-box text-center">
-                                    <div class="dots"></div>
-                                    <div class="content">
-                                        <img src="img/fully-transparent.png" />
-                                        <hr width="100px"></hr>
-                                        <span>fully <br>transparent</span>
-                                    </div>
-                                    <div class="dots bottom"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="white-box text-center">
-                                    <div class="dots"></div>
-                                    <div class="content">
-                                        <img src="img/flexible-scalable.png"></img>
-                                        <hr width="100px"></hr>
-                                        <span>flexible and <br>scalable</span>
-                                    </div>
-                                    <div class="dots bottom"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="white-box text-center">
-                                    <div class="dots"></div>
-                                    <div class="content">
-                                        <img src="img/auditable.png"></img>
-                                        <hr width="100px"></hr>
-                                        <span>easily auditable and compliant</span>
-                                    </div>
-                                    <div class="dots bottom"></div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- <img src="img/auctus-wm.png" class="auctus-wm"></div>  -->
-    </section>
+
+            <div class="text-center join-button">
+                <a class="join-button" href="./tokensale" target="_blank">
+                    <div class="token-sale-website-button-div" i18n="TOKEN SALE WEBSITE">
+                        TOKEN SALE WEBSITE
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
     <section class="smartcontract" id="smartcontract">
         <div class="container">
-            <div class="section-heading text-center">
-                <h2>A SMART CONTRACT BASED RETIREMENT PLAN PLATFORM</h2>
-                <hr width="100px" />
+            <div class="section-content row">
+                <div class="col-md-6 push-md-6">
+                    <img src="img/smartcontract/robot.png" />
+                </div>
+                <div class="col-md-6 pull-md-6 content">
+                    <div class="title" i18n="SMART CONTRACT POWERED FEE STRUCTURE">SMART CONTRACT POWERED FEE STRUCTURE</div>
+                    <div class="text-content" i18n="We use smart contracts to provide">
+                        We use smart contracts to provide a result-oriented, transparent and low fee structure. AUC Tokens stay in a trustless escrow and fees are paid only for periods that robo-advisor predictions are right.
+                    </div>
+                </div>
+                
             </div>
             <div class="section-content row">
-                <div class="col-md-12">
-                    <img class="sc" src="img/smartcontract/smart-contract.png"></img>
+                <div class="col-lg-6">
+                    <img class="integration-img" src="img/smartcontract/integration.png" />
+                </div>
+                <div class="col-lg-6 content">
+                    <div class="title" i18n="BLOCKCHAIN ROBO-ADVISOR AND INVESTMENT TRACKING RECORD">BLOCKCHAIN ROBO-ADVISOR AND INVESTMENT TRACKING RECORD</div>
+                    <div class="text-content" i18n="Auctus will use blockchain to provide">
+                        Auctus will use blockchain to provide a permanent track record of all suggested portfolio allocations and robo-advisor predictions. So you can explore robo-advisor performance by comparing expected vs actual returns and against our competitors.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="background-market-monetization" id="market">
-        <div class="transition-gradient-before"></div>
-        <div class="background-market-monetization-first"></div>
-        <div class="background-market-monetization-second"></div>
 
-        <section class="market">
+        <section class="retirement">
             <div class="section-heading text-center">
-                <h2>MARKET OVERVIEW</h2>
-                <h3>PENSION INDUSTRY STATISTICS</h3>
-                <hr width="100px"></hr>
+                <h2 i18n="RETIREMENT PLAN">RETIREMENT PLAN</h2>
+                <h3 i18n="WE HELP YOU ACHIEVE YOUR RETIREMENT">WE HELP YOU ACHIEVE YOUR RETIREMENT GOALS FASTER WITH THE INVESTMENTS OF YOUR CHOICE</h3>
+                <hr width="100px" />
             </div>
             <div class="section-content">
-                <div class="market-card-wrapper">
-                    <img class="waves-img-left" src="img/market/waves.png" />
-                    <div class="market-card">
-                        <div class="dots"></div>
-                        <div class="content content-margin">
-                            <img class="pig-img" src="img/market/pig.png" />
-                            <div class="content-text">
-                                <div class="black-text">PENSION FUND ASSETS IN</div>
-                                <div class="gray-text">22 MAJOR MARKETS</div>
-                                <div class="center-text">GREW TO</div>
-                                <div class="gray-text">U$ 36.4 TRILLION</div>
-                                <div class="black-text">AT YEAR END 2016.</div>
-                            </div>
-                        </div>
-                        <div class="dots"></div>
+                <div class="bullets-container">
+                    <span i18n="SET YOUR RETIREMENT GOALS" class="selected"
+                          meta-title="SET YOUR RETIREMENT GOALS"
+                          meta-content="Risk/return adjusted recommendations, based on your individual circumstances."
+                          meta-id="01">1</span>
+                    <span i18n="PICK THE INVESTMENTS YOU WANT"
+                          meta-title="PICK THE INVESTMENTS YOU WANT"
+                          meta-content="Choose from stocks, bonds and cryptocurrencies, or select from dozen template portfolio handpicked by financial experts."
+                          meta-id="02">2</span>
+                    <span i18n="GET AN OPTIMIZED PORTFOLIO"
+                          meta-title="GET AN OPTIMIZED PORTFOLIO"
+                          meta-content="We build an optimized portfolio to help improve your return while reducing risk."
+                          meta-id="03">3</span>
+                    <span i18n="RELAX AND ENJOY YOUR LIFE"
+                          meta-title="RELAX AND ENJOY YOUR LIFE"
+                          meta-content="We maintain your target allocation, automatically rebalancing your portfolio when needed."
+                          meta-id="04">4</span>
+                    <span i18n="TRY OUR DEMO"
+                          meta-title="TRY OUR DEMO"
+                          meta-content="Experience the benefits of the Auctus Platform in a simulation environment."
+                          meta-id="05"
+                          meta-href="https://demo.auctus.org">5</span>
+                </div>
+            </div>
+            <div class="row selected-content">
+                <div class="col-md-7">
+                    <img src="img/retirement/01.png" />
+                </div>
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="card-title">SET YOUR RETIREMENT GOALS</div>
+                        <div class="card-content">We make recommendations on how much to invest and how much risk to take on in your portfolio.</div>
                     </div>
                 </div>
-                <div class="market-card-wrapper">
-                    <img class="waves-img-right" src="img/market/waves.png" />
-                    <div class="market-card">
-                        <div class="dots"></div>
-                        <div class="content">
-                            <div class="market-card-title">
-                                <div class="cgar-title">CAGR 2005-2015</div>
-                                <div class="anual-growth-rate">COMPOUND ANUAL GROWTH RATE</div>
-                            </div>
-                            <div class="charts-space"></div>
-                            <div class="bar-charts">
-                                <div class="bar-chart-item">
-                                    <div class="percentage-label">2.6%</div>
-                                    <div class="chart">
-                                        <div class="bar db-bar"></div>
-                                        <img src="img/market/coin.png" />
-                                    </div>
-                                    <div class="asset-description">DB ASSETS</div>
-                                </div>
-                                <div class="bar-chart-item">
-                                    <div class="percentage-label">5.6%</div>
-                                    <div class="chart">
-                                        <div class="bar dc-bar"></div>
-                                        <img src="img/market/coin.png" />
-                                    </div>
-                                    <div class="asset-description">DC ASSETS</div>
-                                </div>
-                            </div>
-                            <div class="charts-space"></div>
-                            <div class="pie-chart">
-                                <img src="img/market/graph.png" />
-                                <div class="pie-chart-legend">
-
-                                    <div class="percentage-label">
-                                        <div>
-                                            DB 52%
-                                        </div>
-                                        <div class="db-label"></div>
-                                    </div>
-                                    <div class="percentage-label">
-                                        <div>
-                                            DC 48%
-                                        </div>
-                                        <div class="dc-label"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dots"></div>
-                    </div>
-                </div>
-                <div class="market-overview-source">Source: Willis Tower Watson, Global Pension Assets Study 2017</div>
             </div>
         </section>
         <section class="monetization" id="monetization">
             <div class="container">
                 <div class="section-heading text-center inverted-white">
-                    <h2>MONETIZATION</h2>
+                    <h2 i18n="MARKETPLACE">MARKETPLACE</h2>
                     <hr width="100px" />
                 </div>
                 <div class="section-content row">
-                    <div class="col-md-4">
-                        <div class="circle icon">
-                            <img src="img/monetization/fees.png"></img>
+                    <div class="col-md-6 img-responsive">
+                        <div>
+                            <img src="img/monetization/investor.png"></img>
+                        </div>
+                        <div class="title" i18n="FINANCIAL EXPERTS">
+                            FINANCIAL EXPERTS
                         </div>
                         <div class="description">
-                            PLATFORM FEES
-                        </div>
+                            <p i18n="Financial advisors can earn AUC">Financial advisors can earn AUC by providing specialized newsletters, portfolio recommendations, live chats or over the phone support.</p>
+                            <p i18n="Customers can access on-demand human advice">Customers can access on-demand human advice via in-app messaging or over the phone using AUC tokens.</p>
+                            <p i18n="Where the nature of the service involves portfolio">Where the nature of the service involves portfolio suggestions and predictions, users will pay only when predictions are correct.</p></div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="circle icon">
-                            <img src="img/monetization/annuities.png"></img>
+                    <div class="col-md-6">
+                        <div>
+                            <img src="img/monetization/robot.png"></img>
+                        </div>
+                        <div class="title" i18n="THIRD-PARTY ROBO-ADVISORS">
+                            THIRD-PARTY ROBO-ADVISORS
                         </div>
                         <div class="description">
-                            ANNUITIES MARKETPLACE
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="circle icon">
-                            <img src="img/monetization/fund setup.png"></img>
-                        </div>
-                        <div class="description">
-                            SET-UP AND CUSTOMIZATION
-                        </div>
+                        <p i18n="Third-Party Robo-Advisor providers will be able">Third-Party Robo-Advisor providers will be able to earn AUC tokens by providing bespoke investment strategies.</p>
+                        <p i18n="Customers can access different investment strategies"> Customers can access different investment strategies with blockchain-based proven track records. </p>
+                        <p i18n="The transfer of AUC tokens between the user">The transfer of AUC tokens between the user and the provider can be bound to the results by using smart contracts and recording the predictions on the Ethereum blockchain.</p></div>
                     </div>
                 </div>
             </div>
@@ -402,8 +365,8 @@
         <div class="container">
             <div class="dots-vert"></div>
             <div class="section-heading text-center">
-                <h2>ROADMAP</h2>
-                <h3>CHECK THE PROJECT MILESTONES</h3>
+                <h2 i18n="ROADMAP">ROADMAP</h2>
+                <h3 i18n="CHECK THE PROJECT MILESTONES">CHECK THE PROJECT MILESTONES</h3>
                 <hr width="100px"></hr>
             </div>
             <div class="row clearfix">
@@ -415,18 +378,18 @@
                                     <span class="year">2017</span>
                                 </div>
                                 <br>
-                                <span class="heading green">QUARTER 3</span>
+                                <span class="heading green" i18n="QUARTER 3">QUARTER 3</span>
                                 <br>
                                 <div class="milestones vertical-line right">
-                                    <span class="text-right">Pre-Sale</span><br />
-                                    <span class="text-right">Advisory Board</span><br />
-                                    <span class="text-right">Auctus Demo lauch</span>
+                                    <span class="text-right" i18n="Pre-Sale">Pre-Sale</span><br />
+                                    <span class="text-right" i18n="Advisory Board">Advisory Board</span><br />
+                                    <span class="text-right" i18n="Auctus Demo launch">Auctus Demo launch</span>
                                 </div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="lines first">
                                     <div class="roadmap-line active"></div>
-                                    <div class="roadmap-line"></div>
+                                    <div class="roadmap-line active"></div>
                                 </div>
                             </div>
                             <div class="col-lg-5 box right first">
@@ -434,11 +397,11 @@
                                     <span class="year">2017</span>
                                 </div>
                                 <br>
-                                <span class="heading green">QUARTER 4</span>
+                                <span class="heading green" i18n="QUARTER 4">QUARTER 4</span>
                                 <br>
                                 <div class="milestones vertical-line left">
-                                    <span class="text-right">Strategic Partnerships</span><br />
-                                    <span class="text-right">Development of Alpha Auctus Platform</span><br />
+                                    <span class="text-right" i18n="Strategic Partnerships">Strategic Partnerships</span><br />
+                                    <span class="text-right" i18n="Development of Alpha Auctus Platform">Development of Alpha Auctus Platform</span><br />
                                 </div>
                             </div>
                         </div>
@@ -448,12 +411,12 @@
                                     <span class="year">2018</span>
                                 </div>
                                 <br>
-                                <span class="heading green">QUARTER 1</span>
+                                <span class="heading green" i18n="QUARTER 1">QUARTER 1</span>
                                 <br>
                                 <div class="milestones vertical-line right">
-                                    <span class="text-right">Initial Token Sale</span><br>
-                                    <span class="text-right">Partnerships with Exchanges</span><br>
-                                    <span class="text-right">Development start of Beta Auctus Platform</span>
+                                    <span class="text-right" i18n="Initial Token Sale">Initial Token Sale</span><br>
+                                    <span class="text-right" i18n="Partnerships with Exchanges">Partnerships with Exchanges</span><br>
+                                    <span class="text-right" i18n="Development start of Beta Auctus Platform">Development start of Beta Auctus Platform</span>
                                 </div>
                             </div>
                             <div class="col-lg-2">
@@ -467,10 +430,10 @@
                                     <span class="year">2018</span>
                                 </div>
                                 <br>
-                                <span class="heading green">QUARTER 2</span>
+                                <span class="heading green" i18n="QUARTER 2">QUARTER 2</span>
                                 <br>
                                 <div class="milestones vertical-line left">
-                                    <span class="text-right">Onboarding of traditional assets</span><br>
+                                    <span class="text-right" i18n="Onboarding of traditional assets">Onboarding of traditional assets</span><br>
                                 </div>
                             </div>
                         </div>
@@ -480,11 +443,11 @@
                                     <span class="year">2018</span>
                                 </div>
                                 <br>
-                                <span class="heading green">QUARTER 3</span>
+                                <span class="heading green" i18n="QUARTER 3">QUARTER 3</span>
                                 <br>
                                 <div class="milestones vertical-line right">
-                                    <span class="text-right">Office opening US & Asia</span><br>
-                                    <span class="text-right">Launch of Beta Auctus Platform</span><br>
+                                    <span class="text-right" i18n="Office opening US Asia">Office opening US & Asia</span><br>
+                                    <span class="text-right" i18n="Launch of Beta Auctus Platform">Launch of Beta Auctus Platform</span><br>
                                 </div>
                             </div>
                             <div class="col-lg-2">
@@ -498,11 +461,11 @@
                                     <span class="year">2018</span>
                                 </div>
                                 <br>
-                                <span class="heading green">QUARTER 4</span>
+                                <span class="heading green" i18n="QUARTER 4">QUARTER 4</span>
                                 <br>
                                 <div class="milestones vertical-line left">
-                                    <span class="text-right">Start of Mandatory Retirement Phase</span><br>
-                                    <span class="text-right">Launch of the Annuities Marketplace</span><br>
+                                    <span class="text-right" i18n="Start of Retirement Plans Phase">Start of Retirement Plans Phase</span><br>
+                                    <span class="text-right" i18n="Launch of the Annuities Marketplace">Launch of the Annuities Marketplace</span><br>
                                 </div>
                             </div>
                         </div>
@@ -512,378 +475,40 @@
         </div>
         <!-- <img src="img/auctus-wm.png" class="auctus-wm"></div>  -->
     </section>
-    <!--<section class="token-sale-overview" id="tokenSale">
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>TOKEN SALE OVERVIEW</h2>
-                <h3>UNDERSTANDING THE AUCTUS TOKEN DISTRIBUTION</h3>
-                <hr width="100px"></hr>
-            </div>
-            <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                <div class="col-lg-6 col-sm-12 pull-right">
-                    <div class="box">
-                        <div class="row">
-                            <div class="sale-title pull-left">
-                                <span>ICO</span>
-                                <hr class="ico" />
-                            </div>
-                            <div class="col-md-9"><div class="dots"></div></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="image-div">
-                                    <img src="img/tokensale/calendar.png" />
-                                    <hr class="ico" />
-                                    <span class="ico">NOV<b>14TH</b></span>
-                                    <br />
-                                    <span class="sub-title">UNTIL NOV 28TH OR HARD CAP</span>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="image-div">
-                                    <img src="img/tokensale/coin.png" />
-                                    <hr class="ico" />
-                                    <span>2000</span>
-                                    <br />
-                                    <span class="sub-title">AUC/ETH</span>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <img class="dot left" src="img/tokensale/dot.png" />
-                                <img class="dot right" src="img/tokensale/dot.png" />
-                                <div class="boundaries ico">
-                                    <span class="pull-left">15k ETH</span>
-                                    <span class="pull-right">90k ETH</span>
-                                </div>
-                                <div class="boundaries-panel ico">
-                                    <div class="defined">
-                                    </div>
-                                    <span class="sub-title"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="chart">
-                                <img src="img/tokensale/chart.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row vesting-div">
-                        <div class="col-sm-12">
-                            <div class="vesting">
-                                <div class="vesting-title"><span>VESTING</span><hr /></div>
-                                <div class="row">
-                                    <div class="col-md-5 ">TEAM</div>
-                                    <div class="col-md-7">2 YEARS VESTING WITH 6 MONTHS CLIFF</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-5 ">RESERVE FOR FUTURE STAKEHOLDERS</div>
-                                    <div class="col-md-7">1 YEAR (IF DEEMED NECESSARY,<br />THESE TOKENS WILL BE BURNED)</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-5 ">PARTNERSHIPS AND ADVISORING</div>
-                                    <div class="col-md-7">6 MONTHS VESTING WITH 3 MONTHS CLIFF</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-
-
-    <section class="team" id="team">
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>TEAM</h2>
-                <h3>MEET THE TEAM BEHIND AUCTUS</h3>
-                <hr width="100px"></hr>
-            </div>
-            <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/felipe-silveira-2739121b/">
-                        <div class="image">
-                            <img class="img-responsive profile-img img-circle border" height="150" src="img/team/felipe.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Felipe Silveira</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>LEAD DEVELOPER</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/vantroost/">
-                        <div class="image">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/raphael.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Raphael Vantroost</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>ADVISORY AND PARTNERSHIPS</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/guilherme-gusman-brand%C3%A3o-14128718/">
-                        <div class="image">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/gusman.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Guilherme Gusman</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>FRONT END ENGINEER</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/vinicius-melo-03a68b134/">
-                        <div class="image">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/vinicius.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Vinicius Melo</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>STRATEGY</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                <div class="col-md-3">
-                    <div class="">
-                        <div>
-                            <img class="img-responsive img-circle border" height="150" src="img/team/ariny.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Ariny Guedes</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>LEAD ETHEREUM ENGINEER</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/daniel-duarte-figueiredo-b46589a4/">
-                        <div class="image">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/daniel_figueiredo.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Daniel Duarte</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>SENIOR SOFTWARE ENGINEER</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/thiago-ara%C3%BAjo-092aa033/">
-                        <div class="image">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/thiago.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Thiago Araújo</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>SENIOR SOFTWARE ENGINEER</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/daniel-vitorino-b939a484/">
-                        <div class="image">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/vitorino.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Daniel Vitorino</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>SENIOR SOFTWARE ENGINEER</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.behance.net/samirtaiar">
-                        <div class="image behance">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/samir.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Samir Taiar</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>BRAND & INTERACTION DESIGN</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/ludmila-lopes-a0008017/">
-                        <div class="image">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/ludmila.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Ludmila Lopes</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>MARKETING & COMMUNITY MANAGER</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/daniel-boaventura-38839632/">
-                        <div class="image">
-                            <img class="img-responsive img-circle border" height="150" src="img/team/boaventura.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Daniel Boaventura</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>OPERATIONS</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-			<div class="section-heading text-center">
-                <h2>ADVISORY BOARD</h2>
-                <h3>INDUSTRY EXPERTS ADVISING AUCTUS</h3>
-                <hr width="100px"></hr>
-            </div>
-			<div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                <div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/martijnvaneck/">
-                        <div class="image">
-                            <img class="img-responsive profile-img img-circle border" height="150" src="img/advisors/martjin.png" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Martijn van Eck</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>PENSION FINTECH ADVISOR</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-				<div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/ericpaley/">
-                        <div class="image">
-                            <img class="img-responsive profile-img img-circle border" height="150" src="img/advisors/eric.png" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Eric Paley</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>PENSION LEGAL ADVISOR</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-				<div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/adam-greetis-45b6634/">
-                        <div class="image">
-                            <img class="img-responsive profile-img img-circle border" height="150" src="img/advisors/adam.png" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Adam Greetis</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>PENSION LEGAL ADVISOR</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-				<div class="col-md-3">
-                    <a class="linkedin-button" target="_blank" href="https://www.linkedin.com/in/steven-clark-421239b/">
-                        <div class="image">
-                            <img class="img-responsive profile-img img-circle border" height="150" src="img/advisors/clark.jpg" />
-                        </div>
-                        <div class="">
-                            <div class="name">
-                                <span><strong>Steven Clark, PhD</strong></span>
-                            </div>
-                            <div class="position">
-                                <span>FINANCIAL ADVISOR</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-			</div>
-        </div>
-    </section>
-     <section class="as-seen-on" id="asSeenOn">
+    <section class="as-seen-on" id="asSeenOn">
         <div class="section-heading text-center">
-            <h2>AS SEEN ON</h2>
-            <h3>AUCTUS ACROSS THE WEB</h3>
+            <h2 i18n="AS SEEN ON">AS SEEN ON</h2>
+            <h3 i18n="AUCTUS ACROSS THE WEB">AUCTUS ACROSS THE WEB</h3>
             <hr width="100px"></hr>
         </div>
-        <div class="links">
+        <div class="links container">
             <div class="row">
-			    <div class="col-lg-4">
+                <div class="col-6 col-sm-4 offset-lg-1 col-lg-2">
                     <a href="https://www.bna.com/blockchain-technology-hits-n73014470448/" target="_blank">
                         <div class="link-box bloomberg">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-6 col-sm-4 col-lg-2">
                     <a href="https://themerkle.com/auctus-an-ethereum-project-disrupting-the-36-4-trillion-pension-market/" target="_blank">
                         <div class="link-box merkle">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-6 col-sm-4 col-lg-2">
                     <a href="https://www.cryptocoinsnews.com/auctus-reform-pension-market-adding-transparency-via-smart-contracts/" target="_blank">
                         <div class="link-box cryptocoinsnews">
                         </div>
                     </a>
                 </div>
-
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
+                <div class="col-6 col-sm-6 col-lg-2">
                     <a href="https://cointelegraph.com/press-releases/Auctus%20Pension%20Project%20-%20Pre-Sale%20Whitelist%20Closing%20in%2024h"
-                        target="_blank">
+                       target="_blank">
                         <div class="link-box cointelegraph">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-sm-6 col-lg-2">
                     <a href="http://bitcoinist.com/auctus-pre-sale-whitelist-closing-48h/" target="_blank">
                         <div class="link-box bitcoinist">
                         </div>
@@ -898,15 +523,15 @@
             <div class="back">
                 <div class="container">
                     <div class="text-white section-heading text-center">
-                        <h2>BE THE FIRST TO GET THE NEWS</h2>
-                        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                        <h2 i18n="BE THE FIRST TO GET THE NEWS">BE THE FIRST TO GET THE NEWS</h2>
+                        <h3 i18n="SUBSCRIBE TO OUR NEWSLETTER">SUBSCRIBE TO OUR NEWSLETTER</h3>
                     </div>
                     <div class="row clearfix">
                         <div class="offset-md-3 input-group col-md-6">
                             <input name="EMAIL" class="required email form-control" id="mce-EMAIL" type="text" class="form-control" placeholder="Enter your email"
-                                   aria-label="Enter your email">
+                                   aria-label="Enter your email" i18n="EMAIL">
                             <span class="input-group-btn">
-                                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">SUBSCRIBE</button>
+                                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary" i18n="SUBSCRIBE">SUBSCRIBE</button>
                             </span>
                         </div>
                     </div>
@@ -922,30 +547,30 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="offset-md-1 col-md-6 logo">
+                <div class="col-lg-6 logo web-only text-center">
                     <img src="img/footer/auctus-logo.png"></img>
                 </div>
-                <div class="col-md-5 text-center">
+                <div class="col-lg-6 text-center">
                     <div class="navigation-icons">
-                        <a href="https://twitter.com/AuctusProject" target="_blank">
+                        <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
                             <i class="fa fa-twitter"></i>
                         </a>
-                        <a href="https://github.com/AuctusProject" target="_blank">
+						<a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/AuctusProject" title="Github" target="_blank">
                             <i class="fa fa-github"></i>
                         </a>
-						<a href="https://reddit.com/r/AuctusProject" target="_blank">
-							<i class="fa fa-reddit"></i>
-						</a>
-                        <a href="https://blog.auctus.org" target="_blank">
+                        <a href="https://reddit.com/r/AuctusProject" title="Reddit" target="_blank">
+                            <i class="fa fa-reddit-alien"></i>
+                        </a>
+						<a href="https://blog.auctus.org" title="Blog" target="_blank">
                             <i class="fa fa-medium"></i>
                         </a>
-                        <a href="https://chat.auctus.org" target="_blank">
-                            <i class="fa fa-slack"></i>
+                        <a href="https://chat.auctus.org" title="Rocket Chat" target="_blank">
+                            <i class="fa fa-rocket"></i>
                         </a>
-                        <a href="https://www.facebook.com/AuctusProject/" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="mailto:contact@auctus.org">
+                        <a href="mailto:contact@auctus.org" title="Email">
                             <i class="fa fa-envelope-o"></i>
                         </a>
                     </div>
@@ -957,8 +582,8 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    <script src="js/translation.js"></script>
     <script src="js/script.min.js"></script>
-
     <script>
         $(".menu-content a").click(function (e) {
             if ($(window).width() <= 768)
@@ -1015,7 +640,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -1031,21 +656,48 @@
              src="https://www.facebook.com/tr?id=2025966277638951&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
-	<!-- Twitter universal website tag code -->
-<script>
-!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-// Insert Twitter Pixel ID and Standard Event data below
-twq('init','ny69k');
-twq('track','PageView');
-</script>
-<!-- End Twitter universal website tag code -->
-<script>
-  window.intercomSettings = {
-    app_id: "vccdldj3"
-  };
-</script>
+    <!-- Twitter universal website tag code -->
+    <script>
+        !function (e, t, n, s, u, a) {
+            e.twq || (s = e.twq = function () {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, 'script');
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init', 'ny69k');
+        twq('track', 'PageView');
+    </script>
+    <!-- End Twitter universal website tag code -->
+    <script>
+        window.intercomSettings = {
+            app_id: "vccdldj3"
+        };
+    </script>
+
+    <script>
+        $(".bullets-container > span").hover(
+            function () { updateBulletsPanel(this); }
+        );
+        function updateBulletsPanel (obj) {
+            $(".bullets-container > span").removeClass("selected");
+            $(obj).toggleClass("selected");
+
+            $(".selected-content img").attr("src", "img/retirement/" + $(obj).attr("meta-id") + ".png");
+            var href = $(obj).attr("meta-href");
+            if (href) {
+                $(".selected-content img").css('cursor', 'pointer');
+                $(".selected-content img").unbind("click").bind('click', function () { openNewTab(href); });
+            }
+            else {
+                $(".selected-content img").css('cursor', 'unset');
+                $(".selected-content img").unbind("click");
+            }
+            $(".card-title").text($(obj).attr("meta-title"));
+            $(".card-content").text($(obj).attr("meta-content"));
+        }
+    </script>
+
 </body>
 
 </html>

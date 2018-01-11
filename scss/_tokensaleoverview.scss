@@ -15,11 +15,7 @@ section.token-sale-overview {
         border-radius: 7px;
         padding: 10px 20px;
         min-height: 200px;
-        height: 45%;
 
-        @media(max-width:768px) {
-            height: 100%;
-        }
 
         .sale-title {
             margin-bottom: 20px;
@@ -27,7 +23,7 @@ section.token-sale-overview {
 
             span {
                 color: #1439AF;
-                font-family: 'Helvetica Neue Bold';
+                font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
                 font-size: 14pt;
                 top: -4px;
             }
@@ -47,11 +43,11 @@ section.token-sale-overview {
             }
 
             span {
-                font-family: "Helvetica Neue Light";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 20pt;
 
                 b {
-                    font-family: "Helvetica Neue Bold";
+                    font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
                     font-size: 21pt;
                 }
             }
@@ -62,7 +58,7 @@ section.token-sale-overview {
         }
 
         .sub-title {
-            font-family: "Helvetica Neue Light";
+            font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
             font-size: 8pt !important;
         }
 
@@ -80,13 +76,13 @@ section.token-sale-overview {
             padding-top: 8px;
 
             span {
-                font-family: "Helvetica Neue Bold";
+                font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
                 font-size: 11pt;
                 font-weight: bold;
             }
 
             span.min {
-                font-family: "Helvetica Neue";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 11pt;
                 font-weight: normal;
             }
@@ -100,13 +96,15 @@ section.token-sale-overview {
             }
 
             span.ico {
-                font-family: "Helvetica Neue Light";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 11pt;
             }
         }
 
         .boundaries.ico {
             padding-top: 4px;
+            font-size: 13px;
+            line-height: 24px;
         }
 
         .dot {
@@ -124,7 +122,7 @@ section.token-sale-overview {
 
         .boundaries-panel {
             margin: 0pt 14px 0px 8px;
-            height: 53px;
+            /*height: 53px;*/
             padding-top: 5px;
             text-align: center;
 
@@ -135,7 +133,7 @@ section.token-sale-overview {
                 background-repeat: repeat;
             }
 
-            > div.defined { 
+            > div.defined {
                 background: #0884cd; /* For browsers that do not support gradients */
                 background: -webkit-linear-gradient( 90deg, #00bdff 30%, #0be7ce 100%); /* For Safari 5.1 to 6.0 */
                 background: -o-linear-gradient( 90deg, #00bdff 30%, #0be7ce 100%); /* For Opera 11.1 to 12.0 */
@@ -144,18 +142,21 @@ section.token-sale-overview {
             }
 
             .sub-title {
-                font-family: "Helvetica Neue Light";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 8pt !important;
             }
 
             span.ico {
-                font-family: "Helvetica Neue Light";
+                font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 19pt;
+
+                @media(max-width:1199px) {
+                    font-size: 15pt;
+                }
             }
         }
 
         .boundaries-panel.ico {
-            margin-top: 23pt;
             padding-top: 12px;
             border-style: solid;
             border-width: 0px 3px;
@@ -168,7 +169,9 @@ section.token-sale-overview {
         }
 
         > .row:first-child > div:last-child {
-            width: 58%;
+            width: calc(100% - 140px);
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
 
@@ -211,7 +214,7 @@ section.token-sale-overview {
 
             span {
                 color: #1439AF;
-                font-family: 'Helvetica Neue Bold';
+                font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
                 font-size: 14pt;
                 top: -4px;
             }
@@ -235,7 +238,7 @@ section.token-sale-overview {
             }
 
             div:first-child {
-                font-family: 'Helvetica Neue Bold';
+                font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
                 text-align: right;
 
                 @media(max-width:768px) {

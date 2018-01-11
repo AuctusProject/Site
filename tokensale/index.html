@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Auctus was created with the mission to put the retirement saver back in control of his retirement plan, by providing the information needed to take well informed decisions, by increasing transparency and automation, as well as increasing trust towards the chosen retirement plan.">
+    <meta name="keywords" content="Ethereum,Smart Contract,Smart Contracts,Cryptocurrency,Retirement Plans, Pension Fund, Pension Funds, Blockchain">
+    <meta property="og:title" content="Auctus | Smart Contract Powered Retirement Plans">
+    <meta property="og:description" content="Auctus was created with the mission to put the retirement saver back in control of his retirement plan, by providing the information needed to take well informed decisions, by increasing transparency and automation, as well as increasing trust towards the chosen retirement plan.">
+    <meta property="og:image" content="https://dl.auctus.org/auctusite.png">
+    <meta property="og:url" content="https://auctus.org">
+
+    <title>Auctus | Smart Contract Powered Retirement Plans</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.min.css?v=4" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
+
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav>.container {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+    <header class="masthead presale-masthead">
+        <div id="topLanguage" class="mobile-only">
+            <div class="quarter-circle language">
+            </div>
+            <div class="language-btn" onclick="$('#topLanguage').toggleClass('open'); ">
+                <i class="fa fa-language" id="language"></i>
+            </div>
+            <div class="language-container">
+                <div class="language-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('en-uk');$('#topLanguage').toggleClass('open'); ">ENGLISH</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('ru-ru');$('#topLanguage').toggleClass('open'); ">РУССКИЙ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('zh-cn');$('#topLanguage').toggleClass('open'); ">中文</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="topMenu" class="mobile-only">
+            <div class="quarter-circle menu">
+            </div>
+            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+                <i class="fa fa-bars" id="bars"></i>
+                <i class="fa fa-close" id="close"></i>
+            </div>
+            <div class="menu-container">
+                <div class="menu-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="DEMO" href="https://demo.auctus.org" target="_blank">DEMO</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="FAQ" href="../faq">FAQ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TOKEN SALE" href="../tokensale">TOKEN SALE</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TEAM" href="../team">TEAM</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="BLOG" href="https://blog.auctus.org" target="_blank">BLOG</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="top-header">
+            <div class="container">
+                <a href="../"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
+                <div class="menu web-only">
+                    <a href="https://demo.auctus.org" target="_blank"><span i18n="DEMO">DEMO</span></a>
+                    <a href="../faq"><span i18n="FAQ">FAQ</span></a>
+                    <a href="#page-top"><span i18n="TOKEN SALE">TOKEN SALE</span></a>
+                    <a href="../team"><span i18n="TEAM">TEAM</span></a>
+                    <div class="translation">
+                        <div onclick="showTranslateBox('')" class="translation-box">
+                            <i class="fa fa-language"></i><span class="language">EN</span>
+                            <div class="language-box hide">
+                                <div onclick="changeLanguage('en-uk')"><span id="en-uk">EN</span></div>
+                                <div onclick="changeLanguage('ru-ru')"><span id="ru-ru">RU</span></div>
+                                <div onclick="changeLanguage('zh-cn')"><span id="zh-cn">ZH</span></div>
+                            </div>
+                        </div>
+                        <i onclick="showTranslateBox('')" class="fa fa-caret-down drop-arrow"></i>
+                    </div>
+                </div>
+                <div class="icons-panel web-only">
+                    <div class="navigation-icons text-center web-only">
+                        <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/AuctusProject" title="Github" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://reddit.com/r/AuctusProject" title="Reddit" target="_blank">
+                            <i class="fa fa-reddit-alien"></i>
+                        </a>
+                        <a href="https://blog.auctus.org" title="Blog" target="_blank">
+                            <i class="fa fa-medium"></i>
+                        </a>
+                        <a href="https://chat.auctus.org" title="Rocket Chat" target="_blank">
+                            <i class="fa fa-rocket"></i>
+                        </a>
+                        <a href="mailto:contact@auctus.org" title="Email">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="text-center">
+                <img class="circle-logo" src="../img/presale/circle-logo.png" />
+            </div>
+            <div class="text-container title">
+                <h2 i18n="AUCTUS TOKEN SALE IS COMING" >AUCTUS TOKEN SALE IS COMING!</h2>
+                <h1 i18n="Q1 2018">Q1 2018</h1>
+                <h3 i18n="We ll soon release more details about it">We'll soon release more details about it <b>Keep updated!</b><br><br>For now don't forget to join our whitelist</h3>
+            </div>
+            <div class="text-container">
+
+            </div>
+            <a href="http://eepurl.com/c1-5u9" class="btn" i18n="Join The Whitelist">
+                Join The Whitelist
+            </a>
+            <div class="bottom-waves"></div>
+        </div>
+    </header>
+    <section class="as-seen-on" id="asSeenOn">
+        <div class="section-heading text-center">
+            <h2 i18n="AS SEEN ON">AS SEEN ON</h2>
+            <h3 i18n="AUCTUS ACROSS THE WEB">AUCTUS ACROSS THE WEB</h3>
+            <hr width="100px"></hr>
+        </div>
+        <div class="links container">
+            <div class="row">
+                <div class="col-6 col-sm-4 offset-lg-1 col-lg-2">
+                    <a href="https://www.bna.com/blockchain-technology-hits-n73014470448/" target="_blank">
+                        <div class="link-box bloomberg">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <a href="https://themerkle.com/auctus-an-ethereum-project-disrupting-the-36-4-trillion-pension-market/" target="_blank">
+                        <div class="link-box merkle">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <a href="https://www.cryptocoinsnews.com/auctus-reform-pension-market-adding-transparency-via-smart-contracts/" target="_blank">
+                        <div class="link-box cryptocoinsnews">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-2">
+                    <a href="https://cointelegraph.com/press-releases/Auctus%20Pension%20Project%20-%20Pre-Sale%20Whitelist%20Closing%20in%2024h"
+                       target="_blank">
+                        <div class="link-box cointelegraph">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <a href="http://bitcoinist.com/auctus-pre-sale-whitelist-closing-48h/" target="_blank">
+                        <div class="link-box bitcoinist">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="background-resources" id="resources">
+        <div class="background-resources-first"></div>
+        <div class="background-resources-second"></div>
+        <section class="resources" id="resources">
+            <div class="section-heading text-center">
+                <h2 i18n="RESOURCES">RESOURCES</h2>
+                <h3 i18n="LEARN ABOUT US">LEARN ABOUT US!</h3>
+                <hr width="100px"></hr>
+            </div>
+            <div class="links text-center">
+                <div class="resource-card">
+                    <div class="dots"></div>
+                    <div class="resource-card-title" i18n="WHITEPAPER">WHITEPAPER</div>
+                    <div class="resource-content">
+                        <img class="resource-img" src="../img/presale/whitepaper.png" />
+                        <div class="whitepaper-resource-description" i18n="Read our comprehensive">Read our comprehensive 30-page whitepaper.</div>
+                    </div>
+                    <a class="download-button" onclick="downloadWhitepaper()"><i class="fa fa-file-o"></i>&nbsp;DOWNLOAD</a>
+                    <div class="dots"></div>
+                </div>
+                <div class="resource-card">
+                    <div class="dots"></div>
+                    <div class="resource-card-title" i18n="PRESENTATION">PRESENTATION</div>
+                    <div class="resource-content">
+                        <img class="resource-img" src="../img/presale/presentation.png" />
+                        <div class="presentation-resource-description" i18n="Have a look at our user friendly presentation">Have a look at our user friendly presentation to get a quick overview on Auctus.</div>
+                    </div>
+                    <a class="download-button" onclick="downloadPresentation()"><i class="fa fa-file-o"></i>&nbsp;DOWNLOAD</a>
+                    <div class="dots"></div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <section class="token-sale-overview" id="tokenSale">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2 i18n="TOKEN SALE OVERVIEW">TOKEN SALE OVERVIEW</h2>
+                <h3 i18n="UNDERSTANDING THE AUCTUS TOKEN DISTRIBUTION">UNDERSTANDING THE AUCTUS TOKEN DISTRIBUTION</h3>
+                <hr width="100px"></hr>
+            </div>
+            <div class="row clearfix" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
+                <div class="col-lg-6 col-sm-12 pull-right">
+                    <div class="box">
+                        <div class="row">
+                            <div class="sale-title pull-left">
+                                <span i18n="PRE-SALE">PRE-SALE</span>
+                                <hr />
+                            </div>
+                            <div class="dots box-title"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="image-div">
+                                    <img src="../img/tokensale/calendar.png" />
+                                    <hr />
+                                    <span >OCT<b>3rd</b></span>
+                                    <br />
+                                    <span class="sub-title" i18n="UNTIL OCT 6TH">UNTIL OCT 6TH</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="image-div">
+                                    <img src="../img/tokensale/coin.png" />
+                                    <hr />
+                                    <span>2500</span>
+                                    <br />
+                                    <span class="sub-title">AUC/ETH</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--<img class="dot left" src="../img/tokensale/opendot.png" />
+                                <img class="dot right" src="../img/tokensale/opendot.png" />-->
+                                <div class="boundaries">
+                                    <div>
+                                        <span class="sub-title" i18n="MIN CAP">MIN CAP</span>
+                                    </div>
+                                    <!--<span class="pull-left">400ETH</span>
+                                    <span class="pull-right"></span>-->
+                                </div>
+                                <div class="boundaries-panel">
+                                    <div class="dots">
+                                        <span class="ico">400 ETH</span>
+                                    </div>
+                                    <span class="sub-title" i18n="WHITELIST PARTICIPANT">10ETH / WHITELIST PARTICIPANT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="row">
+                            <div class="sale-title pull-left">
+                                <span>ICO</span>
+                                <hr class="ico" />
+                            </div>
+                            <div class="dots"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="image-div">
+                                    <img src="../img/tokensale/calendar.png" />
+                                    <hr class="ico" />
+                                    <span class="ico">Q1 <b>2018</b></span>
+                                    <br />
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="image-div">
+                                    <img src="../img/tokensale/coin.png" />
+                                    <hr class="ico" />
+                                    <span>2000</span>
+                                    <br />
+                                    <span class="sub-title">AUC/ETH</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="dot left" src="../img/tokensale/dot.png" />
+                                <img class="dot right" src="../img/tokensale/dot.png" />
+                                <div class="boundaries ico text-center" i18n="TO BE ANNOUNCED">
+                                    TO BE ANNOUNCED
+                                </div>
+                                <div class="boundaries-panel ico">
+                                    <div class="defined">
+                                    </div>
+                                    <span class="sub-title"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="chart">
+                                <img src="../img/tokensale/chart.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row vesting-div">
+                        <div class="col-sm-12">
+                            <div class="vesting">
+                                <div class="vesting-title"><span i18n="VESTING">VESTING</span>
+                                    <hr />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5" i18n="TEAM">TEAM</div>
+                                    <div class="col-md-7" i18n="2 YEARS VESTING WITH 6 MONTHS CLIFF">2 YEARS VESTING WITH 6 MONTHS CLIFF</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5" i18n="RESERVE FOR FUTURE STAKEHOLDERS">RESERVE FOR FUTURE STAKEHOLDERS</div>
+                                    <div class="col-md-7" i18n="1 YEAR IF DEEMED NECESSARY">1 YEAR (IF DEEMED NECESSARY,<br />THESE TOKENS WILL BE BURNED)</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5" i18n="PARTNERSHIPS AND ADVISORING">PARTNERSHIPS AND ADVISORING</div>
+                                    <div class="col-md-7" i18n="6 MONTHS VESTING WITH 3 MONTHS CLIFF">6 MONTHS VESTING WITH 3 MONTHS CLIFF</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="presale-footer">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-1 col-md-6 logo">
+                    <img src="../img/footer/auctus-logo.png"></img>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="navigation-icons">
+                        <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/AuctusProject" title="Github" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://reddit.com/r/AuctusProject" title="Reddit" target="_blank">
+                            <i class="fa fa-reddit-alien"></i>
+                        </a>
+                        <a href="https://blog.auctus.org" title="Blog" target="_blank">
+                            <i class="fa fa-medium"></i>
+                        </a>
+                        <a href="https://chat.auctus.org" title="Rocket Chat" target="_blank">
+                            <i class="fa fa-rocket"></i>
+                        </a>
+                        <a href="mailto:contact@auctus.org" title="Email">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <img class="v" src="../img/tokensale/v.png" />
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/clipboardjs/dist/clipboard.min.js"></script>
+
+    <script src="../js/script.min.js?v=1"></script>
+
+    <script src="../js/translation.js"></script>
+    <script>
+        $(".menu-content a").click(function (e) {
+            if ($(window).width() <= 768)
+                $('#topMenu').toggleClass('open');
+        });
+        $("#topMenu").click(function (e) {
+            if (e.target !== this)
+                return;
+            $('#topMenu').toggleClass('open');
+        });
+        $('a').click(function () {
+            var href = $(this).attr('href');
+            if (href) {
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 500);
+            }
+            return false;
+        });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-106121445-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        twttr.conversion.trackPid('ny69l', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    </script>
+    <script type="text/javascript">
+        twttr.conversion.trackPid('ny637', { tw_sale_amount: 0, tw_order_quantity: 0 });
+    </script>
+    <script>
+        var i = new Image(); i.src = "https://alb.reddit.com/t.gif?q=CAAHAAABAAoACQAAAAAA6DArAA==&s=WZRd1JXnZRV1jlvXS-XxOhVvuUCEppJaeyGI1Xak6fs=";
+    </script>
+</body>
+
+</html>

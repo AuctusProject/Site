@@ -1,94 +1,6 @@
 // Styling for the masthead
 header.presale-masthead {
-    min-height: 100%;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    color: white;
-    background: #0884cd; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(168deg, #04148c 18%, #0884cd 54%, #0bdace 95%, #ffffff 105%); /* For Safari 5.1 to 6.0  60%*/
-    background: -o-linear-gradient(168deg, #04148c 18%, #0884cd 54%, #0bdace 95%, #ffffff 105%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(168deg, #04148c 18%, #0884cd 54%, #0bdace 95%, #ffffff 105%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(168deg, #04148c 18%, #0884cd 54%, #0bdace 95%, #ffffff 105%); /* Standard syntax */
-    @media (max-width: 768px) {
-        background: #0884cd; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace ); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace ); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(168deg, #04148c 13%, #0884cd 35%, #0bdace); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(168deg, #04148c 8%, #0884cd 35%, #0bdace); /* Standard syntax */
-    }
 
-    .top-header {
-        background: transparent;
-        height: 85px;
-
-        @media (max-width: 768px) {
-            text-align: center;
-            margin-left: unset !important;
-        }
-    }
-
-    .header-content {
-        height: 100vh;
-        min-height: 600px;
-        padding: 0;
-        text-align: left;
-
-
-
-        .header-content-inner {
-            position: absolute;
-            top: 50%;
-            max-width: none;
-            margin: 0;
-            transform: translateY(-50%);
-
-            h1 {
-                font-size: 35px;
-            }
-        }
-    }
-
-    .top-left {
-        position: absolute;
-        margin-left: 6%;
-        z-index: 100;
-
-        @media (max-width: 768px) {
-            margin-left: -35px;
-            margin-top: -50px;
-        }
-    }
-
-    .top-header {
-        position: absolute;
-        margin-left: 15%;
-        background: transparent;
-        height: 85px;
-        z-index: 9999;
-
-        @media (max-width: 768px) {
-            margin: 0;
-            width: 100%;
-            text-align: center;
-            margin-left: unset !important;
-        }
-
-        .logo {
-            margin-top: 25px;
-
-
-            @media (max-width: 768px) {
-                display: block;
-                -moz-transform: scale(0.9);
-                -o-transform: scale(0.9);
-                -webkit-transform: scale(0.9);
-                transform: scale(0.9);
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    }
 
     .right-presale-panel {
         display: block !important;
@@ -129,111 +41,18 @@ header.presale-masthead {
         }
     }
 
-    #topMenu {
-
-        i {
-            color: #002d78;
-            font-size: 45px;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            cursor: pointer;
-            z-index:10000 !important;
-        }
-
-        @media (max-width: 768px) {
-            i.fa-bars {
-                font-size: 27px;
-                position: absolute;
-                right: 15px;
-                top: 10px;
-            }
-        }
-    }
-
-
-    #topMenu.open .quarter-circle {
-        background: #04148c;
-        background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
-        background: -o-linear-gradient(168deg, #04148c, #0884cd);
-        background: -moz-linear-gradient(168deg, #04148c, #0884cd);
-        background: linear-gradient(168deg, #04148c, #0884cd);
-        border-bottom-left-radius: 100%;
-        border-bottom-right-radius: 100%;
-        border-top-left-radius: 100%;
-        border-top-right-radius: 100%;
-        position: absolute;
-        right: -386px;
-        top: -350px;
-        width: 900px;
-        height: 1000px;
-        z-index: 10000;
-        transition: all 1s;
-
-        i {
-            color: #002d78;
-            font-size: 45px;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            right: -60%;
-            height: 180%;
-            width: 150%;
-
-            i.fa-bars {
-                font-size: 27px;
-                position: absolute;
-                right: -385px;
-                top: -170px;
-            }
-        }
-    }
-
-
-    .button-div {
-        display: inline-block;
-        border-radius: 8px;
-        border: 2px solid white;
-        margin-top: 35pt;
-        font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
-        font-size: 14pt !important;
-        padding: 15px;
-        color: white;
-        z-index: 1000;
-
-        @media (max-width: 768px) {
-            margin-top: 65%;
-            margin-bottom: 40px;
-        }
-
-        i.fa {
-            margin-right: 13px;
-        }
-    }
-
-    .button-div:hover {
-        z-index: 1000;
-        cursor: pointer;
-        color: #d7d6d6;
-        border: 2px solid #d7d6d6;
-    }
-
     .text-container {
         text-align: center;
         z-index: 1000;
         width: 100%;
         position: relative;
         padding: 0;
-
+        margin:auto;
         h1 {
             font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
             font-size: 37pt;
             color: #00fcfc;
-            margin-bottom: 5pt
+            margin: 20pt;
         }
 
         h2 {
@@ -270,11 +89,6 @@ header.presale-masthead {
         }
     }
 
-    .text-container.title {
-        @media (max-width: 768px) {
-            padding: 120px 0 0 0;
-        }
-    }
 
     .timer {
         margin: 20px 0;
@@ -304,14 +118,14 @@ header.presale-masthead {
         display: inline-block;
 
         .time-value {
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             font-size: 58px;
             line-height: 88px;
             color: #00fcfc;
         }
 
         .time-label {
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             color: #00fcfc;
             font-size: 16px;
         }
@@ -350,7 +164,7 @@ header.presale-masthead {
         position: relative;
         z-index: 1000;
         padding: 15px 55px;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 20pt;
         letter-spacing: 3px;
         background: #030387;
@@ -391,14 +205,14 @@ header.presale-masthead {
 
     .modal .popup-title {
         text-align: center;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 26px;
         color: #002D78;
     }
 
     .modal .popup-subtitle {
         text-align: center;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 16px;
         color: #4D4D4D;
     }
@@ -408,7 +222,7 @@ header.presale-masthead {
     }
 
     .modal p {
-        font-family: 'Helvetica Neue Light';
+        font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
         color: #4D4D4D;
         font-size: 14px;
     }
@@ -446,7 +260,7 @@ header.presale-masthead {
 
         .btn {
             padding: 15px 45px;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
             font-size: 16pt;
             letter-spacing: 3px;
             background: #00B1FF;
@@ -472,13 +286,13 @@ header.presale-masthead {
             margin-top: 40px;
             font-size: 24px;
             text-align: center;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         }
 
         .separator {
             font-size: 18px;
             text-align: center;
-            font-family: 'Helvetica Neue Light';
+            font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
         }
 
         @media (min-width: 768px) {
@@ -513,7 +327,7 @@ header.presale-masthead {
                 padding: 10px;
                 text-align: center;
                 font-size: 14pt;
-                font-family: 'Helvetica Neue Light';
+                font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
                 outline: none;
                 border: 1px solid #4D4D4D;
 
@@ -532,51 +346,29 @@ header.presale-masthead {
 }
 
 .circle-logo {
-    margin: auto;
-    display: block;
-    z-index: 100;
+    width: 100%;
+    width: 100%;
+    max-width: 850px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -115px;
-    margin-bottom: -35px;
-    -moz-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    margin-bottom: 10px;
 
-    @media (min-width: 1500px ) {
-        margin-bottom: 40px;
-        -moz-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+    @media (max-width: 700px ) {
+        margin-top: -40px;
     }
 
-    @media (max-width: 1200px ) {
-        -moz-transform: scale(0.7);
-        -o-transform: scale(0.7);
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-
-
-    @media (max-width: 768px) {
-        display: block;
-        margin-bottom: -150px;
-        -moz-transform: scale(0.8);
-        -o-transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8);
-        top: 120px;
-        left: 50%;
-        margin-left: -260px;
+    @media (max-width: 500px ) {
+        margin-left: calc(50% - 250px);
     }
 }
 
 section.as-seen-on {
     padding-top: 5rem !important;
-    min-height: 800px;
+    
     background: linear-gradient( #efefef 80%, white 99%); /* Standard syntax */
     .links {
-        padding: 20px 60px;
         align-content: center;
 
         @media (max-width: 648px) {
@@ -584,18 +376,14 @@ section.as-seen-on {
         }
 
         .link-box {
-            margin: 0 auto 65px auto;
+            margin: 0 auto 30px auto;
+            border: 10px solid white;
             background-color: white;
-            height: 180px;
-            width: 320px;
+            height: 100px;
+            width: 150px;
             background-position: center;
             background-repeat: no-repeat;
-        }
-
-        @media (min-width: 648px) {
-            > div:last-child {
-                padding: 0 16%;
-            }
+            background-size: contain;
         }
 
         .merkle {
@@ -683,7 +471,7 @@ section.resources {
             position: relative;
             z-index: 1000;
             padding: 10px 10px;
-            font-family: 'Helvetica Neue Bold';
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
             font-size: 16pt;
             letter-spacing: 3px;
             background: #030387;

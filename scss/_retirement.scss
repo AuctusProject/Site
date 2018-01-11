@@ -1,0 +1,90 @@
+section.retirement {
+    background: -webkit-linear-gradient(#FFFFFF 0%, #E0E0E0 57%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(#FFFFFF 0%, #E0E0E0 57%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFFFF 0%, #E0E0E0 57%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFFFFF 0%, #E0E0E0 57%); /* Standard syntax */
+    .section-heading {
+        margin-bottom: 2rem !important;
+    }
+
+    .bullets-container {
+
+
+        span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0 20px;
+            color: #999999;
+            border: solid 1px #999999;
+            border-radius: 20px;
+            transition: all 0.2s;
+            cursor: pointer;
+
+            @media(max-width:768px) {
+                margin: 0 6px;
+            }
+        }
+
+        .selected {
+            background-color: #00BDFF;
+            border: solid 1px #00BDFF;
+            color: white;
+            transition: all 0.2s;
+        }
+    }
+
+    .selected-content {
+        height: 200px;
+        margin-top: 50px;
+        text-align: right;
+
+        @media(max-width:768px) {
+            height: 415px;
+
+            > div {
+                text-align: center;
+            }
+        }
+
+        img {
+            margin: 0 60px 0 0;
+            max-height: 375px;
+
+            @media(max-width:768px) {
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        .card {
+            box-shadow: 0px 3px 4px #0F0F0F;
+            padding: 20px 15px;
+            background-color: white;
+            font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+            width: 55%;
+            height: 375px;
+            text-align: center;
+
+            @media(max-width:768px) {
+                width: 80%;
+                margin: 35px auto;
+                height: 280px;
+            }
+
+            .card-title {
+                margin-bottom: .75rem;
+                font-size: 24px;
+                font-weight: bold;
+                color: #002D78;
+            }
+
+            .card-content {
+                padding: 10px;
+            }
+        }
+    }
+}

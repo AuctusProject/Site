@@ -15,13 +15,13 @@
 .video-iframe {
     box-shadow: 0 15px 30px -2px rgba(15,46,114,.7);
     width: 90%;
-    height: 450px;
+    height: 400px;
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
     .video-iframe {
         width: 800px;
-        height: 450px;
+        height: 400px;
     }
 }

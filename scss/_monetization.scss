@@ -1,6 +1,10 @@
 section.monetization {
-    /*background: darkblue;*/
+    background: -webkit-linear-gradient(#00E3FF -45%, #074EF1 57%, #071E96 100%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(#00E3FF -45%, #074EF1 57%, #071E96 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00E3FF -45%, #074EF1 57%, #071E96 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00E3FF -45%, #074EF1 57%, #071E96 100%); /* Standard syntax */
     padding-bottom: 12em;
+    padding-top: 17rem;
 
     .item {
         display: inline-block;
@@ -22,11 +26,18 @@ section.monetization {
         }
     }
 
-    .description {
+    .title {
         margin-top: 20px;
-        margin-bottom: 45px;
-        font-family: 'Helvetica Neue Bold';
-        font-size: 22px !important;
+        margin-bottom: 15px;
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
+        font-size: 24px !important;
+        color: white;
+    }
+
+    .description {
+        margin: 20px 46px;
+        font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light';
+        font-size: 18px !important;
         color: white;
     }
 

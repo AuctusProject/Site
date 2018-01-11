@@ -1,52 +1,145 @@
 // Styling for the features section
+header.team-header {
+    height: 320px;
+    width: 100%;
+    min-height: 0px;
+    background: #0884cd; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* Standard syntax */
+    @media (max-width: 768px) {
+        background: #0884cd; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* Standard syntax */
+    }
+
+
+    .text-container {
+        padding-top: 150px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin:auto;
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        ;
+    }
+}
+
 section.team {
     text-align: center;
+    background-color: #efefef;
+    padding-bottom: 5em;
+
+    .team-content {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .team-card {
+        margin: 25px;
+        width: 320px;
+        position: relative;
+        text-align: left;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        background: white;
+        box-shadow: 1px 2px 2px 1px #c1c1c1;
+        display: inline-block;
+        vertical-align: top;
+
+        @media (max-width: 768px) {
+            margin: 25px auto;
+        }
+
+        .card-picture-name {
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .card-picture {
+            width: 220px;
+            margin-top: 20px;
+        }
+
+        .card-name-position-linkedin {
+            text-decoration: none;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .card-name-position {
+            display: inline-block;
+            width: calc(100% - 80px);
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .card-linkedin {
+            content: url("../img/team/linkedin-icon.png");
+            display: inline-block;
+        }
+
+        .card-behance {
+            content: url("../img/team/behance-icon.png");
+            display: inline-block;
+        }
+
+        .card-name {
+            font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
+            font-size: 22px !important;
+            line-height: 24px;
+            color: rgba(0, 45, 120, 1);
+        }
+
+        .card-position {
+            font-size: 12px !important;
+            color: black;
+        }
+
+        .card-description {
+            display: inline-block;
+
+            .dots {
+                height: 10px;
+                width: 50%;
+                margin: auto;
+            }
+        }
+
+        .card-description-content {
+            font-size: 12px;
+            text-align: center;
+            padding: 15px;
+            min-height: 245px;
+        }
+    }
 
     .name {
         margin-top: 10px;
-        font-family: 'Helvetica Neue Bold';
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 20px;
     }
 
     .position {
-        font-family: 'Helvetica Neue Light';
+        font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
         font-size: 14px;
         letter-spacing: 2px;
         margin-top: 5px;
         margin-bottom: 60px;
     }
-
-    .image {
-        margin-left: 40px;
-    }
-
-    .image:after {
-        content: url('../img/team/linkedin-icon.png');
-        position: relative;
-        z-index: 100;
-        right: 26px;
-        top: 0px;
-    }
-
-    .image.behance:after {
-        content: url('../img/team/behance-icon.png');
-        position: relative;
-        z-index: 100;
-        right: 26px;
-        top: 0px;
-    }
-}
-img.v {
-    position: fixed;
-    z-index: 100000;
-    bottom: -440px;
-    left: -235px;
-    transform: rotate(21deg);
-    transition: all 0.2s;
 }
 
-img.v.visible {
-    transition: all 0.2s;
-    bottom: -36px !important;
-    left: -21px !important;
-}
+
+    .remove-padding {
+        padding-top: 0;
+    }

@@ -47,7 +47,9 @@
         onCloseAgreementPopup();
     })
 
-    // new Clipboard('.copy-button');
+    var languageCookie = getCookie("selected-language")
+    if (languageCookie)
+        changeLanguage(languageCookie);
 
 })(jQuery); // End of use strict
 
