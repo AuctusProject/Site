@@ -155,7 +155,7 @@
     "AUC tokens allocated to Auctus Core": " AUC tokens allocated to Auctus’ Core Team will not be immediately tradable. They will have 2 years vesting with a 6-month cliff. This means every 6 months, 25% of those tokens will mature . Tokens allocated to partners and advisors will have 6-month vesting with 3-month cliff. The vesting rules will be enforced via smart contracts.",
     "Team": "Team",
     "How can I get involved": "How can I get involved?",
-    "You can join our Slack": "You can <a class=\"faq-content-link\" href=\"https:\/\/join.slack.com\/t\/auctus-project\/shared_invite\/MjM5NTU3NTI5OTA5LTE1MDUxNTkxMjgtZWI2MDY3MGMxNQ\">join our Slack</a> and also participate in our bounty programs."
+    "You can join our Slack": "You can <a class=\"faq-content-link\" href=\"https:\/\/chat.auctus.org\">join our Rocket Chat</a> and also participate in our bounty programs."
   },
   ////////////////////// presale ////////////////////////////
   "presale-masthead": {

@@ -38,7 +38,7 @@ function changeLanguage(language) {
             keyData = sectionData[key];
             domElements = $("." + section + " [i18n='" + key + "']");
             if (typeof keyData == "string") {
-                domElements.each(function () { $(this).text(keyData); });
+                domElements.each(function () { $(this).html(keyData); });
             }
             else {
                 for (var attribute in keyData) {
