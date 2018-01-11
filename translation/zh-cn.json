@@ -155,7 +155,7 @@
     "AUC tokens allocated to Auctus Core": "分配给 Auctus 核心团队的代币将有锁定期，不能立即交易。他们将有 2 年归属期和 6 个月最短生效期。这意味着这些代币每 6 个月就会有 25% 到期。分配给合作伙伴和顾问的代币将有 6 个月归属期和 3 个月最短生效期。归属期规则将通过智能合约执行。",
     "Team": "团队",
     "How can I get involved": "如何参与？",
-    "You can join our Slack": "您可以加入我们的 <a class=\"faq-content-link\" href=\"https://chat.auctus.org\">Rocket Chat</a> 频道，也可以参与我们的赏金计划。"
+    "You can join our Slack": "您可以加入我们的 <a class=\"faq-content-link\" href=\"https://chat.auctus.org\">Rocket Chat</a> 频道。"
   },
   ////////////////////// presale ////////////////////////////
   "presale-masthead": {
