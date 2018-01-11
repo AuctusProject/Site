@@ -163,7 +163,7 @@ header.presale-masthead {
     a.btn {
         position: relative;
         z-index: 1000;
-        padding: 15px 55px;
+        padding: 15px 0;
         font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 20pt;
         letter-spacing: 3px;
@@ -185,7 +185,7 @@ header.presale-masthead {
     @media (max-width: 768px) {
         a.btn {
             margin: 20px auto;
-            padding: 15px 30px !important;
+            padding: 15px 0 !important;
         }
     }
 
