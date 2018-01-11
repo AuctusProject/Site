@@ -95,7 +95,8 @@ header.masthead {
 
         .translation {
             display: inline;
-            cursor:pointer;
+            cursor: pointer;
+
             .translation-box {
                 display: inline-table;
                 margin-right: 8px;
@@ -148,83 +149,22 @@ header.masthead {
         border-top-left-radius: 100%;
         border-top-right-radius: 100%;
         position: absolute;
-        right: -100px;
-        top: -90px;
-        height: 180px;
-        width: 200px;
-        z-index: 10000;
         transition: all 0.5s;
-
-        @media (max-width: 991px) {
-            right: -60px;
-            top: -65px;
-            height: 120px;
-            width: 130px;
-        }
-    }
-
-    #topMenu {
-
-        i {
-            color: #002d78;
-            font-size: 45px;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 991px) {
-            i.fa-bars {
-                font-size: 27px;
-                position: absolute;
-                right: 15px;
-                top: 10px;
-            }
-        }
-    }
-
-
-    #topMenu.open .quarter-circle {
-        background: #04148c;
-        background: -webkit-linear-gradient(168deg, #04148c, #0884cd);
-        background: -o-linear-gradient(168deg, #04148c, #0884cd);
-        background: -moz-linear-gradient(168deg, #04148c, #0884cd);
-        background: linear-gradient(168deg, #04148c, #0884cd);
-        border-bottom-left-radius: 100%;
-        border-bottom-right-radius: 100%;
-        border-top-left-radius: 100%;
-        border-top-right-radius: 100%;
-        position: absolute;
-        right: -386px;
-        top: -350px;
-        width: 900px;
-        height: 1000px;
+        top: -65px;
+        height: 120px;
+        width: 130px;
         z-index: 10000;
-        transition: all 1s;
-
-        i {
-            color: #002d78;
-            font-size: 45px;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 991px) {
-            right: -350px;
-            height: 800px;
-            width: 700px;
-
-            i.fa-bars {
-                font-size: 27px;
-                position: absolute;
-                right: -385px;
-                top: -170px;
-            }
-        }
     }
+
+    .quarter-circle.menu {
+        right: -60px;
+    }
+
+    .quarter-circle.language {
+        left: -60px;
+    }
+
+   
 
     .container {
         padding: 0;

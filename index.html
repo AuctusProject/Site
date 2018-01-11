@@ -42,10 +42,29 @@
 <body id="page-top" class="auctus">
 
     <header class="masthead ">
-        <div id="topMenu" class="mobile-only">
-            <div class="quarter-circle">
+        <div id="topLanguage" class="mobile-only">
+            <div class="quarter-circle language">
             </div>
-            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+            <div class="language-btn" onclick="$('#topLanguage').toggleClass('open'); $('#topMenu.open').toggleClass('open') ">
+                <i class="fa fa-language" id="language"></i>
+            </div>
+            <div class="language-container">
+                <div class="language-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('en-uk');$('#topLanguage').toggleClass('open'); ">ENGLISH</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('ru-ru');$('#topLanguage').toggleClass('open'); ">РУССКИЙ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('zh-cn');$('#topLanguage').toggleClass('open'); ">中文</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="topMenu" class="mobile-only">
+            <div class="quarter-circle menu">
+            </div>
+            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); $('#topLanguage.open').toggleClass('open') ">
                 <i class="fa fa-bars" id="bars"></i>
                 <i class="fa fa-close" id="close"></i>
             </div>

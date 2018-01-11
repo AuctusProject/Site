@@ -1,8 +1,25 @@
 (function ($) {
 
     var languageCookie = getCookie("selected-language")
-    if (languageCookie)
+    if (languageCookie) {
         changeLanguage(languageCookie);
+    }
+    else {
+        var language = window.navigator.userLanguage || window.navigator.language;
+        if (language && (language.length > 2)) {
+            var lang = language.substring(0, 2);
+            var translation = "en-uk";
+            switch (lang) {
+                case "ru":
+                    translation = "ru-ru";
+                    break;
+                case "zh":
+                    translation = "zh-cn";
+                    break;
+            }
+            changeLanguage(translation);
+        }
+    }
 
 })(jQuery); // End of use strict
 
@@ -30,8 +47,11 @@ function changeLanguage(language) {
             }
         }
     }
-    updateBulletsPanel($(".bullets-container > span").first())
-    setCookie("selected-language",language)
+   
+    setCookie("selected-language", language);
+    try {
+        updateBulletsPanel($(".bullets-container > span").first());
+    } catch (e){ }
 }
 
 function showTranslateBox() {
