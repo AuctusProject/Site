@@ -246,8 +246,7 @@ a.linkedin-button {
 
 .icons-panel {
     display: block !important;
-    width: 32%;
-    min-width: 360px;
+    width: 290px;
     z-index: 10;
     position: absolute;
     top: 0;
@@ -259,14 +258,15 @@ a.linkedin-button {
 
     i.fa {
         display: inline-block;
-        font-size: 25px;
+        font-size: 18px;
         color: #00fcfc;
-        margin: 22px 3px;
+        margin: 30px 2px;
         border: 2px solid #00fcfc;
         border-radius: 50%;
-        height: 40px;
-        width: 40px;
+        height: 32px;
+        width: 32px;
         padding-top: 6px;
+        text-align:center;
     }
 
     i.fa:hover {
