@@ -364,9 +364,53 @@ header.presale-masthead {
     }
 }
 
+section.supported-by {
+    padding-top: 5rem !important;
+    background: linear-gradient(white 80%, #efefef 99%); /* Standard syntax */
+    .links {
+        align-content: center;
+
+        @media (max-width: 648px) {
+            padding: 20px 15px;
+        }
+
+        .link-box {
+            margin: 0 auto 30px auto;
+            height: 100px;
+            width: 150px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .rcn {
+            background-image: url(../img/partners/rcn.jpg);
+        }
+
+        .microsoft {
+            background-image: url(../img/partners/microsoft.png);
+        }
+
+        .zrx {
+            background-image: url(../img/partners/0x.png);
+        }
+
+        .aragon {
+            background-image: url(../img/partners/aragon.png);
+        }
+
+        .amadeus {
+            background-image: url(../img/partners/amadeus.png);
+        }
+
+        .symetrics {
+            background-image: url(../img/partners/symetrics.png);
+        }
+    }
+}
+
 section.as-seen-on {
     padding-top: 5rem !important;
-    
     background: linear-gradient( #efefef 80%, white 99%); /* Standard syntax */
     .links {
         align-content: center;
@@ -377,8 +421,6 @@ section.as-seen-on {
 
         .link-box {
             margin: 0 auto 30px auto;
-            border: 10px solid white;
-            background-color: white;
             height: 100px;
             width: 150px;
             background-position: center;
@@ -396,6 +438,10 @@ section.as-seen-on {
 
         .bloomberg {
             background-image: url(../img/presale/bloomberg.png);
+        }
+
+        .investopedia {
+            background-image: url(../img/presale/investopedia.png);
         }
 
         .cointelegraph {
@@ -512,35 +558,35 @@ section.resources {
         top: 460px;
         left: -400px;
         background: #0884cd; /* For browsers that do not support gradients */
+        }
+
+        .background-resources-first {
+            transform: rotate(10deg);
+            background: -webkit-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Safari 5.1 to 6.0  60%*/
+            background: -o-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* Standard syntax */
+        }
+
+        .background-resources-second {
+            transform: rotate(-10deg);
+            background: -webkit-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Safari 5.1 to 6.0  60%*/
+            background: -o-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* Standard syntax */
+        }
     }
 
-    .background-resources-first {
-        transform: rotate(10deg);
-        background: -webkit-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(-10deg, #075cee 45%,#0abcd7 75%); /* Standard syntax */
+    footer.presale-footer {
+        position: unset;
+        margin-bottom: 70px;
     }
 
-    .background-resources-second {
-        transform: rotate(-10deg);
-        background: -webkit-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(10deg, #075cee 45%,#0abcd7 75%); /* Standard syntax */
+    section.faq .text-center {
+        margin-top: 35px;
     }
-}
 
-footer.presale-footer {
-    position: unset;
-    margin-bottom: 70px;
-}
-
-section.faq .text-center {
-    margin-top: 35px;
-}
-
-section.faq .text-center a {
-    color: #09d8ba;
-    font-weight: bold;
-}
+    section.faq .text-center a {
+        color: #09d8ba;
+        font-weight: bold;
+    }
