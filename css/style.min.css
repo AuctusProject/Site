@@ -830,7 +830,7 @@ header.masthead {
     transition: all 0.2s; }
   /* line 134, ../scss/_masthead.scss */
   header.masthead .large-header {
-    height: 140px !important; }
+    height: 160px !important; }
   @media (max-width: 991px) {
     /* line 139, ../scss/_masthead.scss */
     header.masthead .button-div {

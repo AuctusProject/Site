@@ -16,6 +16,9 @@
                 case "zh":
                     translation = "zh-cn";
                     break;
+                case "ja":
+                    translation = "ja-ja";
+                    break;
             }
             changeLanguage(translation);
         }
