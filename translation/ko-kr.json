@@ -1,0 +1,230 @@
+﻿i18nData = {
+  "masthead": {
+    "DEMO": "데모",
+    "FAQ": "자주 묻는 질문",
+    "TOKEN SALE": "토큰 판매",
+    "TEAM": "팀",
+    "BLOG": "블로그",
+    "PRESENTATION": "프레젠테이션",
+    "WHITEPAPER": "백서",
+    "RETIREMENT PLANS": "은퇴 플랜",
+    "SMART CONTRACT POWERED": "스마트 계약을 활용한",
+    "Achieve your retirement": "채권, 주식, 암호화폐의 최적화된 포트폴리오로 구성된 Auctus 자동 투자 서비스로 은퇴 목표를 더 신속하게 달성하십시오.",
+    "FREQUENTLY ASKED QUESTIONS": "자주 묻는 질문",
+    "Relevant considerations about the project": "프로젝트에 대한 고려사항",
+    "AUCTUS CREW": "AUCTUS 사람들"
+  },
+  "video": {
+    "AUCTUS OVERVIEW": "AUCTUS 개요"
+  },
+  "countdown": {
+    "AUCTUS TOKEN SALE": "AUCTUS 토큰 판매",
+    "DATE WILL BE ANNOUNCED SOON": "날짜는 곧 발표됩니다",
+    "JOIN CONVERSATION ON ROCKET CHAT": " Rocket Chat 에서 대화에 참여",
+    "READ ABOUT AUCTUS TOKEN SALE": "AUCTUS 토큰 판매에 대한 자료",
+    "JOIN THE WHITELIST": "화이트리스트에 가입",
+    "TOKEN SALE WEBSITE": "토큰 판매 웹사이트"
+  },
+  "smartcontract": {
+    "SMART CONTRACT POWERED FEE STRUCTURE": "스마트 계약을 활용한 수수료 구조",
+    "We use smart contracts to provide": "당사는 스마트 계약을 활용하여 결과 지향적인 투명하고 저렴한 수수료 구조를 제공합니다. AUC 토큰은 트러스트리스(trustless) 에스크로에 보관되며, 수수료는 로보어드바이저의 예측이 적중한 기간에만 지불됩니다.",
+    "BLOCKCHAIN ROBO-ADVISOR AND INVESTMENT TRACKING RECORD": "블록체인 로보어드바이저와 투자 추적 기록",
+    "Auctus will use blockchain to provide": "Auctus는 블록체인을 활용하여, 제안된 포트폴리오 배분 및 로보어드바이저 예측 전체의 추적 기록을 영구적으로 제공합니다. 따라서, 기대 수익률과 실제 수익률의 비교 및 경쟁사와의 비교를 통해 로보어드바이저의 성과를 분석할 수 있습니다."
+  },
+  "retirement": {
+    "RETIREMENT PLAN": "은퇴 플랜",
+    "WE HELP YOU ACHIEVE YOUR RETIREMENT": "여러분이 선택한 투자로 보다 신속하게 은퇴 목표에 도달하도록 도와드립니다.",
+    "SET YOUR RETIREMENT GOALS": {
+      "meta-title": "은퇴 목표 설정",
+      "meta-content": "개별 상황에 기초한 리스크/수익률에 따른 추천"
+    },
+    "PICK THE INVESTMENTS YOU WANT": {
+      "meta-title": "원하는 투자 선택",
+      "meta-content": "주식, 채권, 암호화폐에서 선택하거나, 금융 전문가가 직접 선정한 십여 개의 템플릿 포트폴리오에서 선택하십시오."
+    },
+    "GET AN OPTIMIZED PORTFOLIO": {
+      "meta-title": "최적화된 포트폴리오 확보",
+      "meta-content": "당사는 리스크를 줄이면서 수익률을 개선할 수 있도록 최적의 포트폴리오를 구축합니다."
+    },
+    "RELAX AND ENJOY YOUR LIFE": {
+      "meta-title": "편안하게 인생 즐기기",
+      "meta-content": "당사는 필요할 때 자동으로 여러분의 포트폴리오를 재조정하여 목표 배분을 유지합니다."
+    },
+    "TRY OUR DEMO": {
+      "meta-title": "데모를 이용해 보십시오",
+      "meta-content": "시뮬레이션 환경에서 Auctus 플랫폼의 장점을 경험해 보십시오."
+    }
+  },
+  "monetization": {
+    "MARKETPLACE": "마켓플레이스",
+    "FINANCIAL EXPERTS": "금융 전문가",
+    "Financial advisors can earn AUC": "금융 자문가들은 전문 뉴스레터, 포트폴리오  추천, 라이브 채팅, 전화를 통한 지원 등 서비스를 제공하고 AUC를 획득할 수 있습니다.",
+    "Customers can access on-demand human advice": " 고객은 AUC 토큰을 이용하여 앱 메시지나 전화로 사람에게서 주문형 조언을 들을 수 있습니다.",
+    "Where the nature of the service involves portfolio": " 서비스가 본질적으로 포트폴리오 제안 및 예측을 포함한 경우, 사용자는 예측이 맞을 때에만 수수료를 지불합니다.",
+    "THIRD-PARTY ROBO-ADVISORS": "제3자 로보어드바이저",
+    "Third-Party Robo-Advisor providers will be able": "제3자 로보어드바이저 제공자는 맞춤형 투자 전략을 제공하고 AUC 토큰을 획득할 수 있습니다.",
+    "Customers can access different investment strategies": " 고객들은 블록체인 기반의 입증된 실적이 있는 다양한 투자 전략에 접할 수 있습니다.",
+    "The transfer of AUC tokens between the user": " 사용자와 공급자 간의 AUC 토큰 전달은 스마트 계약을 이용하며 이더리움 블록체인의 예측을 기록하기 때문에 결과에 구속될 수 있습니다."
+  },
+  "roadmap": {
+    "ROADMAP": "로드맵",
+    "CHECK THE PROJECT MILESTONES": "프로젝트 이정표를 확인하십시오",
+    "QUARTER 3": "3분기",
+    "Pre-Sale": "사전 판매",
+    "Advisory Board": "자문 위원회",
+    "Auctus Demo launch": "Auctus 데모 출시",
+    "QUARTER 4": "4분기",
+    "Strategic Partnerships": "전략적 제휴",
+    "Development of Alpha Auctus Platform": "알파 Auctus 플랫폼 개발",
+    "QUARTER 1": "1분기",
+    "Initial Token Sale": "공개 토큰 판매",
+    "Partnerships with Exchanges": "거래소와의 제휴",
+    "Development start of Beta Auctus Platform": "베타 Auctus 플랫폼 개발 시작",
+    "QUARTER 2": "2분기",
+    "Onboarding of traditional assets": "전통적 자산의 온보딩",
+    "Office opening US Asia": "미국 및 아시아 사무실 개설",
+    "Launch of Beta Auctus Platform": "베타 Auctus 플랫폼 출시",
+    "Start of Retirement Plans Phase": "은퇴 플랜 단계 시작",
+    "Launch of the Annuities Marketplace": "어뉴이티 마켓플레이스 출시"
+  },
+  "as-seen-on": {
+    "AS SEEN ON": "웹 기사",
+    "AUCTUS ACROSS THE WEB": "AUCTUS 관련"
+  },
+  "newsletter": {
+    "BE THE FIRST TO GET THE NEWS": "가장 먼저 새소식을 받으십시오",
+    "SUBSCRIBE TO OUR NEWSLETTER": "뉴스레터를 구독하십시오",
+    "EMAIL": {
+      "placeholder": "이메일 입력하십시오",
+      "aria-label": "이메일 입력하십시오"
+    },
+    "SUBSCRIBE": "구독"
+  },
+  ///////////////////////// FAQ //////////////////////////////
+  "faq": {
+    "FREQUENTLY ASKED QUESTIONS": "자주 묻는 질문",
+    "Relevant considerations about the project": "프로젝트에 대한 고려사항",
+    "About Auctus": "Auctus 소개",
+    "What is Auctus": "Auctus는 무엇입니까?",
+    "Auctus was created with the mission": "Auctus는 좋은 정보를 기반으로 의사결정하는 데 필요한 정보를 제공함으로써, 은퇴 저축자들이 자신의 은퇴 플랜을 스스로 관리할 수 있게 하려는 사명을 띠고 탄생했습니다.",
+    "The Auctus platform will provide": " Auctus 플랫폼은 이더리움 스마트 계약과 블록체인 기반의 검증된 실적을 이용하여, 로보어드바이저리, 포트폴리오 최적화를 제공하며, 트러스트리스(trustless) 자문 마켓플레이스를 제공합니다. 사용자는 결과 지향적 수수료 구조를 이용해 좋은 서비스와 조언에 대해서만 비용을 지불할 수 있습니다.",
+    "Whats the meaning behind": "‘Auctus’라는 이름의 의미는 무엇입니까?",
+    "Auctus is latin and means growth": "Auctus는 라틴어로 성장이라는 의미입니다. 우리는 블록체인과 스마트 계약으로 은퇴 시장을 개선하여, 은퇴 플랜이 더 빨리 성장하고 연금 예금자들이 더 쉽게 목표에 도달할 수 있게 된다고 믿습니다.",
+    "Where is Auctus based": "Auctus는 어디를 기반으로 합니까?",
+    "Auctus administration is based in": "Auctus 집행부는 스위스 취리히에 있으며, 개발팀과 경영진 일부는 Auctus가 설립된 브라질 벨루오리존치에 있습니다.",
+    "What problem does Auctus solve": "Auctus는 어떤 문제를 해결합니까?",
+    "Across the globe": "전 세계적으로 개인과 정부 모두 사람들이 은퇴 후 필요를 충족할 수 있도록 저축을 하지 않는 현실에 직면하고 있습니다. 느린 세계 경제 성장, 불안정한 시장, 기록적으로 낮은 수익률, 인구의 고령화 등이 조합되어, 전 세계 은퇴 플랜은 극복하기 어려운 압력에 처해 있습니다.",
+    "Retirement savers are not in control": " 은퇴 저축자는 은퇴 플랜을 관리하지 못하고 자산 배분을 선택할 수 없습니다. 뿐만 아니라, 투명하지 않은 높은 수수료 비용을 지불하고 정보 제공도 부족합니다. 블록체인 기술 및 스마트 계약을 이용하면 투명성과 자동화가 증대되고, 예금자들은 맞춤형 조언과 필요한 도구를 모두 얻을 수 있는 글로벌 플랫폼을 이용해 목표를 달성할 수 있을 것입니다.",
+    "Auctus Token AUC": "Auctus 토큰(AUC)",
+    "How the Auctus token AUC works": "Auctus 토큰(AUC)은 어떻게 작동합니까?",
+    "The fundamental role of the AUC Token": "AUC 토큰의 근본적인 역할은, 자문가 및 로보어드바이저의 관심사를 저축자의 목표와 일치시키고 투명성을 확보함으로써 결과 지향적인 투명하고 저렴한 수수료 구조를 제공하는 것입니다.",
+    "Every user will need to hold a certain": " 모든 사용자는 플랫폼에 액세스하기 위해 일정량의 AUC 토큰을 에스크로에 보유해야 하며, 전문화된 뉴스레터, 라이브 채팅, 알림/플러그인과 같은 마켓플레이스 서비스 일체는 AUC 토큰으로 제공되고 지불됩니다.",
+    "AUC Tokens stay in a trustless escrow": " AUC 토큰은 트러스트리스 에스크로에 보관되며 수수료는 수익률이 예측과 맞고 변동성(불안정성)이 허용 가능한 총 리스크 수준을 넘지 않을 때에만 지불됩니다.",
+    "Token Launch and Usage of Raised Funds": "토큰 출시 및 모집 기금 사용",
+    "What is the total supply of AUC tokens": "AUC 토큰의 총공급이란 무엇입니까?",
+    "The total supply of AUC tokens": "AUC 토큰의 총공급은 사전 판매와 ICO의 모집 금액에 따라 달라집니다. 모든 토큰의 51%는 사전 판매와 ICO를 통해 배포될 것입니다. [(사전 판매에서 모집된 ETH*2500)+(ICO에서 모집된 ETH)*2000]/0.51  <br /><br />  하드 캡은 90,000ETH이므로, 최대 총 공급은 90,000*2500/0.51= 441,176,470.5 AUC가 됩니다.",
+    "Did Auctus had a pre-sale": "Auctus는 ICO 전에 사전 판매를 했습니까?",
+    "Pre-sale was held from Oct": "사전 판매는 2017년 10월 3일부터 10월 7일까지 있었습니다. 사전 판매에 대한 통계는 다음과 같습니다.",
+    "ETH raised": " 958.9ETH 모금",
+    "Soft cap of": " 10시간 56분 동안 400ETH의 소프트캡 모집",
+    "valid transactions completed": " 유효 거래 272 건 완료",
+    "distinct addresses": " 254개의 고유 주소",
+    "An average of": " 참가자별 평균 3.52ETH",
+    "Min cap surpassed by": "최소 캡 240% 돌파",
+    "When will be the public token sale": "공개 토큰 판매는 언제입니까?",
+    "ICO is schedule to happen on the first quarter of 2018": "ICO는 2018년 1분기로 예정되어 있습니다.",
+    "Is this token sale open to US/China residents": "이 토큰 판매는 미국/중국 거주자들도 참가할 수 있습니까?",
+    "Participants should check the legality": "참가자들은 자신의 지역에서 AUC 토큰 구매가 적법한지 확인해야 합니다.",
+    "What will the pre-sale proceeds be used for": "사전 판매 금액은 어디에 사용됩니까?",
+    "Up to 1000 ETH raised": "사전 판매에서 모집된 금액 중 최대 1000ETH까지 초기 비즈니스 창업 비용, 홍보, 마케팅 서비스, 설명 비디오, 프로토타이핑에 사용될 것입니다. 1000ETH를 초과하는 자금은 스마트 계약에 묶이고 ICO 기금 모금으로 간주됩니다.",
+    "When should I claim AUC acquired in pre-sale": "사전 판매에서 획득한 AUC는 언제 청구할 수 있습니까?",
+    "Pre-sale participants will be able": "사전 판매 참가자는 ICO 스마트 계약이 배포되자마자 ICO 스마트 계약 기능에 따라 사전 판매 토큰을 전환할 수 있습니다. 사전 판매 토큰의 자세한 이전 지침은 ICO 페이지(<a class=\"faq-content-link\" href=\"https://auctus.org\">https://auctus.org</a>)에서 확인하실 수 있습니다. ",
+    "Which cryptocurrencies will be accepted": "기금 모금에서는 어떤 암호화폐를 받습니까?",
+    "Only ETH will be accepted": "ETH만 허용됩니다.",
+    "Will it be possible to issue more": "초기 배포 이후 토큰을 더 발행할 가능성이 있습니까?",
+    "All AUC tokens will be minted": "아닙니다. 모든 AUC 토큰은 초기 배포 시 발행됩니다.",
+    "Will there be a lockup period for AUC tokens": "토큰 개시 후 판매된 AUC 토큰에 거래 중지 기간이 있습니까?",
+    "after distribution is over": "아닙니다. 배포가 끝나면, 공개 배포에 할당된 AUC 토큰은 전환 가능합니다.",
+    "What will be the initial distribution": "AUC 토큰의 초기 배포는 얼마나 됩니까?",
+    "of AUC created will be allocated to Auctus": "생성된 AUC의 20%는 장기적으로 이해 관계를 일치시키기 위해, 설립자, 초기 후원자, 개발팀 등 Auctus 핵심 인력에 할당될 것입니다.",
+    "of all tokens will be distributed": "전체 토큰의 51%는 사전 판매와 ICO 동안 일반 납입자들에게 배포됩니다.",
+    "of tokens will be reserved for future stakeholders": " 토큰의 18%는 미래의 이해관계자가 미래의 자본금 조달에 사용할 수 있도록 유보되며, 초기 배포 후 12개월 동안 스마트 계약에 따라 묶어둘 것입니다.",
+    "of tokens are allocated for pre-sale": "토큰의 9%는 사전 판매 파트너와 자문위원들에게 할당됩니다.",
+    "of tokens are allocated for bounty campaigns": "토큰의 2%는 Auctus에 대해 알릴 수 있도록 포상금 캠페인을 위해 사용될 것입니다. 이 토큰에는 일반 납입자들에게 적용한 것과 동일한 규칙이 적용됩니다.",
+    "Will there be a lockup period for tokens allocated": "설립 팀, 파트너, 자문위원들에게 할당된 AUC 토큰에 거래 중지 기간이 있습니까?",
+    "AUC tokens allocated to Auctus Core": "AUC 핵심 인력에 할당된 Auctus 토큰은 즉시 거래되지 않습니다. 이들은 6개월 클리프 2년 베스팅 계획을 따를 것입니다. 즉 6개월마다 토큰의 25%가 귀속됩니다. 파트너와 자문위원에게 할당된 토큰은 3개월 클리프 6개월 베스팅을 따릅니다. 베스팅 규정은 스마트 계약을 통해 이행될 것입니다.",
+    "Team": "팀",
+    "How can I get involved": "어떻게 참여할 수 있습니까?",
+    "You can join our Slack": "우리의 <a class=\"faq-content-link\" href=\"https://chat.auctus.org\">Rocket Chat</a> 참여하고 참여하십시오."
+  },
+  ////////////////////// presale ////////////////////////////
+  "presale-masthead": {
+    "AUCTUS TOKEN SALE IS COMING": "AUCTUS 토큰 판매가 곧 시작됩니다!",
+    "Q1 2018": " 2018년 1분기",
+    "We ll soon release more details about it": "자세한 내용을 곧 공개하겠습니다. <b>새소식을 눈여겨 보십시오!</b><br><br> 지금은, 잊지 말고 저희 화이트리스트에 가입하십시오.",
+    "Join The Whitelist": "화이트리스트 가입하기"
+  },
+
+  "resources": {
+    "RESOURCES": "자료",
+    "LEARN ABOUT US": "Auctus를 알아보십시오!",
+    "WHITEPAPER": "백서",
+    "Read our comprehensive": "30페이지에 달하는 종합 백서를 읽어보십시오.",
+    "PRESENTATION": "프레젠테이션",
+    "Have a look at our user friendly presentation": "편리한 프레젠테이션을 통해 Auctus의 개요를 빠르게 이해하십시오."
+  },
+
+  "token-sale-overview": {
+    "TOKEN SALE OVERVIEW": "토큰 판매 개요",
+    "UNDERSTANDING THE AUCTUS TOKEN DISTRIBUTION": "Auctus 토큰의 배포 이해",
+    "PRE-SALE": "사전 판매",
+    "UNTIL OCT 6TH": "10월 6일까지",
+    "MIN CAP": "최소 캡 CAP",
+    "WHITELIST PARTICIPANT": "10ETH/화이트리스트 참가자",
+    "TO BE ANNOUNCED": "발표 예정",
+    "VESTING": "베스팅",
+    "TEAM": "팀",
+    "2 YEARS VESTING WITH 6 MONTHS CLIFF": "6개월 클리프 2년 베스팅",
+    "RESERVE FOR FUTURE STAKEHOLDERS": "미래 이해관계자를 위한 유보",
+    "1 YEAR IF DEEMED NECESSARY": "1년(필요하다고 생각되면,<br />이 토큰들은 소각될 것입니다)",
+    "PARTNERSHIPS AND ADVISORING": "제휴 및 자문",
+    "6 MONTHS VESTING WITH 3 MONTHS CLIFF": "3개월 클리프 6개월 베스팅"
+  },
+  /////////////////// TEAM //////////////////////////
+  "advisors": {
+    "AUCTUS ADVISOR BOARD": "AUCTUS 자문위원",
+    "INDUSTRY EXPERTS ADVISING AUCTUS": "AUCTUS에 자문하는 업계 전문가들",
+    "PENSION FINTECH ADVISOR": "연금 핀테크 자문위원",
+    "Martijn": "Martijn van Eck은 세계 핀테크 시장에 잘 알려진 Holland FinTech의 PensionTech 리더이며 암스테르담에 있는 유럽 FinTech50 보험 사정 및 리스크 분석 회사인 Symetrics의 설립 파트너이자 PensionTech 스타트업 트레이너, 멘토이자 코치입니다. Martijn의 기업가 경력, 연금 기술 경험, 연금과 FinTech 산업을 결합하려는 열정은 Auctus를 다음 단계로 끌어올리기 위해 필요한 핵심 역량입니다.",
+    "PENSION LEGAL ADVISOR": "연금 법률 자문위원",
+    "Eric": "Eric Paley 는 미국, 유럽, 아시아의 주요 업무 분야에서 협력하는 변호사 650명 이상으로 구성된 세계적 로펌 Nixon Peabody LLP의 파트너이자 직원 혜택 팀원입니다. 당사의 법적 컴플라이언스, 이행 피드백는 물론 당사가 연금업계에 발자취를 남길 수 있게 도움을 줄 것입니다.",
+    "Adam": "Adam은 미국, 런던, 상하이, 홍콩, 멜버른, 시드니에서 900명 이상의 변호사가 일하는 국제적 로펌 Seyfarth Shaw LLP의 파트너입니다. 그는 조직의 적격 은퇴 플랜 설립, 후원, 유지에서 발생하는 법적 문제에 대해 풍부한 한 자문 경험이 있습니다. ERISA 및 세법 준수 관련 대다수의 측면에 대해, 또 노동부 및 국세청 감사 및 플랜 보정 프로그램을 통해 고용주들을 자문해 왔습니다.",
+    "FINANCIAL ADVISOR": "금융 자문위원",
+    "Steven": "Steven은 UNC 샬럿 부교수로, 수학적 금융, 파생 증권, 자산 가격, 금융 계량경제학 부문을 연구하고 있습니다. Steven은 클램슨 대학에서 수학 박사 및 응용경제학 박사 학위를 받았습니다. 그는 Review of Derivatives Research, Review of Futures Markets, Journal of Risk and Insurance, 및 Journal of Asset Management와 같은 다수의 학회지에 논문을 발표했습니다."
+  },
+  "team": {
+    "AUCTUS TEAM": "AUCTUS 인력",
+    "MEET THE TEAM BEHIND AUCTUS": "AUCTUS 인력을 만나보십시오",
+    "LEAD DEVELOPER": "수석 개발자",
+    "Felipe": "Felipe는 12년 이상의 소프트웨어 개발 경험이 있으며, DTI Digital에서 운영 관리자 및 파트너로 7년 이상 근무한 경험을 전수하고 있습니다. 이들은 7년 내에 DTI Digital을 150명 이상 직원이 근무하는 전국적 IT 컨설팅 및 개발 기업으로 키웠습니다 DTI Digital에서 일하기 전에 Felipe는 Accenture에서 더 큰 개발자 팀을 담당하는 소프트웨어 개발자였습니다. 엔지니어링 학사와 인터랙션 디자인 석사 학위를 보유하고 있습니다. Auctus 플랫폼 개발을 이끌고 있으며 일반 경영 의사 결정을 담당합니다.",
+    "ADVISORY AND PARTNERSHIPS": "자문가 및 제휴",
+    "Raphael": "Raphael은 12년의 금융 서비스 경험을 이식하고 있습니다. 취리히 UBS Investment Bank, 런던 Deutsche Bank, 제네바 및 두바이 Noor Advisors에서 다양한 전략과 M&A 직책을 성공적으로 수행했습니다. 2012년 Swissline Real Estate를 창업하여 70개 이상의 포트폴리오를 보유하고 있습니다. Raphael은 5개 국어에 능통합니다. Basel과 Yale University에서 경제학을 공부하였고 INSEAD에서 Executive MBA를 받았습니다. Auctus에서는 국제 관계 및 전략적 제휴를 담당하고 있습니다.",
+    "FRONT END ENGINEER": "프런트 엔드 엔지니어",
+    "Guilherme": "Guilherme는 10년 이상의 소프트웨어 개발 경험을 보유하고 있으며, LG7의 공동 설립자이자 CTO입니다. 엔지니어링 학사이며, DTI Digital에서 소프트웨어 엔지니어로 커리어를 시작했고,  Livobooks를 창업했습니다. 현재도 LG7의 파트너인 Guilherme는 환경 영향을 줄이고 처벌 위험을 낮추어 궁극적으로 비용을 절감하는 폐기물 관리 소프트웨어인 ‘VG Residuos’라는 비즈니스를 시작했습니다. Auctus의 플랫폼을 조종하는 두뇌로 합류하여 사용자의 자금 관리 경험이 순조롭도록 보장하고 있습니다.",
+    "STRATEGY": "전략",
+    "Vinicius": "Vinicius는 브라질의 주요 연금 기금회사 중 한 곳(FUNPRESP-JUD)의 투자 분석가입니다. 그는 임원, 감독 및 간부회 위원은 물론 베네핏 플랜의 보증 자원에 직접 책임을 지는 투자위원 및 기타 연금 기금 직원에게 필수적인 사회 보장 전문가 인증원(Certification Institute of Social Security Professionals, ICSS)의 검증된 전문가입니다. Auctus에서는 제약 사항 및 가능한 미래의 문제점을 파악하고 적합한 해결책을 제시합니다.",
+    "LEAD ETHEREUM ENGINEER": "수석 이더리움 엔지니어",
+    "Ariny": "Ariny는 DTI Digital의 수석 소프트웨어 엔지니어로 6년 이상 경력이 있습니다. C#, Java, C++ 및 이더리움 블록체인 전문가입니다. 제어 및 자동화 공학 학사를 보유하고 있으며, Ariny는 가장 생산적인 개발자로서 실질적으로 어떤 것이든 프로그램할 수 있습니다. 그는 프로젝트가 끝날 때까지 쉬지 않고 일합니다. 당사 플랫폼의 이더리움 블록체인 레이어 구조 정의를 담당하는 당사의 핵심 프로그래머입니다.",
+    "SENIOR SOFTWARE ENGINEER": "선임 소프트웨어 엔지니어",
+    "Daniel Duarte": "Daniel은 DTI DIgital에서 7년 이상의 경력을 보유한 선임 소프트웨어 엔지니어로, 그곳에서 블록체인 기술을 추진하고 사내 블록체인 이니셔티브를 주도했습니다. 제어 및 자동화 공학 학사로 기계 학습 및 세일즈 인력 개발 및 관리 자격증도 보유하고 있습니다. Auctus에서는 Ariny와 긴밀하게 협력하며, 블록체인 기술과 자동화에 대한 해박한 지식을 활용하여 Auctus 플랫폼 개발에서 중요한 역할을 하고 있습니다. ",
+    "Thiago": "Thiago는 DTI DIgital에서 소프트웨어 엔지니어로 7년간 일하며, 리스크 관리 및 사이버 보안에 초점을 맞춘 다수의 대규모 소프트웨어 및 자동화 프로젝트를 이끌었습니다. 엔지니어링, 자동화 및 로봇 공학 학사이며,  Auctus 개발팀에서 중요한 역할을 하고 있습니다. Auctus 플랫폼의 안정화 및 보안에 집중하여, 해킹, 블록체인 과부하, 서버 과부하, 거래 오류와 같은 리스크를 최소화합니다.",
+    "Daniel Vitorino": "Daniel은 소프트웨어 엔지니어링에 8년 이상의 경험을 보유하고 있으며 그 중 7년은 개발 리더로 일했습니다. 그는 현재 남미 최대 은행인 Itaú에서 기술 리더로 일하고 있습니다. Daniel은 숙련된 풀스택 개발자로, 데이터베이스 모델링 및 튜닝부터 섬세한 모바일/웹 레이아웃 조정까지 노하우가 다양합니다. 제어 및 자동화 공학 학사를 보유하고 있으며, Auctus에서 플랫폼 디자인 및 개발을 담당하고 있습니다. 당사가 작으면서 효율적인 최고의 개발 방식을 적용할 수 있도록 보장합니다.",
+    "MARKETING COMMUNITY MANAGER": "마케팅 및 커뮤니티 관리자",
+    "Ludmila": "Ludmila는 소프트웨어 엔지니어링 경험이 5년 이상이며 대학 기업의 마케팅 팀을 담당하는 이사로도 일하고 있습니다. 소프트웨어 엔지니어링 학사를 보유한 Ludmila는 Auctus에서 커뮤니티를 개발하고 정기적으로 업데이트하는 역할을 합니다. 소프트웨어에 대한 이해가 깊으며, 마케팅 및 커뮤니티 관리에 대한 관심이 높아 Auctus의 가치를 더욱 효율적으로 높여주고 있습니다.",
+    "OPERATIONS": "운영",
+    "Daniel Boaventura": "Daniel은 ESAB에서 7년 간의 공급 체인 경험이 있는 공급 체인 관리 전문가입니다. 기계공학 학사이며 공급 체인 분야의 CBA 자격증을 가지고 있습니다. Auctus에서는 공급 체인에서의 경험을 활용하여 운영을 감독하고 있습니다. 당사의 일정에 맞도록 플랫폼 이행의 적시성을 조정하고 보장합니다. 또한, 포상금 캠페인 및 크라우드 세일도 담당합니다.",
+    "BRAND INTERACTION DESIGN": "브랜드 및 인터랙션 디자인",
+    "Samir": "10년 이상의 경력을 보유한 Samir는 드로 앤 게스 모바일 게임인 Gartic를 개발한 온라인 게임 스튜디오 Onrizon의 공동 창업자입니다. Behance에 3,000명 이상의 팔로어가 있습니다. Auctus의 Illustrator 및 Photoshop 도사로서 웹사이트 및 멋진 일러스트레이션 디자인을 담당하고 있으며, 이 디자인을 통해 당사의 가치와 사업 모델을 이해관계자와 소통할 수 있습니다.",
+    "Mariana": "Mariana는 DTI Digital의 UX/UI 디자이너로 그래픽 디자인 학사를 보유하고 있으며, UX/UI의 최신 뉴스를 논의하는 워크숍과 이벤트 참여로 커뮤니티와 항상 소통합니다. 6년 이상의 경험이 있으며, Auctus에서 플랫폼의 사용자 경험의 궁극적인 개선을 담당합니다."
+  }
+}

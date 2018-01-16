@@ -17,7 +17,10 @@
                     translation = "zh-cn";
                     break;
                 case "ja":
-                    translation = "ja-ja";
+                    translation = "ja-jp";
+                    break;
+                case "ko":
+                    translation = "ko-kr";
                     break;
             }
             changeLanguage(translation);

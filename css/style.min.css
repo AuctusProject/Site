@@ -830,7 +830,7 @@ header.masthead {
     transition: all 0.2s; }
   /* line 134, ../scss/_masthead.scss */
   header.masthead .large-header {
-    height: 160px !important; }
+    height: 185px !important; }
   @media (max-width: 991px) {
     /* line 139, ../scss/_masthead.scss */
     header.masthead .button-div {
@@ -2033,7 +2033,7 @@ footer {
     /* line 324, ../scss/_menu.scss */
     #topLanguage.open .quarter-circle {
       left: -350px;
-      height: 700px;
+      height: 780px;
       width: 700px; }
       /* line 356, ../scss/_menu.scss */
       #topLanguage.open .quarter-circle i.fa-language {
