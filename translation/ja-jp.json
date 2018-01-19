@@ -122,7 +122,7 @@
     "AUC Tokens stay in a trustless escrow": "AUCトークンは、トラスト不在のエスクローに留保され、リターンが予測に一致した場合や変動が容認できる範囲のリスクを超過しない場合にのみ差し引かれます。",
     "Token Launch and Usage of Raised Funds": "トークンの提供開始と調達された資金の用途",
     "What is the total supply of AUC tokens": "AUCトークンの総発行数とは？",
-    "The total supply of AUC tokens": "トークンの総発行数はプレセールとICOで調達された資金額により変動します。全トークンの51％がプレセールとICOで分配されます。[プレセールで調達されたETH*2500)+(ICOで調達されたETH)*2000]/0.51 \n\n ハードキャップは90,000 ETHであるため、最大の総発行数は90,000*2500/0.51= 441,176,470.5 AUCになります。",
+    "The total supply of AUC tokens": "トークンの総発行数はプレセールとICOで調達された資金額により変動します。全トークンの51％がプレセールとICOで分配されます。[プレセールで調達されたETH*2500)+(ICOで調達されたETH)*2000]/0.51 \n\n ハードキャップは25,000 ETHであるため、最大の総発行数は25,000*2500/0.51= 122,549,019.6 AUCになります。",
     "Did Auctus had a pre-sale": "AuctusはICOの前にプレセールを実施したのですか？",
     "Pre-sale was held from Oct": "プレセールは2017年10月3日から2017年10月7日まで実施されました。プレセールの実績統計は以下の通りです：",
     "ETH raised": "調達額 958.9 ETH",

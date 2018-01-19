@@ -122,7 +122,7 @@
     "AUC Tokens stay in a trustless escrow": "AUC Tokens stay in a trustless escrow and fees are paid only if the returns meet the predictions, as well as the fluctuations (volatility) do not exceed tolerated levels of risk.",
     "Token Launch and Usage of Raised Funds": "Token Launch and Usage of Raised Funds",
     "What is the total supply of AUC tokens": "What is the total supply of AUC tokens?",
-    "The total supply of AUC tokens": "The total supply of AUC tokens depends of the amount raised in the pre-sale and ICO. 51% of all tokens will be distributed during pre-sale and ICO. [(ETH raised in pre-sale*2500)+(ETH raised in ICO)*2000]/0.51 <br /><br /> As the hard-cap is 90,000 ETH, the maximum total supply will be 90,000*2500/0.51=441,176,470.5 AUC",
+    "The total supply of AUC tokens": "The total supply of AUC tokens depends of the amount raised in the pre-sale and ICO. 51% of all tokens will be distributed during pre-sale and ICO. [(ETH raised in pre-sale*2500)+(ETH raised in ICO)*2000]/0.51 <br /><br /> As the hard-cap is 25,000 ETH, the maximum total supply will be 25,000*2500/0.51=122,549,019.6 AUC",
     "Did Auctus had a pre-sale": "Did Auctus had a pre-sale prior to ICO?",
     "Pre-sale was held from Oct": "Pre-sale was held from Oct 3rd to Oct 7th, 2017. Here follows some stats about our pre-sale:",
     "ETH raised": "958.9 ETH raised",
@@ -155,7 +155,7 @@
     "AUC tokens allocated to Auctus Core": " AUC tokens allocated to Auctus’ Core Team will not be immediately tradable. They will have 2 years vesting with a 6-month cliff. This means every 6 months, 25% of those tokens will mature . Tokens allocated to partners and advisors will have 6-month vesting with 3-month cliff. The vesting rules will be enforced via smart contracts.",
     "Team": "Team",
     "How can I get involved": "How can I get involved?",
-    "You can join our Slack": "You can <a class=\"faq-content-link\" href=\"https:\/\/chat.auctus.org\">join our Rocket Chat</a>."
+    "You can join our Slack": "You can <a class=\"faq-content-link\" href=\"https://chat.auctus.org\">join our Rocket Chat</a>."
   },
   ////////////////////// presale ////////////////////////////
   "presale-masthead": {

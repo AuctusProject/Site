@@ -99,9 +99,9 @@ header.masthead {
 
             .translation-box {
                 display: inline-table;
-                margin-right: 4px;
+                padding-left: 5px;
                 border-left: solid 1px white;
-                text-align: right;
+                text-align: left;
                 min-width: 55px;
 
                 .fa-language:before {
@@ -110,7 +110,18 @@ header.masthead {
                 }
 
                 .language-box {
+                    max-width: 140px;
+                    text-align: right;
+                    padding-left: 14px;
 
+                    div {
+                        margin-left: 13px;
+                        display: inline;
+                    }
+
+                    div:last-child {
+                        margin-left: 9px;
+                    }
 
                     :hover {
                         font-weight: bold;
@@ -121,8 +132,18 @@ header.masthead {
 
                 .hide {
                     display: none;
+                    transition: all 0.2s;
                 }
             }
+        }
+
+        .drop-arrow {
+            margin-left: 8px;
+        }
+
+        .translation.open {
+            width: 124px;
+            transition: all 0.2s;
         }
     }
 
@@ -132,7 +153,7 @@ header.masthead {
     }
 
     .large-header {
-        height: 185px !important;
+        height: 120px !important;
     }
 
     @media (max-width: 991px) {
@@ -164,11 +185,11 @@ header.masthead {
         left: -60px;
     }
 
-   
+
 
     .container {
         padding: 0;
-    } 
+    }
 
     .button-div {
         display: inline-block;
