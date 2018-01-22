@@ -366,6 +366,9 @@ header.presale-masthead {
 
 section.supported-by {
     padding-top: 5rem !important;
+    .section-heading {
+    margin-bottom: 0px !important;
+    }
     background: linear-gradient(white 80%, #efefef 99%); /* Standard syntax */
     .links {
         align-content: center;
@@ -411,6 +414,9 @@ section.supported-by {
 
 section.as-seen-on {
     padding-top: 5rem !important;
+    .section-heading {
+    margin-bottom: 0px !important;
+    }
     background: linear-gradient( #efefef 80%, white 99%); /* Standard syntax */
     .links {
         align-content: center;
