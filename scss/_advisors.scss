@@ -4,8 +4,8 @@ section.advisors {
     background-color: #efefef;
 
     .advisor-card {
-        margin: 25px;
-        width: 490px;
+        margin: 10px;
+        width: 532px;
         position: relative;
         text-align: left;
         border: 1px solid #e6e6e6;
@@ -59,7 +59,11 @@ section.advisors {
 
         .card-description {
             display: inline-block;
-            width: 240px;
+            width: 284px;
+
+            @media(max-width:490px) {
+                width: 240px;
+            }
 
             .dots {
                 height: 10px;
@@ -69,10 +73,10 @@ section.advisors {
         }
 
         .card-description-content {
-            font-size: 12px;
-            text-align: center;
+            font-size: 14px;
+            text-align: left;
             padding: 15px;
-            min-height: 292px;
+            min-height: 408px;
         }
     }
 

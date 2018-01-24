@@ -4,3 +4,4 @@ bower_components
 css/style.min.css
 css/style.min.css.map
 .DS_Store
+scss/style.min.css

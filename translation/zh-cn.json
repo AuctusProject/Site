@@ -20,7 +20,7 @@
   "countdown": {
     "AUCTUS TOKEN SALE": "AUCTUS 代币销售",
     "DATE WILL BE ANNOUNCED SOON": "日期即将公布",
-    "JOIN CONVERSATION ON ROCKET CHAT": "加入 ROCKET.CHAT 聊天",
+    "JOIN CONVERSATION ON ROCKET CHAT": "加入 TELEGRAM 聊天",
     "READ ABOUT AUCTUS TOKEN SALE": "了解关于 AUCTUS 代币销售的详情",
     "JOIN THE WHITELIST": "加入白名单",
     "TOKEN SALE WEBSITE": "代币销售网站"
@@ -79,7 +79,7 @@
     "QUARTER 1": "第一季度",
     "Initial Token Sale": "首次代币发售",
     "Partnerships with Exchanges": "与交易所的合作关系",
-    "Development start of Beta Auctus Platform": "Beta Auctus 平台开发启动",
+    "Beta Release analytics advisory": "Beta Auctus 平台开发启动",
     "QUARTER 2": "第二季度",
     "Onboarding of traditional assets": "传统资产上线",
     "Office opening US Asia": "在美国和亚洲开设办事处",
@@ -122,7 +122,7 @@
     "AUC Tokens stay in a trustless escrow": "AUC 代币会处于无需信任托管下，只有在回报达到预测标准以及投资波幅不超过风险承受水平时才会产生费用支付。",
     "Token Launch and Usage of Raised Funds": "代币启动以及募集资金的使用",
     "What is the total supply of AUC tokens": "AUC 代币的总供应是多少？",
-    "The total supply of AUC tokens": "AUC 代币的总供应取决于在私募和 ICO 中筹集的资金数量。51% 的代币会在私募和 ICO 期间分发。[（私募的 ETH 乘以 2500）+（ICO 中筹集的 ETH 乘以 2000）]/ 0.51\n\n由于筹款硬性总量上限是 90000 ETH，因此总供应上限将是 90000 * 2500/0.51 = 441176470.5 AUC",
+    "The total supply of AUC tokens": "AUC 代币的总供应取决于在私募和 ICO 中筹集的资金数量。51% 的代币会在私募和 ICO 期间分发。[（私募的 ETH 乘以 2500）+（ICO 中筹集的 ETH 乘以 2000）]/ 0.51\n\n由于筹款硬性总量上限是 25000 ETH，因此总供应上限将是 25000 * 2500/0.51 = 122549019.6 AUC",
     "Did Auctus had a pre-sale": "Auctus 在 ICO 之前有过私募吗？",
     "Pre-sale was held from Oct": "私募在 2017 年 10 月 3 日至 10 月 7 日举行。以下是关于我们私募的数据：",
     "ETH raised": "筹集了 958.9 ETH",

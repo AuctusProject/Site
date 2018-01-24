@@ -323,7 +323,7 @@ section.faq.presale .check-buttons {
 
 @font-face {
   font-family: 'Helvetica Neue Light';
-  src: local("Helvetica Neue Light"), url("../fonts/HelveticaNeueLight.ttf") format("truetype");
+  src: local("Helvetica Neue Light"), url("../fonts/HelveticaNeueLight.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -532,9 +532,9 @@ a.linkedin-button {
   padding-top: 170px; }
 
 .auctus input {
-  height: 70px;
+  height: 42px;
   border: 0px;
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
   @media (max-width: 768px) {
     .auctus input {
@@ -543,8 +543,8 @@ a.linkedin-button {
 .auctus .input-group-btn button {
   background: #07dce0;
   border: 0px;
-  width: 150px;
-  font-size: 18px;
+  width: 120px;
+  font-size: 14px;
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   color: #002d78;
   cursor: pointer; }
@@ -691,24 +691,39 @@ header.masthead {
       cursor: pointer; }
       header.masthead .top-header .translation .translation-box {
         display: inline-table;
-        margin-right: 4px;
+        padding-left: 5px;
         border-left: solid 1px white;
-        text-align: right;
+        text-align: left;
         min-width: 55px; }
         header.masthead .top-header .translation .translation-box .fa-language:before {
           margin: 0 8px;
           font-size: 20px; }
-        header.masthead .top-header .translation .translation-box .language-box :hover {
-          font-weight: bold;
-          transition: all 0.2s;
-          cursor: pointer; }
+        header.masthead .top-header .translation .translation-box .language-box {
+          max-width: 140px;
+          text-align: right;
+          padding-left: 14px; }
+          header.masthead .top-header .translation .translation-box .language-box div {
+            margin-left: 13px;
+            display: inline; }
+          header.masthead .top-header .translation .translation-box .language-box div:last-child {
+            margin-left: 9px; }
+          header.masthead .top-header .translation .translation-box .language-box :hover {
+            font-weight: bold;
+            transition: all 0.2s;
+            cursor: pointer; }
         header.masthead .top-header .translation .translation-box .hide {
-          display: none; }
+          display: none;
+          transition: all 0.2s; }
+    header.masthead .top-header .drop-arrow {
+      margin-left: 8px; }
+    header.masthead .top-header .translation.open {
+      width: 124px;
+      transition: all 0.2s; }
   header.masthead .top-header:hover {
     background: #04148c;
     transition: all 0.2s; }
   header.masthead .large-header {
-    height: 140px !important; }
+    height: 120px !important; }
   @media (max-width: 991px) {
     header.masthead .button-div {
       margin-bottom: 30px; } }
@@ -1358,8 +1373,8 @@ section.team {
     max-width: 1200px;
     margin: auto; }
   section.team .team-card {
-    margin: 25px;
-    width: 320px;
+    margin: 10px;
+    width: 347px;
     position: relative;
     text-align: left;
     border: 1px solid #e6e6e6;
@@ -1409,10 +1424,10 @@ section.team {
         width: 50%;
         margin: auto; }
     section.team .team-card .card-description-content {
-      font-size: 12px;
-      text-align: center;
+      font-size: 14px;
+      text-align: left;
       padding: 15px;
-      min-height: 245px; }
+      min-height: 429px; }
   section.team .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
@@ -1456,6 +1471,10 @@ section.newsletter {
     padding-top: 150px; }
     section.newsletter .section-heading h3 {
       margin-top: 25px; }
+  section.newsletter .btn {
+    padding-right: 0;
+    padding-left: 0;
+    width: 160px; }
   section.newsletter .auctus-wm img {
     margin-top: -370px; }
   @media (max-width: 768px) {
@@ -1467,10 +1486,9 @@ section.newsletter {
 
 footer {
   position: relative;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 80px; }
   footer .navigation-icons {
-    padding-top: 10px; }
+    padding-top: 40px; }
     footer .navigation-icons a {
       text-decoration: unset; }
       footer .navigation-icons a i {
@@ -1765,7 +1783,7 @@ footer {
   @media (max-width: 991px) {
     #topLanguage.open .quarter-circle {
       left: -350px;
-      height: 700px;
+      height: 780px;
       width: 700px; }
       #topLanguage.open .quarter-circle i.fa-language {
         font-size: 27px;
@@ -1778,7 +1796,7 @@ section.roadmap {
   padding-bottom: 10em; }
   @media (min-width: 992px) {
     section.roadmap {
-      padding-bottom: 20em; } }
+      padding-bottom: 10em; } }
   @media (max-width: 768px) {
     section.roadmap {
       padding-bottom: 1em; } }
@@ -1792,9 +1810,9 @@ section.roadmap {
     -moz-box-shadow: 0px 0px 7px 0px #b3b3b3;
     box-shadow: 0px 0px 7px 0px #b3b3b3;
     border-radius: 7px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 175px;
     height: 100%; }
   section.roadmap .box.left {
     padding-right: 40px;
@@ -1827,25 +1845,21 @@ section.roadmap {
       color: #FFF;
       text-align: center;
       z-index: -1; } }
-  @media (min-width: 1200px) {
-    section.roadmap .box.left.third {
-      top: 18px !important; }
-    section.roadmap .box.right.third {
-      top: 168px !important; } }
   @media (min-width: 992px) {
     section.roadmap .box.right.first {
-      margin-top: 160px; }
+      margin-top: 110px; }
     section.roadmap .box.right.second {
-      top: 97px; }
+      top: 45px; }
     section.roadmap .box.right.third {
-      top: 194px; }
+      top: 90px; }
     section.roadmap .box.left.second {
       top: -65px; }
     section.roadmap .box.left.third {
-      top: 44px; } }
+      top: -20px; } }
   section.roadmap span.heading {
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-    font-size: 35px; }
+    font-size: 20px;
+    top: -4px; }
   section.roadmap .green {
     color: #09D8BA; }
   section.roadmap .dots {
@@ -1862,35 +1876,32 @@ section.roadmap {
       left: -50px; }
   section.roadmap .vertical-line.right {
     border-right: 2px solid black;
-    margin-right: 10px;
-    padding-right: 20px; }
+    margin-right: 0px;
+    padding-right: 20px;
+    margin-top: 10px; }
   section.roadmap .vertical-line.left {
     border-left: 2px solid black;
-    margin-left: 10px;
-    padding-left: 20px; }
+    margin-left: 0px;
+    padding-left: 20px;
+    margin-top: 10px; }
   section.roadmap .row.right, section.roadmap .row.left {
     position: relative; }
   section.roadmap .milestones span {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
-  @media (min-width: 1200px) {
-    section.roadmap .roadmap-line.higher {
-      height: 110px !important; }
-    section.roadmap .lines.third {
-      top: 102px !important; } }
   @media (min-width: 992px) {
     section.roadmap .lines {
       position: absolute;
       left: 50%; }
     section.roadmap .lines.second {
-      top: 30px; }
+      top: 5px; }
     section.roadmap .lines.first {
-      top: 95px; }
+      top: 70px; }
     section.roadmap .lines.third {
-      top: 128px; }
+      top: 48px; }
     section.roadmap .roadmap-line {
       background: #CCCCCC;
       width: 7px;
-      height: 110px;
+      height: 70px;
       position: relative;
       margin-top: 40px; }
     section.roadmap .roadmap-line.higher {
@@ -2739,7 +2750,7 @@ header.presale-masthead .box {
 header.presale-masthead a.btn {
   position: relative;
   z-index: 1000;
-  padding: 15px 55px;
+  padding: 15px 0;
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 20pt;
   letter-spacing: 3px;
@@ -2759,7 +2770,7 @@ header.presale-masthead a.btn.focus, header.presale-masthead a.btn:focus {
 @media (max-width: 768px) {
   header.presale-masthead a.btn {
     margin: 20px auto;
-    padding: 15px 30px !important; } }
+    padding: 15px 0 !important; } }
 
 header.presale-masthead a.btn:active, header.presale-masthead a.btn:focus {
   outline: 0;
@@ -2901,10 +2912,43 @@ header.presale-masthead .address-copy p.text-box {
     .circle-logo {
       margin-left: calc(50% - 250px); } }
 
+section.supported-by {
+  padding-top: 5rem !important;
+  background: linear-gradient(white 80%, #efefef 99%);
+  /* Standard syntax */ }
+  section.supported-by .section-heading {
+    margin-bottom: 0px !important; }
+  section.supported-by .links {
+    align-content: center; }
+    @media (max-width: 648px) {
+      section.supported-by .links {
+        padding: 20px 15px; } }
+    section.supported-by .links .link-box {
+      margin: 0 auto 30px auto;
+      height: 100px;
+      width: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    section.supported-by .links .rcn {
+      background-image: url(../img/partners/rcn.jpg); }
+    section.supported-by .links .microsoft {
+      background-image: url(../img/partners/microsoft.png); }
+    section.supported-by .links .zrx {
+      background-image: url(../img/partners/0x.png); }
+    section.supported-by .links .aragon {
+      background-image: url(../img/partners/aragon.png); }
+    section.supported-by .links .amadeus {
+      background-image: url(../img/partners/amadeus.png); }
+    section.supported-by .links .symetrics {
+      background-image: url(../img/partners/symetrics.png); }
+
 section.as-seen-on {
   padding-top: 5rem !important;
   background: linear-gradient(#efefef 80%, white 99%);
   /* Standard syntax */ }
+  section.as-seen-on .section-heading {
+    margin-bottom: 0px !important; }
   section.as-seen-on .links {
     align-content: center; }
     @media (max-width: 648px) {
@@ -2912,8 +2956,6 @@ section.as-seen-on {
         padding: 20px 15px; } }
     section.as-seen-on .links .link-box {
       margin: 0 auto 30px auto;
-      border: 10px solid white;
-      background-color: white;
       height: 100px;
       width: 150px;
       background-position: center;
@@ -2925,6 +2967,8 @@ section.as-seen-on {
       background-image: url(../img/presale/cryptocoinsnews.png); }
     section.as-seen-on .links .bloomberg {
       background-image: url(../img/presale/bloomberg.png); }
+    section.as-seen-on .links .investopedia {
+      background-image: url(../img/presale/investopedia.png); }
     section.as-seen-on .links .cointelegraph {
       background-image: url(../img/presale/cointelegraph.png); }
     section.as-seen-on .links .bitcoinist {
@@ -3043,8 +3087,8 @@ section.advisors {
   text-align: center;
   background-color: #efefef; }
   section.advisors .advisor-card {
-    margin: 25px;
-    width: 490px;
+    margin: 10px;
+    width: 532px;
     position: relative;
     text-align: left;
     border: 1px solid #e6e6e6;
@@ -3082,16 +3126,19 @@ section.advisors {
       color: black; }
     section.advisors .advisor-card .card-description {
       display: inline-block;
-      width: 240px; }
+      width: 284px; }
+      @media (max-width: 490px) {
+        section.advisors .advisor-card .card-description {
+          width: 240px; } }
       section.advisors .advisor-card .card-description .dots {
         height: 10px;
         width: 50%;
         margin: auto; }
     section.advisors .advisor-card .card-description-content {
-      font-size: 12px;
-      text-align: center;
+      font-size: 14px;
+      text-align: left;
       padding: 15px;
-      min-height: 292px; }
+      min-height: 408px; }
   section.advisors .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';

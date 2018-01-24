@@ -4,7 +4,7 @@ section.roadmap {
     padding-bottom: 10em;
 
     @media (min-width: 992px) {
-        padding-bottom: 20em;
+        padding-bottom: 10em;
     }
 
     @media (max-width: 768px) {
@@ -23,9 +23,9 @@ section.roadmap {
         -moz-box-shadow: 0px 0px 7px 0px rgba(179,179,179,1);
         box-shadow: 0px 0px 7px 0px rgba(179,179,179,1);
         border-radius: 7px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        min-height: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 175px;
         height: 100%;
     }
 
@@ -72,29 +72,17 @@ section.roadmap {
         }
     }
 
-
-    @media (min-width: 1200px) {
-
-        .box.left.third {
-            top: 18px !important;
-        }
-
-        .box.right.third {
-            top: 168px !important;
-        }
-    }
-
     @media (min-width: 992px) {
         .box.right.first {
-            margin-top: 160px;
+            margin-top: 110px;
         }
 
         .box.right.second {
-            top: 97px;
+            top: 45px;
         }
 
         .box.right.third {
-            top: 194px;
+            top: 90px;
         }
 
         .box.left.first {
@@ -105,13 +93,14 @@ section.roadmap {
         }
 
         .box.left.third {
-            top: 44px;
+            top: -20px;
         }
     }
 
     span.heading {
         font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-        font-size: 35px;
+        font-size: 20px;
+        top: -4px;
     }
 
     .green {
@@ -143,14 +132,16 @@ section.roadmap {
 
     .vertical-line.right {
         border-right: 2px solid black;
-        margin-right: 10px;
+        margin-right: 0px;
         padding-right: 20px;
+        margin-top: 10px;
     }
 
     .vertical-line.left {
         border-left: 2px solid black;
-        margin-left: 10px;
+        margin-left: 0px;
         padding-left: 20px;
+        margin-top: 10px;
     }
 
     .row.right, .row.left {
@@ -161,16 +152,6 @@ section.roadmap {
         font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     }
 
-    @media(min-width: 1200px) {
-        .roadmap-line.higher {
-            height: 110px !important;
-        }
-
-        .lines.third {
-            top: 102px !important;
-        }
-    }
-
     @media (min-width: 992px) {
 
         .lines {
@@ -179,21 +160,21 @@ section.roadmap {
         }
 
         .lines.second {
-            top: 30px;
+            top: 5px;
         }
 
         .lines.first {
-            top: 95px;
+            top: 70px;
         }
 
         .lines.third {
-            top: 128px;
+            top: 48px;
         }
 
         .roadmap-line {
             background: #CCCCCC;
             width: 7px;
-            height: 110px;
+            height: 70px;
             position: relative;
             margin-top: 40px;
         }
