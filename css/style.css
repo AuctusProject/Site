@@ -2413,6 +2413,8 @@ section.smartcontract {
     margin: auto;
     display: block;
     text-align: center; }
+  .confirm-body .dont-join {
+    white-space: unset !important; }
 
 header.check-masthead {
   min-height: 100%;
