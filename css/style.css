@@ -2399,6 +2399,20 @@ section.smartcontract {
     .confirm-body .confirm-card .confirm-card-content {
       font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
       font-size: 0.9rem; }
+  .confirm-body .join-telegram-button-div {
+    z-index: 1000;
+    padding: 6px 16px;
+    font-family: 'Helvetica Neue Bold',HelveticaNeue-Bold;
+    font-size: 11pt;
+    letter-spacing: 2px;
+    background: #030387;
+    color: #00fcfc;
+    cursor: pointer;
+    border: 0;
+    max-width: 250px;
+    margin: auto;
+    display: block;
+    text-align: center; }
 
 header.check-masthead {
   min-height: 100%;

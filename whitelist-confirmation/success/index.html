@@ -17,11 +17,11 @@
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.min.css?v=4" rel="stylesheet">
-    <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
+    <link href="../../css/style.min.css?v=4" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='../../favicon.ico' />
     <!-- Facebook Pixel Code -->
     <script>
   !function(f,b,e,v,n,t,s)
@@ -64,57 +64,29 @@ var i=new Image();i.src="https://alb.reddit.com/t.gif?q=CAAHAAABAAoACQAAAAAA6DAr
 	</head>
 
 <body class="confirm-body auctus">
-    <a href="../"><img src="../img/logo.png" style="margin-bottom: 50px;"></a>
+    <a href="../../"><img src="../../img/logo.png" style="margin-bottom: 50px;"></a>
     <div class="confirm-card">
-        <h2 style="color:red">
-            Attention
+        <h2>
+            Registration successful
         </h2>
         <div class="confirm-card-content">
-            <p>Please make sure to join our Telegram, we will always announce important information there first.
-            </p>
-            <div class="text-center">
-                <!--<img style="height:50px" src="../img/telegram.jpg" />-->
-                <div class="join-telegram-button-div" onclick="joinTelegramClick()">
-                    <i class="fa fa-telegram"></i>
-                    JOIN TELEGRAM
-                </div>
-            </div>
-            <h2 style="color:red; font-size: 16px !important; margin-top: 30px">
-                Stay safe from scammers
-            </h2>
-            <p style="font-size:16px">Be careful with all information on Telegram. Be aware that we will never send contract addresses on Telegram.</p>
-            <br />
-            <div class="text-right">
-                <a class="button" onclick="completeRegistration()" href="#">COMPLETE REGISTRATION »</a>
-            </div>
+            <p>You have successfully registered for the Auctus Token Sale.</p>
+            <p>The Auctus Token Sale start date will be announced soon.</p>
+	    	<p>Continue to monitor our <a href="https://t.me/AuctusProject" target="_blank">Telegram</a> and <a href="https://blog.auctus.org" target="_blank">our blog</a> for new announcements.</p>
+            Tips:
+            <ul>
+                <li>We will never send an&nbsp;email containing contract&nbsp;address&nbsp;</li>
+                <li>Bookmark <a href="http://auctus.org" target="_blank">auctus.org</a></li>
+                <li>Official communication via <a href="http://auctus.org" target="_blank">auctus.org</a>&nbsp;and&nbsp;<a href="https://twitter.com/AuctusProject" target="_blank">Twitter</a></li>
+                <li>Be careful of scams and&nbsp;alternate spellings of website&nbsp;</li>
+            </ul>
         </div>
+        <br>
+        <a class="button" href="http://auctus.org">continue to our website »</a>
     </div>
 
-    <div id="telegramConfirm" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Please, join our telegram to continue</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-footer">
-                    <a class="btn btn-link" data-dismiss="modal" href="./success">I don't want to join Telegram</a>
-                    
-                    <div class="join-telegram-button-div" onclick="joinTelegramModalClick()">
-                        <i class="fa fa-telegram"></i>
-                        JOIN TELEGRAM
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script>
-
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
@@ -124,25 +96,6 @@ var i=new Image();i.src="https://alb.reddit.com/t.gif?q=CAAHAAABAAoACQAAAAAA6DAr
 
         ga('create', 'UA-106121445-1', 'auto');
         ga('send', 'pageview');
-
-        var showTelegramModal = true;
-        function joinTelegramClick() {
-            showTelegramModal = false;
-            window.open("https://t.me/AuctusProject", "_blank");
-        }
-
-        function joinTelegramModalClick() {
-            joinTelegramClick();
-            location.href = "./success";
-        }
-
-        function completeRegistration() {
-            if (showTelegramModal)
-                $('#telegramConfirm').modal();
-            else {
-                location.href = "./success";
-            }
-        }
     </script>
 </body>
 
