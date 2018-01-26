@@ -51,7 +51,49 @@
     if (languageCookie)
         changeLanguage(languageCookie);
 
+    $.fn.visible = function (partial) {
+
+        var $t = $(this),
+            $w = $(window),
+            viewTop = $w.scrollTop() - 70,
+            viewBottom = viewTop + $w.height() - 70,
+            _top = $t.offset().top,
+            _bottom = _top + $t.height(),
+            compareTop = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+    };
+
 })(jQuery); // End of use strict
+
+
+$(window).scroll(function (event) {
+
+    $(".show-up").each(function (i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("come-in");
+            el.addClass("come-in-bottom");
+        }
+    });
+
+    $(".roadmap .box.left").each(function (i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("come-in");
+            el.addClass("come-in-left");
+        }
+    });
+    $(".roadmap .box.right").each(function (i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("come-in");
+            el.addClass("come-in-right");
+        }
+    });
+});
 
 function onAgreePreSale(){
     $('.agree-terms').css('display', 'none');
