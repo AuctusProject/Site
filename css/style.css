@@ -2678,7 +2678,8 @@ header.presale-masthead .text-container {
   width: 100%;
   position: relative;
   padding: 0;
-  margin: auto; }
+  margin: auto;
+  margin-left: auto !important; }
   header.presale-masthead .text-container h1 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     font-size: 37pt;
@@ -2698,7 +2699,6 @@ header.presale-masthead .text-container {
   @media (max-width: 768px) {
     header.presale-masthead .text-container {
       text-align: center;
-      margin-left: unset !important;
       width: 100%; }
       header.presale-masthead .text-container h1 {
         font-size: 27pt; }
@@ -3102,6 +3102,9 @@ section.faq .text-center a {
 section.advisors {
   text-align: center;
   background-color: #efefef; }
+  section.advisors .advisors-content {
+    max-width: 1200px;
+    margin: auto; }
   section.advisors .advisor-card {
     margin: 10px;
     width: 532px;

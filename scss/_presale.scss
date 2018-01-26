@@ -47,7 +47,9 @@ header.presale-masthead {
         width: 100%;
         position: relative;
         padding: 0;
-        margin:auto;
+        margin: auto;
+        margin-left: auto !important;
+
         h1 {
             font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
             font-size: 37pt;
@@ -72,7 +74,6 @@ header.presale-masthead {
 
         @media (max-width: 768px) {
             text-align: center;
-            margin-left: unset !important;
             width: 100%;
 
             h1 {

@@ -3,6 +3,11 @@ section.advisors {
     text-align: center;
     background-color: #efefef;
 
+    .advisors-content {
+        max-width: 1200px;
+        margin: auto;
+    }
+
     .advisor-card {
         margin: 10px;
         width: 532px;
@@ -115,17 +120,17 @@ section.advisors {
     }
 }
 
-    img.v {
-        position: fixed;
-        z-index: 100000;
-        bottom: -440px;
-        left: -235px;
-        transform: rotate(21deg);
-        transition: all 0.2s;
-    }
+img.v {
+    position: fixed;
+    z-index: 100000;
+    bottom: -440px;
+    left: -235px;
+    transform: rotate(21deg);
+    transition: all 0.2s;
+}
 
-    img.v.visible {
-        transition: all 0.2s;
-        bottom: -36px !important;
-        left: -21px !important;
-    }
+img.v.visible {
+    transition: all 0.2s;
+    bottom: -36px !important;
+    left: -21px !important;
+}
