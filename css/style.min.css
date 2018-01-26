@@ -640,6 +640,10 @@ a.linkedin-button {
   cursor: pointer; }
 
 /* line 247, ../scss/_global.scss */
+.show-up {
+  opacity: 0; }
+
+/* line 251, ../scss/_global.scss */
 .icons-panel {
   display: block !important;
   width: 290px;
@@ -647,10 +651,10 @@ a.linkedin-button {
   position: absolute;
   top: 0;
   right: 0; }
-  /* line 255, ../scss/_global.scss */
+  /* line 259, ../scss/_global.scss */
   .icons-panel a {
     text-decoration: unset; }
-  /* line 259, ../scss/_global.scss */
+  /* line 263, ../scss/_global.scss */
   .icons-panel i.fa {
     display: inline-block;
     font-size: 18px;
@@ -662,7 +666,7 @@ a.linkedin-button {
     width: 32px;
     padding-top: 6px;
     text-align: center; }
-  /* line 272, ../scss/_global.scss */
+  /* line 276, ../scss/_global.scss */
   .icons-panel i.fa:hover {
     cursor: pointer;
     border-radius: 50%;
@@ -2114,20 +2118,21 @@ section.roadmap {
     padding-top: 20px;
     padding-bottom: 20px;
     min-height: 175px;
-    height: 100%; }
-  /* line 32, ../scss/_roadmap.scss */
+    height: 100%;
+    opacity: 0; }
+  /* line 33, ../scss/_roadmap.scss */
   section.roadmap .box.left {
     padding-right: 40px;
     text-align: right; }
-  /* line 37, ../scss/_roadmap.scss */
+  /* line 38, ../scss/_roadmap.scss */
   section.roadmap .box.right {
     padding-left: 40px; }
   @media (max-width: 991px) {
-    /* line 42, ../scss/_roadmap.scss */
+    /* line 43, ../scss/_roadmap.scss */
     section.roadmap .box {
       margin-top: 30px; } }
   @media (min-width: 992px) {
-    /* line 48, ../scss/_roadmap.scss */
+    /* line 49, ../scss/_roadmap.scss */
     section.roadmap .box.left:after {
       content: 'after';
       width: 80px;
@@ -2139,7 +2144,7 @@ section.roadmap {
       color: #FFF;
       text-align: center;
       z-index: -1; }
-    /* line 61, ../scss/_roadmap.scss */
+    /* line 62, ../scss/_roadmap.scss */
     section.roadmap .box.right:after {
       content: 'after';
       width: 70px;
@@ -2152,89 +2157,89 @@ section.roadmap {
       text-align: center;
       z-index: -1; } }
   @media (min-width: 992px) {
-    /* line 76, ../scss/_roadmap.scss */
+    /* line 77, ../scss/_roadmap.scss */
     section.roadmap .box.right.first {
       margin-top: 110px; }
-    /* line 80, ../scss/_roadmap.scss */
+    /* line 81, ../scss/_roadmap.scss */
     section.roadmap .box.right.second {
       top: 45px; }
-    /* line 84, ../scss/_roadmap.scss */
+    /* line 85, ../scss/_roadmap.scss */
     section.roadmap .box.right.third {
       top: 90px; }
-    /* line 91, ../scss/_roadmap.scss */
+    /* line 92, ../scss/_roadmap.scss */
     section.roadmap .box.left.second {
       top: -65px; }
-    /* line 95, ../scss/_roadmap.scss */
+    /* line 96, ../scss/_roadmap.scss */
     section.roadmap .box.left.third {
       top: -20px; } }
-  /* line 100, ../scss/_roadmap.scss */
+  /* line 101, ../scss/_roadmap.scss */
   section.roadmap span.heading {
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 20px;
     top: -4px; }
-  /* line 106, ../scss/_roadmap.scss */
+  /* line 107, ../scss/_roadmap.scss */
   section.roadmap .green {
     color: #09D8BA; }
-  /* line 110, ../scss/_roadmap.scss */
+  /* line 111, ../scss/_roadmap.scss */
   section.roadmap .dots {
     width: 50%; }
-  /* line 114, ../scss/_roadmap.scss */
+  /* line 115, ../scss/_roadmap.scss */
   section.roadmap .dots.pull-right {
     margin-right: 50px; }
-    /* line 117, ../scss/_roadmap.scss */
+    /* line 118, ../scss/_roadmap.scss */
     section.roadmap .dots.pull-right span {
       position: relative;
       right: -50px; }
-  /* line 123, ../scss/_roadmap.scss */
+  /* line 124, ../scss/_roadmap.scss */
   section.roadmap .dots.pull-left {
     margin-left: 50px; }
-    /* line 126, ../scss/_roadmap.scss */
+    /* line 127, ../scss/_roadmap.scss */
     section.roadmap .dots.pull-left span {
       position: relative;
       left: -50px; }
-  /* line 133, ../scss/_roadmap.scss */
+  /* line 134, ../scss/_roadmap.scss */
   section.roadmap .vertical-line.right {
     border-right: 2px solid black;
     margin-right: 0px;
     padding-right: 20px;
     margin-top: 10px; }
-  /* line 140, ../scss/_roadmap.scss */
+  /* line 141, ../scss/_roadmap.scss */
   section.roadmap .vertical-line.left {
     border-left: 2px solid black;
     margin-left: 0px;
     padding-left: 20px;
     margin-top: 10px; }
-  /* line 147, ../scss/_roadmap.scss */
+  /* line 148, ../scss/_roadmap.scss */
   section.roadmap .row.right, section.roadmap .row.left {
     position: relative; }
-  /* line 151, ../scss/_roadmap.scss */
+  /* line 152, ../scss/_roadmap.scss */
   section.roadmap .milestones span {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
   @media (min-width: 992px) {
-    /* line 157, ../scss/_roadmap.scss */
+    /* line 158, ../scss/_roadmap.scss */
     section.roadmap .lines {
       position: absolute;
       left: 50%; }
-    /* line 162, ../scss/_roadmap.scss */
+    /* line 163, ../scss/_roadmap.scss */
     section.roadmap .lines.second {
       top: 5px; }
-    /* line 166, ../scss/_roadmap.scss */
+    /* line 167, ../scss/_roadmap.scss */
     section.roadmap .lines.first {
       top: 70px; }
-    /* line 170, ../scss/_roadmap.scss */
+    /* line 171, ../scss/_roadmap.scss */
     section.roadmap .lines.third {
       top: 48px; }
-    /* line 174, ../scss/_roadmap.scss */
+    /* line 175, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line {
       background: #CCCCCC;
       width: 7px;
       height: 70px;
       position: relative;
       margin-top: 40px; }
-    /* line 182, ../scss/_roadmap.scss */
+    /* line 183, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.higher {
       height: 135px; }
-    /* line 186, ../scss/_roadmap.scss */
+    /* line 187, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line:after {
       content: "";
       width: 200px;
@@ -2246,13 +2251,13 @@ section.roadmap {
       left: -6px;
       color: #FFF;
       text-align: center; }
-    /* line 199, ../scss/_roadmap.scss */
+    /* line 200, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.active {
       background: #0BE6D0 !important; }
-    /* line 203, ../scss/_roadmap.scss */
+    /* line 204, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.active:after {
       background: #0BE6D0 !important; }
-    /* line 207, ../scss/_roadmap.scss */
+    /* line 208, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line:after {
       background: #CCCCCC !important; } }
 
@@ -3868,3 +3873,30 @@ img.v.visible {
   /* line 100, ../scss/_textalign.scss */
   .text-justify-lg {
     text-align: justify; } }
+/* line 1, ../scss/_animation.scss */
+.come-in {
+  animation: come-in 1s ease forwards;
+  opacity: 1 !important;
+  transition: all 0.7s; }
+
+/* line 7, ../scss/_animation.scss */
+.come-in-left {
+  transform: translateX(-150px); }
+
+/* line 11, ../scss/_animation.scss */
+.come-in-right {
+  transform: translateX(150px); }
+
+/* line 15, ../scss/_animation.scss */
+.come-in-bottom {
+  transform: translatey(150px); }
+
+/* line 19, ../scss/_animation.scss */
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+  /* So they look staggered */ }
+
+@keyframes come-in {
+  to {
+    transform: translateX(0);
+    transform: translateY(0); } }
