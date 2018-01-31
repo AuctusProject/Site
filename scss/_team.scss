@@ -1,22 +1,20 @@
 // Styling for the features section
 header.team-header {
-    height: 320px;
+    height: 85px;
     width: 100%;
     min-height: 0px;
-    background: #0884cd; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Safari 5.1 to 6.0  60%*/
-    background: -o-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* Standard syntax */
-    @media (max-width: 768px) {
-        background: #0884cd; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* Standard syntax */
-    }
-
-
+    background: #efefef; /* For browsers that do not support gradients */
+    //background: -webkit-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Safari 5.1 to 6.0  60%*/
+    //background: -o-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Opera 11.1 to 12.0 */
+    //background: -moz-linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* For Firefox 3.6 to 15 */
+    //background: linear-gradient(180deg,#04148c 36%,#0884cd 90%); /* Standard syntax */
+    //@media (max-width: 768px) {
+    //    background: #0884cd; /* For browsers that do not support gradients */
+    //    background: -webkit-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Safari 5.1 to 6.0  60%*/
+    //    background: -o-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Opera 11.1 to 12.0 */
+    //    background: -moz-linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* For Firefox 3.6 to 15 */
+    //    background: linear-gradient(180deg, #04148c 36%,#0884cd 90%); /* Standard syntax */
+    //}
     .text-container {
         padding-top: 150px;
         padding-left: 0;
@@ -24,19 +22,47 @@ header.team-header {
         padding-bottom: 0;
         width: 100%;
         text-align: center;
-        margin:auto;
+        margin: auto;
+
         h1 {
             margin-bottom: 0px;
         }
 
-        ;
+        
     }
 }
 
 section.team {
     text-align: center;
-    background-color: #efefef;
+    background: #03178d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg,#03178d 36%,#0884cd 90%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(180deg,#03178d 36%,#0884cd 90%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg,#03178d 36%,#0884cd 90%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg,#03178d 36%,#0884cd 90%); /* Standard syntax */
+    @media (max-width: 768px) {
+        background: #0884cd; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(180deg, #03178d 36%,#0884cd 90%); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(180deg, #03178d 36%,#0884cd 90%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(180deg, #03178d 36%,#0884cd 90%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(180deg, #03178d 36%,#0884cd 90%); /* Standard syntax */
+    }
+
     padding-bottom: 5em;
+
+    .section-heading {
+        h2 {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        hr {
+            border-top-color: #00bdff;
+            width: 100px;
+        }
+    }
 
     .team-content {
         max-width: 1200px;
@@ -44,14 +70,13 @@ section.team {
     }
 
     .team-card {
-        margin: 10px;
-        width: 347px;
+        margin: 20px 28px;
+        width: 310px;
         position: relative;
         text-align: left;
         border: 1px solid #e6e6e6;
-        border-radius: 3px;
+        border-radius: 7px;
         background: white;
-        box-shadow: 1px 2px 2px 1px #c1c1c1;
         display: inline-block;
         vertical-align: top;
 
@@ -67,7 +92,7 @@ section.team {
         }
 
         .card-picture {
-            width: 220px;
+            width: 200px;
             margin-top: 20px;
         }
 
@@ -79,30 +104,49 @@ section.team {
 
         .card-name-position {
             display: inline-block;
-            width: calc(100% - 80px);
             margin-top: 20px;
-            text-align: left;
+            text-align: center;
         }
 
         .card-linkedin {
-            content: url("../img/team/linkedin-icon.png");
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: #00bdff;
+            font-size: 20px;
             display: inline-block;
+            border: 2px solid #00bdff;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            padding-top: 3px;
         }
 
         .card-behance {
-            content: url("../img/team/behance-icon.png");
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: #00bdff;
+            font-size: 20px;
+            display: inline-block;
+            border: 2px solid #00bdff;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            padding-top: 3px;
             display: inline-block;
         }
 
         .card-name {
             font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-            font-size: 22px !important;
+            font-size: 26px !important;
             line-height: 24px;
             color: rgba(0, 45, 120, 1);
+            margin-bottom:5px;
         }
 
         .card-position {
-            font-size: 12px !important;
+            font-size: 14px !important;
             color: black;
         }
 
@@ -117,10 +161,21 @@ section.team {
         }
 
         .card-description-content {
-            font-size: 14px;
+            font-size: 15px;
             text-align: left;
             padding: 15px;
-            min-height: 429px;
+            height: auto;
+        }
+
+        .expand-content {
+            text-align: center;
+            color: #00bdff;
+            font-weight: bold;
+            font-size: 40px;
+            margin-top: -15px;
+            span{
+                cursor:pointer;
+            }
         }
     }
 
