@@ -247,6 +247,23 @@ a.linkedin-button {
 .show-up{
     opacity:0;
 }
+.blue {
+    .icons-panel {
+        i.fa {
+            color: #00fcfc;
+            border: 2px solid #00fcfc;
+        }
+    }
+}
+
+.white {
+    .icons-panel {
+        i.fa {
+            color: #002d78;
+            border: 2px solid #002d78;
+        }
+    }
+}
 
 .icons-panel {
     display: block !important;
@@ -263,14 +280,13 @@ a.linkedin-button {
     i.fa {
         display: inline-block;
         font-size: 18px;
-        color: #00fcfc;
         margin: 30px 2px;
         border: 2px solid #00fcfc;
         border-radius: 50%;
         height: 32px;
         width: 32px;
         padding-top: 6px;
-        text-align:center;
+        text-align: center;
     }
 
     i.fa:hover {
