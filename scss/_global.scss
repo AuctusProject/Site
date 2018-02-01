@@ -13,7 +13,7 @@ p {
 
 h2 {
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-    font-size: 36px !important;
+    font-size: 40px !important;
     color: rgba(0, 45, 120, 1);
 }
 
@@ -264,7 +264,9 @@ a.linkedin-button {
         }
     }
 }
-
+a:hover{
+    text-decoration:none;
+}
 .icons-panel {
     display: block !important;
     width: 290px;
@@ -276,7 +278,7 @@ a.linkedin-button {
     a {
         text-decoration: unset;
     }
-
+    
     i.fa {
         display: inline-block;
         font-size: 18px;

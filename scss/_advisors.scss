@@ -3,24 +3,25 @@ section.advisors {
     text-align: center;
     background-color: #fafafa;
 
-    hr{
+    hr {
         width: 100px;
+    }
+
+    .section-heading{
+        margin-bottom:3rem;
     }
 
     .advisors-content {
         max-width: 1200px;
         margin: auto;
+        margin-bottom: 25px;
     }
 
     .advisor-card {
         margin: 10px;
-        width: 532px;
+        width: 350px;
         position: relative;
         text-align: left;
-        border: 1px solid #e6e6e6;
-        border-radius: 3px;
-        background: white;
-        box-shadow: 1px 2px 2px 1px #c1c1c1;
         display: inline-block;
         vertical-align: top;
 
@@ -29,14 +30,14 @@ section.advisors {
         }
 
         .card-picture-name {
-            width: 240px;
+            width: 100%;
             display: inline-block;
             vertical-align: top;
         }
 
         .card-picture {
-            border-radius: 3px 0px 0px 0px;
-            height: 240px;
+            height: 200px;
+            border-color: #002d78;
         }
 
         .card-name-position-linkedin {
@@ -44,35 +45,42 @@ section.advisors {
         }
 
         .card-name-position {
-            margin: 10px;
+            margin: 15px;
+            margin-top: 26px;
             display: inline-block;
             width: calc(100% - 65px);
         }
 
         .card-linkedin {
-            content: url("../img/team/linkedin-icon.png");
+            position: absolute;
+            right: 15px;
+            top: 228px;
+            color: #00bdff;
+            font-size: 20px;
             display: inline-block;
+            border: 2px solid #00bdff;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            padding-top: 3px;
+            text-align: center;
         }
 
         .card-name {
             font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-            font-size: 22px !important;
+            font-size: 26px !important;
             line-height: 24px;
             color: rgba(0, 45, 120, 1);
         }
 
         .card-position {
-            font-size: 12px !important;
+            font-size: 15px !important;
             color: black;
         }
 
         .card-description {
             display: inline-block;
-            width: 284px;
-
-            @media(max-width:490px) {
-                width: 240px;
-            }
+            width: 100%;
 
             .dots {
                 height: 10px;
@@ -84,8 +92,15 @@ section.advisors {
         .card-description-content {
             font-size: 14px;
             text-align: left;
-            padding: 15px;
-            min-height: 408px;
+            padding: 5px 15px 15px 15px;
+        }
+
+        .card-read-more {
+            padding: 0 15px 15px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #00bdff;
+            cursor: pointer;
         }
     }
 
