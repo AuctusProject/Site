@@ -280,7 +280,22 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="modal-back-panel">
+            <div class="modal-card">
+                <div class="modal-name">
+                    <span>Martijn Van Eck</span> <div class="close"><i class="fa fa-close"></i></div>
+                </div>
+                <div class="modal-position" i18n="PENSION LEGAL ADVISOR">
+                    PENSION LEGAL ADVISOR
+                </div>
+                <div class="modal-description">
+                    Felipe has more than 12 years of software development experience. He brings along more than 7 years experience as Operations Manager and Partner at DTI Digital.
+                    <br><br>
+                    Within seven years, they grew DTI Digital to a nationwide IT consulting and development enterprise with more than 150 employees. Prior to DTI Digital, Felipe was a Software Developer at Accenture, responsible for a larger team of developers.
+                </div>
 
+            </div>
         </div>
     </section>
     <section class="team" id="team">
@@ -813,6 +828,20 @@
 
         ga('create', 'UA-106121445-1', 'auto');
         ga('send', 'pageview');
+    </script>
+    <script>
+        $('.card-read-more').click(function () {
+            $('.modal-back-panel').addClass('show');
+            $('.modal-back-panel').fadeIn();
+        });
+        $('.modal-back-panel').click( function (e) {
+            if (e.target !== this)
+                return;
+            $('.modal-back-panel').removeClass('show');
+        });
+        $('.modal-back-panel .close').click( function () {
+            $('.modal-back-panel').removeClass('show');
+        });
     </script>
 </body>
 

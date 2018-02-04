@@ -3773,7 +3773,7 @@ section.advisors {
     @media (max-width: 490px) {
       /* line 20, ../scss/_advisors.scss */
       section.advisors .advisor-card {
-        width: 240px; } }
+        width: 320px; } }
     /* line 32, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-picture-name {
       width: 100%;
@@ -3881,6 +3881,58 @@ img.v.visible {
   transition: all 0.2s;
   bottom: -36px !important;
   left: -21px !important; }
+
+/* line 158, ../scss/_advisors.scss */
+.modal-back-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0; }
+  /* line 169, ../scss/_advisors.scss */
+  .modal-back-panel .modal-card {
+    background-color: white;
+    width: 520px;
+    height: 300px;
+    margin: auto;
+    margin-top: 17%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #484848;
+    padding: 35px;
+    text-align: left; }
+    /* line 180, ../scss/_advisors.scss */
+    .modal-back-panel .modal-card .modal-name {
+      font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
+      font-size: 26px !important;
+      line-height: 24px;
+      color: #002d78; }
+    /* line 187, ../scss/_advisors.scss */
+    .modal-back-panel .modal-card .modal-position {
+      margin-bottom: 15px;
+      display: inline-block;
+      width: calc(100% - 65px); }
+    /* line 193, ../scss/_advisors.scss */
+    .modal-back-panel .modal-card .modal-description {
+      font-size: 14px; }
+    /* line 197, ../scss/_advisors.scss */
+    .modal-back-panel .modal-card .close {
+      font-size: 14px;
+      width: 26px;
+      height: 26px;
+      border-radius: 13px;
+      border: solid 1px #767676;
+      padding: 5px 7px;
+      color: #767676; }
+
+/* line 209, ../scss/_advisors.scss */
+.modal-back-panel.show {
+  visibility: visible !important;
+  opacity: 1;
+  transition: all 1s; }
 
 /* line 1, ../scss/_textalign.scss */
 .text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
