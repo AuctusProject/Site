@@ -306,7 +306,7 @@
         </div>
         
         <div class="content team-content">
-            <div class="team-card">
+            <div class="team-card ">
                 <div class="card-picture-name">
                     <img class="img-responsive profile-img img-circle border card-picture" src="../img/team/felipe.jpg">
                     <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/felipe-silveira-2739121b/" target="_blank">
@@ -324,17 +324,20 @@
                     </a>
                 </div>
                 <div class="card-description">
-                    <div class="card-description-content" i18n="Felipe">
-                        Felipe has more than 12 years of software development experience. He brings along more than 7 years experience as Operations Manager and Partner at DTI Digital. 
+                    <div class="card-description-content" i18n="Felipe" short-description="Lucas ipsum dolor sit amet chewbacca chewbacca ventress solo fett ben darth wampa darth kit."
+                            expanded-description="Lucas ipsum dolor sit amet chewbacca chewbacca ventress solo fett ben darth wampa darth kit. sit amet chewbacca chewbacca ventress.Lucas ipsum dolor sit amet chewbacca chewbacca ventress solo fett ben darth wampa darth kit. sit amet chewbacca chewbacca ventress.Lucas ipsum dolor sit amet chewbacca chewbacca ventress solo fett ben darth wampa darth kit. sit amet chewbacca chewbacca ventress.">
+                        Felipe has more than 12 years of software development experience. He brings along more than 7 years experience as Operations Manager and Partner at DTI Digital.
                         <br><br>
                         Within seven years, they grew DTI Digital to a nationwide IT consulting and development enterprise with more than 150 employees. Prior to DTI Digital, Felipe was a Software Developer at Accenture, responsible for a larger team of developers.
                         <br><br>
                         He holds a BSc in Engineering and a postgraduate degree in Interaction Design. He is leading the development of the Auctus Platform and is responsible for general management decisions.
                     </div>
+                    <div class="shrink-content">
+                        <span>-</span>
+                    </div>
                     <div class="expand-content">
                         <span>+</span>
                     </div>
-                    
                 </div>
             </div>
             <div class="team-card">
@@ -687,6 +690,9 @@
                 </div>
             </div>
         </div>
+        <div class="modal-back-panel">
+            
+        </div>
     </section>
     <footer style="background-color: lightgrey; padding:50px; margin-top:0px !important">
         <div class="container" >
@@ -830,18 +836,45 @@
         ga('send', 'pageview');
     </script>
     <script>
-        $('.card-read-more').click(function () {
-            $('.modal-back-panel').addClass('show');
-            $('.modal-back-panel').fadeIn();
+        $('.advisors .card-read-more').click(function () {
+            $('.advisors .modal-back-panel').addClass('show');
+            $('.advisors .modal-back-panel').fadeIn();
         });
-        $('.modal-back-panel').click( function (e) {
+        $('.advisors .modal-back-panel').click( function (e) {
             if (e.target !== this)
                 return;
-            $('.modal-back-panel').removeClass('show');
+            $('.advisors .modal-back-panel').removeClass('show');
         });
-        $('.modal-back-panel .close').click( function () {
-            $('.modal-back-panel').removeClass('show');
+        $('.advisors .modal-back-panel .close').click( function () {
+            $('.advisors .modal-back-panel').removeClass('show');
         });
+    </script>
+    <script>
+        $('.expand-content').click(function (e) {
+            $(e.target).parent().parent().parent().addClass('show')
+            $('.team .modal-back-panel').addClass('show');
+            $('.show .expand-content').css('display', 'none')
+            $('.show .shrink-content').css('display', 'block')
+            $('.team .modal-back-panel').fadeIn();
+
+            $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
+
+        });
+        $('.team .modal-back-panel').click(function (e) {
+            if (e.target !== this)
+                return;
+            closeCard();
+        });
+
+        $('.shrink-content').click(function (e) {
+            closeCard();
+        });
+        function closeCard() {
+            $('.show .expand-content').css('display', 'block')
+            $('.show .shrink-content').css('display', 'none')
+            $('.show .card-description-content').html($('.show .card-description-content').attr('short-description'));
+            $('.team .show').removeClass('show');
+        }
     </script>
 </body>
 
