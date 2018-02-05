@@ -14,7 +14,11 @@ section.advisors {
     .advisors-content {
         max-width: 1200px;
         margin: auto;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
+
+        @media (max-width: 490px) {
+            max-width: 100%;
+        }
     }
 
     .advisor-card {
@@ -148,6 +152,11 @@ section.advisors {
         z-index: 5;
         visibility: hidden;
         opacity: 0;
+        transition: all 0.5s;
+
+        @media (max-width: 490px) {
+            z-index: 10005
+        }
 
         .modal-card {
             background-color: white;
@@ -159,6 +168,15 @@ section.advisors {
             box-shadow: 0px 0px 5px #484848;
             padding: 35px;
             text-align: left;
+
+            @media (max-width: 490px) {
+                height: 100%;
+                width: 100%;
+                margin-top: 0;
+                position: absolute;
+                top: 100%;
+                transition: all 0.5s;
+            }
 
             .modal-name {
                 font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
@@ -193,22 +211,29 @@ section.advisors {
         visibility: visible !important;
         opacity: 1;
         transition: all 1s;
+
+        @media (max-width: 490px) {
+            .modal-card {
+                top: 0%;
+                transition: all 1s;
+            }
+        }
     }
 }
 
-img.v {
-    position: fixed;
-    z-index: 100000;
-    bottom: -440px;
-    left: -235px;
-    transform: rotate(21deg);
-    transition: all 0.2s;
-}
+    img.v {
+        position: fixed;
+        z-index: 100000;
+        bottom: -440px;
+        left: -235px;
+        transform: rotate(21deg);
+        transition: all 0.2s;
+    }
 
-img.v.visible {
-    transition: all 0.2s;
-    bottom: -36px !important;
-    left: -21px !important;
-}
+    img.v.visible {
+        transition: all 0.2s;
+        bottom: -36px !important;
+        left: -21px !important;
+    }
 
 

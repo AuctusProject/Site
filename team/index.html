@@ -35,10 +35,11 @@
             }
         }
     </style>
-
+    <link rel="stylesheet" type="text/css" href="../css/slick.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css?v=5" />
 </head>
 
-<body id="page-top" class="auctus">
+<body id="page-top" class="auctus" style="background-color: #fafafa;">
     <header class="masthead team-header">
         <div id="topLanguage" class="mobile-only">
             <div class="quarter-circle language">
@@ -402,7 +403,7 @@
                     
                 </div>
             </div>
-
+            _
             <div class="team-card">
                 <div class="card-picture-name">
                     <div class="card-linkedin">
@@ -691,7 +692,40 @@
             </div>
         </div>
         <div class="modal-back-panel">
-            
+           <div class="modal-card team-card mobile-only">
+                <div class="card-picture-name">
+                    <img class="img-responsive profile-img img-circle border card-picture" src="../img/team/felipe.jpg">
+                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/felipe-silveira-2739121b/" target="_blank">
+                        <div class="card-name-position">
+                            <div class="card-name">
+                                Felipe Silveira
+                            </div>
+                            <div class="card-position" i18n="LEAD DEVELOPER">
+                                LEAD DEVELOPER
+                            </div>
+                        </div>
+                        <div class="card-linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-description">
+                    <div class="card-description-content" i18n="Felipe" short-description="Lucas ipsum dolor sit amet chewbacca chewbacca ventress solo fett ben darth wampa darth kit."
+                         expanded-description="Lucas ipsum dolor sit amet chewbacca chewbacca ventress solo fett ben darth wampa darth kit. sit amet chewbacca chewbacca ventress.Lucas ipsum dolor sit amet chewbacca chewbacca ventress solo fett ben darth wampa darth kit. sit amet chewbacca chewbacca ventress.Lucas ipsum dolor sit amet chewbacca chewbacca ventress solo fett ben darth wampa darth kit. sit amet chewbacca chewbacca ventress.">
+                        Felipe has more than 12 years of software development experience. He brings along more than 7 years experience as Operations Manager and Partner at DTI Digital.
+                        <br><br>
+                        Within seven years, they grew DTI Digital to a nationwide IT consulting and development enterprise with more than 150 employees. Prior to DTI Digital, Felipe was a Software Developer at Accenture, responsible for a larger team of developers.
+                        <br><br>
+                        He holds a BSc in Engineering and a postgraduate degree in Interaction Design. He is leading the development of the Auctus Platform and is responsible for general management decisions.
+                    </div>
+                    <div class="shrink-content">
+                        <span>-</span>
+                    </div>
+                    <div class="expand-content">
+                        <span>+</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer style="background-color: lightgrey; padding:50px; margin-top:0px !important">
@@ -801,7 +835,7 @@
     </footer>
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="../js/slick.min.js"></script>
     <script src="../js/translation.js"></script>
     <script>
         $(".menu-content a").click(function (e) {
@@ -851,12 +885,16 @@
     </script>
     <script>
         $('.expand-content').click(function (e) {
-            $(e.target).parent().parent().parent().addClass('show')
+            var teamCard = $(e.target).parent().parent().parent();
+            teamCard.addClass('show')
             $('.team .modal-back-panel').addClass('show');
             $('.show .expand-content').css('display', 'none')
             $('.show .shrink-content').css('display', 'block')
             $('.team .modal-back-panel').fadeIn();
-
+            $('.modal-back-panel .modal-card img').attr('src', teamCard.find('img').attr('src'));
+            $('.modal-back-panel .modal-card .card-name-position-linkedin').attr('href', teamCard.find('.card-name-position-linkedin').attr('href'));
+            $('.modal-back-panel .modal-card .card-name').html(teamCard.find('.card-name').html());
+            $('.modal-back-panel .modal-card .card-position').html(teamCard.find('.card-position').html());
             $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
 
         });
@@ -874,6 +912,17 @@
             $('.show .shrink-content').css('display', 'none')
             $('.show .card-description-content').html($('.show .card-description-content').attr('short-description'));
             $('.team .show').removeClass('show');
+        }
+    </script>
+
+    <script>
+        if ($(window).width() <= 490) {
+            $('.content.team-content').slick({
+                dots: true
+            });
+            $('.advisors-content').slick({
+                dots: true
+            });
         }
     </script>
 </body>

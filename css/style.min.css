@@ -1628,7 +1628,7 @@ section.team {
     @media (max-width: 768px) {
       /* line 61, ../scss/_team.scss */
       section.team .team-card {
-        margin: 25px auto; } }
+        margin: 25px 20px; } }
     /* line 79, ../scss/_team.scss */
     section.team .team-card .card-picture-name {
       width: 100%;
@@ -1720,37 +1720,29 @@ section.team {
     /* line 180, ../scss/_team.scss */
     section.team .team-card .shrink-content {
       display: none; }
-    /* line 184, ../scss/_team.scss */
-    section.team .team-card .shrink-content {
-      text-align: center;
-      color: #00bdff;
-      font-weight: bold;
-      font-size: 40px;
-      margin-top: -15px;
-      background-color: white;
-      border-radius: 5px; }
-      /* line 193, ../scss/_team.scss */
-      section.team .team-card .shrink-content span {
-        cursor: pointer; }
-  /* line 199, ../scss/_team.scss */
+    @media (max-width: 490px) {
+      /* line 61, ../scss/_team.scss */
+      section.team .team-card {
+        z-index: 10005; } }
+  /* line 190, ../scss/_team.scss */
   section.team .team-card.show {
     visibility: visible !important;
     opacity: 1;
     transition: all 1s;
     z-index: 10; }
-  /* line 206, ../scss/_team.scss */
+  /* line 197, ../scss/_team.scss */
   section.team .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 20px; }
-  /* line 212, ../scss/_team.scss */
+  /* line 203, ../scss/_team.scss */
   section.team .position {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     font-size: 14px;
     letter-spacing: 2px;
     margin-top: 5px;
     margin-bottom: 60px; }
-  /* line 220, ../scss/_team.scss */
+  /* line 211, ../scss/_team.scss */
   section.team .modal-back-panel {
     position: fixed;
     top: 0;
@@ -1760,48 +1752,41 @@ section.team {
     background-color: rgba(0, 54, 179, 0.5);
     z-index: 5;
     visibility: hidden;
-    opacity: 0; }
-    /* line 231, ../scss/_team.scss */
-    section.team .modal-back-panel .modal-card {
-      background-color: white;
-      width: 520px;
-      height: 300px;
-      margin: auto;
-      margin-top: 17%;
-      border-radius: 5px;
-      box-shadow: 0px 0px 5px #484848;
-      padding: 35px;
-      text-align: left; }
-      /* line 242, ../scss/_team.scss */
-      section.team .modal-back-panel .modal-card .modal-name {
-        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-        font-size: 26px !important;
-        line-height: 24px;
-        color: #002d78; }
-      /* line 249, ../scss/_team.scss */
-      section.team .modal-back-panel .modal-card .modal-position {
-        margin-bottom: 15px;
-        display: inline-block;
-        width: calc(100% - 65px); }
-      /* line 255, ../scss/_team.scss */
-      section.team .modal-back-panel .modal-card .modal-description {
-        font-size: 14px; }
-      /* line 259, ../scss/_team.scss */
-      section.team .modal-back-panel .modal-card .close {
-        font-size: 14px;
-        width: 26px;
-        height: 26px;
-        border-radius: 13px;
-        border: solid 1px #767676;
-        padding: 5px 7px;
-        color: #767676; }
-  /* line 271, ../scss/_team.scss */
+    opacity: 0;
+    transition: all 1s; }
+  /* line 224, ../scss/_team.scss */
   section.team .modal-back-panel.show {
     visibility: visible !important;
     opacity: 1;
     transition: all 1s; }
+    @media (max-width: 490px) {
+      /* line 224, ../scss/_team.scss */
+      section.team .modal-back-panel.show {
+        z-index: 20005; }
+        /* line 232, ../scss/_team.scss */
+        section.team .modal-back-panel.show .modal-card {
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          max-height: 100%;
+          padding-top: 40px; }
+          /* line 240, ../scss/_team.scss */
+          section.team .modal-back-panel.show .modal-card .card-linkedin {
+            margin: 35px; }
+          /* line 244, ../scss/_team.scss */
+          section.team .modal-back-panel.show .modal-card .card-description-content {
+            padding: 15px 35px; } }
+  /* line 251, ../scss/_team.scss */
+  section.team .slick-dots li button:before {
+    color: white;
+    opacity: .85; }
 
-/* line 279, ../scss/_team.scss */
+/* line 257, ../scss/_team.scss */
+.slick-dots li button:before {
+  font-size: 26px !important; }
+
+/* line 261, ../scss/_team.scss */
 .remove-padding {
   padding-top: 0; }
 
@@ -3838,8 +3823,12 @@ section.advisors {
   section.advisors .advisors-content {
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 25px; }
-  /* line 20, ../scss/_advisors.scss */
+    margin-bottom: 50px; }
+    @media (max-width: 490px) {
+      /* line 14, ../scss/_advisors.scss */
+      section.advisors .advisors-content {
+        max-width: 100%; } }
+  /* line 24, ../scss/_advisors.scss */
   section.advisors .advisor-card {
     margin: 10px;
     width: 350px;
@@ -3848,28 +3837,28 @@ section.advisors {
     display: inline-block;
     vertical-align: top; }
     @media (max-width: 490px) {
-      /* line 20, ../scss/_advisors.scss */
+      /* line 24, ../scss/_advisors.scss */
       section.advisors .advisor-card {
         width: 320px; } }
-    /* line 32, ../scss/_advisors.scss */
+    /* line 36, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-picture-name {
       width: 100%;
       display: inline-block;
       vertical-align: top; }
-    /* line 38, ../scss/_advisors.scss */
+    /* line 42, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-picture {
       height: 200px;
       border-color: #002d78; }
-    /* line 43, ../scss/_advisors.scss */
+    /* line 47, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-name-position-linkedin {
       text-decoration: none; }
-    /* line 47, ../scss/_advisors.scss */
+    /* line 51, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-name-position {
       margin: 15px;
       margin-top: 26px;
       display: inline-block;
       width: calc(100% - 65px); }
-    /* line 54, ../scss/_advisors.scss */
+    /* line 58, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-linkedin {
       position: absolute;
       right: 15px;
@@ -3883,67 +3872,67 @@ section.advisors {
       border-radius: 20px;
       padding-top: 3px;
       text-align: center; }
-    /* line 69, ../scss/_advisors.scss */
+    /* line 73, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-name {
       font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
       font-size: 26px !important;
       line-height: 24px;
       color: #002d78; }
-    /* line 76, ../scss/_advisors.scss */
+    /* line 80, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-position {
       font-size: 15px !important;
       color: black; }
-    /* line 81, ../scss/_advisors.scss */
+    /* line 85, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-description {
       display: inline-block;
       width: 100%; }
-      /* line 85, ../scss/_advisors.scss */
+      /* line 89, ../scss/_advisors.scss */
       section.advisors .advisor-card .card-description .dots {
         height: 10px;
         width: 50%;
         margin: auto; }
-    /* line 92, ../scss/_advisors.scss */
+    /* line 96, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-description-content {
       font-size: 14px;
       text-align: left;
       padding: 5px 15px 15px 15px; }
-    /* line 98, ../scss/_advisors.scss */
+    /* line 102, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-read-more {
       padding: 0 15px 15px 15px;
       font-size: 14px;
       font-weight: bold;
       color: #00bdff;
       cursor: pointer; }
-  /* line 107, ../scss/_advisors.scss */
+  /* line 111, ../scss/_advisors.scss */
   section.advisors .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 20px; }
-  /* line 113, ../scss/_advisors.scss */
+  /* line 117, ../scss/_advisors.scss */
   section.advisors .position {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     font-size: 14px;
     letter-spacing: 2px;
     margin-top: 5px;
     margin-bottom: 60px; }
-  /* line 121, ../scss/_advisors.scss */
+  /* line 125, ../scss/_advisors.scss */
   section.advisors .image {
     margin-left: 40px; }
-  /* line 125, ../scss/_advisors.scss */
+  /* line 129, ../scss/_advisors.scss */
   section.advisors .image:after {
     content: url("../img/team/linkedin-icon.png");
     position: relative;
     z-index: 100;
     right: 26px;
     top: 0px; }
-  /* line 133, ../scss/_advisors.scss */
+  /* line 137, ../scss/_advisors.scss */
   section.advisors .image.behance:after {
     content: url("../img/team/behance-icon.png");
     position: relative;
     z-index: 100;
     right: 26px;
     top: 0px; }
-  /* line 141, ../scss/_advisors.scss */
+  /* line 145, ../scss/_advisors.scss */
   section.advisors .modal-back-panel {
     position: fixed;
     top: 0;
@@ -3953,8 +3942,13 @@ section.advisors {
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 5;
     visibility: hidden;
-    opacity: 0; }
-    /* line 152, ../scss/_advisors.scss */
+    opacity: 0;
+    transition: all 0.5s; }
+    @media (max-width: 490px) {
+      /* line 145, ../scss/_advisors.scss */
+      section.advisors .modal-back-panel {
+        z-index: 10005; } }
+    /* line 161, ../scss/_advisors.scss */
     section.advisors .modal-back-panel .modal-card {
       background-color: white;
       width: 520px;
@@ -3965,21 +3959,30 @@ section.advisors {
       box-shadow: 0px 0px 5px #484848;
       padding: 35px;
       text-align: left; }
-      /* line 163, ../scss/_advisors.scss */
+      @media (max-width: 490px) {
+        /* line 161, ../scss/_advisors.scss */
+        section.advisors .modal-back-panel .modal-card {
+          height: 100%;
+          width: 100%;
+          margin-top: 0;
+          position: absolute;
+          top: 100%;
+          transition: all 0.5s; } }
+      /* line 181, ../scss/_advisors.scss */
       section.advisors .modal-back-panel .modal-card .modal-name {
         font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 26px !important;
         line-height: 24px;
         color: #002d78; }
-      /* line 170, ../scss/_advisors.scss */
+      /* line 188, ../scss/_advisors.scss */
       section.advisors .modal-back-panel .modal-card .modal-position {
         margin-bottom: 15px;
         display: inline-block;
         width: calc(100% - 65px); }
-      /* line 176, ../scss/_advisors.scss */
+      /* line 194, ../scss/_advisors.scss */
       section.advisors .modal-back-panel .modal-card .modal-description {
         font-size: 14px; }
-      /* line 180, ../scss/_advisors.scss */
+      /* line 198, ../scss/_advisors.scss */
       section.advisors .modal-back-panel .modal-card .close {
         font-size: 14px;
         width: 26px;
@@ -3988,13 +3991,18 @@ section.advisors {
         border: solid 1px #767676;
         padding: 5px 7px;
         color: #767676; }
-  /* line 192, ../scss/_advisors.scss */
+  /* line 210, ../scss/_advisors.scss */
   section.advisors .modal-back-panel.show {
     visibility: visible !important;
     opacity: 1;
     transition: all 1s; }
+    @media (max-width: 490px) {
+      /* line 216, ../scss/_advisors.scss */
+      section.advisors .modal-back-panel.show .modal-card {
+        top: 0%;
+        transition: all 1s; } }
 
-/* line 199, ../scss/_advisors.scss */
+/* line 224, ../scss/_advisors.scss */
 img.v {
   position: fixed;
   z-index: 100000;
@@ -4003,7 +4011,7 @@ img.v {
   transform: rotate(21deg);
   transition: all 0.2s; }
 
-/* line 208, ../scss/_advisors.scss */
+/* line 233, ../scss/_advisors.scss */
 img.v.visible {
   transition: all 0.2s;
   bottom: -36px !important;
