@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.min.css?v=8" rel="stylesheet">
+    <link href="../css/style.min.css?v=6" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
 
     <!-- Temporary navbar container fix -->
@@ -162,7 +162,7 @@
                 </div>
                 <div class="card-description">
                     <div class="card-description-content" full-description="Martijn van Eck is Head of PensionTech at Holland FinTech, a global marketplace for industry stakeholders to come together, as well as a former co-founder of Symetrics, a European FinTech 50 actuarial and risk analytics company. Furthermore, he is a frequent speaker, as well as a renowned start-up trainer, mentor and coach. <br/><br/>He holds a B.A. from Hogeschool van Arnhem en Nijmegen, Netherlands. <br/><br/>Martijn is advising Auctus on the development of the Auctus Platform, business plan, actuarial related questions and general PensionTech questions." >
-                        Founding Partner at Symetrics, European FinTech50 company, specialised on actuarial and risk analytics software.
+                        Head of Pension at Holland Fintech, co-founder of Symetrics, a European FinTech 50 actuarial and risk analytics company.
                     </div>
                     <div class="card-read-more">
                         <span>Read more about Martijn</span>
@@ -190,7 +190,7 @@
                     </div>
                 <div class="card-description">
                     <div class="card-description-content" full-description="Steven is an Associate Professor of Finance at UNC Charlotte where he conducts research in the areas of mathematical finance, derivative securities, asset pricing, and financial econometrics and a Partner at Horizon Investments. <br/><br/>He has a Ph.D. in Mathematical Sciences and a Ph.D. in Applied Economics, both from Clemson University. <br/><br/>Steven is advising Auctus in general management questions, with focus on implementation of robo-advisory technology, analytics and financial product offering.">
-                        Associate Professor of Finance at the University of North Carolina at Charlotte.
+                        Partner at Horizon Investments, Associate Professor of Finance at UNC Charlotte. Ph.D. in Mathematical Sciences and Economics.
                     </div>
                     <div class="card-read-more">
                         <span>Read more about Steven</span>
@@ -218,7 +218,7 @@
                 </div>
                 <div class="card-description">
                     <div class="card-description-content" full-description="Philippe is a well connected advisor within the development community of cryptocurrencies. Having worked as relationship manager for developers at 0x project, he is very familiar with collaborations between cryptocurrency projects, as well as network effects. <br/><br/>Philippe studied statistics at the University of Montreal. <br/><br/>Philippe is advising Auctus on development related topics, such as integration of other protocols into the Auctus Platform, collaboration with other cryptocurrency projects, as well as best practice implementations.">
-                        Project and development advisor with focus on collaboration with other cryptocurrency projects.
+                        Former relationship manager for developers at 0x. Focused on cryptocurrency development and collaborations. 
                     </div>
                     <div class="card-read-more">
                         <span>Read more about Philippe</span>
@@ -246,7 +246,7 @@
                 </div>
                 <div class="card-description">
                     <div class="card-description-content" full-description="Eric Paley is a Partner and member of the Employee Benefits team at Nixon Peabody LLP, a global law firm, with more than 650 attorneys collaborating across major practice areas in the U.S., Europe and Asia. <br/><br/>He holds a B.A. from Cornell University and a J.D. from Syracuse University College of Law. <br/><br/>Eric is advising Auctus in legal compliance, implementation feedback, as well as further establish our footprint within the retirement industry.">
-                        B.A. from Cornell University and J.D. from Syracuse University College of Law
+                        Partner at Nixon Peabody and member of the Employee Benefits team. Former Associate Partner at Hodgson Russ. JD from Syracuse University College Law.
                     </div>
                     <div class="card-read-more">
                         <span>Read more about Eric</span>
@@ -274,7 +274,7 @@
                 </div>
                 <div class="card-description">
                     <div class="card-description-content" full-description="Adam is a Partner at Seyfarth Shaw LLP, an international law firm with more than 900 attorneys in the U.S. and around the world. <br/><br/>He holds a B.A. from the University of Illinois at Urbana-Campaign and a J.D. from Chicago-Kent College of Law, Illinois Institute of Technology. <br/><br/>Adam is supporting Auctus with market feedback, as well as advise how to roll out the business globally from a legal and compliance perspective." >
-                        B.A. from the University of Illinois at UrbanaChampaign and J.D. from Chicago-Kent College of Law, Illinois Institute of Technology.
+                        Partner at Seyfarth Shaw, member of Employee Benefits and Executive Compensation Department. J.D. from Chicago-Kent College of Law.
                     </div>
                     <div class="card-read-more">
                         <span>Read more about Adam</span>
@@ -282,7 +282,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal-back-panel">
+        <div class="modal-back-panel" id="advisor-member">
             <div class="modal-card">
                 <div class="modal-name">
                     <span>Martijn Van Eck</span> <div class="close"><i class="fa fa-close"></i></div>
@@ -479,7 +479,7 @@
                     </a>
                 </div>
                 <div class="card-description">
-                    <div class="card-description-content" i18n="Felipe" short-description=""
+                    <div class="card-description-content" short-description=""
                          expanded-description="Felipe has more than 12 years of software development experience. He brings along more than 7 years experience as Operations Manager and Partner at DTI Digital. Felipe grew DTI Digital with 4 other partners within 7 years, from a small team of 5, to a nationwide IT consulting and development enterprise with more than 150 employees.<br /><br />Prior to DTI Digital, Felipe was a Software Developer at Accenture, responsible for a larger team of developers. <br /><br />He holds a BSc in Engineering and a postgraduate degree in Interaction Design. <br /><br />At Auctus, Felipe is responsible to coordinate the development of the Auctus Platform and bridging between general management and development.">
                     </div>
                     <div class="shrink-content">
@@ -672,7 +672,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal-back-panel">
+        <div class="modal-back-panel" id="team-member">
            <div class="modal-card team-card">
                 <div class="card-picture-name">
                     <img class="img-responsive profile-img img-circle border card-picture" src="../img/team/felipe.jpg">
@@ -854,15 +854,20 @@
             $('.advisors .modal-back-panel .modal-description').html(advisorCard.find('.card-description-content').attr('full-description'));
             $('.advisors .modal-back-panel').addClass('show');
             $('.advisors .modal-back-panel').fadeIn();
+            window.location.href = '#advisor-member';
         });
         $('.advisors .modal-back-panel').click( function (e) {
             if (e.target !== this)
                 return;
-            $('.advisors .modal-back-panel').removeClass('show');
+            closeAdvisorCard();
         });
         $('.advisors .modal-back-panel .close').click( function () {
-            $('.advisors .modal-back-panel').removeClass('show');
+            closeAdvisorCard();
         });
+
+        function closeAdvisorCard() {
+            $('.advisors .modal-back-panel').removeClass('show');
+        }
     </script>
     <script>
         $('.expand-content > span').click(function (e) {
@@ -877,14 +882,24 @@
             $('.modal-back-panel .modal-card .card-name-position-linkedin').attr('href', teamCard.find('.card-name-position-linkedin').attr('href'));
             $('.modal-back-panel .modal-card .card-name').html(teamCard.find('.card-name').html());
             $('.modal-back-panel .modal-card .card-position').html(teamCard.find('.card-position').html());
-            $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
-
+            if ($(document).width() <= 490) {
+                $('body').addClass('block-scroll');
+                $('.modal-back-panel .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
+                window.location.href = '#team-member';
+            }
+            else {
+                $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
+            }
+            
         });
+
         $('.team .modal-back-panel').click(function (e) {
             if (e.target !== this)
                 return;
             closeCard();
         });
+
+        
 
         $('.shrink-content').click(function (e) {
             closeCard();
@@ -894,6 +909,7 @@
             $('.show .shrink-content').css('display', 'none')
             $('.show .card-description-content').html($('.show .card-description-content').attr('short-description'));
             $('.team .show').removeClass('show');
+            $('body').removeClass('block-scroll');
         }
     </script>
 
@@ -909,6 +925,13 @@
         }
         else {
             $('.team .modal-card').hide();
+        }
+
+        window.onpopstate = function () {
+            if (document.location.href.indexOf("#team-member") == -1)
+                closeCard();
+            if (document.location.href.indexOf("#advisor-member") == -1)
+                closeAdvisorCard();
         }
     </script>
 </body>
