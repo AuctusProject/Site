@@ -672,7 +672,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal-back-panel">
+        <div class="modal-back-panel" id="team-member">
            <div class="modal-card team-card">
                 <div class="card-picture-name">
                     <img class="img-responsive profile-img img-circle border card-picture" src="../img/team/felipe.jpg">
@@ -877,14 +877,24 @@
             $('.modal-back-panel .modal-card .card-name-position-linkedin').attr('href', teamCard.find('.card-name-position-linkedin').attr('href'));
             $('.modal-back-panel .modal-card .card-name').html(teamCard.find('.card-name').html());
             $('.modal-back-panel .modal-card .card-position').html(teamCard.find('.card-position').html());
-            $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
-
+            if ($(document).width() <= 490) {
+                $('body').addClass('block-scroll');
+                $('.modal-back-panel .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
+                window.location.href = '#team-member';
+            }
+            else {
+                $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
+            }
+            
         });
+
         $('.team .modal-back-panel').click(function (e) {
             if (e.target !== this)
                 return;
             closeCard();
         });
+
+        
 
         $('.shrink-content').click(function (e) {
             closeCard();
@@ -894,6 +904,7 @@
             $('.show .shrink-content').css('display', 'none')
             $('.show .card-description-content').html($('.show .card-description-content').attr('short-description'));
             $('.team .show').removeClass('show');
+            $('body').removeClass('block-scroll');
         }
     </script>
 
@@ -909,6 +920,11 @@
         }
         else {
             $('.team .modal-card').hide();
+        }
+
+        window.onpopstate = function () {
+            if (document.location.href.indexOf("#team-member") == -1)
+                closeCard();
         }
     </script>
 </body>

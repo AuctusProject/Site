@@ -587,6 +587,9 @@ a:hover {
     border-radius: 50%;
     box-shadow: 0px 0px 10px #00fcfc; }
 
+.block-scroll {
+  overflow-y: hidden; }
+
 section.about {
   padding-top: 0;
   background: -moz-linear-gradient(44.48% 12.16% -78.67deg, white 22.35%, #9de6ff 58.05%, #9ef2f0 75.95%, white 93.96%);
@@ -1421,7 +1424,7 @@ section.team {
         border-radius: 7px;*/
     display: inline-block;
     vertical-align: top;
-    max-height: 456px; }
+    max-height: 366px; }
     @media (max-width: 768px) {
       section.team .team-card {
         margin: 25px 20px; } }
