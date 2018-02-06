@@ -2254,8 +2254,10 @@ section.token-sale-overview {
         font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
         font-size: 11pt; }
     section.token-sale-overview .box .boundaries.ico {
+      font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
       padding-top: 4px;
-      font-size: 13px;
+      font-size: 18px;
+      font-weight: bold;
       line-height: 24px; }
     section.token-sale-overview .box .dot {
       top: 25px;
@@ -2303,7 +2305,7 @@ section.token-sale-overview {
         height: 40px;
         background-repeat: repeat; }
     section.token-sale-overview .box > .row:first-child > div:last-child {
-      width: calc(100% - 140px);
+      width: calc(100% - 170px);
       margin-left: 20px;
       margin-right: 20px; }
   section.token-sale-overview .vesting-div {
