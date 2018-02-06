@@ -2525,8 +2525,8 @@ section.smartcontract {
 
 @media (min-width: 820px) {
   .video-iframe {
-    width: 545px;
-    height: 280px; }
+    width: 800px;
+    height: 400px; }
   .video-html5 {
     width: 712px;
     height: 400px; } }
