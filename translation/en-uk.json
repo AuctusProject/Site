@@ -121,8 +121,10 @@
     "Every user will need to hold a certain": " Every user will need to hold a certain amount of AUC token in escrow to access the platform and all services on the marketplace - such as specialized newsletters, live chat, alerts/plugins - will be offered and paid in AUC token.",
     "AUC Tokens stay in a trustless escrow": "AUC Tokens stay in a trustless escrow and fees are paid only if the returns meet the predictions, as well as the fluctuations (volatility) do not exceed tolerated levels of risk.",
     "Token Launch and Usage of Raised Funds": "Token Launch and Usage of Raised Funds",
+    "What is the card cap": "What is the hard cap?",
+    "The hard cap": "The hard cap is USD 20 million and includes amounts raised from strategic investors and pre-sale.",
     "What is the total supply of AUC tokens": "What is the total supply of AUC tokens?",
-    "The total supply of AUC tokens": "The total supply of AUC tokens depends of the amount raised in the pre-sale and ICO. 51% of all tokens will be distributed during pre-sale and ICO. [(ETH raised in pre-sale*2500)+(ETH raised in ICO)*2000]/0.51 <br /><br /> As the hard-cap is 25,000 ETH, the maximum total supply will be 25,000*2500/0.51=122,549,019.6 AUC",
+    "The total supply of AUC tokens": "The total supply of AUC tokens depends on the price of Ether prior to the token sale.<br/>  As our hard cap is USD 20 million and 51% of all tokens will be distributed to the public, the exact number of tokens will be determined shortly prior to start of token sale.",
     "Did Auctus had a pre-sale": "Did Auctus had a pre-sale prior to ICO?",
     "Pre-sale was held from Oct": "Pre-sale was held from Oct 3rd to Oct 7th, 2017. Here follows some stats about our pre-sale:",
     "ETH raised": "958.9 ETH raised",
@@ -142,7 +144,7 @@
     "Which cryptocurrencies will be accepted": "Which cryptocurrencies will be accepted in the fund raising?",
     "Only ETH will be accepted": "Only ETH will be accepted.",
     "Will it be possible to issue more": "Will it be possible to issue more tokens after the initial distribution?",
-    "All AUC tokens will be minted": "No. All AUC tokens will be minted in the initial distribution.",
+    "All AUC tokens will be minted": "No. All AUC tokens will be issued after the initial distribution.",
     "Will there be a lockup period for AUC tokens": "Will there be a lockup period for AUC tokens sold in the token launch?",
     "after distribution is over": "No, after distribution is over, AUC tokens allocated to public distribution will be available for transfer.",
     "What will be the initial distribution": "What will be the initial distribution of AUC tokens?",
@@ -152,7 +154,7 @@
     "of tokens are allocated for pre-sale": "9% of tokens are allocated for pre-sale partners and advisors.",
     "of tokens are allocated for bounty campaigns": "2% of tokens are allocated for bounty campaigns to help us spread the word about Auctus. Those tokens will have the same rules as those allocated to public contributors.",
     "Will there be a lockup period for tokens allocated": "Will there be a lockup period for tokens allocated to the founding team, partners and advisors?",
-    "AUC tokens allocated to Auctus Core": " AUC tokens allocated to Auctus’ Core Team will not be immediately tradable. They will have 2 years vesting with a 6-month cliff. This means every 6 months, 25% of those tokens will mature . Tokens allocated to partners and advisors will have 6-month vesting with 3-month cliff. The vesting rules will be enforced via smart contracts.",
+    "AUC tokens allocated to Auctus Core": " AUC tokens allocated to Auctus’ Core Team will not be immediately tradable. They will have 2 years vesting with a 6-month cliff. This means every 6 months, 25% of those tokens will mature . 80% of tokens allocated to partners and advisors will have 6-month vesting with 3-month cliff. The vesting rules will be enforced via smart contracts.",
     "Team": "Team",
     "How can I get involved": "How can I get involved?",
     "You can join our Slack": "You can <a class=\"faq-content-link\" href=\"https://chat.auctus.org\">join our Rocket Chat</a>."
@@ -181,14 +183,14 @@
     "UNTIL OCT 6TH": "UNTIL OCT 6TH",
     "MIN CAP": "MIN CAP 400 ETH",
     "WHITELIST PARTICIPANT": "10ETH / WHITELIST PARTICIPANT",
-    "TO BE ANNOUNCED": "TO BE ANNOUNCED",
+    "TO BE ANNOUNCED": "USD 20m",
     "VESTING": "VESTING",
     "TEAM": "TEAM",
     "2 YEARS VESTING WITH 6 MONTHS CLIFF": "2 YEARS VESTING WITH 6 MONTHS CLIFF",
     "RESERVE FOR FUTURE STAKEHOLDERS": "RESERVE FOR FUTURE STAKEHOLDERS",
     "1 YEAR IF DEEMED NECESSARY": "1 YEAR (IF DEEMED NECESSARY,<br />THESE TOKENS WILL BE BURNED)",
     "PARTNERSHIPS AND ADVISORING": "PARTNERSHIPS AND ADVISORING",
-    "6 MONTHS VESTING WITH 3 MONTHS CLIFF": "6 MONTHS VESTING WITH 3 MONTHS CLIFF"
+    "6 MONTHS VESTING WITH 3 MONTHS CLIFF": "80% LOCKED, 6 MONTH VESTING, WITH 3 MONTH CLIFF, 20% UNLOCKED"
   },
   /////////////////// TEAM //////////////////////////
   "advisors": {
