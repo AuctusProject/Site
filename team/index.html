@@ -282,7 +282,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal-back-panel">
+        <div class="modal-back-panel" id="advisor-member">
             <div class="modal-card">
                 <div class="modal-name">
                     <span>Martijn Van Eck</span> <div class="close"><i class="fa fa-close"></i></div>
@@ -854,15 +854,20 @@
             $('.advisors .modal-back-panel .modal-description').html(advisorCard.find('.card-description-content').attr('full-description'));
             $('.advisors .modal-back-panel').addClass('show');
             $('.advisors .modal-back-panel').fadeIn();
+            window.location.href = '#advisor-member';
         });
         $('.advisors .modal-back-panel').click( function (e) {
             if (e.target !== this)
                 return;
-            $('.advisors .modal-back-panel').removeClass('show');
+            closeAdvisorCard();
         });
         $('.advisors .modal-back-panel .close').click( function () {
-            $('.advisors .modal-back-panel').removeClass('show');
+            closeAdvisorCard();
         });
+
+        function closeAdvisorCard() {
+            $('.advisors .modal-back-panel').removeClass('show');
+        }
     </script>
     <script>
         $('.expand-content > span').click(function (e) {
@@ -925,6 +930,8 @@
         window.onpopstate = function () {
             if (document.location.href.indexOf("#team-member") == -1)
                 closeCard();
+            if (document.location.href.indexOf("#advisor-member") == -1)
+                closeAdvisorCard();
         }
     </script>
 </body>
