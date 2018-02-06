@@ -218,7 +218,6 @@ section.team {
         z-index: 5;
         visibility: hidden;
         opacity: 0;
-        transition: all 1s;
     }
 
     .modal-back-panel.show {
@@ -231,11 +230,12 @@ section.team {
 
             .modal-card {
                 margin: 0;
-                width: 100%;
+                width: calc(100% + 15px);
                 height: 100%;
                 background-color: white;
                 max-height: 100%;
                 padding-top: 40px;
+                overflow-y:scroll; 
 
                 .card-linkedin {
                     margin: 35px;
