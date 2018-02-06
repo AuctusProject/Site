@@ -16,8 +16,6 @@ header.team-header {
         h1 {
             margin-bottom: 0px;
         }
-
-        
     }
 }
 
@@ -94,12 +92,14 @@ section.team {
             text-decoration: none;
             width: 100%;
             margin: 20px;
+            outline-color: white;
         }
 
         .card-name-position {
             display: inline-block;
             margin-top: 20px;
             text-align: center;
+            width: calc(100% - 40px);
         }
 
         .card-linkedin {
@@ -146,6 +146,7 @@ section.team {
 
         .card-description {
             display: inline-block;
+            width: 100%;
 
             .dots {
                 height: 10px;
@@ -160,7 +161,6 @@ section.team {
             padding: 15px;
             height: auto;
             background: white;
-            min-height: 119px;
         }
 
         .expand-content, .shrink-content {
@@ -179,11 +179,6 @@ section.team {
 
         .shrink-content {
             display: none;
-        }
-
-
-        @media(max-width:490px) {
-            z-index: 10005;
         }
     }
 
@@ -224,40 +219,45 @@ section.team {
         visibility: visible !important;
         opacity: 1;
         transition: all 1s;
+    }
 
-        @media(max-width:490px) {
-            z-index: 20005;
+    .horizontal-scroll {
+        z-index: 20005;
 
-            .modal-card {
-                margin: 0;
-                width: calc(100% + 15px);
-                height: 100%;
-                background-color: white;
-                max-height: 100%;
-                padding-top: 40px;
-                overflow-y:scroll; 
+        .team-card {
+            z-index: 10005;
+        }
 
-                .card-linkedin {
-                    margin: 35px;
-                }
+        .modal-card {
+            margin: 0;
+            width: calc(100% + 15px);
+            height: 100%;
+            background-color: white;
+            max-height: 100%;
+            padding-top: 40px;
+            overflow-y: scroll;
 
-                .card-description-content {
-                    padding: 15px 35px;
-                }
+            .card-linkedin {
+                margin: 35px;
+            }
+
+            .card-description-content {
+                padding: 15px 35px;
             }
         }
     }
-
-    .slick-dots li button:before {
-        color: white;
-        opacity: .85;
-    }
 }
 
-    .slick-dots li button:before {
-        font-size: 26px !important;
-    }
+.slick-dots li button:before {
+    color: white;
+    opacity: .85;
+}
 
-    .remove-padding {
-        padding-top: 0;
-    }
+
+.slick-dots li button:before {
+    font-size: 26px !important;
+}
+
+.remove-padding {
+    padding-top: 0;
+}
