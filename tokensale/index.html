@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+﻿ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.min.css?v=4" rel="stylesheet">
+    <link href="../css/style.min.css?v=5" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
 
     <!-- Temporary navbar container fix -->
@@ -43,7 +43,7 @@
         <div id="topLanguage" class="mobile-only">
             <div class="quarter-circle language">
             </div>
-            <div class="language-btn" onclick="$('#topLanguage').toggleClass('open'); ">
+            <div class="language-btn" onclick="$('#topLanguage').toggleClass('open'); $('#topMenu.open').toggleClass('open') ">
                 <i class="fa fa-language" id="language"></i>
             </div>
             <div class="language-container">
@@ -64,7 +64,7 @@
         <div id="topMenu" class="mobile-only">
             <div class="quarter-circle menu">
             </div>
-            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); $('#topLanguage.open').toggleClass('open') ">
                 <i class="fa fa-bars" id="bars"></i>
                 <i class="fa fa-close" id="close"></i>
             </div>
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="top-header">
+        <div class="top-header blue">
             <div class="container">
                 <a href="../"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
                 <div class="menu web-only">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <div class="icons-panel web-only">
-                    <div class="navigation-icons text-center web-only">
+                    <div class="navigation-icons text-right web-only">
                         <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
                             <i class="fa fa-twitter"></i>
                         </a>
@@ -132,12 +132,12 @@
                 </div>
             </div>
         </div>
-        <div class="">
+        <div>
             <div class="text-center">
                 <img class="circle-logo" src="../img/presale/circle-logo.png" />
             </div>
             <div class="text-container title">
-                <h2 i18n="AUCTUS TOKEN SALE IS COMING" >AUCTUS TOKEN SALE IS COMING!</h2>
+                <h2 i18n="AUCTUS TOKEN SALE IS COMING">TOKEN SALE - STARTING SOON!</h2>
                 <h1 i18n="Q1 2018">Q1 2018</h1>
                 <h3 i18n="We ll soon release more details about it">We'll soon release more details about it <br><br>For now, don't forget to join our whitelist</h3>
             </div>
@@ -439,7 +439,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row pull-right">
-                    <div class="navigation-icons text-center" >
+                        <div class="navigation-icons text-center" >
                             <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
                                 <i class="fa fa-twitter"></i>
                             </a>
@@ -462,17 +462,59 @@
                                 <i class="fa fa-envelope-o"></i>
                             </a>
                         </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="row" style="padding-top:50px;">
                     <div class="col-lg-3">
-                                <img src="https://mama.global/img/mama_logo.svg" style="width: 100%;padding-top: 5px;">
+                        <img src="https://mama.global/img/mama_logo.svg" style="width: 100%;padding-top: 5px;">
                     </div>
-                     <div class="col-lg-9">
-                                <h4><b>Auctus is part of Multichain Asset Managers Association</b></h4>
-                                MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors, technology providers, service providers and ecosystem players interested in working towards a new vision for asset management using blockchain and other supporting decentralized technologies.
-                    </div>   
-                </div>                
+                    <div class="col-lg-9">
+                        <h4><b>Auctus is part of Multichain Asset Managers Association</b></h4>
+                        MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors, technology providers, service providers and ecosystem players interested in working towards a new vision for asset management using blockchain and other supporting decentralized technologies.
+                    </div>
+                </div>
+            </div>
+            <hr class="separator" />
+            <div class="row legal-container">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <span>
+                            This website uses cookies to offer you a better browsing experience. You can find more details in our <a target="_blank" href="https://dl.auctus.org/Terms_of_Use.pdf">Terms of Use</a> and <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
+                        </span>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <span>
+                            The laws of the country where you
+                            reside may be prohibiting you from participating in the AUC Token Sale. Please make sure that
+                            your browsing of the website and/or participation in the token sale do not violate the laws of your
+                            country. You shall be solely responsible for any such breach of the laws and AUCTUS LTD
+                            specifically disclaims any liability arising from or related to such violations.
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="col-lg-8">
+                    <div class="row disclaimer">
+                        <span>
+                            The AUC Token Sale, Terms of Token Sale, the Whitepaper and any documents related to the Token Sale do not constitute a prospectus or offering document and are not an offer to sell nor the solicitation of an
+                            offer to buy an investment, security, share, equity interest or debt nor a derivative interest of any
+                            of the foregoing. The sale of AUC Tokens constitutes the sale of a software product under the
+                            laws of Gibraltar. AUC Tokens are not intended to be a digital currency, security, commodity,
+                            bond, debt instrument or any kind of financial instrument or investment carrying equivalent rights,
+                            nor are AUC Tokens intended to represent any form of money in any jurisdiction, nor any
+                            representation of money (including electronic money). Accordingly, any protections offered by
+                            applicable law in relation to the purchase, holding and/or sale of the abovementioned instruments
+                            and investments shall not apply to any contribution made during the AUC Token Sale. The Token
+                            Sale involves the development and use of experimental software and technologies that may not
+                            achieve the objectives specified in the <a onclick="downloadWhitepaper()">Auctus’ Whitepaper</a> and related documents. The purchase
+                            of AUC Tokens represents a high risk to any purchaser.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>Copyright © 2018 AUCTUS LTD</span>
             </div>
         </div>
         
@@ -481,7 +523,7 @@
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../vendor/clipboardjs/dist/clipboard.min.js"></script>
     <script src="../js/translation.js"></script>
-    <script src="../js/script.min.js?v=1"></script>
+    <script src="../js/script.min.js?v=5"></script>
 
     
     <script>

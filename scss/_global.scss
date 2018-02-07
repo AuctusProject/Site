@@ -13,7 +13,7 @@ p {
 
 h2 {
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-    font-size: 36px !important;
+    font-size: 40px !important;
     color: rgba(0, 45, 120, 1);
 }
 
@@ -25,7 +25,7 @@ h3 {
 }
 
 .section-heading.inverted h2 {
-    color: rgba(9, 216, 186, 1);
+    color: #00fcfc;
 }
 
 .section-heading.inverted h3 {
@@ -68,7 +68,7 @@ section {
 
 .img-circle.border {
     padding: 5px;
-    border: 2px solid black;
+    border: 2px solid #002d78;
 }
 
 hr {
@@ -247,7 +247,26 @@ a.linkedin-button {
 .show-up{
     opacity:0;
 }
+.blue {
+    .icons-panel {
+        i.fa {
+            color: #00fcfc;
+            border: 2px solid #00fcfc;
+        }
+    }
+}
 
+.white {
+    .icons-panel {
+        i.fa {
+            color: #002d78;
+            border: 2px solid #002d78;
+        }
+    }
+}
+a:hover{
+    text-decoration:none;
+}
 .icons-panel {
     display: block !important;
     width: 290px;
@@ -259,18 +278,17 @@ a.linkedin-button {
     a {
         text-decoration: unset;
     }
-
+    
     i.fa {
         display: inline-block;
         font-size: 18px;
-        color: #00fcfc;
         margin: 30px 2px;
         border: 2px solid #00fcfc;
         border-radius: 50%;
         height: 32px;
         width: 32px;
         padding-top: 6px;
-        text-align:center;
+        text-align: center;
     }
 
     i.fa:hover {
@@ -278,4 +296,8 @@ a.linkedin-button {
         border-radius: 50%;
         box-shadow: 0px 0px 10px #00fcfc;
     }
+}
+
+.block-scroll{
+    overflow-y: hidden;
 }
