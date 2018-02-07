@@ -156,3 +156,8 @@ function registerClickEvent(category) {
         eventAction: 'click'
     });
 }
+
+function acceptCookies(e){
+    $(e).addClass('close-toast');
+    setCookie('cookie-accepted', 1);
+}

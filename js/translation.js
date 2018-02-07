@@ -1,29 +1,33 @@
 (function ($) {
-
-    var languageCookie = getCookie("selected-language")
-    if (languageCookie) {
-        changeLanguage(languageCookie);
+    if (getCookie('cookie-accepted') != 1) {
+        $('.cookie-toast.close-toast').removeClass('close-toast');
     }
     else {
-        var language = window.navigator.userLanguage || window.navigator.language;
-        if (language && (language.length > 2)) {
-            var lang = language.substring(0, 2);
-            var translation = "en-uk";
-            switch (lang) {
-                case "ru":
-                    translation = "ru-ru";
-                    break;
-                case "zh":
-                    translation = "zh-cn";
-                    break;
-                case "ja":
-                    translation = "ja-jp";
-                    break;
-                case "ko":
-                    translation = "ko-kr";
-                    break;
+        var languageCookie = getCookie("selected-language")
+        if (languageCookie) {
+            changeLanguage(languageCookie);
+        }
+        else {
+            var language = window.navigator.userLanguage || window.navigator.language;
+            if (language && (language.length > 2)) {
+                var lang = language.substring(0, 2);
+                var translation = "en-uk";
+                switch (lang) {
+                    case "ru":
+                        translation = "ru-ru";
+                        break;
+                    case "zh":
+                        translation = "zh-cn";
+                        break;
+                    case "ja":
+                        translation = "ja-jp";
+                        break;
+                    case "ko":
+                        translation = "ko-kr";
+                        break;
+                }
+                changeLanguage(translation);
             }
-            changeLanguage(translation);
         }
     }
 
@@ -69,6 +73,9 @@ function showTranslateBox() {
 
 
 function setCookie(name, value, days) {
+    if (name != "cookie-accepted" && getCookie("cookie-accepted") != 1)
+        return;
+
     var expires = "";
     if (days) {
         var date = new Date();
