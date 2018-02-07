@@ -74,6 +74,7 @@ footer {
         padding: 20px;
         background: #d3d3d3;
         text-align: center;
+        z-index: 10000;
         transition: all 2s;
 
         @media(max-width:490px) {
