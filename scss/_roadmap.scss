@@ -27,7 +27,7 @@ section.roadmap {
         padding-bottom: 20px;
         min-height: 175px;
         height: 100%;
-        opacity:0;
+        opacity: 0;
     }
 
     .box.left {
@@ -56,7 +56,7 @@ section.roadmap {
             right: -80px;
             color: #FFF;
             text-align: center;
-            z-index: -1;
+            z-index: 1;
         }
 
         .box.right:after {
@@ -69,7 +69,7 @@ section.roadmap {
             left: -70px;
             color: #FFF;
             text-align: center;
-            z-index: -1;
+            z-index: 1;
         }
     }
 
@@ -83,7 +83,7 @@ section.roadmap {
         }
 
         .box.right.third {
-            top: 90px;
+            top: 88px;
         }
 
         .box.left.first {
@@ -95,6 +95,10 @@ section.roadmap {
 
         .box.left.third {
             top: -20px;
+        }
+
+        .box.left.fourth {
+            top: 24px;
         }
     }
 
@@ -172,6 +176,10 @@ section.roadmap {
             top: 48px;
         }
 
+        .lines.fourth {
+            top: 93px;
+        }
+
         .roadmap-line {
             background: #CCCCCC;
             width: 7px;
@@ -195,6 +203,7 @@ section.roadmap {
             left: -6px;
             color: #FFF;
             text-align: center;
+            z-index:2;
         }
 
         .roadmap-line.active {
