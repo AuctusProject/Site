@@ -1,11 +1,8 @@
 // Styling for the download section
 section.roadmap {
     padding-top: 0;
-    padding-bottom: 10em;
+    padding-bottom: 5em;
 
-    @media (min-width: 992px) {
-        padding-bottom: 10em;
-    }
 
     @media (max-width: 768px) {
         padding-bottom: 1em;

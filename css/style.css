@@ -1960,10 +1960,7 @@ footer {
 
 section.roadmap {
   padding-top: 0;
-  padding-bottom: 10em; }
-  @media (min-width: 992px) {
-    section.roadmap {
-      padding-bottom: 10em; } }
+  padding-bottom: 5em; }
   @media (max-width: 768px) {
     section.roadmap {
       padding-bottom: 1em; } }
@@ -2175,6 +2172,7 @@ section.countdown {
   section.countdown .join-button {
     width: 100%;
     color: white;
+    margin-top: 40px;
     margin-bottom: 20px; }
   section.countdown .join-button a:hover, section.countdown .join-button a:focus, section.countdown .join-button a:active {
     text-decoration: none; }
