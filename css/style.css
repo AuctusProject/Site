@@ -2169,11 +2169,12 @@ section.countdown {
       font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
       color: white;
       font-size: 20px; }
+  section.countdown .join-buttons {
+    padding-top: 30px; }
   section.countdown .join-button {
     width: 100%;
     color: white;
-    margin-top: 40px;
-    margin-bottom: 20px; }
+    margin-top: 20px; }
   section.countdown .join-button a:hover, section.countdown .join-button a:focus, section.countdown .join-button a:active {
     text-decoration: none; }
   section.countdown .pre-sale-button-div {
