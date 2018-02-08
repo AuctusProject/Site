@@ -2238,6 +2238,9 @@ section.token-sale-overview {
     border-radius: 7px;
     padding: 10px 20px;
     min-height: 200px; }
+    section.token-sale-overview .box .token-sale-overview-img {
+      margin-top: 20px;
+      margin-bottom: 20px; }
     section.token-sale-overview .box .sale-title {
       margin-bottom: 20px;
       min-width: 86.5px; }
@@ -2247,7 +2250,8 @@ section.token-sale-overview {
         font-size: 14pt;
         top: -4px; }
     section.token-sale-overview .box > div {
-      padding-left: 10px; }
+      padding-left: 10px;
+      padding-right: 10px; }
     section.token-sale-overview .box .image-div {
       text-align: center;
       padding: 5px 11px; }
@@ -2285,7 +2289,8 @@ section.token-sale-overview {
         text-align: center; }
       section.token-sale-overview .box .boundaries span.ico {
         font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
-        font-size: 11pt; }
+        font-size: 11pt;
+        margin-right: 6px; }
     section.token-sale-overview .box .boundaries.ico {
       font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
       padding-top: 4px;
@@ -2338,9 +2343,8 @@ section.token-sale-overview {
         height: 40px;
         background-repeat: repeat; }
     section.token-sale-overview .box > .row:first-child > div:last-child {
-      width: calc(100% - 170px);
-      margin-left: 20px;
-      margin-right: 20px; }
+      width: calc(100% - 150px);
+      margin-left: 20px; }
   section.token-sale-overview .vesting-div {
     height: 200px; }
     @media (max-width: 768px) {

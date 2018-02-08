@@ -16,6 +16,10 @@ section.token-sale-overview {
         padding: 10px 20px;
         min-height: 200px;
 
+        .token-sale-overview-img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
         .sale-title {
             margin-bottom: 20px;
@@ -32,6 +36,7 @@ section.token-sale-overview {
 
         > div {
             padding-left: 10px;
+            padding-right: 10px;
         }
 
         .image-div {
@@ -98,14 +103,15 @@ section.token-sale-overview {
             span.ico {
                 font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
                 font-size: 11pt;
+                margin-right: 6px;
             }
         }
 
         .boundaries.ico {
-			font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
+            font-family: "Helvetica Neue Bold",'HelveticaNeue-Bold';
             padding-top: 4px;
             font-size: 18px;
-			font-weight: bold;
+            font-weight: bold;
             line-height: 24px;
         }
 
@@ -171,9 +177,9 @@ section.token-sale-overview {
         }
 
         > .row:first-child > div:last-child {
-            width: calc(100% - 170px);
+            width: calc(100% - 150px);
             margin-left: 20px;
-            margin-right: 20px;
+            ;
         }
     }
 
