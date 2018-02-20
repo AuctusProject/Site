@@ -367,10 +367,22 @@ header.presale-masthead {
 
 section.supported-by {
     padding-top: 5rem !important;
-    .section-heading {
-    margin-bottom: 0px !important;
+
+    h2 {
+        color: #ffffff;
     }
-    background: linear-gradient(white 80%, #efefef 99%); /* Standard syntax */
+
+    h3 {
+        margin-top: 45px;
+        color: #00bdff;
+    }
+
+    .section-heading {
+        margin-bottom: 0px !important;
+    }
+
+    background: #1e2e4b;
+
     .links {
         align-content: center;
 
@@ -388,7 +400,7 @@ section.supported-by {
         }
 
         .rcn {
-            background-image: url(../img/partners/rcn.jpg);
+            background-image: url(../img/partners/rcn.png);
         }
 
         .microsoft {
@@ -414,11 +426,19 @@ section.supported-by {
 }
 
 section.as-seen-on {
-    padding-top: 5rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 1rem;
+
     .section-heading {
-    margin-bottom: 0px !important;
+        margin-bottom: 0px !important;
     }
-    background: linear-gradient( #efefef 80%, white 99%); /* Standard syntax */
+
+    h3 {
+        color: #00bdff;
+    }
+
+    background: #1e2e4b;
+
     .links {
         align-content: center;
 

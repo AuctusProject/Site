@@ -1,7 +1,53 @@
 // Styling for the footer
+
+section.subscribe {
+    background: linear-gradient(to left, #22a0fa, #0f64f4);
+    padding-top: 3rem !important;
+    padding-bottom: 2rem !important;
+
+    p {
+        margin: auto;
+        margin-bottom: 28px;
+        font-size: 28px;
+        letter-spacing: 1.1px;
+        text-align: center;
+        color: white;
+    }
+
+    .input-group > div {
+        margin: auto;
+    }
+
+    input, input:focus {
+        margin: 5px;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    input::placeholder {
+        color: white;
+    }
+
+    input:-ms-input-placeholder {
+        color: white;
+    }
+
+    input::-ms-input-placeholder {
+        color: white;
+    }
+
+    .input-group-btn {
+        margin: 5px 5px 0 5px;
+    }
+}
+
 footer {
+    @media(max-width:490px) {
+        padding: 50px
+    }
+
     position: relative;
-    margin-top: 80px;
 
     .navigation-icons {
         padding-top: 40px;
@@ -58,6 +104,15 @@ footer {
             @media (max-width: 991px) {
                 margin-top: 25px;
             }
+        }
+    }
+
+    .association-box {
+        padding-top: 50px;
+        margin: 10px 35px;
+
+        @media(max-width:490px) {
+            margin: 10px;
         }
     }
 
