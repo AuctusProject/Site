@@ -1849,11 +1849,11 @@ section.newsletter {
 section.subscribe {
   background: linear-gradient(to left, #22a0fa, #0f64f4);
   padding-top: 3rem !important;
-  padding-bottom: 2rem !important; }
+  padding-bottom: 3rem !important; }
   /* line 8, ../scss/_footer.scss */
   section.subscribe p {
     margin: auto;
-    margin-bottom: 28px;
+    margin-bottom: 15px;
     font-size: 28px;
     letter-spacing: 1.1px;
     text-align: center;
@@ -1866,34 +1866,38 @@ section.subscribe {
     margin: 5px;
     color: white;
     background-color: transparent;
-    border: 1px solid white; }
-  /* line 28, ../scss/_footer.scss */
+    border: 1px solid white;
+    border-radius: 0.25rem !important; }
+  /* line 29, ../scss/_footer.scss */
   section.subscribe input::placeholder {
     color: white; }
-  /* line 32, ../scss/_footer.scss */
+  /* line 33, ../scss/_footer.scss */
   section.subscribe input:-ms-input-placeholder {
     color: white; }
-  /* line 36, ../scss/_footer.scss */
+  /* line 37, ../scss/_footer.scss */
   section.subscribe input::-ms-input-placeholder {
     color: white; }
-  /* line 40, ../scss/_footer.scss */
+  /* line 41, ../scss/_footer.scss */
   section.subscribe .input-group-btn {
     margin: 5px 5px 0 5px; }
+  /* line 45, ../scss/_footer.scss */
+  section.subscribe button {
+    border-radius: 0.25rem !important; }
 
-/* line 45, ../scss/_footer.scss */
+/* line 50, ../scss/_footer.scss */
 footer {
   position: relative; }
   @media (max-width: 490px) {
-    /* line 45, ../scss/_footer.scss */
+    /* line 50, ../scss/_footer.scss */
     footer {
       padding: 50px; } }
-  /* line 52, ../scss/_footer.scss */
+  /* line 57, ../scss/_footer.scss */
   footer .navigation-icons {
     padding-top: 40px; }
-    /* line 55, ../scss/_footer.scss */
+    /* line 60, ../scss/_footer.scss */
     footer .navigation-icons a {
       text-decoration: unset; }
-      /* line 58, ../scss/_footer.scss */
+      /* line 63, ../scss/_footer.scss */
       footer .navigation-icons a i {
         font-size: 25px;
         border: 2px solid #002d78;
@@ -1904,48 +1908,57 @@ footer {
         margin: 3px;
         color: #002d78; }
   @media (max-width: 768px) {
-    /* line 72, ../scss/_footer.scss */
+    /* line 77, ../scss/_footer.scss */
     footer .navigation-icons {
       margin-top: 20px; } }
   @media (max-width: 768px) {
-    /* line 78, ../scss/_footer.scss */
+    /* line 83, ../scss/_footer.scss */
     footer .logo {
       text-align: center; } }
-  /* line 83, ../scss/_footer.scss */
+  /* line 90, ../scss/_footer.scss */
   footer .separator {
     border-top: 2px solid #282828;
     margin: 15px -15px; }
-  /* line 88, ../scss/_footer.scss */
+  /* line 95, ../scss/_footer.scss */
   footer .legal-container {
     font-size: 0.9rem;
     color: #828282; }
-    /* line 92, ../scss/_footer.scss */
+    /* line 99, ../scss/_footer.scss */
     footer .legal-container a {
       color: #828282 !important;
       text-decoration: underline !important;
       font-weight: bold;
       cursor: pointer; }
     @media (min-width: 991px) {
-      /* line 99, ../scss/_footer.scss */
+      /* line 106, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-left: 10px; } }
     @media (max-width: 991px) {
-      /* line 99, ../scss/_footer.scss */
+      /* line 106, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-top: 25px; } }
-  /* line 110, ../scss/_footer.scss */
+  /* line 117, ../scss/_footer.scss */
   footer .association-box {
     padding-top: 50px;
     margin: 10px 35px; }
     @media (max-width: 490px) {
-      /* line 110, ../scss/_footer.scss */
+      /* line 117, ../scss/_footer.scss */
       footer .association-box {
         margin: 10px; } }
-  /* line 119, ../scss/_footer.scss */
+    /* line 125, ../scss/_footer.scss */
+    footer .association-box img {
+      max-height: 105px; }
+    /* line 129, ../scss/_footer.scss */
+    footer .association-box img:last-child {
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      opacity: 0.9; }
+  /* line 136, ../scss/_footer.scss */
   footer .copyright {
     margin: 15px -15px;
     text-align: center; }
-  /* line 124, ../scss/_footer.scss */
+  /* line 142, ../scss/_footer.scss */
   footer .cookie-toast {
     position: fixed;
     bottom: 0;
@@ -1957,13 +1970,13 @@ footer {
     z-index: 10000;
     transition: all 2s; }
     @media (max-width: 490px) {
-      /* line 124, ../scss/_footer.scss */
+      /* line 142, ../scss/_footer.scss */
       footer .cookie-toast {
         font-size: 0.8rem; } }
-    /* line 139, ../scss/_footer.scss */
+    /* line 157, ../scss/_footer.scss */
     footer .cookie-toast a {
       white-space: nowrap; }
-    /* line 143, ../scss/_footer.scss */
+    /* line 161, ../scss/_footer.scss */
     footer .cookie-toast button {
       background-color: #fafafa;
       color: #292b2c;
@@ -1972,7 +1985,7 @@ footer {
       box-shadow: 0px 1px 2px #0F0F0F;
       border: 1px solid rgba(0, 0, 0, 0.125);
       border-radius: .25rem; }
-  /* line 154, ../scss/_footer.scss */
+  /* line 172, ../scss/_footer.scss */
   footer .cookie-toast.close-toast {
     bottom: -130px;
     transition: all 1s; }

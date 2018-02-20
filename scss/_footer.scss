@@ -3,11 +3,11 @@
 section.subscribe {
     background: linear-gradient(to left, #22a0fa, #0f64f4);
     padding-top: 3rem !important;
-    padding-bottom: 2rem !important;
+    padding-bottom: 3rem !important;
 
     p {
         margin: auto;
-        margin-bottom: 28px;
+        margin-bottom: 15px;
         font-size: 28px;
         letter-spacing: 1.1px;
         text-align: center;
@@ -23,6 +23,7 @@ section.subscribe {
         color: white;
         background-color: transparent;
         border: 1px solid white;
+        border-radius: 0.25rem !important;
     }
 
     input::placeholder {
@@ -39,6 +40,10 @@ section.subscribe {
 
     .input-group-btn {
         margin: 5px 5px 0 5px;
+    }
+
+    button {
+        border-radius: 0.25rem !important;
     }
 }
 
@@ -80,6 +85,8 @@ footer {
         }
     }
 
+
+
     .separator {
         border-top: 2px solid #282828;
         margin: 15px -15px;
@@ -114,11 +121,22 @@ footer {
         @media(max-width:490px) {
             margin: 10px;
         }
+
+        img {
+            max-height: 105px;
+        }
+
+        img:last-child {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            opacity:0.9;
+        }
     }
 
     .copyright {
         margin: 15px -15px;
         text-align: center;
+        
     }
 
     .cookie-toast {
