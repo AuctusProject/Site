@@ -4338,7 +4338,7 @@ section.token-model {
     position: relative;
     background: rgba(250, 250, 250, 0.7);
     box-shadow: 0px 0px 30px 1px #fafafa; }
-    @media (max-height: 992px) {
+    @media (max-width: 992px) {
       /* line 51, ../scss/_tokenmodel.scss */
       section.token-model .initial-text {
         width: 85%; } }
@@ -4351,7 +4351,7 @@ section.token-model {
       width: 365px;
       position: absolute;
       text-align: left; }
-      @media (max-height: 992px) {
+      @media (max-width: 992px) {
         /* line 67, ../scss/_tokenmodel.scss */
         section.token-model .flow-container .explanation {
           position: unset;
@@ -4372,7 +4372,7 @@ section.token-model {
     section.token-model .flow-container .explanation:first-child {
       top: 50px;
       left: calc(50% + 108px); }
-      @media (min-height: 993px) {
+      @media (min-width: 993px) {
         /* line 98, ../scss/_tokenmodel.scss */
         section.token-model .flow-container .explanation:first-child div {
           margin-left: 30px; } }
@@ -4387,7 +4387,7 @@ section.token-model {
     section.token-model .flow-container .explanation:nth-child(3) {
       top: 875px;
       left: calc(50% + 90px); }
-      @media (min-height: 993px) {
+      @media (min-width: 993px) {
         /* line 113, ../scss/_tokenmodel.scss */
         section.token-model .flow-container .explanation:nth-child(3) {
           width: 420px; }
@@ -4400,7 +4400,7 @@ section.token-model {
       border-top: 1px solid #022d77;
       margin-top: 0.2rem;
       margin-bottom: 0.2rem; }
-      @media (max-height: 992px) {
+      @media (max-width: 992px) {
         /* line 126, ../scss/_tokenmodel.scss */
         section.token-model .flow-container hr {
           width: 90%; } }
