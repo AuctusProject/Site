@@ -363,4 +363,8 @@
 }
 
 
-
+@media (max-width: 1199px) {
+    .avoid-menu-overlapping {
+        display:none;
+    }
+}
