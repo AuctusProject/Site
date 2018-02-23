@@ -4370,7 +4370,7 @@ section.token-model {
         box-shadow: 0px 0px 30px 1px #fafafa; }
     /* line 93, ../scss/_tokenmodel.scss */
     section.token-model .flow-container .explanation:first-child {
-      top: 50px;
+      top: 75px;
       left: calc(50% + 108px); }
       @media (min-width: 993px) {
         /* line 98, ../scss/_tokenmodel.scss */
@@ -4378,14 +4378,14 @@ section.token-model {
           margin-left: 30px; } }
     /* line 104, ../scss/_tokenmodel.scss */
     section.token-model .flow-container .explanation:nth-child(2) {
-      top: 442px;
+      top: 455px;
       right: calc(50% + 175px); }
       /* line 108, ../scss/_tokenmodel.scss */
       section.token-model .flow-container .explanation:nth-child(2) div {
         margin-left: 0px; }
     /* line 113, ../scss/_tokenmodel.scss */
     section.token-model .flow-container .explanation:nth-child(3) {
-      top: 875px;
+      top: 885px;
       left: calc(50% + 90px); }
       @media (min-width: 993px) {
         /* line 113, ../scss/_tokenmodel.scss */
