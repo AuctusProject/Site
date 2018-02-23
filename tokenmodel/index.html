@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+    <meta name="description" content="Auctus is the world's first blockchain based retirement plan platform, which allows users to create diversified portfolios, consisting of traditional asset classes and cryptocurrencies.">
+    <meta name="keywords" content="Ethereum,Smart Contract,Smart Contracts,Cryptocurrency,Retirement Plans, Pension Fund, Pension Funds, Blockchain">
+    <meta property="og:title" content="Auctus | Smart Contract Powered Retirement Plans">
+    <meta property="og:description" content="Auctus is the world's first blockchain based retirement plan platform, which allows users to create diversified portfolios, consisting of traditional asset classes and cryptocurrencies.">
+    <meta property="og:image" content="https://dl.auctus.org/auctusite.png">
+    <meta property="og:url" content="https://auctus.org">
+
+    <title>Auctus | Smart Contract Powered Retirement Plans</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.min.css?v=6" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
+
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/slick.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="../css/tokenanimation.css?v=5">
+</head>
+
+<body id="page-top" class="auctus" style="background-color: #fafafa;">
+    <header class="masthead team-header">
+        <div id="topLanguage" class="mobile-only">
+            <div class="quarter-circle language">
+            </div>
+            <div class="language-btn" onclick="$('#topLanguage').toggleClass('open'); ">
+                <i class="fa fa-language" id="language"></i>
+            </div>
+            <div class="language-container">
+                <div class="language-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('en-uk');$('#topLanguage').toggleClass('open'); ">ENGLISH</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('ru-ru');$('#topLanguage').toggleClass('open'); ">РУССКИЙ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('zh-cn');$('#topLanguage').toggleClass('open'); ">中文</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('ja-jp');$('#topLanguage').toggleClass('open'); ">日本語</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a onclick="changeLanguage('ko-kr');$('#topLanguage').toggleClass('open'); ">한국어</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="topMenu" class="mobile-only">
+            <div class="quarter-circle menu">
+            </div>
+            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); ">
+                <i class="fa fa-bars" id="bars"></i>
+                <i class="fa fa-close" id="close"></i>
+            </div>
+            <div class="menu-container">
+                <div class="menu-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="DEMO" href="https://demo.auctus.org" target="_blank">DEMO</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="FAQ" href="../faq">FAQ</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TOKEN SALE" href="../tokensale">TOKEN SALE</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TOKEN MODEL" href="../tokenmodel">TOKEN MODEL</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="TEAM" href="../team">TEAM</a></li>
+                            <li><span class="icon-arrow-right arr"></span><a i18n="BLOG" href="https://blog.auctus.org" target="_blank">BLOG</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="top-header white">
+            <div class="container">
+                <a href="../"><img class="img-responsive logo"  /></a>
+                <div class="menu web-only">
+                    <a href="https://demo.auctus.org" target="_blank"><span i18n="DEMO">DEMO</span></a>
+                    <a href="../faq"><span i18n="FAQ">FAQ</span></a>
+                    <a href="../tokensale"><span i18n="TOKEN SALE">TOKEN SALE</span></a>
+                    <a href="#page-top"><span i18n="TOKEN MODEL" style="color:#03beff; font-weight:bold">TOKEN MODEL</span></a>
+                    <a href=".,/team"><span i18n="TEAM" >TEAM</span></a>
+                    <div class="translation">
+                        <div onclick="showTranslateBox('')" class="translation-box">
+                            <i class="fa fa-language"></i><span class="language">EN</span>
+                            <i onclick="showTranslateBox('')" class="fa fa-caret-down drop-arrow"></i>
+                            <div class="language-box hide">
+                                <div onclick="changeLanguage('en-uk')"><span id="en-uk">EN</span></div>
+                                <div onclick="changeLanguage('ru-ru')"><span id="ru-ru">РУ</span></div>
+                                <div onclick="changeLanguage('zh-cn')"><span id="zh-cn">中文</span></div>
+                                <div onclick="changeLanguage('ja-jp')"><span id="ja-jp">日本語</span></div>
+                                <div onclick="changeLanguage('ko-kr')"><span id="ko-kr">한국어</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons-panel web-only">
+                    <div class="navigation-icons text-center web-only">
+                        <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/AuctusProject" title="Github" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://reddit.com/r/AuctusProject" title="Reddit" target="_blank">
+                            <i class="fa fa-reddit-alien"></i>
+                        </a>
+                        <a href="https://blog.auctus.org" title="Blog" target="_blank">
+                            <i class="fa fa-medium"></i>
+                        </a>
+                        <a href="https://chat.auctus.org" title="Rocket Chat" target="_blank">
+                            <i class="fa fa-rocket"></i>
+                        </a>
+                        <a href="mailto:contact@auctus.org" title="Email">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="token-model" id="token-model">
+        <div class="background"></div>
+        <div class="section-heading text-center">
+            <h2 i18n="ADVISORY BOARD">HOW IT WORKS</h2>
+            <h3 i18n="INDUSTRY EXPERTS ADVISING AUCTUS">UNDERSTAND THE AUC TOKEN MODEL</h3>
+            <hr />
+        </div>
+        <div class="initial-text">
+            <span>
+                The Auctus Platform will provide users with the tools and services needed to achieve their retirement goals faster. The fundamental purpose of the AUC Token is to provide a result-oriented, transparent and low fee structure, aligning the interest of human and robo advisors with savers’ goals and ensuring transparency.
+                The multi-purpose token was designed to fuel the platform and create a balanced ecosystem.
+            </span>
+        </div>
+        <div class="flow-container">
+            <div class="explanation">
+                <div>
+                    <span class="explanation-title">Access and Platform Usage</span>
+                </div>
+                <hr />
+                <div>
+                    <span>Auctus Platform will be exclusively accessible through the AUC token. To create an account and start saving for retirement, users will need to hold a certain amount of tokens in escrow using the platform smart contracts.</span>
+                </div>
+            </div>
+            <div class="explanation">
+                <div>
+                    <span class="explanation-title">Platform currency</span>
+                </div>
+                <hr />
+                <div>
+                    <span>Users with AUC in escrow can access the platform and use built-in tools and standard features. Inside the platform, users can get tailored recommendations (how much to invest and asset allocation) from human and robo advisors. <br /><br />In addition to being a platform currency, which enables efficient and frictionless transactions between participants, the AUC token will also be used to prevent users from paying in advance for bad services or advice.</span>
+                </div>
+            </div>
+            <div class="explanation">
+                <div>
+                    <span class="explanation-title">Value exchange</span>
+                </div>
+                <hr />
+                <div>
+                    <span>The AUC held in escrow in exchange for a particular recommendation can be gradually released to be transferred to the human advisor or developer if the returns meet the predictions, as well as the fluctuations (volatility) do not exceed tolerated levels of risk. The parameters such as vesting period and tolerance will be auditable prior to the purchase of the service or tool. Users can redeem the tokens in case of bad advice.</span>
+                </div>
+            </div>
+            <div class="fluxo">
+                <div class="fluxo1">
+                    <div class="circulo usuario"></div>
+                    <div class="moeda"></div>
+                    <div class="tunel"></div>
+                    <div class="cadeado-content">
+                        <div class="cadeado"></div>
+                        <div class="linha"></div>
+                    </div>
+                    <div class="contrato">
+                        <div class="img">
+                            <div class="linha"></div>
+                            <div class="linha l2"></div>
+                        </div>
+                        <p>Smart Contract</p>
+                    </div>
+                </div>
+                <div class="fluxo2">
+                    <div class="traco"></div>
+                    <div class="quadrado">
+                        <div class="circulo robo"></div>
+                        <div class="circulo analista"></div>
+                        <div class="notebook">
+                            <div class="bola">
+                                <div class="b1"></div>
+                                <div class="b2"></div>
+                            </div>
+                            <div class="linha l1"></div>
+                            <div class="linha l2"></div>
+                            <div class="linha l3"></div>
+                        </div>
+                        <div class="notebook n2">
+                            <div class="bola">
+                                <div class="b1"></div>
+                                <div class="b2"></div>
+                            </div>
+                            <div class="linha l1"></div>
+                            <div class="linha l2"></div>
+                            <div class="linha l3"></div>
+                        </div>
+                        <div class="dot d3"></div>
+                        <div class="dot d4"></div>
+                    </div>
+                    <div class="traco"></div>
+                </div>
+                <div class="fluxo3">
+                    <div class="ampulheta">
+                        <p>Time</p>
+                        <div class="image">
+                            <div class="img"></div>
+                            <div class="areia a1"></div>
+                            <div class="areia a2"></div>
+                        </div>
+                    </div>
+                    <div class="traco"></div>
+                </div>
+                <div class="fluxo4">
+                    <div class="olho"></div>
+                    <div class="grafico2">
+                        <div class="img">
+                            <div class="linha l1"></div>
+                            <div class="linha l2"></div>
+                            <div class="linha l3"></div>
+                        </div>
+                        <p>Final Results</p>
+                    </div>
+                    <div class="traco"></div>
+                </div>
+                <div class="fluxo5">
+                    <div class="quadrado"></div>
+                    <div class="bad">
+                        <div class="circulo x"></div>
+                        <div class="tunel">
+                            <div class="moeda"></div>
+                        </div>
+                        <div class="circulo usuario"></div>
+                    </div>
+                    <div class="good">
+                        <div class="circulo v"></div>
+                        <div class="tunel">
+                            <div class="moeda"></div>
+                        </div>
+                        <div class="quadrado"></div>
+                        <div class="circulo robo"></div>
+                        <div class="circulo analista"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe">
+                <form action="//auctus.us16.list-manage.com/subscribe/post?u=e6c2bc48f91f09fab4afe5bee&amp;id=b39ba220eb" method="post" id="mc-embedded-subscribe-form"
+                      name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <p>
+                                SUBSCRIBE TO OUR NEWSLETTER
+                            </p>
+                        </div>
+                    </div>
+                    <div class="input-group col-md-12">
+                        <div class="row">
+                            <input name="EMAIL" class="required email form-control" id="mce-EMAIL" type="text" placeholder="Enter your email" aria-label="Enter your email" i18n="EMAIL" />
+                            <span class="input-group-btn">
+                                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary" i18n="SUBSCRIBE">SUBSCRIBE</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #fafafa;">
+        <div class="container">
+            <div class="row" style="margin-bottom: 10px">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6 mobile-only">
+                    <div class="row pull-right">
+                        <div class="navigation-icons text-center">
+                            <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
+                                <i class="fa fa-telegram"></i>
+                            </a>
+                            <a href="https://github.com/AuctusProject" title="Github" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://reddit.com/r/AuctusProject" title="Reddit" target="_blank">
+                                <i class="fa fa-reddit-alien"></i>
+                            </a>
+                            <a href="https://blog.auctus.org" title="Blog" target="_blank">
+                                <i class="fa fa-medium"></i>
+                            </a>
+                            <a href="https://chat.auctus.org" title="Rocket Chat" target="_blank">
+                                <i class="fa fa-rocket"></i>
+                            </a>
+                            <a href="mailto:contact@auctus.org" title="Email">
+                                <i class="fa fa-envelope-o"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row association-box">
+                            <div>
+                                <img src="../img/footer/mama_logo.svg" style="width: 100%;padding: 15px 0px 10px 0px; opacity:0.5; margin-left: -18px;">
+                            </div>
+                            <div>
+                                <h5><b>Part of Multichain Asset Managers Association</b></h5>
+                                MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors, technology providers, service providers and ecosystem players interested in working towards a new vision for asset management using blockchain and other supporting decentralized technologies.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row association-box">
+                            <div>
+                                <img src="../img/footer/eea.png" style="padding: 5px 0px 10px 0px;">
+                            </div>
+                            <div>
+                                <h5><b>Member of Ethereum Enterprise Alliance</b></h5>
+                                The Enterprise Ethereum Alliance (EEA) connects Fortune 500 enterprises, startups, academics, and technology vendors with Ethereum subject matter experts. The EEA is helping to evolve Ethereum into an enterprise-grade technology, providing research and development in a range of areas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="separator" />
+            <div class="row legal-container">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <span>
+                            This website uses cookies to offer you a better browsing experience. You can find more details in our <a target="_blank" href="https://dl.auctus.org/Terms_of_Use.pdf">Terms of Use</a> and <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
+                        </span>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <span>
+                            The laws of the country where you
+                            reside may be prohibiting you from participating in the AUC Token Sale. Please make sure that
+                            your browsing of the website and/or participation in the token sale do not violate the laws of your
+                            country. You shall be solely responsible for any such breach of the laws and AUCTUS LTD
+                            specifically disclaims any liability arising from or related to such violations.
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="col-lg-8">
+                    <div class="row disclaimer">
+                        <span>
+                            The AUC Token Sale, Terms of Token Sale, the Whitepaper and any documents related to the Token Sale do not constitute a prospectus or offering document and are not an offer to sell nor the solicitation of an
+                            offer to buy an investment, security, share, equity interest or debt nor a derivative interest of any
+                            of the foregoing. The sale of AUC Tokens constitutes the sale of a software product under the
+                            laws of Gibraltar. AUC Tokens are not intended to be a digital currency, security, commodity,
+                            bond, debt instrument or any kind of financial instrument or investment carrying equivalent rights,
+                            nor are AUC Tokens intended to represent any form of money in any jurisdiction, nor any
+                            representation of money (including electronic money). Accordingly, any protections offered by
+                            applicable law in relation to the purchase, holding and/or sale of the abovementioned instruments
+                            and investments shall not apply to any contribution made during the AUC Token Sale. The Token
+                            Sale involves the development and use of experimental software and technologies that may not
+                            achieve the objectives specified in the <a onclick="downloadWhitepaper()">Auctus’ Whitepaper</a> and related documents. The purchase
+                            of AUC Tokens represents a high risk to any purchaser.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>Copyright © 2018 AUCTUS LTD</span>
+            </div>
+        </div>
+        <div class="cookie-toast close-toast" onclick="acceptCookies(this);">
+            <span>This website uses cookies to offer you a better browsing experience. You can find more details in our <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.</span>
+            <button><span>I  AGREE</span></button>
+        </div>
+    </footer>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script src="../js/translation.js"></script>
+    <script>
+        $(".menu-content a").click(function (e) {
+            if ($(window).width() <= 768)
+                $('#topMenu').toggleClass('open');
+        });
+        $("#topMenu").click(function (e) {
+            if (e.target !== this)
+                return;
+            $('#topMenu').toggleClass('open');
+        });
+        $('a').click(function () {
+            var href = $(this).attr('href');
+            if (href) {
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 500);
+            }
+            return false;
+        });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-106121445-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>
+        $('.advisors .card-read-more > span').click(function (e) {
+
+            var advisorCard = $(e.target).parent().parent().parent();
+            $('.advisors .modal-back-panel .modal-name > span').html(advisorCard.find('.card-name').html());
+            $('.advisors .modal-back-panel .modal-position').html(advisorCard.find('.card-position').html());
+            $('.advisors .modal-back-panel .modal-description').html(advisorCard.find('.card-description-content').attr('full-description'));
+            $('.advisors .modal-back-panel').addClass('show');
+            $('.advisors .modal-back-panel').fadeIn();
+            window.location.href = '#advisor-member';
+        });
+        $('.advisors .modal-back-panel').click( function (e) {
+            if (e.target !== this)
+                return;
+            closeAdvisorCard();
+        });
+        $('.advisors .modal-back-panel .close').click( function () {
+            closeAdvisorCard();
+        });
+
+        function closeAdvisorCard() {
+            $('.advisors .modal-back-panel').removeClass('show');
+        }
+    </script>
+    <script>
+        $('.expand-content > span').click(function (e) {
+            var teamCard = $(e.target).parent().parent().parent();
+            teamCard.addClass('show')
+            $('.team .modal-back-panel').addClass('show');
+            $('.show .expand-content').css('display', 'none')
+            $('.show .shrink-content').css('display', 'block')
+            $('.team .modal-card').scrollTop();
+            $('.team .modal-back-panel').fadeIn();
+            $('.modal-back-panel .modal-card img').attr('src', teamCard.find('img').attr('src'));
+            $('.modal-back-panel .modal-card .card-name-position-linkedin').attr('href', teamCard.find('.card-name-position-linkedin').attr('href'));
+            $('.modal-back-panel .modal-card .card-name').html(teamCard.find('.card-name').html());
+            $('.modal-back-panel .modal-card .card-position').html(teamCard.find('.card-position').html());
+            if ($(document).width() <= 490) {
+                $('body').addClass('block-scroll');
+                $('.modal-back-panel .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
+                window.location.href = '#team-member';
+            }
+            else {
+                $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
+            }
+            
+        });
+
+        $('.team .modal-back-panel').click(function (e) {
+            if (e.target !== this)
+                return;
+            closeCard();
+        });
+
+        
+
+        $('.shrink-content').click(function (e) {
+            closeCard();
+        });
+        function closeCard() {
+            $('.show .expand-content').css('display', 'block')
+            $('.show .shrink-content').css('display', 'none')
+            $('.show .card-description-content').html($('.show .card-description-content').attr('short-description'));
+            $('.team .show').removeClass('show');
+            $('body').removeClass('block-scroll');
+        }
+    </script>
+
+    <script>
+        if ($(document).width() <= 490) {
+            $('.content.team-content').slick({
+                dots: true
+            });
+            $('.advisors-content').slick({
+                dots: true
+            });
+            $('.modal-back-panel').addClass('horizontal-scroll');
+        }
+        else {
+            $('.team .modal-card').hide();
+        }
+
+        window.onpopstate = function () {
+            if (document.location.href.indexOf("#team-member") == -1)
+                closeCard();
+            if (document.location.href.indexOf("#advisor-member") == -1)
+                closeAdvisorCard();
+        }
+    </script>
+    <script>
+        function generateImages() {
+            var bHeight = $('.background').height() - 200;
+            var bWidth = $('.background').width();
+
+            for (var top = 0; top < bHeight;) {
+                top = top + 50 + Math.floor(Math.random() * 60);
+                var left = Math.random() * bWidth;
+                var figureId = Math.floor(Math.random() * 22) + 1;
+                var img = $('<img class="figure">');
+                img.attr('src', '../img/tokenmodel/figures/' + figureId + '.png');
+                img.css('top', top);
+                img.css('left', left);
+                img.appendTo('.background');
+            }          
+        }
+
+        generateImages();
+    </script>
+</body>
+
+</html>
