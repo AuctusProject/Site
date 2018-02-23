@@ -575,7 +575,7 @@ a:hover {
   .icons-panel i.fa {
     display: inline-block;
     font-size: 18px;
-    margin: 30px 2px;
+    margin: 30px 2px 0px 2px;
     border: 2px solid #00fcfc;
     border-radius: 50%;
     height: 32px;
