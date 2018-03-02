@@ -140,7 +140,7 @@ function downloadPresentation() {
 }
 
 function TryOurDemo() {
-    openNewTab("https://demo.auctus.org");
+    openNewTab("https://platform.auctus.org");
     registerClickEvent('Demo');
 }
 
