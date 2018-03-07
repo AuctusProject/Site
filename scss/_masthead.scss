@@ -256,8 +256,6 @@ header.masthead {
         }
     }
 
-
-    .top-header.blue:hover,
     .top-header.blue.hover {
         background: rgba(4, 20, 140, 0.7);
         transition: all 0.2s;
@@ -395,7 +393,7 @@ header.masthead {
         padding: 130px 0 0 0;
         width: 68%;
         position: relative;
-        max-width: 550px;
+        max-width: 518px;
 
         h1 {
             font-family: "Helvetica Neue Light","HelveticaNeue-Light";
