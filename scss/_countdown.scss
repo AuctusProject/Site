@@ -74,7 +74,7 @@ section.countdown {
 
             @media (max-width: 768px) {
                 padding: 15px 0px;
-                width: 80%;
+                // width: 80%;
             }
 
             @media (max-width: 380px) {
@@ -108,7 +108,15 @@ section.countdown {
 
     .join-buttons {
         padding-top: 30px;
-        margin-left: 10%;
+        // margin-left: 5%;
+        max-width: 500px;
+        margin-left: 5px;
+    }
+
+    @media (max-width: 991px) {
+        .join-buttons {
+            margin-left: 0px;
+        }
     }
 
     .join-button {
@@ -120,6 +128,18 @@ section.countdown {
 
     .join-button a:hover, .join-button a:focus, .join-button a:active {
         text-decoration: none;
+    }
+
+    .pre-sale-button-div.token-sale
+    {
+        max-width: 230px;
+        width: 230px;
+    }
+
+    .pre-sale-button-div.whitelist
+    {
+        max-width: 230px;
+        width: 230px;
     }
 
     .pre-sale-button-div {

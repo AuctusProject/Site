@@ -67,13 +67,23 @@
     };
 
 
-   
+    $(window).scroll(function (event) {
+        var body = window.document.body; //IE 'quirks'
+        var document = window.document.documentElement; //IE with doctype
+        document = (document.clientHeight) ? document : body;
+
+        if (document.scrollTop != 0) {
+            $('.top-header.blue').addClass('hover');
+        }
+        else {
+            $('.top-header.blue').removeClass('hover');
+        }
+    })
 
 })(jQuery); // End of use strict
 
 
 $(window).scroll(function (event) {
-
     $(".show-up").each(function (i, el) {
         var el = $(el);
         if (el.visible(true)) {

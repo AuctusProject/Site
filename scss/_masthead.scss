@@ -5,11 +5,6 @@ header.masthead {
     overflow: hidden;
     width: 100%;
     color: white;
-    // background: #0884cd; /* For browsers that do not support gradients */
-    // background: -webkit-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Safari 5.1 to 6.0  60%*/
-    // background: -o-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Opera 11.1 to 12.0 */
-    // background: -moz-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Firefox 3.6 to 15 */
-    // background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* Standard syntax */
 
     .left-blue-div {
         background: linear-gradient(75deg, #22a0fa, #0f64f4);
@@ -22,9 +17,15 @@ header.masthead {
         height: 1200px;
         position: absolute;
         transform: rotate(-300deg);
-        left: calc(-34%);
+        right: calc(130px + 50%);
         top: -20%;
         z-index: 2;
+    }
+
+    @media (max-width: 991px) {
+        .left-blue-div {
+            display: none;
+        }
     }
 
     .right-blue-div {
@@ -49,11 +50,28 @@ header.masthead {
         height: 400px;
         position: absolute;
         right: calc(-10%);
-        top: 94%;
+        top: 88%;
         z-index: 3;
     }
-   
-   
+
+    @media (max-width: 991px) {
+        .bottom-white-div {
+            display: none;
+        }
+    }
+
+    .computer-image{
+        position: absolute;
+        z-index: 5;
+        right: 3%;
+        bottom: 34%;
+    }
+
+    @media (max-width: 991px) {
+        .computer-image{
+            display: none;
+        }
+    }
    
     @media (min-width: 992px) {
         height: 768px;
@@ -234,7 +252,8 @@ header.masthead {
     }
 
 
-    .top-header.blue:hover {
+    .top-header.blue:hover,
+    .top-header.blue.hover {
         background: rgba(4, 20, 140, 1);
         transition: all 0.2s;
     }
@@ -396,6 +415,12 @@ header.masthead {
 
         .subtitle {
             margin-top: 10px;
+        }
+
+        @media (max-width: 480px) {
+            .subtitle {
+                font-size: 14px !important;
+            }
         }
 
         .days-to-sale {
