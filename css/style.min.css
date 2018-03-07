@@ -3054,7 +3054,7 @@ section.retirement {
 /* line 1, ../scss/_monetization.scss */
 section.monetization {
   padding-bottom: 2em;
-  padding-top: 17rem; }
+  padding-top: 9rem; }
   /* line 5, ../scss/_monetization.scss */
   section.monetization .left-blue-div {
     background: linear-gradient(257deg, #03158c, #0884cd);
@@ -3085,23 +3085,23 @@ section.monetization {
       background: linear-gradient(257deg, #03158c, #0884cd);
       /* Standard syntax */
       padding-top: 2rem; }
-      /* line 31, ../scss/_monetization.scss */
+      /* line 28, ../scss/_monetization.scss */
       section.monetization .section-heading h2 {
         color: white;
         font-size: 34px !important; }
-      /* line 36, ../scss/_monetization.scss */
+      /* line 33, ../scss/_monetization.scss */
       section.monetization .section-heading hr {
         border-top: 4px solid white; }
-      /* line 40, ../scss/_monetization.scss */
+      /* line 37, ../scss/_monetization.scss */
       section.monetization .right-blue-div {
         display: none; }
-      /* line 44, ../scss/_monetization.scss */
+      /* line 41, ../scss/_monetization.scss */
       section.monetization .left-blue-div {
         display: none; } }
-  /* line 49, ../scss/_monetization.scss */
+  /* line 46, ../scss/_monetization.scss */
   section.monetization .content {
     z-index: 10; }
-  /* line 53, ../scss/_monetization.scss */
+  /* line 50, ../scss/_monetization.scss */
   section.monetization .right-blue-div {
     background: linear-gradient(9deg, #24a6e8, #06d2d7);
     background: -webkit-linear-gradient(9deg, #24a6e8, #06d2d7);
@@ -3119,36 +3119,36 @@ section.monetization {
     top: 8%;
     z-index: -1;
     transform: rotate(174deg); }
-  /* line 70, ../scss/_monetization.scss */
+  /* line 66, ../scss/_monetization.scss */
   section.monetization .item {
     display: inline-block; }
-  /* line 74, ../scss/_monetization.scss */
+  /* line 70, ../scss/_monetization.scss */
   section.monetization .circle {
     border: 2px solid white;
     border-radius: 50%;
     height: 180px;
     width: 180px;
     margin: 0 auto; }
-    /* line 81, ../scss/_monetization.scss */
+    /* line 77, ../scss/_monetization.scss */
     section.monetization .circle img {
       -moz-transform: scale(0.8);
       -o-transform: scale(0.8);
       -webkit-transform: scale(0.8);
       transform: scale(0.8); }
-  /* line 89, ../scss/_monetization.scss */
+  /* line 85, ../scss/_monetization.scss */
   section.monetization .title {
     margin-top: 20px;
     margin-bottom: 15px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 24px !important;
     color: white; }
-  /* line 97, ../scss/_monetization.scss */
+  /* line 93, ../scss/_monetization.scss */
   section.monetization .description {
     margin: 20px 46px;
     font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light';
     font-size: 18px !important;
     color: white; }
-  /* line 104, ../scss/_monetization.scss */
+  /* line 100, ../scss/_monetization.scss */
   section.monetization .icon img {
     margin-top: 13px; }
 
@@ -3244,7 +3244,7 @@ section.video {
   section.video .side-triangle {
     position: relative;
     left: 0;
-    top: 760px; }
+    top: 785px; }
   /* line 74, ../scss/_video.scss */
   section.video .monitor-row .row + .row {
     margin-top: 40px; }
