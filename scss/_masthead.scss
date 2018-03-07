@@ -158,6 +158,30 @@ header.masthead {
             }
         }
 
+        .menu .buttons {
+            display: inline-block;
+            margin-left: 50px;
+        }
+
+        .menu .buttons a{
+            width: 148px;
+            height: 50px;
+            border-radius: 3px;
+            border: solid 1px #ffffff;
+            color: white;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 16px;
+            font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+        }
+
+        .menu .buttons a:first-child{
+            padding: 14px 48px;
+        }
+
+        .menu .buttons a:last-child{
+            padding: 14px 22px;
+        }
         .translation-box {
             border-left: solid 1px white;
             color: white;
