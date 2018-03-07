@@ -22,7 +22,8 @@
     <!-- Custom styles for this template -->
     <link href="css/style.min.css?v=9" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-
+    <link rel="stylesheet" type="text/css" href="css/slick.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css?v=5" />
     <!-- Temporary navbar container fix -->
     <style>
         .navbar-toggler {
@@ -30,7 +31,7 @@
         }
 
         @media (max-width: 576px) {
-            nav>.container {
+            nav > .container {
                 width: 100%;
             }
         }
@@ -142,7 +143,8 @@
                 <div class="text-container">
                     <h1 i18n="THE FUTURE OF">THE FUTURE OF</h1>
                     <h1 i18n="RETIREMENT PLANNING IS HERE!">
-                        <strong>RETIREMENT PLANNING</strong> IS HERE!</h1>
+                        <strong>RETIREMENT PLANNING</strong> IS HERE!
+                    </h1>
                     <h2 class="subtitle col-lg-11 no-padding" i18n="INVEST IN MULTIPLE CRYPTOCURRENCIES">
                         Invest in multiple cryptocurrencies and traditional assets, keep
                         <br> control of your retirement savings, realize your goals!
@@ -322,7 +324,6 @@
                 </div>
             </div>
         </section>
-
         <section class="smartcontract" id="smartcontract">
             <div class="container">
                 <div class="section-content row ">
@@ -353,7 +354,6 @@
                 </div>
             </div>
         </section>
-
         <div class="background-market-monetization" id="market">
 
             <section class="retirement">
@@ -365,15 +365,15 @@
                 <div class="section-content ">
                     <div class="bullets-container">
                         <span i18n="SET YOUR RETIREMENT GOALS" class="selected" meta-title="SET YOUR RETIREMENT GOALS" meta-content="Risk/return adjusted recommendations, based on your individual circumstances."
-                            meta-id="01">1</span>
+                              meta-id="01">1</span>
                         <span i18n="PICK THE INVESTMENTS YOU WANT" meta-title="PICK THE INVESTMENTS YOU WANT" meta-content="Choose from stocks, bonds and cryptocurrencies, or select from dozen template portfolios, handpicked by financial experts."
-                            meta-id="02">2</span>
+                              meta-id="02">2</span>
                         <span i18n="GET AN OPTIMIZED PORTFOLIO" meta-title="GET AN OPTIMIZED PORTFOLIO" meta-content="We build an optimized portfolio to help improve your return while reducing risk."
-                            meta-id="03">3</span>
+                              meta-id="03">3</span>
                         <span i18n="RELAX AND ENJOY YOUR LIFE" meta-title="RELAX AND ENJOY YOUR LIFE" meta-content="We maintain your target allocation, automatically rebalancing your portfolio when needed."
-                            meta-id="04">4</span>
+                              meta-id="04">4</span>
                         <span i18n="TRY OUR ALPHA" meta-title="TRY OUR ALPHA" meta-content="Experience the benefits of the Auctus Platform in a simulation environment."
-                            meta-id="05" meta-href="https://platform.auctus.org">5</span>
+                              meta-id="05" meta-href="https://platform.auctus.org">5</span>
                     </div>
                 </div>
                 <div class="row selected-content ">
@@ -438,7 +438,6 @@
                 </div>
             </section>
         </div>
-
         <section class="roadmap" id="roadmap">
             <div class="transition-gradient-after adjust-top"></div>
             <div class="container">
@@ -584,7 +583,71 @@
             </div>
             <!-- <img src="img/auctus-wm.png" class="auctus-wm"></div>  -->
         </section>
-        
+
+        <section class="latestnews">
+            <div class="section-heading text-center">
+                <h2 i18n="OUR LATEST NEWS">OUR LATEST NEWS</h2>
+                <hr width="100px" />
+
+                <div class="news-container" id="newsContainer" style="display:none">
+                    <a href="NEWS_URL" target="_blank">
+                        <div class="news-card">
+                            <div class="img-div" style="background: url(IMG_URL)"></div>
+                            <div class="dots news-card-dots"></div>
+                            <div class="news-card-title">NEWS_TITLE</div>
+                            <div class="news-card-date">NEWS_DATE</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="supported-by" id="asSeenOn">
+            <div class="section-heading text-center">
+                <h2>SUPPORTED BY</h2>
+                <hr width="100px"></hr>
+            </div>
+            <div class="links container">
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-lg-2 show-up">
+                        <a href="https://blog.auctus.org/auctus-partners-with-rcn-global-lending-f1190ae7da51" target="_blank">
+                            <div class="link-box rcn">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 show-up">
+                        <a href="https://blog.auctus.org/auctus-announces-0x-protocol-integration-e0f842e247d6" target="_blank">
+                            <div class="link-box zrx">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 show-up">
+                        <a href="https://blog.auctus.org/auctus-to-leverage-aragon-to-become-a-truly-decentralized-platform-2fd6b4d1178c" target="_blank">
+                            <div class="link-box aragon">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 show-up">
+                        <a href="http://vator.tv/news/2018-03-06-retirement-planning-platform-auctus-partners-with-blockchain-training-platform-cofoundit"
+                           target="_blank">
+                            <div class="link-box cofoundit">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 show-up">
+                        <a href="https://medium.com/amadeus-relay/amadeus-auctus-are-partners-since-the-beginning-abb68c8e3faa" target="_blank">
+                            <div class="link-box amadeus">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 show-up">
+                        <a href="http://symetrics.eu/" target="_blank">
+                            <div class="link-box symetrics">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="as-seen-on" id="asSeenOn">
             <div class="section-heading text-center">
                 <h2 i18n="AS SEEN ON">AS SEEN ON</h2>
@@ -600,7 +663,7 @@
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2 ">
                         <a href="https://venturebeat.com/2018/02/19/auctus-is-bringing-blockchain-tech-to-the-36-trillion-retirement-plan-market/"
-                            target="_blank">
+                           target="_blank">
                             <div class="link-box venturebeat">
                             </div>
                         </a>
@@ -619,7 +682,7 @@
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2 ">
                         <a href="https://cointelegraph.com/press-releases/Auctus%20Pension%20Project%20-%20Pre-Sale%20Whitelist%20Closing%20in%2024h"
-                            target="_blank">
+                           target="_blank">
                             <div class="link-box cointelegraph">
                             </div>
                         </a>
@@ -637,7 +700,7 @@
             <div class="container">
                 <div class="subscribe">
                     <form action="//auctus.us16.list-manage.com/subscribe/post?u=e6c2bc48f91f09fab4afe5bee&amp;id=b39ba220eb" method="post" id="mc-embedded-subscribe-form"
-                        name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div class="col-md-12">
                             <div class="row">
                                 <p>
@@ -648,7 +711,7 @@
                         <div class="input-group col-md-12">
                             <div class="row">
                                 <input name="EMAIL" class="required email form-control" id="mce-EMAIL" type="text" placeholder="Enter your email" aria-label="Enter your email"
-                                    i18n="EMAIL" />
+                                       i18n="EMAIL" />
                                 <span class="input-group-btn">
                                     <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary" i18n="SUBSCRIBE">SUBSCRIBE</button>
                                 </span>
@@ -771,8 +834,10 @@
                 </div>
             </div>
             <div class="cookie-toast close-toast" onclick="acceptCookies(this);">
-                <span>This website uses cookies to offer you a better browsing experience. You can find more details in our
-                    <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.</span>
+                <span>
+                    This website uses cookies to offer you a better browsing experience. You can find more details in our
+                    <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
+                </span>
                 <button>
                     <span>I AGREE</span>
                 </button>
@@ -781,7 +846,7 @@
         <img class="v" src="img/tokensale/v.png" />
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+        <script type="text/javascript" src="js/slick.min.js"></script>
         <script src="js/translation.js"></script>
         <script src="js/script.min.js?v=9"></script>
         <script>
@@ -852,8 +917,7 @@
             fbq('track', 'PageView');
         </script>
         <noscript>
-            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2025966277638951&ev=PageView&noscript=1"
-            />
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2025966277638951&ev=PageView&noscript=1" />
         </noscript>
         <!-- End Facebook Pixel Code -->
         <!-- Twitter universal website tag code -->
@@ -895,6 +959,72 @@
                 }
                 $(".card-title").text($(obj).attr("meta-title"));
                 $(".card-content").text($(obj).attr("meta-content"));
+            }
+            var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+            $(function () {
+                var $content = $('#newsContainer');
+                var $template = $('#newsContainer').html();
+                var data = {
+                    rss_url: 'https://blog.auctus.org/feed/'
+                };
+                $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+                    if (response.status == 'ok') {
+                        var output = '';
+                        $.each(response.items, function (k, item) {
+                            var visibleSm;
+                            /*if (k < 3) {
+                                visibleSm = '';
+                            } else {
+                                visibleSm = ' visible-sm';
+                            }*/
+                            var element = $template;
+
+                            //output += '<div class="col-sm-6 col-md-4' + visibleSm + '">';
+                            //output += '<div class="blog-post"><header>';
+                            //output += '<h4 class="date">' + item.pubDate + "</h4>";
+
+
+                            var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
+                            var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
+                            var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
+                            var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
+                            var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
+                            element = element.replace("IMG_URL", src);
+                            var d = new Date(Date.parse(item.pubDate))
+                            var month = monthNames[d.getMonth()];
+                            var day = d.getDate()
+                            element = element.replace("NEWS_DATE", month + ' ' + day);
+                            //output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></header>';
+                            element = element.replace("NEWS_URL", item.link);
+                            element = element.replace("NEWS_TITLE", item.title);
+                            //output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
+                            var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
+                            var maxLength = 120 // maximum number of characters to extract
+                            //trim the string to the maximum length
+                            var trimmedString = yourString.substr(0, maxLength);
+                            //re-trim if we are in the middle of a word
+                            trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+                            //output += '<p>' + trimmedString + '...</p>';
+                            //output += '</div></div></div>';
+                            output += element;
+                            //return k < 3;
+                        });
+                        $content.html(output);
+                        createSlider();
+                        $content.show();
+                    }
+                });
+            });
+
+            function createSlider() {
+                $('#newsContainer').slick({
+                    dots: true,
+                    variableWidth: true,
+                    centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
             }
         </script>
 </body>
