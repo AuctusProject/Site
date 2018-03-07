@@ -56,6 +56,11 @@ section {
     text-align: center;
 }
 
+.section-heading {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 @media (min-width: 768px) {
     .section-heading {
         margin-bottom: 5rem;
@@ -244,9 +249,6 @@ a.linkedin-button {
     }
 }
 
-.show-up{
-    opacity:0;
-}
 .blue {
     .icons-panel {
         i.fa {

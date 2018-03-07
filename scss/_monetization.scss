@@ -1,6 +1,6 @@
 section.monetization {
     padding-bottom: 2em;
-    padding-top: 17rem;
+    padding-top: 9rem;
 
     .left-blue-div {
         background: linear-gradient(257deg, #03158c, #0884cd);
@@ -8,7 +8,6 @@ section.monetization {
         background: -o-linear-gradient(257deg, #03158c, #0884cd); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(257deg, #03158c, #0884cd); /* For Firefox 3.6 to 15 */
         background: linear-gradient(257deg, #03158c, #0884cd); /* Standard syntax */
-        
         width: 2000px;
         height: 1000px;
         position: absolute;
@@ -19,21 +18,19 @@ section.monetization {
     }
 
     @media (max-width: 991px) {
-
         background: linear-gradient(257deg, #03158c, #0884cd);
         background: -webkit-linear-gradient(257deg, #03158c, #0884cd); /* For Safari 5.1 to 6.0  60%*/
         background: -o-linear-gradient(257deg, #03158c, #0884cd); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(257deg, #03158c, #0884cd); /* For Firefox 3.6 to 15 */
         background: linear-gradient(257deg, #03158c, #0884cd); /* Standard syntax */
-        
         padding-top: 2rem;
 
-        .section-heading h2{
+        .section-heading h2 {
             color: white;
             font-size: 34px !important;
         }
 
-        .section-heading hr{
+        .section-heading hr {
             border-top: 4px solid white;
         }
 
@@ -46,7 +43,7 @@ section.monetization {
         }
     }
 
-    .content{
+    .content {
         z-index: 10
     }
 
@@ -56,7 +53,6 @@ section.monetization {
         background: -o-linear-gradient(9deg, #24a6e8, #06d2d7); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(9deg, #24a6e8, #06d2d7); /* For Firefox 3.6 to 15 */
         background: linear-gradient(9deg, #24a6e8, #06d2d7); /* Standard syntax */
-        
         width: 2000px;
         height: 200px;
         position: absolute;

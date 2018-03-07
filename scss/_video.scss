@@ -1,43 +1,115 @@
-.blue-background {
-    background: #0884cd; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Safari 5.1 to 6.0  60%*/
-    background: -o-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* Standard syntax */
-    display: block;
-    width: 100%;
-    position: absolute;
-    height: calc(100% - 500px);
-    z-index: -1;
-    top: 500px;
-}
+section.video {
 
-.videos-container {
-    div {
-        display: inline-block;
-        margin: 15px;
+    margin-top:-500px;
 
-        @media (min-width: 820px) {
-            margin-top: 60px;
+    .container > .row + .row {
+        margin-top: 80px;
+    }
+
+    .blue-background {
+        background: #0884cd; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(140deg, #04148c 25%, #0884cd 75%); /* Standard syntax */
+        display: block;
+        width: 100%;
+        position: absolute;
+        height: calc(100% - 500px);
+        z-index: -1;
+        top: 500px;
+    }
+
+    h3 {
+        font-size: 28px !important;
+        color: #002D78;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 16px !important;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    span {
+        font-size: 14px;
+        font-family: 'Helvetica Neue';
+    }
+
+
+
+    .videos-container {
+        div {
+            display: inline-block;
+            margin: 15px;
+
+            @media (min-width: 820px) {
+                margin-top: 60px;
+            }
         }
     }
-}
 
-.video-iframe {
-    box-shadow: 0 15px 30px -2px rgba(15,46,114,.7);
-    width: 90%;
-    height: 400px;
-}
+    .video-text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .video-text {
+            border-left: solid 4px #00BDFF;
+            padding-left: 27px;
+        }
+    }
+
+    .side-triangle {
+        position: relative;
+        left: 0;
+        top: 785px;
+    }
+
+    .monitor-row {
 
 
-@media (min-width: 820px) {
+        .row + .row {
+            margin-top: 40px;
+        }
+
+        h4, span {
+            color: #bcbec0;
+        }
+
+        [meta-monitor-id] {
+            cursor: pointer;
+        }
+
+        .active {
+            h4 {
+                color: #002D78;
+            }
+
+            span {
+                color: #292b2c;
+            }
+        }
+    }
+
     .video-iframe {
-        width: 800px;
+        box-shadow: 0px 50px 51px -28px rgba(45, 45, 45, 0.6);
+        width: 90%;
         height: 400px;
     }
 
-    .video-html5 {
-        width: 712px;
-        height: 400px;
+
+    @media (min-width: 820px) {
+        .video-iframe {
+            width: 512px;
+            height: 290px;
+        }
+
+        .video-html5 {
+            width: 712px;
+            height: 400px;
+        }
     }
 }

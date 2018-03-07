@@ -365,66 +365,6 @@ header.presale-masthead {
     }
 }
 
-section.supported-by {
-    padding-top: 5rem !important;
-
-    h2 {
-        color: #ffffff;
-    }
-
-    h3 {
-        margin-top: 45px;
-        color: #00bdff;
-    }
-
-    .section-heading {
-        margin-bottom: 0px !important;
-    }
-
-    background: #1e2e4b;
-
-    .links {
-        align-content: center;
-
-        @media (max-width: 648px) {
-            padding: 20px 15px;
-        }
-
-        .link-box {
-            margin: 0 auto 30px auto;
-            height: 100px;
-            width: 150px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-
-        .rcn {
-            background-image: url(../img/partners/rcn.png);
-        }
-
-        .cofoundit {
-            background-image: url(../img/partners/cofoundit.svg);
-        }
-
-        .zrx {
-            background-image: url(../img/partners/0x.png);
-        }
-
-        .aragon {
-            background-image: url(../img/partners/aragon.png);
-        }
-
-        .amadeus {
-            background-image: url(../img/partners/amadeus.png);
-        }
-
-        .symetrics {
-            background-image: url(../img/partners/symetrics.png);
-        }
-    }
-}
-
 section.as-seen-on {
     padding-top: 8rem !important;
     padding-bottom: 1rem;

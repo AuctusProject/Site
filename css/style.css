@@ -633,17 +633,63 @@ header.masthead {
   position: relative;
   overflow: hidden;
   width: 100%;
-  color: white;
-  background: #0884cd;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%);
-  /* For Safari 5.1 to 6.0  60%*/
-  background: -o-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%);
-  /* Standard syntax */ }
+  color: white; }
+  header.masthead .left-blue-div {
+    background: linear-gradient(75deg, #22a0fa, #0f64f4);
+    background: -webkit-linear-gradient(206deg, #22a0fa, #0f64f4);
+    /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(206deg, #22a0fa, #0f64f4);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(206deg, #22a0fa, #0f64f4);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(206deg, #22a0fa, #0f64f4);
+    /* Standard syntax */
+    width: 1000px;
+    height: 1200px;
+    position: absolute;
+    transform: rotate(-300deg);
+    right: calc(130px + 50%);
+    top: -20%;
+    z-index: 2; }
+  @media (max-width: 991px) {
+    header.masthead .left-blue-div {
+      display: none; } }
+  header.masthead .right-blue-div {
+    background: linear-gradient(75deg, #22a0fa, #0f64f4);
+    background: -webkit-linear-gradient(75deg, #22a0fa, #0f64f4);
+    /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(75deg, #22a0fa, #0f64f4);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(75deg, #22a0fa, #0f64f4);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(75deg, #22a0fa, #0f64f4);
+    /* Standard syntax */
+    width: 1000px;
+    height: 1200px;
+    position: absolute;
+    right: calc(0%);
+    top: -20%;
+    z-index: 1; }
+  header.masthead .bottom-white-div {
+    background: white;
+    transform: rotate(-10deg);
+    width: 3000px;
+    height: 400px;
+    position: absolute;
+    right: calc(-10%);
+    top: 88%;
+    z-index: 3; }
+  @media (max-width: 991px) {
+    header.masthead .bottom-white-div {
+      display: none; } }
+  header.masthead .computer-image {
+    position: absolute;
+    z-index: 5;
+    right: 3%;
+    bottom: 34%; }
+  @media (max-width: 991px) {
+    header.masthead .computer-image {
+      display: none; } }
   @media (min-width: 992px) {
     header.masthead {
       height: 768px; } }
@@ -733,17 +779,36 @@ header.masthead {
     header.masthead .top-header .translation.open {
       width: 124px;
       transition: all 0.2s; }
-  header.masthead .top-header.blue {
-    background: rgba(4, 20, 140, 0.7); }
-    header.masthead .top-header.blue .logo {
-      content: url("../img/header/headerlogo.png"); }
-    header.masthead .top-header.blue .menu a > span {
-      color: white; }
-    header.masthead .top-header.blue .translation-box {
-      border-left: solid 1px white;
-      color: white; }
-  header.masthead .top-header.blue:hover {
-    background: #04148c;
+  header.masthead .top-header.blue .logo {
+    content: url("../img/header/headerlogo.png"); }
+  header.masthead .top-header.blue .menu a > span {
+    color: white; }
+  header.masthead .top-header.blue .menu .buttons {
+    display: inline-block;
+    margin-left: 50px; }
+  header.masthead .top-header.blue .menu .buttons a {
+    width: 148px;
+    height: 50px;
+    border-radius: 3px;
+    border: solid 1px #ffffff;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: "Helvetica Neue Bold","HelveticaNeue-Bold"; }
+  header.masthead .top-header.blue .menu .buttons a:hover {
+    background: white;
+    color: #04148c; }
+  header.masthead .top-header.blue .menu .buttons a:first-child {
+    padding: 14px 48px; }
+  header.masthead .top-header.blue .menu .buttons a:last-child {
+    padding: 14px 22px; }
+  header.masthead .top-header.blue .translation-box {
+    border-left: solid 1px white;
+    color: white; }
+  header.masthead .top-header.blue:hover,
+  header.masthead .top-header.blue.hover {
+    background: rgba(4, 20, 140, 0.7);
     transition: all 0.2s; }
   header.masthead .top-header.white {
     background: rgba(250, 250, 250, 0.7); }
@@ -825,18 +890,18 @@ header.masthead {
       background-image: url(/img/header/wp.png); }
   header.masthead .text-container {
     z-index: 2;
-    padding: 200px 0 0 0;
+    padding: 130px 0 0 0;
     width: 68%;
     position: relative;
     max-width: 550px; }
     header.masthead .text-container h1 {
-      font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
-      font-size: 37pt;
+      font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+      font-size: 28px !important;
       color: white;
-      margin-bottom: 20pt; }
+      margin: 0; }
     header.masthead .text-container h2 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-      font-size: 20pt !important;
+      font-size: 16px !important;
       color: white;
       margin: 0; }
     header.masthead .text-container h3 {
@@ -844,6 +909,17 @@ header.masthead {
       font-size: 13pt !important;
       color: white;
       margin: 0; }
+    header.masthead .text-container .subtitle {
+      margin-top: 10px; }
+    @media (max-width: 480px) {
+      header.masthead .text-container .subtitle {
+        font-size: 14px !important; } }
+    header.masthead .text-container .days-to-sale h2 {
+      font-size: 16px;
+      font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+      color: #34dce0; }
+    header.masthead .text-container .days-to-sale .title {
+      padding-top: 5px; }
     @media (max-width: 991px) {
       header.masthead .text-container {
         text-align: center;
@@ -2143,7 +2219,8 @@ section.roadmap {
       background: #CCCCCC !important; } }
 
 section.countdown {
-  padding-bottom: 5em; }
+  padding-bottom: 5em;
+  padding-top: 1rem !important; }
   section.countdown .section-heading {
     margin-bottom: 4rem; }
     section.countdown .section-heading h2 {
@@ -2166,16 +2243,15 @@ section.countdown {
         section.countdown .sales-date span {
           margin: 10px 0px; } }
   section.countdown .timer {
-    text-align: center;
     overflow: hidden; }
   section.countdown .timer > div {
     text-align: center;
     display: inline-block; }
   section.countdown .time-part {
     display: inline-block;
-    width: 148px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 107px;
+    margin-left: 9px;
+    margin-right: 9px;
     margin-top: 5px;
     margin-bottom: 5px; }
   @media (max-width: 768px) {
@@ -2195,44 +2271,59 @@ section.countdown {
       max-width: 380px; }
       @media (max-width: 768px) {
         section.countdown .join-whitelist a {
-          padding: 15px 0px;
-          width: 80%; } }
+          padding: 15px 0px; } }
       @media (max-width: 380px) {
         section.countdown .join-whitelist a {
           padding: 15px 0px;
           width: 100%;
           border-radius: 0; } }
   section.countdown .box {
-    width: 148px;
-    height: 160px;
+    width: 107px;
+    height: 107px;
     border: 2px solid #09d8ba;
     border-radius: 5px;
     display: inline-block; }
     section.countdown .box .time-value {
       font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
-      font-size: 80px;
-      line-height: 110px;
+      font-size: 48px;
+      line-height: 65px;
       color: #09d8ba; }
     section.countdown .box .time-label {
       font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
       color: white;
-      font-size: 20px; }
+      font-size: 16px; }
   section.countdown .join-buttons {
-    padding-top: 30px; }
+    padding-top: 30px;
+    max-width: 500px;
+    margin-left: 5px; }
+  @media (max-width: 991px) {
+    section.countdown .join-buttons {
+      margin-left: 0px; } }
   section.countdown .join-button {
     width: 100%;
     color: white;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin: 10px; }
   section.countdown .join-button a:hover, section.countdown .join-button a:focus, section.countdown .join-button a:active {
     text-decoration: none; }
+  section.countdown .pre-sale-button-div.token-sale {
+    max-width: 230px;
+    width: 230px; }
+  section.countdown .pre-sale-button-div.whitelist {
+    max-width: 230px;
+    width: 230px; }
+  section.countdown .pre-sale-button-div:hover {
+    background: #002d78;
+    color: #34dce0; }
   section.countdown .pre-sale-button-div {
     z-index: 1000;
+    border-radius: 3px;
     padding: 15px 10px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-    font-size: 14pt;
+    font-size: 16px;
     letter-spacing: 2px;
-    background: #030387;
-    color: #00fcfc;
+    background: #34dce0;
+    color: #002d78;
     cursor: pointer;
     border: 0;
     max-width: 300px;
@@ -2245,29 +2336,6 @@ section.countdown {
     border: solid 1px;
     padding: 10px;
     margin: auto; }
-  @media (min-width: 768px) {
-    section.countdown .time-part:after {
-      content: '';
-      position: relative;
-      width: 46px;
-      height: 2px;
-      background-color: #09d8ba;
-      top: -82px;
-      left: 148px;
-      display: block; }
-    section.countdown .days:before {
-      content: '';
-      position: relative;
-      height: 2px;
-      background-color: #09d8ba;
-      top: 80px;
-      right: 98px;
-      display: block;
-      width: 1000px;
-      right: 1000px; }
-    section.countdown .seconds:after {
-      width: 1000px;
-      left: 148px; } }
   section.countdown label {
     color: white;
     width: 100%; }
@@ -2518,16 +2586,64 @@ section.retirement {
         padding: 10px; }
 
 section.monetization {
-  background: -webkit-linear-gradient(#00E3FF -45%, #074EF1 57%, #071E96 100%);
-  /* For Safari 5.1 to 6.0  60%*/
-  background: -o-linear-gradient(#00E3FF -45%, #074EF1 57%, #071E96 100%);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#00E3FF -45%, #074EF1 57%, #071E96 100%);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#00E3FF -45%, #074EF1 57%, #071E96 100%);
-  /* Standard syntax */
-  padding-bottom: 12em;
+  padding-bottom: 2em;
   padding-top: 17rem; }
+  section.monetization .left-blue-div {
+    background: linear-gradient(257deg, #03158c, #0884cd);
+    background: -webkit-linear-gradient(257deg, #03158c, #0884cd);
+    /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(257deg, #03158c, #0884cd);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(257deg, #03158c, #0884cd);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(257deg, #03158c, #0884cd);
+    /* Standard syntax */
+    width: 2000px;
+    height: 1000px;
+    position: absolute;
+    transform: rotate(184deg);
+    right: -20%;
+    top: 13%; }
+  @media (max-width: 991px) {
+    section.monetization {
+      background: linear-gradient(257deg, #03158c, #0884cd);
+      background: -webkit-linear-gradient(257deg, #03158c, #0884cd);
+      /* For Safari 5.1 to 6.0  60%*/
+      background: -o-linear-gradient(257deg, #03158c, #0884cd);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(257deg, #03158c, #0884cd);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(257deg, #03158c, #0884cd);
+      /* Standard syntax */
+      padding-top: 2rem; }
+      section.monetization .section-heading h2 {
+        color: white;
+        font-size: 34px !important; }
+      section.monetization .section-heading hr {
+        border-top: 4px solid white; }
+      section.monetization .right-blue-div {
+        display: none; }
+      section.monetization .left-blue-div {
+        display: none; } }
+  section.monetization .content {
+    z-index: 10; }
+  section.monetization .right-blue-div {
+    background: linear-gradient(9deg, #24a6e8, #06d2d7);
+    background: -webkit-linear-gradient(9deg, #24a6e8, #06d2d7);
+    /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(9deg, #24a6e8, #06d2d7);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(9deg, #24a6e8, #06d2d7);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(9deg, #24a6e8, #06d2d7);
+    /* Standard syntax */
+    width: 2000px;
+    height: 200px;
+    position: absolute;
+    left: 20%;
+    top: 8%;
+    z-index: -1;
+    transform: rotate(174deg); }
   section.monetization .item {
     display: inline-block; }
   section.monetization .circle {
@@ -3188,8 +3304,8 @@ section.supported-by {
       background-size: contain; }
     section.supported-by .links .rcn {
       background-image: url(../img/partners/rcn.png); }
-    section.supported-by .links .microsoft {
-      background-image: url(../img/partners/microsoft.png); }
+    section.supported-by .links .cofoundit {
+      background-image: url(../img/partners/cofoundit.svg); }
     section.supported-by .links .zrx {
       background-image: url(../img/partners/0x.png); }
     section.supported-by .links .aragon {
@@ -3221,8 +3337,8 @@ section.as-seen-on {
       background-size: contain; }
     section.as-seen-on .links .venturebeat {
       background-image: url(../img/presale/venturebeat.png); }
-    section.as-seen-on .links .cryptocoinsnews {
-      background-image: url(../img/presale/cryptocoinsnews.png); }
+    section.as-seen-on .links .cnbc {
+      background-image: url(../img/presale/cnbc.png); }
     section.as-seen-on .links .bloomberg {
       background-image: url(../img/presale/bloomberg.png); }
     section.as-seen-on .links .investopedia {
@@ -3710,3 +3826,53 @@ section.token-model {
       @media (max-width: 992px) {
         section.token-model .flow-container hr {
           width: 90%; } }
+
+section.latestnews .news-container {
+  width: calc(100% - 120px);
+  max-width: 1025px;
+  margin: auto; }
+
+section.latestnews .news-card {
+  width: 315px;
+  max-width: 100%;
+  height: 349px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  margin: 13px;
+  position: relative;
+  vertical-align: top; }
+  @media (max-width: 430px) {
+    section.latestnews .news-card {
+      width: 240px !important; } }
+  section.latestnews .news-card .img-div {
+    width: 100%;
+    height: 180px;
+    background-size: cover !important; }
+  section.latestnews .news-card .news-card-dots {
+    margin-top: 15px;
+    width: 104px; }
+  section.latestnews .news-card .news-card-title {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 1.4px;
+    text-align: left;
+    margin: 10px 20px;
+    max-height: 78px;
+    height: 78px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black; }
+  section.latestnews .news-card .news-card-date {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 20px;
+    color: #939598; }
