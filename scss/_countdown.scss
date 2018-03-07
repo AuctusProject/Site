@@ -1,5 +1,6 @@
 section.countdown {
     padding-bottom: 5em;
+    padding-top: 1rem !important;
 
     .section-heading {
         margin-bottom: 4rem;
@@ -34,7 +35,6 @@ section.countdown {
     }
 
     .timer {
-        text-align: center;
         overflow: hidden;
     }
 
@@ -45,9 +45,9 @@ section.countdown {
 
     .time-part {
         display: inline-block;
-        width: 148px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 107px;
+        margin-left: 9px;
+        margin-right: 9px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -86,34 +86,36 @@ section.countdown {
     }
 
     .box {
-        width: 148px;
-        height: 160px;
+        width: 107px;
+        height: 107px;
         border: 2px solid rgba(9, 216, 186, 1);
         border-radius: 5px;
         display: inline-block;
 
         .time-value {
             font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
-            font-size: 80px;
-            line-height: 110px;
+            font-size: 48px;
+            line-height: 65px;
             color: rgba(9, 216, 186, 1);
         }
 
         .time-label {
             font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             color: white;
-            font-size: 20px;
+            font-size: 16px;
         }
     }
 
     .join-buttons {
         padding-top: 30px;
+        margin-left: 10%;
     }
 
     .join-button {
         width: 100%;
         color: white;
         margin-top: 20px;
+        margin: 10px;
     }
 
     .join-button a:hover, .join-button a:focus, .join-button a:active {
@@ -122,12 +124,13 @@ section.countdown {
 
     .pre-sale-button-div {
         z-index: 1000;
+        border-radius: 3px;
         padding: 15px 10px;
         font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-        font-size: 14pt;
+        font-size: 16px;
         letter-spacing: 2px;
-        background: #030387;
-        color: #00fcfc;
+        background: #34dce0;
+        color: rgba(0, 45, 120, 1);
         cursor: pointer;
         border: 0;
         max-width: 300px;
@@ -142,36 +145,6 @@ section.countdown {
         border: solid 1px;
         padding: 10px;
         margin: auto;
-    }
-
-    @media (min-width: 768px) {
-        .time-part:after {
-            content: '';
-            position: relative;
-            width: 46px;
-            height: 2px;
-            background-color: #09d8ba;
-            top: -82px;
-            left: 148px;
-            display: block;
-        }
-
-        .days:before {
-            content: '';
-            position: relative;
-            height: 2px;
-            background-color: #09d8ba;
-            top: 80px;
-            right: 98px;
-            display: block;
-            width: 1000px;
-            right: 1000px;
-        }
-
-        .seconds:after {
-            width: 1000px;
-            left: 148px;
-        }
     }
 
     label {

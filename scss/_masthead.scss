@@ -5,11 +5,56 @@ header.masthead {
     overflow: hidden;
     width: 100%;
     color: white;
-    background: #0884cd; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Safari 5.1 to 6.0  60%*/
-    background: -o-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* Standard syntax */
+    // background: #0884cd; /* For browsers that do not support gradients */
+    // background: -webkit-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Safari 5.1 to 6.0  60%*/
+    // background: -o-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Opera 11.1 to 12.0 */
+    // background: -moz-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Firefox 3.6 to 15 */
+    // background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* Standard syntax */
+
+    .left-blue-div {
+        background: linear-gradient(75deg, #22a0fa, #0f64f4);
+        background: -webkit-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(206deg, #22a0fa, #0f64f4); /* Standard syntax */
+        
+        width: 1000px;
+        height: 1200px;
+        position: absolute;
+        transform: rotate(-300deg);
+        left: calc(-34%);
+        top: -20%;
+        z-index: 2;
+    }
+
+    .right-blue-div {
+        background: linear-gradient(75deg, #22a0fa, #0f64f4);
+        background: -webkit-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(75deg, #22a0fa, #0f64f4); /* Standard syntax */
+        
+        width: 1000px;
+        height: 1200px;
+        position: absolute;
+        right: calc(0%);
+        top: -20%;
+        z-index: 1;
+    }
+
+    .bottom-white-div {
+        background: white;
+        transform: rotate(-10deg);
+        width: 3000px;
+        height: 400px;
+        position: absolute;
+        right: calc(-10%);
+        top: 94%;
+        z-index: 3;
+    }
+   
+   
+   
     @media (min-width: 992px) {
         height: 768px;
     }
@@ -146,7 +191,7 @@ header.masthead {
     }
 
     .top-header.blue {
-        background: rgba(4, 20, 140, 0.7);
+        // background: rgba(4, 20, 140, 0.7);
 
         .logo {
             content: url("../img/header/headerlogo.png");
@@ -323,21 +368,21 @@ header.masthead {
 
     .text-container {
         z-index: 2;
-        padding: 200px 0 0 0;
+        padding: 130px 0 0 0;
         width: 68%;
         position: relative;
         max-width: 550px;
 
         h1 {
-            font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
-            font-size: 37pt;
+            font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+            font-size: 28px !important;
             color: white;
-            margin-bottom: 20pt
+            margin: 0;
         }
 
         h2 {
             font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-            font-size: 20pt !important;
+            font-size: 16px !important;
             color: white;
             margin: 0;
         }
@@ -347,6 +392,22 @@ header.masthead {
             font-size: 13pt !important;
             color: white;
             margin: 0;
+        }
+
+        .subtitle {
+            margin-top: 10px;
+        }
+
+        .days-to-sale {
+            h2 {
+                font-size: 16px;
+                font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+                color: #34dce0;
+            }
+
+            .title {
+                padding-top: 5px;
+            }
         }
 
         @media (max-width: 991px) {
