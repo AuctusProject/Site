@@ -12,7 +12,6 @@ header.masthead {
         background: -o-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Firefox 3.6 to 15 */
         background: linear-gradient(206deg, #22a0fa, #0f64f4); /* Standard syntax */
-        
         width: 1000px;
         height: 1200px;
         position: absolute;
@@ -34,7 +33,6 @@ header.masthead {
         background: -o-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Firefox 3.6 to 15 */
         background: linear-gradient(75deg, #22a0fa, #0f64f4); /* Standard syntax */
-        
         width: 1000px;
         height: 1200px;
         position: absolute;
@@ -60,7 +58,7 @@ header.masthead {
         }
     }
 
-    .computer-image{
+    .computer-image {
         position: absolute;
         z-index: 5;
         right: 3%;
@@ -68,11 +66,11 @@ header.masthead {
     }
 
     @media (max-width: 991px) {
-        .computer-image{
+        .computer-image {
             display: none;
         }
     }
-   
+
     @media (min-width: 992px) {
         height: 768px;
     }
@@ -210,7 +208,6 @@ header.masthead {
 
     .top-header.blue {
         // background: rgba(4, 20, 140, 0.7);
-
         .logo {
             content: url("../img/header/headerlogo.png");
         }
@@ -226,7 +223,7 @@ header.masthead {
             margin-left: 50px;
         }
 
-        .menu .buttons a{
+        .menu .buttons a {
             width: 148px;
             height: 50px;
             border-radius: 3px;
@@ -238,18 +235,19 @@ header.masthead {
             font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
         }
 
-        .menu .buttons a:hover{
+        .menu .buttons a:hover {
             background: white;
             color: rgba(4, 20, 140, 1);
         }
 
-        .menu .buttons a:first-child{
+        .menu .buttons a:first-child {
             padding: 14px 48px;
         }
 
-        .menu .buttons a:last-child{
+        .menu .buttons a:last-child {
             padding: 14px 22px;
         }
+
         .translation-box {
             border-left: solid 1px white;
             color: white;
@@ -257,7 +255,7 @@ header.masthead {
     }
 
     .top-header.blue.hover {
-        background: rgba(4, 20, 140, 0.7);
+        background: rgba(17, 108, 244, 0.81);
         transition: all 0.2s;
     }
 
