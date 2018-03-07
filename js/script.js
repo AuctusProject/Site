@@ -72,31 +72,31 @@
 })(jQuery); // End of use strict
 
 
-$(window).scroll(function (event) {
+//$(window).scroll(function (event) {
 
-    $(".show-up").each(function (i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-            el.addClass("come-in");
-            el.addClass("come-in-bottom");
-        }
-    });
+//    $(".show-up").each(function (i, el) {
+//        var el = $(el);
+//        if (el.visible(true)) {
+//            el.addClass("come-in");
+//            el.addClass("come-in-bottom");
+//        }
+//    });
 
-    $(".roadmap .box.left").each(function (i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-            el.addClass("come-in");
-            el.addClass("come-in-left");
-        }
-    });
-    $(".roadmap .box.right").each(function (i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-            el.addClass("come-in");
-            el.addClass("come-in-right");
-        }
-    });
-});
+//    $(".roadmap .box.left").each(function (i, el) {
+//        var el = $(el);
+//        if (el.visible(true)) {
+//            el.addClass("come-in");
+//            el.addClass("come-in-left");
+//        }
+//    });
+//    $(".roadmap .box.right").each(function (i, el) {
+//        var el = $(el);
+//        if (el.visible(true)) {
+//            el.addClass("come-in");
+//            el.addClass("come-in-right");
+//        }
+//    });
+//});
 
 function onAgreePreSale(){
     $('.agree-terms').css('display', 'none');
