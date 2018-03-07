@@ -1,9 +1,9 @@
-(function($) {
+(function ($) {
     var interval = setInterval(onTimer, 1000);
 
     function onTimer() {
         var date = Date.UTC(2018, 2, 27, 14, 00);
-        
+
         var element = $('.timer');
         var diff = date - new Date().getTime();
         if (diff < 0) {
@@ -15,7 +15,7 @@
         }
     };
 
-    function updateTimer(element, diff){
+    function updateTimer(element, diff) {
         var secondInMiliseconds = 1000;
         var minuteInMiliseconds = 60 * secondInMiliseconds;
         var hourInMiliseconds = 60 * minuteInMiliseconds;
@@ -80,6 +80,23 @@
         }
     })
 
+    $(".top-header.blue").hover(
+        function () {
+
+            var body = window.document.body; //IE 'quirks'
+            var document = window.document.documentElement; //IE with doctype
+            document = (document.clientHeight) ? document : body;
+
+            if (document.scrollTop != 0 && !$(this).hasClass('hover')) {
+                $(this).addClass('hover');
+            }
+        }, function () {
+            if ($(this).hasClass('hover')) {
+                $(this).removeClass('hover');
+            }
+        }
+    );
+
 })(jQuery); // End of use strict
 
 
@@ -109,14 +126,14 @@
 //    });
 //});
 
-function onAgreePreSale(){
+function onAgreePreSale() {
     $('.agree-terms').css('display', 'none');
     $('.agree-button').css('display', 'none');
     $('.address-copy').css('display', 'block');
     $('.copy-button').css('display', 'block');
 }
 
-function onCloseAgreementPopup(){
+function onCloseAgreementPopup() {
     $('.agree-terms').css('display', 'block');
     $('.agree-button').css('display', 'block');
     $('.address-copy').css('display', 'none');
@@ -124,7 +141,7 @@ function onCloseAgreementPopup(){
     $('.copy-button').text('COPY ADDRESS');
 }
 
-function onCopyAddress(){
+function onCopyAddress() {
     $('.copy-button').text('COPIED!');
 }
 
@@ -135,7 +152,7 @@ function joinWhitelist() {
     registerClickEvent('JoinWhitelist');
 }
 
-function downloadWhitepaper(){
+function downloadWhitepaper() {
     openNewTab("https://dl.auctus.org/Auctus_Whitepaper.pdf");
     registerClickEvent('Whitepaper');
 }
@@ -168,7 +185,7 @@ function registerClickEvent(category) {
     });
 }
 
-function acceptCookies(e){
+function acceptCookies(e) {
     $(e).addClass('close-toast');
     setCookie('cookie-accepted', 1);
 }
