@@ -7,6 +7,7 @@ section.latestnews {
         width: calc(100% - 120px);
         max-width: 1025px;
         margin: auto;
+        margin-bottom: 80px;
     }
 
 
@@ -54,6 +55,7 @@ section.latestnews {
             overflow: hidden;
             text-overflow: ellipsis;
             color: black;
+            font-family: 'Helvetica Neue Bold';
         }
 
         .news-card-date {
