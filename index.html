@@ -294,8 +294,7 @@
                 </div>
                 <div class="row monitor-row">
                     <div class="col-5">
-                        
-                        <img src="img/video/large-display.png" />
+                        <img class="monitor"  src="img/video/disp1.png" />
                     </div>
                     <div class="col-7 video-text-container">
                         <div >
@@ -829,28 +828,15 @@
         </script>
 
         <script>
-            $(".bullets-container > span").hover(
-                function () { updateBulletsPanel(this); }
-            );
-            function updateBulletsPanel(obj) {
-                $(".bullets-container > span").removeClass("selected");
-                $(obj).toggleClass("selected");
-
-                $(".selected-content img").attr("src", "img/retirement/" + $(obj).attr("meta-id") + ".png");
-                var href = $(obj).attr("meta-href");
-                if (href) {
-                    $(".selected-content img").css('cursor', 'pointer');
-                    $(".selected-content img").unbind("click").bind('click', function () { openNewTab(href); });
-                }
-                else {
-                    $(".selected-content img").css('cursor', 'unset');
-                    $(".selected-content img").unbind("click");
-                }
-                $(".card-title").text($(obj).attr("meta-title"));
-                $(".card-content").text($(obj).attr("meta-content"));
+            $(function () {
+                $('[meta-monitor-id]').click(function () {
+                    var src = 'img/video/disp' + $(this).attr('meta-monitor-id') + '.png';
+                    $('.monitor').attr('src', src)
+                    $('[meta-monitor-id]').removeClass('active');
+                    $(this).addClass('active');
+                });
             }
-            var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-
+            );
             $(function () {
                 var $content = $('#newsContainer');
                 var $template = $('#newsContainer').html();

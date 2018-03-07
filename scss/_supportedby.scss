@@ -1,6 +1,12 @@
 section.supported-by {
     padding-top: 0rem !important;
-    margin-top:-50px;
+    margin-top: -90px;
+
+    .section-heading {
+        position: relative;
+        z-index: 1000;
+    }
+
     h3 {
         margin-top: 45px;
         color: #00bdff;
