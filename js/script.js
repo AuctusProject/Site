@@ -47,10 +47,7 @@
         onCloseAgreementPopup();
     })
 
-    var languageCookie = getCookie("selected-language")
-    if (languageCookie)
-        changeLanguage(languageCookie);
-
+     
     $.fn.visible = function (partial) {
 
         var $t = $(this),
