@@ -1,6 +1,10 @@
 section.video {
     margin-top: -500px;
 
+    @media (max-width:500px) {
+        margin-top: -350px;
+    }
+
     .container > .row + .row {
         margin-top: 80px;
     }
@@ -59,10 +63,12 @@ section.video {
             border-left: solid 4px #00BDFF;
             padding-left: 27px;
 
-            @media (max-width:500px) {
+            @media (max-width:991px) {
                 border-left: none;
                 padding-left: 20px;
+                margin-bottom: 20px;
             }
+
         }
     }
 
@@ -70,12 +76,17 @@ section.video {
         position: relative;
         left: 0;
         top: 785px;
+
+        @media (max-width:500px) {
+            width: 260px;
+        }
     }
 
     .monitor-row {
 
         .row + .row {
             margin-top: 40px;
+            margin-bottom: 40px;
         }
 
         h4, span {
@@ -101,6 +112,13 @@ section.video {
         @media (max-width:500px) {
             img {
                 width: 300px;
+                margin-bottom: 25px;
+            }
+        }
+
+        @media (max-width:1199px) {
+            img {
+                width: 350px;
                 margin-bottom: 25px;
             }
         }
