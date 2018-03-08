@@ -1401,17 +1401,16 @@
                     var output = '';
                     $.each(response.items, function (k, item) {
                         var element = $template;
-
-
                         var tagIndex = item.description.indexOf('<img');
                         var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex;
                         var srcStart = srcIndex + 5;
                         var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart;
                         var src = item.description.substring(srcStart, srcEnd);
                         element = element.replace("IMG_URL", src);
-                        var d = new Date(Date.parse(item.pubDate))
-                        var month = monthNames[d.getMonth()];
-                        var day = d.getDate()
+                        var monthStr = item.pubDate.substring(5, 7);
+                        var monthInt = parseInt(monthStr);
+                        var month = monthNames[monthInt - 1];
+                        var day = item.pubDate.substring(8, 10);
                         element = element.replace("NEWS_DATE", month + ' ' + day);
                         element = element.replace("NEWS_URL", item.link);
                         element = element.replace("NEWS_TITLE", item.title);
