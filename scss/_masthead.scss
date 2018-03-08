@@ -19,14 +19,52 @@
             height: 800px !important;
             top: 68% !important;
         }
+    }
+}
 
+@media (min-width: 2200px) {
+    header.masthead {
         .computer-image {
-            transform: scale(0.5) !important;
+            transform: scale(0.6) !important;
             right: 10% !important;
             bottom: 24% !important;
         }
     }
 }
+
+@media (min-width: 1600px) and (max-width:2199px) {
+    header.masthead {
+        .computer-image {
+            transform: scale(0.8) !important;
+            right: 10% !important;
+            bottom: 38% !important;
+        }
+    }
+}
+
+@media (min-width: 1400px) and (max-width:1599px) {
+    header.masthead {
+        .computer-image {
+            transform: scale(1.0) !important;
+            right: 10% !important;
+            bottom: 42% !important;
+        }
+
+        .bottom-white-div {
+            top: 78% !important;
+        }
+    }
+}
+
+// @media (min-width: 1200px) and (max-width:1600px) {
+//     header.masthead {
+//         .computer-image {
+//             transform: scale(0.8) !important;
+//             right: 10% !important;
+//             bottom: 38% !important;
+//         }
+//     }
+// }
 
 header.masthead {
     position: relative;
