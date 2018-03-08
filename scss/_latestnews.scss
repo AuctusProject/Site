@@ -1,4 +1,11 @@
 section.latestnews {
+
+    @media(max-width:430px) {
+        .slick-prev, .slick-next {
+            display: none !important;
+        }
+    }
+
     #news-card-template {
         //display: none;
     }
@@ -8,6 +15,10 @@ section.latestnews {
         max-width: 1025px;
         margin: auto;
         margin-bottom: 80px;
+
+        @media(max-width:430px) {
+            width: 100%
+        }
     }
 
 

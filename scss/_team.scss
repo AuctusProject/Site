@@ -36,6 +36,10 @@ section.team {
 
     padding-bottom: 4em;
 
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+
     .section-heading {
         h2 {
             color: white;
