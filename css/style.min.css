@@ -4106,7 +4106,7 @@ section.as-seen-on {
         display: none; }
       /* line 429, ../scss/_presale.scss */
       section.as-seen-on .link-box {
-        transform: scale(0.6); } }
+        transform: scale(0.75); } }
   /* line 434, ../scss/_presale.scss */
   section.as-seen-on .left-blue-div {
     background: linear-gradient(-360deg, #366294, #1e2e4b);
@@ -4832,7 +4832,7 @@ section.supported-by {
       @media (max-width: 991px) {
         /* line 32, ../scss/_supportedby.scss */
         section.supported-by .links .link-box {
-          transform: scale(0.6); } }
+          transform: scale(0.75); } }
     /* line 46, ../scss/_supportedby.scss */
     section.supported-by .links .rcn {
       background-image: url(../img/partners/rcn.png); }
