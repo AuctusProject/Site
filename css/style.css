@@ -1533,6 +1533,9 @@ section.team {
     @media (max-width: 768px) {
       section.team .team-card {
         margin: 25px 20px; } }
+    @media (max-width: 400px) {
+      section.team .team-card {
+        margin: 25px 10px; } }
     section.team .team-card .card-picture-name {
       width: 100%;
       display: inline-block;
@@ -3978,6 +3981,9 @@ section.supported-by {
       background-repeat: no-repeat;
       background-size: contain;
       filter: invert(52%); }
+      @media (max-width: 991px) {
+        section.supported-by .links .link-box {
+          transform: scale(0.6); } }
     section.supported-by .links .rcn {
       background-image: url(../img/partners/rcn.png); }
     section.supported-by .links .cofoundit {

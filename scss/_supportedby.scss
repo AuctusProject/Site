@@ -36,6 +36,10 @@ section.supported-by {
             background-repeat: no-repeat;
             background-size: contain;
             filter: invert(52%);
+
+            @media(max-width:991px) {
+                transform: scale(0.6);
+            }
         }
 
         .rcn {
