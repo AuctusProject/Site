@@ -1300,11 +1300,7 @@
         });
         sum = 0;
         var count = 0;
-        setInterval(function () {
-            var id = (count % 4) + 1;
-            $('[meta-monitor-id="' + id + '"]').click();
-            count++; 
-        }, 3000);
+       
 
         $(document).keypress(function (e) {
             if (e.which === 118)
@@ -1377,15 +1373,29 @@
     </script>
 
     <script>
+
+        function monitorInterval () {
+            var id = (count % 4) + 1;
+            updateMonitor($('[meta-monitor-id="' + id + '"]'));
+            count++;
+        }
+
+        var intervalHandler = setInterval(monitorInterval, 3000);
+
         $(function () {
             $('[meta-monitor-id]').click(function () {
-                var src = 'img/video/disp' + $(this).attr('meta-monitor-id') + '.png';
-                $('.monitor').attr('src', src)
-                $('[meta-monitor-id]').removeClass('active');
-                $(this).addClass('active');
+                updateMonitor(this);
             });
-        }
-        );
+        });
+
+        function updateMonitor (element) {
+            var src = 'img/video/disp' + $(element).attr('meta-monitor-id') + '.png';
+            $('.monitor').attr('src', src)
+            $('[meta-monitor-id]').removeClass('active');
+            $(element).addClass('active');
+            clearInterval(intervalHandler);
+            intervalHandler = setInterval(monitorInterval, 3000);
+        };
 
         var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
