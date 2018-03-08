@@ -34,9 +34,6 @@ section.latestnews {
         position: relative;
         vertical-align: top;
 
-        @media(max-width: 430px) {
-            width: 240px !important;
-        }
 
         .img-div {
             width: 100%;
