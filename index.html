@@ -513,12 +513,12 @@
         <!-- <img src="img/auctus-wm.png" class="auctus-wm"></div>  -->
     </section>
 
-    <section class="latestnews">
+    <section class="latestnews" style="display:none">
         <div class="section-heading text-center">
             <h2 i18n="OUR LATEST NEWS">OUR LATEST NEWS</h2>
             <hr width="100px" />
         </div>
-        <div class="news-container" id="newsContainer" style="display:none">
+        <div class="news-container" id="newsContainer">
             <a href="NEWS_URL" target="_blank">
                 <div class="news-card">
                     <div class="img-div" style="background: url(IMG_URL)"></div>
@@ -1384,6 +1384,7 @@
 
         $(function () {
             var $content = $('#newsContainer');
+            var $section = $('.latestnews');
             var $template = $('#newsContainer').html();
             var data = {
                 rss_url: 'https://blog.auctus.org/feed/'
@@ -1411,7 +1412,7 @@
                     });
                     $content.html(output);
                     createSlider();
-                    $content.show();
+                    $section.show();
                 }
             });
         });
