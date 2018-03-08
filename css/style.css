@@ -3585,6 +3585,9 @@ section.advisors {
     display: none !important; }
   section.advisors .section-heading {
     margin-bottom: 3rem; }
+    section.advisors .section-heading hr {
+      border-top-color: #00bdff;
+      width: 100px; }
   section.advisors .advisors-content {
     max-width: 1200px;
     margin: auto;

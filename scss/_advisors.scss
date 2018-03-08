@@ -3,12 +3,17 @@ section.advisors {
     text-align: center;
     background-color: #fafafa;
 
-    .slick-prev, .slick-next{
+    .slick-prev, .slick-next {
         display: none !important;
     }
 
     .section-heading {
         margin-bottom: 3rem;
+
+        hr {
+            border-top-color: #00bdff;
+            width: 100px;
+        }
     }
 
     .advisors-content {
