@@ -1,4 +1,9 @@
 section.latestnews {
+    background: -moz-linear-gradient(0deg, #fafafa, white); /* FF3.6-15 */
+    background: -webkit-linear-gradient(0deg, #fafafa, white); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(0deg, #fafafa, white);
+    
+    padding-bottom: 5px;
 
     @media(max-width:430px) {
         .slick-prev, .slick-next {
