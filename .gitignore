@@ -6,3 +6,4 @@ css/style.min.css.map
 .DS_Store
 scss/style.min.css
 .vs
+*.sqlite
