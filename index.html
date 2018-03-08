@@ -289,15 +289,17 @@
                                 <span>Risk/return adjusted recommendations, based on your individual circumstances.</span>
                             </div>
                             <div class="col-6" meta-monitor-id="2">
-                                <h4>GET AN OPTIMIZED PORTFOLIO</h4>
-                                <span>We build an optimized portfolio to help improve your return while reducing risk.</span>
+                                <h4>PICK THE INVESTMENTS</h4>
+                                <span>
+                                    Choose from stocks, bonds and cryptocurrencies, or select from dozen template portfolio handpicked
+                                    by financial experts.
+                                </span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6" meta-monitor-id="3">
-                                <h4>PICK THE INVESTMENTS</h4>
-                                <span>Choose from stocks, bonds and cryptocurrencies, or select from dozen template portfolio handpicked
-                                    by financial experts.</span>
+                                <h4>GET AN OPTIMIZED PORTFOLIO</h4>
+                                <span>We build an optimized portfolio to help improve your return while reducing risk.</span>
                             </div>
                             <div class="col-6" meta-monitor-id="4">
                                 <h4>RELAX AND ENJOY YOUR LIFE</h4>
@@ -1298,6 +1300,12 @@
             return false;
         });
         sum = 0;
+        var count = 0;
+        setInterval(function () {
+            var id = (count % 4) + 1;
+            $('[meta-monitor-id="' + id + '"]').click();
+            count++; 
+        }, 3000);
 
         $(document).keypress(function (e) {
             if (e.which === 118)
