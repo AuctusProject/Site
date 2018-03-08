@@ -3253,15 +3253,23 @@ section.smartcontract {
 
 /* line 1, ../scss/_video.scss */
 section.video {
-  margin-top: -500px; }
+  margin-top: -500px;
+  background: -webkit-linear-gradient(0deg, white, #fafafa 30%);
+  /* For Safari 5.1 to 6.0  60%*/
+  background: -o-linear-gradient(0deg, white, #fafafa 30%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(0deg, white, #fafafa 30%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, white, #fafafa 30%);
+  /* Standard syntax */ }
   @media (max-width: 500px) {
     /* line 1, ../scss/_video.scss */
     section.video {
       margin-top: -350px; } }
-  /* line 8, ../scss/_video.scss */
+  /* line 12, ../scss/_video.scss */
   section.video .container > .row + .row {
     margin-top: 80px; }
-  /* line 12, ../scss/_video.scss */
+  /* line 16, ../scss/_video.scss */
   section.video .blue-background {
     background: #0884cd;
     /* For browsers that do not support gradients */
@@ -3279,92 +3287,93 @@ section.video {
     height: calc(100% - 500px);
     z-index: -1;
     top: 500px; }
-  /* line 26, ../scss/_video.scss */
+  /* line 30, ../scss/_video.scss */
   section.video h3 {
     font-size: 28px !important;
     color: #002D78;
     margin-bottom: 30px;
     font-weight: bold; }
-  /* line 33, ../scss/_video.scss */
+  /* line 37, ../scss/_video.scss */
   section.video h4 {
     font-size: 16px !important;
     margin-bottom: 10px;
     font-weight: bold; }
-  /* line 39, ../scss/_video.scss */
+  /* line 43, ../scss/_video.scss */
   section.video span {
     font-size: 14px;
-    font-family: 'Helvetica Neue'; }
-  /* line 47, ../scss/_video.scss */
+    font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light';
+    font-weight: bold; }
+  /* line 52, ../scss/_video.scss */
   section.video .videos-container div {
     display: inline-block;
     margin: 15px; }
     @media (min-width: 820px) {
-      /* line 47, ../scss/_video.scss */
+      /* line 52, ../scss/_video.scss */
       section.video .videos-container div {
         margin-top: 60px; } }
-  /* line 57, ../scss/_video.scss */
+  /* line 62, ../scss/_video.scss */
   section.video .video-text-container {
     display: flex;
     justify-content: center;
     align-items: center; }
-    /* line 62, ../scss/_video.scss */
+    /* line 67, ../scss/_video.scss */
     section.video .video-text-container .video-text {
       border-left: solid 4px #00BDFF;
       padding-left: 27px; }
       @media (max-width: 991px) {
-        /* line 62, ../scss/_video.scss */
+        /* line 67, ../scss/_video.scss */
         section.video .video-text-container .video-text {
           border-left: none;
           padding-left: 20px;
           margin-bottom: 20px; } }
-  /* line 74, ../scss/_video.scss */
+  /* line 79, ../scss/_video.scss */
   section.video .side-triangle {
     position: relative;
     left: 0;
     top: 785px; }
     @media (max-width: 500px) {
-      /* line 74, ../scss/_video.scss */
+      /* line 79, ../scss/_video.scss */
       section.video .side-triangle {
         width: 260px; } }
-  /* line 86, ../scss/_video.scss */
+  /* line 91, ../scss/_video.scss */
   section.video .monitor-row .row + .row {
     margin-top: 40px;
     margin-bottom: 40px; }
-  /* line 91, ../scss/_video.scss */
+  /* line 96, ../scss/_video.scss */
   section.video .monitor-row h4, section.video .monitor-row span {
     color: #bcbec0;
     transition: all 0.8s; }
-  /* line 96, ../scss/_video.scss */
+  /* line 101, ../scss/_video.scss */
   section.video .monitor-row [meta-monitor-id] {
     cursor: pointer;
     transition: all 0.8s; }
-  /* line 102, ../scss/_video.scss */
+  /* line 107, ../scss/_video.scss */
   section.video .monitor-row .active h4 {
     color: #002D78; }
-  /* line 106, ../scss/_video.scss */
+  /* line 111, ../scss/_video.scss */
   section.video .monitor-row .active span {
     color: #292b2c; }
   @media (max-width: 1199px) {
-    /* line 112, ../scss/_video.scss */
+    /* line 117, ../scss/_video.scss */
     section.video .monitor-row img {
       width: 350px;
       margin-bottom: 25px; } }
   @media (max-width: 500px) {
-    /* line 119, ../scss/_video.scss */
+    /* line 124, ../scss/_video.scss */
     section.video .monitor-row img {
       width: 300px;
       margin-bottom: 25px; } }
-  /* line 126, ../scss/_video.scss */
+  /* line 131, ../scss/_video.scss */
   section.video .video-iframe {
     box-shadow: 0px 50px 51px -28px rgba(45, 45, 45, 0.6);
     width: 90%;
     height: 400px; }
   @media (min-width: 820px) {
-    /* line 134, ../scss/_video.scss */
+    /* line 139, ../scss/_video.scss */
     section.video .video-iframe {
       width: 512px;
       height: 290px; }
-    /* line 139, ../scss/_video.scss */
+    /* line 144, ../scss/_video.scss */
     section.video .video-html5 {
       width: 712px;
       height: 400px; } }
@@ -4727,30 +4736,31 @@ section.token-model {
 /* line 1, ../scss/_supportedby.scss */
 section.supported-by {
   padding-top: 0rem !important;
-  margin-top: -90px; }
+  margin-top: -90px;
+  background: #fafafa; }
   @media (max-width: 991px) {
     /* line 1, ../scss/_supportedby.scss */
     section.supported-by {
       margin-top: 35px; } }
-  /* line 10, ../scss/_supportedby.scss */
+  /* line 11, ../scss/_supportedby.scss */
   section.supported-by .section-heading {
     position: relative;
     z-index: 1000; }
-  /* line 15, ../scss/_supportedby.scss */
+  /* line 16, ../scss/_supportedby.scss */
   section.supported-by h3 {
     margin-top: 45px;
     color: #00bdff; }
-  /* line 20, ../scss/_supportedby.scss */
+  /* line 21, ../scss/_supportedby.scss */
   section.supported-by .section-heading {
     margin-bottom: 0px !important; }
-  /* line 24, ../scss/_supportedby.scss */
+  /* line 25, ../scss/_supportedby.scss */
   section.supported-by .links {
     align-content: center; }
     @media (max-width: 648px) {
-      /* line 24, ../scss/_supportedby.scss */
+      /* line 25, ../scss/_supportedby.scss */
       section.supported-by .links {
         padding: 20px 15px; } }
-    /* line 31, ../scss/_supportedby.scss */
+    /* line 32, ../scss/_supportedby.scss */
     section.supported-by .links .link-box {
       margin: 0 auto 30px auto;
       height: 100px;
@@ -4760,25 +4770,25 @@ section.supported-by {
       background-size: contain;
       filter: invert(52%); }
       @media (max-width: 991px) {
-        /* line 31, ../scss/_supportedby.scss */
+        /* line 32, ../scss/_supportedby.scss */
         section.supported-by .links .link-box {
           transform: scale(0.6); } }
-    /* line 45, ../scss/_supportedby.scss */
+    /* line 46, ../scss/_supportedby.scss */
     section.supported-by .links .rcn {
       background-image: url(../img/partners/rcn.png); }
-    /* line 49, ../scss/_supportedby.scss */
+    /* line 50, ../scss/_supportedby.scss */
     section.supported-by .links .cofoundit {
       background-image: url(../img/partners/cofoundit.svg); }
-    /* line 53, ../scss/_supportedby.scss */
+    /* line 54, ../scss/_supportedby.scss */
     section.supported-by .links .zrx {
       background-image: url(../img/partners/0x.png); }
-    /* line 57, ../scss/_supportedby.scss */
+    /* line 58, ../scss/_supportedby.scss */
     section.supported-by .links .aragon {
       background-image: url(../img/partners/aragon.png); }
-    /* line 61, ../scss/_supportedby.scss */
+    /* line 62, ../scss/_supportedby.scss */
     section.supported-by .links .amadeus {
       background-image: url(../img/partners/amadeus.png); }
-    /* line 65, ../scss/_supportedby.scss */
+    /* line 66, ../scss/_supportedby.scss */
     section.supported-by .links .symetrics {
       background-image: url(../img/partners/symetrics.png); }
 
