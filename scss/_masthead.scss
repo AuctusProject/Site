@@ -48,7 +48,7 @@ header.masthead {
     }
 
     .bottom-white-div {
-        background: white;
+        background: #fafafa;
         transform: rotate(-10deg);
         width: 3000px;
         height: 400px;
@@ -414,15 +414,15 @@ header.masthead {
         max-width: 518px;
 
         h1 {
-            font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-            font-size: 28px !important;
+            font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+            font-size: 37pt;
             color: white;
-            margin: 0;
+            margin-bottom: 20pt;
         }
 
         h2 {
             font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-            font-size: 16px !important;
+            font-size: 20pt !important;
             color: white;
             margin: 0;
         }
@@ -433,6 +433,21 @@ header.masthead {
             color: white;
             margin: 0;
         }
+
+        h4 {
+            font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+            font-size: 28px !important;
+            color: white;
+            margin: 0;
+        }
+
+        h5 {
+            font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+            font-size: 16px !important;
+            color: white;
+            margin: 0;
+        }
+
 
         .subtitle {
             margin-top: 10px;
@@ -446,7 +461,7 @@ header.masthead {
 
         .days-to-sale {
             h2 {
-                font-size: 16px;
+                font-size: 16px !important;
                 font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
                 color: #34dce0;
             }
