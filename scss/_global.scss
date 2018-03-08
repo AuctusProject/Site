@@ -329,4 +329,9 @@ a:hover{
     i {
         color: #0047ab;
     }
+    transition: all 0.2s;
+}
+
+.telegram-button:hover{
+    transform: scale(1.1);
 }
