@@ -304,3 +304,19 @@ a:hover{
 .block-scroll{
     overflow-y: hidden;
 }
+
+.telegram-button{
+    right: 20px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 10;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    background: white;
+
+    i {
+        color: #0047ab;
+    }
+}

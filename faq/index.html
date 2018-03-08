@@ -30,7 +30,7 @@
         }
 
         @media (max-width: 576px) {
-            nav > .container {
+            nav>.container {
                 width: 100%;
             }
         }
@@ -39,6 +39,11 @@
 </head>
 
 <body id="page-top" class="auctus">
+    <div>
+        <a href="https://t.me/AuctusProject" target="_blank" class="telegram-button">
+            <i class="fa fa-telegram fa-3x"></i>
+        </a>
+    </div>
     <header class="masthead">
         <!--<div id="topLanguage" class="mobile-only">
             <div class="quarter-circle language">
@@ -72,13 +77,35 @@
                 <div class="menu-content">
                     <nav>
                         <ul>
-                            <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
-                            <li><span class="icon-arrow-right arr"></span><a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank">WHITEPAPER</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="FAQ" href="../tokenmodel">TOKEN MODEL</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="FAQ" href="../faq">FAQ</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="BLOG" href="https://blog.auctus.org">BLOG</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="TRY ALPHA" href="https://platform.auctus.org">TRY ALPHA</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="JOIN WHITELIST" href="https://kyc.auctus.org" target="_blank">JOIN WHITELIST</a></li>
+                            <li>
+                                <a href="#page-top">
+                                    <img src="../img/header/greenlogo.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank">WHITEPAPER</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="FAQ" href="../tokenmodel">TOKEN MODEL</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="FAQ" href="../faq">FAQ</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="BLOG" href="https://blog.auctus.org">BLOG</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="TRY ALPHA" href="https://platform.auctus.org">TRY ALPHA</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="JOIN WHITELIST" href="https://kyc.auctus.org" target="_blank">JOIN WHITELIST</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -86,24 +113,26 @@
         </div>
         <div class="top-header blue">
             <div class="container">
-                <a href="../"><img class="img-responsive logo" src="../img/header/headerlogo.png" /></a>
+                <a href="../">
+                    <img class="img-responsive logo" src="../img/header/headerlogo.png" />
+                </a>
                 <div class="menu web-only">
-                        <a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank">
-                            <span i18n="WHITEPAPER">WHITEPAPER</span>
-                        </a>
-                        <a href="../tokenmodel">
-                            <span i18n="TOKEN MODEL" >TOKEN MODEL</span>
-                        </a>
-                        <a href="../faq">
-                            <span i18n="FAQ">FAQ</span>
-                        </a>
-                        <a href="https://blog.auctus.org" target="_blank">
-                            <span i18n="BLOG">BLOG</span>
-                        </a>
-                        <div class="buttons">
-                            <a href="https://platform.auctus.org" target="_blank" i18n="TRY ALPHA">TRY ALPHA</a>
-                            <a href="https://kyc.auctus.org"  i18n="JOIN WHITELIST">JOIN WHITELIST</a>
-                        </div>
+                    <a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank">
+                        <span i18n="WHITEPAPER">WHITEPAPER</span>
+                    </a>
+                    <a href="../tokenmodel">
+                        <span i18n="TOKEN MODEL">TOKEN MODEL</span>
+                    </a>
+                    <a href="../faq">
+                        <span i18n="FAQ">FAQ</span>
+                    </a>
+                    <a href="https://blog.auctus.org" target="_blank">
+                        <span i18n="BLOG">BLOG</span>
+                    </a>
+                    <div class="buttons">
+                        <a href="https://platform.auctus.org" target="_blank" i18n="TRY ALPHA">TRY ALPHA</a>
+                        <a href="https://kyc.auctus.org" i18n="JOIN WHITELIST">JOIN WHITELIST</a>
+                    </div>
                     <!--<div class="translation">
                         <div onclick="showTranslateBox('')" class="translation-box">
                             <i class="fa fa-language"></i><span class="language">EN</span>
@@ -148,7 +177,8 @@
         <div class="container">
             <div class="device-container">
                 <div class="text-container">
-                    <h1 i18n="FREQUENTLY ASKED QUESTIONS">FREQUENTLY<br />ASKED QUESTIONS</h1>
+                    <h1 i18n="FREQUENTLY ASKED QUESTIONS">FREQUENTLY
+                        <br />ASKED QUESTIONS</h1>
                     <h3 class="web-only col-md-7 no-padding" i18n="Relevant considerations about the project">
                         Relevant considerations about the project
                     </h3>
@@ -165,30 +195,38 @@
             <div id="faqAccordion" data-children=".item">
                 <h2 i18n="About Auctus">About Auctus</h2>
                 <div class="item">
-                    <a i18n="What is Auctus" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion1" href="#" aria-expanded="true" aria-controls="faqAccordion1">
+                    <a i18n="What is Auctus" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion1" href="#" aria-expanded="true"
+                        aria-controls="faqAccordion1">
                         What is Auctus?
                     </a>
                     <div id="faqAccordion1" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="Auctus was created with the mission">
-                            Auctus is a leading smart contract-powered retirement planning platform, which allows users to create diversified portfolios, consisting of traditional asset classes and cryptocurrencies.
+                            Auctus is a leading smart contract-powered retirement planning platform, which allows users to create diversified portfolios,
+                            consisting of traditional asset classes and cryptocurrencies.
                         </p>
                         <p class="mb-3" i18n="The Auctus platform will provide">
-                            The Auctus Platform brings retirement savers from around the world together, providing a trustless marketplace where users can create and exchange tailored retirement apps and services. The platform furthermore provides information and fee transparency, as well as access to analytic tools and robo advisory, allowing the user to take well informed decisions.
+                            The Auctus Platform brings retirement savers from around the world together, providing a trustless marketplace where users
+                            can create and exchange tailored retirement apps and services. The platform furthermore provides
+                            information and fee transparency, as well as access to analytic tools and robo advisory, allowing
+                            the user to take well informed decisions.
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Whats the meaning behind" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion2" href="#" aria-expanded="false" aria-controls="faqAccordion2">
+                    <a i18n="Whats the meaning behind" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion2" href="#"
+                        aria-expanded="false" aria-controls="faqAccordion2">
                         What’s the meaning behind the ‘Auctus’ name?
                     </a>
                     <div id="faqAccordion2" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="Auctus is latin and means growth">
-                            Auctus is latin and means growth. We believe that blockchain and smart contract can enhance the retirement market, allowing retirement plans to grow faster and pension savers to reach their goals earlier.
+                            Auctus is latin and means growth. We believe that blockchain and smart contract can enhance the retirement market, allowing
+                            retirement plans to grow faster and pension savers to reach their goals earlier.
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Where is Auctus based" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion3" href="#" aria-expanded="false" aria-controls="faqAccordion3">
+                    <a i18n="Where is Auctus based" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion3" href="#"
+                        aria-expanded="false" aria-controls="faqAccordion3">
                         Where is Auctus based?
                     </a>
                     <div id="faqAccordion3" class="collapse" role="tabpanel">
@@ -197,10 +235,12 @@
                         </p>
                     </div>
                 </div>
-                <br /><br />
+                <br />
+                <br />
                 <h2 i18n="Auctus Token AUC">Auctus Token (AUC)</h2>
                 <div class="item">
-                    <a i18n="What is the Auctus token used for" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion4" href="#" aria-expanded="false" aria-controls="faqAccordion4">
+                    <a i18n="What is the Auctus token used for" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion4"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion4">
                         What is the Auctus token (AUC) used for?
                     </a>
                     <div id="faqAccordion4" class="collapse" role="tabpanel">
@@ -214,14 +254,18 @@
                             Individuals and companies offering their services or products on the marketplace will be paid in AUC token only.
                         </p>
                         <p class="mb-3" i18n="Payments on the marketplace">
-                            Payments on the marketplace can be linked to results. Meaning users won’t be paying for bad advice. All terms can be coded into the respective smart contracts and transactions will therefore be fully automated and depending on results.
+                            Payments on the marketplace can be linked to results. Meaning users won’t be paying for bad advice. All terms can be coded
+                            into the respective smart contracts and transactions will therefore be fully automated and depending
+                            on results.
                         </p>
                     </div>
                 </div>
-                <br /><br />
+                <br />
+                <br />
                 <h2 i18n="Token Launch and Usage of Raised Funds">Token Launch and Usage of Raised Funds</h2>
                 <div class="item">
-                    <a i18n="What is the card cap" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion5" href="#" aria-expanded="false" aria-controls="faqAccordion61">
+                    <a i18n="What is the card cap" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion5" href="#" aria-expanded="false"
+                        aria-controls="faqAccordion61">
                         What is the hard cap?
                     </a>
                     <div id="faqAccordion5" class="collapse" role="tabpanel">
@@ -231,7 +275,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="When will be the public token sale" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion6" href="#" aria-expanded="false" aria-controls="faqAccordion8">
+                    <a i18n="When will be the public token sale" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion6"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion8">
                         When will be the public token sale?
                     </a>
                     <div id="faqAccordion6" class="collapse" role="tabpanel">
@@ -241,19 +286,21 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="What is the total supply of AUC tokens" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion7" href="#" aria-expanded="false" aria-controls="faqAccordion6">
+                    <a i18n="What is the total supply of AUC tokens" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion7"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion6">
                         What is the total supply of AUC tokens?
                     </a>
                     <div id="faqAccordion7" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="The total supply of AUC tokens">
                             The total supply of AUC tokens depends on the price of Ether prior to the token sale.
-                            <br />
-                            As our hardcap is USD 20 million and 51% of all tokens will be distributed to the public, the exact number of tokens will be determined shortly prior to start of token sale.
+                            <br /> As our hardcap is USD 20 million and 51% of all tokens will be distributed to the public, the
+                            exact number of tokens will be determined shortly prior to start of token sale.
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="What happens to unsold tokens" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion8" href="#" aria-expanded="false" aria-controls="faqAccordion6">
+                    <a i18n="What happens to unsold tokens" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion8" href="#"
+                        aria-expanded="false" aria-controls="faqAccordion6">
                         What happens to unsold tokens if you don’t reach hardcap?
                     </a>
                     <div id="faqAccordion8" class="collapse" role="tabpanel">
@@ -263,17 +310,20 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Is there an individual cap" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion9" href="#" aria-expanded="false" aria-controls="faqAccordion6">
+                    <a i18n="Is there an individual cap" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion9" href="#"
+                        aria-expanded="false" aria-controls="faqAccordion6">
                         Is there an individual cap?
                     </a>
                     <div id="faqAccordion9" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="There will be an equal individual purchase cap">
-                            There will be an equal individual purchase cap for registrants during the first 24 hours of the token sale, with individual cap set as follows = Total public cap / Number of approved registrants.
+                            There will be an equal individual purchase cap for registrants during the first 24 hours of the token sale, with individual
+                            cap set as follows = Total public cap / Number of approved registrants.
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Minimum amount" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion10" href="#" aria-expanded="false" aria-controls="faqAccordion6">
+                    <a i18n="Minimum amount" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion10" href="#" aria-expanded="false"
+                        aria-controls="faqAccordion6">
                         What is the minimum amount to contribute in the token sale?
                     </a>
                     <div id="faqAccordion10" class="collapse" role="tabpanel">
@@ -283,43 +333,53 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Is there a whitelist" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion11" href="#" aria-expanded="false" aria-controls="faqAccordion6">
+                    <a i18n="Is there a whitelist" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion11" href="#"
+                        aria-expanded="false" aria-controls="faqAccordion6">
                         Is there a whitelist?
                     </a>
                     <div id="faqAccordion11" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="To be on the whitelist">
-                            Yes. To be on the whitelist, you must fill in <a class="faq-content-link" href="http://eepurl.com/c1-5u9">this form</a>, which will ask for your email, ETH contribution address, and desired ETH contribution amount. KYC/AML will be available well ahead of the  token sale
+                            Yes. To be on the whitelist, you must fill in
+                            <a class="faq-content-link" href="http://eepurl.com/c1-5u9">this form</a>, which will ask for your email, ETH contribution address, and desired ETH contribution
+                            amount. KYC/AML will be available well ahead of the token sale
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Who can participate" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion12" href="#" aria-expanded="false" aria-controls="faqAccordion6">
+                    <a i18n="Who can participate" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion12" href="#" aria-expanded="false"
+                        aria-controls="faqAccordion6">
                         Who can participate in the Token Launch?
                     </a>
                     <div id="faqAccordion12" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="Everyone, except U.S. and Singapore persons">
-                            Everyone, except U.S. and Singapore persons, residents, green card holders, same as citizens and residents of Gibraltar, Kuwait, South Korea and People Republic of China.
+                            Everyone, except U.S. and Singapore persons, residents, green card holders, same as citizens and residents of Gibraltar,
+                            Kuwait, South Korea and People Republic of China.
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Does Auctus Token Sale require KYC/AML" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion13" href="#" aria-expanded="false" aria-controls="faqAccordion6">
+                    <a i18n="Does Auctus Token Sale require KYC/AML" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion13"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion6">
                         Does Auctus Token Sale require KYC/AML?
                     </a>
                     <div id="faqAccordion13" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="Auctus aims to be as credible">
-                            Auctus aims to be as credible and compliant as possible in everything it does, including KYC and AML verification. In order to participate in the Auctus token sale, you must complete KYC proccess at <a target="_blank"   href="https://kyc.auctus.org">https://kyc.auctus.org</a>
+                            Auctus aims to be as credible and compliant as possible in everything it does, including KYC and AML verification. In order
+                            to participate in the Auctus token sale, you must complete KYC proccess at
+                            <a
+                                target="_blank" href="https://kyc.auctus.org">https://kyc.auctus.org</a>
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Did Auctus had a pre-sale" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion14" href="#" aria-expanded="false" aria-controls="faqAccordion7">
+                    <a i18n="Did Auctus had a pre-sale" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion14" href="#"
+                        aria-expanded="false" aria-controls="faqAccordion7">
                         Was there a pre-sale?
                     </a>
                     <div id="faqAccordion14" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="Pre-sale was held from Oct">
-                            Pre-sale was held from Oct 3rd to Oct 7th, 2017. <br />
-                            Pre-Sale Summary:
+                            Pre-sale was held from Oct 3rd to Oct 7th, 2017.
+                            <br /> Pre-Sale Summary:
                             <ul>
                                 <li i18n="ETH raised">
                                     958.9 ETH raised
@@ -347,7 +407,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Which cryptocurrencies will be accepted" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion15" href="#" aria-expanded="false" aria-controls="faqAccordion12">
+                    <a i18n="Which cryptocurrencies will be accepted" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion15"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion12">
                         Which cryptocurrencies will be accepted in the fund raising?
                     </a>
                     <div id="faqAccordion15" class="collapse" role="tabpanel">
@@ -357,7 +418,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Will it be possible to issue more" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion16" href="#" aria-expanded="false" aria-controls="faqAccordion13">
+                    <a i18n="Will it be possible to issue more" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion16"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion13">
                         Will it be possible to issue more tokens after the initial distribution?
                     </a>
                     <div id="faqAccordion16" class="collapse" role="tabpanel">
@@ -367,7 +429,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Will there be a lockup period for AUC tokens" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion17" href="#" aria-expanded="false" aria-controls="faqAccordion14">
+                    <a i18n="Will there be a lockup period for AUC tokens" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion17"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion14">
                         Will there be a lockup period for AUC tokens sold in the token launch?
                     </a>
                     <div id="faqAccordion17" class="collapse" role="tabpanel">
@@ -377,7 +440,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="What will be the initial distribution" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion18" href="#" aria-expanded="false" aria-controls="faqAccordion15">
+                    <a i18n="What will be the initial distribution" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion18"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion15">
                         What will be the initial distribution of AUC tokens?
                     </a>
                     <div id="faqAccordion18" class="collapse" role="tabpanel">
@@ -393,7 +457,7 @@
                                     Reserve for future stakeholders: 18% (1 year vesting - if deemed necessary, these tokens will be burned)
                                 </li>
                                 <li i18n="of tokens are allocated for pre-sale">
-                                    Partnerships and Advisoring:  9% (80% locked - 6 month vesting, with 3 month cliff, 20% unlocked)
+                                    Partnerships and Advisoring: 9% (80% locked - 6 month vesting, with 3 month cliff, 20% unlocked)
                                 </li>
                                 <li i18n="of tokens are allocated for bounty campaigns">
                                     Bounties: 2%
@@ -403,39 +467,51 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Will there be a lockup period for tokens allocated" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion19" href="#" aria-expanded="false" aria-controls="faqAccordion16">
+                    <a i18n="Will there be a lockup period for tokens allocated" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion19"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion16">
                         Will there be a lockup period for tokens allocated to the founding team, partners and advisors?
                     </a>
                     <div id="faqAccordion19" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="AUC tokens allocated to Auctus Core">
-                            AUC tokens allocated to Auctus’ Core Team will not be immediately transferable. They will have 2 years vesting, with a 6-month cliff. This means every 6 months, 25% of those tokens will mature. 80% of tokens allocated to partners and advisors will have 6-month vesting with 3-month cliff. The vesting rules will be enforced via smart contracts.
+                            AUC tokens allocated to Auctus’ Core Team will not be immediately transferable. They will have 2 years vesting, with a 6-month
+                            cliff. This means every 6 months, 25% of those tokens will mature. 80% of tokens allocated to
+                            partners and advisors will have 6-month vesting with 3-month cliff. The vesting rules will be
+                            enforced via smart contracts.
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="How will you use raised proceeds" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion20" href="#" aria-expanded="false" aria-controls="faqAccordion16">
+                    <a i18n="How will you use raised proceeds" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion20"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion16">
                         How will you use raised proceeds?
                     </a>
                     <div id="faqAccordion20" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="Use of raised proceeds">
-                            Product Development: 42% <br />Business Development: 28% <br />Communication and Marketing: 18% <br />Other Expenses: 12%
+                            Product Development: 42%
+                            <br />Business Development: 28%
+                            <br />Communication and Marketing: 18%
+                            <br />Other Expenses: 12%
                         </p>
                     </div>
                 </div>
-                <br /><br />
+                <br />
+                <br />
                 <h2 i18n="Community">Community</h2>
                 <div class="item">
-                    <a i18n="How can I get involved" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion21" href="#" aria-expanded="false" aria-controls="faqAccordion17">
+                    <a i18n="How can I get involved" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion21" href="#"
+                        aria-expanded="false" aria-controls="faqAccordion17">
                         How can I get involved?
                     </a>
                     <div id="faqAccordion21" class="collapse" role="tabpanel">
                         <p class="mb-3" i18n="You can join our Slack">
-                            If you haven’t already, <a class="faq-content-link" href="https://t.me/AuctusProject">join our Telegram channel</a> to chat directly with the team and community.
+                            If you haven’t already,
+                            <a class="faq-content-link" href="https://t.me/AuctusProject">join our Telegram channel</a> to chat directly with the team and community.
                         </p>
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="Will there be a bounty" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion22" href="#" aria-expanded="false" aria-controls="faqAccordion17">
+                    <a i18n="Will there be a bounty" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion22" href="#"
+                        aria-expanded="false" aria-controls="faqAccordion17">
                         Will there be a bounty?
                     </a>
                     <div id="faqAccordion22" class="collapse" role="tabpanel">
@@ -445,7 +521,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a i18n="When will bounties receive their token" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion23" href="#" aria-expanded="false" aria-controls="faqAccordion17">
+                    <a i18n="When will bounties receive their token" data-toggle="collapse" data-parent="#faqAccordion" data-target="#faqAccordion23"
+                        href="#" aria-expanded="false" aria-controls="faqAccordion17">
                         When will bounties receive their token?
                     </a>
                     <div id="faqAccordion23" class="collapse" role="tabpanel">
@@ -496,8 +573,12 @@
                                 <img src="../img/footer/mama_logo.svg" style="width: 300px;padding: 15px 0px 10px 0px; opacity:0.5; margin-left: -18px;">
                             </div>
                             <div>
-                                <h5><b>Part of Multichain Asset Managers Association</b></h5>
-                                MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors, technology providers, service providers and ecosystem players interested in working towards a new vision for asset management using blockchain and other supporting decentralized technologies.
+                                <h5>
+                                    <b>Part of Multichain Asset Managers Association</b>
+                                </h5>
+                                MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors, technology providers,
+                                service providers and ecosystem players interested in working towards a new vision for asset
+                                management using blockchain and other supporting decentralized technologies.
                             </div>
                         </div>
                     </div>
@@ -507,8 +588,12 @@
                                 <img src="../img/footer/eea.png" style="padding: 5px 0px 10px 0px;">
                             </div>
                             <div>
-                                <h5><b>Member of Ethereum Enterprise Alliance</b></h5>
-                                The Enterprise Ethereum Alliance (EEA) connects Fortune 500 enterprises, startups, academics, and technology vendors with Ethereum subject matter experts. The EEA is helping to evolve Ethereum into an enterprise-grade technology, providing research and development in a range of areas.
+                                <h5>
+                                    <b>Member of Ethereum Enterprise Alliance</b>
+                                </h5>
+                                The Enterprise Ethereum Alliance (EEA) connects Fortune 500 enterprises, startups, academics, and technology vendors with
+                                Ethereum subject matter experts. The EEA is helping to evolve Ethereum into an enterprise-grade
+                                technology, providing research and development in a range of areas.
                             </div>
                         </div>
                     </div>
@@ -519,16 +604,18 @@
                 <div class="col-lg-4">
                     <div class="row">
                         <span>
-                            This website uses cookies to offer you a better browsing experience. You can find more details in our <a target="_blank" href="https://dl.auctus.org/Terms_of_Use.pdf">Terms of Use</a> and <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
+                            This website uses cookies to offer you a better browsing experience. You can find more details in our
+                            <a
+                                target="_blank" href="https://dl.auctus.org/Terms_of_Use.pdf">Terms of Use</a> and
+                                <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
                         </span>
                     </div>
                     <br />
                     <div class="row">
                         <span>
-                            The laws of the country where you
-                            reside may be prohibiting you from participating in the AUC Token Sale. Please make sure that
-                            your browsing of the website and/or participation in the token sale do not violate the laws of your
-                            country. You shall be solely responsible for any such breach of the laws and AUCTUS LTD
+                            The laws of the country where you reside may be prohibiting you from participating in the AUC Token Sale. Please make sure
+                            that your browsing of the website and/or participation in the token sale do not violate the laws
+                            of your country. You shall be solely responsible for any such breach of the laws and AUCTUS LTD
                             specifically disclaims any liability arising from or related to such violations.
                         </span>
                     </div>
@@ -537,18 +624,21 @@
                 <div class="col-lg-8">
                     <div class="row disclaimer">
                         <span>
-                            The AUC Token Sale, Terms of Token Sale, the Whitepaper and any documents related to the Token Sale do not
-                            constitute a prospectus or offering document and are not an offer to sell nor the solicitation of an offer
-                            to buy an investment, security, share, equity interest or debt nor a derivative interest of any of the foregoing.
-                            The sale of AUC Tokens constitutes the sale of a software product under the laws of British Virgin Islands.
-                            AUC Tokens are not intended to be a digital currency, security, commodity, bond, debt instrument or any kind of
-                            financial instrument or investment carrying equivalent rights, nor are AUC Tokens intended to represent any form of
-                            money in any jurisdiction, nor any representation of money (including electronic money). Accordingly, any protections
-                            offered by applicable law in relation to the purchase, holding and/or sale of the abovementioned instruments and
-                            investments shall not apply to any contribution made during the AUC Token Sale. AUCTUS PROJECT INC is not licensed
-                            in any jurisdiction. The Token Sale involves the development and use of experimental software and technologies that
-                            may not achieve the objectives specified in the <a onclick="downloadWhitepaper()">Auctus’ Whitepaper</a> and related documents.
-                            The purchase of AUC Tokens represents a high risk to any purchaser.
+                            The AUC Token Sale, Terms of Token Sale, the Whitepaper and any documents related to the Token Sale do not constitute a prospectus
+                            or offering document and are not an offer to sell nor the solicitation of an offer to buy an
+                            investment, security, share, equity interest or debt nor a derivative interest of any of the
+                            foregoing. The sale of AUC Tokens constitutes the sale of a software product under the laws of
+                            British Virgin Islands. AUC Tokens are not intended to be a digital currency, security, commodity,
+                            bond, debt instrument or any kind of financial instrument or investment carrying equivalent rights,
+                            nor are AUC Tokens intended to represent any form of money in any jurisdiction, nor any representation
+                            of money (including electronic money). Accordingly, any protections offered by applicable law
+                            in relation to the purchase, holding and/or sale of the abovementioned instruments and investments
+                            shall not apply to any contribution made during the AUC Token Sale. AUCTUS PROJECT INC is not
+                            licensed in any jurisdiction. The Token Sale involves the development and use of experimental
+                            software and technologies that may not achieve the objectives specified in the
+                            <a
+                                onclick="downloadWhitepaper()">Auctus’ Whitepaper</a> and related documents. The purchase of AUC Tokens represents a high risk
+                                to any purchaser.
                         </span>
                     </div>
                 </div>
@@ -558,8 +648,12 @@
             </div>
         </div>
         <div class="cookie-toast close-toast" onclick="acceptCookies(this);">
-            <span>This website uses cookies to offer you a better browsing experience. You can find more details in our <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.</span>
-            <button><span>I  AGREE</span></button>
+            <span>This website uses cookies to offer you a better browsing experience. You can find more details in our
+                <a target="_blank"
+                    href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.</span>
+            <button>
+                <span>I AGREE</span>
+            </button>
         </div>
     </footer>
 

@@ -73,10 +73,10 @@
         document = (document.clientHeight) ? document : body;
 
         if (document.scrollTop != 0) {
-            $('.top-header.blue').addClass('hover');
+            $('.top-header').addClass('hover');
         }
         else {
-            $('.top-header.blue').removeClass('hover');
+            $('.top-header').removeClass('hover');
         }
     })
 
