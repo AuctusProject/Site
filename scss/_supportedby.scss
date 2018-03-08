@@ -2,6 +2,11 @@ section.supported-by {
     padding-top: 0rem !important;
     margin-top: -90px;
 
+    @media (max-width: 991px) {
+        margin-top: 35px;
+    }
+
+
     .section-heading {
         position: relative;
         z-index: 1000;

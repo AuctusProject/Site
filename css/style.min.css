@@ -398,83 +398,83 @@ body {
   height: 100%;
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
 
-/* line 9, ../scss/_global.scss */
+/* line 10, ../scss/_global.scss */
 p {
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
   font-size: 18px; }
 
-/* line 14, ../scss/_global.scss */
+/* line 15, ../scss/_global.scss */
 h2 {
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 40px !important;
   color: #002d78; }
 
-/* line 20, ../scss/_global.scss */
+/* line 21, ../scss/_global.scss */
 h3 {
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
   font-size: 15px !important;
   letter-spacing: 2px;
   color: black; }
 
-/* line 27, ../scss/_global.scss */
+/* line 28, ../scss/_global.scss */
 .section-heading.inverted h2 {
   color: #00fcfc; }
 
-/* line 31, ../scss/_global.scss */
+/* line 32, ../scss/_global.scss */
 .section-heading.inverted h3 {
   color: white; }
 
-/* line 35, ../scss/_global.scss */
+/* line 36, ../scss/_global.scss */
 .section-heading.inverted-white h2 {
   color: white; }
 
-/* line 39, ../scss/_global.scss */
+/* line 40, ../scss/_global.scss */
 .section-heading.inverted-white hr {
   border-top: 4px solid white; }
 
-/* line 43, ../scss/_global.scss */
+/* line 44, ../scss/_global.scss */
 .section-heading.inverted h3 {
   color: white; }
 
-/* line 47, ../scss/_global.scss */
+/* line 48, ../scss/_global.scss */
 .section-heading.inverted hr {
   border-top: 4px solid white; }
 
-/* line 51, ../scss/_global.scss */
+/* line 52, ../scss/_global.scss */
 section {
   padding-top: 5rem; }
 
-/* line 55, ../scss/_global.scss */
+/* line 56, ../scss/_global.scss */
 .section-content {
   text-align: center; }
 
-/* line 59, ../scss/_global.scss */
+/* line 60, ../scss/_global.scss */
 .section-heading {
   margin-left: 10px;
   margin-right: 10px; }
 
 @media (min-width: 768px) {
-  /* line 65, ../scss/_global.scss */
+  /* line 66, ../scss/_global.scss */
   .section-heading {
     margin-bottom: 5rem; } }
-/* line 70, ../scss/_global.scss */
+/* line 71, ../scss/_global.scss */
 .img-circle {
   border-radius: 50%; }
 
-/* line 74, ../scss/_global.scss */
+/* line 75, ../scss/_global.scss */
 .img-circle.border {
   padding: 5px;
   border: 2px solid #002d78; }
 
-/* line 79, ../scss/_global.scss */
+/* line 80, ../scss/_global.scss */
 hr {
   border-top: 4px solid #00BDFF; }
 
-/* line 83, ../scss/_global.scss */
+/* line 84, ../scss/_global.scss */
 .text-center {
   text-align: center; }
 
-/* line 87, ../scss/_global.scss */
+/* line 88, ../scss/_global.scss */
 .white-box {
   background: #fff;
   -webkit-box-shadow: 0px 15px 30px -2px rgba(15, 46, 114, 0.4);
@@ -483,32 +483,32 @@ hr {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
-  /* line 96, ../scss/_global.scss */
+  /* line 97, ../scss/_global.scss */
   .white-box span {
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     text-transform: uppercase;
     font-size: 14px; }
 
-/* line 103, ../scss/_global.scss */
+/* line 104, ../scss/_global.scss */
 .text-white, .text-white h2, .text-white h3 {
   color: white; }
 
-/* line 107, ../scss/_global.scss */
+/* line 108, ../scss/_global.scss */
 .dots {
   background: url("../img/dots.png") repeat-x;
   height: 20px; }
 
-/* line 112, ../scss/_global.scss */
+/* line 113, ../scss/_global.scss */
 .dots.bottom {
   position: relative !important;
   bottom: 0; }
 
-/* line 117, ../scss/_global.scss */
+/* line 118, ../scss/_global.scss */
 .dots-vert {
   background: url("../img/dots-vertical.png") repeat-y;
   width: 92px; }
 
-/* line 122, ../scss/_global.scss */
+/* line 123, ../scss/_global.scss */
 .transition-gradient-after {
   height: 10em;
   background: #ffffff;
@@ -522,7 +522,7 @@ hr {
   background: linear-gradient(0deg, #ffffff 25%, #d8f9ff 75%);
   /* Standard syntax */ }
 
-/* line 131, ../scss/_global.scss */
+/* line 132, ../scss/_global.scss */
 .transition-gradient-before {
   height: 10em;
   background: #ffffff;
@@ -536,28 +536,28 @@ hr {
   background: linear-gradient(0deg, #d8f9ff 25%, #ffffff 75%);
   /* Standard syntax */ }
 
-/* line 140, ../scss/_global.scss */
+/* line 141, ../scss/_global.scss */
 .adjust-top {
   position: relative;
   top: -80px;
   z-index: -2; }
 
-/* line 146, ../scss/_global.scss */
+/* line 147, ../scss/_global.scss */
 .background-market-monetization {
   position: relative;
   overflow: hidden; }
-  /* line 150, ../scss/_global.scss */
+  /* line 151, ../scss/_global.scss */
   .background-market-monetization .transition-gradient-before {
     position: absolute;
     top: 350px;
     z-index: -1;
     width: 100%; }
-  /* line 157, ../scss/_global.scss */
+  /* line 158, ../scss/_global.scss */
   .background-market-monetization .transition-gradient-after {
     z-index: -2;
     width: 100%; }
 
-/* line 163, ../scss/_global.scss */
+/* line 164, ../scss/_global.scss */
 .background-market-monetization-first,
 .background-market-monetization-second {
   display: block;
@@ -570,7 +570,7 @@ hr {
   background: #0884cd;
   /* For browsers that do not support gradients */ }
 
-/* line 175, ../scss/_global.scss */
+/* line 176, ../scss/_global.scss */
 .background-market-monetization-first {
   transform: rotate(5deg);
   background: -webkit-linear-gradient(60deg, #075cee 25%, #0be7ce 75%);
@@ -582,7 +582,7 @@ hr {
   background: linear-gradient(60deg, #075cee 25%, #0be7ce 75%);
   /* Standard syntax */ }
 
-/* line 183, ../scss/_global.scss */
+/* line 184, ../scss/_global.scss */
 .background-market-monetization-second {
   transform: rotate(-5deg);
   background: -webkit-linear-gradient(70deg, #075cee 25%, #0be7ce 75%);
@@ -595,46 +595,46 @@ hr {
   /* Standard syntax */ }
 
 @media (max-width: 991px) {
-  /* line 192, ../scss/_global.scss */
+  /* line 193, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 198, ../scss/_global.scss */
+  /* line 199, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 203, ../scss/_global.scss */
+/* line 204, ../scss/_global.scss */
 .no-padding {
   padding: 0; }
 
-/* line 207, ../scss/_global.scss */
+/* line 208, ../scss/_global.scss */
 a.wp-button {
   color: white;
   text-decoration: none; }
 
-/* line 212, ../scss/_global.scss */
+/* line 213, ../scss/_global.scss */
 a.linkedin-button {
   text-decoration: none;
   color: black; }
 
-/* line 217, ../scss/_global.scss */
+/* line 218, ../scss/_global.scss */
 .sections-video-countdown {
   position: relative; }
 
-/* line 222, ../scss/_global.scss */
+/* line 223, ../scss/_global.scss */
 .check {
   padding-top: 170px; }
 
-/* line 228, ../scss/_global.scss */
+/* line 229, ../scss/_global.scss */
 .auctus input {
   height: 42px;
   border: 0px;
   font-size: 16px;
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
   @media (max-width: 768px) {
-    /* line 228, ../scss/_global.scss */
+    /* line 229, ../scss/_global.scss */
     .auctus input {
       font-size: 22px; } }
-/* line 240, ../scss/_global.scss */
+/* line 241, ../scss/_global.scss */
 .auctus .input-group-btn button {
   background: #07dce0;
   border: 0px;
@@ -644,21 +644,21 @@ a.linkedin-button {
   color: #002d78;
   cursor: pointer; }
 
-/* line 254, ../scss/_global.scss */
+/* line 255, ../scss/_global.scss */
 .blue .icons-panel i.fa {
   color: #00fcfc;
   border: 2px solid #00fcfc; }
 
-/* line 263, ../scss/_global.scss */
+/* line 264, ../scss/_global.scss */
 .white .icons-panel i.fa {
   color: #002d78;
   border: 2px solid #002d78; }
 
-/* line 269, ../scss/_global.scss */
+/* line 270, ../scss/_global.scss */
 a:hover {
   text-decoration: none; }
 
-/* line 272, ../scss/_global.scss */
+/* line 273, ../scss/_global.scss */
 .icons-panel {
   display: block !important;
   width: 290px;
@@ -666,10 +666,10 @@ a:hover {
   position: absolute;
   top: 0;
   right: 0; }
-  /* line 280, ../scss/_global.scss */
+  /* line 281, ../scss/_global.scss */
   .icons-panel a {
     text-decoration: unset; }
-  /* line 284, ../scss/_global.scss */
+  /* line 285, ../scss/_global.scss */
   .icons-panel i.fa {
     display: inline-block;
     font-size: 18px;
@@ -680,13 +680,13 @@ a:hover {
     width: 32px;
     padding-top: 6px;
     text-align: center; }
-  /* line 296, ../scss/_global.scss */
+  /* line 297, ../scss/_global.scss */
   .icons-panel i.fa:hover {
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0px 0px 10px #00fcfc; }
 
-/* line 303, ../scss/_global.scss */
+/* line 304, ../scss/_global.scss */
 .block-scroll {
   overflow-y: hidden; }
 
@@ -1673,13 +1673,13 @@ section.team {
   text-align: center;
   background: #03178d;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(180deg, #03178d 36%, #0884cd 90%);
+  background: -webkit-linear-gradient(180deg, #366294 36%, #0884cd 90%);
   /* For Safari 5.1 to 6.0  60%*/
-  background: -o-linear-gradient(180deg, #03178d 36%, #0884cd 90%);
+  background: -o-linear-gradient(180deg, #366294 36%, #0884cd 90%);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(180deg, #03178d 36%, #0884cd 90%);
+  background: -moz-linear-gradient(180deg, #366294 36%, #0884cd 90%);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(180deg, #03178d 36%, #0884cd 90%);
+  background: linear-gradient(180deg, #366294 36%, #0884cd 90%);
   /* Standard syntax */
   padding-bottom: 4em; }
   @media (max-width: 768px) {
@@ -1687,13 +1687,13 @@ section.team {
     section.team {
       background: #0884cd;
       /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(180deg, #03178d 36%, #0884cd 90%);
+      background: -webkit-linear-gradient(180deg, #366294 36%, #0884cd 90%);
       /* For Safari 5.1 to 6.0  60%*/
-      background: -o-linear-gradient(180deg, #03178d 36%, #0884cd 90%);
+      background: -o-linear-gradient(180deg, #366294 36%, #0884cd 90%);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(180deg, #03178d 36%, #0884cd 90%);
+      background: -moz-linear-gradient(180deg, #366294 36%, #0884cd 90%);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(180deg, #03178d 36%, #0884cd 90%);
+      background: linear-gradient(180deg, #366294 36%, #0884cd 90%);
       /* Standard syntax */ } }
   /* line 40, ../scss/_team.scss */
   section.team .section-heading h2 {
@@ -3908,7 +3908,8 @@ header.presale-masthead .address-copy p.text-box {
 /* line 368, ../scss/_presale.scss */
 section.as-seen-on {
   padding-top: 8rem !important;
-  padding-bottom: 6rem; }
+  padding-bottom: 6rem;
+  overflow: hidden; }
   /* line 372, ../scss/_presale.scss */
   section.as-seen-on .section-heading {
     margin-bottom: 0px !important; }
@@ -4620,25 +4621,29 @@ section.token-model {
 section.supported-by {
   padding-top: 0rem !important;
   margin-top: -90px; }
-  /* line 5, ../scss/_supportedby.scss */
+  @media (max-width: 991px) {
+    /* line 1, ../scss/_supportedby.scss */
+    section.supported-by {
+      margin-top: 35px; } }
+  /* line 10, ../scss/_supportedby.scss */
   section.supported-by .section-heading {
     position: relative;
     z-index: 1000; }
-  /* line 10, ../scss/_supportedby.scss */
+  /* line 15, ../scss/_supportedby.scss */
   section.supported-by h3 {
     margin-top: 45px;
     color: #00bdff; }
-  /* line 15, ../scss/_supportedby.scss */
+  /* line 20, ../scss/_supportedby.scss */
   section.supported-by .section-heading {
     margin-bottom: 0px !important; }
-  /* line 19, ../scss/_supportedby.scss */
+  /* line 24, ../scss/_supportedby.scss */
   section.supported-by .links {
     align-content: center; }
     @media (max-width: 648px) {
-      /* line 19, ../scss/_supportedby.scss */
+      /* line 24, ../scss/_supportedby.scss */
       section.supported-by .links {
         padding: 20px 15px; } }
-    /* line 26, ../scss/_supportedby.scss */
+    /* line 31, ../scss/_supportedby.scss */
     section.supported-by .links .link-box {
       margin: 0 auto 30px auto;
       height: 100px;
@@ -4647,22 +4652,22 @@ section.supported-by {
       background-repeat: no-repeat;
       background-size: contain;
       filter: invert(52%); }
-    /* line 36, ../scss/_supportedby.scss */
+    /* line 41, ../scss/_supportedby.scss */
     section.supported-by .links .rcn {
       background-image: url(../img/partners/rcn.png); }
-    /* line 40, ../scss/_supportedby.scss */
+    /* line 45, ../scss/_supportedby.scss */
     section.supported-by .links .cofoundit {
       background-image: url(../img/partners/cofoundit.svg); }
-    /* line 44, ../scss/_supportedby.scss */
+    /* line 49, ../scss/_supportedby.scss */
     section.supported-by .links .zrx {
       background-image: url(../img/partners/0x.png); }
-    /* line 48, ../scss/_supportedby.scss */
+    /* line 53, ../scss/_supportedby.scss */
     section.supported-by .links .aragon {
       background-image: url(../img/partners/aragon.png); }
-    /* line 52, ../scss/_supportedby.scss */
+    /* line 57, ../scss/_supportedby.scss */
     section.supported-by .links .amadeus {
       background-image: url(../img/partners/amadeus.png); }
-    /* line 56, ../scss/_supportedby.scss */
+    /* line 61, ../scss/_supportedby.scss */
     section.supported-by .links .symetrics {
       background-image: url(../img/partners/symetrics.png); }
 
