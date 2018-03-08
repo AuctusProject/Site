@@ -4231,16 +4231,20 @@ section.advisors {
   /* line 10, ../scss/_advisors.scss */
   section.advisors .section-heading {
     margin-bottom: 3rem; }
-  /* line 14, ../scss/_advisors.scss */
+    /* line 13, ../scss/_advisors.scss */
+    section.advisors .section-heading hr {
+      border-top-color: #00bdff;
+      width: 100px; }
+  /* line 19, ../scss/_advisors.scss */
   section.advisors .advisors-content {
     max-width: 1200px;
     margin: auto;
     margin-bottom: 50px; }
     @media (max-width: 490px) {
-      /* line 14, ../scss/_advisors.scss */
+      /* line 19, ../scss/_advisors.scss */
       section.advisors .advisors-content {
         max-width: 100%; } }
-  /* line 24, ../scss/_advisors.scss */
+  /* line 29, ../scss/_advisors.scss */
   section.advisors .advisor-card {
     margin: 10px;
     width: 350px;
@@ -4249,28 +4253,28 @@ section.advisors {
     display: inline-block;
     vertical-align: top; }
     @media (max-width: 490px) {
-      /* line 24, ../scss/_advisors.scss */
+      /* line 29, ../scss/_advisors.scss */
       section.advisors .advisor-card {
         width: 320px; } }
-    /* line 36, ../scss/_advisors.scss */
+    /* line 41, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-picture-name {
       width: 100%;
       display: inline-block;
       vertical-align: top; }
-    /* line 42, ../scss/_advisors.scss */
+    /* line 47, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-picture {
       height: 200px;
       border-color: #002d78; }
-    /* line 47, ../scss/_advisors.scss */
+    /* line 52, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-name-position-linkedin {
       text-decoration: none; }
-    /* line 51, ../scss/_advisors.scss */
+    /* line 56, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-name-position {
       margin: 15px;
       margin-top: 26px;
       display: inline-block;
       width: calc(100% - 65px); }
-    /* line 58, ../scss/_advisors.scss */
+    /* line 63, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-linkedin {
       position: absolute;
       right: 15px;
@@ -4284,68 +4288,68 @@ section.advisors {
       border-radius: 20px;
       padding-top: 3px;
       text-align: center; }
-    /* line 73, ../scss/_advisors.scss */
+    /* line 78, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-name {
       font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
       font-size: 26px !important;
       line-height: 24px;
       color: #002d78; }
-    /* line 80, ../scss/_advisors.scss */
+    /* line 85, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-position {
       font-size: 15px !important;
       color: black; }
-    /* line 85, ../scss/_advisors.scss */
+    /* line 90, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-description {
       display: inline-block;
       width: 100%; }
-      /* line 89, ../scss/_advisors.scss */
+      /* line 94, ../scss/_advisors.scss */
       section.advisors .advisor-card .card-description .dots {
         height: 10px;
         width: 50%;
         margin: auto; }
-    /* line 96, ../scss/_advisors.scss */
+    /* line 101, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-description-content {
       font-size: 14px;
       text-align: left;
       padding: 5px 15px 15px 15px;
       min-height: 82px; }
-    /* line 103, ../scss/_advisors.scss */
+    /* line 108, ../scss/_advisors.scss */
     section.advisors .advisor-card .card-read-more {
       padding: 0 15px 15px 15px;
       font-size: 14px;
       font-weight: bold;
       color: #00bdff;
       cursor: pointer; }
-  /* line 112, ../scss/_advisors.scss */
+  /* line 117, ../scss/_advisors.scss */
   section.advisors .name {
     margin-top: 10px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 20px; }
-  /* line 118, ../scss/_advisors.scss */
+  /* line 123, ../scss/_advisors.scss */
   section.advisors .position {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     font-size: 14px;
     letter-spacing: 2px;
     margin-top: 5px;
     margin-bottom: 60px; }
-  /* line 126, ../scss/_advisors.scss */
+  /* line 131, ../scss/_advisors.scss */
   section.advisors .image {
     margin-left: 40px; }
-  /* line 130, ../scss/_advisors.scss */
+  /* line 135, ../scss/_advisors.scss */
   section.advisors .image:after {
     content: url("../img/team/linkedin-icon.png");
     position: relative;
     z-index: 100;
     right: 26px;
     top: 0px; }
-  /* line 138, ../scss/_advisors.scss */
+  /* line 143, ../scss/_advisors.scss */
   section.advisors .image.behance:after {
     content: url("../img/team/behance-icon.png");
     position: relative;
     z-index: 100;
     right: 26px;
     top: 0px; }
-  /* line 146, ../scss/_advisors.scss */
+  /* line 151, ../scss/_advisors.scss */
   section.advisors .modal-back-panel {
     position: fixed;
     top: 0;
@@ -4358,10 +4362,10 @@ section.advisors {
     opacity: 0;
     transition: all 0.5s; }
     @media (max-width: 490px) {
-      /* line 146, ../scss/_advisors.scss */
+      /* line 151, ../scss/_advisors.scss */
       section.advisors .modal-back-panel {
         z-index: 10005; } }
-    /* line 162, ../scss/_advisors.scss */
+    /* line 167, ../scss/_advisors.scss */
     section.advisors .modal-back-panel .modal-card {
       background-color: white;
       max-width: 520px;
@@ -4373,7 +4377,7 @@ section.advisors {
       padding: 35px;
       text-align: left; }
       @media (max-width: 490px) {
-        /* line 162, ../scss/_advisors.scss */
+        /* line 167, ../scss/_advisors.scss */
         section.advisors .modal-back-panel .modal-card {
           height: 100%;
           width: 100%;
@@ -4381,21 +4385,21 @@ section.advisors {
           position: absolute;
           top: 100%;
           transition: all 0.5s; } }
-      /* line 182, ../scss/_advisors.scss */
+      /* line 187, ../scss/_advisors.scss */
       section.advisors .modal-back-panel .modal-card .modal-name {
         font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 26px !important;
         line-height: 24px;
         color: #002d78; }
-      /* line 189, ../scss/_advisors.scss */
+      /* line 194, ../scss/_advisors.scss */
       section.advisors .modal-back-panel .modal-card .modal-position {
         margin-bottom: 15px;
         display: inline-block;
         width: calc(100% - 65px); }
-      /* line 195, ../scss/_advisors.scss */
+      /* line 200, ../scss/_advisors.scss */
       section.advisors .modal-back-panel .modal-card .modal-description {
         font-size: 14px; }
-      /* line 199, ../scss/_advisors.scss */
+      /* line 204, ../scss/_advisors.scss */
       section.advisors .modal-back-panel .modal-card .close {
         font-size: 14px;
         width: 26px;
@@ -4404,18 +4408,18 @@ section.advisors {
         border: solid 1px #767676;
         padding: 5px 7px;
         color: #767676; }
-  /* line 211, ../scss/_advisors.scss */
+  /* line 216, ../scss/_advisors.scss */
   section.advisors .modal-back-panel.show {
     visibility: visible !important;
     opacity: 1;
     transition: all 1s; }
     @media (max-width: 490px) {
-      /* line 217, ../scss/_advisors.scss */
+      /* line 222, ../scss/_advisors.scss */
       section.advisors .modal-back-panel.show .modal-card {
         top: 0%;
         transition: all 1s; } }
 
-/* line 225, ../scss/_advisors.scss */
+/* line 230, ../scss/_advisors.scss */
 img.v {
   position: fixed;
   z-index: 100000;
@@ -4424,7 +4428,7 @@ img.v {
   transform: rotate(21deg);
   transition: all 0.2s; }
 
-/* line 234, ../scss/_advisors.scss */
+/* line 239, ../scss/_advisors.scss */
 img.v.visible {
   transition: all 0.2s;
   bottom: -36px !important;
