@@ -682,7 +682,7 @@ header.masthead {
     top: -20%;
     z-index: 1; }
   header.masthead .bottom-white-div {
-    background: white;
+    background: #fafafa;
     transform: rotate(-10deg);
     width: 3000px;
     height: 400px;
@@ -912,18 +912,28 @@ header.masthead {
     position: relative;
     max-width: 518px; }
     header.masthead .text-container h1 {
-      font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-      font-size: 28px !important;
+      font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+      font-size: 37pt;
       color: white;
-      margin: 0; }
+      margin-bottom: 20pt; }
     header.masthead .text-container h2 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
-      font-size: 16px !important;
+      font-size: 20pt !important;
       color: white;
       margin: 0; }
     header.masthead .text-container h3 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 13pt !important;
+      color: white;
+      margin: 0; }
+    header.masthead .text-container h4 {
+      font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+      font-size: 28px !important;
+      color: white;
+      margin: 0; }
+    header.masthead .text-container h5 {
+      font-family: "Helvetica Neue Light","HelveticaNeue-Light";
+      font-size: 16px !important;
       color: white;
       margin: 0; }
     header.masthead .text-container .subtitle {
@@ -932,7 +942,7 @@ header.masthead {
       header.masthead .text-container .subtitle {
         font-size: 14px !important; } }
     header.masthead .text-container .days-to-sale h2 {
-      font-size: 16px;
+      font-size: 16px !important;
       font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
       color: #34dce0; }
     header.masthead .text-container .days-to-sale .title {
@@ -3335,6 +3345,18 @@ header.presale-masthead .address-copy p.text-box {
     .circle-logo {
       margin-left: calc(50% - 250px); } }
 
+section.as-seen-on.tokensale {
+  background: #1e2e4b;
+  padding-top: 5rem !important; }
+
+section.supported-by.tokensale {
+  background: #1e2e4b;
+  padding-top: 5rem !important; }
+  section.supported-by.tokensale .links .link-box {
+    filter: none; }
+  section.supported-by.tokensale h2 {
+    color: white; }
+
 section.as-seen-on {
   padding-top: 8rem !important;
   padding-bottom: 6rem;
@@ -3394,7 +3416,7 @@ section.as-seen-on {
     z-index: -2;
     transform: rotate(174deg); }
   section.as-seen-on .top-white-div {
-    background: white;
+    background: #fafafa;
     width: 2000px;
     height: 140px;
     position: absolute;
@@ -3430,7 +3452,7 @@ section.as-seen-on {
 
 section.resources {
   padding-top: 5rem !important;
-  padding-bottom: 5rem !important; }
+  padding-bottom: 10rem !important; }
   section.resources .resource-card {
     vertical-align: top;
     background: white;

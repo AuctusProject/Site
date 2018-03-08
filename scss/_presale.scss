@@ -365,6 +365,25 @@ header.presale-masthead {
     }
 }
 
+section.as-seen-on.tokensale{
+    background: #1e2e4b;
+    padding-top: 5rem !important;
+}
+
+section.supported-by.tokensale{
+    background: #1e2e4b;
+
+    padding-top: 5rem !important;
+
+    .links .link-box{
+        filter: none;
+    }
+
+    h2 {
+        color: white;
+    }
+}
+
 section.as-seen-on {
     padding-top: 8rem !important;
     padding-bottom: 6rem;
@@ -428,7 +447,7 @@ section.as-seen-on {
     }
 
     .top-white-div {
-        background: white;
+        background: #fafafa;
         width: 2000px;
         height: 140px;
         position: absolute;
@@ -485,7 +504,7 @@ section.as-seen-on {
 
 section.resources {
     padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
+    padding-bottom: 10rem !important;
     //min-height: 1000px;
     //background-color: white;
     .resource-card {
