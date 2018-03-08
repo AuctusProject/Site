@@ -80,7 +80,7 @@
         }
     })
 
-    $(".top-header.blue").hover(
+    $(".top-header").hover(
         function () {
 
             var body = window.document.body; //IE 'quirks'
@@ -91,7 +91,7 @@
                 $(this).addClass('hover');
             }
         }, function () {
-            if ($(this).hasClass('hover')) {
+            if ($(this).hasClass('hover') && document.scrollTop == 0) {
                 $(this).removeClass('hover');
             }
         }
