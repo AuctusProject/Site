@@ -1,6 +1,5 @@
 section.video {
-
-    margin-top:-500px;
+    margin-top: -500px;
 
     .container > .row + .row {
         margin-top: 80px;
@@ -70,17 +69,18 @@ section.video {
 
     .monitor-row {
 
-
         .row + .row {
             margin-top: 40px;
         }
 
         h4, span {
             color: #bcbec0;
+            transition: all 0.8s;
         }
 
         [meta-monitor-id] {
             cursor: pointer;
+            transition: all 0.8s;
         }
 
         .active {
