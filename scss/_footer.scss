@@ -49,9 +49,6 @@ section.subscribe {
 }
 
 footer {
-    @media(max-width:490px) {
-        padding: 50px
-    }
 
     position: relative;
 
@@ -96,6 +93,8 @@ footer {
     .legal-container {
         font-size: 0.9rem;
         color: #828282;
+        padding-left: 25px;
+        padding-right: 25px;
 
         a {
             color: #828282 !important;
@@ -136,7 +135,6 @@ footer {
     .copyright {
         margin: 15px -15px;
         text-align: center;
-        
     }
 
     .cookie-toast {

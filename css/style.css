@@ -951,7 +951,7 @@ header.masthead {
       header.masthead .text-container {
         text-align: center;
         padding: 120px 0 0 0;
-        margin-left: unset !important;
+        margin-left: auto !important;
         width: 100%; }
         header.masthead .text-container h1 {
           font-size: 27pt; }
@@ -1743,9 +1743,6 @@ section.subscribe {
 
 footer {
   position: relative; }
-  @media (max-width: 490px) {
-    footer {
-      padding: 50px; } }
   footer .navigation-icons {
     padding-top: 40px; }
     footer .navigation-icons a {
@@ -1770,7 +1767,9 @@ footer {
     margin: 15px -15px; }
   footer .legal-container {
     font-size: 0.9rem;
-    color: #828282; }
+    color: #828282;
+    padding-left: 25px;
+    padding-right: 25px; }
     footer .legal-container a {
       color: #828282 !important;
       text-decoration: underline !important;
@@ -2727,6 +2726,9 @@ section.smartcontract {
 
 section.video {
   margin-top: -500px; }
+  @media (max-width: 500px) {
+    section.video {
+      margin-top: -350px; } }
   section.video .container > .row + .row {
     margin-top: 80px; }
   section.video .blue-background {
@@ -2771,12 +2773,21 @@ section.video {
     section.video .video-text-container .video-text {
       border-left: solid 4px #00BDFF;
       padding-left: 27px; }
+      @media (max-width: 991px) {
+        section.video .video-text-container .video-text {
+          border-left: none;
+          padding-left: 20px;
+          margin-bottom: 20px; } }
   section.video .side-triangle {
     position: relative;
     left: 0;
     top: 785px; }
+    @media (max-width: 500px) {
+      section.video .side-triangle {
+        width: 260px; } }
   section.video .monitor-row .row + .row {
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-bottom: 40px; }
   section.video .monitor-row h4, section.video .monitor-row span {
     color: #bcbec0;
     transition: all 0.8s; }
@@ -2787,6 +2798,14 @@ section.video {
     color: #002D78; }
   section.video .monitor-row .active span {
     color: #292b2c; }
+  @media (max-width: 1199px) {
+    section.video .monitor-row img {
+      width: 350px;
+      margin-bottom: 25px; } }
+  @media (max-width: 500px) {
+    section.video .monitor-row img {
+      width: 300px;
+      margin-bottom: 25px; } }
   section.video .video-iframe {
     box-shadow: 0px 50px 51px -28px rgba(45, 45, 45, 0.6);
     width: 90%;
@@ -3566,6 +3585,9 @@ section.advisors {
     display: none !important; }
   section.advisors .section-heading {
     margin-bottom: 3rem; }
+    section.advisors .section-heading hr {
+      border-top-color: #00bdff;
+      width: 100px; }
   section.advisors .advisors-content {
     max-width: 1200px;
     margin: auto;
@@ -3993,9 +4015,6 @@ section.latestnews .news-card {
   margin: 13px;
   position: relative;
   vertical-align: top; }
-  @media (max-width: 430px) {
-    section.latestnews .news-card {
-      width: 240px !important; } }
   section.latestnews .news-card .img-div {
     width: 100%;
     height: 180px;
