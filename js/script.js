@@ -47,7 +47,7 @@
         onCloseAgreementPopup();
     })
 
-
+     
     $.fn.visible = function (partial) {
 
         var $t = $(this),
