@@ -68,7 +68,6 @@ section.video {
                 padding-left: 20px;
                 margin-bottom: 20px;
             }
-
         }
     }
 
@@ -109,16 +108,16 @@ section.video {
             }
         }
 
-        @media (max-width:500px) {
+        @media (max-width:1199px) {
             img {
-                width: 300px;
+                width: 350px;
                 margin-bottom: 25px;
             }
         }
 
-        @media (max-width:1199px) {
+        @media (max-width:500px) {
             img {
-                width: 350px;
+                width: 300px;
                 margin-bottom: 25px;
             }
         }
