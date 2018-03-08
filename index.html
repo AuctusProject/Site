@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.min.css?v=9" rel="stylesheet">
+    <link href="css/style.min.css?v=10" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="css/slick.css?v=5" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css?v=5" />
@@ -1278,7 +1278,7 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/translation.js"></script>
-    <script src="js/script.min.js?v=9"></script>
+    <script src="js/script.min.js?v=10"></script>
     <script>
         $(".menu-content a").click(function (e) {
             if ($(window).width() <= 768)
@@ -1401,17 +1401,16 @@
                     var output = '';
                     $.each(response.items, function (k, item) {
                         var element = $template;
-
-
                         var tagIndex = item.description.indexOf('<img');
                         var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex;
                         var srcStart = srcIndex + 5;
                         var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart;
                         var src = item.description.substring(srcStart, srcEnd);
                         element = element.replace("IMG_URL", src);
-                        var d = new Date(Date.parse(item.pubDate))
-                        var month = monthNames[d.getMonth()];
-                        var day = d.getDate()
+                        var monthStr = item.pubDate.substring(5, 7);
+                        var monthInt = parseInt(monthStr);
+                        var month = monthNames[monthInt - 1];
+                        var day = item.pubDate.substring(8, 10);
                         element = element.replace("NEWS_DATE", month + ' ' + day);
                         element = element.replace("NEWS_URL", item.link);
                         element = element.replace("NEWS_TITLE", item.title);

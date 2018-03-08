@@ -384,9 +384,26 @@ section.supported-by.tokensale{
     }
 }
 
+@media (min-width: 1400px) {
+    section.as-seen-on {
+        .left-blue-div {
+            background: linear-gradient(-360deg, #366294, #1e2e4b);
+            width: 4000px !important;
+            height: 1350px !important;
+            right: -90% !important;
+            top: -340% !important;
+        }
+    
+        .top-white-div {
+            left: -100% !important;
+            width: 4000px !important;
+        }
+    }
+}
+
 section.as-seen-on {
     padding-top: 8rem !important;
-    padding-bottom: 6rem;
+    padding-bottom: 6.5rem;
     overflow:hidden;
     .section-heading {
         margin-bottom: 0px !important;

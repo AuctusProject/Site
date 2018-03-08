@@ -1,5 +1,71 @@
 // Styling for the masthead
 
+@media (min-width: 1400px) {
+    header.masthead {
+        height: 880px !important;
+        .left-blue-div {
+            width: 2500px !important;
+            height: 3600px !important;
+            right: calc(340px + 50%) !important;
+            top: -70% !important;
+        }
+
+        .right-blue-div {
+            width: 2000px !important;
+        }
+    
+        .bottom-white-div {
+            width: 3200px !important;
+            height: 800px !important;
+            top: 68% !important;
+        }
+    }
+}
+
+@media (min-width: 2200px) {
+    header.masthead {
+        .computer-image {
+            transform: scale(0.6) !important;
+            right: 10% !important;
+            bottom: 24% !important;
+        }
+    }
+}
+
+@media (min-width: 1600px) and (max-width:2199px) {
+    header.masthead {
+        .computer-image {
+            transform: scale(0.8) !important;
+            right: 10% !important;
+            bottom: 38% !important;
+        }
+    }
+}
+
+@media (min-width: 1400px) and (max-width:1599px) {
+    header.masthead {
+        .computer-image {
+            transform: scale(1.0) !important;
+            right: 10% !important;
+            bottom: 42% !important;
+        }
+
+        .bottom-white-div {
+            top: 78% !important;
+        }
+    }
+}
+
+// @media (min-width: 1200px) and (max-width:1600px) {
+//     header.masthead {
+//         .computer-image {
+//             transform: scale(0.8) !important;
+//             right: 10% !important;
+//             bottom: 38% !important;
+//         }
+//     }
+// }
+
 header.masthead {
     position: relative;
     overflow: hidden;
@@ -474,7 +540,7 @@ header.masthead {
         @media (max-width: 991px) {
             text-align: center;
             padding: 120px 0 0 0;
-            margin-left: auto !important;
+            margin: auto !important;
             width: 100%;
 
             h1 {
