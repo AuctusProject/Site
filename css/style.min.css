@@ -698,10 +698,15 @@ a:hover {
   z-index: 10;
   border: 2px solid white;
   border-radius: 50%;
-  background: white; }
+  background: white;
+  transition: all 0.2s; }
   /* line 319, ../scss/_global.scss */
   .telegram-button i {
     color: #0047ab; }
+
+/* line 324, ../scss/_global.scss */
+.telegram-button:hover {
+  transform: scale(1.1); }
 
 /* line 2, ../scss/_about.scss */
 section.about {
