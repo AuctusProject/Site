@@ -318,12 +318,10 @@ a:hover{
 .telegram-button{
     right: 20px;
     position: fixed;
-    bottom: 20px;
-    z-index: 10;
-
+    bottom: 8px;
+    z-index: 10001;
     border: 2px solid white;
     border-radius: 50%;
-
     background: white;
 
     i {
