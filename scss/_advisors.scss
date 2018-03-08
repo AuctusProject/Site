@@ -3,8 +3,8 @@ section.advisors {
     text-align: center;
     background-color: #fafafa;
 
-    hr {
-        width: 100px;
+    .slick-prev, .slick-next{
+        display: none !important;
     }
 
     .section-heading {
