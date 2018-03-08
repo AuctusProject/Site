@@ -6,6 +6,12 @@ header.masthead {
     width: 100%;
     color: white;
 
+    background: #0884cd; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Safari 5.1 to 6.0  60%*/
+    background: -o-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* Standard syntax */
+
     .left-blue-div {
         background: linear-gradient(75deg, #22a0fa, #0f64f4);
         background: -webkit-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Safari 5.1 to 6.0  60%*/
@@ -208,7 +214,7 @@ header.masthead {
         }
     }
 
-    .top-header.blue {
+    .top-header {
         // background: rgba(4, 20, 140, 0.7);
 
         .logo {
@@ -244,7 +250,7 @@ header.masthead {
         }
 
         .menu .buttons a:first-child{
-            padding: 14px 48px;
+            padding: 14px 30px;
         }
 
         .menu .buttons a:last-child{
@@ -253,6 +259,20 @@ header.masthead {
         .translation-box {
             border-left: solid 1px white;
             color: white;
+        }
+    }
+
+    .top-header.white{
+
+        .menu .buttons a{
+            border-radius: 3px;
+            border: solid 1px rgba(4, 20, 140, 1);;
+            color: rgba(4, 20, 140, 1);
+        }
+
+        .menu .buttons a:hover{
+            color: white;
+            background: rgba(4, 20, 140, 1);
         }
     }
 

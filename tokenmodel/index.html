@@ -30,7 +30,7 @@
         }
 
         @media (max-width: 576px) {
-            nav > .container {
+            nav>.container {
                 width: 100%;
             }
         }
@@ -74,13 +74,35 @@
                 <div class="menu-content">
                     <nav>
                         <ul>
-                            <li><a href="#page-top"><img src="../img/header/greenlogo.png" /></a></li>
-                            <li><span class="icon-arrow-right arr"></span><a href="https://platform.auctus.org" target="_blank">ALPHA</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="FAQ" href="../faq">FAQ</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="TOKEN SALE" href="../tokensale">TOKEN SALE</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="TOKEN MODEL" href="../tokenmodel">TOKEN MODEL</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="TEAM" href="../team">TEAM</a></li>
-                            <li><span class="icon-arrow-right arr"></span><a i18n="BLOG" href="https://blog.auctus.org" target="_blank">BLOG</a></li>
+                            <li>
+                                <a href="#page-top">
+                                    <img src="../img/header/greenlogo.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank">WHITEPAPER</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="FAQ" href="../tokenmodel">TOKEN MODEL</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="FAQ" href="../faq">FAQ</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="BLOG" href="https://blog.auctus.org">BLOG</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="TRY ALPHA" href="https://platform.auctus.org">TRY ALPHA</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="JOIN WHITELIST" href="https://kyc.auctus.org" target="_blank">JOIN WHITELIST</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -88,13 +110,26 @@
         </div>
         <div class="top-header white">
             <div class="container">
-                <a href="../"><img class="img-responsive logo"  /></a>
+                <a href="../">
+                    <img class="img-responsive logo" src="../img/header/headerlogo-white.png" />
+                </a>
                 <div class="menu web-only">
-                    <a href="https://platform.auctus.org" target="_blank"><span>ALPHA</span></a>
-                    <a href="../faq"><span i18n="FAQ">FAQ</span></a>
-                    <a href="../tokensale"><span i18n="TOKEN SALE">TOKEN SALE</span></a>
-                    <a href="#page-top"><span i18n="TOKEN MODEL" style="color:#03beff; font-weight:bold">TOKEN MODEL</span></a>
-                    <a href="../team"><span i18n="TEAM" >TEAM</span></a>
+                    <a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank">
+                        <span>WHITEPAPER</span>
+                    </a>
+                    <a href="#page-top">
+                        <span i18n="TOKEN MODEL" style="color:#03beff; font-weight:bold">TOKEN MODEL</span>
+                    </a>
+                    <a href="../faq">
+                        <span i18n="FAQ">FAQ</span>
+                    </a>
+                    <a href="https://blog.auctus.org" target="_blank">
+                        <span i18n="BLOG">BLOG</span>
+                    </a>
+                    <div class="buttons">
+                        <a href="https://platform.auctus.org" target="_blank" i18n="TRY ALPHA">TRY ALPHA</a>
+                        <a href="../tokensale" i18n="TOKEN SALE">TOKEN SALE</a>
+                    </div>
                     <!--<div class="translation">
                         <div onclick="showTranslateBox('')" class="translation-box">
                             <i class="fa fa-language"></i><span class="language">EN</span>
@@ -109,31 +144,6 @@
                         </div>
                     </div>-->
                 </div>
-                <div class="icons-panel web-only">
-                    <div class="navigation-icons text-center web-only">
-                        <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
-                            <i class="fa fa-telegram"></i>
-                        </a>
-                        <a href="https://github.com/AuctusProject" title="Github" target="_blank">
-                            <i class="fa fa-github"></i>
-                        </a>
-                        <a class="avoid-menu-overlapping" href="https://reddit.com/r/AuctusProject" title="Reddit" target="_blank">
-                            <i class="fa fa-reddit-alien"></i>
-                        </a>
-                        <a href="https://blog.auctus.org" title="Blog" target="_blank">
-                            <i class="fa fa-medium"></i>
-                        </a>
-                        <a class="avoid-menu-overlapping" href="https://chat.auctus.org" title="Rocket Chat" target="_blank">
-                            <i class="fa fa-rocket"></i>
-                        </a>
-                        <a href="mailto:contact@auctus.org" title="Email">
-                            <i class="fa fa-envelope-o"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -146,8 +156,10 @@
         </div>
         <div class="initial-text">
             <span>
-                The Auctus Platform will provide users with the tools and services needed to achieve their retirement goals faster. The fundamental purpose of the AUC Token is to provide a result-oriented, transparent and low fee structure, aligning the interest of human and robo advisors with savers’ goals and ensuring transparency.
-                The multi-purpose token was designed to fuel the platform and create a balanced ecosystem.
+                The Auctus Platform will provide users with the tools and services needed to achieve their retirement goals faster. The fundamental
+                purpose of the AUC Token is to provide a result-oriented, transparent and low fee structure, aligning the
+                interest of human and robo advisors with savers’ goals and ensuring transparency. The multi-purpose token
+                was designed to fuel the platform and create a balanced ecosystem.
             </span>
         </div>
         <div class="flow-container">
@@ -157,7 +169,9 @@
                 </div>
                 <hr />
                 <div>
-                    <span>Auctus Platform will be exclusively accessible through the AUC token. To create an account and start saving for retirement, users will need to hold a certain amount of tokens in escrow using the platform smart contracts.</span>
+                    <span>Auctus Platform will be exclusively accessible through the AUC token. To create an account and start
+                        saving for retirement, users will need to hold a certain amount of tokens in escrow using the platform
+                        smart contracts.</span>
                 </div>
             </div>
             <div class="explanation">
@@ -166,7 +180,13 @@
                 </div>
                 <hr />
                 <div>
-                    <span>Users with AUC in escrow can access the platform and use built-in tools and standard features. Inside the platform, users can get tailored recommendations (how much to invest and asset allocation) from human and robo advisors. <br /><br />In addition to being a platform currency, which enables efficient and frictionless transactions between participants, the AUC token will also be used to prevent users from paying in advance for bad services or advice.</span>
+                    <span>Users with AUC in escrow can access the platform and use built-in tools and standard features. Inside
+                        the platform, users can get tailored recommendations (how much to invest and asset allocation) from
+                        human and robo advisors.
+                        <br />
+                        <br />In addition to being a platform currency, which enables efficient and frictionless transactions between
+                        participants, the AUC token will also be used to prevent users from paying in advance for bad services
+                        or advice.</span>
                 </div>
             </div>
             <div class="explanation">
@@ -175,7 +195,11 @@
                 </div>
                 <hr />
                 <div>
-                    <span>The AUC held in escrow in exchange for a particular recommendation can be gradually released to be transferred to the human advisor or developer if the returns meet the predictions, as well as the fluctuations (volatility) do not exceed tolerated levels of risk. The parameters such as vesting period and tolerance will be auditable prior to the purchase of the service or tool. Users can redeem the tokens in case of bad advice.</span>
+                    <span>The AUC held in escrow in exchange for a particular recommendation can be gradually released to be transferred
+                        to the human advisor or developer if the returns meet the predictions, as well as the fluctuations
+                        (volatility) do not exceed tolerated levels of risk. The parameters such as vesting period and tolerance
+                        will be auditable prior to the purchase of the service or tool. Users can redeem the tokens in case
+                        of bad advice.</span>
                 </div>
             </div>
             <div class="fluxo">
@@ -272,7 +296,7 @@
         <div class="container">
             <div class="subscribe">
                 <form action="//auctus.us16.list-manage.com/subscribe/post?u=e6c2bc48f91f09fab4afe5bee&amp;id=b39ba220eb" method="post" id="mc-embedded-subscribe-form"
-                      name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div class="col-md-12">
                         <div class="row">
                             <p>
@@ -282,7 +306,8 @@
                     </div>
                     <div class="input-group col-md-12">
                         <div class="row">
-                            <input name="EMAIL" class="required email form-control" id="mce-EMAIL" type="text" placeholder="Enter your email" aria-label="Enter your email" i18n="EMAIL" />
+                            <input name="EMAIL" class="required email form-control" id="mce-EMAIL" type="text" placeholder="Enter your email" aria-label="Enter your email"
+                                i18n="EMAIL" />
                             <span class="input-group-btn">
                                 <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary" i18n="SUBSCRIBE">SUBSCRIBE</button>
                             </span>
@@ -328,11 +353,15 @@
                     <div class="col-lg-6">
                         <div class="row association-box">
                             <div>
-                                <img src="../img/footer/mama_logo.svg" style="width: 100%;padding: 15px 0px 10px 0px; opacity:0.5; margin-left: -18px;">
+                                <img src="../img/footer/mama_logo.svg" style="width: 280px;padding: 15px 0px 10px 0px; opacity:0.5; margin-left: -18px;">
                             </div>
                             <div>
-                                <h5><b>Part of Multichain Asset Managers Association</b></h5>
-                                MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors, technology providers, service providers and ecosystem players interested in working towards a new vision for asset management using blockchain and other supporting decentralized technologies.
+                                <h5>
+                                    <b>Part of Multichain Asset Managers Association</b>
+                                </h5>
+                                MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors, technology providers,
+                                service providers and ecosystem players interested in working towards a new vision for asset
+                                management using blockchain and other supporting decentralized technologies.
                             </div>
                         </div>
                     </div>
@@ -342,8 +371,12 @@
                                 <img src="../img/footer/eea.png" style="padding: 5px 0px 10px 0px;">
                             </div>
                             <div>
-                                <h5><b>Member of Ethereum Enterprise Alliance</b></h5>
-                                The Enterprise Ethereum Alliance (EEA) connects Fortune 500 enterprises, startups, academics, and technology vendors with Ethereum subject matter experts. The EEA is helping to evolve Ethereum into an enterprise-grade technology, providing research and development in a range of areas.
+                                <h5>
+                                    <b>Member of Ethereum Enterprise Alliance</b>
+                                </h5>
+                                The Enterprise Ethereum Alliance (EEA) connects Fortune 500 enterprises, startups, academics, and technology vendors with
+                                Ethereum subject matter experts. The EEA is helping to evolve Ethereum into an enterprise-grade
+                                technology, providing research and development in a range of areas.
                             </div>
                         </div>
                     </div>
@@ -354,16 +387,17 @@
                 <div class="col-lg-4">
                     <div class="row">
                         <span>
-                            This website uses cookies to offer you a better browsing experience. You can find more details in our <a target="_blank" href="https://dl.auctus.org/Terms_of_Use.pdf">Terms of Use</a> and <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
+                            This website uses cookies to offer you a better browsing experience. You can find more details in our
+                            <a target="_blank" href="https://dl.auctus.org/Terms_of_Use.pdf">Terms of Use</a> and
+                            <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
                         </span>
                     </div>
                     <br />
                     <div class="row">
                         <span>
-                            The laws of the country where you
-                            reside may be prohibiting you from participating in the AUC Token Sale. Please make sure that
-                            your browsing of the website and/or participation in the token sale do not violate the laws of your
-                            country. You shall be solely responsible for any such breach of the laws and AUCTUS LTD
+                            The laws of the country where you reside may be prohibiting you from participating in the AUC Token Sale. Please make sure
+                            that your browsing of the website and/or participation in the token sale do not violate the laws
+                            of your country. You shall be solely responsible for any such breach of the laws and AUCTUS LTD
                             specifically disclaims any liability arising from or related to such violations.
                         </span>
                     </div>
@@ -372,18 +406,20 @@
                 <div class="col-lg-8">
                     <div class="row disclaimer">
                         <span>
-                            The AUC Token Sale, Terms of Token Sale, the Whitepaper and any documents related to the Token Sale do not constitute a prospectus or offering document and are not an offer to sell nor the solicitation of an
-                            offer to buy an investment, security, share, equity interest or debt nor a derivative interest of any
-                            of the foregoing. The sale of AUC Tokens constitutes the sale of a software product under the
-                            laws of Gibraltar. AUC Tokens are not intended to be a digital currency, security, commodity,
-                            bond, debt instrument or any kind of financial instrument or investment carrying equivalent rights,
-                            nor are AUC Tokens intended to represent any form of money in any jurisdiction, nor any
-                            representation of money (including electronic money). Accordingly, any protections offered by
-                            applicable law in relation to the purchase, holding and/or sale of the abovementioned instruments
-                            and investments shall not apply to any contribution made during the AUC Token Sale. The Token
-                            Sale involves the development and use of experimental software and technologies that may not
-                            achieve the objectives specified in the <a onclick="downloadWhitepaper()">Auctus’ Whitepaper</a> and related documents. The purchase
-                            of AUC Tokens represents a high risk to any purchaser.
+                            The AUC Token Sale, Terms of Token Sale, the Whitepaper and any documents related to the Token Sale do not constitute a prospectus
+                            or offering document and are not an offer to sell nor the solicitation of an offer to buy an
+                            investment, security, share, equity interest or debt nor a derivative interest of any of the
+                            foregoing. The sale of AUC Tokens constitutes the sale of a software product under the laws of
+                            Gibraltar. AUC Tokens are not intended to be a digital currency, security, commodity, bond, debt
+                            instrument or any kind of financial instrument or investment carrying equivalent rights, nor
+                            are AUC Tokens intended to represent any form of money in any jurisdiction, nor any representation
+                            of money (including electronic money). Accordingly, any protections offered by applicable law
+                            in relation to the purchase, holding and/or sale of the abovementioned instruments and investments
+                            shall not apply to any contribution made during the AUC Token Sale. The Token Sale involves the
+                            development and use of experimental software and technologies that may not achieve the objectives
+                            specified in the
+                            <a onclick="downloadWhitepaper()">Auctus’ Whitepaper</a> and related documents. The purchase of AUC Tokens represents a high risk
+                            to any purchaser.
                         </span>
                     </div>
                 </div>
@@ -393,8 +429,11 @@
             </div>
         </div>
         <div class="cookie-toast close-toast" onclick="acceptCookies(this);">
-            <span>This website uses cookies to offer you a better browsing experience. You can find more details in our <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.</span>
-            <button><span>I  AGREE</span></button>
+            <span>This website uses cookies to offer you a better browsing experience. You can find more details in our
+                <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.</span>
+            <button>
+                <span>I AGREE</span>
+            </button>
         </div>
     </footer>
     <script src="../vendor/jquery/jquery.min.js"></script>
@@ -445,12 +484,12 @@
             $('.advisors .modal-back-panel').fadeIn();
             window.location.href = '#advisor-member';
         });
-        $('.advisors .modal-back-panel').click( function (e) {
+        $('.advisors .modal-back-panel').click(function (e) {
             if (e.target !== this)
                 return;
             closeAdvisorCard();
         });
-        $('.advisors .modal-back-panel .close').click( function () {
+        $('.advisors .modal-back-panel .close').click(function () {
             closeAdvisorCard();
         });
 
@@ -479,7 +518,7 @@
             else {
                 $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
             }
-            
+
         });
 
         $('.team .modal-back-panel').click(function (e) {
@@ -488,7 +527,7 @@
             closeCard();
         });
 
-        
+
 
         $('.shrink-content').click(function (e) {
             closeCard();
@@ -537,7 +576,7 @@
                 img.css('top', top);
                 img.css('left', left);
                 img.appendTo('.background');
-            }          
+            }
         }
 
         generateImages();
