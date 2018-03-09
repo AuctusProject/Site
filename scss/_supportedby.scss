@@ -7,6 +7,13 @@ section.supported-by {
         margin-top: 35px;
     }
 
+    @media (min-width:1400px) and (min-height:890px) {
+        margin-top: -210px
+    }
+
+    @media (min-height:1080px){
+        margin-top: -140px;
+    }
 
     .section-heading {
         position: relative;
@@ -24,6 +31,8 @@ section.supported-by {
 
     .links {
         align-content: center;
+        position: relative;
+        z-index: 1000;
 
         @media (max-width: 648px) {
             padding: 20px 15px;

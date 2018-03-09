@@ -4804,25 +4804,35 @@ section.supported-by {
     /* line 1, ../scss/_supportedby.scss */
     section.supported-by {
       margin-top: 35px; } }
-  /* line 11, ../scss/_supportedby.scss */
+  @media (min-width: 1400px) and (min-height: 890px) {
+    /* line 1, ../scss/_supportedby.scss */
+    section.supported-by {
+      margin-top: -210px; } }
+  @media (min-height: 1080px) {
+    /* line 1, ../scss/_supportedby.scss */
+    section.supported-by {
+      margin-top: -140px; } }
+  /* line 18, ../scss/_supportedby.scss */
   section.supported-by .section-heading {
     position: relative;
     z-index: 1000; }
-  /* line 16, ../scss/_supportedby.scss */
+  /* line 23, ../scss/_supportedby.scss */
   section.supported-by h3 {
     margin-top: 45px;
     color: #00bdff; }
-  /* line 21, ../scss/_supportedby.scss */
+  /* line 28, ../scss/_supportedby.scss */
   section.supported-by .section-heading {
     margin-bottom: 0px !important; }
-  /* line 25, ../scss/_supportedby.scss */
+  /* line 32, ../scss/_supportedby.scss */
   section.supported-by .links {
-    align-content: center; }
+    align-content: center;
+    position: relative;
+    z-index: 1000; }
     @media (max-width: 648px) {
-      /* line 25, ../scss/_supportedby.scss */
+      /* line 32, ../scss/_supportedby.scss */
       section.supported-by .links {
         padding: 20px 15px; } }
-    /* line 32, ../scss/_supportedby.scss */
+    /* line 41, ../scss/_supportedby.scss */
     section.supported-by .links .link-box {
       margin: 0 auto 30px auto;
       height: 100px;
@@ -4832,25 +4842,25 @@ section.supported-by {
       background-size: contain;
       filter: invert(52%); }
       @media (max-width: 991px) {
-        /* line 32, ../scss/_supportedby.scss */
+        /* line 41, ../scss/_supportedby.scss */
         section.supported-by .links .link-box {
           transform: scale(0.75); } }
-    /* line 46, ../scss/_supportedby.scss */
+    /* line 55, ../scss/_supportedby.scss */
     section.supported-by .links .rcn {
       background-image: url(../img/partners/rcn.png); }
-    /* line 50, ../scss/_supportedby.scss */
+    /* line 59, ../scss/_supportedby.scss */
     section.supported-by .links .cofoundit {
       background-image: url(../img/partners/cofoundit.svg); }
-    /* line 54, ../scss/_supportedby.scss */
+    /* line 63, ../scss/_supportedby.scss */
     section.supported-by .links .zrx {
       background-image: url(../img/partners/0x.png); }
-    /* line 58, ../scss/_supportedby.scss */
+    /* line 67, ../scss/_supportedby.scss */
     section.supported-by .links .aragon {
       background-image: url(../img/partners/aragon.png); }
-    /* line 62, ../scss/_supportedby.scss */
+    /* line 71, ../scss/_supportedby.scss */
     section.supported-by .links .amadeus {
       background-image: url(../img/partners/amadeus.png); }
-    /* line 66, ../scss/_supportedby.scss */
+    /* line 75, ../scss/_supportedby.scss */
     section.supported-by .links .symetrics {
       background-image: url(../img/partners/symetrics.png); }
 
