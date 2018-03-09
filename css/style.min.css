@@ -278,14 +278,14 @@ header.faq-masthead {
 section.faq {
   padding-top: 5rem !important; }
   /* line 314, ../scss/_faq.scss */
-  section.faq .item a {
+  section.faq .item a:not(.inner-link) {
     font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
     font-size: 20pt;
     color: #002D78;
     text-decoration: none !important; }
     @media (max-width: 768px) {
       /* line 314, ../scss/_faq.scss */
-      section.faq .item a {
+      section.faq .item a:not(.inner-link) {
         font-size: 14pt; } }
   /* line 325, ../scss/_faq.scss */
   section.faq .item p {
@@ -295,7 +295,7 @@ section.faq {
       section.faq .item p {
         font-size: 12pt; } }
   /* line 333, ../scss/_faq.scss */
-  section.faq .item a:before {
+  section.faq .item a:not(.inner-link):before {
     font-family: FontAwesome;
     font-size: 27pt;
     content: "\f105";
@@ -303,7 +303,7 @@ section.faq {
     margin-right: 40px; }
     @media (max-width: 768px) {
       /* line 333, ../scss/_faq.scss */
-      section.faq .item a:before {
+      section.faq .item a:not(.inner-link):before {
         margin-right: 15px;
         font-size: 20pt; } }
   /* line 346, ../scss/_faq.scss */

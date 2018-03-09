@@ -311,7 +311,7 @@ section.faq {
     padding-top: 5rem !important;
 
     .item {
-        a {
+        a:not(.inner-link) {
             font-family: "Helvetica Neue Light",'HelveticaNeue-Light';
             font-size: 20pt;
             color: #002D78;
@@ -330,7 +330,7 @@ section.faq {
             }
         }
 
-        a:before {
+        a:not(.inner-link):before {
             font-family: FontAwesome;
             font-size: 27pt;
             content: "\f105";
