@@ -5,7 +5,12 @@ section.countdown {
     .section-heading {
         margin-bottom: 4rem;
 
-        margin-top: 220px !important;
+        @media (min-width: 1400px) {
+            margin-top: 280px !important;
+        }
+        @media (min-width: 992px) and (max-width: 1399px) {
+            margin-top: 220px !important;
+        }
         @media (max-width: 991px) {
             margin-top: 40px !important;
         }
