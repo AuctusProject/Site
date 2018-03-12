@@ -164,9 +164,9 @@ function downloadPresentation() {
     registerClickEvent('Presentation');
 }
 
-function TryOurDemo() {
+function TryOurAlpha() {
     openNewTab("https://platform.auctus.org");
-    registerClickEvent('Demo');
+    registerClickEvent('Alpha');
 }
 
 function openNewTab(url) {
