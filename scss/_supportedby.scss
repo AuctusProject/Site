@@ -1,6 +1,12 @@
-@media (min-width: 1400px) {
+@media (min-width: 2000px) {
     section.supported-by {
         margin-top: -230px !important;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1999px) {
+    section.supported-by {
+        margin-top: -330px !important;
     }
 }
 
