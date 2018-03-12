@@ -177,7 +177,7 @@ header.masthead {
         height: 85px;
         width: 100%;
         position: fixed;
-        z-index: 1001;
+        z-index: 1000002;
         transition: all 0.2s;
 
 
@@ -346,6 +346,10 @@ header.masthead {
     .top-header.blue.hover {
         background: rgba(39,109,167, 0.81);
         transition: all 0.2s;
+    }
+
+    .top-header.blue.hover:hover {
+        background: rgba(39,109,167, 1);
     }
 
     .top-header.white {
@@ -605,6 +609,12 @@ header.masthead {
                 font-size: 13pt !important;
             }
         }
+
+        .icon-buttons {
+            @media (max-width:991px) {
+                margin-top: 260px;
+            }
+        }
     }
 
     .eth-machine {
@@ -626,7 +636,8 @@ header.masthead {
             text-align: center;
             margin-bottom: 20px;
             height: 330px;
-
+            left: calc(50% - 40px);
+            top: -15px;
 
             img {
                 margin-top: -30px;
@@ -653,6 +664,7 @@ header.masthead {
             @media (max-width:991px) {
                 margin-top: 410px;
                 zoom: 0.60;
+                left: unset;
             }
 
             display: block;
