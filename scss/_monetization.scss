@@ -1,14 +1,20 @@
 @media (min-width: 1400px) {
     section.monetization {
 
+        padding-bottom: 5rem !important;
+
+        padding-top: 7rem !important;
+
         .left-blue-div {
-            width: 3000px !important;
+            width: 9000px !important;
             right: -80% !important;
         }
 
         .right-blue-div {
             height: 400px !important;
-            top: 5% !important;
+            top: 14% !important;
+            left: 51% !important;
+            width: 2400px !important;
         }
     }
 }
@@ -29,6 +35,8 @@ section.monetization {
         transform: rotate(184deg);
         right: -20%;
         top: 13%;
+
+        margin-top: 50px;
         // z-index: 2;
     }
 
@@ -68,13 +76,15 @@ section.monetization {
         background: -o-linear-gradient(9deg, #24a6e8, #06d2d7); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(9deg, #24a6e8, #06d2d7); /* For Firefox 3.6 to 15 */
         background: linear-gradient(9deg, #24a6e8, #06d2d7); /* Standard syntax */
-        width: 2000px;
+        width: 1700px;
         height: 200px;
         position: absolute;
         left: 20%;
         top: 8%;
         z-index: -1;
         transform: rotate(174deg);
+
+        margin-top: 50px;
     }
 
 

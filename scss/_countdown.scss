@@ -5,6 +5,13 @@ section.countdown {
     .section-heading {
         margin-bottom: 4rem;
 
+        margin-top: 220px !important;
+
+        z-index: 1000000;
+        position: relative;
+        margin-top: 170px;
+        
+
         h2 {
             color: #ffffff;
         }
@@ -36,6 +43,9 @@ section.countdown {
 
     .timer {
         overflow: hidden;
+        text-align: center;
+        z-index: 100000;
+        position: relative;
     }
 
     .timer > div {
@@ -109,8 +119,10 @@ section.countdown {
     .join-buttons {
         padding-top: 30px;
         // margin-left: 5%;
-        max-width: 500px;
         margin-left: 5px;
+
+        z-index: 10000;
+        position: relative;
     }
 
     @media (max-width: 991px) {
