@@ -1,6 +1,12 @@
+@media (min-width: 1400px) {
+    section.supported-by {
+        margin-top: -230px !important;
+    }
+}
+
 section.supported-by {
-    padding-top: 0rem !important;
-    margin-top: -90px;
+    padding-top: 4rem !important;
+    margin-top: -270px;
     background: #fafafa;
 
     @media (max-width: 991px) {
@@ -26,7 +32,11 @@ section.supported-by {
     }
 
     .section-heading {
-        margin-bottom: 0px !important;
+        margin-bottom: -20px !important;
+
+        h2 {
+            font-size: 20px;
+        }
     }
 
     .links {
@@ -45,7 +55,7 @@ section.supported-by {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-            filter: invert(52%);
+            filter: invert(72%);
 
             @media(max-width:991px) {
                 transform: scale(0.75);
