@@ -82,10 +82,11 @@ header.masthead {
     background: linear-gradient(180deg, #04148c 12%, #0884cd 84%, #0bdace 100%); /* Standard syntax */
     .left-blue-div {
         background: linear-gradient(75deg, #22a0fa, #0f64f4);
-        background: -webkit-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(206deg, #22a0fa, #0f64f4); /* Standard syntax */
+        background: -webkit-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(75deg, #22a0fa, #0f64f4); /* Standard syntax */
+        
         width: 1000px;
         height: 1200px;
         position: absolute;
@@ -103,10 +104,10 @@ header.masthead {
 
     .right-blue-div {
         background: linear-gradient(75deg, #22a0fa, #0f64f4);
-        background: -webkit-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(75deg, #22a0fa, #0f64f4); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(75deg, #22a0fa, #0f64f4); /* Standard syntax */
+        background: -webkit-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Safari 5.1 to 6.0  60%*/
+        background: -o-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(206deg, #22a0fa, #0f64f4); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(206deg, #22a0fa, #0f64f4); /* Standard syntax */
         width: 1000px;
         height: 1200px;
         position: absolute;
@@ -122,7 +123,7 @@ header.masthead {
         height: 400px;
         position: absolute;
         right: calc(-10%);
-        top: 88%;
+        top: 78%;
         z-index: 2;
     }
 
