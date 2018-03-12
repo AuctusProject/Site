@@ -344,8 +344,10 @@ header.masthead {
     }
 
     .top-header.blue.hover {
-        background: rgba(39,109,167, 0.81);
-        transition: all 0.2s;
+        @media (min-width:991px) {
+            background: rgba(39,109,167, 0.81);
+            transition: all 0.2s;
+        }
     }
 
     .top-header.blue.hover:hover {
