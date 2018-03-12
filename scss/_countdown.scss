@@ -6,6 +6,11 @@ section.countdown {
         margin-bottom: 4rem;
 
         margin-top: 220px !important;
+        @media (max-width: 991px) {
+            margin-top: 40px !important;
+        }
+
+        // 40px !important
 
         z-index: 1000000;
         position: relative;
@@ -135,7 +140,7 @@ section.countdown {
         width: 100%;
         color: white;
         margin-top: 20px;
-        margin: 10px;
+        // margin: 10px;
     }
 
     .join-button a:hover, .join-button a:focus, .join-button a:active {
