@@ -902,7 +902,7 @@ header.masthead {
     height: 85px;
     width: 100%;
     position: fixed;
-    z-index: 1000002;
+    z-index: 2000;
     transition: all 0.2s; }
     @media (max-width: 991px) {
       /* line 176, ../scss/_masthead.scss */
@@ -2755,7 +2755,7 @@ section.countdown {
   /* line 5, ../scss/_countdown.scss */
   section.countdown .section-heading {
     margin-bottom: 4rem;
-    z-index: 1000000;
+    z-index: 1000;
     position: relative;
     margin-top: 170px; }
     @media (min-width: 1400px) {
@@ -2799,7 +2799,7 @@ section.countdown {
   section.countdown .timer {
     overflow: hidden;
     text-align: center;
-    z-index: 100000;
+    z-index: 1000;
     position: relative; }
   /* line 61, ../scss/_countdown.scss */
   section.countdown .timer > div {
@@ -2863,7 +2863,7 @@ section.countdown {
   section.countdown .join-buttons {
     padding-top: 30px;
     margin-left: 5px;
-    z-index: 10000;
+    z-index: 100;
     position: relative; }
   @media (max-width: 991px) {
     /* line 139, ../scss/_countdown.scss */
