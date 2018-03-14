@@ -695,7 +695,7 @@ a:hover {
   right: 20px;
   position: fixed;
   bottom: 8px;
-  z-index: 10001;
+  z-index: 10002;
   border: 2px solid white;
   border-radius: 50%;
   background: white;
@@ -707,6 +707,39 @@ a:hover {
 /* line 330, ../scss/_global.scss */
 .telegram-button:hover {
   transform: scale(1.1); }
+
+/* line 334, ../scss/_global.scss */
+.cookie-toast {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: #d3d3d3;
+  text-align: center;
+  z-index: 10001;
+  transition: all 2s; }
+  @media (max-width: 490px) {
+    /* line 334, ../scss/_global.scss */
+    .cookie-toast {
+      font-size: 0.8rem; } }
+  /* line 349, ../scss/_global.scss */
+  .cookie-toast a {
+    white-space: nowrap; }
+  /* line 353, ../scss/_global.scss */
+  .cookie-toast button {
+    background-color: #fafafa;
+    color: #292b2c;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px #0F0F0F;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: .25rem; }
+
+/* line 364, ../scss/_global.scss */
+.cookie-toast.close-toast {
+  bottom: -130px;
+  transition: all 1s; }
 
 /* line 2, ../scss/_about.scss */
 section.about {
@@ -2133,14 +2166,17 @@ section.subscribe {
 
 /* line 51, ../scss/_footer.scss */
 footer {
-  position: relative; }
-  /* line 54, ../scss/_footer.scss */
+  position: relative;
+  padding-top: 200px;
+  margin-top: -200px;
+  z-index: -5; }
+  /* line 57, ../scss/_footer.scss */
   footer .navigation-icons {
     padding-top: 40px; }
-    /* line 57, ../scss/_footer.scss */
+    /* line 60, ../scss/_footer.scss */
     footer .navigation-icons a {
       text-decoration: unset; }
-      /* line 60, ../scss/_footer.scss */
+      /* line 63, ../scss/_footer.scss */
       footer .navigation-icons a i {
         font-size: 25px;
         border: 2px solid #626669;
@@ -2151,88 +2187,57 @@ footer {
         margin: 3px;
         color: #626669; }
   @media (max-width: 768px) {
-    /* line 74, ../scss/_footer.scss */
+    /* line 77, ../scss/_footer.scss */
     footer .navigation-icons {
       margin-top: 20px; } }
   @media (max-width: 768px) {
-    /* line 80, ../scss/_footer.scss */
+    /* line 83, ../scss/_footer.scss */
     footer .logo {
       text-align: center; } }
-  /* line 87, ../scss/_footer.scss */
+  /* line 90, ../scss/_footer.scss */
   footer .separator {
     border-top: 2px solid #282828;
     margin: 15px -15px; }
-  /* line 92, ../scss/_footer.scss */
+  /* line 95, ../scss/_footer.scss */
   footer .legal-container {
     font-size: 0.9rem;
     color: #828282;
     padding-left: 25px;
     padding-right: 25px; }
-    /* line 98, ../scss/_footer.scss */
+    /* line 101, ../scss/_footer.scss */
     footer .legal-container a {
       color: #828282 !important;
       text-decoration: underline !important;
       font-weight: bold;
       cursor: pointer; }
     @media (min-width: 991px) {
-      /* line 105, ../scss/_footer.scss */
+      /* line 108, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-left: 10px; } }
     @media (max-width: 991px) {
-      /* line 105, ../scss/_footer.scss */
+      /* line 108, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-top: 25px; } }
-  /* line 116, ../scss/_footer.scss */
+  /* line 119, ../scss/_footer.scss */
   footer .association-box {
     padding-top: 10px;
     margin: 10px 35px; }
     @media (max-width: 490px) {
-      /* line 116, ../scss/_footer.scss */
+      /* line 119, ../scss/_footer.scss */
       footer .association-box {
         margin: 10px; } }
-    /* line 124, ../scss/_footer.scss */
+    /* line 127, ../scss/_footer.scss */
     footer .association-box img {
       max-height: 105px; }
-    /* line 128, ../scss/_footer.scss */
+    /* line 131, ../scss/_footer.scss */
     footer .association-box img:last-child {
       -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
       filter: grayscale(100%); }
-  /* line 134, ../scss/_footer.scss */
+  /* line 137, ../scss/_footer.scss */
   footer .copyright {
     margin: 15px -15px;
     text-align: center; }
-  /* line 139, ../scss/_footer.scss */
-  footer .cookie-toast {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background: #d3d3d3;
-    text-align: center;
-    z-index: 10000;
-    transition: all 2s; }
-    @media (max-width: 490px) {
-      /* line 139, ../scss/_footer.scss */
-      footer .cookie-toast {
-        font-size: 0.8rem; } }
-    /* line 154, ../scss/_footer.scss */
-    footer .cookie-toast a {
-      white-space: nowrap; }
-    /* line 158, ../scss/_footer.scss */
-    footer .cookie-toast button {
-      background-color: #fafafa;
-      color: #292b2c;
-      margin-left: 10px;
-      cursor: pointer;
-      box-shadow: 0px 1px 2px #0F0F0F;
-      border: 1px solid rgba(0, 0, 0, 0.125);
-      border-radius: .25rem; }
-  /* line 169, ../scss/_footer.scss */
-  footer .cookie-toast.close-toast {
-    bottom: -130px;
-    transition: all 1s; }
 
 /* line 1, ../scss/_menu.scss */
 #topMenu {
@@ -2864,32 +2869,36 @@ section.countdown {
     padding-top: 30px;
     margin-left: 5px;
     z-index: 100;
-    position: relative; }
+    position: relative;
+    text-align: center; }
+    /* line 137, ../scss/_countdown.scss */
+    section.countdown .join-buttons h3 {
+      color: white; }
   @media (max-width: 991px) {
-    /* line 139, ../scss/_countdown.scss */
+    /* line 143, ../scss/_countdown.scss */
     section.countdown .join-buttons {
       margin-left: 0px; } }
-  /* line 144, ../scss/_countdown.scss */
+  /* line 148, ../scss/_countdown.scss */
   section.countdown .join-button {
     width: 100%;
     color: white;
     margin-top: 20px; }
-  /* line 151, ../scss/_countdown.scss */
+  /* line 155, ../scss/_countdown.scss */
   section.countdown .join-button a:hover, section.countdown .join-button a:focus, section.countdown .join-button a:active {
     text-decoration: none; }
-  /* line 155, ../scss/_countdown.scss */
+  /* line 159, ../scss/_countdown.scss */
   section.countdown .pre-sale-button-div.token-sale {
     max-width: 230px;
     width: 230px; }
-  /* line 161, ../scss/_countdown.scss */
+  /* line 164, ../scss/_countdown.scss */
   section.countdown .pre-sale-button-div.whitelist {
     max-width: 230px;
     width: 230px; }
-  /* line 167, ../scss/_countdown.scss */
+  /* line 169, ../scss/_countdown.scss */
   section.countdown .pre-sale-button-div:hover {
     background: #002d78;
     color: #34dce0; }
-  /* line 172, ../scss/_countdown.scss */
+  /* line 174, ../scss/_countdown.scss */
   section.countdown .pre-sale-button-div {
     z-index: 1000;
     border-radius: 3px;
@@ -2905,14 +2914,14 @@ section.countdown {
     margin: auto;
     display: block;
     text-align: center; }
-  /* line 189, ../scss/_countdown.scss */
+  /* line 191, ../scss/_countdown.scss */
   section.countdown .token-sale-website-button-div {
     border-color: white;
     width: 280px;
     border: solid 1px;
     padding: 10px;
     margin: auto; }
-  /* line 197, ../scss/_countdown.scss */
+  /* line 199, ../scss/_countdown.scss */
   section.countdown label {
     color: white;
     width: 100%; }
@@ -3873,7 +3882,7 @@ header.presale-masthead .text-container {
   header.presale-masthead .text-container h2 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     letter-spacing: 2px;
-    font-size: 20pt !important;
+    font-size: 40px !important;
     color: white;
     margin: 0; }
   /* line 68, ../scss/_presale.scss */
@@ -3882,30 +3891,34 @@ header.presale-masthead .text-container {
     font-size: 13pt !important;
     color: white;
     margin: 0; }
+  @media (min-width: 420px) {
+    /* line 76, ../scss/_presale.scss */
+    header.presale-masthead .text-container br {
+      display: none; } }
   @media (max-width: 768px) {
     /* line 44, ../scss/_presale.scss */
     header.presale-masthead .text-container {
       text-align: center;
       width: 100%; }
-      /* line 79, ../scss/_presale.scss */
+      /* line 85, ../scss/_presale.scss */
       header.presale-masthead .text-container h1 {
         font-size: 27pt; }
-      /* line 83, ../scss/_presale.scss */
+      /* line 89, ../scss/_presale.scss */
       header.presale-masthead .text-container h2 {
-        font-size: 12pt !important; }
-      /* line 87, ../scss/_presale.scss */
+        font-size: 30px !important; }
+      /* line 93, ../scss/_presale.scss */
       header.presale-masthead .text-container h3 {
         font-size: 10pt !important; } }
-/* line 94, ../scss/_presale.scss */
+/* line 100, ../scss/_presale.scss */
 header.presale-masthead .timer {
   margin: 20px 0;
   text-align: center;
   overflow: hidden; }
-/* line 100, ../scss/_presale.scss */
+/* line 106, ../scss/_presale.scss */
 header.presale-masthead .timer > div {
   text-align: center;
   display: inline-block; }
-/* line 105, ../scss/_presale.scss */
+/* line 111, ../scss/_presale.scss */
 header.presale-masthead .time-part {
   display: inline-block;
   width: 148px;
@@ -3913,26 +3926,26 @@ header.presale-masthead .time-part {
   margin-right: 20px;
   margin-top: 5px;
   margin-bottom: 5px; }
-/* line 114, ../scss/_presale.scss */
+/* line 120, ../scss/_presale.scss */
 header.presale-masthead .box {
   width: 130px;
   height: 130px;
   border: 2px solid #00fcfc;
   border-radius: 5px;
   display: inline-block; }
-  /* line 121, ../scss/_presale.scss */
+  /* line 127, ../scss/_presale.scss */
   header.presale-masthead .box .time-value {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     font-size: 58px;
     line-height: 88px;
     color: #00fcfc; }
-  /* line 128, ../scss/_presale.scss */
+  /* line 134, ../scss/_presale.scss */
   header.presale-masthead .box .time-label {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     color: #00fcfc;
     font-size: 16px; }
 @media (min-width: 768px) {
-  /* line 136, ../scss/_presale.scss */
+  /* line 142, ../scss/_presale.scss */
   header.presale-masthead .time-part:after {
     content: '';
     position: relative;
@@ -3942,7 +3955,7 @@ header.presale-masthead .box {
     top: -68px;
     left: 138px;
     display: block; }
-  /* line 147, ../scss/_presale.scss */
+  /* line 153, ../scss/_presale.scss */
   header.presale-masthead .days:before {
     content: '';
     position: relative;
@@ -3952,11 +3965,11 @@ header.presale-masthead .box {
     display: block;
     width: 1000px;
     right: 990px; }
-  /* line 158, ../scss/_presale.scss */
+  /* line 164, ../scss/_presale.scss */
   header.presale-masthead .seconds:after {
     width: 1000px;
     left: 138px; } }
-/* line 164, ../scss/_presale.scss */
+/* line 170, ../scss/_presale.scss */
 header.presale-masthead a.btn {
   position: relative;
   z-index: 1000;
@@ -3971,21 +3984,21 @@ header.presale-masthead a.btn {
   margin: 20px auto;
   display: block;
   border-radius: 5px; }
-/* line 180, ../scss/_presale.scss */
+/* line 186, ../scss/_presale.scss */
 header.presale-masthead a.btn.focus, header.presale-masthead a.btn:focus {
   outline: none !important;
   box-shadow: none !important;
   -moz-outline-style: none !important; }
 @media (max-width: 768px) {
-  /* line 187, ../scss/_presale.scss */
+  /* line 193, ../scss/_presale.scss */
   header.presale-masthead a.btn {
     margin: 20px auto;
     padding: 15px 0 !important; } }
-/* line 193, ../scss/_presale.scss */
+/* line 199, ../scss/_presale.scss */
 header.presale-masthead a.btn:active, header.presale-masthead a.btn:focus {
   outline: 0;
   -moz-outline-style: none; }
-/* line 198, ../scss/_presale.scss */
+/* line 204, ../scss/_presale.scss */
 header.presale-masthead .bottom-waves {
   min-height: 150px;
   width: 100%;
@@ -3993,52 +4006,52 @@ header.presale-masthead .bottom-waves {
   bottom: 0px;
   background-image: url("../img/presale/waves.png");
   pointer-events: none; }
-/* line 207, ../scss/_presale.scss */
+/* line 213, ../scss/_presale.scss */
 header.presale-masthead .modal .popup-title {
   text-align: center;
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 26px;
   color: #002D78; }
-/* line 214, ../scss/_presale.scss */
+/* line 220, ../scss/_presale.scss */
 header.presale-masthead .modal .popup-subtitle {
   text-align: center;
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 16px;
   color: #4D4D4D; }
-/* line 221, ../scss/_presale.scss */
+/* line 227, ../scss/_presale.scss */
 header.presale-masthead .modal-dialog {
   max-width: 600px !important; }
-/* line 225, ../scss/_presale.scss */
+/* line 231, ../scss/_presale.scss */
 header.presale-masthead .modal p {
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
   color: #4D4D4D;
   font-size: 14px; }
-/* line 231, ../scss/_presale.scss */
+/* line 237, ../scss/_presale.scss */
 header.presale-masthead .modal-body {
   padding-left: 50px;
   padding-right: 50px; }
-/* line 236, ../scss/_presale.scss */
+/* line 242, ../scss/_presale.scss */
 header.presale-masthead .modal-header {
   border-bottom: none !important; }
 @media (min-width: 768px) {
-  /* line 241, ../scss/_presale.scss */
+  /* line 247, ../scss/_presale.scss */
   header.presale-masthead .close {
     position: absolute;
     right: 10px;
     top: 5px;
     font-size: 40px; } }
 @media (max-width: 768px) {
-  /* line 250, ../scss/_presale.scss */
+  /* line 256, ../scss/_presale.scss */
   header.presale-masthead .close {
     position: absolute;
     left: 10px !important;
     top: 5px;
     font-size: 40px; } }
-/* line 258, ../scss/_presale.scss */
+/* line 264, ../scss/_presale.scss */
 header.presale-masthead .popup-footer {
   text-align: center;
   margin-bottom: 30px; }
-  /* line 262, ../scss/_presale.scss */
+  /* line 268, ../scss/_presale.scss */
   header.presale-masthead .popup-footer .btn {
     padding: 15px 45px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
@@ -4050,26 +4063,26 @@ header.presale-masthead .popup-footer {
     margin: 20px auto;
     display: block;
     border-radius: 5px; }
-  /* line 275, ../scss/_presale.scss */
+  /* line 281, ../scss/_presale.scss */
   header.presale-masthead .popup-footer .copy-button {
     display: none;
     min-width: 300px; }
-/* line 282, ../scss/_presale.scss */
+/* line 288, ../scss/_presale.scss */
 header.presale-masthead .address-copy .instruction {
   padding-top: 10px; }
-/* line 286, ../scss/_presale.scss */
+/* line 292, ../scss/_presale.scss */
 header.presale-masthead .address-copy .ens-address {
   margin-top: 40px;
   font-size: 24px;
   text-align: center;
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold'; }
-/* line 293, ../scss/_presale.scss */
+/* line 299, ../scss/_presale.scss */
 header.presale-masthead .address-copy .separator {
   font-size: 18px;
   text-align: center;
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
 @media (min-width: 768px) {
-  /* line 300, ../scss/_presale.scss */
+  /* line 306, ../scss/_presale.scss */
   header.presale-masthead .address-copy .separator:before {
     content: '';
     display: block;
@@ -4079,7 +4092,7 @@ header.presale-masthead .address-copy .separator {
     position: absolute;
     left: 185px;
     top: 161px; }
-  /* line 311, ../scss/_presale.scss */
+  /* line 317, ../scss/_presale.scss */
   header.presale-masthead .address-copy .separator:after {
     content: '';
     display: block;
@@ -4089,10 +4102,10 @@ header.presale-masthead .address-copy .separator {
     position: absolute;
     left: 320px;
     top: 161px; } }
-/* line 323, ../scss/_presale.scss */
+/* line 329, ../scss/_presale.scss */
 header.presale-masthead .address-copy p.text-box {
   text-align: center; }
-  /* line 326, ../scss/_presale.scss */
+  /* line 332, ../scss/_presale.scss */
   header.presale-masthead .address-copy p.text-box input {
     width: 500px;
     padding: 10px;
@@ -4102,17 +4115,17 @@ header.presale-masthead .address-copy p.text-box {
     outline: none;
     border: 1px solid #4D4D4D; }
     @media (max-width: 650px) {
-      /* line 326, ../scss/_presale.scss */
+      /* line 332, ../scss/_presale.scss */
       header.presale-masthead .address-copy p.text-box input {
         width: calc(100% + 80px);
         margin-right: -40px;
         margin-left: -40px; } }
     @media (max-width: 530px) {
-      /* line 326, ../scss/_presale.scss */
+      /* line 332, ../scss/_presale.scss */
       header.presale-masthead .address-copy p.text-box input {
         font-size: 12px; } }
 
-/* line 349, ../scss/_presale.scss */
+/* line 355, ../scss/_presale.scss */
 .circle-logo {
   width: 100%;
   width: 100%;
@@ -4123,57 +4136,57 @@ header.presale-masthead .address-copy p.text-box {
   margin-top: -115px;
   margin-bottom: 10px; }
   @media (max-width: 700px) {
-    /* line 349, ../scss/_presale.scss */
+    /* line 355, ../scss/_presale.scss */
     .circle-logo {
       margin-top: -40px; } }
   @media (max-width: 500px) {
-    /* line 349, ../scss/_presale.scss */
+    /* line 355, ../scss/_presale.scss */
     .circle-logo {
       margin-left: calc(50% - 250px); } }
 
-/* line 368, ../scss/_presale.scss */
+/* line 374, ../scss/_presale.scss */
 section.as-seen-on.tokensale {
   background: #1e2e4b;
   padding-top: 5rem !important; }
 
-/* line 373, ../scss/_presale.scss */
+/* line 379, ../scss/_presale.scss */
 section.supported-by.tokensale {
   background: #1e2e4b;
   padding-top: 5rem !important;
   margin-top: -95px; }
   @media (min-width: 1400px) {
-    /* line 373, ../scss/_presale.scss */
+    /* line 379, ../scss/_presale.scss */
     section.supported-by.tokensale {
       margin-top: -100px !important; } }
-  /* line 384, ../scss/_presale.scss */
+  /* line 390, ../scss/_presale.scss */
   section.supported-by.tokensale .links .link-box {
     filter: none; }
-  /* line 388, ../scss/_presale.scss */
+  /* line 394, ../scss/_presale.scss */
   section.supported-by.tokensale h2 {
     color: white; }
 
 @media (min-width: 1400px) {
-  /* line 395, ../scss/_presale.scss */
+  /* line 401, ../scss/_presale.scss */
   section.as-seen-on .left-blue-div {
     background: linear-gradient(-360deg, #366294, #1e2e4b);
     width: 4000px !important;
     height: 1350px !important;
     right: -90% !important;
     top: -340% !important; }
-  /* line 403, ../scss/_presale.scss */
+  /* line 409, ../scss/_presale.scss */
   section.as-seen-on .top-white-div {
     left: -100% !important;
     width: 4000px !important; } }
-/* line 410, ../scss/_presale.scss */
+/* line 416, ../scss/_presale.scss */
 section.as-seen-on {
   padding-top: 8rem !important;
   padding-bottom: 6.5rem;
   overflow: hidden; }
-  /* line 414, ../scss/_presale.scss */
+  /* line 420, ../scss/_presale.scss */
   section.as-seen-on .section-heading {
     margin-bottom: 0px !important; }
   @media (max-width: 991px) {
-    /* line 410, ../scss/_presale.scss */
+    /* line 416, ../scss/_presale.scss */
     section.as-seen-on {
       background: linear-gradient(-360deg, #366294, #1e2e4b);
       background: -webkit-linear-gradient(-360deg, #366294, #1e2e4b);
@@ -4185,16 +4198,16 @@ section.as-seen-on {
       background: linear-gradient(-360deg, #366294, #1e2e4b);
       /* Standard syntax */
       padding-top: 2rem !important; }
-      /* line 419, ../scss/_presale.scss */
+      /* line 425, ../scss/_presale.scss */
       section.as-seen-on .left-blue-div {
         display: none; }
-      /* line 423, ../scss/_presale.scss */
+      /* line 429, ../scss/_presale.scss */
       section.as-seen-on .right-blue-div {
         display: none; }
-      /* line 435, ../scss/_presale.scss */
+      /* line 441, ../scss/_presale.scss */
       section.as-seen-on .link-box {
         transform: scale(0.75); } }
-  /* line 440, ../scss/_presale.scss */
+  /* line 446, ../scss/_presale.scss */
   section.as-seen-on .left-blue-div {
     background: linear-gradient(-360deg, #366294, #1e2e4b);
     background: -webkit-linear-gradient(-360deg, #366294, #1e2e4b);
@@ -4212,7 +4225,7 @@ section.as-seen-on {
     right: -20%;
     top: -140%;
     z-index: -1; }
-  /* line 456, ../scss/_presale.scss */
+  /* line 462, ../scss/_presale.scss */
   section.as-seen-on .right-blue-div {
     background: linear-gradient(5deg, #24a6e8, #06d2d7);
     background: -webkit-linear-gradient(5deg, #24a6e8, #06d2d7);
@@ -4230,7 +4243,7 @@ section.as-seen-on {
     top: 38%;
     z-index: -2;
     transform: rotate(174deg); }
-  /* line 472, ../scss/_presale.scss */
+  /* line 478, ../scss/_presale.scss */
   section.as-seen-on .top-white-div {
     background: #fafafa;
     width: 2000px;
@@ -4239,17 +4252,17 @@ section.as-seen-on {
     top: -200%;
     left: -50%;
     z-index: 5; }
-  /* line 482, ../scss/_presale.scss */
+  /* line 488, ../scss/_presale.scss */
   section.as-seen-on h2 {
     color: #ffffff; }
-  /* line 486, ../scss/_presale.scss */
+  /* line 492, ../scss/_presale.scss */
   section.as-seen-on .links {
     align-content: center; }
     @media (max-width: 648px) {
-      /* line 486, ../scss/_presale.scss */
+      /* line 492, ../scss/_presale.scss */
       section.as-seen-on .links {
         padding: 20px 15px; } }
-    /* line 493, ../scss/_presale.scss */
+    /* line 499, ../scss/_presale.scss */
     section.as-seen-on .links .link-box {
       margin: 0 auto 30px auto;
       height: 100px;
@@ -4257,30 +4270,30 @@ section.as-seen-on {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain; }
-    /* line 502, ../scss/_presale.scss */
+    /* line 508, ../scss/_presale.scss */
     section.as-seen-on .links .venturebeat {
       background-image: url(../img/presale/venturebeat.png); }
-    /* line 506, ../scss/_presale.scss */
+    /* line 512, ../scss/_presale.scss */
     section.as-seen-on .links .cnbc {
       background-image: url(../img/presale/cnbc.png); }
-    /* line 510, ../scss/_presale.scss */
+    /* line 516, ../scss/_presale.scss */
     section.as-seen-on .links .bloomberg {
       background-image: url(../img/presale/bloomberg.png); }
-    /* line 514, ../scss/_presale.scss */
+    /* line 520, ../scss/_presale.scss */
     section.as-seen-on .links .investopedia {
       background-image: url(../img/presale/investopedia.png); }
-    /* line 518, ../scss/_presale.scss */
+    /* line 524, ../scss/_presale.scss */
     section.as-seen-on .links .cointelegraph {
       background-image: url(../img/presale/cointelegraph.png); }
-    /* line 522, ../scss/_presale.scss */
+    /* line 528, ../scss/_presale.scss */
     section.as-seen-on .links .bitcoinist {
       background-image: url(../img/presale/bitcoinist.png); }
 
-/* line 528, ../scss/_presale.scss */
+/* line 534, ../scss/_presale.scss */
 section.resources {
   padding-top: 5rem !important;
   padding-bottom: 10rem !important; }
-  /* line 533, ../scss/_presale.scss */
+  /* line 539, ../scss/_presale.scss */
   section.resources .resource-card {
     vertical-align: top;
     background: white;
@@ -4293,41 +4306,41 @@ section.resources {
     border-radius: 5px;
     border: 1px solid #d8d8d8;
     margin: 30px; }
-    /* line 546, ../scss/_presale.scss */
+    /* line 552, ../scss/_presale.scss */
     section.resources .resource-card .dots {
       width: 80px;
       left: calc(50% - 40px);
       position: relative; }
-    /* line 552, ../scss/_presale.scss */
+    /* line 558, ../scss/_presale.scss */
     section.resources .resource-card .resource-card-title {
       padding-top: 25px;
       padding-bottom: 10px;
       font-size: 30px;
       font-weight: bold;
       color: #030387; }
-    /* line 560, ../scss/_presale.scss */
+    /* line 566, ../scss/_presale.scss */
     section.resources .resource-card .resource-img {
       display: inline-block;
       padding-left: 30px;
       padding-right: 30px; }
       @media (min-width: 473px) {
-        /* line 560, ../scss/_presale.scss */
+        /* line 566, ../scss/_presale.scss */
         section.resources .resource-card .resource-img {
           float: left; } }
-    /* line 570, ../scss/_presale.scss */
+    /* line 576, ../scss/_presale.scss */
     section.resources .resource-card .resource-content {
       display: inline-block;
       width: 100%; }
-    /* line 575, ../scss/_presale.scss */
+    /* line 581, ../scss/_presale.scss */
     section.resources .resource-card .whitepaper-resource-description, section.resources .resource-card .presentation-resource-description {
       font-size: 18px; }
-    /* line 579, ../scss/_presale.scss */
+    /* line 585, ../scss/_presale.scss */
     section.resources .resource-card .whitepaper-resource-description {
       padding: 40px 30px; }
-    /* line 583, ../scss/_presale.scss */
+    /* line 589, ../scss/_presale.scss */
     section.resources .resource-card .presentation-resource-description {
       padding: 30px 30px; }
-    /* line 587, ../scss/_presale.scss */
+    /* line 593, ../scss/_presale.scss */
     section.resources .resource-card .download-button {
       position: relative;
       z-index: 1000;
@@ -4344,19 +4357,19 @@ section.resources {
       margin: 25px auto;
       display: block; }
   @media (min-width: 480px) {
-    /* line 606, ../scss/_presale.scss */
+    /* line 612, ../scss/_presale.scss */
     section.resources .resource-card {
       width: 400px; } }
   @media (min-width: 560px) {
-    /* line 612, ../scss/_presale.scss */
+    /* line 618, ../scss/_presale.scss */
     section.resources .resource-card {
       width: 480px; } }
 
-/* line 618, ../scss/_presale.scss */
+/* line 624, ../scss/_presale.scss */
 .background-resources {
   position: relative;
   overflow: hidden; }
-  /* line 622, ../scss/_presale.scss */
+  /* line 628, ../scss/_presale.scss */
   .background-resources .background-resources-first,
   .background-resources .background-resources-second {
     display: block;
@@ -4368,7 +4381,7 @@ section.resources {
     left: -400px;
     background: #0884cd;
     /* For browsers that do not support gradients */ }
-  /* line 634, ../scss/_presale.scss */
+  /* line 640, ../scss/_presale.scss */
   .background-resources .background-resources-first {
     transform: rotate(10deg);
     background: -webkit-linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
@@ -4379,7 +4392,7 @@ section.resources {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
     /* Standard syntax */ }
-  /* line 642, ../scss/_presale.scss */
+  /* line 648, ../scss/_presale.scss */
   .background-resources .background-resources-second {
     transform: rotate(-10deg);
     background: -webkit-linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
@@ -4391,16 +4404,16 @@ section.resources {
     background: linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
     /* Standard syntax */ }
 
-/* line 651, ../scss/_presale.scss */
+/* line 657, ../scss/_presale.scss */
 footer.presale-footer {
   position: unset;
   margin-bottom: 70px; }
 
-/* line 656, ../scss/_presale.scss */
+/* line 662, ../scss/_presale.scss */
 section.faq .text-center {
   margin-top: 35px; }
 
-/* line 660, ../scss/_presale.scss */
+/* line 666, ../scss/_presale.scss */
 section.faq .text-center a {
   color: #09d8ba;
   font-weight: bold; }

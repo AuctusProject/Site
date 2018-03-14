@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.min.css?v=15" rel="stylesheet">
+    <link href="../css/style.min.css?v=17" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
 
     <!-- Temporary navbar container fix -->
@@ -757,7 +757,7 @@
                             The AUC Token Sale, Terms of Token Sale, the Whitepaper and any documents related to the Token Sale do not constitute a prospectus
                             or offering document and are not an offer to sell nor the solicitation of an offer to buy an
                             investment, security, share, equity interest or debt nor a derivative interest of any of the
-                            foregoing. The sale of AUC Tokens constitutes the sale of a software product under the laws of
+                            foregoing. The sale of AUC Tokens constitutes the sale of a software product under the laws of the
                             British Virgin Islands. AUC Tokens are not intended to be a digital currency, security, commodity,
                             bond, debt instrument or any kind of financial instrument or investment carrying equivalent rights,
                             nor are AUC Tokens intended to represent any form of money in any jurisdiction, nor any representation
@@ -777,13 +777,13 @@
                 <span>Copyright © 2018 AUCTUS PROJECT INC</span>
             </div>
         </div>
-        <div class="cookie-toast close-toast" onclick="acceptCookies(this);">
+        <div class="cookie-toast close-toast">
             <span>
                 This website uses cookies to offer you a better browsing experience. You can find more details in our
                 <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
             </span>
-            <button>
-                <span>I AGREE</span>
+            <button  onclick="acceptCookies($('.cookie-toast'));">
+                <span>OK</span>
             </button>
         </div>
     </footer>
@@ -791,7 +791,7 @@
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/slick.min.js"></script>
     <script src="../js/translation.js"></script>
-    <script src="../js/script.min.js?v=15"></script>
+    <script src="../js/script.min.js?v=17"></script>
     <script>
         $(".menu-content a").click(function (e) {
             if ($(window).width() <= 768)

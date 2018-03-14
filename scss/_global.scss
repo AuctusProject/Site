@@ -316,7 +316,7 @@ a:hover{
     right: 20px;
     position: fixed;
     bottom: 8px;
-    z-index: 10001;
+    z-index: 10002;
     border: 2px solid white;
     border-radius: 50%;
     background: white;
@@ -329,4 +329,39 @@ a:hover{
 
 .telegram-button:hover{
     transform: scale(1.1);
+}
+
+.cookie-toast {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #d3d3d3;
+    text-align: center;
+    z-index: 10001;
+    transition: all 2s;
+
+    @media(max-width:490px) {
+        font-size: 0.8rem;
+    }
+
+    a {
+        white-space: nowrap;
+    }
+
+    button {
+        background-color: #fafafa;
+        color: #292b2c;
+        margin-left: 10px;
+        cursor: pointer;
+        box-shadow: 0px 1px 2px #0F0F0F;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+    }
+}
+
+.cookie-toast.close-toast {
+    bottom: -130px;
+    transition: all 1s;
 }

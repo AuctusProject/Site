@@ -60,7 +60,7 @@ header.presale-masthead {
         h2 {
             font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
             letter-spacing: 2px;
-            font-size: 20pt !important;
+            font-size: 40px !important;
             color: white;
             margin: 0;
         }
@@ -72,6 +72,12 @@ header.presale-masthead {
             margin: 0;
         }
 
+        @media (min-width:420px){
+            br{
+                display:none;
+            }
+        }
+
         @media (max-width: 768px) {
             text-align: center;
             width: 100%;
@@ -81,7 +87,7 @@ header.presale-masthead {
             }
 
             h2 {
-                font-size: 12pt !important;
+                font-size: 30px !important;
             }
 
             h3 {

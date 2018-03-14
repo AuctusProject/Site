@@ -50,6 +50,9 @@ section.subscribe {
 
 footer {
     position: relative;
+    padding-top: 200px;
+    margin-top: -200px;
+    z-index: -5;
 
     .navigation-icons {
         padding-top: 40px;
@@ -136,38 +139,5 @@ footer {
         text-align: center;
     }
 
-    .cookie-toast {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px;
-        background: #d3d3d3;
-        text-align: center;
-        z-index: 10000;
-        transition: all 2s;
-
-        @media(max-width:490px) {
-            font-size: 0.8rem;
-        }
-
-        a {
-            white-space: nowrap;
-        }
-
-        button {
-            background-color: #fafafa;
-            color: #292b2c;
-            margin-left: 10px;
-            cursor: pointer;
-            box-shadow: 0px 1px 2px #0F0F0F;
-            border: 1px solid rgba(0,0,0,.125);
-            border-radius: .25rem;
-        }
-    }
-
-    .cookie-toast.close-toast {
-        bottom: -130px;
-        transition: all 1s;
-    }
+   
 }

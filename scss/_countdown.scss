@@ -8,19 +8,19 @@ section.countdown {
         @media (min-width: 1400px) {
             margin-top: 280px !important;
         }
+
         @media (min-width: 992px) and (max-width: 1399px) {
             margin-top: 220px !important;
         }
+
         @media (max-width: 991px) {
             margin-top: 40px !important;
         }
-
         // 40px !important
-
         z-index: 1000;
         position: relative;
         margin-top: 170px;
-        
+
 
         h2 {
             color: #ffffff;
@@ -130,9 +130,13 @@ section.countdown {
         padding-top: 30px;
         // margin-left: 5%;
         margin-left: 5px;
-
         z-index: 100;
         position: relative;
+        text-align: center;
+
+        h3 {
+            color: white;
+        }
     }
 
     @media (max-width: 991px) {
@@ -152,19 +156,17 @@ section.countdown {
         text-decoration: none;
     }
 
-    .pre-sale-button-div.token-sale
-    {
+    .pre-sale-button-div.token-sale {
         max-width: 230px;
         width: 230px;
     }
 
-    .pre-sale-button-div.whitelist
-    {
+    .pre-sale-button-div.whitelist {
         max-width: 230px;
         width: 230px;
     }
 
-    .pre-sale-button-div:hover{
+    .pre-sale-button-div:hover {
         background: rgba(0, 45, 120, 1);
         color: #34dce0;
     }
