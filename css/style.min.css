@@ -3455,7 +3455,7 @@ section.video {
     section.video .video-text-container .video-text {
       border-left: solid 4px #00BDFF;
       padding-left: 27px;
-      z-index: 10000; }
+      z-index: 10; }
       @media (max-width: 991px) {
         /* line 67, ../scss/_video.scss */
         section.video .video-text-container .video-text {
@@ -3882,7 +3882,7 @@ header.presale-masthead .text-container {
   header.presale-masthead .text-container h2 {
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
     letter-spacing: 2px;
-    font-size: 40px !important;
+    font-size: 32px !important;
     color: white;
     margin: 0; }
   /* line 68, ../scss/_presale.scss */
@@ -3909,67 +3909,151 @@ header.presale-masthead .text-container {
       /* line 93, ../scss/_presale.scss */
       header.presale-masthead .text-container h3 {
         font-size: 10pt !important; } }
-/* line 100, ../scss/_presale.scss */
+@media (max-width: 991px) {
+  /* line 99, ../scss/_presale.scss */
+  header.presale-masthead .row-container {
+    flex-direction: column-reverse; } }
+/* line 105, ../scss/_presale.scss */
+header.presale-masthead .portview-container {
+  margin-top: 160px; }
+  @media (max-width: 991px) {
+    /* line 105, ../scss/_presale.scss */
+    header.presale-masthead .portview-container {
+      margin-top: 130px; } }
+  /* line 112, ../scss/_presale.scss */
+  header.presale-masthead .portview-container .transparent {
+    background: rgba(255, 255, 255, 0.2);
+    padding-top: 30px;
+    margin-top: -30px; }
+    @media (max-width: 991px) {
+      /* line 112, ../scss/_presale.scss */
+      header.presale-masthead .portview-container .transparent {
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        margin-top: 20px; } }
+/* line 125, ../scss/_presale.scss */
+header.presale-masthead .why-invest {
+  color: #fafafa;
+  padding: 0px 30px; }
+  @media (max-width: 991px) {
+    /* line 125, ../scss/_presale.scss */
+    header.presale-masthead .why-invest {
+      padding: 5px 30px; } }
+  /* line 133, ../scss/_presale.scss */
+  header.presale-masthead .why-invest ul {
+    margin-top: 30px;
+    margin-left: 0px; }
+    /* line 137, ../scss/_presale.scss */
+    header.presale-masthead .why-invest ul li {
+      display: block;
+      font: normal normal normal 20px/1 FontAwesome;
+      font-size: 20px;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin-bottom: 30px; }
+    /* line 147, ../scss/_presale.scss */
+    header.presale-masthead .why-invest ul li:before {
+      content: "\f00c";
+      padding-right: 10px;
+      color: #00fcfc; }
+/* line 155, ../scss/_presale.scss */
+header.presale-masthead .link-box {
+  margin: 0 auto;
+  height: 78px;
+  width: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(0.9); }
+  @media (max-width: 991px) {
+    /* line 155, ../scss/_presale.scss */
+    header.presale-masthead .link-box {
+      transform: scale(0.75); } }
+/* line 169, ../scss/_presale.scss */
+header.presale-masthead .rcn {
+  background-image: url(../img/partners/rcn.png); }
+/* line 173, ../scss/_presale.scss */
+header.presale-masthead .cofoundit {
+  background-image: url(../img/partners/cofoundit.svg); }
+/* line 177, ../scss/_presale.scss */
+header.presale-masthead .zrx {
+  background-image: url(../img/partners/0x.png); }
+/* line 181, ../scss/_presale.scss */
+header.presale-masthead .bancor {
+  background-image: url(../img/partners/bancor.png); }
+/* line 185, ../scss/_presale.scss */
 header.presale-masthead .timer {
   margin: 20px 0;
   text-align: center;
   overflow: hidden; }
-/* line 106, ../scss/_presale.scss */
+  @media (min-width: 1200px) {
+    /* line 191, ../scss/_presale.scss */
+    header.presale-masthead .timer br {
+      display: none; } }
+/* line 197, ../scss/_presale.scss */
 header.presale-masthead .timer > div {
   text-align: center;
   display: inline-block; }
-/* line 111, ../scss/_presale.scss */
+/* line 202, ../scss/_presale.scss */
 header.presale-masthead .time-part {
-  display: inline-block;
-  width: 148px;
+  display: block;
+  width: 80px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px; }
-/* line 120, ../scss/_presale.scss */
+  margin-top: 25px;
+  margin-bottom: 25px; }
+/* line 211, ../scss/_presale.scss */
+header.presale-masthead .minutes {
+  /*display:block;*/ }
+/* line 215, ../scss/_presale.scss */
 header.presale-masthead .box {
-  width: 130px;
+  width: 90px;
   height: 130px;
   border: 2px solid #00fcfc;
   border-radius: 5px;
   display: inline-block; }
-  /* line 127, ../scss/_presale.scss */
+  /* line 222, ../scss/_presale.scss */
   header.presale-masthead .box .time-value {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
-    font-size: 58px;
+    font-size: 42px;
     line-height: 88px;
     color: #00fcfc; }
-  /* line 134, ../scss/_presale.scss */
+  /* line 229, ../scss/_presale.scss */
   header.presale-masthead .box .time-label {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
     color: #00fcfc;
     font-size: 16px; }
 @media (min-width: 768px) {
-  /* line 142, ../scss/_presale.scss */
-  header.presale-masthead .time-part:after {
-    content: '';
-    position: relative;
-    width: 64px;
-    height: 2px;
-    background-color: #00fcfc;
-    top: -68px;
-    left: 138px;
-    display: block; }
-  /* line 153, ../scss/_presale.scss */
-  header.presale-masthead .days:before {
-    content: '';
-    position: relative;
-    height: 2px;
-    background-color: #00fcfc;
-    top: 64px;
-    display: block;
-    width: 1000px;
-    right: 990px; }
-  /* line 164, ../scss/_presale.scss */
-  header.presale-masthead .seconds:after {
-    width: 1000px;
-    left: 138px; } }
-/* line 170, ../scss/_presale.scss */
+  /* line 2, ../scss/_presale.scss */
+  header.presale-masthead {
+    /*.time-part.days:after,
+    .time-part.hours:after {
+        content: '';
+        position: relative;
+        width: 64px;
+        height: 2px;
+        background-color: #00fcfc;
+        top: -68px;
+        left: 138px;
+        display: block;
+    }*/
+        /*.days:before {
+            content: '';
+            position: relative;
+            height: 2px;
+            background-color: #00fcfc;
+            top: 64px;
+            display: block;
+            width: 1000px;
+            right: 990px;
+        }
+
+        .seconds:after {
+            width: 1000px;
+            left: 138px;
+        }*/ } }
+/* line 265, ../scss/_presale.scss */
 header.presale-masthead a.btn {
   position: relative;
   z-index: 1000;
@@ -3981,24 +4065,24 @@ header.presale-masthead a.btn {
   color: #00fcfc;
   cursor: pointer;
   max-width: 380px;
-  margin: 20px auto;
+  margin: 10% auto;
   display: block;
   border-radius: 5px; }
-/* line 186, ../scss/_presale.scss */
+/* line 281, ../scss/_presale.scss */
 header.presale-masthead a.btn.focus, header.presale-masthead a.btn:focus {
   outline: none !important;
   box-shadow: none !important;
   -moz-outline-style: none !important; }
 @media (max-width: 768px) {
-  /* line 193, ../scss/_presale.scss */
+  /* line 288, ../scss/_presale.scss */
   header.presale-masthead a.btn {
     margin: 20px auto;
     padding: 15px 0 !important; } }
-/* line 199, ../scss/_presale.scss */
+/* line 294, ../scss/_presale.scss */
 header.presale-masthead a.btn:active, header.presale-masthead a.btn:focus {
   outline: 0;
   -moz-outline-style: none; }
-/* line 204, ../scss/_presale.scss */
+/* line 299, ../scss/_presale.scss */
 header.presale-masthead .bottom-waves {
   min-height: 150px;
   width: 100%;
@@ -4006,52 +4090,52 @@ header.presale-masthead .bottom-waves {
   bottom: 0px;
   background-image: url("../img/presale/waves.png");
   pointer-events: none; }
-/* line 213, ../scss/_presale.scss */
+/* line 308, ../scss/_presale.scss */
 header.presale-masthead .modal .popup-title {
   text-align: center;
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 26px;
   color: #002D78; }
-/* line 220, ../scss/_presale.scss */
+/* line 315, ../scss/_presale.scss */
 header.presale-masthead .modal .popup-subtitle {
   text-align: center;
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
   font-size: 16px;
   color: #4D4D4D; }
-/* line 227, ../scss/_presale.scss */
+/* line 322, ../scss/_presale.scss */
 header.presale-masthead .modal-dialog {
   max-width: 600px !important; }
-/* line 231, ../scss/_presale.scss */
+/* line 326, ../scss/_presale.scss */
 header.presale-masthead .modal p {
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
   color: #4D4D4D;
   font-size: 14px; }
-/* line 237, ../scss/_presale.scss */
+/* line 332, ../scss/_presale.scss */
 header.presale-masthead .modal-body {
   padding-left: 50px;
   padding-right: 50px; }
-/* line 242, ../scss/_presale.scss */
+/* line 337, ../scss/_presale.scss */
 header.presale-masthead .modal-header {
   border-bottom: none !important; }
 @media (min-width: 768px) {
-  /* line 247, ../scss/_presale.scss */
+  /* line 342, ../scss/_presale.scss */
   header.presale-masthead .close {
     position: absolute;
     right: 10px;
     top: 5px;
     font-size: 40px; } }
 @media (max-width: 768px) {
-  /* line 256, ../scss/_presale.scss */
+  /* line 351, ../scss/_presale.scss */
   header.presale-masthead .close {
     position: absolute;
     left: 10px !important;
     top: 5px;
     font-size: 40px; } }
-/* line 264, ../scss/_presale.scss */
+/* line 359, ../scss/_presale.scss */
 header.presale-masthead .popup-footer {
   text-align: center;
   margin-bottom: 30px; }
-  /* line 268, ../scss/_presale.scss */
+  /* line 363, ../scss/_presale.scss */
   header.presale-masthead .popup-footer .btn {
     padding: 15px 45px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
@@ -4063,26 +4147,26 @@ header.presale-masthead .popup-footer {
     margin: 20px auto;
     display: block;
     border-radius: 5px; }
-  /* line 281, ../scss/_presale.scss */
+  /* line 376, ../scss/_presale.scss */
   header.presale-masthead .popup-footer .copy-button {
     display: none;
     min-width: 300px; }
-/* line 288, ../scss/_presale.scss */
+/* line 383, ../scss/_presale.scss */
 header.presale-masthead .address-copy .instruction {
   padding-top: 10px; }
-/* line 292, ../scss/_presale.scss */
+/* line 387, ../scss/_presale.scss */
 header.presale-masthead .address-copy .ens-address {
   margin-top: 40px;
   font-size: 24px;
   text-align: center;
   font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold'; }
-/* line 299, ../scss/_presale.scss */
+/* line 394, ../scss/_presale.scss */
 header.presale-masthead .address-copy .separator {
   font-size: 18px;
   text-align: center;
   font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
 @media (min-width: 768px) {
-  /* line 306, ../scss/_presale.scss */
+  /* line 401, ../scss/_presale.scss */
   header.presale-masthead .address-copy .separator:before {
     content: '';
     display: block;
@@ -4092,7 +4176,7 @@ header.presale-masthead .address-copy .separator {
     position: absolute;
     left: 185px;
     top: 161px; }
-  /* line 317, ../scss/_presale.scss */
+  /* line 412, ../scss/_presale.scss */
   header.presale-masthead .address-copy .separator:after {
     content: '';
     display: block;
@@ -4102,10 +4186,10 @@ header.presale-masthead .address-copy .separator {
     position: absolute;
     left: 320px;
     top: 161px; } }
-/* line 329, ../scss/_presale.scss */
+/* line 424, ../scss/_presale.scss */
 header.presale-masthead .address-copy p.text-box {
   text-align: center; }
-  /* line 332, ../scss/_presale.scss */
+  /* line 427, ../scss/_presale.scss */
   header.presale-masthead .address-copy p.text-box input {
     width: 500px;
     padding: 10px;
@@ -4115,17 +4199,17 @@ header.presale-masthead .address-copy p.text-box {
     outline: none;
     border: 1px solid #4D4D4D; }
     @media (max-width: 650px) {
-      /* line 332, ../scss/_presale.scss */
+      /* line 427, ../scss/_presale.scss */
       header.presale-masthead .address-copy p.text-box input {
         width: calc(100% + 80px);
         margin-right: -40px;
         margin-left: -40px; } }
     @media (max-width: 530px) {
-      /* line 332, ../scss/_presale.scss */
+      /* line 427, ../scss/_presale.scss */
       header.presale-masthead .address-copy p.text-box input {
         font-size: 12px; } }
 
-/* line 355, ../scss/_presale.scss */
+/* line 450, ../scss/_presale.scss */
 .circle-logo {
   width: 100%;
   width: 100%;
@@ -4136,57 +4220,57 @@ header.presale-masthead .address-copy p.text-box {
   margin-top: -115px;
   margin-bottom: 10px; }
   @media (max-width: 700px) {
-    /* line 355, ../scss/_presale.scss */
+    /* line 450, ../scss/_presale.scss */
     .circle-logo {
       margin-top: -40px; } }
   @media (max-width: 500px) {
-    /* line 355, ../scss/_presale.scss */
+    /* line 450, ../scss/_presale.scss */
     .circle-logo {
       margin-left: calc(50% - 250px); } }
 
-/* line 374, ../scss/_presale.scss */
+/* line 469, ../scss/_presale.scss */
 section.as-seen-on.tokensale {
   background: #1e2e4b;
   padding-top: 5rem !important; }
 
-/* line 379, ../scss/_presale.scss */
+/* line 474, ../scss/_presale.scss */
 section.supported-by.tokensale {
   background: #1e2e4b;
   padding-top: 5rem !important;
   margin-top: -95px; }
   @media (min-width: 1400px) {
-    /* line 379, ../scss/_presale.scss */
+    /* line 474, ../scss/_presale.scss */
     section.supported-by.tokensale {
       margin-top: -100px !important; } }
-  /* line 390, ../scss/_presale.scss */
+  /* line 485, ../scss/_presale.scss */
   section.supported-by.tokensale .links .link-box {
     filter: none; }
-  /* line 394, ../scss/_presale.scss */
+  /* line 489, ../scss/_presale.scss */
   section.supported-by.tokensale h2 {
     color: white; }
 
 @media (min-width: 1400px) {
-  /* line 401, ../scss/_presale.scss */
+  /* line 496, ../scss/_presale.scss */
   section.as-seen-on .left-blue-div {
     background: linear-gradient(-360deg, #366294, #1e2e4b);
     width: 4000px !important;
     height: 1350px !important;
     right: -90% !important;
     top: -340% !important; }
-  /* line 409, ../scss/_presale.scss */
+  /* line 504, ../scss/_presale.scss */
   section.as-seen-on .top-white-div {
     left: -100% !important;
     width: 4000px !important; } }
-/* line 416, ../scss/_presale.scss */
+/* line 511, ../scss/_presale.scss */
 section.as-seen-on {
   padding-top: 8rem !important;
   padding-bottom: 6.5rem;
   overflow: hidden; }
-  /* line 420, ../scss/_presale.scss */
+  /* line 515, ../scss/_presale.scss */
   section.as-seen-on .section-heading {
     margin-bottom: 0px !important; }
   @media (max-width: 991px) {
-    /* line 416, ../scss/_presale.scss */
+    /* line 511, ../scss/_presale.scss */
     section.as-seen-on {
       background: linear-gradient(-360deg, #366294, #1e2e4b);
       background: -webkit-linear-gradient(-360deg, #366294, #1e2e4b);
@@ -4198,16 +4282,16 @@ section.as-seen-on {
       background: linear-gradient(-360deg, #366294, #1e2e4b);
       /* Standard syntax */
       padding-top: 2rem !important; }
-      /* line 425, ../scss/_presale.scss */
+      /* line 520, ../scss/_presale.scss */
       section.as-seen-on .left-blue-div {
         display: none; }
-      /* line 429, ../scss/_presale.scss */
+      /* line 524, ../scss/_presale.scss */
       section.as-seen-on .right-blue-div {
         display: none; }
-      /* line 441, ../scss/_presale.scss */
+      /* line 536, ../scss/_presale.scss */
       section.as-seen-on .link-box {
         transform: scale(0.75); } }
-  /* line 446, ../scss/_presale.scss */
+  /* line 541, ../scss/_presale.scss */
   section.as-seen-on .left-blue-div {
     background: linear-gradient(-360deg, #366294, #1e2e4b);
     background: -webkit-linear-gradient(-360deg, #366294, #1e2e4b);
@@ -4225,7 +4309,7 @@ section.as-seen-on {
     right: -20%;
     top: -140%;
     z-index: -1; }
-  /* line 462, ../scss/_presale.scss */
+  /* line 557, ../scss/_presale.scss */
   section.as-seen-on .right-blue-div {
     background: linear-gradient(5deg, #24a6e8, #06d2d7);
     background: -webkit-linear-gradient(5deg, #24a6e8, #06d2d7);
@@ -4243,7 +4327,7 @@ section.as-seen-on {
     top: 38%;
     z-index: -2;
     transform: rotate(174deg); }
-  /* line 478, ../scss/_presale.scss */
+  /* line 573, ../scss/_presale.scss */
   section.as-seen-on .top-white-div {
     background: #fafafa;
     width: 2000px;
@@ -4252,17 +4336,17 @@ section.as-seen-on {
     top: -200%;
     left: -50%;
     z-index: 5; }
-  /* line 488, ../scss/_presale.scss */
+  /* line 583, ../scss/_presale.scss */
   section.as-seen-on h2 {
     color: #ffffff; }
-  /* line 492, ../scss/_presale.scss */
+  /* line 587, ../scss/_presale.scss */
   section.as-seen-on .links {
     align-content: center; }
     @media (max-width: 648px) {
-      /* line 492, ../scss/_presale.scss */
+      /* line 587, ../scss/_presale.scss */
       section.as-seen-on .links {
         padding: 20px 15px; } }
-    /* line 499, ../scss/_presale.scss */
+    /* line 594, ../scss/_presale.scss */
     section.as-seen-on .links .link-box {
       margin: 0 auto 30px auto;
       height: 100px;
@@ -4270,30 +4354,30 @@ section.as-seen-on {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain; }
-    /* line 508, ../scss/_presale.scss */
+    /* line 603, ../scss/_presale.scss */
     section.as-seen-on .links .venturebeat {
       background-image: url(../img/presale/venturebeat.png); }
-    /* line 512, ../scss/_presale.scss */
+    /* line 607, ../scss/_presale.scss */
     section.as-seen-on .links .cnbc {
       background-image: url(../img/presale/cnbc.png); }
-    /* line 516, ../scss/_presale.scss */
+    /* line 611, ../scss/_presale.scss */
     section.as-seen-on .links .bloomberg {
       background-image: url(../img/presale/bloomberg.png); }
-    /* line 520, ../scss/_presale.scss */
+    /* line 615, ../scss/_presale.scss */
     section.as-seen-on .links .investopedia {
       background-image: url(../img/presale/investopedia.png); }
-    /* line 524, ../scss/_presale.scss */
+    /* line 619, ../scss/_presale.scss */
     section.as-seen-on .links .cointelegraph {
       background-image: url(../img/presale/cointelegraph.png); }
-    /* line 528, ../scss/_presale.scss */
+    /* line 623, ../scss/_presale.scss */
     section.as-seen-on .links .bitcoinist {
       background-image: url(../img/presale/bitcoinist.png); }
 
-/* line 534, ../scss/_presale.scss */
+/* line 629, ../scss/_presale.scss */
 section.resources {
   padding-top: 5rem !important;
   padding-bottom: 10rem !important; }
-  /* line 539, ../scss/_presale.scss */
+  /* line 634, ../scss/_presale.scss */
   section.resources .resource-card {
     vertical-align: top;
     background: white;
@@ -4306,41 +4390,41 @@ section.resources {
     border-radius: 5px;
     border: 1px solid #d8d8d8;
     margin: 30px; }
-    /* line 552, ../scss/_presale.scss */
+    /* line 647, ../scss/_presale.scss */
     section.resources .resource-card .dots {
       width: 80px;
       left: calc(50% - 40px);
       position: relative; }
-    /* line 558, ../scss/_presale.scss */
+    /* line 653, ../scss/_presale.scss */
     section.resources .resource-card .resource-card-title {
       padding-top: 25px;
       padding-bottom: 10px;
       font-size: 30px;
       font-weight: bold;
       color: #030387; }
-    /* line 566, ../scss/_presale.scss */
+    /* line 661, ../scss/_presale.scss */
     section.resources .resource-card .resource-img {
       display: inline-block;
       padding-left: 30px;
       padding-right: 30px; }
       @media (min-width: 473px) {
-        /* line 566, ../scss/_presale.scss */
+        /* line 661, ../scss/_presale.scss */
         section.resources .resource-card .resource-img {
           float: left; } }
-    /* line 576, ../scss/_presale.scss */
+    /* line 671, ../scss/_presale.scss */
     section.resources .resource-card .resource-content {
       display: inline-block;
       width: 100%; }
-    /* line 581, ../scss/_presale.scss */
+    /* line 676, ../scss/_presale.scss */
     section.resources .resource-card .whitepaper-resource-description, section.resources .resource-card .presentation-resource-description {
       font-size: 18px; }
-    /* line 585, ../scss/_presale.scss */
+    /* line 680, ../scss/_presale.scss */
     section.resources .resource-card .whitepaper-resource-description {
       padding: 40px 30px; }
-    /* line 589, ../scss/_presale.scss */
+    /* line 684, ../scss/_presale.scss */
     section.resources .resource-card .presentation-resource-description {
       padding: 30px 30px; }
-    /* line 593, ../scss/_presale.scss */
+    /* line 688, ../scss/_presale.scss */
     section.resources .resource-card .download-button {
       position: relative;
       z-index: 1000;
@@ -4357,19 +4441,19 @@ section.resources {
       margin: 25px auto;
       display: block; }
   @media (min-width: 480px) {
-    /* line 612, ../scss/_presale.scss */
+    /* line 707, ../scss/_presale.scss */
     section.resources .resource-card {
       width: 400px; } }
   @media (min-width: 560px) {
-    /* line 618, ../scss/_presale.scss */
+    /* line 713, ../scss/_presale.scss */
     section.resources .resource-card {
       width: 480px; } }
 
-/* line 624, ../scss/_presale.scss */
+/* line 719, ../scss/_presale.scss */
 .background-resources {
   position: relative;
   overflow: hidden; }
-  /* line 628, ../scss/_presale.scss */
+  /* line 723, ../scss/_presale.scss */
   .background-resources .background-resources-first,
   .background-resources .background-resources-second {
     display: block;
@@ -4381,7 +4465,7 @@ section.resources {
     left: -400px;
     background: #0884cd;
     /* For browsers that do not support gradients */ }
-  /* line 640, ../scss/_presale.scss */
+  /* line 735, ../scss/_presale.scss */
   .background-resources .background-resources-first {
     transform: rotate(10deg);
     background: -webkit-linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
@@ -4392,7 +4476,7 @@ section.resources {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(-10deg, #075cee 45%, #0abcd7 75%);
     /* Standard syntax */ }
-  /* line 648, ../scss/_presale.scss */
+  /* line 743, ../scss/_presale.scss */
   .background-resources .background-resources-second {
     transform: rotate(-10deg);
     background: -webkit-linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
@@ -4404,16 +4488,16 @@ section.resources {
     background: linear-gradient(10deg, #075cee 45%, #0abcd7 75%);
     /* Standard syntax */ }
 
-/* line 657, ../scss/_presale.scss */
+/* line 752, ../scss/_presale.scss */
 footer.presale-footer {
   position: unset;
   margin-bottom: 70px; }
 
-/* line 662, ../scss/_presale.scss */
+/* line 757, ../scss/_presale.scss */
 section.faq .text-center {
   margin-top: 35px; }
 
-/* line 666, ../scss/_presale.scss */
+/* line 761, ../scss/_presale.scss */
 section.faq .text-center a {
   color: #09d8ba;
   font-weight: bold; }

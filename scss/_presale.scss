@@ -60,7 +60,7 @@ header.presale-masthead {
         h2 {
             font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
             letter-spacing: 2px;
-            font-size: 40px !important;
+            font-size: 32px !important;
             color: white;
             margin: 0;
         }
@@ -72,9 +72,9 @@ header.presale-masthead {
             margin: 0;
         }
 
-        @media (min-width:420px){
-            br{
-                display:none;
+        @media (min-width:420px) {
+            br {
+                display: none;
             }
         }
 
@@ -96,11 +96,102 @@ header.presale-masthead {
         }
     }
 
+    .row-container {
+        @media(max-width:991px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .portview-container {
+        margin-top: 160px;
+
+        @media(max-width: 991px) {
+            margin-top: 130px;
+        }
+
+        .transparent {
+            background: rgba(256,256,256, 0.2);
+            padding-top: 30px;
+            margin-top: -30px;
+
+            @media(max-width: 991px) {
+                margin-bottom: 25px;
+                padding-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .why-invest {
+        color: #fafafa;
+        padding: 0px 30px;
+
+        @media(max-width: 991px) {
+            padding: 5px 30px;
+        }
+
+        ul {
+            margin-top: 30px;
+            margin-left: 0px;
+
+            li {
+                display: block;
+                font: normal normal normal 20px/1 FontAwesome;
+                font-size: 20px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                margin-bottom: 30px;
+            }
+
+            li:before {
+                content: "\f00c";
+                padding-right: 10px;
+                color: #00fcfc;
+            }
+        }
+    }
+
+    .link-box {
+        margin: 0 auto;
+        height: 78px;
+        width: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scale(0.9);
+
+        @media(max-width:991px) {
+            transform: scale(0.75);
+        }
+    }
+
+    .rcn {
+        background-image: url(../img/partners/rcn.png);
+    }
+
+    .cofoundit {
+        background-image: url(../img/partners/cofoundit.svg);
+    }
+
+    .zrx {
+        background-image: url(../img/partners/0x.png);
+    }
+
+    .bancor {
+        background-image: url(../img/partners/bancor.png);
+    }
 
     .timer {
         margin: 20px 0;
         text-align: center;
         overflow: hidden;
+
+        @media(min-width:1200px) {
+            br {
+                display: none;
+            }
+        }
     }
 
     .timer > div {
@@ -109,16 +200,20 @@ header.presale-masthead {
     }
 
     .time-part {
-        display: inline-block;
-        width: 148px;
+        display: block;
+        width: 80px;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .minutes {
+        /*display:block;*/
     }
 
     .box {
-        width: 130px;
+        width: 90px;
         height: 130px;
         border: 2px solid #00fcfc;
         border-radius: 5px;
@@ -126,7 +221,7 @@ header.presale-masthead {
 
         .time-value {
             font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
-            font-size: 58px;
+            font-size: 42px;
             line-height: 88px;
             color: #00fcfc;
         }
@@ -139,7 +234,8 @@ header.presale-masthead {
     }
 
     @media (min-width: 768px) {
-        .time-part:after {
+        /*.time-part.days:after,
+        .time-part.hours:after {
             content: '';
             position: relative;
             width: 64px;
@@ -148,9 +244,8 @@ header.presale-masthead {
             top: -68px;
             left: 138px;
             display: block;
-        }
-
-        .days:before {
+        }*/
+        /*.days:before {
             content: '';
             position: relative;
             height: 2px;
@@ -164,7 +259,7 @@ header.presale-masthead {
         .seconds:after {
             width: 1000px;
             left: 138px;
-        }
+        }*/
     }
 
     a.btn {
@@ -178,7 +273,7 @@ header.presale-masthead {
         color: #00fcfc;
         cursor: pointer;
         max-width: 380px;
-        margin: 20px auto;
+        margin: 10% auto;
         display: block;
         border-radius: 5px;
     }
