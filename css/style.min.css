@@ -5063,6 +5063,9 @@ section.supported-by {
     section.supported-by .links .amadeus {
       background-image: url(../img/partners/amadeus.png); }
     /* line 95, ../scss/_supportedby.scss */
+    section.supported-by .links .bancor {
+      background-image: url(../img/partners/bancor.png); }
+    /* line 99, ../scss/_supportedby.scss */
     section.supported-by .links .symetrics {
       background-image: url(../img/partners/symetrics.png); }
 
