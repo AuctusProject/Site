@@ -109,6 +109,10 @@ hr {
         text-transform: uppercase;
         font-size: 14px;
     }
+
+    @media(max-width:991px) {
+        margin: 5px;
+    }
 }
 
 .text-white, .text-white h2, .text-white h3 {
