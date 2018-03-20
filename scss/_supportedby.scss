@@ -1,14 +1,3 @@
-@media (min-width: 2000px) {
-    section.supported-by {
-        margin-top: -230px !important;
-    }
-}
-
-@media (min-width: 1400px) and (max-width: 1999px) {
-    section.supported-by {
-        margin-top: -330px !important;
-    }
-}
 
 section.supported-by {
     padding-top: 4rem !important;
@@ -25,6 +14,14 @@ section.supported-by {
 
     @media (min-height:1080px) {
         margin-top: -140px;
+    }
+
+    @media (min-width: 2000px) {
+        margin-top: -230px;
+    }
+
+    @media (min-width: 1400px) and (max-width: 1999px) {
+        margin-top: -330px;
     }
 
     .section-heading {
@@ -95,5 +92,29 @@ section.supported-by {
         .symetrics {
             background-image: url(../img/partners/symetrics.png);
         }
+    }
+}
+
+.without-margin-top{
+    margin-top: 0px !important;
+
+    @media (max-width: 991px) {
+        margin-top: 0px !important;
+    }
+
+    @media (min-width:1400px) and (min-height:890px) {
+        margin-top: 0px !important;
+    }
+
+    @media (min-height:1080px) {
+        margin-top: 0px !important;
+    }
+
+    @media (min-width: 2000px) {
+        margin-top: 0px !important;
+    }
+
+    @media (min-width: 1400px) and (max-width: 1999px) {
+        margin-top: 0px !important;
     }
 }
