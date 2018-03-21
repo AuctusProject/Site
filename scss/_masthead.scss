@@ -26,6 +26,12 @@
     }
 }
 
+@media (min-width: 992px) {
+    header.token-sale-height {
+        height: 600px!important;
+    }
+}
+
 @media (min-width: 2200px) {
     header.masthead {
         .computer-image {

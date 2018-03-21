@@ -1,6 +1,10 @@
 section.token-sale-overview {
     padding-bottom: 1em;
 
+    @media(max-width:991px) {
+        padding-top:1rem!important;
+    }
+
     .dots {
         background: url(../img/dots.png) repeat-x;
         height: 20px;
@@ -199,7 +203,7 @@ section.token-sale-overview {
 
     @media(max-width:768px) {
         .clearfix > div:last-child {
-            padding-top: 60px;
+            padding-top: 20px;
         }
     }
 
