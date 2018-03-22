@@ -160,6 +160,9 @@ function openWhitepaperModal () {
                                     '<h2 class="text-center">' +
                                         ' Choose the language' +
                                     '</h2>' +
+                                    '<h4 class="text-center">' +
+                                        'Выберите язык' +
+                                    '</h4>' +
                                     '<div class="row text-center">' +
                                         '<div class="col-lg-6">' +
                                             '<a class="btn" onclick="downloadWhitepaper(\'en\')">' +
@@ -168,7 +171,7 @@ function openWhitepaperModal () {
                                         '</div>' +
                                         '<div class="col-lg-6">' +
                                             '<a class="btn" onclick="downloadWhitepaper(\'ru\')">' +
-                                                'Russian' +
+                                                'русский' +
                                             '</a>' +
                                         '</div>' +
                                     '</div>' +
