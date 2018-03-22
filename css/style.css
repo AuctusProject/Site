@@ -3722,6 +3722,8 @@ section.as-seen-on {
       background-size: contain; }
     section.as-seen-on .links .venturebeat {
       background-image: url(../img/presale/venturebeat.png); }
+    section.as-seen-on .links .reuters {
+      background-image: url(../img/presale/reuters.png); }
     section.as-seen-on .links .cnbc {
       background-image: url(../img/presale/cnbc.png); }
     section.as-seen-on .links .bloomberg {
@@ -4335,18 +4337,12 @@ section.supported-by {
   @media (max-width: 991px) {
     section.supported-by {
       margin-top: 35px; } }
-  @media (min-width: 1400px) and (min-height: 890px) {
-    section.supported-by {
-      margin-top: -210px; } }
   @media (min-height: 1080px) {
     section.supported-by {
       margin-top: -140px; } }
   @media (min-width: 2000px) {
     section.supported-by {
       margin-top: -230px; } }
-  @media (min-width: 1400px) and (max-width: 1999px) {
-    section.supported-by {
-      margin-top: -330px; } }
   section.supported-by .section-heading {
     position: relative;
     z-index: 1000; }
@@ -4389,6 +4385,8 @@ section.supported-by {
       background-image: url(../img/partners/aragon.png); }
     section.supported-by .links .amadeus {
       background-image: url(../img/partners/amadeus.png); }
+    section.supported-by .links .bancor {
+      background-image: url(../img/partners/bancor.png); }
     section.supported-by .links .symetrics {
       background-image: url(../img/partners/symetrics.png); }
 

@@ -8,20 +8,13 @@ section.supported-by {
         margin-top: 35px;
     }
 
-    @media (min-width:1400px) and (min-height:890px) {
-        margin-top: -210px
-    }
-
+    
     @media (min-height:1080px) {
         margin-top: -140px;
     }
 
     @media (min-width: 2000px) {
         margin-top: -230px;
-    }
-
-    @media (min-width: 1400px) and (max-width: 1999px) {
-        margin-top: -330px;
     }
 
     .section-heading {
