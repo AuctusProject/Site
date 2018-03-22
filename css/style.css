@@ -3918,12 +3918,12 @@ section.economics {
     /* Standard syntax */
     transform: rotate(184deg);
     left: -20%;
-    width: 2000px;
+    width: 120%;
     height: 2000px; }
     @media (min-width: 1980px) {
       section.economics .left-blue-div {
         left: -45%;
-        width: 4000px; } }
+        width: 145%; } }
 
 section.distribution {
   padding-bottom: 4em;
