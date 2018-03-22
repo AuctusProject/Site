@@ -107,6 +107,7 @@
                                 <div class="text-white text-center">
                                     <h3 id="invalidAddress" style="display: none;">Invalid address</h3>
                                     <h3 id="errorOcurred" style="display: none;">An error ocurred. Please try again later.</h3>
+                                    <h3 id="whitelistedResultMessage"></h3>
                                     <h3 id="whitelistedAddress">Your address is whitelisted. <br>You can participate in the Auctus pre-sale with up to
                                         10 ETH.</h3>
                                     <h3 id="notWhitelistedAddress">Your address is NOT whitelisted.</h3>
@@ -188,13 +189,32 @@
 
             $("#checkBtn").click(
                 function () {
+                    var addressInfo = {
+                        "address": "0xe577cf28c41cdf633846f41821cf84825d8ea844",
+                        "email": "dan.silveira@gmail.com",
+                        "pendingConfirmation": false,
+                        "pendingWhitelisted": false,
+                        "pendingCountry": false,
+                        "pendingSCLoad": true,
+                        "statusDocument": 2,
+                        "statusAddress": 0
+                    };
+
+
                     $('#errorOcurred').hide();
                     var address = $("#addressInput").val();
                     if (validateAddress(address)) {
-                        $.get("https://demo.auctus.org/whitelist/" + address, function (data) {
+                        $.get(
+                            "https://auctuskycapi.azurewebsites.net/api/v1/whitelist/"
+                            + address, function (data) {
                             $('#errorOcurred').hide();
-                            if (data != undefined && data.whitelisted) {
-                                showWhitelistedAddress();
+                            if (data != undefined && data.message) {
+                                var htmlMessage = data.message;
+                                if (data.individualCap) {
+                                    htmlMessage = htmlMessage + "<br/>Individual Cap: " + data.individualCap + " ETH"
+                                }
+                                $('#whitelistedResultMessage').html(htmlMessage);
+                                $('#whitelistedResultMessage').show();
                             }
                             else {
                                 showNotWhitelistedAddress();
@@ -223,9 +243,11 @@
         function showWhitelistedAddress() {
             $('#whitelistedAddress').show();
             $('#notWhitelistedAddress').hide();
+            $('#whitelistedResultMessage').hide();
         }
 
         function showNotWhitelistedAddress() {
+            $('#whitelistedResultMessage').hide();
             $('#whitelistedAddress').hide();
             $('#notWhitelistedAddress').show();
         }
