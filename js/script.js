@@ -171,7 +171,7 @@ function openWhitepaperModal () {
                                         '</div>' +
                                         '<div class="col-lg-6">' +
                                             '<a class="btn" onclick="downloadWhitepaper(\'ru\')">' +
-                                                'русский' +
+                                                'Русский' +
                                             '</a>' +
                                         '</div>' +
                                     '</div>' +
@@ -189,7 +189,7 @@ function openWhitepaperModal () {
 function downloadWhitepaper(language) {
     $('#choose-whitepaper').modal('hide');
     var link = language === 'ru' ? 
-        'https://dl.auctus.org/Auctus_Whitepaper.pdf' : 'https://dl.auctus.org/Auctus_Whitepaper.pdf'
+        'https://dl.auctus.org/Auctus_Whitepaper_Ru.pdf' : 'https://dl.auctus.org/Auctus_Whitepaper.pdf'
 
     openNewTab(link);
     registerClickEvent('Whitepaper');
