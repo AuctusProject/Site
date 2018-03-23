@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.min.css?v=21" rel="stylesheet">
+    <link href="../css/style.min.css?v=22" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
 
     <!-- Temporary navbar container fix -->
@@ -95,7 +95,7 @@
                             </li>
                             <li>
                                 <span class="icon-arrow-right arr"></span>
-                                <a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank">WHITEPAPER</a>
+                                <a onclick="openWhitepaperModal()">WHITEPAPER</a>
                             </li>
                             <li>
                                 <span class="icon-arrow-right arr"></span>
@@ -128,7 +128,7 @@
                     <img class="img-responsive logo" src="../img/header/headerlogo-white.png" />
                 </a>
                 <div class="menu web-only">
-                    <a href="https://dl.auctus.org/Auctus_Whitepaper.pdf" target="_blank">
+                    <a onclick="openWhitepaperModal()">
                         <span>WHITEPAPER</span>
                     </a>
                     <a href="#page-top">
@@ -417,7 +417,7 @@
                             shall not apply to any contribution made during the AUC Token Sale. AUCTUS PROJECT INC is not
                             licensed in any jurisdiction. The Token Sale involves the development and use of experimental
                             software and technologies that may not achieve the objectives specified in the
-                            <a onclick="downloadWhitepaper()">Auctus’ Whitepaper</a> and related documents. The purchase of AUC Tokens represents a high risk
+                            <a onclick="openWhitepaperModal()">Auctus’ Whitepaper</a> and related documents. The purchase of AUC Tokens represents a high risk
                             to any purchaser.
                             <br /> You can find more details regarding Auctus' website in our
                             <a target="_blank" href="https://dl.auctus.org/Terms_of_Use.pdf">Terms of Use</a> and
@@ -435,7 +435,7 @@
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/slick.min.js"></script>
     <script src="../js/translation.js"></script>
-    <script src="../js/script.min.js?v=21"></script>
+    <script src="../js/script.min.js?v=22"></script>
     <script>
         $(".menu-content a").click(function (e) {
             if ($(window).width() <= 768)
