@@ -2,7 +2,17 @@
     var interval = setInterval(onTimer, 1000);
 
     function onTimer() {
+        debugger;
         var date = Date.UTC(2018, 2, 27, 14, 00);
+        if (new Date().getTime() < Date.UTC(2018, 2, 27, 14, 00)) {
+            date = Date.UTC(2018, 2, 27, 14, 00);
+        }
+        else if (new Date().getTime() < Date.UTC(2018, 2, 28, 14, 00)) {
+            date = Date.UTC(2018, 2, 28, 14, 00);
+        }
+        else {
+            date = Date.UTC(2018, 2, 31, 14, 00);
+        }        
 
         var element = $('.timer');
         var diff = date - new Date().getTime();

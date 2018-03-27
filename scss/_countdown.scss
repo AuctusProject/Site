@@ -108,7 +108,7 @@ section.countdown {
     .box {
         width: 107px;
         height: 107px;
-        border: 2px solid rgba(9, 216, 186, 1);
+        border: 2px solid #007fac;
         border-radius: 5px;
         display: inline-block;
 
@@ -116,12 +116,12 @@ section.countdown {
             font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
             font-size: 48px;
             line-height: 65px;
-            color: rgba(9, 216, 186, 1);
+            color: #007fac;
         }
 
         .time-label {
             font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
-            color: white;
+            color: #007fac;
             font-size: 16px;
         }
     }
@@ -178,8 +178,8 @@ section.countdown {
         font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
         font-size: 16px;
         letter-spacing: 2px;
-        background: #34dce0;
-        color: rgba(0, 45, 120, 1);
+        background: #007fac;
+        color: white;
         cursor: pointer;
         border: 0;
         max-width: 300px;

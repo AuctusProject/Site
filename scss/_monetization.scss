@@ -35,26 +35,26 @@ section.monetization {
         transform: rotate(184deg);
         right: -20%;
         top: 13%;
-
         margin-top: 50px;
         // z-index: 2;
     }
 
     @media (max-width: 991px) {
-        background: linear-gradient(257deg, #03158c, #0884cd);
-        background: -webkit-linear-gradient(257deg, #03158c, #0884cd); /* For Safari 5.1 to 6.0  60%*/
-        background: -o-linear-gradient(257deg, #03158c, #0884cd); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(257deg, #03158c, #0884cd); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(257deg, #03158c, #0884cd); /* Standard syntax */
+        //background: linear-gradient(257deg, #03158c, #0884cd);
+        //background: -webkit-linear-gradient(257deg, #03158c, #0884cd); /* For Safari 5.1 to 6.0  60%*/
+        //background: -o-linear-gradient(257deg, #03158c, #0884cd); /* For Opera 11.1 to 12.0 */
+        //background: -moz-linear-gradient(257deg, #03158c, #0884cd); /* For Firefox 3.6 to 15 */
+        //background: linear-gradient(257deg, #03158c, #0884cd); /* Standard syntax */*/
+        background: white;
         padding-top: 2rem;
 
         .section-heading h2 {
-            color: white;
+            color: #007fac;
             font-size: 34px !important;
         }
 
         .section-heading hr {
-            border-top: 4px solid white;
+            border-top: 4px solid #007fac;
         }
 
         .right-blue-div {
@@ -83,7 +83,6 @@ section.monetization {
         top: 8%;
         z-index: -1;
         transform: rotate(174deg);
-
         margin-top: 50px;
     }
 

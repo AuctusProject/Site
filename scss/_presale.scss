@@ -1,6 +1,16 @@
 // Styling for the masthead
 header.presale-masthead {
+    h2 {
+        text-align: center;
+        font-size: 48px;
+        color: #00fcfc;
+    }
 
+    h4 {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
 
     .right-presale-panel {
         display: block !important;
@@ -33,7 +43,51 @@ header.presale-masthead {
         }
     }
 
+    .button-container {
+        text-align: center;
+        display: block;
 
+        .button {
+            display: inline-block;
+            margin: 0 25px 25px 25px;
+            border: none;
+            background: #045daf;
+            color: white;
+            cursor: pointer;
+            width: 336px;
+            padding: 20px;
+            height: 110px;
+            padding-top: 25px;
+
+            div {
+                margin: auto;
+
+                span {
+                    font-family: 'Helvetica Neue',HelveticaNeue;
+                    margin: auto;
+                    font-size: 24px;
+                    font-weight: bold;
+                    display: block;
+                }
+
+                span + span {
+                    font-size: 14px;
+                    font-weight: normal;
+                    letter-spacing: 7px;
+                }
+            }
+        }
+
+        .button-blue {
+            background: #045daf;
+            color: white;
+        }
+
+        .button-white {
+            background: white;
+            color: #045daf;
+        }
+    }
 
     @media (max-width: 768px) {
         .button-div {
@@ -206,7 +260,7 @@ header.presale-masthead {
 
     .time-part {
         display: block;
-        width: 80px;
+        width: 125px;
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 25px;
@@ -218,7 +272,7 @@ header.presale-masthead {
     }
 
     .box {
-        width: 90px;
+        width: 125px;
         height: 130px;
         border: 2px solid #00fcfc;
         border-radius: 5px;
@@ -233,7 +287,8 @@ header.presale-masthead {
 
         .time-label {
             font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
-            color: #00fcfc;
+            color: white;
+            font-weight: bold;
             font-size: 16px;
         }
     }
@@ -457,7 +512,7 @@ header.presale-masthead {
 .circle-logo {
 	width: 100%;
 	width: 100%;
-	max-width: 850px;
+	max-width: 740px;
 	min-width: 500px;
 	margin-left: auto;
 	margin-right: auto;

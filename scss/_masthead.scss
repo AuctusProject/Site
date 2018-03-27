@@ -28,9 +28,11 @@
 
 @media (min-width: 992px) {
     header.token-sale-height {
-        height: 600px!important;
+        min-height: 100% !important;
+        height:unset !important;
     }
 }
+
 
 @media (min-width: 2200px) {
     header.masthead {
