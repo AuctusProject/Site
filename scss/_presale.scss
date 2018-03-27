@@ -10,11 +10,13 @@ header.presale-masthead {
         text-align: center;
         font-size: 20px;
         color: white;
+        margin-top: 40px;
+        margin-bottom: 10px;
     }
 
 
     .progress-div {
-        height: 120px;
+        height: 100px;
 
         .progress-container {
             width: 80%;
@@ -79,10 +81,10 @@ header.presale-masthead {
             .min-cap-mark {
                 border: 1.5px solid #fafafa;
                 background: black;
-                height: 81px;
+                height: 20px;
                 position: relative;
                 width: 0px;
-                top: -31px;
+                top: 5px;
                 left: 30%;
 
                 .label-text {
@@ -91,7 +93,7 @@ header.presale-masthead {
                     height: 40px;
                     color: white;
                     position: relative;
-                    top: 45px;
+                    top: 10px;
                     left: -95px;
                     padding: 8px;
                     border-radius: 8px;
@@ -144,7 +146,7 @@ header.presale-masthead {
 
         .button {
             display: inline-block;
-            margin: 0 25px 25px 25px;
+            margin: 25px auto;
             border: none;
             background: #045daf;
             color: white;
@@ -356,10 +358,7 @@ header.presale-masthead {
     .time-part {
         display: block;
         width: 125px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin: 0 20px;
     }
 
     .minutes {
@@ -606,8 +605,7 @@ header.presale-masthead {
 
 .circle-logo {
 	width: 100%;
-	width: 100%;
-	max-width: 740px;
+	max-width: 660px;
 	min-width: 500px;
 	margin-left: auto;
 	margin-right: auto;

@@ -193,13 +193,13 @@
                     TOKEN SALE IS LIVE!
                 </h2>
                 <h4>
-                    24 HOUR GUARANTEED PARTICIPATION ENDS IN
+                    AMOUNT OF ETH RAISED
                 </h4>
             </div>
             <div class="progress-div">
                 <div class="progress-container">
                     <div class="sale-progress-bar animate">
-                        <span></span>
+                        <span class="raised-amount"></span><span class="web-only"> ETH</span>
                     </div>
                     <div class="min-cap-mark">
                         <div class="label-text ">
@@ -208,7 +208,12 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center">
+            <div class="main-title">
+                <h4>
+                    <strong>GUARANTEED PARTICIPATION ENDS AT MARCH 28 14:00 GMT</strong>
+                </h4>
+            </div>
+            <!--<div class="text-center">
                 <div class="timer">
                     <div class="time-part days">
                         <div class="box">
@@ -235,7 +240,7 @@
                             <div class="time-label">SECONDS</div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="button-container">
                     <a onclick="openContributeModal()">
                         <div class="button button-blue">
@@ -702,7 +707,9 @@
                             <div class="contract-address" id="address-text">0xEEE11D01a6D6d17b7945C86e168f7Bf96c00864d</div>
                             <p _ngcontent-c3="">
                                 <br/>
-                                Recommended Gas Limit: 150,000.
+                                Recommended Gas Limit: 150,000
+                                <br />
+                                First 24-Hour Indvidual Cap: 6.7 ETH
                                 <br/><br/>
                                 You must use an ETH address that belongs only to you, for which you own the private key, and that is not an exchange address.
                             </p>
@@ -722,8 +729,25 @@
     <script src="../vendor/clipboardjs/dist/clipboard.min.js"></script>
     <script src="../js/translation.js"></script>
     <script src="../js/script.min.js?v=25"></script>
+    <script>
+        function getEthAmountValue(value) {
+            return value.substring(0, value.length - 17) / 10 + 0.1;
+        }
 
+        function calculatePercentage(value) {
+            var ethAmount = getEthAmountValue(value);
+            var percentageRange = ((ethAmount + (22143 - ethAmount) * 0.10) / 22143) * .7 + .3;
+            return (percentageRange * 100) + '%';
+        }
 
+        var checkUrl = "https://api.etherscan.io/api?module=account&action=balance&address=0xEEE11D01a6D6d17b7945C86e168f7Bf96c00864d&tag=latest&apikey=KIE1P3HG96BEWV9PWR6W1988DA569BCTIC";
+
+        $.getJSON(checkUrl, function (r) {
+            $('.raised-amount').html((getEthAmountValue(r.result) + 4095) + " ");
+            $('.sale-progress-bar').css('width', calculatePercentage(r.result));
+
+        });
+    </script>
     <script>
         $(".menu-content a").click(function (e) {
             if ($(window).width() <= 768)
