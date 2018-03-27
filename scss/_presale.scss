@@ -63,14 +63,14 @@ header.presale-masthead {
                 margin: auto;
 
                 span {
-                    font-family: 'Helvetica Neue',HelveticaNeue;
+                    font-family: 'Helvetica Neue Bold',HelveticaNeue-Bold;
                     margin: auto;
                     font-size: 24px;
-                    font-weight: bold;
                     display: block;
                 }
 
                 span + span {
+                    font-family: 'Helvetica Neue Light',HelveticaNeue-Light;
                     font-size: 14px;
                     font-weight: normal;
                     letter-spacing: 7px;

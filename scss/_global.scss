@@ -383,15 +383,20 @@ a:hover{
     transition: all 2s;
 
     h3 {
-        font-family: 'Helvetica Neue',HelveticaNeue;
+        font-family: 'Helvetica Neue Bold',HelveticaNeue-Bold;
         font-size: 32px;
         color: #007fac;
-        font-weight: bold;
 
         @media(max-width) {
             margin-right: 20px;
             display: inline-block;
         }
+    }
+
+    h4 {
+        font-size: 13px;
+        color: #007fac;
+        letter-spacing: 8px;
     }
 
     .join-button {
@@ -411,14 +416,8 @@ a:hover{
         }
     }
 
-    h4 {
-        font-size: 16px;
-        color: #007fac;
-        letter-spacing: 10px;
-    }
-
     .title-box {
-        padding: 15px 0 0 100px;
+        padding: 0px 0 0 100px;
     }
 
     .timer {

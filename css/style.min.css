@@ -759,16 +759,20 @@ a:hover {
   transition: all 2s; }
   /* line 385, ../scss/_global.scss */
   .sale-live-toast h3 {
-    font-family: 'Helvetica Neue',HelveticaNeue;
+    font-family: 'Helvetica Neue Bold',HelveticaNeue-Bold;
     font-size: 32px;
-    color: #007fac;
-    font-weight: bold; }
+    color: #007fac; }
     @media (max-width) {
       /* line 385, ../scss/_global.scss */
       .sale-live-toast h3 {
         margin-right: 20px;
         display: inline-block; } }
-  /* line 397, ../scss/_global.scss */
+  /* line 396, ../scss/_global.scss */
+  .sale-live-toast h4 {
+    font-size: 13px;
+    color: #007fac;
+    letter-spacing: 8px; }
+  /* line 402, ../scss/_global.scss */
   .sale-live-toast .join-button {
     font-family: 'Helvetica Neue',Helvetica;
     font-weight: bold;
@@ -781,34 +785,29 @@ a:hover {
     margin: auto;
     cursor: pointer; }
     @media (max-width) {
-      /* line 397, ../scss/_global.scss */
+      /* line 402, ../scss/_global.scss */
       .sale-live-toast .join-button {
         display: inline-block; } }
-  /* line 414, ../scss/_global.scss */
-  .sale-live-toast h4 {
-    font-size: 16px;
-    color: #007fac;
-    letter-spacing: 10px; }
-  /* line 420, ../scss/_global.scss */
+  /* line 419, ../scss/_global.scss */
   .sale-live-toast .title-box {
-    padding: 15px 0 0 100px; }
-  /* line 424, ../scss/_global.scss */
+    padding: 0px 0 0 100px; }
+  /* line 423, ../scss/_global.scss */
   .sale-live-toast .timer {
     overflow: hidden;
     text-align: center;
     z-index: 1000;
     position: relative; }
     @media (max-width: 1096px) {
-      /* line 424, ../scss/_global.scss */
+      /* line 423, ../scss/_global.scss */
       .sale-live-toast .timer {
         transform: scale(0.8);
         width: 515px;
         margin: auto; } }
-  /* line 437, ../scss/_global.scss */
+  /* line 436, ../scss/_global.scss */
   .sale-live-toast .timer > div {
     text-align: center;
     display: inline-block; }
-  /* line 442, ../scss/_global.scss */
+  /* line 441, ../scss/_global.scss */
   .sale-live-toast .time-part {
     display: inline-block;
     width: 107px;
@@ -816,39 +815,39 @@ a:hover {
     margin-right: 9px;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 451, ../scss/_global.scss */
+  /* line 450, ../scss/_global.scss */
   .sale-live-toast .box {
     width: 107px;
     height: 107px;
     border: 2px solid #007fac;
     border-radius: 5px;
     display: inline-block; }
-    /* line 458, ../scss/_global.scss */
+    /* line 457, ../scss/_global.scss */
     .sale-live-toast .box .time-value {
       font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
       font-size: 48px;
       line-height: 65px;
       color: #007fac; }
-    /* line 465, ../scss/_global.scss */
+    /* line 464, ../scss/_global.scss */
     .sale-live-toast .box .time-label {
       font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
       color: #007fac;
       font-size: 16px; }
 
-/* line 475, ../scss/_global.scss */
+/* line 474, ../scss/_global.scss */
 #choose-whitepaper .modal-body {
   background-image: linear-gradient(252deg, #0f64f4, #24a4e9);
   border-radius: 5px;
   padding: 30px; }
-  /* line 480, ../scss/_global.scss */
+  /* line 479, ../scss/_global.scss */
   #choose-whitepaper .modal-body h2 {
     color: #fff;
     margin-bottom: 5px; }
-  /* line 485, ../scss/_global.scss */
+  /* line 484, ../scss/_global.scss */
   #choose-whitepaper .modal-body h4 {
     color: #fff;
     margin-bottom: 30px; }
-  /* line 490, ../scss/_global.scss */
+  /* line 489, ../scss/_global.scss */
   #choose-whitepaper .modal-body a {
     margin-top: 5px;
     background: #fff;
@@ -858,11 +857,11 @@ a:hover {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer; }
-  /* line 501, ../scss/_global.scss */
+  /* line 500, ../scss/_global.scss */
   #choose-whitepaper .modal-body .mini-waves {
     left: 0;
     position: absolute; }
-  /* line 506, ../scss/_global.scss */
+  /* line 505, ../scss/_global.scss */
   #choose-whitepaper .modal-body .close {
     position: absolute;
     right: 10px;
@@ -3425,18 +3424,22 @@ section.monetization {
         color: #007fac;
         font-size: 34px !important; }
       /* line 56, ../scss/_monetization.scss */
+      section.monetization .section-heading h4 {
+        color: #007fac;
+        font-size: 14px !important; }
+      /* line 61, ../scss/_monetization.scss */
       section.monetization .section-heading hr {
         border-top: 4px solid #007fac; }
-      /* line 60, ../scss/_monetization.scss */
+      /* line 65, ../scss/_monetization.scss */
       section.monetization .right-blue-div {
         display: none; }
-      /* line 64, ../scss/_monetization.scss */
+      /* line 69, ../scss/_monetization.scss */
       section.monetization .left-blue-div {
         display: none; } }
-  /* line 69, ../scss/_monetization.scss */
+  /* line 74, ../scss/_monetization.scss */
   section.monetization .content {
     z-index: 10; }
-  /* line 73, ../scss/_monetization.scss */
+  /* line 78, ../scss/_monetization.scss */
   section.monetization .right-blue-div {
     background: linear-gradient(9deg, #24a6e8, #06d2d7);
     background: -webkit-linear-gradient(9deg, #24a6e8, #06d2d7);
@@ -3455,36 +3458,36 @@ section.monetization {
     z-index: -1;
     transform: rotate(174deg);
     margin-top: 50px; }
-  /* line 90, ../scss/_monetization.scss */
+  /* line 95, ../scss/_monetization.scss */
   section.monetization .item {
     display: inline-block; }
-  /* line 94, ../scss/_monetization.scss */
+  /* line 99, ../scss/_monetization.scss */
   section.monetization .circle {
     border: 2px solid white;
     border-radius: 50%;
     height: 180px;
     width: 180px;
     margin: 0 auto; }
-    /* line 101, ../scss/_monetization.scss */
+    /* line 106, ../scss/_monetization.scss */
     section.monetization .circle img {
       -moz-transform: scale(0.8);
       -o-transform: scale(0.8);
       -webkit-transform: scale(0.8);
       transform: scale(0.8); }
-  /* line 109, ../scss/_monetization.scss */
+  /* line 114, ../scss/_monetization.scss */
   section.monetization .title {
     margin-top: 20px;
     margin-bottom: 15px;
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 24px !important;
     color: white; }
-  /* line 117, ../scss/_monetization.scss */
+  /* line 122, ../scss/_monetization.scss */
   section.monetization .description {
     margin: 20px 46px;
     font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light';
     font-size: 18px !important;
     color: white; }
-  /* line 124, ../scss/_monetization.scss */
+  /* line 129, ../scss/_monetization.scss */
   section.monetization .icon img {
     margin-top: 13px; }
 
@@ -4024,13 +4027,13 @@ header.presale-masthead .button-container {
       margin: auto; }
       /* line 65, ../scss/_presale.scss */
       header.presale-masthead .button-container .button div span {
-        font-family: 'Helvetica Neue',HelveticaNeue;
+        font-family: 'Helvetica Neue Bold',HelveticaNeue-Bold;
         margin: auto;
         font-size: 24px;
-        font-weight: bold;
         display: block; }
-      /* line 73, ../scss/_presale.scss */
+      /* line 72, ../scss/_presale.scss */
       header.presale-masthead .button-container .button div span + span {
+        font-family: 'Helvetica Neue Light',HelveticaNeue-Light;
         font-size: 14px;
         font-weight: normal;
         letter-spacing: 7px; }
