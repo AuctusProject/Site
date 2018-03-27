@@ -238,12 +238,9 @@ function acceptCookies(e) {
     setCookie('cookie-accepted', 1);
 }
 
-
 function openContributeModal() {
     $('#contribute-modal').modal('show');
 }
-
-
 
 function copyAddress() {
     copyElementToClipboard('#address-text');
