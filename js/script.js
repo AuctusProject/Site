@@ -237,3 +237,25 @@ function acceptCookies(e) {
     $(e).addClass('close-toast');
     setCookie('cookie-accepted', 1);
 }
+
+
+function openContributeModal() {
+    $('#contribute-modal').modal('show');
+}
+
+
+
+function copyAddress() {
+    copyElementToClipboard('#address-text');
+    
+    $('#copy-address-btn').html("ADDRESS COPIED!");
+
+}
+
+function copyElementToClipboard(elementId) {
+    var tempInput = $("<input>");
+    $("body").append(tempInput);
+    tempInput.val($(elementId).text()).select();
+    document.execCommand("copy");
+    tempInput.remove();
+}
