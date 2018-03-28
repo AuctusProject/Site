@@ -790,7 +790,7 @@ a:hover {
         display: inline-block; } }
   /* line 419, ../scss/_global.scss */
   .sale-live-toast .title-box {
-    padding: 0px 0 0 100px; }
+    padding: 15px 0 0 100px; }
   /* line 423, ../scss/_global.scss */
   .sale-live-toast .timer {
     overflow: hidden;
@@ -4197,7 +4197,7 @@ header.presale-masthead .button-container {
   /* line 147, ../scss/_presale.scss */
   header.presale-masthead .button-container .button {
     display: inline-block;
-    margin: 25px auto;
+    margin: 20px 10px 10px 10px;
     border: none;
     background: #045daf;
     color: white;

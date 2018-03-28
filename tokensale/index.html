@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.min.css?v=25" rel="stylesheet">
+    <link href="../css/style.min.css?v=26" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
 
     <!-- Temporary navbar container fix -->
@@ -210,7 +210,7 @@
             </div>
             <div class="main-title">
                 <h4>
-                    <strong>GUARANTEED PARTICIPATION ENDS AT MARCH 28 14:00 GMT</strong>
+                    <strong>TOKEN SALE ENDS AT MARCH 31 14:00 GMT</strong>
                 </h4>
             </div>
             <!--<div class="text-center">
@@ -242,18 +242,30 @@
                     </div>
                 </div>-->
                 <div class="button-container">
-                    <a onclick="openContributeModal()">
+                    <a onclick="https://kyc.auctus.org/home">
                         <div class="button button-blue">
                             <div>
                                 <span>
                                     JOIN TOKEN SALE
                                 </span>
                                 <span>
-                                    BUY AUC TOKENS
+                                    KYC PROCESS
                                 </span>
                             </div>
                         </div>
                     </a>
+                    <!--<a href="https://kyc.auctus.org/home">
+                        <div class="button button-white">
+                            <div>
+                                <span>
+                                    JOIN WHITELIST
+                                </span>
+                                <span>
+                                    KYC PROCESS
+                                </span>
+                            </div>
+                        </div>
+                    </a>-->
                 </div>
             </div>
         </div>
@@ -708,8 +720,6 @@
                             <p _ngcontent-c3="">
                                 <br/>
                                 Recommended Gas Limit: 150,000
-                                <br />
-                                First 24-Hour Indvidual Cap: 6.7 ETH
                                 <br/><br/>
                                 You must use an ETH address that belongs only to you, for which you own the private key, and that is not an exchange address.
                             </p>
@@ -728,7 +738,7 @@
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../vendor/clipboardjs/dist/clipboard.min.js"></script>
     <script src="../js/translation.js"></script>
-    <script src="../js/script.min.js?v=25"></script>
+    <script src="../js/script.min.js?v=26"></script>
     <script>
         function getEthAmountValue(value) {
             return value.substring(0, value.length - 17) / 10 + 0.1;
@@ -736,7 +746,7 @@
 
         function calculatePercentage(value) {
             var ethAmount = getEthAmountValue(value);
-            var percentageRange = ((ethAmount + (22143 - ethAmount) * 0.10) / 22143) * .7 + .3;
+            var percentageRange = ((ethAmount + (22143 - ethAmount) * 0.15) / 22143) * .7 + .3;
             return (percentageRange * 100) + '%';
         }
 
