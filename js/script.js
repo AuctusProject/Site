@@ -2,16 +2,9 @@
     var interval = setInterval(onTimer, 1000);
 
     function onTimer() {
-        debugger;
-        var date = Date.UTC(2018, 2, 27, 14, 00);
-        if (new Date().getTime() < Date.UTC(2018, 2, 27, 14, 00)) {
-            date = Date.UTC(2018, 2, 27, 14, 00);
-        }
-        else if (new Date().getTime() < Date.UTC(2018, 2, 28, 14, 00)) {
-            date = Date.UTC(2018, 2, 28, 14, 00);
-        }
-        else {
-            date = Date.UTC(2018, 2, 31, 14, 00);
+        var date = Date.UTC(2018, 3, 10, 14, 00);
+        if (new Date().getTime() > date) {
+            date = Date.UTC(2018, 3, 20, 14, 00);
         }        
 
         var element = $('.timer');
@@ -56,10 +49,8 @@
     $('#addressModal').on('hidden.bs.modal', function () {
         onCloseAgreementPopup();
     })
-
      
     $.fn.visible = function (partial) {
-
         var $t = $(this),
             $w = $(window),
             viewTop = $w.scrollTop() - 70,
@@ -68,11 +59,8 @@
             _bottom = _top + $t.height(),
             compareTop = partial === true ? _bottom : _top,
             compareBottom = partial === true ? _top : _bottom;
-
         return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
     };
-
 
     $(window).scroll(function (event) {
         var body = window.document.body; //IE 'quirks'
@@ -89,7 +77,6 @@
 
     $(".top-header").hover(
         function () {
-
             var body = window.document.body; //IE 'quirks'
             var document = window.document.documentElement; //IE with doctype
             document = (document.clientHeight) ? document : body;
@@ -103,35 +90,7 @@
             }
         }
     );
-
 })(jQuery); // End of use strict
-
-
-//$(window).scroll(function (event) {
-
-//    $(".show-up").each(function (i, el) {
-//        var el = $(el);
-//        if (el.visible(true)) {
-//            el.addClass("come-in");
-//            el.addClass("come-in-bottom");
-//        }
-//    });
-
-//    $(".roadmap .box.left").each(function (i, el) {
-//        var el = $(el);
-//        if (el.visible(true)) {
-//            el.addClass("come-in");
-//            el.addClass("come-in-left");
-//        }
-//    });
-//    $(".roadmap .box.right").each(function (i, el) {
-//        var el = $(el);
-//        if (el.visible(true)) {
-//            el.addClass("come-in");
-//            el.addClass("come-in-right");
-//        }
-//    });
-//});
 
 function onAgreePreSale() {
     $('.agree-terms').css('display', 'none');
@@ -244,9 +203,7 @@ function openContributeModal() {
 
 function copyAddress() {
     copyElementToClipboard('#address-text');
-    
     $('#copy-address-btn').html("ADDRESS COPIED!");
-
 }
 
 function copyElementToClipboard(elementId) {

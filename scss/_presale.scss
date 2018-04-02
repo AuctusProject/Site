@@ -78,26 +78,16 @@ header.presale-masthead {
                 animation: move 2s linear infinite;
             }
 
-            .min-cap-mark {
-                border: 1.5px solid #fafafa;
-                background: black;
-                height: 20px;
+            .cap-mark {
                 position: relative;
-                width: 0px;
-                top: 5px;
-                left: 30%;
+                top: -32px;
+                float: right;
 
                 .label-text {
-                    background: #045daf;
-                    width: 190px;
                     height: 40px;
                     color: white;
                     position: relative;
-                    top: 10px;
-                    left: -95px;
-                    padding: 8px;
-                    border-radius: 8px;
-                    text-align: center;
+                    padding: 8px 0px;
 
                     span {
                         text-align: center;
@@ -143,10 +133,11 @@ header.presale-masthead {
     .button-container {
         text-align: center;
         display: block;
+        margin: 10px;
 
         .button {
             display: inline-block;
-            margin: 20px 10px 10px 10px;
+            margin: 15px auto;
             border: none;
             background: #045daf;
             color: white;
