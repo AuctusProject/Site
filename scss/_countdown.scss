@@ -5,7 +5,7 @@ section.countdown {
     .section-heading {
         margin-bottom: 4rem;
 
-        @media (min-width: 1400px) {
+        /*@media (min-width: 1400px) {
             margin-top: 280px !important;
         }
 
@@ -15,16 +15,11 @@ section.countdown {
 
         @media (max-width: 991px) {
             margin-top: 40px !important;
-        }
+        }*/
         // 40px !important
         z-index: 1000;
         position: relative;
-        margin-top: 170px;
-
-
-        h2 {
-            color: #ffffff;
-        }
+        margin-top: 60px;
     }
 
     .sales-date {
