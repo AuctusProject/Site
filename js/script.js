@@ -2,10 +2,7 @@
     var interval = setInterval(onTimer, 1000);
 
     function onTimer() {
-        var date = Date.UTC(2018, 3, 10, 14, 00);
-        if (new Date().getTime() > date) {
-            date = Date.UTC(2018, 3, 20, 14, 00);
-        }        
+        var date = Date.UTC(2018, 3, 20, 14, 00);     
 
         var element = $('.timer');
         var diff = date - new Date().getTime();
