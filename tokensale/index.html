@@ -686,7 +686,7 @@
         var checkUrl = "https://api.etherscan.io/api?module=account&action=balance&address=0xEEE11D01a6D6d17b7945C86e168f7Bf96c00864d&tag=latest&apikey=KIE1P3HG96BEWV9PWR6W1988DA569BCTIC";
 
         $.getJSON(checkUrl, function (r) {
-            $('.raised-amount').html((getEthAmountValue(r.result) + 4095) + " ");
+            $('.raised-amount').html((getEthAmountValue(r.result) + 4328) + " ");
             var percentage = calculatePercentage(r.result)
             $('.raised-percentage').html("("+ percentage + ")");
             $('.sale-progress-bar').css('width', percentage);
