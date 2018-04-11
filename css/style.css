@@ -3445,7 +3445,7 @@ header.presale-masthead h4 {
   text-align: center;
   font-size: 20px;
   color: white;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 10px; }
 
 header.presale-masthead .progress-div {
@@ -3460,7 +3460,7 @@ header.presale-masthead .progress-div {
     header.presale-masthead .progress-div .progress-container .sale-progress-bar {
       height: 24px;
       border-radius: 16px 0 0 16px;
-      width: 40%;
+      width: 81%;
       color: #fff;
       background-color: #ddd;
       text-align: right;
