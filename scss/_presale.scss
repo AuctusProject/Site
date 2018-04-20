@@ -1,5 +1,12 @@
 // Styling for the masthead
 header.presale-masthead {
+    h1 {
+        text-align: center;
+        font-size: 62px;
+        color: #00fcfc;
+        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
+    }
+
     h2 {
         text-align: center;
         font-size: 48px;
@@ -12,6 +19,15 @@ header.presale-masthead {
         color: white;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    h4.thank {
+        font-weight: 900;
+        letter-spacing: 12px;
+    }
+
+    h4.raised{
+        margin-top:50px;
     }
 
 
@@ -595,21 +611,22 @@ header.presale-masthead {
 }
 
 .circle-logo {
-	width: 100%;
-	max-width: 660px;
-	min-width: 500px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -115px;
-	margin-bottom: 10px;
+    width: 100%;
+    max-width: 660px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -115px;
+    margin-bottom: 65px;
 
-	@media (max-width: 700px ) {
-		margin-top: -40px;
-	}
+    @media (max-width: 700px ) {
+        margin-top: -40px;
+    }
 
-	@media (max-width: 500px ) {
-		margin-left: calc(50% - 250px);
-	}
+    @media (max-width: 500px ) {
+        margin-left: calc(50% - 250px);
+        margin-bottom: 10px;
+    }
 }
 
 section.as-seen-on.tokensale {

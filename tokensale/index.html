@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.min.css?v=29" rel="stylesheet">
+    <link href="../css/style.min.css?v=30" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
 
     <!-- Temporary navbar container fix -->
@@ -190,45 +190,21 @@
             </div>
             <div class="main-title">
                 <h2>
-                    TOKEN SALE IS LIVE!
+                    TOKEN SALE IS OVER
                 </h2>
-                <h4>
-                    REMAINING TIME TO PARTICIPATE
+                <h4 class="thank">
+                   THANK YOU FOR YOUR SUPPORT
                 </h4>
             </div>
             <div class="text-center">
-                <div class="timer">
-                    <div class="time-part days">
-                        <div class="box">
-                            <div class="time-value">0</div>
-                            <div class="time-label">DAYS</div>
-                        </div>
-                    </div>
-                    <div class="time-part hours">
-                        <div class="box">
-                            <div class="time-value">0</div>
-                            <div class="time-label">HOURS</div>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="time-part minutes">
-                        <div class="box">
-                            <div class="time-value">0</div>
-                            <div class="time-label">MINUTES</div>
-                        </div>
-                    </div>
-                    <div class="time-part seconds">
-                        <div class="box">
-                            <div class="time-value">0</div>
-                            <div class="time-label">SECONDS</div>
-                        </div>
-                    </div>
-                </div>
                 <div class="progress-div">
-                    <h4>
-                        ALREADY RAISED
+                    <h4 class="raised">
+                        AMOUNT RAISED
                     </h4>
-                    <div class="progress-container">
+                    <h1 class="">
+                        6,656.2 ETH
+                    </h1>
+                    <!--<div class="progress-container">
                         <div class="sale-progress-bar animate">
                             <span class="raised-amount"></span>
                             <span class="web-only">ETH</span>
@@ -236,36 +212,9 @@
                         </div>
                         <div class="cap-mark">
                             <div class="label-text ">
-                                <span>7500 ETH</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="button-container">
-                    <a href="https://kyc.auctus.org/">
-                        <div class="button button-blue">
-                            <div>
-                                <span>
-                                    JOIN TOKEN SALE
-                                </span>
-                                <span>
-                                    KYC PROCESS
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                    <!--<a href="https://kyc.auctus.org/home">
-                        <div class="button button-white">
-                            <div>
-                                <span>
-                                    JOIN WHITELIST
-                                </span>
-                                <span>
-                                    KYC PROCESS
-                                </span>
-                            </div>
-                        </div>
-                    </a>-->
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -371,59 +320,26 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <h6>TOTAL TOKEN SUPPLY</h6>
                     <h4>
-                        67,420,000
+                        65,829,658
                         <span>AUC</span>
                     </h4>
                 </div>
-                <div class="col-lg-3">
-                    <h6>HARD CAP</h6>
+                <div class="col-lg-4">
+                    <h6>RAISED ON TOKEN SALE</h6>
                     <h4>
-                        7,500
+                        6,656.2
                         <span>ETH</span>
                     </h4>
                 </div>
-                <div class="col-lg-3">
-                    <h6>RAISED</h6>
-                    <h4>
-                        5,183.4
-                        <span>ETH</span>
-                    </h4>
-                </div>
-                <div class="col-lg-3">
-                    <h6>AVAILABLE FOR FINAL TOKEN SALE</h6>
-                    <h4>
-                        2,316.6 <span>ETH</span> 4,633,200 <span>AUC</span>
-                        
-                    </h4>
-                </div>
-                <div class="col-lg-3">
-                    <h6>FINAL TOKEN SALE STARTS</h6>
-                    <h4>
-                        April 10th, 2pm GMT
-                    </h4>
-                </div>
-                <div class="col-lg-3">
-                    <h6>AUC PER ETH</h6>
+                <div class="col-lg-4">
+                    <h6>TOKEN SALE PRICE</h6>
                     <h4>
                         1
                         <span>ETH</span> = 2,000
                         <span>AUC</span>
-                    </h4>
-                </div>
-                <div class="col-lg-3">
-                    <h6>ACCEPTED IN TOKEN SALE</h6>
-                    <h4>
-                        Ether
-                        <span>(ETH)</span>
-                    </h4>
-                </div>
-                <div class="col-lg-3">
-                    <h6>UNSOLD TOKENS</h6>
-                    <h4>
-                        <span>Burned immediately</span>
                     </h4>
                 </div>
             </div>
@@ -669,7 +585,7 @@
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../vendor/clipboardjs/dist/clipboard.min.js"></script>
     <script src="../js/translation.js"></script>
-    <script src="../js/script.min.js?v=29"></script>
+    <script src="../js/script.min.js?v=30"></script>
     <script>
         function getEthAmountValue(value) {
             return value.substring(0, value.length - 17) / 10 + 0.1;
@@ -686,7 +602,7 @@
         var checkUrl = "https://api.etherscan.io/api?module=account&action=balance&address=0xEEE11D01a6D6d17b7945C86e168f7Bf96c00864d&tag=latest&apikey=KIE1P3HG96BEWV9PWR6W1988DA569BCTIC";
 
         $.getJSON(checkUrl, function (r) {
-            $('.raised-amount').html((getEthAmountValue(r.result) + 4328) + " ");
+            $('.raised-amount').html((2328.2 + 4328) + " ETH");
             var percentage = calculatePercentage(r.result)
             $('.raised-percentage').html("("+ percentage + ")");
             $('.sale-progress-bar').css('width', percentage);
