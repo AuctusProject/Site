@@ -26,14 +26,14 @@ header.presale-masthead {
         letter-spacing: 12px;
     }
 
-    h4.raised{
-        margin-top:50px;
+    h4.raised {
+        margin-top: 50px;
     }
 
 
     .progress-div {
         height: 100px;
-
+        margin-bottom:35px;
         .progress-container {
             width: 80%;
             height: 40px;
@@ -329,6 +329,8 @@ header.presale-masthead {
         }
     }
 
+   
+
     .rcn {
         background-image: url(../img/partners/rcn.png);
     }
@@ -339,10 +341,6 @@ header.presale-masthead {
 
     .zrx {
         background-image: url(../img/partners/0x.png);
-    }
-
-    .bancor {
-        background-image: url(../img/partners/bancor.png);
     }
 
     .timer {
