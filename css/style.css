@@ -3436,6 +3436,12 @@ header.check-masthead {
   header.check-masthead .text-white a {
     color: white; }
 
+header.presale-masthead h1 {
+  text-align: center;
+  font-size: 62px;
+  color: #00fcfc;
+  font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold'; }
+
 header.presale-masthead h2 {
   text-align: center;
   font-size: 48px;
@@ -3448,8 +3454,16 @@ header.presale-masthead h4 {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+header.presale-masthead h4.thank {
+  font-weight: 900;
+  letter-spacing: 12px; }
+
+header.presale-masthead h4.raised {
+  margin-top: 50px; }
+
 header.presale-masthead .progress-div {
-  height: 100px; }
+  height: 100px;
+  margin-bottom: 35px; }
   header.presale-masthead .progress-div .progress-container {
     width: 80%;
     height: 40px;
@@ -3670,9 +3684,6 @@ header.presale-masthead .cofoundit {
 
 header.presale-masthead .zrx {
   background-image: url(../img/partners/0x.png); }
-
-header.presale-masthead .bancor {
-  background-image: url(../img/partners/bancor.png); }
 
 header.presale-masthead .timer {
   margin: 20px 0;
@@ -3898,13 +3909,14 @@ header.presale-masthead .address-copy p.text-box {
   margin-left: auto;
   margin-right: auto;
   margin-top: -115px;
-  margin-bottom: 10px; }
+  margin-bottom: 65px; }
   @media (max-width: 700px) {
     .circle-logo {
       margin-top: -40px; } }
   @media (max-width: 500px) {
     .circle-logo {
-      margin-left: calc(50% - 250px); } }
+      margin-left: calc(50% - 250px);
+      margin-bottom: 10px; } }
 
 section.as-seen-on.tokensale {
   background: #1e2e4b;
@@ -4649,7 +4661,8 @@ section.supported-by {
   section.supported-by .section-heading {
     margin-bottom: -20px !important; }
     section.supported-by .section-heading h2 {
-      font-size: 20px; }
+      font-size: 20px;
+      margin-bottom: 2rem; }
     section.supported-by .section-heading h2.token-page {
       font-size: 40px; }
   section.supported-by .links {
@@ -4670,22 +4683,37 @@ section.supported-by {
       @media (max-width: 991px) {
         section.supported-by .links .link-box {
           transform: scale(0.75); } }
+    section.supported-by .links .buy-link-box {
+      margin: 0 auto;
+      height: 120px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      @media (max-width: 991px) {
+        section.supported-by .links .buy-link-box {
+          width: 250px; } }
     section.supported-by .links .rcn {
       background-image: url(../img/partners/rcn.png); }
     section.supported-by .links .cofoundit {
       background-image: url(../img/partners/cofoundit.svg); }
-    section.supported-by .links .bancor {
-      background-image: url(../img/partners/bancor.png); }
+    section.supported-by .links .bluzelle {
+      background-image: url(../img/partners/bluzelle.png); }
     section.supported-by .links .zrx {
       background-image: url(../img/partners/0x.png); }
     section.supported-by .links .aragon {
       background-image: url(../img/partners/aragon.png); }
     section.supported-by .links .amadeus {
       background-image: url(../img/partners/amadeus.png); }
-    section.supported-by .links .bancor {
-      background-image: url(../img/partners/bancor.png); }
     section.supported-by .links .symetrics {
       background-image: url(../img/partners/symetrics.png); }
+    section.supported-by .links .maker {
+      background-image: url(../img/partners/makerdao.png); }
+    section.supported-by .links .bancor {
+      background-image: url(../img/tokensale/bancor.png); }
+    section.supported-by .links .idex {
+      background-image: url(../img/tokensale/idex.png); }
+    section.supported-by .links .fork-delta {
+      background-image: url(../img/tokensale/forkdelta.png); }
 
 .without-margin-top {
   margin-top: 0px !important; }
