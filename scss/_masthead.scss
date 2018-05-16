@@ -17,7 +17,7 @@
         .bottom-white-div {
             width: 3200px !important;
             height: 800px !important;
-            top: 65% !important;
+            top: 90% !important;
         }
     }
 
@@ -63,7 +63,7 @@
         }
 
         .bottom-white-div {
-            top: 75% !important;
+            top: 100% !important;
         }
     }
 }
@@ -129,7 +129,7 @@ header.masthead {
         height: 800px;
         position: absolute;
         right: calc(-10%);
-        top: 75%;
+        top: 690px;
         z-index: 2;
     }
 
@@ -153,20 +153,15 @@ header.masthead {
     }
 
     @media (min-width: 992px) {
-        height: 768px;
+        height: 105%;
     }
-
-
-
 
     .header-content {
         height: 100vh;
         min-height: 600px;
         padding: 0;
         text-align: left;
-
-
-
+        
         .header-content-inner {
             position: absolute;
             top: 50%;
@@ -490,7 +485,7 @@ header.masthead {
 
     .text-container {
         z-index: 2;
-        padding: 130px 0 0 0;
+        padding: 215px 0 0 0;
         /*width: 68%;*/
         position: relative;
         /*max-width: 518px;*/

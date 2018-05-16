@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.min.css?v=31" rel="stylesheet">
+    <link href="../css/style.min.css?v=32" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
 
     <!-- Temporary navbar container fix -->
@@ -101,6 +101,10 @@
                             </li>
                             <li>
                                 <span class="icon-arrow-right arr"></span>
+                                <a i18n="FAQ" href="../tokensale">TOKEN SALE</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
                                 <a i18n="FAQ" href="../faq">FAQ</a>
                             </li>
                             <li>
@@ -110,10 +114,6 @@
                             <li>
                                 <span class="icon-arrow-right arr"></span>
                                 <a i18n="TRY ALPHA" href="https://platform.auctus.org">TRY ALPHA</a>
-                            </li>
-                            <li>
-                                <span class="icon-arrow-right arr"></span>
-                                <a i18n="JOIN WHITELIST" href="https://kyc.auctus.org" target="_blank">JOIN WHITELIST</a>
                             </li>
                         </ul>
                     </nav>
@@ -132,6 +132,9 @@
                     <a href="../tokenmodel">
                         <span i18n="TOKEN MODEL">TOKEN MODEL</span>
                     </a>
+                    <a href="#page-top">
+                        <span i18n="TOKEN MODEL" style="font-weight:bold">TOKEN SALE</span>
+                    </a>
                     <a href="../faq">
                         <span i18n="FAQ">FAQ</span>
                     </a>
@@ -140,7 +143,6 @@
                     </a>
                     <div class="buttons">
                         <a href="https://platform.auctus.org" target="_blank" i18n="TRY ALPHA">TRY ALPHA</a>
-                        <a href="https://kyc.auctus.org" target="_blank" i18n="JOIN WHITELIST">JOIN WHITELIST</a>
                     </div>
 
                     <!--<div class="translation">
@@ -220,26 +222,34 @@
         </div>
     </header>
     <section class="supported-by without-margin-top" id="supportedBy">
-        <div class="section-heading text-center">
+        <div class="section-heading text-center where">
             <h2>WHERE TO BUY</h2>
+            <h3>EXCHANGES THAT HAVE AUCTUS LISTED</h3>
+            <hr />
         </div>
         <div class="links container">
             <div class="row" style="padding: 25px 0 65px 0">
-                <div class="col-lg-4 col-md-12  col-sm-12">
+                <div class="col-lg-3 col-md-12  col-sm-12">
                     <a href="https://idex.market/eth/auc" target="_blank">
                         <div class="buy-link-box idex">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="col-lg-3 col-md-12 col-sm-12">
                     <a href="https://forkdelta.github.io/#!/trade/0xc12d099be31567add4e4e4d0d45691c3f58f5663-ETH" target="_blank">
                         <div class="buy-link-box fork-delta">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="col-lg-3 col-md-12 col-sm-12">
                     <a href="https://www.bancor.network/communities/5ad9c1c5c7d1460001bc9bfa" target="_blank">
                         <div class="buy-link-box bancor">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <a href="https://hitbtc.com/exchange/AUC-to-ETH" target="_blank">
+                        <div class="buy-link-box hitbtc">
                         </div>
                     </a>
                 </div>
@@ -247,43 +257,58 @@
         </div>
         <div class="section-heading text-center">
             <h2>SUPPORTED BY</h2>
+            <h3>PROJECTS TO BE INTEGRATED IN AUCTUS PLATFORM</h3>
+            <hr />
         </div>
         <div class="links container">
             <div class="row">
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://blog.auctus.org/auctus-partners-with-rcn-global-lending-f1190ae7da51" target="_blank">
-                        <div class="link-box rcn">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://blog.auctus.org/auctus-announces-0x-protocol-integration-e0f842e247d6" target="_blank">
-                        <div class="link-box zrx">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://blog.auctus.org/auctus-to-leverage-aragon-to-become-a-truly-decentralized-platform-2fd6b4d1178c" target="_blank">
-                        <div class="link-box aragon">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://blog.auctus.org/makerdao-to-join-auctus-labs-c8def5c0ac04"
-                       target="_blank">
-                        <div class="link-box maker">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
+                <div class="col-6 col-sm-4 col-lg-3 ">
                     <a href="https://blog.auctus.org/launch-of-auctus-labs-9ff5ffe26e32" target="_blank">
                         <div class="link-box bluzelle">
                         </div>
                     </a>
                 </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
+                <div class="col-6 col-sm-6 col-lg-3 ">
+                    <a href="https://blog.auctus.org/auctus-announces-0x-protocol-integration-e0f842e247d6" target="_blank">
+                        <div class="link-box zrx">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-3 ">
+                    <a href="https://blog.auctus.org/auctus-to-leverage-aragon-to-become-a-truly-decentralized-platform-2fd6b4d1178c" target="_blank">
+                        <div class="link-box aragon">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-3 ">
+                    <a href="https://blog.auctus.org/makerdao-to-join-auctus-labs-c8def5c0ac04" target="_blank">
+                        <div class="link-box maker">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-lg-3 ">
+                    <a href="https://blog.auctus.org/auctus-partners-with-rcn-global-lending-f1190ae7da51" target="_blank">
+                        <div class="link-box rcn">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 ">
                     <a href="https://medium.com/amadeus-relay/amadeus-auctus-are-partners-since-the-beginning-abb68c8e3faa" target="_blank">
                         <div class="link-box amadeus">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 ">
+                    <a href="https://blog.auctus.org/launch-of-auctus-labs-9ff5ffe26e32" target="_blank">
+                        <div class="link-box request">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 ">
+                    <a href="https://medium.com/amadeus-relay/amadeus-auctus-are-partners-since-the-beginning-abb68c8e3faa" target="_blank">
+                        <div class="link-box melon">
                         </div>
                     </a>
                 </div>
@@ -523,6 +548,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row association-box">
+                                <div class="text-center" style="margin: auto;">Legal Support</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row association-box text-center" style=" padding-top: 0px;  margin-top:  0px;">
+                                <a style="margin: auto;" href="https://aurum.expert/en/uslugi/it-and-technologies/legal-support-for-initial-coin-offering-ico-procedure/" target="_blank"><img src="../img/footer/aurum.png"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr class="separator" />
@@ -610,7 +649,7 @@
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../vendor/clipboardjs/dist/clipboard.min.js"></script>
     <script src="../js/translation.js"></script>
-    <script src="../js/script.min.js?v=31"></script>
+    <script src="../js/script.min.js?v=32"></script>
     <script>
         function getEthAmountValue(value) {
             return value.substring(0, value.length - 17) / 10 + 0.1;

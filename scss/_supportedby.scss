@@ -1,7 +1,6 @@
 
 section.supported-by {
-    padding-top: 4rem !important;
-    margin-top: -295px;
+    padding-top: 0rem !important;
     background: #fafafa;
 
     @media (max-width: 991px) {
@@ -22,21 +21,11 @@ section.supported-by {
         z-index: 1000;
     }
 
-    h3 {
-        margin-top: 45px;
-        color: #00bdff;
-    }
-
     .section-heading {
-        margin-bottom: -20px !important;
+        margin-bottom: -5px !important;
 
-        h2 {
-            font-size: 20px;
-            margin-bottom: 2rem;
-        }
-
-        h2.token-page {
-            font-size: 40px;
+        hr {
+            width: 100px;
         }
     }
 
@@ -87,6 +76,14 @@ section.supported-by {
             background-image: url(../img/partners/bluzelle.png);
         }
 
+        .melon {
+            background-image: url(../img/partners/melonport.png);
+        }
+
+        .request {
+            background-image: url(../img/partners/request.png);
+        }
+
         .zrx {
             background-image: url(../img/partners/0x.png);
         }
@@ -118,8 +115,18 @@ section.supported-by {
         .fork-delta {
             background-image: url(../img/tokensale/forkdelta.png);
         }
+
+        .hitbtc {
+            background-image: url(../img/tokensale/hitbtc.png);
+        }
+    }
+
+    .where {
+        margin-top: 4em;
     }
 }
+
+
 
 .without-margin-top{
     margin-top: 0px !important;

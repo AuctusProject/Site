@@ -9,7 +9,7 @@ section.roadmap {
     }
 
     .year {
-        color: #1439AF;
+        color: #002d78;
         font-family: 'Myriad Pro Bold';
         font-size: 20px;
         top: -4px;
@@ -23,7 +23,7 @@ section.roadmap {
         padding-top: 20px;
         padding-bottom: 20px;
         min-height: 175px;
-        height: 100%;   
+        height: 100%;
     }
 
     .box.left {
@@ -199,15 +199,15 @@ section.roadmap {
             left: -6px;
             color: #FFF;
             text-align: center;
-            z-index:2;
+            z-index: 2;
         }
 
         .roadmap-line.active {
-            background: #0BE6D0 !important;
+            background: #00BDFF !important;
         }
 
         .roadmap-line.active:after {
-            background: #0BE6D0 !important;
+            background: #00BDFF !important;
         }
 
         .roadmap-line:after {
