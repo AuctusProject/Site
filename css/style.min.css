@@ -5594,36 +5594,39 @@ section.supported-by {
     section.supported-by .links .idex {
       background-image: url(../img/tokensale/idex.png); }
     /* line 115, ../scss/_supportedby.scss */
+    section.supported-by .links .bitfinex {
+      background-image: url(../img/tokensale/bitfinex.png); }
+    /* line 118, ../scss/_supportedby.scss */
     section.supported-by .links .fork-delta {
       background-image: url(../img/tokensale/forkdelta.png); }
-    /* line 119, ../scss/_supportedby.scss */
+    /* line 122, ../scss/_supportedby.scss */
     section.supported-by .links .hitbtc {
       background-image: url(../img/tokensale/hitbtc.png); }
-  /* line 124, ../scss/_supportedby.scss */
+  /* line 127, ../scss/_supportedby.scss */
   section.supported-by .where {
     margin-top: 4em; }
 
-/* line 131, ../scss/_supportedby.scss */
+/* line 134, ../scss/_supportedby.scss */
 .without-margin-top {
   margin-top: 0px !important; }
   @media (max-width: 991px) {
-    /* line 131, ../scss/_supportedby.scss */
+    /* line 134, ../scss/_supportedby.scss */
     .without-margin-top {
       margin-top: 0px !important; } }
   @media (min-width: 1400px) and (min-height: 890px) {
-    /* line 131, ../scss/_supportedby.scss */
+    /* line 134, ../scss/_supportedby.scss */
     .without-margin-top {
       margin-top: 0px !important; } }
   @media (min-height: 1080px) {
-    /* line 131, ../scss/_supportedby.scss */
+    /* line 134, ../scss/_supportedby.scss */
     .without-margin-top {
       margin-top: 0px !important; } }
   @media (min-width: 2000px) {
-    /* line 131, ../scss/_supportedby.scss */
+    /* line 134, ../scss/_supportedby.scss */
     .without-margin-top {
       margin-top: 0px !important; } }
   @media (min-width: 1400px) and (max-width: 1999px) {
-    /* line 131, ../scss/_supportedby.scss */
+    /* line 134, ../scss/_supportedby.scss */
     .without-margin-top {
       margin-top: 0px !important; } }
 
