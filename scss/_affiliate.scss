@@ -1,17 +1,26 @@
-section.video {
+section.affiliate {
     margin-top: -500px;
     background: -webkit-linear-gradient(0deg, white, #fafafa 30%); /* For Safari 5.1 to 6.0  60%*/
     background: -o-linear-gradient(0deg, white, #fafafa 30%); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(0deg, white, #fafafa 30%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(0deg, white, #fafafa 30%); /* Standard syntax */
-    
+    .section-heading {
+        hr {
+            width: 100px;
+        }
+    }
+
     @media (max-width:500px) {
         margin-top: -350px;
     }
 
-    .container > .row + .row {
-        margin-top: 80px;
+    .give-get {
+        font-family: 'Helvetica Neue Bold', 'HelveticaNeue-Bold';
+        font-size: 52px;
+        color: #366294;
     }
+
+
 
     .blue-background {
         background: #0884cd; /* For browsers that do not support gradients */
@@ -84,14 +93,19 @@ section.video {
     .side-triangle {
         position: relative;
         left: 0;
-        top: 785px;
+        top: 1145px;
 
         @media (max-width:500px) {
             width: 260px;
         }
     }
 
+    .experts-row {
+        margin-top: 80px;
+    }
+
     .monitor-row {
+        margin-top: 80px;
 
         .row + .row {
             margin-top: 40px;
@@ -133,22 +147,36 @@ section.video {
         }
     }
 
-    .video-iframe {
-        box-shadow: 0px 50px 51px -28px rgba(45, 45, 45, 0.6);
-        width: 90%;
-        height: 400px;
-    }
+    .pig-container {
+        margin:30px;
 
-
-    @media (min-width: 820px) {
-        .video-iframe {
-            width: 512px;
-            height: 290px;
+        > div{
+            width:calc(50% - 105px);
+        }
+        hr {
+            margin-top: 52px;
+            border-top: 4px solid #226493;
+            width:85%;
         }
 
-        .video-html5 {
-            width: 712px;
-            height: 400px;
+        .pig-coin {
+            background-image: url(../img/video/pig.png);
+            height: 108px;
+            width: 209px;
+            margin: auto;
+            border: 4px solid #226493;
+            border-radius: 50%;
+            animation: pig-move 6s linear infinite;
+        }
+    }
+
+    @keyframes pig-move {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 100% 0;
         }
     }
 }

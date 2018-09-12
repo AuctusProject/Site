@@ -161,7 +161,7 @@ header.masthead {
         min-height: 600px;
         padding: 0;
         text-align: left;
-        
+
         .header-content-inner {
             position: absolute;
             top: 50%;
@@ -220,6 +220,21 @@ header.masthead {
 
                 @media(max-width:1199px) {
                     margin: 2px;
+                }
+            }
+
+            a {
+                text-decoration: unset;
+
+                i {
+                    font-size: 25px;
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    padding-top: 7px;
+                    margin: 3px;
+                    color: white;
                 }
             }
 
@@ -296,14 +311,13 @@ header.masthead {
 
         .menu .buttons {
             display: inline-block;
-            margin-left: 50px;
+            margin-left: 15px;
         }
 
         .menu .buttons a {
             width: 148px;
             height: 50px;
-            border-radius: 3px;
-            border: solid 1px #ffffff;
+            border: solid 2px #ffffff;
             color: white;
             margin-left: 10px;
             margin-right: 10px;
@@ -428,13 +442,16 @@ header.masthead {
         padding: 15px 0px;
         color: white;
         z-index: 1000;
-        min-width: 115pt;
+        min-width: 160pt;
         text-align: center;
-        height: 110px;
+        height: 60px;
+        margin-right: 25px;
 
         @media (max-width: 499px) {
-            min-width: 80pt;
+            min-width: 108pt;
             font-size: 10pt !important;
+            padding: 20px 0px;
+            margin-right: 0px;
         }
 
         i.fa {
@@ -666,7 +683,7 @@ header.masthead {
             margin-top: 50px;
 
             @media (max-width:991px) {
-                margin-top: 410px;
+                margin-top: 460px;
                 zoom: 0.60;
                 left: unset;
             }
