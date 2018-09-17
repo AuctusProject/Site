@@ -212,6 +212,9 @@ header.masthead {
             left: 5%;
             top: 12px;
             text-align: center;
+            float: right;
+            padding-top: 10px;
+            padding-right: 50px;
 
             a > span {
                 margin: 12px;
@@ -312,6 +315,8 @@ header.masthead {
         .menu .buttons {
             display: inline-block;
             margin-left: 15px;
+            float: right;
+            padding-top: 36px;
         }
 
         .menu .buttons a {
@@ -544,7 +549,7 @@ header.masthead {
 
         .subtitle {
             margin-top: 10px;
-            max-width: 500px;
+            max-width: 600px;
         }
 
         @media (max-width: 480px) {

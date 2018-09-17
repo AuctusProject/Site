@@ -1207,20 +1207,23 @@ header.masthead {
       position: relative;
       left: 5%;
       top: 12px;
-      text-align: center; }
-      /* line 216, ../scss/_masthead.scss */
+      text-align: center;
+      float: right;
+      padding-top: 10px;
+      padding-right: 50px; }
+      /* line 219, ../scss/_masthead.scss */
       header.masthead .top-header .menu a > span {
         margin: 12px;
         cursor: pointer;
         font-family: "Helvetica Neue Light","HelveticaNeue-Light"; }
         @media (max-width: 1199px) {
-          /* line 216, ../scss/_masthead.scss */
+          /* line 219, ../scss/_masthead.scss */
           header.masthead .top-header .menu a > span {
             margin: 2px; } }
-      /* line 226, ../scss/_masthead.scss */
+      /* line 229, ../scss/_masthead.scss */
       header.masthead .top-header .menu a {
         text-decoration: unset; }
-        /* line 229, ../scss/_masthead.scss */
+        /* line 232, ../scss/_masthead.scss */
         header.masthead .top-header .menu a i {
           font-size: 25px;
           border: 2px solid white;
@@ -1230,63 +1233,65 @@ header.masthead {
           padding-top: 7px;
           margin: 3px;
           color: white; }
-      /* line 241, ../scss/_masthead.scss */
+      /* line 244, ../scss/_masthead.scss */
       header.masthead .top-header .menu span:hover {
         font-weight: bold;
         transition: all 0.2s; }
-    /* line 247, ../scss/_masthead.scss */
+    /* line 250, ../scss/_masthead.scss */
     header.masthead .top-header .translation {
       display: inline;
       cursor: pointer; }
-      /* line 251, ../scss/_masthead.scss */
+      /* line 254, ../scss/_masthead.scss */
       header.masthead .top-header .translation .translation-box {
         display: inline-table;
         padding-left: 5px;
         text-align: left;
         min-width: 55px; }
-        /* line 257, ../scss/_masthead.scss */
+        /* line 260, ../scss/_masthead.scss */
         header.masthead .top-header .translation .translation-box .fa-language:before {
           margin: 0 8px;
           font-size: 20px; }
-        /* line 262, ../scss/_masthead.scss */
+        /* line 265, ../scss/_masthead.scss */
         header.masthead .top-header .translation .translation-box .language-box {
           max-width: 140px;
           text-align: right;
           padding-left: 14px; }
-          /* line 267, ../scss/_masthead.scss */
+          /* line 270, ../scss/_masthead.scss */
           header.masthead .top-header .translation .translation-box .language-box div {
             margin-left: 13px;
             display: inline; }
-          /* line 272, ../scss/_masthead.scss */
+          /* line 275, ../scss/_masthead.scss */
           header.masthead .top-header .translation .translation-box .language-box div:last-child {
             margin-left: 9px; }
-          /* line 276, ../scss/_masthead.scss */
+          /* line 279, ../scss/_masthead.scss */
           header.masthead .top-header .translation .translation-box .language-box :hover {
             font-weight: bold;
             transition: all 0.2s;
             cursor: pointer; }
-        /* line 283, ../scss/_masthead.scss */
+        /* line 286, ../scss/_masthead.scss */
         header.masthead .top-header .translation .translation-box .hide {
           display: none;
           transition: all 0.2s; }
-    /* line 290, ../scss/_masthead.scss */
+    /* line 293, ../scss/_masthead.scss */
     header.masthead .top-header .drop-arrow {
       margin-left: 8px; }
-    /* line 294, ../scss/_masthead.scss */
+    /* line 297, ../scss/_masthead.scss */
     header.masthead .top-header .translation.open {
       width: 124px;
       transition: all 0.2s; }
-  /* line 302, ../scss/_masthead.scss */
+  /* line 305, ../scss/_masthead.scss */
   header.masthead .top-header .logo {
     content: url("../img/header/headerlogo.png"); }
-  /* line 307, ../scss/_masthead.scss */
+  /* line 310, ../scss/_masthead.scss */
   header.masthead .top-header .menu a > span {
     color: white; }
-  /* line 312, ../scss/_masthead.scss */
+  /* line 315, ../scss/_masthead.scss */
   header.masthead .top-header .menu .buttons {
     display: inline-block;
-    margin-left: 15px; }
-  /* line 317, ../scss/_masthead.scss */
+    margin-left: 15px;
+    float: right;
+    padding-top: 36px; }
+  /* line 322, ../scss/_masthead.scss */
   header.masthead .top-header .menu .buttons a {
     width: 148px;
     height: 50px;
@@ -1296,62 +1301,62 @@ header.masthead {
     margin-right: 10px;
     font-size: 16px;
     font-family: "Helvetica Neue Bold","HelveticaNeue-Bold"; }
-  /* line 328, ../scss/_masthead.scss */
+  /* line 333, ../scss/_masthead.scss */
   header.masthead .top-header .menu .buttons a:hover {
     background: white;
     color: #04148c; }
-  /* line 333, ../scss/_masthead.scss */
+  /* line 338, ../scss/_masthead.scss */
   header.masthead .top-header .menu .buttons a:first-child {
     padding: 14px 30px; }
-  /* line 337, ../scss/_masthead.scss */
+  /* line 342, ../scss/_masthead.scss */
   header.masthead .top-header .menu .buttons a:last-child {
     padding: 14px 22px; }
-  /* line 341, ../scss/_masthead.scss */
+  /* line 346, ../scss/_masthead.scss */
   header.masthead .top-header .translation-box {
     border-left: solid 1px white;
     color: white; }
-  /* line 349, ../scss/_masthead.scss */
+  /* line 354, ../scss/_masthead.scss */
   header.masthead .top-header.white .menu .buttons a {
     border-radius: 3px;
     border: solid 1px #04148c;
     color: #04148c; }
-  /* line 356, ../scss/_masthead.scss */
+  /* line 361, ../scss/_masthead.scss */
   header.masthead .top-header.white .menu .buttons a:hover {
     color: white;
     background: #04148c; }
   @media (min-width: 991px) {
-    /* line 362, ../scss/_masthead.scss */
+    /* line 367, ../scss/_masthead.scss */
     header.masthead .top-header.blue.hover {
       background: rgba(39, 109, 167, 0.81);
       transition: all 0.2s; } }
-  /* line 369, ../scss/_masthead.scss */
+  /* line 374, ../scss/_masthead.scss */
   header.masthead .top-header.blue.hover:hover {
     background: #276da7; }
-  /* line 373, ../scss/_masthead.scss */
+  /* line 378, ../scss/_masthead.scss */
   header.masthead .top-header.white {
     background: rgba(250, 250, 250, 0.7); }
-    /* line 376, ../scss/_masthead.scss */
+    /* line 381, ../scss/_masthead.scss */
     header.masthead .top-header.white .logo {
       content: url("../img/header/headerlogo-white.png"); }
-    /* line 381, ../scss/_masthead.scss */
+    /* line 386, ../scss/_masthead.scss */
     header.masthead .top-header.white .menu a > span {
       color: black; }
-    /* line 386, ../scss/_masthead.scss */
+    /* line 391, ../scss/_masthead.scss */
     header.masthead .top-header.white .translation-box {
       border-left: solid 1px black;
       color: black; }
-  /* line 392, ../scss/_masthead.scss */
+  /* line 397, ../scss/_masthead.scss */
   header.masthead .top-header.white:hover {
     background: #fafafa;
     transition: all 0.2s; }
-  /* line 397, ../scss/_masthead.scss */
+  /* line 402, ../scss/_masthead.scss */
   header.masthead .large-header {
     height: 120px !important; }
   @media (max-width: 991px) {
-    /* line 402, ../scss/_masthead.scss */
+    /* line 407, ../scss/_masthead.scss */
     header.masthead .button-div {
       margin-bottom: 30px; } }
-  /* line 408, ../scss/_masthead.scss */
+  /* line 413, ../scss/_masthead.scss */
   header.masthead .quarter-circle {
     background-color: white;
     border-bottom-left-radius: 100%;
@@ -1364,16 +1369,16 @@ header.masthead {
     height: 120px;
     width: 130px;
     z-index: 10000; }
-  /* line 422, ../scss/_masthead.scss */
+  /* line 427, ../scss/_masthead.scss */
   header.masthead .quarter-circle.menu {
     right: -60px; }
-  /* line 426, ../scss/_masthead.scss */
+  /* line 431, ../scss/_masthead.scss */
   header.masthead .quarter-circle.language {
     left: -60px; }
-  /* line 432, ../scss/_masthead.scss */
+  /* line 437, ../scss/_masthead.scss */
   header.masthead .container {
     padding: 0; }
-  /* line 436, ../scss/_masthead.scss */
+  /* line 441, ../scss/_masthead.scss */
   header.masthead .button-div {
     display: inline-block;
     border: 2px solid white;
@@ -1388,16 +1393,16 @@ header.masthead {
     height: 60px;
     margin-right: 25px; }
     @media (max-width: 499px) {
-      /* line 436, ../scss/_masthead.scss */
+      /* line 441, ../scss/_masthead.scss */
       header.masthead .button-div {
         min-width: 108pt;
         font-size: 10pt !important;
         padding: 20px 0px;
         margin-right: 0px; } }
-    /* line 457, ../scss/_masthead.scss */
+    /* line 462, ../scss/_masthead.scss */
     header.masthead .button-div i.fa {
       margin-right: 13px; }
-    /* line 461, ../scss/_masthead.scss */
+    /* line 466, ../scss/_masthead.scss */
     header.masthead .button-div div {
       height: 50px;
       width: 50px;
@@ -1405,99 +1410,99 @@ header.masthead {
       margin-bottom: 10px;
       background-repeat: no-repeat;
       background-position: center; }
-    /* line 470, ../scss/_masthead.scss */
+    /* line 475, ../scss/_masthead.scss */
     header.masthead .button-div #alpha {
       background-image: url(/img/header/demo-branco.png); }
-    /* line 474, ../scss/_masthead.scss */
+    /* line 479, ../scss/_masthead.scss */
     header.masthead .button-div #presentation {
       background-image: url(/img/header/presentation-branco.png); }
-    /* line 478, ../scss/_masthead.scss */
+    /* line 483, ../scss/_masthead.scss */
     header.masthead .button-div #whitepaper {
       background-image: url(/img/header/wp-branco.png); }
-  /* line 483, ../scss/_masthead.scss */
+  /* line 488, ../scss/_masthead.scss */
   header.masthead .button-div:hover {
     z-index: 1000;
     cursor: pointer;
     color: #002D78;
     background-color: white;
     font-weight: bold; }
-    /* line 490, ../scss/_masthead.scss */
+    /* line 495, ../scss/_masthead.scss */
     header.masthead .button-div:hover #alpha {
       background-image: url(/img/header/demo.png); }
-    /* line 494, ../scss/_masthead.scss */
+    /* line 499, ../scss/_masthead.scss */
     header.masthead .button-div:hover #presentation {
       background-image: url(/img/header/presentation.png); }
-    /* line 498, ../scss/_masthead.scss */
+    /* line 503, ../scss/_masthead.scss */
     header.masthead .button-div:hover #whitepaper {
       background-image: url(/img/header/wp.png); }
-  /* line 503, ../scss/_masthead.scss */
+  /* line 508, ../scss/_masthead.scss */
   header.masthead .text-container {
     z-index: 2;
     padding: 215px 0 0 0;
     /*width: 68%;*/
     position: relative;
     /*max-width: 518px;*/ }
-    /* line 509, ../scss/_masthead.scss */
+    /* line 514, ../scss/_masthead.scss */
     header.masthead .text-container h1 {
       font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
       font-size: 37pt;
       color: white;
       margin-bottom: 20pt; }
-    /* line 516, ../scss/_masthead.scss */
+    /* line 521, ../scss/_masthead.scss */
     header.masthead .text-container h2 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 20pt !important;
       color: white;
       margin: 0; }
-    /* line 523, ../scss/_masthead.scss */
+    /* line 528, ../scss/_masthead.scss */
     header.masthead .text-container h3 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 13pt !important;
       color: white;
       margin: 0; }
-    /* line 530, ../scss/_masthead.scss */
+    /* line 535, ../scss/_masthead.scss */
     header.masthead .text-container h4 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 28px !important;
       color: white;
       margin: 0; }
-    /* line 537, ../scss/_masthead.scss */
+    /* line 542, ../scss/_masthead.scss */
     header.masthead .text-container h5 {
       font-family: "Helvetica Neue Light","HelveticaNeue-Light";
       font-size: 20px !important;
       color: white;
       margin: 0; }
-    /* line 545, ../scss/_masthead.scss */
+    /* line 550, ../scss/_masthead.scss */
     header.masthead .text-container .subtitle {
       margin-top: 10px;
-      max-width: 500px; }
+      max-width: 600px; }
     @media (max-width: 480px) {
-      /* line 551, ../scss/_masthead.scss */
+      /* line 556, ../scss/_masthead.scss */
       header.masthead .text-container .subtitle {
         font-size: 14px !important; } }
-    /* line 557, ../scss/_masthead.scss */
+    /* line 562, ../scss/_masthead.scss */
     header.masthead .text-container .days-to-sale h2 {
       font-size: 16px !important;
       font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
       color: #34dce0; }
-    /* line 563, ../scss/_masthead.scss */
+    /* line 568, ../scss/_masthead.scss */
     header.masthead .text-container .days-to-sale .title {
       padding-top: 5px; }
-    /* line 568, ../scss/_masthead.scss */
+    /* line 573, ../scss/_masthead.scss */
     header.masthead .text-container .days-to-sale .join-button {
       width: 100%;
       color: white;
       margin-top: 20px;
       margin: 10px; }
-    /* line 575, ../scss/_masthead.scss */
+    /* line 580, ../scss/_masthead.scss */
     header.masthead .text-container .days-to-sale .join-button a:hover, header.masthead .text-container .days-to-sale .join-button a:focus, header.masthead .text-container .days-to-sale .join-button a:active {
       text-decoration: none; }
-    /* line 580, ../scss/_masthead.scss */
+    /* line 585, ../scss/_masthead.scss */
     header.masthead .text-container .days-to-sale .pre-sale-button-div:hover {
       background: white;
       color: #0764ba;
       font: bold; }
-    /* line 586, ../scss/_masthead.scss */
+    /* line 591, ../scss/_masthead.scss */
     header.masthead .text-container .days-to-sale .pre-sale-button-div {
       z-index: 1000;
       border-radius: 3px;
@@ -1516,7 +1521,7 @@ header.masthead {
       text-align: center;
       margin: auto 0px 0px 15px;
       border: solid 2px white; }
-    /* line 606, ../scss/_masthead.scss */
+    /* line 611, ../scss/_masthead.scss */
     header.masthead .text-container .days-to-sale .token-sale-website-button-div {
       border-color: white;
       width: 280px;
@@ -1524,26 +1529,26 @@ header.masthead {
       padding: 10px;
       margin: auto; }
     @media (max-width: 991px) {
-      /* line 503, ../scss/_masthead.scss */
+      /* line 508, ../scss/_masthead.scss */
       header.masthead .text-container {
         text-align: center;
         padding: 120px 0 0 0;
         margin: auto !important;
         width: 100%; }
-        /* line 621, ../scss/_masthead.scss */
+        /* line 626, ../scss/_masthead.scss */
         header.masthead .text-container h1 {
           font-size: 27pt; }
-        /* line 625, ../scss/_masthead.scss */
+        /* line 630, ../scss/_masthead.scss */
         header.masthead .text-container h2 {
           font-size: 15pt !important; }
-        /* line 629, ../scss/_masthead.scss */
+        /* line 634, ../scss/_masthead.scss */
         header.masthead .text-container h3 {
           font-size: 13pt !important; } }
     @media (max-width: 991px) {
-      /* line 634, ../scss/_masthead.scss */
+      /* line 639, ../scss/_masthead.scss */
       header.masthead .text-container .icon-buttons {
         margin-top: 260px; } }
-  /* line 641, ../scss/_masthead.scss */
+  /* line 646, ../scss/_masthead.scss */
   header.masthead .eth-machine {
     z-index: 100;
     margin-top: 0px;
@@ -1563,27 +1568,27 @@ header.masthead {
             }
         }*/ }
     @media (max-width: 1199px) {
-      /* line 641, ../scss/_masthead.scss */
+      /* line 646, ../scss/_masthead.scss */
       header.masthead .eth-machine {
         transform: scale(0.9);
         left: calc(50% + 60px); } }
     @media (max-width: 991px) {
-      /* line 641, ../scss/_masthead.scss */
+      /* line 646, ../scss/_masthead.scss */
       header.masthead .eth-machine {
         text-align: center;
         margin-bottom: 20px;
         height: 330px;
         left: calc(50% - 40px);
         top: -15px; }
-        /* line 663, ../scss/_masthead.scss */
+        /* line 668, ../scss/_masthead.scss */
         header.masthead .eth-machine img {
           margin-top: -30px;
           max-width: 80%; } }
-    /* line 677, ../scss/_masthead.scss */
+    /* line 682, ../scss/_masthead.scss */
     header.masthead .eth-machine * {
       margin: 0;
       padding: 0; }
-    /* line 682, ../scss/_masthead.scss */
+    /* line 687, ../scss/_masthead.scss */
     header.masthead .eth-machine .maquina {
       margin-top: 50px;
       display: block;
@@ -1598,12 +1603,12 @@ header.masthead {
       -o-transform: translate3d(-50%, -50%, 0);
       transform: translate3d(-50%, -50%, 0); }
       @media (max-width: 991px) {
-        /* line 682, ../scss/_masthead.scss */
+        /* line 687, ../scss/_masthead.scss */
         header.masthead .eth-machine .maquina {
           margin-top: 460px;
           zoom: 0.60;
           left: unset; } }
-    /* line 704, ../scss/_masthead.scss */
+    /* line 709, ../scss/_masthead.scss */
     header.masthead .eth-machine .ondas {
       background: radial-gradient(circle, rgba(0, 222, 195, 0.6) 22%, rgba(25, 19, 99, 0) 73%);
       display: block;
@@ -1618,7 +1623,7 @@ header.masthead {
       top: -96px;
       width: 220px;
       z-index: 6; }
-    /* line 720, ../scss/_masthead.scss */
+    /* line 725, ../scss/_masthead.scss */
     header.masthead .eth-machine .ondas span {
       animation: onda 4s linear infinite;
       border: 4px solid #85FFF0;
@@ -1634,23 +1639,23 @@ header.masthead {
       -o-transform: translate3d(-50%, -50%, 0);
       transform: translate3d(-50%, -50%, 0);
       width: 15px; }
-    /* line 737, ../scss/_masthead.scss */
+    /* line 742, ../scss/_masthead.scss */
     header.masthead .eth-machine .ondas span:nth-child(2) {
       animation-delay: 1s; }
-    /* line 741, ../scss/_masthead.scss */
+    /* line 746, ../scss/_masthead.scss */
     header.masthead .eth-machine .ondas span:nth-child(3) {
       animation-delay: 2s; }
-    /* line 745, ../scss/_masthead.scss */
+    /* line 750, ../scss/_masthead.scss */
     header.masthead .eth-machine .ondas span:nth-child(4) {
       animation-delay: 3s; }
-    /* line 749, ../scss/_masthead.scss */
+    /* line 754, ../scss/_masthead.scss */
     header.masthead .eth-machine .machine {
       display: block;
       height: 450px;
       margin: 0 auto;
       position: relative;
       width: 450px; }
-    /* line 757, ../scss/_masthead.scss */
+    /* line 762, ../scss/_masthead.scss */
     header.masthead .eth-machine .mach {
       background: url(/img/header/animation/img-07.png) 0 0 no-repeat;
       display: block;
@@ -1665,7 +1670,7 @@ header.masthead {
       transform: translate3d(-50%, -50%, 0);
       width: 367px;
       z-index: 5; }
-    /* line 773, ../scss/_masthead.scss */
+    /* line 778, ../scss/_masthead.scss */
     header.masthead .eth-machine .quadro {
       animation: objRight 6s linear infinite;
       animation-delay: 6s, 0s;
@@ -1683,10 +1688,10 @@ header.masthead {
       transform: scale(0);
       width: 49px;
       z-index: 6; }
-    /* line 792, ../scss/_masthead.scss */
+    /* line 797, ../scss/_masthead.scss */
     header.masthead .eth-machine .q2 {
       animation-delay: 9s, 0s; }
-    /* line 796, ../scss/_masthead.scss */
+    /* line 801, ../scss/_masthead.scss */
     header.masthead .eth-machine .circulo {
       animation: objLeft 6s linear infinite;
       background: url(/img/header/animation/img-02.png) center center no-repeat;
@@ -1703,10 +1708,10 @@ header.masthead {
       transform: scale(0);
       width: 38px;
       z-index: 6; }
-    /* line 814, ../scss/_masthead.scss */
+    /* line 819, ../scss/_masthead.scss */
     header.masthead .eth-machine .c2 {
       animation-delay: 3s; }
-    /* line 818, ../scss/_masthead.scss */
+    /* line 823, ../scss/_masthead.scss */
     header.masthead .eth-machine .p1 {
       background: url(/img/header/animation/img-03.png) center center no-repeat;
       bottom: 100px;
@@ -1716,7 +1721,7 @@ header.masthead {
       position: absolute;
       width: 77px;
       z-index: 6; }
-    /* line 829, ../scss/_masthead.scss */
+    /* line 834, ../scss/_masthead.scss */
     header.masthead .eth-machine .p1 span {
       animation: opacity 3s linear infinite;
       animation-delay: 6s, 3s;
@@ -1733,7 +1738,7 @@ header.masthead {
       -ms-transform: perspective(600px) rotateX(20deg) rotateY(50deg) rotateZ(0deg);
       -o-transform: perspective(600px) rotateX(20deg) rotateY(50deg) rotateZ(0deg);
       transform: perspective(600px) rotateX(20deg) rotateY(50deg) rotateZ(0deg); }
-    /* line 847, ../scss/_masthead.scss */
+    /* line 852, ../scss/_masthead.scss */
     header.masthead .eth-machine .p2 {
       background: url(/img/header/animation/img-04.png) center center no-repeat;
       bottom: 40px;
@@ -1743,7 +1748,7 @@ header.masthead {
       position: absolute;
       width: 123px;
       z-index: 6; }
-    /* line 858, ../scss/_masthead.scss */
+    /* line 863, ../scss/_masthead.scss */
     header.masthead .eth-machine .p2 span {
       animation: opacity 3s linear infinite;
       animation-delay: 6s, 3s;
@@ -1760,7 +1765,7 @@ header.masthead {
       -ms-transform: perspective(600px) rotateX(20deg) rotateY(50deg) rotateZ(0deg);
       -o-transform: perspective(600px) rotateX(20deg) rotateY(50deg) rotateZ(0deg);
       transform: perspective(600px) rotateX(20deg) rotateY(50deg) rotateZ(0deg); }
-    /* line 876, ../scss/_masthead.scss */
+    /* line 881, ../scss/_masthead.scss */
     header.masthead .eth-machine .p3 {
       background: url(/img/header/animation/img-05.png) center center no-repeat;
       bottom: 25px;
@@ -1770,7 +1775,7 @@ header.masthead {
       right: 87px;
       width: 79px;
       z-index: 6; }
-    /* line 887, ../scss/_masthead.scss */
+    /* line 892, ../scss/_masthead.scss */
     header.masthead .eth-machine .p3 span {
       animation: opacity 3s linear infinite;
       animation-delay: 6s, 3s;
@@ -1787,7 +1792,7 @@ header.masthead {
       -ms-transform: perspective(600px) rotateX(-30deg) rotateY(46deg) rotateZ(0deg);
       -o-transform: perspective(600px) rotateX(-30deg) rotateY(46deg) rotateZ(0deg);
       transform: perspective(600px) rotateX(-30deg) rotateY(46deg) rotateZ(0deg); }
-    /* line 905, ../scss/_masthead.scss */
+    /* line 910, ../scss/_masthead.scss */
     header.masthead .eth-machine .p4 {
       background: url(/img/header/animation/img-06.png) center center no-repeat;
       bottom: 70px;
@@ -1797,7 +1802,7 @@ header.masthead {
       position: absolute;
       width: 123px;
       z-index: 6; }
-    /* line 916, ../scss/_masthead.scss */
+    /* line 921, ../scss/_masthead.scss */
     header.masthead .eth-machine .p4 span {
       animation: opacity 3s linear infinite;
       animation-delay: 6s, 3s;
@@ -2908,86 +2913,92 @@ section.roadmap {
     /* line 81, ../scss/_roadmap.scss */
     section.roadmap .box.right.third {
       top: 88px; }
-    /* line 88, ../scss/_roadmap.scss */
+    /* line 85, ../scss/_roadmap.scss */
+    section.roadmap .box.right.fourth {
+      top: 128px; }
+    /* line 92, ../scss/_roadmap.scss */
     section.roadmap .box.left.second {
       top: -65px; }
-    /* line 92, ../scss/_roadmap.scss */
+    /* line 96, ../scss/_roadmap.scss */
     section.roadmap .box.left.third {
       top: -20px; }
-    /* line 96, ../scss/_roadmap.scss */
+    /* line 100, ../scss/_roadmap.scss */
     section.roadmap .box.left.fourth {
       top: 24px; } }
-  /* line 101, ../scss/_roadmap.scss */
+  /* line 105, ../scss/_roadmap.scss */
   section.roadmap span.heading {
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
     font-size: 20px;
     top: -4px; }
-  /* line 107, ../scss/_roadmap.scss */
+  /* line 111, ../scss/_roadmap.scss */
   section.roadmap .green {
     color: #09D8BA; }
-  /* line 111, ../scss/_roadmap.scss */
+  /* line 115, ../scss/_roadmap.scss */
   section.roadmap .dots {
     width: 50%; }
-  /* line 115, ../scss/_roadmap.scss */
+  /* line 119, ../scss/_roadmap.scss */
   section.roadmap .dots.pull-right {
     margin-right: 50px; }
-    /* line 118, ../scss/_roadmap.scss */
+    /* line 122, ../scss/_roadmap.scss */
     section.roadmap .dots.pull-right span {
       position: relative;
       right: -50px; }
-  /* line 124, ../scss/_roadmap.scss */
+  /* line 128, ../scss/_roadmap.scss */
   section.roadmap .dots.pull-left {
     margin-left: 50px; }
-    /* line 127, ../scss/_roadmap.scss */
+    /* line 131, ../scss/_roadmap.scss */
     section.roadmap .dots.pull-left span {
       position: relative;
       left: -50px; }
-  /* line 134, ../scss/_roadmap.scss */
+  /* line 138, ../scss/_roadmap.scss */
   section.roadmap .vertical-line.right {
     border-right: 2px solid black;
     margin-right: 0px;
     padding-right: 20px;
     margin-top: 10px; }
-  /* line 141, ../scss/_roadmap.scss */
+  /* line 145, ../scss/_roadmap.scss */
   section.roadmap .vertical-line.left {
     border-left: 2px solid black;
     margin-left: 0px;
     padding-left: 20px;
     margin-top: 10px; }
-  /* line 148, ../scss/_roadmap.scss */
+  /* line 152, ../scss/_roadmap.scss */
   section.roadmap .row.right, section.roadmap .row.left {
     position: relative; }
-  /* line 152, ../scss/_roadmap.scss */
+  /* line 156, ../scss/_roadmap.scss */
   section.roadmap .milestones span {
     font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
   @media (min-width: 992px) {
-    /* line 158, ../scss/_roadmap.scss */
+    /* line 162, ../scss/_roadmap.scss */
     section.roadmap .lines {
       position: absolute;
       left: 50%; }
-    /* line 163, ../scss/_roadmap.scss */
+    /* line 167, ../scss/_roadmap.scss */
     section.roadmap .lines.second {
       top: 5px; }
-    /* line 167, ../scss/_roadmap.scss */
+    /* line 171, ../scss/_roadmap.scss */
     section.roadmap .lines.first {
       top: 70px; }
-    /* line 171, ../scss/_roadmap.scss */
+    /* line 175, ../scss/_roadmap.scss */
     section.roadmap .lines.third {
       top: 48px; }
-    /* line 175, ../scss/_roadmap.scss */
+    /* line 179, ../scss/_roadmap.scss */
     section.roadmap .lines.fourth {
       top: 93px; }
-    /* line 179, ../scss/_roadmap.scss */
+    /* line 183, ../scss/_roadmap.scss */
+    section.roadmap .lines.fifth {
+      top: 128px; }
+    /* line 187, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line {
       background: #CCCCCC;
       width: 7px;
       height: 70px;
       position: relative;
       margin-top: 40px; }
-    /* line 187, ../scss/_roadmap.scss */
+    /* line 195, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.higher {
       height: 135px; }
-    /* line 191, ../scss/_roadmap.scss */
+    /* line 199, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line:after {
       content: "";
       width: 200px;
@@ -3000,13 +3011,13 @@ section.roadmap {
       color: #FFF;
       text-align: center;
       z-index: 2; }
-    /* line 205, ../scss/_roadmap.scss */
+    /* line 213, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.active {
       background: #00BDFF !important; }
-    /* line 209, ../scss/_roadmap.scss */
+    /* line 217, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line.active:after {
       background: #00BDFF !important; }
-    /* line 213, ../scss/_roadmap.scss */
+    /* line 221, ../scss/_roadmap.scss */
     section.roadmap .roadmap-line:after {
       background: #CCCCCC !important; } }
 
@@ -3727,61 +3738,87 @@ section.affiliate {
   section.affiliate .side-triangle {
     position: relative;
     left: 0;
-    top: 1145px; }
+    top: 1330px; }
     @media (max-width: 500px) {
       /* line 93, ../scss/_affiliate.scss */
       section.affiliate .side-triangle {
         width: 260px; } }
   /* line 103, ../scss/_affiliate.scss */
+  section.affiliate .button-div {
+    margin: auto;
+    border: 4px solid #226493;
+    padding: 15px 0px;
+    color: #226493;
+    z-index: 1000;
+    width: 160pt;
+    text-align: center;
+    height: 60px;
+    margin-top: 26pt;
+    cursor: pointer; }
+    /* line 114, ../scss/_affiliate.scss */
+    section.affiliate .button-div span {
+      font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+      font-size: 12pt !important; }
+  /* line 121, ../scss/_affiliate.scss */
   section.affiliate .experts-row {
     margin-top: 80px; }
-  /* line 107, ../scss/_affiliate.scss */
+    @media (max-width: 1199px) {
+      /* line 125, ../scss/_affiliate.scss */
+      section.affiliate .experts-row img {
+        width: 350px;
+        margin-bottom: 25px; } }
+    @media (max-width: 500px) {
+      /* line 132, ../scss/_affiliate.scss */
+      section.affiliate .experts-row img {
+        width: 300px;
+        margin-bottom: 25px; } }
+  /* line 139, ../scss/_affiliate.scss */
   section.affiliate .monitor-row {
     margin-top: 80px; }
-    /* line 110, ../scss/_affiliate.scss */
+    /* line 142, ../scss/_affiliate.scss */
     section.affiliate .monitor-row .row + .row {
       margin-top: 40px;
       margin-bottom: 40px; }
-    /* line 115, ../scss/_affiliate.scss */
+    /* line 147, ../scss/_affiliate.scss */
     section.affiliate .monitor-row h4, section.affiliate .monitor-row span {
       color: #bcbec0;
       transition: all 0.8s; }
-    /* line 120, ../scss/_affiliate.scss */
+    /* line 152, ../scss/_affiliate.scss */
     section.affiliate .monitor-row [meta-monitor-id] {
       cursor: pointer;
       transition: all 0.8s; }
-    /* line 126, ../scss/_affiliate.scss */
+    /* line 158, ../scss/_affiliate.scss */
     section.affiliate .monitor-row .active h4 {
       color: #002D78; }
-    /* line 130, ../scss/_affiliate.scss */
+    /* line 162, ../scss/_affiliate.scss */
     section.affiliate .monitor-row .active span {
       color: #292b2c; }
     @media (max-width: 1199px) {
-      /* line 136, ../scss/_affiliate.scss */
+      /* line 168, ../scss/_affiliate.scss */
       section.affiliate .monitor-row img {
         width: 350px;
         margin-bottom: 25px; } }
     @media (max-width: 500px) {
-      /* line 143, ../scss/_affiliate.scss */
+      /* line 175, ../scss/_affiliate.scss */
       section.affiliate .monitor-row img {
         width: 300px;
         margin-bottom: 25px; } }
-  /* line 150, ../scss/_affiliate.scss */
+  /* line 182, ../scss/_affiliate.scss */
   section.affiliate .pig-container {
     margin: 30px; }
-    /* line 153, ../scss/_affiliate.scss */
+    /* line 185, ../scss/_affiliate.scss */
     section.affiliate .pig-container > div {
-      width: calc(50% - 105px); }
-    /* line 156, ../scss/_affiliate.scss */
+      width: calc(50% - 54px); }
+    /* line 189, ../scss/_affiliate.scss */
     section.affiliate .pig-container hr {
       margin-top: 52px;
       border-top: 4px solid #226493;
       width: 85%; }
-    /* line 162, ../scss/_affiliate.scss */
+    /* line 195, ../scss/_affiliate.scss */
     section.affiliate .pig-container .pig-coin {
       background-image: url(../img/video/pig.png);
       height: 108px;
-      width: 209px;
+      width: 108px;
       margin: auto;
       border: 4px solid #226493;
       border-radius: 50%;

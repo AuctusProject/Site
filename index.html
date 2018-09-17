@@ -5,14 +5,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Auctus is the world's first blockchain based retirement plan platform, which allows users to create diversified portfolios, consisting of traditional asset classes and cryptocurrencies.">
+    <meta name="description" content="An investment platform made for the digital age. Follow your favourite expert, recognize trends early, stay in control.">
     <meta name="keywords" content="Ethereum,Smart Contract,Smart Contracts,Cryptocurrency,Retirement Plans, Pension Fund, Pension Funds, Blockchain">
-    <meta property="og:title" content="Auctus | Smart Contract Powered Retirement Plans">
-    <meta property="og:description" content="Auctus is the world's first blockchain based retirement plan platform, which allows users to create diversified portfolios, consisting of traditional asset classes and cryptocurrencies.">
+    <meta property="og:title" content="Auctus | Next generation Investiment and Retirement solutions">
+    <meta property="og:description" content="An investment platform made for the digital age. Follow your favourite expert, recognize trends early, stay in control.">
     <meta property="og:image" content="https://dl.auctus.org/auctusite.png">
     <meta property="og:url" content="https://auctus.org">
     <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0073/6846.js" async="async"></script>
-    <title>Auctus | Smart Contract Powered Retirement Plans</title>
+    <title>Auctus | Next generation Investiment and Retirement solutions</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.min.css?v=32" rel="stylesheet">
+    <link href="css/style.min.css?v=33" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="css/slick.css?v=5" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css?v=5" />
@@ -40,11 +40,7 @@
 </head>
 
 <body id="page-top" class="auctus">
-    <div>
-        <a href="https://t.me/AuctusProject" target="_blank" class="telegram-button">
-            <i class="fa fa-telegram fa-3x"></i>
-        </a>
-    </div>
+  
     <div class="cookie-toast close-toast">
         <span>
             This website uses cookies to offer you a better browsing experience. You can find more details in our
@@ -119,7 +115,7 @@
                             </li>
                             <li>
                                 <span class="icon-arrow-right arr"></span>
-                                <a onclick="downloadWhitepaper('en')">PRESENTATION</a>
+                                <a onclick="downloadPresentation()">PRESENTATION</a>
                             </li>                          
                             <li>
                                 <span class="icon-arrow-right arr"></span>
@@ -127,11 +123,7 @@
                             </li>
                             <li>
                                 <span class="icon-arrow-right arr"></span>
-                                <a i18n="ALPHA" href="https://platform.auctus.org" target="_blank">AUCTUS PLATFORM</a>
-                            </li>
-                            <li>
-                                <span class="icon-arrow-right arr"></span>
-                                <a i18n="TOKEN SALE" href="https://experts.auctus.org">EXPERTS PLATFORM</a>
+                                <a i18n="TOKEN SALE" href="https://experts.auctus.org">AFFILIATE PLATFORM</a>
                             </li>
                             <li>
                                 <span class="icon-arrow-right arr"></span>
@@ -140,6 +132,10 @@
                             <li>
                                 <span class="icon-arrow-right arr"></span>
                                 <a i18n="TOKEN SALE" href="https://experts.auctus.org">FACEBOOK</a>
+                            </li>
+                            <li>
+                                <span class="icon-arrow-right arr"></span>
+                                <a i18n="TOKEN SALE" href="https://t.me/AuctusProject">TELEGRAM</a>
                             </li>
                         </ul>
                     </nav>
@@ -170,12 +166,6 @@
                     <a href="mailto:contact@auctus.org" title="Email">
                         <i class="fa fa-envelope-o"></i>
                     </a>
-                    <div class="buttons">
-                        <a href="https://experts.auctus.org" target="_blank" >AFFILIATE PROGRAM</a>
-                    </div>
-                    <div class="buttons">
-                        <a href="https://platform.auctus.org" target="_blank">AUCTUS PLATFORM</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -188,20 +178,18 @@
                             <h4 i18n="RETIREMENT PLANNING IS HERE!">
                                 <strong>INVESTMENT</strong> AND <strong>RETIREMENT</strong><br class="mobile-only" /> SOLUTIONS!</h4>
                             <h5 class="subtitle col-lg-11 no-padding web-only" i18n="INVEST IN MULTIPLE CRYPTOCURRENCIES">
-                                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                          
+                                An investment platform made for the digital age.<br/> Follow your favourite expert, recognize trends early, stay in control.
                             </h5>
                             <br />
                             <div class="icon-buttons">
-                                <div onclick="downloadPresentation()" class="button-div">
-                                    
+                                <div onclick="downloadPresentation()" class="button-div">                                    
                                     <a onclick="downloadPresentation()" class="wp-button" i18n="PRESENTATION">PRESENTATION</a>
-                                </div>
-                                <div onclick="TryOurAlpha()" class="button-div">
-                            
-                                    <a onclick="TryOurAlpha()" class="wp-button">EXPERTS PLATFORM</a>
+                                </div>  
+                                <div onclick="ExpertsPlatform()" class="button-div">
+                                    <a onclick="ExpertsPlatform()" class="wp-button">EXPERTS PLATFORM</a>
                                 </div>
                             </div>
+                           
                         </div>
                         <div class="col-lg-6 col-sm-12 eth-machine">
                             <div class="maquina">
@@ -301,7 +289,7 @@
                        
             <div class="row text-center">
                 <div class="col-sm-12 col-lg-12">
-                    <span class="give-get">GIVE 20%, GET 20%</span>
+                    <span class="give-get">GIVE 20% GET 20%</span>
                 </div>
             </div>
             <div class="row text-center pig-container">
@@ -321,7 +309,9 @@
                     <span>You <strong>GIVE</strong> a discount of 1000 AUC (20% of 5000 AUC) to your affiliates, <br /> and you <strong>GET</strong> 1000 AUC for each one of them accessing the platform</span>
                 </div>
             </div>
-
+            <div  onclick="ExpertsPlatform()" class="button-div">
+                <span  onclick="ExpertsPlatform()" > JOIN THE PROGRAM </span>
+            </div>
             <div class="row experts-row">
                 <div class="col-lg-6 col-sm-12 video-text-container ">
                     <div class="video-text">
@@ -333,7 +323,7 @@
                             <br />
                             <br /> Be in the know in our transparent platform to stay up to date on trends, movements and trading  fundamentals.
                             <br />
-                            <br /> Not satisfied, no worries! No locking, no spending. You can resell your AUC anytime you want.
+                            <br /> Not satisfied? No worries! No locking, no spending. You can resell your AUC anytime you want.
                         </span>
                     </div>
                 </div>
@@ -1109,7 +1099,7 @@
                                 <span class="heading green">QUARTER 3</span>
                                 <br />
                                 <div class="milestones vertical-line right">
-                                    <span class="text-right">Beta Release (analytics & advisory)</span>
+                                    <span class="text-right">Experts Platform (analytics & advisory)</span>
                                 </div>
                             </div>
                             <div class="col-lg-2">
@@ -1126,8 +1116,9 @@
                                 <span class="heading green">QUARTER 4</span>
                                 <br />
                                 <div class="milestones vertical-line left">
-                                    <span class="text-right">Ceres Release (cryptocurrency assets)</span>
+                                    <span class="text-right">Auctus Experts Promotion (feedback & adjustments)</span>
                                     <br>
+                                    <span class="text-right">Development of Auctus Fund Management Solution</span>
                                 </div>
                             </div>
                         </div>
@@ -1140,9 +1131,7 @@
                                 <span class="heading green">QUARTER 1</span>
                                 <br />
                                 <div class="milestones vertical-line right">
-                                    <span class="text-right">Phoebus Release (tokenized assets)</span>
-                                    <br>
-                                    <span class="text-right">Traditional Asset Management Licenses</span>
+                                    <span class="text-right">Auctus Fund Management Solution Release</span>
                                     <br>
                                 </div>
                             </div>
@@ -1151,6 +1140,19 @@
                                     <div class="roadmap-line"></div>
                                 </div>
                             </div>
+                            <div class="col-lg-5 box right fourth">
+                                <div class="dots pull-left">
+                                    <span class="year">2019</span>
+                                </div>
+                                <br>
+                                <span class="heading green">QUARTER 2</span>
+                                <br />
+                                <div class="milestones vertical-line left">
+                                    <span class="text-right">Development of Auctus Retirement Solutions</span>
+                                    <br>
+                                </div>
+                            </div>
+                       
                         </div>
                     </div>
                 </div>
@@ -1343,7 +1345,7 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/translation.js"></script>
-    <script src="js/script.min.js?v=32"></script>
+    <script src="js/script.min.js?v=33"></script>
     <script>
         $(".menu-content a").click(function (e) {
             if ($(window).width() <= 768)

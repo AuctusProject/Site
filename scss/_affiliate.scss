@@ -93,15 +93,47 @@ section.affiliate {
     .side-triangle {
         position: relative;
         left: 0;
-        top: 1145px;
+        top: 1330px;
 
         @media (max-width:500px) {
             width: 260px;
         }
     }
 
+    .button-div {
+        margin: auto;
+        border: 4px solid #226493;
+        padding: 15px 0px;
+        color: #226493;
+        z-index: 1000;
+        width: 160pt;
+        text-align: center;
+        height: 60px;
+        margin-top: 26pt;
+        cursor:pointer;
+        span {
+            font-family: "Helvetica Neue Bold","HelveticaNeue-Bold";
+            font-size: 12pt !important;
+        }
+    }
+
+
     .experts-row {
         margin-top: 80px;
+
+        @media (max-width:1199px) {
+            img {
+                width: 350px;
+                margin-bottom: 25px;
+            }
+        }
+
+        @media (max-width:500px) {
+            img {
+                width: 300px;
+                margin-bottom: 25px;
+            }
+        }
     }
 
     .monitor-row {
@@ -148,21 +180,22 @@ section.affiliate {
     }
 
     .pig-container {
-        margin:30px;
+        margin: 30px;
 
-        > div{
-            width:calc(50% - 105px);
+        > div {
+            width: calc(50% - 54px);
         }
+
         hr {
             margin-top: 52px;
             border-top: 4px solid #226493;
-            width:85%;
+            width: 85%;
         }
 
         .pig-coin {
             background-image: url(../img/video/pig.png);
             height: 108px;
-            width: 209px;
+            width: 108px;
             margin: auto;
             border: 4px solid #226493;
             border-radius: 50%;
