@@ -3824,9 +3824,9 @@ section.affiliate {
       border-radius: 50%;
       animation: pig-move 6s linear infinite; }
 @keyframes pig-move {
-  from {
-    background-position: 0 0; }
   to {
+    background-position: 0 0; }
+  from {
     background-position: 100% 0; } }
 /* line 1, ../scss/_confirm.scss */
 .confirm-body {
