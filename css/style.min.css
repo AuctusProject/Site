@@ -1,18 +1,12 @@
 @font-face {
-  font-family: 'Helvetica Neue Light';
-  src: local("Helvetica Neue Light"), url("../fonts/HelveticaNeueLight.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: 'Gilroy-Light';
+  src: url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype"); }
 @font-face {
-  font-family: 'Helvetica Neue Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Helvetica Neue Bold"), url("../fonts/HelveticaNeueBold.woff") format("woff"); }
+  font-family: 'Gilroy-Regular';
+  src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"); }
 @font-face {
-  font-family: 'Myriad Pro Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Myriad Pro Bold"), url("../fonts/MYRIADPRO-BOLD.woff") format("woff"); }
+  font-family: 'Gilroy-Medium';
+  src: url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype"); }
 /* line 3, ../scss/_footer.scss */
 section.subscribe {
   background: linear-gradient(to left, #22a0fa, #0f64f4);
@@ -133,21 +127,26 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Helvetica Neue Light','HelveticaNeue-Light'; }
+  font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
+  color: white; }
 
-/* line 9, ../scss/_global.scss */
+/* line 10, ../scss/_global.scss */
 section {
   height: 100%; }
 
+/* line 14, ../scss/_global.scss */
+.center {
+  text-align: center; }
+
 @media (max-width: 991px) {
-  /* line 14, ../scss/_global.scss */
+  /* line 19, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 20, ../scss/_global.scss */
+  /* line 25, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 25, ../scss/_global.scss */
+/* line 30, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
@@ -156,8 +155,111 @@ header.masthead {
   width: 100%;
   height: 100%;
   background: black;
+  /* For browsers that do not support gradients */ }
+  /* line 6, ../scss/_masthead.scss */
+  header.masthead .container {
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+    position: relative; }
+    /* line 12, ../scss/_masthead.scss */
+    header.masthead .container .center-panel {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%); }
+      /* line 18, ../scss/_masthead.scss */
+      header.masthead .container .center-panel img {
+        margin: 60px; }
+      /* line 22, ../scss/_masthead.scss */
+      header.masthead .container .center-panel span {
+        font-size: 22px;
+        margin: auto; }
+  /* line 29, ../scss/_masthead.scss */
+  header.masthead div.connection-line {
+    z-index: 1;
+    position: relative; }
+    /* line 33, ../scss/_masthead.scss */
+    header.masthead div.connection-line div {
+      margin: -80px auto;
+      background-color: white;
+      height: 120px;
+      width: 1px; }
+
+/* line 1, ../scss/_products.scss */
+section.products {
+  width: 100%;
+  height: 100%;
+  background: #141414;
   /* For browsers that do not support gradients */
-  background: -moz-linear-gradient(69deg, #000000, #080808 100%);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(69deg, #000000, #080808 100%);
-  /* Standard syntax */ }
+  position: relative; }
+  /* line 7, ../scss/_products.scss */
+  section.products .container {
+    height: 100%; }
+  /* line 11, ../scss/_products.scss */
+  section.products .black-top-right-block {
+    position: absolute;
+    width: 40%;
+    height: 40px;
+    background: black;
+    right: 0px; }
+  /* line 19, ../scss/_products.scss */
+  section.products .dots:before {
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    display: block;
+    font-size: 26px;
+    font-family: Georgia;
+    color: #383838;
+    max-width: 21%;
+    height: 260px;
+    overflow: hidden;
+    letter-spacing: 16px;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 120px);
+    line-height: 45px; }
+  /* line 36, ../scss/_products.scss */
+  section.products .product-box {
+    max-width: 33%;
+    position: absolute; }
+    /* line 40, ../scss/_products.scss */
+    section.products .product-box > * {
+      margin-bottom: 32px; }
+    /* line 44, ../scss/_products.scss */
+    section.products .product-box h2 {
+      font-size: 38px;
+      letter-spacing: 2px; }
+  /* line 50, ../scss/_products.scss */
+  section.products .product-box.experts {
+    top: 25%;
+    left: 10%; }
+    /* line 54, ../scss/_products.scss */
+    section.products .product-box.experts .learn-more {
+      border: 1px solid white;
+      padding: 16px 70px;
+      width: 300px; }
+      /* line 59, ../scss/_products.scss */
+      section.products .product-box.experts .learn-more span {
+        font-family: "Gilroy-Medium";
+        letter-spacing: 2px; }
+      /* line 64, ../scss/_products.scss */
+      section.products .product-box.experts .learn-more i {
+        margin-left: 20px; }
+  /* line 70, ../scss/_products.scss */
+  section.products .product-box.portfolio {
+    top: 38%;
+    right: 10%; }
+    /* line 75, ../scss/_products.scss */
+    section.products .product-box.portfolio .download span {
+      font-family: "Gilroy-Medium";
+      letter-spacing: 2px; }
+    /* line 80, ../scss/_products.scss */
+    section.products .product-box.portfolio .download i {
+      margin-left: 20px; }
+    /* line 84, ../scss/_products.scss */
+    section.products .product-box.portfolio .download hr {
+      border-top-color: white;
+      height: 6px;
+      width: 120px;
+      margin: 12px; }
