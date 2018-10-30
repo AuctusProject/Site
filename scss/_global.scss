@@ -15,6 +15,10 @@ section {
     text-align:center;
 }
 
+.turn-white-blue {
+    filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg);
+}
+
 @media (max-width: 991px) {
     .web-only {
         display: none !important;
