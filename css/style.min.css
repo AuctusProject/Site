@@ -7,13 +7,11 @@
 @font-face {
   font-family: 'Gilroy-Medium';
   src: url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype"); }
-/* line 3, ../scss/_footer.scss */
 section.subscribe {
   background: linear-gradient(to left, #22a0fa, #0f64f4);
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
   margin-top: 100px; }
-  /* line 9, ../scss/_footer.scss */
   section.subscribe p {
     margin: auto;
     margin-bottom: 15px;
@@ -21,45 +19,34 @@ section.subscribe {
     letter-spacing: 1.1px;
     text-align: center;
     color: white; }
-  /* line 18, ../scss/_footer.scss */
   section.subscribe .input-group > div {
     margin: auto; }
-  /* line 22, ../scss/_footer.scss */
   section.subscribe input, section.subscribe input:focus {
     margin: 5px;
     color: white;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 0.25rem !important; }
-  /* line 30, ../scss/_footer.scss */
   section.subscribe input::placeholder {
     color: white; }
-  /* line 34, ../scss/_footer.scss */
   section.subscribe input:-ms-input-placeholder {
     color: white; }
-  /* line 38, ../scss/_footer.scss */
   section.subscribe input::-ms-input-placeholder {
     color: white; }
-  /* line 42, ../scss/_footer.scss */
   section.subscribe .input-group-btn {
     margin: 5px 5px 0 5px; }
-  /* line 46, ../scss/_footer.scss */
   section.subscribe button {
     border-radius: 0.25rem !important; }
 
-/* line 51, ../scss/_footer.scss */
 footer {
   position: relative;
   padding-top: 200px;
   margin-top: -200px;
   z-index: -5; }
-  /* line 57, ../scss/_footer.scss */
   footer .navigation-icons {
     padding-top: 40px; }
-    /* line 60, ../scss/_footer.scss */
     footer .navigation-icons a {
       text-decoration: unset; }
-      /* line 63, ../scss/_footer.scss */
       footer .navigation-icons a i {
         font-size: 25px;
         border: 2px solid #626669;
@@ -70,59 +57,46 @@ footer {
         margin: 3px;
         color: #626669; }
   @media (max-width: 768px) {
-    /* line 77, ../scss/_footer.scss */
     footer .navigation-icons {
       margin-top: 20px; } }
   @media (max-width: 768px) {
-    /* line 83, ../scss/_footer.scss */
     footer .logo {
       text-align: center; } }
-  /* line 90, ../scss/_footer.scss */
   footer .separator {
     border-top: 2px solid #282828;
     margin: 15px -15px; }
-  /* line 95, ../scss/_footer.scss */
   footer .legal-container {
     font-size: 0.9rem;
     color: #828282;
     padding-left: 25px;
     padding-right: 25px; }
-    /* line 101, ../scss/_footer.scss */
     footer .legal-container a {
       color: #828282 !important;
       text-decoration: underline !important;
       font-weight: bold;
       cursor: pointer; }
     @media (min-width: 991px) {
-      /* line 108, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-left: 10px; } }
     @media (max-width: 991px) {
-      /* line 108, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-top: 25px; } }
-  /* line 119, ../scss/_footer.scss */
   footer .association-box {
     padding-top: 10px;
     margin: 10px 35px; }
     @media (max-width: 490px) {
-      /* line 119, ../scss/_footer.scss */
       footer .association-box {
         margin: 10px; } }
-    /* line 127, ../scss/_footer.scss */
     footer .association-box img {
       max-height: 105px; }
-    /* line 131, ../scss/_footer.scss */
     footer .association-box img:last-child {
       -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
       filter: grayscale(100%); }
-  /* line 137, ../scss/_footer.scss */
   footer .copyright {
     margin: 15px -15px;
     text-align: center; }
 
-/* line 2, ../scss/_global.scss */
 html,
 body {
   width: 100%;
@@ -130,80 +104,74 @@ body {
   font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
   color: white; }
 
-/* line 10, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 14, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 18, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 23, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 29, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 34, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 2, ../scss/_masthead.scss */
+.invert-horizontally {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
 header.masthead {
   width: 100%;
   height: 110%;
   background-size: cover;
   background-image: url(/img/masthead/background.jpg);
   background-repeat: no-repeat; }
-  /* line 9, ../scss/_masthead.scss */
   header.masthead .container {
     width: 100%;
     height: 100%;
     padding-top: 15%;
     position: relative; }
-    /* line 15, ../scss/_masthead.scss */
     header.masthead .container .center-panel {
       position: absolute;
       top: 25%;
       left: 50%;
       transform: translate(-50%); }
-      /* line 21, ../scss/_masthead.scss */
       header.masthead .container .center-panel img {
         margin: 60px; }
-      /* line 25, ../scss/_masthead.scss */
       header.masthead .container .center-panel span {
         font-size: 22px;
         margin: auto; }
-  /* line 32, ../scss/_masthead.scss */
   header.masthead div.connection-line {
     z-index: 1;
     position: relative; }
-    /* line 36, ../scss/_masthead.scss */
     header.masthead div.connection-line div {
       margin: -120px auto;
       background-color: white;
       height: 180px;
       width: 1px; }
 
-/* line 1, ../scss/_products.scss */
 section.products {
   width: 100%;
   height: 100%;
   position: relative;
   margin-top: -3%;
   padding-top: 3%; }
-  /* line 8, ../scss/_products.scss */
   section.products .container {
     height: 100%;
     width: 100%;
     background: #141414; }
-  /* line 14, ../scss/_products.scss */
   section.products .black-top-right-block {
     position: absolute;
     width: 60%;
@@ -211,7 +179,6 @@ section.products {
     background: #141414;
     left: 0px;
     top: 2px; }
-  /* line 23, ../scss/_products.scss */
   section.products .dots:before {
     content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
     display: block;
@@ -228,47 +195,68 @@ section.products {
     left: calc(50% - 120px);
     line-height: 45px;
     z-index: 2px; }
-  /* line 41, ../scss/_products.scss */
   section.products .product-box {
     max-width: 33%;
     position: absolute; }
-    /* line 45, ../scss/_products.scss */
     section.products .product-box > * {
       margin-bottom: 32px; }
-    /* line 49, ../scss/_products.scss */
     section.products .product-box h2 {
       font-size: 38px;
       letter-spacing: 2px; }
-  /* line 55, ../scss/_products.scss */
   section.products .product-box.experts {
     top: 25%;
     left: 10%; }
-    /* line 59, ../scss/_products.scss */
     section.products .product-box.experts .learn-more {
       border: 1px solid white;
       padding: 16px 40px 16px 70px;
       width: 300px; }
-      /* line 64, ../scss/_products.scss */
       section.products .product-box.experts .learn-more span {
         font-family: "Gilroy-Medium";
         letter-spacing: 2px; }
-      /* line 69, ../scss/_products.scss */
       section.products .product-box.experts .learn-more img {
         margin-left: 20px; }
-  /* line 75, ../scss/_products.scss */
   section.products .product-box.portfolio {
     top: 38%;
     right: 10%; }
-    /* line 80, ../scss/_products.scss */
     section.products .product-box.portfolio .download span {
       font-family: "Gilroy-Medium";
       letter-spacing: 2px; }
-    /* line 85, ../scss/_products.scss */
     section.products .product-box.portfolio .download img {
       margin-left: 20px; }
-    /* line 89, ../scss/_products.scss */
     section.products .product-box.portfolio .download hr {
       border-top-color: white;
       height: 6px;
       width: 120px;
       margin: 12px; }
+
+section.roadmap {
+  background-color: #141414; }
+  section.roadmap .border-bar {
+    height: 12px;
+    width: 480px;
+    margin-left: -240px;
+    background-image: linear-gradient(to left, #07d1ff, #126efd);
+    position: absolute;
+    left: 50%; }
+  section.roadmap .container {
+    padding-top: 152px; }
+  section.roadmap h2 {
+    font-size: 37.5px;
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #ffffff; }
+  section.roadmap .arrow {
+    width: 35px;
+    height: 7px;
+    background-size: cover;
+    background-image: url(/img/global/arrow.png);
+    background-repeat: no-repeat; }
+  section.roadmap .year-selecion {
+    text-align: center;
+    padding: 70px; }
+    section.roadmap .year-selecion div {
+      display: inline-block; }
+
+/*# sourceMappingURL=style.min.css.map */

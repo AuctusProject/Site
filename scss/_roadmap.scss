@@ -1,2 +1,42 @@
 section.roadmap {
+    background-color: #141414;
+
+    .border-bar {
+        height: 12px;
+        width: 480px;
+        margin-left: -240px;
+        background-image: linear-gradient(to left, #07d1ff, #126efd);
+        position: absolute;
+        left: 50%;
+    }
+
+    .container {
+        padding-top: 152px;
+    }
+
+    h2 {
+        font-size: 37.5px;
+        font-weight: 600;
+        line-height: 1.12;
+        letter-spacing: 0.9px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .arrow {
+        width: 35px;
+        height: 7px;
+        background-size: cover;
+        background-image: url(/img/global/arrow.png);
+        background-repeat: no-repeat;
+    }
+
+    .year-selecion {
+        text-align: center;
+        padding: 70px;
+
+        div {
+            display: inline-block;
+        }
+    }
 }
