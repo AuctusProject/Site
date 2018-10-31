@@ -1,12 +1,130 @@
+/* line 1, ../scss/_about-experts.scss */
+section.about-experts {
+  background: #141414; }
+  /* line 4, ../scss/_about-experts.scss */
+  section.about-experts .quote {
+    position: absolute;
+    width: 100%; }
+    /* line 8, ../scss/_about-experts.scss */
+    section.about-experts .quote .dots:before {
+      content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+      display: block;
+      font-size: 26px;
+      font-family: Georgia;
+      color: #5d5c5c;
+      max-width: 286px;
+      height: 260px;
+      overflow: hidden;
+      letter-spacing: 16px;
+      margin: auto;
+      position: absolute;
+      left: -78px;
+      line-height: 45px;
+      z-index: 20; }
+    /* line 25, ../scss/_about-experts.scss */
+    section.about-experts .quote hr {
+      position: absolute;
+      top: 130px;
+      left: -110px;
+      border-top: solid 1px #156eff;
+      width: 150px; }
+    /* line 33, ../scss/_about-experts.scss */
+    section.about-experts .quote span {
+      font-family: Gilroy-LightItalic;
+      font-size: 26px;
+      line-height: 34px;
+      letter-spacing: 0.7px;
+      position: absolute;
+      top: 87px;
+      left: 65px; }
+  /* line 44, ../scss/_about-experts.scss */
+  section.about-experts .blue-box-container {
+    position: absolute;
+    bottom: 10%;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    max-height: 100%;
+    place-content: center space-between;
+    align-items: center;
+    width: calc(100% - 30px); }
+    /* line 55, ../scss/_about-experts.scss */
+    section.about-experts .blue-box-container .blue-box {
+      width: 530px;
+      height: 240px;
+      position: relative; }
+      /* line 60, ../scss/_about-experts.scss */
+      section.about-experts .blue-box-container .blue-box .blue-panel {
+        display: table;
+        background: #126efd;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0px 60px;
+        transition: 0.5s all; }
+        /* line 71, ../scss/_about-experts.scss */
+        section.about-experts .blue-box-container .blue-box .blue-panel > div {
+          display: table-cell;
+          vertical-align: middle; }
+          /* line 75, ../scss/_about-experts.scss */
+          section.about-experts .blue-box-container .blue-box .blue-panel > div > * {
+            position: relative; }
+          /* line 79, ../scss/_about-experts.scss */
+          section.about-experts .blue-box-container .blue-box .blue-panel > div > * + * {
+            margin-top: 24px; }
+        /* line 84, ../scss/_about-experts.scss */
+        section.about-experts .blue-box-container .blue-box .blue-panel h3 {
+          font-family: Gilroy-Bold; }
+        /* line 88, ../scss/_about-experts.scss */
+        section.about-experts .blue-box-container .blue-box .blue-panel span {
+          font-size: 18px;
+          letter-spacing: 0.5px; }
+        /* line 93, ../scss/_about-experts.scss */
+        section.about-experts .blue-box-container .blue-box .blue-panel .link-box {
+          position: relative; }
+          /* line 96, ../scss/_about-experts.scss */
+          section.about-experts .blue-box-container .blue-box .blue-panel .link-box span {
+            font-size: 12px;
+            letter-spacing: 2.4px; }
+          /* line 101, ../scss/_about-experts.scss */
+          section.about-experts .blue-box-container .blue-box .blue-panel .link-box img {
+            margin-left: 20px; }
+        /* line 106, ../scss/_about-experts.scss */
+        section.about-experts .blue-box-container .blue-box .blue-panel .link-box::after {
+          content: '';
+          position: absolute;
+          width: 44px;
+          height: 2px;
+          background: white;
+          left: 0;
+          top: 30px; }
+      /* line 117, ../scss/_about-experts.scss */
+      section.about-experts .blue-box-container .blue-box .blue-panel:hover {
+        opacity: 0.85; }
+    /* line 123, ../scss/_about-experts.scss */
+    section.about-experts .blue-box-container .blue-box.follow {
+      background-image: url(/img/about-experts/followthebest.jpg); }
+    /* line 127, ../scss/_about-experts.scss */
+    section.about-experts .blue-box-container .blue-box.powerful {
+      background-image: url(/img/about-experts/powerfulanalytics.jpg); }
+
 @font-face {
   font-family: 'Gilroy-Light';
   src: url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Gilroy-LightItalic';
+  src: url("../fonts/Gilroy/Gilroy-LightItalic.ttf") format("truetype"); }
 @font-face {
   font-family: 'Gilroy-Regular';
   src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: 'Gilroy-Medium';
   src: url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype"); }
 /* line 3, ../scss/_footer.scss */
 section.subscribe {
   background: linear-gradient(to left, #22a0fa, #0f64f4);
@@ -134,23 +252,27 @@ body {
 section {
   height: 100%; }
 
-/* line 14, ../scss/_global.scss */
+/* line 13, ../scss/_global.scss */
+.container {
+  height: 100%; }
+
+/* line 16, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 18, ../scss/_global.scss */
+/* line 20, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 23, ../scss/_global.scss */
+  /* line 25, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 29, ../scss/_global.scss */
+  /* line 31, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 34, ../scss/_global.scss */
+/* line 36, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
@@ -182,7 +304,7 @@ header.masthead {
         margin: auto; }
   /* line 32, ../scss/_masthead.scss */
   header.masthead div.connection-line {
-    z-index: 1;
+    z-index: 10;
     position: relative; }
     /* line 36, ../scss/_masthead.scss */
     header.masthead div.connection-line div {
@@ -211,62 +333,47 @@ section.products {
     background: #141414;
     left: 0px;
     top: 2px; }
-  /* line 23, ../scss/_products.scss */
-  section.products .dots:before {
-    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
-    display: block;
-    font-size: 26px;
-    font-family: Georgia;
-    color: #383838;
-    max-width: 21%;
-    height: 260px;
-    overflow: hidden;
-    letter-spacing: 16px;
-    margin: auto;
-    position: absolute;
-    top: 20%;
-    left: calc(50% - 120px);
-    line-height: 45px;
-    z-index: 2px; }
-  /* line 41, ../scss/_products.scss */
+  /* line 25, ../scss/_products.scss */
   section.products .product-box {
-    max-width: 33%;
-    position: absolute; }
-    /* line 45, ../scss/_products.scss */
+    max-width: 380px;
+    position: absolute;
+    line-height: 26px; }
+    /* line 30, ../scss/_products.scss */
     section.products .product-box > * {
       margin-bottom: 32px; }
-    /* line 49, ../scss/_products.scss */
+    /* line 34, ../scss/_products.scss */
     section.products .product-box h2 {
       font-size: 38px;
       letter-spacing: 2px; }
-  /* line 55, ../scss/_products.scss */
+  /* line 40, ../scss/_products.scss */
   section.products .product-box.experts {
     top: 25%;
-    left: 10%; }
-    /* line 59, ../scss/_products.scss */
+    left: 15%; }
+    /* line 44, ../scss/_products.scss */
     section.products .product-box.experts .learn-more {
       border: 1px solid white;
       padding: 16px 40px 16px 70px;
       width: 300px; }
-      /* line 64, ../scss/_products.scss */
+      /* line 49, ../scss/_products.scss */
       section.products .product-box.experts .learn-more span {
         font-family: "Gilroy-Medium";
         letter-spacing: 2px; }
-      /* line 69, ../scss/_products.scss */
+      /* line 54, ../scss/_products.scss */
       section.products .product-box.experts .learn-more img {
         margin-left: 20px; }
-  /* line 75, ../scss/_products.scss */
+  /* line 60, ../scss/_products.scss */
   section.products .product-box.portfolio {
     top: 38%;
-    right: 10%; }
-    /* line 80, ../scss/_products.scss */
+    right: 15%; }
+    /* line 65, ../scss/_products.scss */
     section.products .product-box.portfolio .download span {
       font-family: "Gilroy-Medium";
       letter-spacing: 2px; }
-    /* line 85, ../scss/_products.scss */
+    /* line 70, ../scss/_products.scss */
     section.products .product-box.portfolio .download img {
-      margin-left: 20px; }
-    /* line 89, ../scss/_products.scss */
+      margin-left: 20px;
+      margin-top: -5px; }
+    /* line 75, ../scss/_products.scss */
     section.products .product-box.portfolio .download hr {
       border-top-color: white;
       height: 6px;

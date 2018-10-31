@@ -20,27 +20,12 @@ section.products {
         top: 2px;
     }
 
-    .dots:before {
-        content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
-        display: block;
-        font-size: 26px;
-        font-family: Georgia;
-        color: #383838;
-        max-width: 21%;
-        height: 260px;
-        overflow: hidden;
-        letter-spacing: 16px;
-        margin: auto;
-        position: absolute;
-        top: 20%;
-        left: calc(50% - 120px);
-        line-height: 45px;
-        z-index:2px;
-    }
+
 
     .product-box {
-        max-width: 33%;
+        max-width: 380px;
         position: absolute;
+        line-height: 26px;
 
         > * {
             margin-bottom: 32px;
@@ -54,7 +39,7 @@ section.products {
 
     .product-box.experts {
         top: 25%;
-        left: 10%;
+        left: 15%;
 
         .learn-more {
             border: 1px solid white;
@@ -74,7 +59,7 @@ section.products {
 
     .product-box.portfolio {
         top: 38%;
-        right: 10%;
+        right: 15%;
 
         .download {
             span {
@@ -84,6 +69,7 @@ section.products {
 
             img {
                 margin-left: 20px;
+                margin-top: -5px;
             }
 
             hr {

@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Gilroy-LightItalic';
+    src: url('../fonts/Gilroy/Gilroy-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Gilroy-Regular';
     src: url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
 }
@@ -11,4 +16,9 @@
 @font-face {
     font-family: 'Gilroy-Medium';
     src: url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
 }
