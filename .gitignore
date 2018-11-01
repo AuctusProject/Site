@@ -7,3 +7,4 @@ css/style.min.css.map
 scss/style.min.css
 .vs
 *.sqlite
+.vs/slnx.sqlite
