@@ -5,6 +5,7 @@ body {
     height: 100%;
     font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
     color:white;
+    overflow-x:hidden;
 }
 
 section {
@@ -35,13 +36,4 @@ section {
 
 a:hover{
     text-decoration:none !important;
-}
-
-.invert-horizontally {
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -ms-filter: fliph; /*IE*/
-    filter: fliph; /*IE*/
 }

@@ -110,6 +110,88 @@ section.about-experts {
     section.about-experts .blue-box-container .blue-box.powerful {
       background-image: url(/img/about-experts/powerfulanalytics.jpg); }
 
+/* line 1, ../scss/_features.scss */
+section.features {
+  position: relative;
+  height: 120%; }
+  /* line 7, ../scss/_features.scss */
+  section.features .back-panel {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute; }
+    /* line 13, ../scss/_features.scss */
+    section.features .back-panel .black {
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(to right, #141414 50%, #1c1c1c 50%); }
+    /* line 19, ../scss/_features.scss */
+    section.features .back-panel .white {
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(to right, #ffffff 50%, #1c1c1c 50%); }
+  /* line 26, ../scss/_features.scss */
+  section.features .feature-img {
+    position: absolute;
+    top: 0;
+    left: 50%; }
+  /* line 32, ../scss/_features.scss */
+  section.features .container {
+    position: relative;
+    background: #1c1c1c;
+    padding-left: 100px; }
+    /* line 37, ../scss/_features.scss */
+    section.features .container span {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.5px; }
+    /* line 43, ../scss/_features.scss */
+    section.features .container .latest-features {
+      position: absolute;
+      top: 70px; }
+      /* line 47, ../scss/_features.scss */
+      section.features .container .latest-features > * + * {
+        margin-top: 30px; }
+      /* line 51, ../scss/_features.scss */
+      section.features .container .latest-features h1 {
+        font-size: 48px;
+        letter-spacing: 3.4px; }
+      /* line 56, ../scss/_features.scss */
+      section.features .container .latest-features .latest-feature-title {
+        font-family: Gilroy-Medium; }
+      /* line 60, ../scss/_features.scss */
+      section.features .container .latest-features .access {
+        cursor: pointer;
+        background: #126efd;
+        width: 260px;
+        padding: 20px 60px; }
+      /* line 67, ../scss/_features.scss */
+      section.features .container .latest-features img {
+        margin-left: 20px; }
+    /* line 73, ../scss/_features.scss */
+    section.features .container .other-features {
+      position: absolute;
+      bottom: 30px; }
+      /* line 77, ../scss/_features.scss */
+      section.features .container .other-features h2 {
+        font-size: 30px;
+        letter-spacing: 2.1px;
+        margin-bottom: 30px; }
+      /* line 83, ../scss/_features.scss */
+      section.features .container .other-features ul {
+        margin-top: 50px;
+        list-style-type: none;
+        font-size: 17.5px; }
+        /* line 88, ../scss/_features.scss */
+        section.features .container .other-features ul li + li {
+          margin-top: 30px; }
+        /* line 92, ../scss/_features.scss */
+        section.features .container .other-features ul li:before {
+          font-family: 'FontAwesome';
+          content: '\f054';
+          margin: 0 5px 0 -15px;
+          color: white; }
+
 @font-face {
   font-family: 'Gilroy-Light';
   src: url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype"); }
@@ -246,33 +328,34 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
-  color: white; }
+  color: white;
+  overflow-x: hidden; }
 
-/* line 10, ../scss/_global.scss */
+/* line 11, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 13, ../scss/_global.scss */
+/* line 14, ../scss/_global.scss */
 .container {
   height: 100%; }
 
-/* line 16, ../scss/_global.scss */
+/* line 17, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 20, ../scss/_global.scss */
+/* line 21, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 25, ../scss/_global.scss */
+  /* line 26, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 31, ../scss/_global.scss */
+  /* line 32, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 36, ../scss/_global.scss */
+/* line 37, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
@@ -379,3 +462,40 @@ section.products {
       height: 6px;
       width: 120px;
       margin: 12px; }
+
+/* line 1, ../scss/_roadmap.scss */
+section.roadmap {
+  background-color: #141414; }
+  /* line 4, ../scss/_roadmap.scss */
+  section.roadmap .border-bar {
+    height: 12px;
+    width: 480px;
+    margin-left: -240px;
+    background-image: linear-gradient(to left, #07d1ff, #126efd);
+    position: absolute;
+    left: 50%; }
+  /* line 13, ../scss/_roadmap.scss */
+  section.roadmap .container {
+    padding-top: 152px; }
+  /* line 17, ../scss/_roadmap.scss */
+  section.roadmap h2 {
+    font-size: 37.5px;
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #ffffff; }
+  /* line 26, ../scss/_roadmap.scss */
+  section.roadmap .arrow {
+    width: 35px;
+    height: 7px;
+    background-size: cover;
+    background-image: url(/img/global/arrow.png);
+    background-repeat: no-repeat; }
+  /* line 34, ../scss/_roadmap.scss */
+  section.roadmap .year-selecion {
+    text-align: center;
+    padding: 70px; }
+    /* line 38, ../scss/_roadmap.scss */
+    section.roadmap .year-selecion div {
+      display: inline-block; }
