@@ -288,6 +288,16 @@ section {
 a:hover {
   text-decoration: none !important; }
 
+.invert-horizontally {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
 header.masthead {
   width: 100%;
   height: 110%;
@@ -381,7 +391,7 @@ section.roadmap {
     background-image: linear-gradient(to left, #07d1ff, #126efd);
     position: absolute;
     left: 50%; }
-  section.roadmap .container {
+  section.roadmap .container-roadmap {
     padding-top: 152px; }
   section.roadmap h2 {
     font-size: 37.5px;
@@ -401,12 +411,36 @@ section.roadmap {
     padding: 70px; }
     section.roadmap .year-selecion div {
       display: inline-block; }
-  section.roadmap .timeline {
+  section.roadmap .timeline-past {
     position: absolute;
     width: 100%;
-    right: 25%;
+    right: 20%;
     height: 1px;
-    border: solid 1px #737373;
-    background-color: #737373; }
+    border-top: solid 2px #b7b7b7;
+    border-bottom: solid 1px #b7b7b7;
+    background-color: #b7b7b7; }
+  section.roadmap .timeline-future {
+    position: absolute;
+    width: 100%;
+    left: 80%;
+    height: 1px;
+    background-color: #737373;
+    margin-top: 1px; }
+  section.roadmap .first {
+    right: 80%; }
+  section.roadmap .second {
+    right: 60%; }
+  section.roadmap .third {
+    right: 40%; }
+  section.roadmap .fourth {
+    right: 20%; }
+  section.roadmap .quarter {
+    position: absolute;
+    width: 3px;
+    height: 36px;
+    margin-top: -18px;
+    border-left: solid 2px #cccccc;
+    border-right: solid 1px #cccccc;
+    background-color: #cccccc; }
 
 /*# sourceMappingURL=style.min.css.map */
