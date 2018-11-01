@@ -372,7 +372,8 @@ section.products {
       margin: 12px; }
 
 section.roadmap {
-  background-color: #141414; }
+  background-color: #141414;
+  position: relative; }
   section.roadmap .border-bar {
     height: 12px;
     width: 480px;
@@ -401,7 +402,9 @@ section.roadmap {
     section.roadmap .year-selecion div {
       display: inline-block; }
   section.roadmap .timeline {
-    width: 75%;
+    position: absolute;
+    width: 100%;
+    right: 25%;
     height: 1px;
     border: solid 1px #737373;
     background-color: #737373; }
