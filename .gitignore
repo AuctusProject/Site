@@ -8,3 +8,5 @@ scss/style.min.css
 .vs
 *.sqlite
 .vs/slnx.sqlite
+.vs/slnx.sqlite
+.vs/src/v15/.suo

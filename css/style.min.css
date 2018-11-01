@@ -90,6 +90,70 @@ section.about-experts {
     section.about-experts .blue-box-container .blue-box.powerful {
       background-image: url(/img/about-experts/powerfulanalytics.jpg); }
 
+section.features {
+  position: relative;
+  height: 120%; }
+  section.features .back-panel {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute; }
+    section.features .back-panel .black {
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(to right, #141414 50%, #1c1c1c 50%); }
+    section.features .back-panel .white {
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(to right, #ffffff 50%, #1c1c1c 50%); }
+  section.features .feature-img {
+    position: absolute;
+    top: 0;
+    left: 50%; }
+  section.features .container {
+    position: relative;
+    background: #1c1c1c;
+    padding-left: 100px; }
+    section.features .container span {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.5px; }
+    section.features .container .latest-features {
+      position: absolute;
+      top: 70px; }
+      section.features .container .latest-features > * + * {
+        margin-top: 30px; }
+      section.features .container .latest-features h1 {
+        font-size: 48px;
+        letter-spacing: 3.4px; }
+      section.features .container .latest-features .latest-feature-title {
+        font-family: Gilroy-Medium; }
+      section.features .container .latest-features .access {
+        cursor: pointer;
+        background: #126efd;
+        width: 260px;
+        padding: 20px 60px; }
+      section.features .container .latest-features img {
+        margin-left: 20px; }
+    section.features .container .other-features {
+      position: absolute;
+      bottom: 30px; }
+      section.features .container .other-features h2 {
+        font-size: 30px;
+        letter-spacing: 2.1px;
+        margin-bottom: 30px; }
+      section.features .container .other-features ul {
+        margin-top: 50px;
+        list-style-type: none;
+        font-size: 17.5px; }
+        section.features .container .other-features ul li + li {
+          margin-top: 30px; }
+        section.features .container .other-features ul li:before {
+          font-family: 'FontAwesome';
+          content: '\f054';
+          margin: 0 5px 0 -15px;
+          color: white; }
+
 @font-face {
   font-family: 'Gilroy-Light';
   src: url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype"); }
@@ -200,7 +264,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
-  color: white; }
+  color: white;
+  overflow-x: hidden; }
 
 section {
   height: 100%; }
@@ -222,16 +287,6 @@ section {
     display: none !important; } }
 a:hover {
   text-decoration: none !important; }
-
-.invert-horizontally {
-  -moz-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  transform: scaleX(-1);
-  -ms-filter: fliph;
-  /*IE*/
-  filter: fliph;
-  /*IE*/ }
 
 header.masthead {
   width: 100%;
