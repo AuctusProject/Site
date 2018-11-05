@@ -265,8 +265,20 @@
             <div class="timeline-future"></div>
         </div>
     </section>
-    <section class="blog" id="blog">        
-        <div class="container">
+    <section class="blog" style="display:none">
+        <div class="section-heading text-center">
+            <h2 i18n="OUR LATEST NEWS">OUR LATEST NEWS</h2>
+            <hr width="100px" />
+        </div>
+        <div class="news-container" id="newsContainer">
+            <a href="NEWS_URL" target="_blank">
+                <div class="news-card">
+                    <div class="img-div" style="background: url(IMG_URL)"></div>
+                    <div class="dots news-card-dots"></div>
+                    <div class="news-card-title">NEWS_TITLE</div>
+                    <div class="news-card-date">NEWS_DATE</div>
+                </div>
+            </a>
         </div>
     </section>
     <footer style="background-color: #fafafa;">
@@ -386,25 +398,50 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/translation.js"></script>
     <script src="js/script.min.js?v=34"></script>
-    <script>
-        $(".menu-content a").click(function (e) {
-            if ($(window).width() <= 768)
-                $('#topMenu').toggleClass('open');
+    <script title="blog-script">
+        var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+        $(function () {
+            var $content = $('#newsContainer');
+            var $section = $('.latestnews');
+            var $template = $('#newsContainer').html();
+            var data = {
+                rss_url: 'https://blog.auctus.org/feed/'
+            };
+            $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+                if (response.status == 'ok') {
+                    var output = '';
+                    $.each(response.items, function (k, item) {
+                        var element = $template;
+                        var tagIndex = item.description.indexOf('<img');
+                        var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex;
+                        var srcStart = srcIndex + 5;
+                        var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart;
+                        var src = item.description.substring(srcStart, srcEnd);
+                        element = element.replace("IMG_URL", src);
+                        var monthStr = item.pubDate.substring(5, 7);
+                        var monthInt = parseInt(monthStr);
+                        var month = monthNames[monthInt - 1];
+                        var day = item.pubDate.substring(8, 10);
+                        element = element.replace("NEWS_DATE", month + ' ' + day);
+                        element = element.replace("NEWS_URL", item.link);
+                        element = element.replace("NEWS_TITLE", item.title);
+                        output += element;
+                    });
+                    $content.html(output);
+                    createSlider();
+                    $section.show();
+                }
+            });
         });
-        $("#topMenu").click(function (e) {
-            if (e.target !== this)
-                return;
-            $('#topMenu').toggleClass('open');
-        });
-        $('a').click(function () {
-            var href = $(this).attr('href');
-            if (href) {
-                $('html, body').animate({
-                    scrollTop: $(href).offset().top
-                }, 500);
-            }
-            return false;
-        });            
+        function createSlider() {
+            $('#newsContainer').slick({
+                dots: true,
+                variableWidth: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        }
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {

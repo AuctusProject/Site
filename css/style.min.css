@@ -110,6 +110,56 @@ section.about-experts {
     section.about-experts .blue-box-container .blue-box.powerful {
       background-image: url(/img/about-experts/powerfulanalytics.jpg); }
 
+/* line 1, ../scss/_blog.scss */
+section.blog {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,91edff+50,ffffff+100 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #91edff 50%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #91edff 50%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #91edff 50%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+  /* line 8, ../scss/_blog.scss */
+  section.blog .back {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04148c+0,0649d4+100 */
+    background: #04148c;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #04148c 0%, #0649d4 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #04148c 0%, #0649d4 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #04148c 0%, #0649d4 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04148c', endColorstr='#0649d4',GradientType=0 );
+    /* IE6-9 */
+    height: 537px; }
+  /* line 18, ../scss/_blog.scss */
+  section.blog .section-heading {
+    padding-top: 150px; }
+    /* line 21, ../scss/_blog.scss */
+    section.blog .section-heading h3 {
+      margin-top: 25px; }
+  /* line 26, ../scss/_blog.scss */
+  section.blog .btn {
+    padding-right: 0;
+    padding-left: 0;
+    width: 160px; }
+  /* line 33, ../scss/_blog.scss */
+  section.blog .auctus-wm img {
+    margin-top: -370px; }
+  @media (max-width: 768px) {
+    /* line 39, ../scss/_blog.scss */
+    section.blog .auctus-wm {
+      display: none; } }
+  @media (max-width: 768px) {
+    /* line 45, ../scss/_blog.scss */
+    section.blog .input-group {
+      margin-top: 50px; } }
+
 /* line 1, ../scss/_features.scss */
 section.features {
   position: relative;
@@ -359,6 +409,17 @@ section {
 a:hover {
   text-decoration: none !important; }
 
+/* line 41, ../scss/_global.scss */
+.invert-horizontally {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
 /* line 2, ../scss/_masthead.scss */
 header.masthead {
   width: 100%;
@@ -476,7 +537,7 @@ section.roadmap {
     position: absolute;
     left: 50%; }
   /* line 14, ../scss/_roadmap.scss */
-  section.roadmap .container {
+  section.roadmap .container-roadmap {
     padding-top: 152px; }
   /* line 18, ../scss/_roadmap.scss */
   section.roadmap h2 {
@@ -501,13 +562,43 @@ section.roadmap {
     section.roadmap .year-selecion div {
       display: inline-block; }
   /* line 44, ../scss/_roadmap.scss */
-  section.roadmap .timeline {
+  section.roadmap .timeline-past {
     position: absolute;
     width: 100%;
-    right: 25%;
+    right: 20%;
     height: 1px;
-    border: solid 1px #737373;
-    background-color: #737373; }
+    border-top: solid 2px #b7b7b7;
+    border-bottom: solid 1px #b7b7b7;
+    background-color: #b7b7b7; }
+  /* line 54, ../scss/_roadmap.scss */
+  section.roadmap .timeline-future {
+    position: absolute;
+    width: 100%;
+    left: 80%;
+    height: 1px;
+    background-color: #737373;
+    margin-top: 1px; }
+  /* line 63, ../scss/_roadmap.scss */
+  section.roadmap .first {
+    right: 80%; }
+  /* line 67, ../scss/_roadmap.scss */
+  section.roadmap .second {
+    right: 60%; }
+  /* line 71, ../scss/_roadmap.scss */
+  section.roadmap .third {
+    right: 40%; }
+  /* line 75, ../scss/_roadmap.scss */
+  section.roadmap .fourth {
+    right: 20%; }
+  /* line 79, ../scss/_roadmap.scss */
+  section.roadmap .quarter {
+    position: absolute;
+    width: 3px;
+    height: 36px;
+    margin-top: -18px;
+    border-left: solid 2px #cccccc;
+    border-right: solid 1px #cccccc;
+    background-color: #cccccc; }
 
 /* line 1, ../scss/_token.scss */
 section.token {
