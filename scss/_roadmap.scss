@@ -35,9 +35,36 @@ section.roadmap {
     .year-selecion {
         text-align: center;
         padding: 70px;
+        cursor: pointer;
+        margin-bottom: 80px;
 
         div {
             display: inline-block;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .year {
+            font-size: 22px;
+            font-weight: 300;
+        }
+
+        .highlighted {
+            font-size: 33.5px;
+            font-weight: bold;
+            position: relative;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        .highlighted:before {
+            content: "";
+            position: absolute;
+            left: 25%;
+            bottom: -12%;
+            height: 1px;
+            width: 50%;
+            border-bottom: 4px solid #126efd;
         }
     }
 
@@ -61,19 +88,19 @@ section.roadmap {
     }
 
     .first {
-        right: 80%;
+        left: 20%;
     }
 
     .second {
-        right: 60%;
+        left: 40%;
     }
 
     .third {
-        right: 40%;
+        left: 60%;
     }
 
     .fourth {
-        right: 20%;
+        left: 80%;
     }
 
     .quarter {
@@ -84,5 +111,30 @@ section.roadmap {
         border-left: solid 2px #cccccc;
         border-right: solid 1px #cccccc;
         background-color: #cccccc;
+
+        span {
+            position: absolute;
+            top: -40px;
+            left: -36px;
+            width: 120px;
+            font-size: 22px;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        ul {
+            position: absolute;
+            top: 54px;
+            left: -110px;
+            width: 218px;
+            font-size: 13px;
+            font-weight: 300;
+        }
+    }
+
+    .half {
+        height: 18px;
+        margin-left: 10%;
+        margin-top: -8px;
     }
 }
