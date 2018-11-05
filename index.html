@@ -81,14 +81,14 @@
             <div class="center-panel center">
                 <img src="./img/masthead/headerlogo.png" />
                 <br />
-                <span>We develop the best <br/> cryptocurrency financial tools</span>
+                <span>We develop the best <br /> cryptocurrency financial tools</span>
             </div>
         </div>
         <div class="connection-line center">
             <div>
             </div>
         </div>
-      
+
     </header>
     <section class="products" id="products">
         <div class="black-top-right-block"></div>
@@ -109,7 +109,7 @@
                 <div><span> the best cryptocurrency portfolio manager. Automatically invest your money in smart portfolios, based on predetermined investment strategies.</span></div>
                 <div class="download">
                     <span>
-                       DOWNLOAD PDF
+                        DOWNLOAD PDF
                     </span>
                     <img class="turn-white-blue" src="img/global/download.png" />
                     <hr />
@@ -197,7 +197,7 @@
                 </ul>
             </div>
         </div>
-        <img class="feature-img" src="img/features/feature.png"/>
+        <img class="feature-img" src="img/features/feature.png" />
     </section>
     <section class="token" id="token">
         <div class="container">
@@ -266,17 +266,16 @@
         </div>
     </section>
     <section class="blog" style="display:none">
-        <div class="section-heading text-center">
-            <h2 i18n="OUR LATEST NEWS">OUR LATEST NEWS</h2>
-            <hr width="100px" />
-        </div>
+        <h2 i18n="OUR LATEST NEWS">Blog</h2>
         <div class="news-container" id="newsContainer">
             <a href="NEWS_URL" target="_blank">
                 <div class="news-card">
                     <div class="img-div" style="background: url(IMG_URL)"></div>
-                    <div class="dots news-card-dots"></div>
-                    <div class="news-card-title">NEWS_TITLE</div>
                     <div class="news-card-date">NEWS_DATE</div>
+                    <div class="news-card-title">NEWS_TITLE</div>
+                    <div class="read-more">
+                        <span>READ MORE</span> <img class="turn-white-blue" src="img/global/arrow.png" />
+                    </div>
                 </div>
             </a>
         </div>
@@ -356,7 +355,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="row association-box text-center" style=" padding-top: 0px;  margin-top:  0px;">
-                                <a style="margin: auto;" href="https://aurum.expert/en/uslugi/it-and-technologies/legal-support-for-initial-coin-offering-ico-procedure/" target="_blank"><img src="img/footer/aurum.png" ></a>
+                                <a style="margin: auto;" href="https://aurum.expert/en/uslugi/it-and-technologies/legal-support-for-initial-coin-offering-ico-procedure/" target="_blank"><img src="img/footer/aurum.png"></a>
                             </div>
                         </div>
                     </div>
@@ -403,7 +402,7 @@
 
         $(function () {
             var $content = $('#newsContainer');
-            var $section = $('.latestnews');
+            var $section = $('.blog');
             var $template = $('#newsContainer').html();
             var data = {
                 rss_url: 'https://blog.auctus.org/feed/'
@@ -471,8 +470,7 @@
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2025966277638951&ev=PageView&noscript=1"
-        />
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2025966277638951&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
     <!-- Twitter universal website tag code -->
@@ -494,8 +492,11 @@
         };
     </script>
 
-    <script>     
+    <script>
+
     </script>
 </body>
+
+
 
 </html>

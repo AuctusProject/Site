@@ -112,53 +112,81 @@ section.about-experts {
 
 /* line 1, ../scss/_blog.scss */
 section.blog {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,91edff+50,ffffff+100 */
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #91edff 50%, #ffffff 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 0%, #91edff 50%, #ffffff 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%, #91edff 50%, #ffffff 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-  /* IE6-9 */ }
-  /* line 8, ../scss/_blog.scss */
-  section.blog .back {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04148c+0,0649d4+100 */
-    background: #04148c;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #04148c 0%, #0649d4 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #04148c 0%, #0649d4 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #04148c 0%, #0649d4 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04148c', endColorstr='#0649d4',GradientType=0 );
-    /* IE6-9 */
-    height: 537px; }
-  /* line 18, ../scss/_blog.scss */
-  section.blog .section-heading {
-    padding-top: 150px; }
-    /* line 21, ../scss/_blog.scss */
-    section.blog .section-heading h3 {
-      margin-top: 25px; }
-  /* line 26, ../scss/_blog.scss */
-  section.blog .btn {
-    padding-right: 0;
-    padding-left: 0;
-    width: 160px; }
-  /* line 33, ../scss/_blog.scss */
-  section.blog .auctus-wm img {
-    margin-top: -370px; }
-  @media (max-width: 768px) {
-    /* line 39, ../scss/_blog.scss */
-    section.blog .auctus-wm {
-      display: none; } }
-  @media (max-width: 768px) {
+  background: #1c1c1c;
+  padding-top: 72px; }
+  /* line 5, ../scss/_blog.scss */
+  section.blog h2 {
+    margin: 0 0 50px 110px;
+    font-family: Gilroy-Medium;
+    font-size: 37.5px; }
+  @media (max-width: 430px) {
+    /* line 12, ../scss/_blog.scss */
+    section.blog .slick-prev, section.blog .slick-next {
+      display: none !important; } }
+  /* line 17, ../scss/_blog.scss */
+  section.blog .news-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    margin-bottom: 80px; }
+    @media (max-width: 430px) {
+      /* line 17, ../scss/_blog.scss */
+      section.blog .news-container {
+        width: 100%; } }
+  /* line 28, ../scss/_blog.scss */
+  section.blog .news-card {
+    width: 370px;
+    max-width: 100%;
+    height: 349px;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 13px;
+    position: relative;
+    vertical-align: top; }
+    /* line 38, ../scss/_blog.scss */
+    section.blog .news-card .img-div {
+      width: 370px;
+      height: 200px;
+      background-size: cover !important;
+      opacity: 0.5; }
     /* line 45, ../scss/_blog.scss */
-    section.blog .input-group {
-      margin-top: 50px; } }
+    section.blog .news-card .news-card-dots {
+      margin-top: 15px;
+      width: 104px; }
+    /* line 50, ../scss/_blog.scss */
+    section.blog .news-card .news-card-title {
+      font-family: Gilroy-Medium;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      height: 80px;
+      overflow: hidden;
+      text-transform: uppercase;
+      text-overflow: ellipsis;
+      color: white;
+      width: 300px;
+      margin: -18px auto 0 auto;
+      top: -10px;
+      z-index: 5;
+      position: relative; }
+    /* line 68, ../scss/_blog.scss */
+    section.blog .news-card .news-card-date {
+      position: absolute;
+      display: block;
+      bottom: 20px;
+      left: 34px;
+      color: white;
+      top: 145px;
+      font-size: 12px; }
+    /* line 78, ../scss/_blog.scss */
+    section.blog .news-card .read-more {
+      margin: 35px;
+      font-size: 12px;
+      color: white; }
+      /* line 82, ../scss/_blog.scss */
+      section.blog .news-card .read-more img {
+        margin-left: 30px; }
 
 /* line 1, ../scss/_features.scss */
 section.features {
