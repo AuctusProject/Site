@@ -408,9 +408,30 @@ section.roadmap {
     background-repeat: no-repeat; }
   section.roadmap .year-selecion {
     text-align: center;
-    padding: 70px; }
+    padding: 70px;
+    cursor: pointer;
+    margin-bottom: 80px; }
     section.roadmap .year-selecion div {
-      display: inline-block; }
+      display: inline-block;
+      margin-left: 40px;
+      margin-right: 40px; }
+    section.roadmap .year-selecion .year {
+      font-size: 22px;
+      font-weight: 300; }
+    section.roadmap .year-selecion .highlighted {
+      font-size: 33.5px;
+      font-weight: bold;
+      position: relative;
+      margin-left: 60px;
+      margin-right: 60px; }
+    section.roadmap .year-selecion .highlighted:before {
+      content: "";
+      position: absolute;
+      left: 25%;
+      bottom: -12%;
+      height: 1px;
+      width: 50%;
+      border-bottom: 4px solid #126efd; }
   section.roadmap .timeline-past {
     position: absolute;
     width: 100%;
@@ -442,5 +463,20 @@ section.roadmap {
     border-left: solid 2px #cccccc;
     border-right: solid 1px #cccccc;
     background-color: #cccccc; }
+    section.roadmap .quarter span {
+      position: absolute;
+      top: -40px;
+      left: -36px;
+      width: 120px;
+      font-size: 22px;
+      font-weight: 500;
+      font-style: italic; }
+    section.roadmap .quarter ul {
+      position: absolute;
+      top: 54px;
+      left: -110px;
+      width: 218px;
+      font-size: 13px;
+      font-weight: 300; }
 
 /*# sourceMappingURL=style.min.css.map */
