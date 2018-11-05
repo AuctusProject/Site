@@ -511,7 +511,65 @@ section.roadmap {
 
 /* line 1, ../scss/_token.scss */
 section.token {
-  background: #f5f5f5; }
+  background: #f5f5f5;
+  color: #383838;
+  padding-top: 115px;
+  height: unset; }
+  /* line 7, ../scss/_token.scss */
+  section.token .gray-block {
+    position: absolute;
+    width: 70%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    margin-top: -115px;
+    background: #1c1c1c; }
+  /* line 17, ../scss/_token.scss */
+  section.token h1 {
+    margin: 0 0 90px 130px;
+    font-size: 38px;
+    letter-spacing: 2.7px; }
+  /* line 23, ../scss/_token.scss */
+  section.token hr {
+    position: absolute;
+    top: 60px;
+    left: -30px;
+    border-top: solid 1px #156eff;
+    width: 150px; }
+  /* line 31, ../scss/_token.scss */
+  section.token .cards-container {
+    display: flex;
+    justify-content: space-between; }
+    /* line 35, ../scss/_token.scss */
+    section.token .cards-container .token-card {
+      text-align: center; }
+      /* line 38, ../scss/_token.scss */
+      section.token .cards-container .token-card img {
+        margin-bottom: 20px; }
+      /* line 42, ../scss/_token.scss */
+      section.token .cards-container .token-card span {
+        font-size: 20px; }
+    /* line 47, ../scss/_token.scss */
+    section.token .cards-container .hold {
+      max-width: 240px; }
+    /* line 51, ../scss/_token.scss */
+    section.token .cards-container .vote {
+      max-width: 335px; }
+    /* line 55, ../scss/_token.scss */
+    section.token .cards-container .earn {
+      max-width: 200px; }
+  /* line 60, ../scss/_token.scss */
+  section.token .buyback {
+    border-left: solid 1px #1a1c1f;
+    padding: 15px 0 15px 40px;
+    margin: 120px 0 105px 90px; }
+    /* line 65, ../scss/_token.scss */
+    section.token .buyback span {
+      font-family: Gilroy-Bold;
+      font-size: 28px;
+      font-style: italic;
+      line-height: 34px;
+      letter-spacing: 0.7px; }
 
 /* line 1, ../scss/_where-to-buy.scss */
 section.where-to-buy {
