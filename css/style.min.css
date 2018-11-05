@@ -448,13 +448,13 @@ section.roadmap {
     background-color: #737373;
     margin-top: 1px; }
   section.roadmap .first {
-    right: 80%; }
+    left: 20%; }
   section.roadmap .second {
-    right: 60%; }
+    left: 40%; }
   section.roadmap .third {
-    right: 40%; }
+    left: 60%; }
   section.roadmap .fourth {
-    right: 20%; }
+    left: 80%; }
   section.roadmap .quarter {
     position: absolute;
     width: 3px;
@@ -478,6 +478,10 @@ section.roadmap {
       width: 218px;
       font-size: 13px;
       font-weight: 300; }
+  section.roadmap .half {
+    height: 18px;
+    margin-left: 10%;
+    margin-top: -8px; }
 
 section.token {
   background: #f5f5f5;

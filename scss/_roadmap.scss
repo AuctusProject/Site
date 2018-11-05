@@ -1,6 +1,6 @@
 section.roadmap {
     background-color: #141414;
-    position: relative; 
+    position: relative;
 
     .border-bar {
         height: 12px;
@@ -88,19 +88,19 @@ section.roadmap {
     }
 
     .first {
-        right: 80%;
+        left: 20%;
     }
 
     .second {
-        right: 60%;
+        left: 40%;
     }
 
     .third {
-        right: 40%;
+        left: 60%;
     }
 
     .fourth {
-        right: 20%;
+        left: 80%;
     }
 
     .quarter {
@@ -130,5 +130,11 @@ section.roadmap {
             font-size: 13px;
             font-weight: 300;
         }
+    }
+
+    .half {
+        height: 18px;
+        margin-left: 10%;
+        margin-top: -8px;
     }
 }
