@@ -81,10 +81,15 @@ section.roadmap {
     .timeline-future {
         position: absolute;
         width: 100%;
-        left: 80%;
         height: 1px;
         background-color: #737373;
         margin-top: 1px;
+        border-top: 1px solid #141414;
+    }
+
+    .reset {
+        left: 0%;
+        right: 0%;
     }
 
     .first {
@@ -136,5 +141,15 @@ section.roadmap {
         height: 18px;
         margin-left: 10%;
         margin-top: -8px;
+    }
+
+    .future {
+        width: 1px;
+        background-color: #737373;
+        border: none;
+
+        span, ul {
+            color: #595959;
+        }
     }
 }
