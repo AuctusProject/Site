@@ -1,6 +1,6 @@
 $('.year').click(function (e) {
     $('.highlighted').removeClass('highlighted');
-    $(this).addClass('highlighted');
+    selectYear($(this));
 });
 
 $('.arrow').click(function (e) {
@@ -12,7 +12,13 @@ $('.arrow').click(function (e) {
         yearToHighlight = $('.highlighted').next('.year');
     }
     if (yearToHighlight.length > 0) {
-        $('.highlighted').removeClass('highlighted');
-        yearToHighlight.addClass('highlighted');
+        selectYear(yearToHighlight);
     }
 });
+
+function selectYear(selectedYear) {
+    $('.highlighted').removeClass('highlighted');
+    $('.content').hide();
+    selectedYear.addClass('highlighted');
+    $('#content-' + selectedYear[0].id).show();
+}

@@ -1,12 +1,9 @@
-/* line 1, ../scss/_experts.scss */
-section.experts {
+section.about-experts {
   background: #141414; }
-  /* line 4, ../scss/_experts.scss */
-  section.experts .quote {
+  section.about-experts .quote {
     position: absolute;
     width: 100%; }
-    /* line 8, ../scss/_experts.scss */
-    section.experts .quote .dots:before {
+    section.about-experts .quote .dots:before {
       content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
       display: block;
       font-size: 26px;
@@ -21,15 +18,13 @@ section.experts {
       left: -78px;
       line-height: 45px;
       z-index: 20; }
-    /* line 25, ../scss/_experts.scss */
-    section.experts .quote hr {
+    section.about-experts .quote hr {
       position: absolute;
       top: 130px;
       left: -110px;
       border-top: solid 1px #156eff;
       width: 150px; }
-    /* line 33, ../scss/_experts.scss */
-    section.experts .quote span {
+    section.about-experts .quote span {
       font-family: Gilroy-LightItalic;
       font-size: 26px;
       line-height: 34px;
@@ -37,8 +32,7 @@ section.experts {
       position: absolute;
       top: 87px;
       left: 65px; }
-  /* line 44, ../scss/_experts.scss */
-  section.experts .blue-box-container {
+  section.about-experts .blue-box-container {
     position: absolute;
     bottom: 10%;
     flex-direction: row;
@@ -48,13 +42,11 @@ section.experts {
     place-content: center space-between;
     align-items: center;
     width: calc(100% - 30px); }
-    /* line 55, ../scss/_experts.scss */
-    section.experts .blue-box-container .blue-box {
+    section.about-experts .blue-box-container .blue-box {
       width: 530px;
       height: 240px;
       position: relative; }
-      /* line 60, ../scss/_experts.scss */
-      section.experts .blue-box-container .blue-box .blue-panel {
+      section.about-experts .blue-box-container .blue-box .blue-panel {
         display: table;
         background: #126efd;
         position: absolute;
@@ -64,35 +56,26 @@ section.experts {
         left: 0;
         padding: 0px 60px;
         transition: 0.5s all; }
-        /* line 71, ../scss/_experts.scss */
-        section.experts .blue-box-container .blue-box .blue-panel > div {
+        section.about-experts .blue-box-container .blue-box .blue-panel > div {
           display: table-cell;
           vertical-align: middle; }
-          /* line 75, ../scss/_experts.scss */
-          section.experts .blue-box-container .blue-box .blue-panel > div > * {
+          section.about-experts .blue-box-container .blue-box .blue-panel > div > * {
             position: relative; }
-          /* line 79, ../scss/_experts.scss */
-          section.experts .blue-box-container .blue-box .blue-panel > div > * + * {
+          section.about-experts .blue-box-container .blue-box .blue-panel > div > * + * {
             margin-top: 24px; }
-        /* line 84, ../scss/_experts.scss */
-        section.experts .blue-box-container .blue-box .blue-panel h3 {
+        section.about-experts .blue-box-container .blue-box .blue-panel h3 {
           font-family: Gilroy-Bold; }
-        /* line 88, ../scss/_experts.scss */
-        section.experts .blue-box-container .blue-box .blue-panel span {
+        section.about-experts .blue-box-container .blue-box .blue-panel span {
           font-size: 18px;
           letter-spacing: 0.5px; }
-        /* line 93, ../scss/_experts.scss */
-        section.experts .blue-box-container .blue-box .blue-panel .link-box {
+        section.about-experts .blue-box-container .blue-box .blue-panel .link-box {
           position: relative; }
-          /* line 96, ../scss/_experts.scss */
-          section.experts .blue-box-container .blue-box .blue-panel .link-box span {
+          section.about-experts .blue-box-container .blue-box .blue-panel .link-box span {
             font-size: 12px;
             letter-spacing: 2.4px; }
-          /* line 101, ../scss/_experts.scss */
-          section.experts .blue-box-container .blue-box .blue-panel .link-box img {
+          section.about-experts .blue-box-container .blue-box .blue-panel .link-box img {
             margin-left: 20px; }
-        /* line 106, ../scss/_experts.scss */
-        section.experts .blue-box-container .blue-box .blue-panel .link-box::after {
+        section.about-experts .blue-box-container .blue-box .blue-panel .link-box::after {
           content: '';
           position: absolute;
           width: 44px;
@@ -100,40 +83,31 @@ section.experts {
           background: white;
           left: 0;
           top: 30px; }
-      /* line 117, ../scss/_experts.scss */
-      section.experts .blue-box-container .blue-box .blue-panel:hover {
+      section.about-experts .blue-box-container .blue-box .blue-panel:hover {
         opacity: 0.85; }
-    /* line 123, ../scss/_experts.scss */
-    section.experts .blue-box-container .blue-box.follow {
+    section.about-experts .blue-box-container .blue-box.follow {
       background-image: url(/img/about-experts/followthebest.jpg); }
-    /* line 127, ../scss/_experts.scss */
-    section.experts .blue-box-container .blue-box.powerful {
+    section.about-experts .blue-box-container .blue-box.powerful {
       background-image: url(/img/about-experts/powerfulanalytics.jpg); }
 
-/* line 1, ../scss/_blog.scss */
 section.blog {
   background: #1c1c1c;
   padding-top: 72px; }
-  /* line 5, ../scss/_blog.scss */
   section.blog h2 {
     margin: 0 0 50px 110px;
     font-family: Gilroy-Medium;
     font-size: 37px; }
   @media (max-width: 430px) {
-    /* line 12, ../scss/_blog.scss */
     section.blog .slick-prev, section.blog .slick-next {
       display: none !important; } }
-  /* line 17, ../scss/_blog.scss */
   section.blog .news-container {
     width: 100%;
     max-width: 1170px;
     margin: auto;
     margin-bottom: 80px; }
     @media (max-width: 430px) {
-      /* line 17, ../scss/_blog.scss */
       section.blog .news-container {
         width: 100%; } }
-  /* line 28, ../scss/_blog.scss */
   section.blog .news-card {
     width: 370px;
     max-width: 100%;
@@ -143,17 +117,14 @@ section.blog {
     margin: 13px;
     position: relative;
     vertical-align: top; }
-    /* line 38, ../scss/_blog.scss */
     section.blog .news-card .img-div {
       width: 370px;
       height: 200px;
       background-size: cover !important;
       opacity: 0.5; }
-    /* line 45, ../scss/_blog.scss */
     section.blog .news-card .news-card-dots {
       margin-top: 15px;
       width: 104px; }
-    /* line 50, ../scss/_blog.scss */
     section.blog .news-card .news-card-title {
       font-family: Gilroy-Medium;
       font-size: 20px;
@@ -170,7 +141,6 @@ section.blog {
       top: -10px;
       z-index: 5;
       position: relative; }
-    /* line 68, ../scss/_blog.scss */
     section.blog .news-card .news-card-date {
       position: absolute;
       display: block;
@@ -179,91 +149,71 @@ section.blog {
       color: white;
       top: 145px;
       font-size: 12px; }
-    /* line 78, ../scss/_blog.scss */
     section.blog .news-card .read-more {
       margin: 35px;
       font-size: 12px;
       color: white; }
-      /* line 82, ../scss/_blog.scss */
       section.blog .news-card .read-more img {
         margin-left: 30px; }
 
-/* line 1, ../scss/_features.scss */
 section.features {
   position: relative;
   height: 120%; }
-  /* line 7, ../scss/_features.scss */
   section.features .back-panel {
     width: 100%;
     height: 100%;
     display: block;
     position: absolute; }
-    /* line 13, ../scss/_features.scss */
     section.features .back-panel .black {
       width: 100%;
       height: 50%;
       background: linear-gradient(to right, #141414 50%, #1c1c1c 50%); }
-    /* line 19, ../scss/_features.scss */
     section.features .back-panel .white {
       width: 100%;
       height: 50%;
       background: linear-gradient(to right, #f5f5f5 50%, #1c1c1c 50%); }
-  /* line 26, ../scss/_features.scss */
   section.features .feature-img {
     position: absolute;
     top: 0;
     left: 50%; }
-  /* line 32, ../scss/_features.scss */
   section.features .container {
     position: relative;
     background: #1c1c1c;
     padding-left: 100px; }
-    /* line 37, ../scss/_features.scss */
     section.features .container span {
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0.5px; }
-    /* line 43, ../scss/_features.scss */
     section.features .container .latest-features {
       position: absolute;
       top: 70px; }
-      /* line 47, ../scss/_features.scss */
       section.features .container .latest-features > * + * {
         margin-top: 30px; }
-      /* line 51, ../scss/_features.scss */
       section.features .container .latest-features h1 {
         font-size: 48px;
         letter-spacing: 3.4px; }
-      /* line 56, ../scss/_features.scss */
       section.features .container .latest-features .latest-feature-title {
         font-family: Gilroy-Medium; }
-      /* line 60, ../scss/_features.scss */
       section.features .container .latest-features .access {
         cursor: pointer;
         background: #126efd;
         width: 260px;
         padding: 20px 60px; }
-      /* line 67, ../scss/_features.scss */
       section.features .container .latest-features img {
         margin-left: 20px; }
-    /* line 73, ../scss/_features.scss */
     section.features .container .other-features {
       position: absolute;
       bottom: 30px; }
-      /* line 77, ../scss/_features.scss */
       section.features .container .other-features h2 {
         font-size: 30px;
         letter-spacing: 2.1px;
         margin-bottom: 30px; }
-      /* line 83, ../scss/_features.scss */
       section.features .container .other-features ul {
         margin-top: 50px;
         list-style-type: none;
         font-size: 17.5px; }
-        /* line 88, ../scss/_features.scss */
         section.features .container .other-features ul li + li {
           margin-top: 30px; }
-        /* line 92, ../scss/_features.scss */
         section.features .container .other-features ul li:before {
           font-family: 'FontAwesome';
           content: '\f054';
@@ -285,17 +235,47 @@ section.features {
 @font-face {
   font-family: 'Gilroy-Bold';
   src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype"); }
-/* line 2, ../scss/_footer.scss */
+section.subscribe {
+  background: linear-gradient(to left, #22a0fa, #0f64f4);
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  margin-top: 100px; }
+  section.subscribe p {
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 28px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: white; }
+  section.subscribe .input-group > div {
+    margin: auto; }
+  section.subscribe input, section.subscribe input:focus {
+    margin: 5px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0.25rem !important; }
+  section.subscribe input::placeholder {
+    color: white; }
+  section.subscribe input:-ms-input-placeholder {
+    color: white; }
+  section.subscribe input::-ms-input-placeholder {
+    color: white; }
+  section.subscribe .input-group-btn {
+    margin: 5px 5px 0 5px; }
+  section.subscribe button {
+    border-radius: 0.25rem !important; }
+
 footer {
   position: relative;
+  padding-top: 200px;
+  margin-top: -200px;
+  z-index: -5;
   color: #3f3f3f; }
-  /* line 5, ../scss/_footer.scss */
   footer .navigation-icons {
     padding-top: 40px; }
-    /* line 8, ../scss/_footer.scss */
     footer .navigation-icons a {
       text-decoration: unset; }
-      /* line 11, ../scss/_footer.scss */
       footer .navigation-icons a i {
         font-size: 25px;
         border: 2px solid #626669;
@@ -306,58 +286,46 @@ footer {
         margin: 3px;
         color: #626669; }
   @media (max-width: 768px) {
-    /* line 25, ../scss/_footer.scss */
     footer .navigation-icons {
       margin-top: 20px; } }
   @media (max-width: 768px) {
-    /* line 31, ../scss/_footer.scss */
     footer .logo {
       text-align: center; } }
-  /* line 38, ../scss/_footer.scss */
   footer .separator {
     border-top: 2px solid #282828;
     margin: 15px -15px; }
-  /* line 43, ../scss/_footer.scss */
   footer .legal-container {
     font-size: 0.9rem;
     color: #828282;
     padding-left: 25px;
     padding-right: 25px; }
-    /* line 49, ../scss/_footer.scss */
     footer .legal-container a {
       color: #828282 !important;
       text-decoration: underline !important;
-      font-weight: bold; }
+      font-weight: bold;
+      cursor: pointer; }
     @media (min-width: 991px) {
-      /* line 55, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-left: 10px; } }
     @media (max-width: 991px) {
-      /* line 55, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-top: 25px; } }
-  /* line 66, ../scss/_footer.scss */
   footer .association-box {
     padding-top: 10px;
     margin: 10px 35px; }
     @media (max-width: 490px) {
-      /* line 66, ../scss/_footer.scss */
       footer .association-box {
         margin: 10px; } }
-    /* line 74, ../scss/_footer.scss */
     footer .association-box img {
       max-height: 105px; }
-    /* line 78, ../scss/_footer.scss */
     footer .association-box img:last-child {
       -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
       filter: grayscale(100%); }
-  /* line 84, ../scss/_footer.scss */
   footer .copyright {
     margin: 15px -15px;
     text-align: center; }
 
-/* line 2, ../scss/_global.scss */
 html,
 body {
   width: 100%;
@@ -366,39 +334,27 @@ body {
   color: white;
   overflow-x: hidden; }
 
-/* line 11, ../scss/_global.scss */
-a {
-  cursor: pointer; }
-
-/* line 15, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 18, ../scss/_global.scss */
 .container {
   height: 100%; }
 
-/* line 21, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 25, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 30, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 36, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 41, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 45, ../scss/_global.scss */
 .invert-horizontally {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -409,81 +365,46 @@ a:hover {
   filter: fliph;
   /*IE*/ }
 
-/* line 2, ../scss/_masthead.scss */
 header.masthead {
   width: 100%;
   height: 110%;
   background-size: cover;
   background-image: url(/img/masthead/background.jpg);
   background-repeat: no-repeat; }
-  /* line 9, ../scss/_masthead.scss */
-  header.masthead .top-menu {
-    position: absolute;
-    width: 100%;
-    top: 30px;
-    padding: 0 90px; }
-    /* line 15, ../scss/_masthead.scss */
-    header.masthead .top-menu div {
-      display: inline-block; }
-    /* line 20, ../scss/_masthead.scss */
-    header.masthead .top-menu > div:first-child div {
-      padding: 10px 20px; }
-    /* line 24, ../scss/_masthead.scss */
-    header.masthead .top-menu > div:first-child div.active {
-      border-bottom: 2px solid #126efd; }
-    /* line 30, ../scss/_masthead.scss */
-    header.masthead .top-menu > div:last-child div {
-      font-size: 20px;
-      padding: 10px; }
-    /* line 36, ../scss/_masthead.scss */
-    header.masthead .top-menu a {
-      color: white; }
-    /* line 40, ../scss/_masthead.scss */
-    header.masthead .top-menu i {
-      color: #b7b7b7; }
-  /* line 45, ../scss/_masthead.scss */
   header.masthead .container {
     width: 100%;
     height: 100%;
     padding-top: 15%;
     position: relative; }
-    /* line 51, ../scss/_masthead.scss */
     header.masthead .container .center-panel {
       position: absolute;
       top: 25%;
       left: 50%;
       transform: translate(-50%); }
-      /* line 57, ../scss/_masthead.scss */
       header.masthead .container .center-panel img {
         margin: 60px; }
-      /* line 61, ../scss/_masthead.scss */
       header.masthead .container .center-panel span {
         font-size: 22px;
         margin: auto; }
-  /* line 68, ../scss/_masthead.scss */
-  header.masthead .connection-line {
+  header.masthead div.connection-line {
     z-index: 10;
     position: relative; }
-    /* line 72, ../scss/_masthead.scss */
-    header.masthead .connection-line div {
+    header.masthead div.connection-line div {
       margin: -120px auto;
       background-color: white;
       height: 180px;
       width: 1px; }
 
-/* line 1, ../scss/_products.scss */
 section.products {
   width: 100%;
   height: 100%;
   position: relative;
   margin-top: -3%;
   padding-top: 3%; }
-  /* line 8, ../scss/_products.scss */
   section.products .container {
     height: 100%;
     width: 100%;
     background: #141414; }
-  /* line 14, ../scss/_products.scss */
   section.products .black-top-right-block {
     position: absolute;
     width: 60%;
@@ -491,58 +412,45 @@ section.products {
     background: #141414;
     left: 0px;
     top: 2px; }
-  /* line 25, ../scss/_products.scss */
   section.products .product-box {
     max-width: 380px;
     position: absolute;
     line-height: 26px; }
-    /* line 30, ../scss/_products.scss */
     section.products .product-box > * {
       margin-bottom: 32px; }
-    /* line 34, ../scss/_products.scss */
     section.products .product-box h2 {
       font-size: 38px;
       letter-spacing: 2px; }
-  /* line 40, ../scss/_products.scss */
   section.products .product-box.experts {
     top: 25%;
     left: 15%; }
-    /* line 44, ../scss/_products.scss */
     section.products .product-box.experts .learn-more {
       border: 1px solid white;
       padding: 16px 40px 16px 70px;
       width: 300px; }
-      /* line 49, ../scss/_products.scss */
       section.products .product-box.experts .learn-more span {
         font-family: "Gilroy-Medium";
         letter-spacing: 2px; }
-      /* line 54, ../scss/_products.scss */
       section.products .product-box.experts .learn-more img {
         margin-left: 20px; }
-  /* line 60, ../scss/_products.scss */
   section.products .product-box.portfolio {
     top: 38%;
     right: 15%; }
-    /* line 65, ../scss/_products.scss */
     section.products .product-box.portfolio .download span {
       font-family: "Gilroy-Medium";
       letter-spacing: 2px; }
-    /* line 70, ../scss/_products.scss */
     section.products .product-box.portfolio .download img {
       margin-left: 20px;
       margin-top: -5px; }
-    /* line 75, ../scss/_products.scss */
     section.products .product-box.portfolio .download hr {
       border-top-color: white;
       height: 6px;
       width: 120px;
       margin: 12px; }
 
-/* line 1, ../scss/_roadmap.scss */
 section.roadmap {
   background-color: #141414;
   position: relative; }
-  /* line 5, ../scss/_roadmap.scss */
   section.roadmap .border-bar {
     height: 12px;
     width: 480px;
@@ -550,10 +458,8 @@ section.roadmap {
     background-image: linear-gradient(to left, #07d1ff, #126efd);
     position: absolute;
     left: 50%; }
-  /* line 14, ../scss/_roadmap.scss */
   section.roadmap .container-roadmap {
     padding-top: 152px; }
-  /* line 18, ../scss/_roadmap.scss */
   section.roadmap h2 {
     font-size: 37.5px;
     font-weight: 600;
@@ -561,36 +467,32 @@ section.roadmap {
     letter-spacing: 0.9px;
     text-align: center;
     color: #ffffff; }
-  /* line 27, ../scss/_roadmap.scss */
   section.roadmap .arrow {
     width: 35px;
     height: 7px;
     background-size: cover;
     background-image: url(/img/global/arrow.png);
     background-repeat: no-repeat; }
-  /* line 35, ../scss/_roadmap.scss */
   section.roadmap .year-selecion {
     text-align: center;
     padding: 70px;
     cursor: pointer;
     margin-bottom: 80px; }
-    /* line 41, ../scss/_roadmap.scss */
     section.roadmap .year-selecion div {
       display: inline-block;
       margin-left: 40px;
       margin-right: 40px; }
-    /* line 47, ../scss/_roadmap.scss */
     section.roadmap .year-selecion .year {
       font-size: 22px;
-      font-weight: 300; }
-    /* line 52, ../scss/_roadmap.scss */
+      font-weight: 300;
+      transition: all 0.5s; }
     section.roadmap .year-selecion .highlighted {
       font-size: 33.5px;
       font-weight: bold;
       position: relative;
       margin-left: 60px;
-      margin-right: 60px; }
-    /* line 60, ../scss/_roadmap.scss */
+      margin-right: 60px;
+      transition: all 0.5s; }
     section.roadmap .year-selecion .highlighted:before {
       content: "";
       position: absolute;
@@ -599,7 +501,6 @@ section.roadmap {
       height: 1px;
       width: 50%;
       border-bottom: 4px solid #126efd; }
-  /* line 71, ../scss/_roadmap.scss */
   section.roadmap .timeline-past {
     position: absolute;
     width: 100%;
@@ -608,27 +509,24 @@ section.roadmap {
     border-top: solid 2px #b7b7b7;
     border-bottom: solid 1px #b7b7b7;
     background-color: #b7b7b7; }
-  /* line 81, ../scss/_roadmap.scss */
   section.roadmap .timeline-future {
     position: absolute;
     width: 100%;
-    left: 80%;
     height: 1px;
     background-color: #737373;
-    margin-top: 1px; }
-  /* line 90, ../scss/_roadmap.scss */
+    margin-top: 1px;
+    border-top: 1px solid #141414; }
+  section.roadmap .reset {
+    left: 0%;
+    right: 0%; }
   section.roadmap .first {
     left: 20%; }
-  /* line 94, ../scss/_roadmap.scss */
   section.roadmap .second {
     left: 40%; }
-  /* line 98, ../scss/_roadmap.scss */
   section.roadmap .third {
     left: 60%; }
-  /* line 102, ../scss/_roadmap.scss */
   section.roadmap .fourth {
     left: 80%; }
-  /* line 106, ../scss/_roadmap.scss */
   section.roadmap .quarter {
     position: absolute;
     width: 3px;
@@ -637,7 +535,6 @@ section.roadmap {
     border-left: solid 2px #cccccc;
     border-right: solid 1px #cccccc;
     background-color: #cccccc; }
-    /* line 115, ../scss/_roadmap.scss */
     section.roadmap .quarter span {
       position: absolute;
       top: -40px;
@@ -646,7 +543,6 @@ section.roadmap {
       font-size: 22px;
       font-weight: 500;
       font-style: italic; }
-    /* line 125, ../scss/_roadmap.scss */
     section.roadmap .quarter ul {
       position: absolute;
       top: 54px;
@@ -654,19 +550,22 @@ section.roadmap {
       width: 218px;
       font-size: 13px;
       font-weight: 300; }
-  /* line 135, ../scss/_roadmap.scss */
   section.roadmap .half {
     height: 18px;
     margin-left: 10%;
     margin-top: -8px; }
+  section.roadmap .future {
+    width: 1px;
+    background-color: #737373;
+    border: none; }
+    section.roadmap .future span, section.roadmap .future ul {
+      color: #595959; }
 
-/* line 1, ../scss/_token.scss */
 section.token {
   background: #f5f5f5;
   color: #383838;
   padding-top: 115px;
   height: unset; }
-  /* line 7, ../scss/_token.scss */
   section.token .gray-block {
     position: absolute;
     width: 70%;
@@ -675,46 +574,35 @@ section.token {
     left: 0;
     margin-top: -115px;
     background: #1c1c1c; }
-  /* line 17, ../scss/_token.scss */
   section.token h1 {
     margin: 0 0 90px 130px;
     font-size: 38px;
     letter-spacing: 2.7px; }
-  /* line 23, ../scss/_token.scss */
   section.token hr {
     position: absolute;
     top: 60px;
     left: -30px;
     border-top: solid 1px #156eff;
     width: 150px; }
-  /* line 31, ../scss/_token.scss */
   section.token .cards-container {
     display: flex;
     justify-content: space-between; }
-    /* line 35, ../scss/_token.scss */
     section.token .cards-container .token-card {
       text-align: center; }
-      /* line 38, ../scss/_token.scss */
       section.token .cards-container .token-card img {
         margin-bottom: 20px; }
-      /* line 42, ../scss/_token.scss */
       section.token .cards-container .token-card span {
         font-size: 20px; }
-    /* line 47, ../scss/_token.scss */
     section.token .cards-container .hold {
       max-width: 240px; }
-    /* line 51, ../scss/_token.scss */
     section.token .cards-container .vote {
       max-width: 335px; }
-    /* line 55, ../scss/_token.scss */
     section.token .cards-container .earn {
       max-width: 200px; }
-  /* line 60, ../scss/_token.scss */
   section.token .buyback {
     border-left: solid 1px #1a1c1f;
     padding: 15px 0 15px 40px;
     margin: 120px 0 105px 90px; }
-    /* line 65, ../scss/_token.scss */
     section.token .buyback span {
       font-family: Gilroy-Bold;
       font-size: 28px;
@@ -722,85 +610,22 @@ section.token {
       line-height: 34px;
       letter-spacing: 0.7px; }
 
-/* line 1, ../scss/_where-to-buy.scss */
 section.where-to-buy {
   color: #262626;
   background-color: #e9e9e9;
   text-align: center;
   height: unset;
   padding: 70px 0 100px 0; }
-  /* line 8, ../scss/_where-to-buy.scss */
   section.where-to-buy h2 {
     font-family: Gilroy-Bold;
     font-size: 37.5px;
     letter-spacing: 0.9px;
     margin-bottom: 56px; }
-  /* line 15, ../scss/_where-to-buy.scss */
   section.where-to-buy .exchanges {
     display: flex;
     justify-content: space-between; }
-    /* line 19, ../scss/_where-to-buy.scss */
     section.where-to-buy .exchanges a {
-      align-self: flex-end; }
+      align-self: flex-end;
+      cursor: pointer; }
 
-/* line 2, ../scss/_about-masthead.scss */
-header.about-masthead {
-  width: 100%;
-  height: 110%;
-  background-size: cover;
-  background-image: url(/img/masthead/background.jpg);
-  background-repeat: no-repeat; }
-  /* line 9, ../scss/_about-masthead.scss */
-  header.about-masthead .top-menu {
-    position: absolute;
-    width: 100%;
-    top: 30px;
-    padding: 0 90px; }
-    /* line 15, ../scss/_about-masthead.scss */
-    header.about-masthead .top-menu div {
-      display: inline-block; }
-    /* line 20, ../scss/_about-masthead.scss */
-    header.about-masthead .top-menu > div:first-child div {
-      padding: 10px 20px; }
-    /* line 24, ../scss/_about-masthead.scss */
-    header.about-masthead .top-menu > div:first-child div.active {
-      border-bottom: 2px solid #126efd; }
-    /* line 30, ../scss/_about-masthead.scss */
-    header.about-masthead .top-menu > div:last-child div {
-      font-size: 20px;
-      padding: 10px; }
-    /* line 36, ../scss/_about-masthead.scss */
-    header.about-masthead .top-menu a {
-      color: white; }
-    /* line 40, ../scss/_about-masthead.scss */
-    header.about-masthead .top-menu i {
-      color: #b7b7b7; }
-  /* line 45, ../scss/_about-masthead.scss */
-  header.about-masthead .container {
-    width: 100%;
-    height: 100%;
-    padding-top: 15%;
-    position: relative; }
-    /* line 51, ../scss/_about-masthead.scss */
-    header.about-masthead .container .center-panel {
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%); }
-      /* line 57, ../scss/_about-masthead.scss */
-      header.about-masthead .container .center-panel img {
-        margin: 60px; }
-      /* line 61, ../scss/_about-masthead.scss */
-      header.about-masthead .container .center-panel span {
-        font-size: 22px;
-        margin: auto; }
-  /* line 68, ../scss/_about-masthead.scss */
-  header.about-masthead .connection-line {
-    z-index: 10;
-    position: relative; }
-    /* line 72, ../scss/_about-masthead.scss */
-    header.about-masthead .connection-line div {
-      margin: -120px auto;
-      background-color: white;
-      height: 180px;
-      width: 1px; }
+/*# sourceMappingURL=style.min.css.map */
