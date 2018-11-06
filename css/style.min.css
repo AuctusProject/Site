@@ -639,9 +639,9 @@ section.about-advisors {
 
 header.about-masthead {
   width: 100%;
-  height: 110%;
+  height: 100%;
   background-size: cover;
-  background-image: url(/img/masthead/background.jpg);
+  background-image: url(/img/about/background.jpg);
   background-repeat: no-repeat; }
   header.about-masthead .top-menu {
     position: absolute;
@@ -664,23 +664,20 @@ header.about-masthead {
   header.about-masthead .container {
     width: 100%;
     height: 100%;
-    padding-top: 15%;
     position: relative; }
     header.about-masthead .container .center-panel {
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%); }
+      margin: auto;
+      width: 80%; }
       header.about-masthead .container .center-panel img {
-        margin: 60px; }
+        margin: 70px auto 20% auto;
+        zoom: 0.7; }
       header.about-masthead .container .center-panel span {
-        font-size: 22px;
-        margin: auto; }
+        font-size: 22px; }
   header.about-masthead .connection-line {
     z-index: 10;
     position: relative; }
     header.about-masthead .connection-line div {
-      margin: -120px auto;
+      margin: -90px auto;
       background-color: white;
       height: 180px;
       width: 1px; }
