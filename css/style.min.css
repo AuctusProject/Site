@@ -617,12 +617,25 @@ section.where-to-buy {
 section.about-advisors {
   background-color: #1c1c1c;
   position: relative; }
+  section.about-advisors a {
+    color: inherit;
+    text-decoration: none; }
   section.about-advisors .container-advisors {
     padding-top: 100px;
     padding-left: 32px; }
   section.about-advisors .advisor-card {
     text-transform: uppercase;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    display: block;
+    position: relative; }
+  section.about-advisors .advisor-card i {
+    visibility: hidden;
+    position: absolute;
+    left: -24px;
+    top: 3px; }
+  section.about-advisors .advisor-card:hover i {
+    visibility: visible;
+    color: #126efd; }
   section.about-advisors h2 {
     font-size: 38px;
     font-weight: 300;

@@ -3,6 +3,11 @@ section.about-advisors {
     background-color: #1c1c1c;
     position: relative;
 
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
     .container-advisors {
         padding-top: 100px;
         padding-left: 32px;
@@ -11,6 +16,20 @@ section.about-advisors {
     .advisor-card {
         text-transform: uppercase;
         margin-bottom: 80px;
+        display: block;
+        position: relative;
+    }
+
+    .advisor-card i {
+        visibility: hidden;
+        position: absolute;
+        left: -24px;
+        top: 3px;
+    }
+
+    .advisor-card:hover i {
+        visibility: visible;
+        color: #126efd;
     }
 
     h2 {
