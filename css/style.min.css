@@ -616,7 +616,8 @@ section.where-to-buy {
 
 section.about-advisors {
   background-color: #1c1c1c;
-  position: relative; }
+  position: relative;
+  height: unset; }
   section.about-advisors a {
     color: inherit;
     text-decoration: none; }
@@ -625,7 +626,7 @@ section.about-advisors {
     padding-left: 32px; }
   section.about-advisors .advisor-card {
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 88px;
     display: block;
     position: relative; }
   section.about-advisors .advisor-card i {

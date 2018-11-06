@@ -2,6 +2,7 @@
 section.about-advisors {
     background-color: #1c1c1c;
     position: relative;
+    height: unset;
 
     a {
         color: inherit;
@@ -15,7 +16,7 @@ section.about-advisors {
 
     .advisor-card {
         text-transform: uppercase;
-        margin-bottom: 80px;
+        margin-bottom: 88px;
         display: block;
         position: relative;
     }
