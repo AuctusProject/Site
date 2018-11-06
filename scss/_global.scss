@@ -50,3 +50,12 @@ a:hover{
     -ms-filter: fliph; /*IE*/
     filter: fliph; /*IE*/
 }
+
+.border-bar {
+    height: 12px;
+    width: 480px;
+    margin-left: -240px;
+    background-image: linear-gradient(to left, #07d1ff, #126efd);
+    position: absolute;
+    left: 50%;
+}
