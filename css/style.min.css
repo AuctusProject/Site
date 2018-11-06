@@ -760,9 +760,9 @@ section.where-to-buy {
 /* line 2, ../scss/_about-masthead.scss */
 header.about-masthead {
   width: 100%;
-  height: 110%;
+  height: 100%;
   background-size: cover;
-  background-image: url(/img/masthead/background.jpg);
+  background-image: url(/img/about/background.jpg);
   background-repeat: no-repeat; }
   /* line 9, ../scss/_about-masthead.scss */
   header.about-masthead .top-menu {
@@ -793,28 +793,25 @@ header.about-masthead {
   header.about-masthead .container {
     width: 100%;
     height: 100%;
-    padding-top: 15%;
     position: relative; }
-    /* line 51, ../scss/_about-masthead.scss */
+    /* line 50, ../scss/_about-masthead.scss */
     header.about-masthead .container .center-panel {
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%); }
-      /* line 57, ../scss/_about-masthead.scss */
+      margin: auto;
+      width: 80%; }
+      /* line 54, ../scss/_about-masthead.scss */
       header.about-masthead .container .center-panel img {
-        margin: 60px; }
-      /* line 61, ../scss/_about-masthead.scss */
+        margin: 70px auto 20% auto;
+        zoom: 0.7; }
+      /* line 59, ../scss/_about-masthead.scss */
       header.about-masthead .container .center-panel span {
-        font-size: 22px;
-        margin: auto; }
-  /* line 68, ../scss/_about-masthead.scss */
+        font-size: 22px; }
+  /* line 65, ../scss/_about-masthead.scss */
   header.about-masthead .connection-line {
     z-index: 10;
     position: relative; }
-    /* line 72, ../scss/_about-masthead.scss */
+    /* line 69, ../scss/_about-masthead.scss */
     header.about-masthead .connection-line div {
-      margin: -120px auto;
+      margin: -90px auto;
       background-color: white;
       height: 180px;
       width: 1px; }
