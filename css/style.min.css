@@ -409,6 +409,15 @@ a:hover {
   filter: fliph;
   /*IE*/ }
 
+/* line 54, ../scss/_global.scss */
+.border-bar {
+  height: 12px;
+  width: 480px;
+  margin-left: -240px;
+  background-image: linear-gradient(to left, #07d1ff, #126efd);
+  position: absolute;
+  left: 50%; }
+
 /* line 2, ../scss/_masthead.scss */
 header.masthead {
   width: 100%;
@@ -543,17 +552,9 @@ section.roadmap {
   background-color: #141414;
   position: relative; }
   /* line 5, ../scss/_roadmap.scss */
-  section.roadmap .border-bar {
-    height: 12px;
-    width: 480px;
-    margin-left: -240px;
-    background-image: linear-gradient(to left, #07d1ff, #126efd);
-    position: absolute;
-    left: 50%; }
-  /* line 14, ../scss/_roadmap.scss */
   section.roadmap .container-roadmap {
     padding-top: 152px; }
-  /* line 18, ../scss/_roadmap.scss */
+  /* line 9, ../scss/_roadmap.scss */
   section.roadmap h2 {
     font-size: 37.5px;
     font-weight: 600;
@@ -561,30 +562,30 @@ section.roadmap {
     letter-spacing: 0.9px;
     text-align: center;
     color: #ffffff; }
-  /* line 27, ../scss/_roadmap.scss */
+  /* line 18, ../scss/_roadmap.scss */
   section.roadmap .arrow {
     width: 35px;
     height: 7px;
     background-size: cover;
     background-image: url(/img/global/arrow.png);
     background-repeat: no-repeat; }
-  /* line 35, ../scss/_roadmap.scss */
+  /* line 26, ../scss/_roadmap.scss */
   section.roadmap .year-selecion {
     text-align: center;
     padding: 70px;
     cursor: pointer;
     margin-bottom: 80px; }
-    /* line 41, ../scss/_roadmap.scss */
+    /* line 32, ../scss/_roadmap.scss */
     section.roadmap .year-selecion div {
       display: inline-block;
       margin-left: 40px;
       margin-right: 40px; }
-    /* line 47, ../scss/_roadmap.scss */
+    /* line 38, ../scss/_roadmap.scss */
     section.roadmap .year-selecion .year {
       font-size: 22px;
       font-weight: 300;
       transition: all 0.5s; }
-    /* line 53, ../scss/_roadmap.scss */
+    /* line 44, ../scss/_roadmap.scss */
     section.roadmap .year-selecion .highlighted {
       font-size: 33.5px;
       font-weight: bold;
@@ -592,7 +593,7 @@ section.roadmap {
       margin-left: 60px;
       margin-right: 60px;
       transition: all 0.5s; }
-    /* line 62, ../scss/_roadmap.scss */
+    /* line 53, ../scss/_roadmap.scss */
     section.roadmap .year-selecion .highlighted:before {
       content: "";
       position: absolute;
@@ -601,7 +602,7 @@ section.roadmap {
       height: 1px;
       width: 50%;
       border-bottom: 4px solid #126efd; }
-  /* line 73, ../scss/_roadmap.scss */
+  /* line 64, ../scss/_roadmap.scss */
   section.roadmap .timeline-past {
     position: absolute;
     width: 100%;
@@ -610,7 +611,7 @@ section.roadmap {
     border-top: solid 2px #b7b7b7;
     border-bottom: solid 1px #b7b7b7;
     background-color: #b7b7b7; }
-  /* line 83, ../scss/_roadmap.scss */
+  /* line 74, ../scss/_roadmap.scss */
   section.roadmap .timeline-future {
     position: absolute;
     width: 100%;
@@ -618,23 +619,23 @@ section.roadmap {
     background-color: #737373;
     margin-top: 1px;
     border-top: 1px solid #141414; }
-  /* line 92, ../scss/_roadmap.scss */
+  /* line 83, ../scss/_roadmap.scss */
   section.roadmap .reset {
     left: 0%;
     right: 0%; }
-  /* line 97, ../scss/_roadmap.scss */
+  /* line 88, ../scss/_roadmap.scss */
   section.roadmap .first {
     left: 20%; }
-  /* line 101, ../scss/_roadmap.scss */
+  /* line 92, ../scss/_roadmap.scss */
   section.roadmap .second {
     left: 40%; }
-  /* line 105, ../scss/_roadmap.scss */
+  /* line 96, ../scss/_roadmap.scss */
   section.roadmap .third {
     left: 60%; }
-  /* line 109, ../scss/_roadmap.scss */
+  /* line 100, ../scss/_roadmap.scss */
   section.roadmap .fourth {
     left: 80%; }
-  /* line 113, ../scss/_roadmap.scss */
+  /* line 104, ../scss/_roadmap.scss */
   section.roadmap .quarter {
     position: absolute;
     width: 3px;
@@ -643,7 +644,7 @@ section.roadmap {
     border-left: solid 2px #cccccc;
     border-right: solid 1px #cccccc;
     background-color: #cccccc; }
-    /* line 122, ../scss/_roadmap.scss */
+    /* line 113, ../scss/_roadmap.scss */
     section.roadmap .quarter span {
       position: absolute;
       top: -40px;
@@ -652,7 +653,7 @@ section.roadmap {
       font-size: 22px;
       font-weight: 500;
       font-style: italic; }
-    /* line 132, ../scss/_roadmap.scss */
+    /* line 123, ../scss/_roadmap.scss */
     section.roadmap .quarter ul {
       position: absolute;
       top: 54px;
@@ -660,17 +661,17 @@ section.roadmap {
       width: 218px;
       font-size: 13px;
       font-weight: 300; }
-  /* line 142, ../scss/_roadmap.scss */
+  /* line 133, ../scss/_roadmap.scss */
   section.roadmap .half {
     height: 18px;
     margin-left: 10%;
     margin-top: -8px; }
-  /* line 148, ../scss/_roadmap.scss */
+  /* line 139, ../scss/_roadmap.scss */
   section.roadmap .future {
     width: 1px;
     background-color: #737373;
     border: none; }
-    /* line 153, ../scss/_roadmap.scss */
+    /* line 144, ../scss/_roadmap.scss */
     section.roadmap .future span, section.roadmap .future ul {
       color: #595959; }
 
@@ -756,6 +757,52 @@ section.where-to-buy {
     /* line 19, ../scss/_where-to-buy.scss */
     section.where-to-buy .exchanges a {
       align-self: flex-end; }
+
+/* line 2, ../scss/_about-advisors.scss */
+section.about-advisors {
+  background-color: #1c1c1c;
+  position: relative;
+  height: unset; }
+  /* line 7, ../scss/_about-advisors.scss */
+  section.about-advisors a {
+    color: inherit;
+    text-decoration: none; }
+  /* line 12, ../scss/_about-advisors.scss */
+  section.about-advisors .container-advisors {
+    padding-top: 100px;
+    padding-left: 32px; }
+  /* line 17, ../scss/_about-advisors.scss */
+  section.about-advisors .advisor-card {
+    text-transform: uppercase;
+    margin-bottom: 88px;
+    display: block;
+    position: relative; }
+  /* line 24, ../scss/_about-advisors.scss */
+  section.about-advisors .advisor-card i {
+    visibility: hidden;
+    position: absolute;
+    left: -24px;
+    top: 3px; }
+  /* line 31, ../scss/_about-advisors.scss */
+  section.about-advisors .advisor-card:hover i {
+    visibility: visible;
+    color: #126efd; }
+  /* line 36, ../scss/_about-advisors.scss */
+  section.about-advisors h2 {
+    font-size: 38px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.63;
+    letter-spacing: 2.7px; }
+  /* line 45, ../scss/_about-advisors.scss */
+  section.about-advisors h5 {
+    font-size: 17.5px;
+    font-weight: 600; }
+  /* line 50, ../scss/_about-advisors.scss */
+  section.about-advisors span {
+    font-size: 14px;
+    font-weight: 300; }
 
 /* line 2, ../scss/_about-masthead.scss */
 header.about-masthead {
