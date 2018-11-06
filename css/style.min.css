@@ -484,13 +484,15 @@ section.roadmap {
       margin-right: 40px; }
     section.roadmap .year-selecion .year {
       font-size: 22px;
-      font-weight: 300; }
+      font-weight: 300;
+      transition: all 0.5s; }
     section.roadmap .year-selecion .highlighted {
       font-size: 33.5px;
       font-weight: bold;
       position: relative;
       margin-left: 60px;
-      margin-right: 60px; }
+      margin-right: 60px;
+      transition: all 0.5s; }
     section.roadmap .year-selecion .highlighted:before {
       content: "";
       position: absolute;
