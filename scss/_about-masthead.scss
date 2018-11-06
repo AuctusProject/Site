@@ -2,9 +2,10 @@
 header.about-masthead {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background: #161618;
     background-image: url(/img/about/background.jpg);
     background-repeat: no-repeat;
+    background-position: center;
 
     .top-menu {
         position: absolute;
@@ -49,27 +50,31 @@ header.about-masthead {
 
         .center-panel {
             margin: auto;
-            width: 80%;
+            width: 70%;
+            max-width: 560px;
 
             img {
-                margin: 70px auto 20% auto;
+                margin: 70px auto 30% auto;
                 zoom: 0.7;
             }
 
             span {
-                font-size: 22px;
+                font-size: 18px;
             }
         }
     }
 
     .connection-line {
         z-index: 10;
-        position: relative;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin-left: -15px;
 
         div {
-            margin: -90px auto;
+            margin: 5% auto;
             background-color: white;
-            height: 180px;
+            height: 90px;
             width: 1px;
         }
     }

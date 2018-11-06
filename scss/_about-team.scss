@@ -1,3 +1,64 @@
 
 section.about-team {
+    background: #161618;
+
+    h2 {
+        font-family: Gilroy-Medium;
+    }
+
+    .photo-grid {
+        padding-top: 50px;
+        word-spacing: -6px;
+        line-height: 0;
+        text-align: center;
+
+        .photo {
+            position: relative;
+            text-align:left;
+            word-spacing: normal;
+            background-image: url(../img/about/portrait1.png);
+            width: 230px;
+            height: 230px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            .black-panel {
+                background: black;
+                opacity: 0.8;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .link-box {
+                position: absolute;
+                font-size: 13px;
+                text-align: left;
+                bottom: 25px;
+                left: 25px;
+
+                span {
+                    font-family:Gilroy-Medium;
+                    font-size:13px;
+                    margin-right: 15px;
+                }
+            }
+
+            .link-box:after {
+                content: '';
+                position: absolute;
+                width: 44px;
+                height: 2px;
+                background: #126efd;
+                left: 0;
+                top: 15px;
+            }
+        }
+
+        .photo.active {
+        }
+    }
 }

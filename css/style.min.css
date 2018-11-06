@@ -761,57 +761,116 @@ section.where-to-buy {
 header.about-masthead {
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background: #161618;
   background-image: url(/img/about/background.jpg);
-  background-repeat: no-repeat; }
-  /* line 9, ../scss/_about-masthead.scss */
+  background-repeat: no-repeat;
+  background-position: center; }
+  /* line 10, ../scss/_about-masthead.scss */
   header.about-masthead .top-menu {
     position: absolute;
     width: 100%;
     top: 30px;
     padding: 0 90px; }
-    /* line 15, ../scss/_about-masthead.scss */
+    /* line 16, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu div {
       display: inline-block; }
-    /* line 20, ../scss/_about-masthead.scss */
+    /* line 21, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div {
       padding: 10px 20px; }
-    /* line 24, ../scss/_about-masthead.scss */
+    /* line 25, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 30, ../scss/_about-masthead.scss */
+    /* line 31, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
-    /* line 36, ../scss/_about-masthead.scss */
+    /* line 37, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu a {
       color: white; }
-    /* line 40, ../scss/_about-masthead.scss */
+    /* line 41, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 45, ../scss/_about-masthead.scss */
+  /* line 46, ../scss/_about-masthead.scss */
   header.about-masthead .container {
     width: 100%;
     height: 100%;
     position: relative; }
-    /* line 50, ../scss/_about-masthead.scss */
+    /* line 51, ../scss/_about-masthead.scss */
     header.about-masthead .container .center-panel {
       margin: auto;
-      width: 80%; }
-      /* line 54, ../scss/_about-masthead.scss */
+      width: 70%;
+      max-width: 560px; }
+      /* line 56, ../scss/_about-masthead.scss */
       header.about-masthead .container .center-panel img {
-        margin: 70px auto 20% auto;
+        margin: 70px auto 30% auto;
         zoom: 0.7; }
-      /* line 59, ../scss/_about-masthead.scss */
+      /* line 61, ../scss/_about-masthead.scss */
       header.about-masthead .container .center-panel span {
-        font-size: 22px; }
-  /* line 65, ../scss/_about-masthead.scss */
+        font-size: 18px; }
+  /* line 67, ../scss/_about-masthead.scss */
   header.about-masthead .connection-line {
     z-index: 10;
-    position: relative; }
-    /* line 69, ../scss/_about-masthead.scss */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: -15px; }
+    /* line 74, ../scss/_about-masthead.scss */
     header.about-masthead .connection-line div {
-      margin: -90px auto;
+      margin: 5% auto;
       background-color: white;
-      height: 180px;
+      height: 90px;
       width: 1px; }
+
+/* line 2, ../scss/_about-team.scss */
+section.about-team {
+  background: #161618; }
+  /* line 5, ../scss/_about-team.scss */
+  section.about-team h2 {
+    font-family: Gilroy-Medium; }
+  /* line 9, ../scss/_about-team.scss */
+  section.about-team .photo-grid {
+    padding-top: 50px;
+    word-spacing: -6px;
+    line-height: 0;
+    text-align: center; }
+    /* line 15, ../scss/_about-team.scss */
+    section.about-team .photo-grid .photo {
+      position: relative;
+      text-align: left;
+      word-spacing: normal;
+      background-image: url(../img/about/portrait1.png);
+      width: 230px;
+      height: 230px;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      /* line 26, ../scss/_about-team.scss */
+      section.about-team .photo-grid .photo .black-panel {
+        background: black;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+      /* line 36, ../scss/_about-team.scss */
+      section.about-team .photo-grid .photo .link-box {
+        position: absolute;
+        font-size: 13px;
+        text-align: left;
+        bottom: 25px;
+        left: 25px; }
+        /* line 43, ../scss/_about-team.scss */
+        section.about-team .photo-grid .photo .link-box span {
+          font-family: Gilroy-Medium;
+          font-size: 13px;
+          margin-right: 15px; }
+      /* line 50, ../scss/_about-team.scss */
+      section.about-team .photo-grid .photo .link-box:after {
+        content: '';
+        position: absolute;
+        width: 44px;
+        height: 2px;
+        background: #126efd;
+        left: 0;
+        top: 15px; }
