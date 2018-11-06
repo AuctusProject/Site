@@ -1,12 +1,12 @@
-/* line 1, ../scss/_about-experts.scss */
-section.about-experts {
+/* line 1, ../scss/_experts.scss */
+section.experts {
   background: #141414; }
-  /* line 4, ../scss/_about-experts.scss */
-  section.about-experts .quote {
+  /* line 4, ../scss/_experts.scss */
+  section.experts .quote {
     position: absolute;
     width: 100%; }
-    /* line 8, ../scss/_about-experts.scss */
-    section.about-experts .quote .dots:before {
+    /* line 8, ../scss/_experts.scss */
+    section.experts .quote .dots:before {
       content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
       display: block;
       font-size: 26px;
@@ -21,15 +21,15 @@ section.about-experts {
       left: -78px;
       line-height: 45px;
       z-index: 20; }
-    /* line 25, ../scss/_about-experts.scss */
-    section.about-experts .quote hr {
+    /* line 25, ../scss/_experts.scss */
+    section.experts .quote hr {
       position: absolute;
       top: 130px;
       left: -110px;
       border-top: solid 1px #156eff;
       width: 150px; }
-    /* line 33, ../scss/_about-experts.scss */
-    section.about-experts .quote span {
+    /* line 33, ../scss/_experts.scss */
+    section.experts .quote span {
       font-family: Gilroy-LightItalic;
       font-size: 26px;
       line-height: 34px;
@@ -37,8 +37,8 @@ section.about-experts {
       position: absolute;
       top: 87px;
       left: 65px; }
-  /* line 44, ../scss/_about-experts.scss */
-  section.about-experts .blue-box-container {
+  /* line 44, ../scss/_experts.scss */
+  section.experts .blue-box-container {
     position: absolute;
     bottom: 10%;
     flex-direction: row;
@@ -48,13 +48,13 @@ section.about-experts {
     place-content: center space-between;
     align-items: center;
     width: calc(100% - 30px); }
-    /* line 55, ../scss/_about-experts.scss */
-    section.about-experts .blue-box-container .blue-box {
+    /* line 55, ../scss/_experts.scss */
+    section.experts .blue-box-container .blue-box {
       width: 530px;
       height: 240px;
       position: relative; }
-      /* line 60, ../scss/_about-experts.scss */
-      section.about-experts .blue-box-container .blue-box .blue-panel {
+      /* line 60, ../scss/_experts.scss */
+      section.experts .blue-box-container .blue-box .blue-panel {
         display: table;
         background: #126efd;
         position: absolute;
@@ -64,35 +64,35 @@ section.about-experts {
         left: 0;
         padding: 0px 60px;
         transition: 0.5s all; }
-        /* line 71, ../scss/_about-experts.scss */
-        section.about-experts .blue-box-container .blue-box .blue-panel > div {
+        /* line 71, ../scss/_experts.scss */
+        section.experts .blue-box-container .blue-box .blue-panel > div {
           display: table-cell;
           vertical-align: middle; }
-          /* line 75, ../scss/_about-experts.scss */
-          section.about-experts .blue-box-container .blue-box .blue-panel > div > * {
+          /* line 75, ../scss/_experts.scss */
+          section.experts .blue-box-container .blue-box .blue-panel > div > * {
             position: relative; }
-          /* line 79, ../scss/_about-experts.scss */
-          section.about-experts .blue-box-container .blue-box .blue-panel > div > * + * {
+          /* line 79, ../scss/_experts.scss */
+          section.experts .blue-box-container .blue-box .blue-panel > div > * + * {
             margin-top: 24px; }
-        /* line 84, ../scss/_about-experts.scss */
-        section.about-experts .blue-box-container .blue-box .blue-panel h3 {
+        /* line 84, ../scss/_experts.scss */
+        section.experts .blue-box-container .blue-box .blue-panel h3 {
           font-family: Gilroy-Bold; }
-        /* line 88, ../scss/_about-experts.scss */
-        section.about-experts .blue-box-container .blue-box .blue-panel span {
+        /* line 88, ../scss/_experts.scss */
+        section.experts .blue-box-container .blue-box .blue-panel span {
           font-size: 18px;
           letter-spacing: 0.5px; }
-        /* line 93, ../scss/_about-experts.scss */
-        section.about-experts .blue-box-container .blue-box .blue-panel .link-box {
+        /* line 93, ../scss/_experts.scss */
+        section.experts .blue-box-container .blue-box .blue-panel .link-box {
           position: relative; }
-          /* line 96, ../scss/_about-experts.scss */
-          section.about-experts .blue-box-container .blue-box .blue-panel .link-box span {
+          /* line 96, ../scss/_experts.scss */
+          section.experts .blue-box-container .blue-box .blue-panel .link-box span {
             font-size: 12px;
             letter-spacing: 2.4px; }
-          /* line 101, ../scss/_about-experts.scss */
-          section.about-experts .blue-box-container .blue-box .blue-panel .link-box img {
+          /* line 101, ../scss/_experts.scss */
+          section.experts .blue-box-container .blue-box .blue-panel .link-box img {
             margin-left: 20px; }
-        /* line 106, ../scss/_about-experts.scss */
-        section.about-experts .blue-box-container .blue-box .blue-panel .link-box::after {
+        /* line 106, ../scss/_experts.scss */
+        section.experts .blue-box-container .blue-box .blue-panel .link-box::after {
           content: '';
           position: absolute;
           width: 44px;
@@ -100,14 +100,14 @@ section.about-experts {
           background: white;
           left: 0;
           top: 30px; }
-      /* line 117, ../scss/_about-experts.scss */
-      section.about-experts .blue-box-container .blue-box .blue-panel:hover {
+      /* line 117, ../scss/_experts.scss */
+      section.experts .blue-box-container .blue-box .blue-panel:hover {
         opacity: 0.85; }
-    /* line 123, ../scss/_about-experts.scss */
-    section.about-experts .blue-box-container .blue-box.follow {
+    /* line 123, ../scss/_experts.scss */
+    section.experts .blue-box-container .blue-box.follow {
       background-image: url(/img/about-experts/followthebest.jpg); }
-    /* line 127, ../scss/_about-experts.scss */
-    section.about-experts .blue-box-container .blue-box.powerful {
+    /* line 127, ../scss/_experts.scss */
+    section.experts .blue-box-container .blue-box.powerful {
       background-image: url(/img/about-experts/powerfulanalytics.jpg); }
 
 /* line 1, ../scss/_blog.scss */
@@ -285,60 +285,17 @@ section.features {
 @font-face {
   font-family: 'Gilroy-Bold';
   src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype"); }
-/* line 3, ../scss/_footer.scss */
-section.subscribe {
-  background: linear-gradient(to left, #22a0fa, #0f64f4);
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-  margin-top: 100px; }
-  /* line 9, ../scss/_footer.scss */
-  section.subscribe p {
-    margin: auto;
-    margin-bottom: 15px;
-    font-size: 28px;
-    letter-spacing: 1.1px;
-    text-align: center;
-    color: white; }
-  /* line 18, ../scss/_footer.scss */
-  section.subscribe .input-group > div {
-    margin: auto; }
-  /* line 22, ../scss/_footer.scss */
-  section.subscribe input, section.subscribe input:focus {
-    margin: 5px;
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 0.25rem !important; }
-  /* line 30, ../scss/_footer.scss */
-  section.subscribe input::placeholder {
-    color: white; }
-  /* line 34, ../scss/_footer.scss */
-  section.subscribe input:-ms-input-placeholder {
-    color: white; }
-  /* line 38, ../scss/_footer.scss */
-  section.subscribe input::-ms-input-placeholder {
-    color: white; }
-  /* line 42, ../scss/_footer.scss */
-  section.subscribe .input-group-btn {
-    margin: 5px 5px 0 5px; }
-  /* line 46, ../scss/_footer.scss */
-  section.subscribe button {
-    border-radius: 0.25rem !important; }
-
-/* line 51, ../scss/_footer.scss */
+/* line 2, ../scss/_footer.scss */
 footer {
   position: relative;
-  padding-top: 200px;
-  margin-top: -200px;
-  z-index: -5;
   color: #3f3f3f; }
-  /* line 57, ../scss/_footer.scss */
+  /* line 5, ../scss/_footer.scss */
   footer .navigation-icons {
     padding-top: 40px; }
-    /* line 60, ../scss/_footer.scss */
+    /* line 8, ../scss/_footer.scss */
     footer .navigation-icons a {
       text-decoration: unset; }
-      /* line 63, ../scss/_footer.scss */
+      /* line 11, ../scss/_footer.scss */
       footer .navigation-icons a i {
         font-size: 25px;
         border: 2px solid #626669;
@@ -349,53 +306,53 @@ footer {
         margin: 3px;
         color: #626669; }
   @media (max-width: 768px) {
-    /* line 77, ../scss/_footer.scss */
+    /* line 25, ../scss/_footer.scss */
     footer .navigation-icons {
       margin-top: 20px; } }
   @media (max-width: 768px) {
-    /* line 83, ../scss/_footer.scss */
+    /* line 31, ../scss/_footer.scss */
     footer .logo {
       text-align: center; } }
-  /* line 90, ../scss/_footer.scss */
+  /* line 38, ../scss/_footer.scss */
   footer .separator {
     border-top: 2px solid #282828;
     margin: 15px -15px; }
-  /* line 95, ../scss/_footer.scss */
+  /* line 43, ../scss/_footer.scss */
   footer .legal-container {
     font-size: 0.9rem;
     color: #828282;
     padding-left: 25px;
     padding-right: 25px; }
-    /* line 101, ../scss/_footer.scss */
+    /* line 49, ../scss/_footer.scss */
     footer .legal-container a {
       color: #828282 !important;
       text-decoration: underline !important;
       font-weight: bold; }
     @media (min-width: 991px) {
-      /* line 107, ../scss/_footer.scss */
+      /* line 55, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-left: 10px; } }
     @media (max-width: 991px) {
-      /* line 107, ../scss/_footer.scss */
+      /* line 55, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-top: 25px; } }
-  /* line 118, ../scss/_footer.scss */
+  /* line 66, ../scss/_footer.scss */
   footer .association-box {
     padding-top: 10px;
     margin: 10px 35px; }
     @media (max-width: 490px) {
-      /* line 118, ../scss/_footer.scss */
+      /* line 66, ../scss/_footer.scss */
       footer .association-box {
         margin: 10px; } }
-    /* line 126, ../scss/_footer.scss */
+    /* line 74, ../scss/_footer.scss */
     footer .association-box img {
       max-height: 105px; }
-    /* line 130, ../scss/_footer.scss */
+    /* line 78, ../scss/_footer.scss */
     footer .association-box img:last-child {
       -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
       filter: grayscale(100%); }
-  /* line 136, ../scss/_footer.scss */
+  /* line 84, ../scss/_footer.scss */
   footer .copyright {
     margin: 15px -15px;
     text-align: center; }
@@ -409,39 +366,39 @@ body {
   color: white;
   overflow-x: hidden; }
 
-/* line 10, ../scss/_global.scss */
+/* line 11, ../scss/_global.scss */
 a {
   cursor: pointer; }
 
-/* line 13, ../scss/_global.scss */
+/* line 15, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 16, ../scss/_global.scss */
+/* line 18, ../scss/_global.scss */
 .container {
   height: 100%; }
 
-/* line 19, ../scss/_global.scss */
+/* line 21, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 23, ../scss/_global.scss */
+/* line 25, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 28, ../scss/_global.scss */
+  /* line 30, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 34, ../scss/_global.scss */
+  /* line 36, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 39, ../scss/_global.scss */
+/* line 41, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 43, ../scss/_global.scss */
+/* line 45, ../scss/_global.scss */
 .invert-horizontally {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -785,3 +742,65 @@ section.where-to-buy {
     /* line 19, ../scss/_where-to-buy.scss */
     section.where-to-buy .exchanges a {
       align-self: flex-end; }
+
+/* line 2, ../scss/_about-masthead.scss */
+header.about-masthead {
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-image: url(/img/masthead/background.jpg);
+  background-repeat: no-repeat; }
+  /* line 9, ../scss/_about-masthead.scss */
+  header.about-masthead .top-menu {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    padding: 0 90px; }
+    /* line 15, ../scss/_about-masthead.scss */
+    header.about-masthead .top-menu div {
+      display: inline-block; }
+    /* line 20, ../scss/_about-masthead.scss */
+    header.about-masthead .top-menu > div:first-child div {
+      padding: 10px 20px; }
+    /* line 24, ../scss/_about-masthead.scss */
+    header.about-masthead .top-menu > div:first-child div.active {
+      border-bottom: 2px solid #126efd; }
+    /* line 30, ../scss/_about-masthead.scss */
+    header.about-masthead .top-menu > div:last-child div {
+      font-size: 20px;
+      padding: 10px; }
+    /* line 36, ../scss/_about-masthead.scss */
+    header.about-masthead .top-menu a {
+      color: white; }
+    /* line 40, ../scss/_about-masthead.scss */
+    header.about-masthead .top-menu i {
+      color: #b7b7b7; }
+  /* line 45, ../scss/_about-masthead.scss */
+  header.about-masthead .container {
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+    position: relative; }
+    /* line 51, ../scss/_about-masthead.scss */
+    header.about-masthead .container .center-panel {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%); }
+      /* line 57, ../scss/_about-masthead.scss */
+      header.about-masthead .container .center-panel img {
+        margin: 60px; }
+      /* line 61, ../scss/_about-masthead.scss */
+      header.about-masthead .container .center-panel span {
+        font-size: 22px;
+        margin: auto; }
+  /* line 68, ../scss/_about-masthead.scss */
+  header.about-masthead .connection-line {
+    z-index: 10;
+    position: relative; }
+    /* line 72, ../scss/_about-masthead.scss */
+    header.about-masthead .connection-line div {
+      margin: -120px auto;
+      background-color: white;
+      height: 180px;
+      width: 1px; }

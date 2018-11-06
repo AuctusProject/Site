@@ -142,25 +142,27 @@
 }
     .slick-dots li button:before {
         font-family: 'slick';
-        font-size: 26px;
+        font-size: 15px;
         line-height: 20px;
         position: absolute;
         top: 0;
         left: 0;
         width: 20px;
         height: 20px;
-        content: '•';
+        content: '▲';
         text-align: center;
         opacity: .25;
         color: black;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        transition: all .5s
+        transition: all .5s;
+        -webkit-transform: rotate(90deg);
     }
 
     .slick-dots li.slick-active button:before {
         opacity: 1;
         color: #156eff !important;
-        font-size: 50px !important;
-        transition: all .5s
+        font-size: 20px !important;
+        transition: all .5s;
+        -webkit-transform: rotate(0deg);
     }
