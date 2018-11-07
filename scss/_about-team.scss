@@ -14,7 +14,7 @@ section.about-team {
 
         .photo {
             position: relative;
-            text-align:left ;
+            text-align: left;
             word-spacing: normal;
             background-image: url(../img/about/portrait1.png);
             width: 230px;
@@ -22,16 +22,35 @@ section.about-team {
             display: inline-block;
             background-size: contain;
             background-repeat: no-repeat;
+            padding: 15px 25px;
+
+            .hiddeable {
+                opacity: 0;
+                transition: all 0.3s;
+            }
+
+            .hiddeable:hover {
+                opacity: 1;
+            }
+
+            h4 {
+                font-family: Gilroy-Bold;
+            }
+
+            h4, h5 {
+                position: relative;
+            }
 
             .black-panel {
                 background: black;
-                opacity: 0.8;
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
+                opacity:0.8;
             }
+
 
             .link-box {
                 position: absolute;
@@ -41,8 +60,8 @@ section.about-team {
                 left: 25px;
 
                 span {
-                    font-family:Gilroy-Medium;
-                    font-size:13px;
+                    font-family: Gilroy-Medium;
+                    font-size: 13px;
                     margin-right: 15px;
                 }
             }
