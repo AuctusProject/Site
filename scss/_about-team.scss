@@ -1,7 +1,7 @@
 
 section.about-team {
     background: #161618;
-
+    height:unset;
     h2 {
         font-family: Gilroy-Medium;
     }
@@ -12,14 +12,64 @@ section.about-team {
         line-height: 0;
         text-align: center;
 
+        .ariny::before {
+            background-image: url(../img/about/team/ariny.jpg);
+        }
+
+        .boaventura::before {
+            background-image: url(../img/about/team/boaventura.jpg);
+        }
+
+        .duarte::before {
+            background-image: url(../img/about/team/duarte.jpg);
+        }
+
+        .felipe::before {
+            background-image: url(../img/about/team/felipe.jpg);
+        }
+
+        .gusman::before {
+            background-image: url(../img/about/team/gusman.jpg);
+        }
+
+        .ludmila::before {
+            background-image: url(../img/about/team/ludmila.jpg);
+        }
+
+        .raphael::before {
+            background-image: url(../img/about/team/raphael.jpg);
+        }
+
+        .thiago::before {
+            background-image: url(../img/about/team/thiago.jpg);
+        }
+
+        .vinicius::before {
+            background-image: url(../img/about/team/vinicius.jpg);
+        }
+
+        .vitorino::before {
+            background-image: url(../img/about/team/vitorino.jpg);
+        }
+
+        .photo::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            filter: grayscale(85%);
+        }
+
         .photo {
             position: relative;
             text-align: left;
             word-spacing: normal;
-            background-image: url(../img/about/portrait1.png);
             width: 230px;
             height: 230px;
-            display: inline-block;
+            display: inline-flex;
             background-size: contain;
             background-repeat: no-repeat;
             padding: 15px 25px;
@@ -48,9 +98,12 @@ section.about-team {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                opacity:0.8;
+                opacity: 0.8;
             }
 
+            a {
+                color: white;
+            }
 
             .link-box {
                 position: absolute;
