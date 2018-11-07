@@ -1,24 +1,19 @@
-$('.year').click(function (e) {
-    $('.highlighted').removeClass('highlighted');
-    selectYear($(this));
+$(function () {
+    $yearBox = $('.timeline .year-box');
+    totalSize = $yearBox.width() * $yearBox.length + ($yearBox.length - 1) * 4 + 10;
+    $('.roadmap .timeline').width(totalSize);
 });
 
-$('.arrow').click(function (e) {
-    var yearToHighlight = null;
-    if ($(this).hasClass('invert-horizontally')) {
-        yearToHighlight = $('.highlighted').prev('.year');
-    }
-    else {
-        yearToHighlight = $('.highlighted').next('.year');
-    }
-    if (yearToHighlight.length > 0) {
-        selectYear(yearToHighlight);
-    }
+$(document).ready(function () {
+    $('.scrollable').on('mousemove', function (e) {
+        var leftOffset = $(this).offset().left;
+        if (leftOffset < 300) {
+            leftOffset = 300;
+        }
+        if (leftOffset > $('.roadmap .timeline').width() - 300){
+            leftOffset -= 300;
+        }
+        $('.roadmap .timeline').css('left', -e.clientX + leftOffset - 300);       
+    });
 });
 
-function selectYear(selectedYear) {
-    $('.highlighted').removeClass('highlighted');
-    $('.content').hide();
-    selectedYear.addClass('highlighted');
-    $('#content-' + selectedYear[0].id).show();
-}
