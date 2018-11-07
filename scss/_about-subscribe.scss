@@ -1,3 +1,13 @@
 
 section.about-subscribe {
+    background-color: #f7f7f7;
+    position: relative;
+
+    .top-rectangle {
+        height: 30px;
+        width: 60%;
+        background-color: #1c1c1c;
+        position: absolute;
+        left: 0%;
+    }
 }
