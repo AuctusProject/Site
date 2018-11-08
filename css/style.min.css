@@ -566,100 +566,116 @@ section.roadmap {
   section.roadmap .scrollable {
     margin-top: 100px;
     width: 100%;
-    position: relative; }
-  /* line 24, ../scss/_roadmap.scss */
-  section.roadmap .timeline {
-    transition: all 0.5s;
-    position: absolute; }
-    /* line 28, ../scss/_roadmap.scss */
-    section.roadmap .timeline .year-box {
-      display: inline-block;
-      width: 1200px;
-      height: 360px;
-      padding-right: 0.5px;
-      border-right: solid 0.5px #292929; }
-      /* line 35, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box > div {
-        width: 100%; }
-      /* line 39, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box .year-title {
-        height: 60px;
-        padding: 0 23px 0 10px; }
-        /* line 43, ../scss/_roadmap.scss */
-        section.roadmap .timeline .year-box .year-title h2 {
-          text-align: left;
-          font-family: Gilroy-Medium;
-          font-style: italic;
-          font-size: 45px;
-          color: #242424; }
-      /* line 52, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box .quarter-titles {
-        height: 105px;
-        border-bottom: solid 1px #d9d9d9;
+    position: relative;
+    overflow-x: hidden; }
+  /* line 25, ../scss/_roadmap.scss */
+  section.roadmap .scrollable.smooth {
+    scroll-behavior: smooth; }
+  /* line 32, ../scss/_roadmap.scss */
+  section.roadmap .timeline * {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+     supported by Chrome and Opera */ }
+  /* line 42, ../scss/_roadmap.scss */
+  section.roadmap .timeline .year-box {
+    display: inline-block;
+    width: 1200px;
+    height: 360px;
+    padding-right: 0.5px;
+    border-right: solid 0.5px #292929; }
+    /* line 49, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box > div {
+      width: 100%; }
+    /* line 53, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box .year-title {
+      height: 60px;
+      padding: 0 23px 0 10px; }
+      /* line 57, ../scss/_roadmap.scss */
+      section.roadmap .timeline .year-box .year-title h2 {
+        text-align: left;
+        font-family: Gilroy-Medium;
         font-style: italic;
-        padding-top: 25px; }
-        /* line 58, ../scss/_roadmap.scss */
-        section.roadmap .timeline .year-box .quarter-titles h3 {
-          font-family: Gilroy-Medium;
-          font-size: 27px; }
-        /* line 63, ../scss/_roadmap.scss */
-        section.roadmap .timeline .year-box .quarter-titles h5 {
-          font-size: 16px; }
-      /* line 68, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box .current > h3 {
-        border-left: 4px solid #126efd;
-        padding-left: 5px;
-        margin-left: -10px; }
-      /* line 74, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box .quarter-titles.current {
-        background: #1b1b1b; }
-      /* line 78, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box .past * {
-        color: #595959; }
-      /* line 82, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box .q-title {
-        display: inline-block;
+        font-size: 45px;
+        color: #242424; }
+    /* line 66, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box .quarter-titles {
+      height: 105px;
+      border-bottom: solid 1px #d9d9d9;
+      font-style: italic;
+      padding-top: 25px; }
+      /* line 72, ../scss/_roadmap.scss */
+      section.roadmap .timeline .year-box .quarter-titles h3 {
+        font-family: Gilroy-Medium;
+        font-size: 27px; }
+      /* line 77, ../scss/_roadmap.scss */
+      section.roadmap .timeline .year-box .quarter-titles h5 {
+        font-size: 16px; }
+    /* line 82, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box .current > h3 {
+      border-left: 4px solid #126efd;
+      padding-left: 5px;
+      margin-left: -10px; }
+    /* line 88, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box .quarter-titles.current {
+      background: #1b1b1b; }
+    /* line 92, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box .past * {
+      color: #595959; }
+    /* line 96, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box .q-title {
+      display: inline-block;
+      width: 295px;
+      height: calc(100% + 2px);
+      position: relative;
+      border-bottom: solid 4px transparent;
+      padding-left: 7px; }
+      /* line 104, ../scss/_roadmap.scss */
+      section.roadmap .timeline .year-box .q-title .circle {
+        position: absolute;
+        bottom: -7px;
+        left: -9px;
+        height: 10px;
+        width: 10px;
+        background: #141414;
+        border: solid 1px #d9d9d9;
+        border-radius: 50%; }
+    /* line 116, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box .q-title.past {
+      border-bottom: solid 4px #595959; }
+      /* line 119, ../scss/_roadmap.scss */
+      section.roadmap .timeline .year-box .q-title.past .circle {
+        border: solid 1px #595959;
+        background: #595959; }
+    /* line 125, ../scss/_roadmap.scss */
+    section.roadmap .timeline .year-box .quarter-bullets {
+      font-size: 14px; }
+      /* line 129, ../scss/_roadmap.scss */
+      section.roadmap .timeline .year-box .quarter-bullets .q-bullet {
+        padding-top: 25px;
         width: 295px;
-        height: calc(100% + 2px);
-        position: relative;
-        border-bottom: solid 4px transparent; }
-        /* line 89, ../scss/_roadmap.scss */
-        section.roadmap .timeline .year-box .q-title .circle {
-          position: absolute;
-          bottom: -7px;
-          left: -9px;
-          height: 10px;
-          width: 10px;
-          background: #141414;
-          border: solid 1px #d9d9d9;
-          border-radius: 50%; }
-      /* line 101, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box .q-title.past {
-        border-bottom: solid 4px #595959; }
-        /* line 104, ../scss/_roadmap.scss */
-        section.roadmap .timeline .year-box .q-title.past .circle {
-          border: solid 1px #595959;
-          background: #595959; }
-      /* line 110, ../scss/_roadmap.scss */
-      section.roadmap .timeline .year-box .quarter-bullets {
-        font-size: 14px; }
-        /* line 114, ../scss/_roadmap.scss */
-        section.roadmap .timeline .year-box .quarter-bullets .q-bullet {
-          padding-top: 25px;
-          width: 295px;
-          display: inline-flex; }
-          /* line 119, ../scss/_roadmap.scss */
-          section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul {
-            padding-left: 20px; }
-            /* line 122, ../scss/_roadmap.scss */
-            section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li {
-              font-size: 10px; }
-              /* line 125, ../scss/_roadmap.scss */
-              section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li span {
-                font-size: 14px; }
-            /* line 130, ../scss/_roadmap.scss */
-            section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li + li {
-              margin-top: 10px; }
+        display: inline-flex; }
+        /* line 134, ../scss/_roadmap.scss */
+        section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul {
+          padding-left: 20px; }
+          /* line 137, ../scss/_roadmap.scss */
+          section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li {
+            font-size: 10px; }
+            /* line 140, ../scss/_roadmap.scss */
+            section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li span {
+              font-size: 14px; }
+          /* line 145, ../scss/_roadmap.scss */
+          section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li + li {
+            margin-top: 10px; }
 
 /* line 1, ../scss/_token.scss */
 section.token {
