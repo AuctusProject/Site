@@ -1,11 +1,8 @@
-/* line 1, ../scss/_experts.scss */
 section.experts {
   background: #141414; }
-  /* line 4, ../scss/_experts.scss */
   section.experts .quote {
     position: absolute;
     width: 100%; }
-    /* line 8, ../scss/_experts.scss */
     section.experts .quote .dots:before {
       content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
       display: block;
@@ -21,14 +18,12 @@ section.experts {
       left: -78px;
       line-height: 45px;
       z-index: 20; }
-    /* line 25, ../scss/_experts.scss */
     section.experts .quote hr {
       position: absolute;
       top: 130px;
       left: -110px;
       border-top: solid 1px #156eff;
       width: 150px; }
-    /* line 33, ../scss/_experts.scss */
     section.experts .quote span {
       font-family: Gilroy-LightItalic;
       font-size: 26px;
@@ -37,7 +32,6 @@ section.experts {
       position: absolute;
       top: 87px;
       left: 65px; }
-  /* line 44, ../scss/_experts.scss */
   section.experts .blue-box-container {
     position: absolute;
     bottom: 10%;
@@ -48,12 +42,10 @@ section.experts {
     place-content: center space-between;
     align-items: center;
     width: calc(100% - 30px); }
-    /* line 55, ../scss/_experts.scss */
     section.experts .blue-box-container .blue-box {
       width: 530px;
       height: 240px;
       position: relative; }
-      /* line 60, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box .blue-panel {
         display: table;
         background: #126efd;
@@ -64,34 +56,25 @@ section.experts {
         left: 0;
         padding: 0px 60px;
         transition: 0.5s all; }
-        /* line 71, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel > div {
           display: table-cell;
           vertical-align: middle; }
-          /* line 75, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel > div > * {
             position: relative; }
-          /* line 79, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel > div > * + * {
             margin-top: 24px; }
-        /* line 84, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel h3 {
           font-family: Gilroy-Bold; }
-        /* line 88, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel span {
           font-size: 18px;
           letter-spacing: 0.5px; }
-        /* line 93, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel .link-box {
           position: relative; }
-          /* line 96, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel .link-box span {
             font-size: 12px;
             letter-spacing: 2.4px; }
-          /* line 101, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel .link-box img {
             margin-left: 20px; }
-        /* line 106, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel .link-box::after {
           content: '';
           position: absolute;
@@ -100,40 +83,31 @@ section.experts {
           background: white;
           left: 0;
           top: 30px; }
-      /* line 117, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box .blue-panel:hover {
         opacity: 0.85; }
-    /* line 123, ../scss/_experts.scss */
     section.experts .blue-box-container .blue-box.follow {
       background-image: url(/img/about-experts/followthebest.jpg); }
-    /* line 127, ../scss/_experts.scss */
     section.experts .blue-box-container .blue-box.powerful {
       background-image: url(/img/about-experts/powerfulanalytics.jpg); }
 
-/* line 1, ../scss/_blog.scss */
 section.blog {
   background: #1c1c1c;
   padding-top: 72px; }
-  /* line 5, ../scss/_blog.scss */
   section.blog h2 {
     margin: 0 0 50px 110px;
     font-family: Gilroy-Medium;
     font-size: 37px; }
   @media (max-width: 430px) {
-    /* line 12, ../scss/_blog.scss */
     section.blog .slick-prev, section.blog .slick-next {
       display: none !important; } }
-  /* line 17, ../scss/_blog.scss */
   section.blog .news-container {
     width: 100%;
     max-width: 1170px;
     margin: auto;
     margin-bottom: 80px; }
     @media (max-width: 430px) {
-      /* line 17, ../scss/_blog.scss */
       section.blog .news-container {
         width: 100%; } }
-  /* line 28, ../scss/_blog.scss */
   section.blog .news-card {
     width: 370px;
     max-width: 100%;
@@ -143,17 +117,14 @@ section.blog {
     margin: 13px;
     position: relative;
     vertical-align: top; }
-    /* line 38, ../scss/_blog.scss */
     section.blog .news-card .img-div {
       width: 370px;
       height: 200px;
       background-size: cover !important;
       opacity: 0.5; }
-    /* line 45, ../scss/_blog.scss */
     section.blog .news-card .news-card-dots {
       margin-top: 15px;
       width: 104px; }
-    /* line 50, ../scss/_blog.scss */
     section.blog .news-card .news-card-title {
       font-family: Gilroy-Medium;
       font-size: 20px;
@@ -170,7 +141,6 @@ section.blog {
       top: -10px;
       z-index: 5;
       position: relative; }
-    /* line 68, ../scss/_blog.scss */
     section.blog .news-card .news-card-date {
       position: absolute;
       display: block;
@@ -179,91 +149,71 @@ section.blog {
       color: white;
       top: 145px;
       font-size: 12px; }
-    /* line 78, ../scss/_blog.scss */
     section.blog .news-card .read-more {
       margin: 35px;
       font-size: 12px;
       color: white; }
-      /* line 82, ../scss/_blog.scss */
       section.blog .news-card .read-more img {
         margin-left: 30px; }
 
-/* line 1, ../scss/_features.scss */
 section.features {
   position: relative;
   height: 120%; }
-  /* line 7, ../scss/_features.scss */
   section.features .back-panel {
     width: 100%;
     height: 100%;
     display: block;
     position: absolute; }
-    /* line 13, ../scss/_features.scss */
     section.features .back-panel .black {
       width: 100%;
       height: 50%;
       background: linear-gradient(to right, #141414 50%, #1c1c1c 50%); }
-    /* line 19, ../scss/_features.scss */
     section.features .back-panel .white {
       width: 100%;
       height: 50%;
       background: linear-gradient(to right, #f5f5f5 50%, #1c1c1c 50%); }
-  /* line 26, ../scss/_features.scss */
   section.features .feature-img {
     position: absolute;
     top: 0;
     left: 50%; }
-  /* line 32, ../scss/_features.scss */
   section.features .container {
     position: relative;
     background: #1c1c1c;
     padding-left: 100px; }
-    /* line 37, ../scss/_features.scss */
     section.features .container span {
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0.5px; }
-    /* line 43, ../scss/_features.scss */
     section.features .container .latest-features {
       position: absolute;
       top: 70px; }
-      /* line 47, ../scss/_features.scss */
       section.features .container .latest-features > * + * {
         margin-top: 30px; }
-      /* line 51, ../scss/_features.scss */
       section.features .container .latest-features h1 {
         font-size: 48px;
         letter-spacing: 3.4px; }
-      /* line 56, ../scss/_features.scss */
       section.features .container .latest-features .latest-feature-title {
         font-family: Gilroy-Medium; }
-      /* line 60, ../scss/_features.scss */
       section.features .container .latest-features .access {
         cursor: pointer;
         background: #126efd;
         width: 260px;
         padding: 20px 60px; }
-      /* line 67, ../scss/_features.scss */
       section.features .container .latest-features img {
         margin-left: 20px; }
-    /* line 73, ../scss/_features.scss */
     section.features .container .other-features {
       position: absolute;
       bottom: 30px; }
-      /* line 77, ../scss/_features.scss */
       section.features .container .other-features h2 {
         font-size: 30px;
         letter-spacing: 2.1px;
         margin-bottom: 30px; }
-      /* line 83, ../scss/_features.scss */
       section.features .container .other-features ul {
         margin-top: 50px;
         list-style-type: none;
         font-size: 17.5px; }
-        /* line 88, ../scss/_features.scss */
         section.features .container .other-features ul li + li {
           margin-top: 30px; }
-        /* line 92, ../scss/_features.scss */
         section.features .container .other-features ul li:before {
           font-family: 'FontAwesome';
           content: '\f054';
@@ -285,17 +235,13 @@ section.features {
 @font-face {
   font-family: 'Gilroy-Bold';
   src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype"); }
-/* line 2, ../scss/_footer.scss */
 footer {
   position: relative;
   color: #3f3f3f; }
-  /* line 5, ../scss/_footer.scss */
   footer .navigation-icons {
     padding-top: 40px; }
-    /* line 8, ../scss/_footer.scss */
     footer .navigation-icons a {
       text-decoration: unset; }
-      /* line 11, ../scss/_footer.scss */
       footer .navigation-icons a i {
         font-size: 25px;
         border: 2px solid #626669;
@@ -306,58 +252,45 @@ footer {
         margin: 3px;
         color: #626669; }
   @media (max-width: 768px) {
-    /* line 25, ../scss/_footer.scss */
     footer .navigation-icons {
       margin-top: 20px; } }
   @media (max-width: 768px) {
-    /* line 31, ../scss/_footer.scss */
     footer .logo {
       text-align: center; } }
-  /* line 38, ../scss/_footer.scss */
   footer .separator {
     border-top: 2px solid #282828;
     margin: 15px -15px; }
-  /* line 43, ../scss/_footer.scss */
   footer .legal-container {
     font-size: 0.9rem;
     color: #828282;
     padding-left: 25px;
     padding-right: 25px; }
-    /* line 49, ../scss/_footer.scss */
     footer .legal-container a {
       color: #828282 !important;
       text-decoration: underline !important;
       font-weight: bold; }
     @media (min-width: 991px) {
-      /* line 55, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-left: 10px; } }
     @media (max-width: 991px) {
-      /* line 55, ../scss/_footer.scss */
       footer .legal-container .disclaimer {
         margin-top: 25px; } }
-  /* line 66, ../scss/_footer.scss */
   footer .association-box {
     padding-top: 10px;
     margin: 10px 35px; }
     @media (max-width: 490px) {
-      /* line 66, ../scss/_footer.scss */
       footer .association-box {
         margin: 10px; } }
-    /* line 74, ../scss/_footer.scss */
     footer .association-box img {
       max-height: 105px; }
-    /* line 78, ../scss/_footer.scss */
     footer .association-box img:last-child {
       -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
       filter: grayscale(100%); }
-  /* line 84, ../scss/_footer.scss */
   footer .copyright {
     margin: 15px -15px;
     text-align: center; }
 
-/* line 2, ../scss/_global.scss */
 html,
 body {
   width: 100%;
@@ -366,39 +299,30 @@ body {
   color: white;
   overflow-x: hidden; }
 
-/* line 11, ../scss/_global.scss */
 a {
   cursor: pointer; }
 
-/* line 15, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 18, ../scss/_global.scss */
 .container {
   height: 100%; }
 
-/* line 21, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 25, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 30, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 36, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 41, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 45, ../scss/_global.scss */
 .invert-horizontally {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -409,7 +333,6 @@ a:hover {
   filter: fliph;
   /*IE*/ }
 
-/* line 54, ../scss/_global.scss */
 .border-bar {
   height: 12px;
   width: 480px;
@@ -418,81 +341,64 @@ a:hover {
   position: absolute;
   left: 50%; }
 
-/* line 2, ../scss/_masthead.scss */
 header.masthead {
   width: 100%;
   height: 110%;
   background-size: cover;
   background-image: url(/img/masthead/background.jpg);
   background-repeat: no-repeat; }
-  /* line 9, ../scss/_masthead.scss */
   header.masthead .top-menu {
     position: absolute;
     width: 100%;
     top: 30px;
     padding: 0 90px; }
-    /* line 15, ../scss/_masthead.scss */
     header.masthead .top-menu div {
       display: inline-block; }
-    /* line 20, ../scss/_masthead.scss */
     header.masthead .top-menu > div:first-child div {
       padding: 10px 20px; }
-    /* line 24, ../scss/_masthead.scss */
     header.masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 30, ../scss/_masthead.scss */
     header.masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
-    /* line 36, ../scss/_masthead.scss */
     header.masthead .top-menu a {
       color: white; }
-    /* line 40, ../scss/_masthead.scss */
     header.masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 45, ../scss/_masthead.scss */
   header.masthead .container {
     width: 100%;
     height: 100%;
     padding-top: 15%;
     position: relative; }
-    /* line 51, ../scss/_masthead.scss */
     header.masthead .container .center-panel {
       position: absolute;
       top: 25%;
       left: 50%;
       transform: translate(-50%); }
-      /* line 57, ../scss/_masthead.scss */
       header.masthead .container .center-panel img {
         margin: 60px; }
-      /* line 61, ../scss/_masthead.scss */
       header.masthead .container .center-panel span {
         font-size: 22px;
         margin: auto; }
-  /* line 68, ../scss/_masthead.scss */
   header.masthead .connection-line {
     z-index: 10;
     position: relative; }
-    /* line 72, ../scss/_masthead.scss */
     header.masthead .connection-line div {
       margin: -120px auto;
       background-color: white;
       height: 180px;
       width: 1px; }
 
-/* line 1, ../scss/_products.scss */
 section.products {
   width: 100%;
   height: 100%;
   position: relative;
   margin-top: -3%;
   padding-top: 3%; }
-  /* line 8, ../scss/_products.scss */
   section.products .container {
     height: 100%;
     width: 100%;
     background: #141414; }
-  /* line 14, ../scss/_products.scss */
   section.products .black-top-right-block {
     position: absolute;
     width: 60%;
@@ -500,61 +406,47 @@ section.products {
     background: #141414;
     left: 0px;
     top: 2px; }
-  /* line 25, ../scss/_products.scss */
   section.products .product-box {
     max-width: 380px;
     position: absolute;
     line-height: 26px; }
-    /* line 30, ../scss/_products.scss */
     section.products .product-box > * {
       margin-bottom: 32px; }
-    /* line 34, ../scss/_products.scss */
     section.products .product-box h2 {
       font-size: 38px;
       letter-spacing: 2px; }
-  /* line 40, ../scss/_products.scss */
   section.products .product-box.experts {
     top: 25%;
     left: 15%; }
-    /* line 44, ../scss/_products.scss */
     section.products .product-box.experts .learn-more {
       border: 1px solid white;
       padding: 16px 40px 16px 70px;
       width: 300px; }
-      /* line 49, ../scss/_products.scss */
       section.products .product-box.experts .learn-more span {
         font-family: "Gilroy-Medium";
         letter-spacing: 2px; }
-      /* line 54, ../scss/_products.scss */
       section.products .product-box.experts .learn-more img {
         margin-left: 20px; }
-  /* line 60, ../scss/_products.scss */
   section.products .product-box.portfolio {
     top: 38%;
     right: 15%; }
-    /* line 65, ../scss/_products.scss */
     section.products .product-box.portfolio .download span {
       font-family: "Gilroy-Medium";
       letter-spacing: 2px; }
-    /* line 70, ../scss/_products.scss */
     section.products .product-box.portfolio .download img {
       margin-left: 20px;
       margin-top: -5px; }
-    /* line 75, ../scss/_products.scss */
     section.products .product-box.portfolio .download hr {
       border-top-color: white;
       height: 6px;
       width: 120px;
       margin: 12px; }
 
-/* line 1, ../scss/_roadmap.scss */
 section.roadmap {
   background-color: #141414;
   position: relative; }
-  /* line 5, ../scss/_roadmap.scss */
   section.roadmap .container-roadmap {
     padding-top: 90px; }
-  /* line 9, ../scss/_roadmap.scss */
   section.roadmap h2 {
     font-size: 37.5px;
     font-weight: 600;
@@ -562,68 +454,54 @@ section.roadmap {
     letter-spacing: 0.9px;
     text-align: center;
     color: #ffffff; }
-  /* line 18, ../scss/_roadmap.scss */
   section.roadmap .scrollable {
     margin-top: 100px;
     width: 100%;
     position: relative; }
-  /* line 24, ../scss/_roadmap.scss */
   section.roadmap .timeline {
     transition: all 0.5s;
     position: absolute; }
-    /* line 28, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box {
       display: inline-block;
       width: 1200px;
       height: 360px;
       padding-right: 0.5px;
       border-right: solid 0.5px #292929; }
-      /* line 35, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box > div {
         width: 100%; }
-      /* line 39, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .year-title {
         height: 60px;
         padding: 0 23px 0 10px; }
-        /* line 43, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .year-title h2 {
           text-align: left;
           font-family: Gilroy-Medium;
           font-style: italic;
           font-size: 45px;
           color: #242424; }
-      /* line 52, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-titles {
         height: 105px;
         border-bottom: solid 1px #d9d9d9;
         font-style: italic;
         padding-top: 25px; }
-        /* line 58, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .quarter-titles h3 {
           font-family: Gilroy-Medium;
           font-size: 27px; }
-        /* line 63, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .quarter-titles h5 {
           font-size: 16px; }
-      /* line 68, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .current > h3 {
         border-left: 4px solid #126efd;
         padding-left: 5px;
         margin-left: -10px; }
-      /* line 74, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-titles.current {
         background: #1b1b1b; }
-      /* line 78, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .past * {
         color: #595959; }
-      /* line 82, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .q-title {
         display: inline-block;
         width: 295px;
         height: calc(100% + 2px);
         position: relative;
         border-bottom: solid 4px transparent; }
-        /* line 89, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .q-title .circle {
           position: absolute;
           bottom: -7px;
@@ -633,41 +511,31 @@ section.roadmap {
           background: #141414;
           border: solid 1px #d9d9d9;
           border-radius: 50%; }
-      /* line 101, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .q-title.past {
         border-bottom: solid 4px #595959; }
-        /* line 104, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .q-title.past .circle {
           border: solid 1px #595959;
           background: #595959; }
-      /* line 110, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-bullets {
         font-size: 14px; }
-        /* line 114, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .quarter-bullets .q-bullet {
           padding-top: 25px;
           width: 295px;
           display: inline-flex; }
-          /* line 119, ../scss/_roadmap.scss */
           section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul {
             padding-left: 20px; }
-            /* line 122, ../scss/_roadmap.scss */
             section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li {
               font-size: 10px; }
-              /* line 125, ../scss/_roadmap.scss */
               section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li span {
                 font-size: 14px; }
-            /* line 130, ../scss/_roadmap.scss */
             section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li + li {
               margin-top: 10px; }
 
-/* line 1, ../scss/_token.scss */
 section.token {
   background: #f5f5f5;
   color: #383838;
   padding-top: 115px;
   height: unset; }
-  /* line 7, ../scss/_token.scss */
   section.token .gray-block {
     position: absolute;
     width: 70%;
@@ -676,46 +544,35 @@ section.token {
     left: 0;
     margin-top: -115px;
     background: #1c1c1c; }
-  /* line 17, ../scss/_token.scss */
   section.token h1 {
     margin: 0 0 90px 130px;
     font-size: 38px;
     letter-spacing: 2.7px; }
-  /* line 23, ../scss/_token.scss */
   section.token hr {
     position: absolute;
     top: 60px;
     left: -30px;
     border-top: solid 1px #156eff;
     width: 150px; }
-  /* line 31, ../scss/_token.scss */
   section.token .cards-container {
     display: flex;
     justify-content: space-between; }
-    /* line 35, ../scss/_token.scss */
     section.token .cards-container .token-card {
       text-align: center; }
-      /* line 38, ../scss/_token.scss */
       section.token .cards-container .token-card img {
         margin-bottom: 20px; }
-      /* line 42, ../scss/_token.scss */
       section.token .cards-container .token-card span {
         font-size: 20px; }
-    /* line 47, ../scss/_token.scss */
     section.token .cards-container .hold {
       max-width: 240px; }
-    /* line 51, ../scss/_token.scss */
     section.token .cards-container .vote {
       max-width: 335px; }
-    /* line 55, ../scss/_token.scss */
     section.token .cards-container .earn {
       max-width: 200px; }
-  /* line 60, ../scss/_token.scss */
   section.token .buyback {
     border-left: solid 1px #1a1c1f;
     padding: 15px 0 15px 40px;
     margin: 120px 0 105px 90px; }
-    /* line 65, ../scss/_token.scss */
     section.token .buyback span {
       font-family: Gilroy-Bold;
       font-size: 28px;
@@ -723,57 +580,46 @@ section.token {
       line-height: 34px;
       letter-spacing: 0.7px; }
 
-/* line 1, ../scss/_where-to-buy.scss */
 section.where-to-buy {
   color: #262626;
   background-color: #e9e9e9;
   text-align: center;
   height: unset;
   padding: 70px 0 100px 0; }
-  /* line 8, ../scss/_where-to-buy.scss */
   section.where-to-buy h2 {
     font-family: Gilroy-Bold;
     font-size: 37.5px;
     letter-spacing: 0.9px;
     margin-bottom: 56px; }
-  /* line 15, ../scss/_where-to-buy.scss */
   section.where-to-buy .exchanges {
     display: flex;
     justify-content: space-between; }
-    /* line 19, ../scss/_where-to-buy.scss */
     section.where-to-buy .exchanges a {
       align-self: flex-end; }
 
-/* line 2, ../scss/_about-advisors.scss */
 section.about-advisors {
   background-color: #1c1c1c;
   position: relative;
   height: unset; }
-  /* line 7, ../scss/_about-advisors.scss */
   section.about-advisors a {
     color: inherit;
     text-decoration: none; }
-  /* line 12, ../scss/_about-advisors.scss */
   section.about-advisors .container-advisors {
     padding-top: 100px;
     padding-left: 32px; }
-  /* line 17, ../scss/_about-advisors.scss */
   section.about-advisors .advisor-card {
     text-transform: uppercase;
     margin-bottom: 88px;
     display: block;
     position: relative; }
-  /* line 24, ../scss/_about-advisors.scss */
   section.about-advisors .advisor-card i {
     visibility: hidden;
     position: absolute;
     left: -24px;
     top: 3px; }
-  /* line 31, ../scss/_about-advisors.scss */
   section.about-advisors .advisor-card:hover i {
     visibility: visible;
     color: #126efd; }
-  /* line 36, ../scss/_about-advisors.scss */
   section.about-advisors h2 {
     font-size: 38px;
     font-weight: 300;
@@ -781,16 +627,13 @@ section.about-advisors {
     font-stretch: normal;
     line-height: 2.63;
     letter-spacing: 2.7px; }
-  /* line 45, ../scss/_about-advisors.scss */
   section.about-advisors h5 {
     font-size: 17.5px;
     font-weight: 600; }
-  /* line 50, ../scss/_about-advisors.scss */
   section.about-advisors span {
     font-size: 14px;
     font-weight: 300; }
 
-/* line 2, ../scss/_about-masthead.scss */
 header.about-masthead {
   width: 100%;
   height: 100%;
@@ -798,118 +641,92 @@ header.about-masthead {
   background-image: url(/img/about/background.jpg);
   background-repeat: no-repeat;
   background-position: center; }
-  /* line 10, ../scss/_about-masthead.scss */
   header.about-masthead .top-menu {
     position: absolute;
     width: 100%;
     top: 30px;
     padding: 0 90px; }
-    /* line 16, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu div {
       display: inline-block; }
-    /* line 21, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div {
       padding: 10px 20px; }
-    /* line 25, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 31, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
-    /* line 37, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu a {
       color: white; }
-    /* line 41, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 46, ../scss/_about-masthead.scss */
   header.about-masthead .container {
     width: 100%;
     height: 100%;
     position: relative; }
-    /* line 51, ../scss/_about-masthead.scss */
     header.about-masthead .container .center-panel {
       margin: auto;
       width: 70%;
       max-width: 560px; }
-      /* line 56, ../scss/_about-masthead.scss */
       header.about-masthead .container .center-panel img {
         margin: 70px auto 30% auto;
         zoom: 0.7; }
-      /* line 61, ../scss/_about-masthead.scss */
       header.about-masthead .container .center-panel span {
         font-size: 18px; }
-  /* line 67, ../scss/_about-masthead.scss */
   header.about-masthead .connection-line {
     z-index: 10;
     position: absolute;
     bottom: 0;
     width: 100%;
     margin-left: -15px; }
-    /* line 74, ../scss/_about-masthead.scss */
     header.about-masthead .connection-line div {
       margin: 5% auto;
       background-color: white;
       height: 90px;
       width: 1px; }
 
-/* line 2, ../scss/_about-subscribe.scss */
 section.about-subscribe {
   background-color: #f7f7f7;
   position: relative; }
-  /* line 6, ../scss/_about-subscribe.scss */
   section.about-subscribe .top-rectangle {
     height: 30px;
     width: 60%;
     background-color: #1c1c1c;
     position: absolute;
     left: 0%; }
+  section.about-subscribe .container {
+    color: #343434;
+    padding-top: 100px; }
 
-/* line 2, ../scss/_about-team.scss */
 section.about-team {
   background: #161618;
   height: unset; }
-  /* line 5, ../scss/_about-team.scss */
   section.about-team h2 {
     font-family: Gilroy-Medium; }
-  /* line 9, ../scss/_about-team.scss */
   section.about-team .photo-grid {
     padding-top: 50px;
     word-spacing: -6px;
     line-height: 0;
     text-align: center; }
-    /* line 15, ../scss/_about-team.scss */
     section.about-team .photo-grid .ariny::before {
       background-image: url(../img/about/team/ariny.jpg); }
-    /* line 19, ../scss/_about-team.scss */
     section.about-team .photo-grid .boaventura::before {
       background-image: url(../img/about/team/boaventura.jpg); }
-    /* line 23, ../scss/_about-team.scss */
     section.about-team .photo-grid .duarte::before {
       background-image: url(../img/about/team/duarte.jpg); }
-    /* line 27, ../scss/_about-team.scss */
     section.about-team .photo-grid .felipe::before {
       background-image: url(../img/about/team/felipe.jpg); }
-    /* line 31, ../scss/_about-team.scss */
     section.about-team .photo-grid .gusman::before {
       background-image: url(../img/about/team/gusman.jpg); }
-    /* line 35, ../scss/_about-team.scss */
     section.about-team .photo-grid .ludmila::before {
       background-image: url(../img/about/team/ludmila.jpg); }
-    /* line 39, ../scss/_about-team.scss */
     section.about-team .photo-grid .raphael::before {
       background-image: url(../img/about/team/raphael.jpg); }
-    /* line 43, ../scss/_about-team.scss */
     section.about-team .photo-grid .thiago::before {
       background-image: url(../img/about/team/thiago.jpg); }
-    /* line 47, ../scss/_about-team.scss */
     section.about-team .photo-grid .vinicius::before {
       background-image: url(../img/about/team/vinicius.jpg); }
-    /* line 51, ../scss/_about-team.scss */
     section.about-team .photo-grid .vitorino::before {
       background-image: url(../img/about/team/vitorino.jpg); }
-    /* line 55, ../scss/_about-team.scss */
     section.about-team .photo-grid .photo::before {
       content: "";
       position: absolute;
@@ -919,7 +736,6 @@ section.about-team {
       height: 100%;
       background-size: contain;
       filter: grayscale(85%); }
-    /* line 66, ../scss/_about-team.scss */
     section.about-team .photo-grid .photo {
       position: relative;
       text-align: left;
@@ -930,20 +746,15 @@ section.about-team {
       background-size: contain;
       background-repeat: no-repeat;
       padding: 15px 25px; }
-      /* line 77, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .hiddeable {
         opacity: 0;
         transition: all 0.3s; }
-      /* line 82, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .hiddeable:hover {
         opacity: 1; }
-      /* line 86, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo h4 {
         font-family: Gilroy-Bold; }
-      /* line 90, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo h4, section.about-team .photo-grid .photo h5 {
         position: relative; }
-      /* line 94, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .black-panel {
         background: black;
         position: absolute;
@@ -952,22 +763,18 @@ section.about-team {
         width: 100%;
         height: 100%;
         opacity: 0.8; }
-      /* line 104, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo a {
         color: white; }
-      /* line 108, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .link-box {
         position: absolute;
         font-size: 13px;
         text-align: left;
         bottom: 25px;
         left: 25px; }
-        /* line 115, ../scss/_about-team.scss */
         section.about-team .photo-grid .photo .link-box span {
           font-family: Gilroy-Medium;
           font-size: 13px;
           margin-right: 15px; }
-      /* line 122, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .link-box:after {
         content: '';
         position: absolute;
@@ -976,3 +783,5 @@ section.about-team {
         background: #126efd;
         left: 0;
         top: 15px; }
+
+/*# sourceMappingURL=style.min.css.map */
