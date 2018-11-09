@@ -364,42 +364,48 @@ body {
   height: 100%;
   font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-width: 1349px; }
+  @media (max-width: 1633px) {
+    /* line 2, ../scss/_global.scss */
+    html,
+    body {
+      overflow-x: auto; } }
 
-/* line 11, ../scss/_global.scss */
+/* line 16, ../scss/_global.scss */
 a {
   cursor: pointer;
   color: inherit !important; }
 
-/* line 16, ../scss/_global.scss */
+/* line 21, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 19, ../scss/_global.scss */
+/* line 24, ../scss/_global.scss */
 .container {
   height: 100%; }
 
-/* line 22, ../scss/_global.scss */
+/* line 27, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 26, ../scss/_global.scss */
+/* line 31, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 31, ../scss/_global.scss */
+  /* line 36, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 37, ../scss/_global.scss */
+  /* line 42, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 42, ../scss/_global.scss */
+/* line 47, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 46, ../scss/_global.scss */
+/* line 51, ../scss/_global.scss */
 .invert-horizontally {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -410,7 +416,7 @@ a:hover {
   filter: fliph;
   /*IE*/ }
 
-/* line 55, ../scss/_global.scss */
+/* line 60, ../scss/_global.scss */
 .border-bar {
   height: 12px;
   width: 480px;
@@ -893,25 +899,26 @@ section.about-subscribe {
       padding: 10px 15px;
       width: 300px;
       color: #343434;
-      margin-right: 35px; }
-    /* line 27, ../scss/_about-subscribe.scss */
+      margin-right: 35px;
+      background: transparent; }
+    /* line 28, ../scss/_about-subscribe.scss */
     section.about-subscribe .container input.invalid {
       border-bottom: 2px solid #e48b8b;
       color: #e48b8b; }
-    /* line 32, ../scss/_about-subscribe.scss */
+    /* line 33, ../scss/_about-subscribe.scss */
     section.about-subscribe .container h2 {
       font-family: Gilroy-Medium;
       font-size: 34px;
       line-height: 42px;
       margin-bottom: 200px; }
-    /* line 39, ../scss/_about-subscribe.scss */
+    /* line 40, ../scss/_about-subscribe.scss */
     section.about-subscribe .container hr {
       position: absolute;
       top: 183px;
       left: -150px;
       border-top: solid 1px #156eff;
       width: 150px; }
-    /* line 47, ../scss/_about-subscribe.scss */
+    /* line 48, ../scss/_about-subscribe.scss */
     section.about-subscribe .container .link-box {
       border: 1px solid #555555;
       padding: 16px 40px 16px 70px;
@@ -919,14 +926,14 @@ section.about-subscribe {
       position: relative;
       display: inline-block;
       cursor: pointer; }
-      /* line 55, ../scss/_about-subscribe.scss */
+      /* line 56, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box span {
         font-family: "Gilroy-Medium";
         letter-spacing: 2px; }
-      /* line 60, ../scss/_about-subscribe.scss */
+      /* line 61, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box img {
         margin-left: 20px; }
-      /* line 64, ../scss/_about-subscribe.scss */
+      /* line 65, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box .subtitle {
         width: 100%;
         text-align: center;
@@ -937,7 +944,7 @@ section.about-subscribe {
         top: 70px;
         display: flex;
         /* left: 64px; */ }
-  /* line 78, ../scss/_about-subscribe.scss */
+  /* line 79, ../scss/_about-subscribe.scss */
   section.about-subscribe .dots:before {
     content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
     display: block;

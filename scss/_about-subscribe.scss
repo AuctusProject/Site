@@ -22,10 +22,11 @@ section.about-subscribe {
             width: 300px;
             color: #343434;
             margin-right: 35px;
+            background: transparent;
         }
 
         input.invalid {
-            border-bottom: 2px solid #e48b8b ;
+            border-bottom: 2px solid #e48b8b;
             color: #e48b8b;
         }
 
@@ -33,7 +34,7 @@ section.about-subscribe {
             font-family: Gilroy-Medium;
             font-size: 34px;
             line-height: 42px;
-            margin-bottom: 200px ;
+            margin-bottom: 200px;
         }
 
         hr {
