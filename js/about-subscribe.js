@@ -1,14 +1,18 @@
 $('#btn-subscription').click(function () {
-    var name = $('#name').val();
-    var email = $('#email').val();
+    var inputName = $('#name').val();
+    var inputEmail = $('#email').val();
 
-    //TODO call api
-    //https://auctusplatformapidev.azurewebsites.net/api/v1/website/emails
-    //POST
-    /*
-    {
-        "email": email,
-	    "name": name
-    }
-    */
+    $.ajax({
+        type: 'POST',
+        url: 'https://auctusplatformapidev.azurewebsites.net/api/v1/website/emails',
+        data: JSON.stringify({ name: inputName, email: inputEmail }),
+        contentType: 'application/json',
+        dataType: 'json',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        success: function () {
+            alert('Great success');
+        }
+    });
 })
