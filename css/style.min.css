@@ -903,7 +903,7 @@ section.about-subscribe {
       font-family: Gilroy-Medium;
       font-size: 34px;
       line-height: 42px;
-      margin-bottom: 100px; }
+      margin-bottom: 200px; }
     /* line 39, ../scss/_about-subscribe.scss */
     section.about-subscribe .container hr {
       position: absolute;
@@ -959,46 +959,48 @@ section.about-subscribe {
 section.about-team {
   background: #161618;
   height: unset; }
-  /* line 5, ../scss/_about-team.scss */
+  /* line 6, ../scss/_about-team.scss */
   section.about-team h2 {
     font-family: Gilroy-Medium; }
-  /* line 9, ../scss/_about-team.scss */
+  /* line 10, ../scss/_about-team.scss */
   section.about-team .photo-grid {
     padding-top: 50px;
     word-spacing: -6px;
     line-height: 0;
-    text-align: center; }
-    /* line 15, ../scss/_about-team.scss */
+    text-align: center;
+    max-width: 1160px;
+    margin: auto; }
+    /* line 18, ../scss/_about-team.scss */
     section.about-team .photo-grid .ariny::before {
       background-image: url(../img/about/team/ariny.jpg); }
-    /* line 19, ../scss/_about-team.scss */
+    /* line 22, ../scss/_about-team.scss */
     section.about-team .photo-grid .boaventura::before {
       background-image: url(../img/about/team/boaventura.jpg); }
-    /* line 23, ../scss/_about-team.scss */
+    /* line 26, ../scss/_about-team.scss */
     section.about-team .photo-grid .duarte::before {
       background-image: url(../img/about/team/duarte.jpg); }
-    /* line 27, ../scss/_about-team.scss */
+    /* line 30, ../scss/_about-team.scss */
     section.about-team .photo-grid .felipe::before {
       background-image: url(../img/about/team/felipe.jpg); }
-    /* line 31, ../scss/_about-team.scss */
+    /* line 34, ../scss/_about-team.scss */
     section.about-team .photo-grid .gusman::before {
       background-image: url(../img/about/team/gusman.jpg); }
-    /* line 35, ../scss/_about-team.scss */
+    /* line 38, ../scss/_about-team.scss */
     section.about-team .photo-grid .ludmila::before {
       background-image: url(../img/about/team/ludmila.jpg); }
-    /* line 39, ../scss/_about-team.scss */
+    /* line 42, ../scss/_about-team.scss */
     section.about-team .photo-grid .raphael::before {
       background-image: url(../img/about/team/raphael.jpg); }
-    /* line 43, ../scss/_about-team.scss */
+    /* line 46, ../scss/_about-team.scss */
     section.about-team .photo-grid .thiago::before {
       background-image: url(../img/about/team/thiago.jpg); }
-    /* line 47, ../scss/_about-team.scss */
+    /* line 50, ../scss/_about-team.scss */
     section.about-team .photo-grid .vinicius::before {
       background-image: url(../img/about/team/vinicius.jpg); }
-    /* line 51, ../scss/_about-team.scss */
+    /* line 54, ../scss/_about-team.scss */
     section.about-team .photo-grid .vitorino::before {
       background-image: url(../img/about/team/vitorino.jpg); }
-    /* line 55, ../scss/_about-team.scss */
+    /* line 58, ../scss/_about-team.scss */
     section.about-team .photo-grid .photo::before {
       content: "";
       position: absolute;
@@ -1008,7 +1010,7 @@ section.about-team {
       height: 100%;
       background-size: contain;
       filter: grayscale(85%); }
-    /* line 66, ../scss/_about-team.scss */
+    /* line 69, ../scss/_about-team.scss */
     section.about-team .photo-grid .photo {
       position: relative;
       text-align: left;
@@ -1019,20 +1021,20 @@ section.about-team {
       background-size: contain;
       background-repeat: no-repeat;
       padding: 15px 25px; }
-      /* line 77, ../scss/_about-team.scss */
+      /* line 80, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .hiddeable {
         opacity: 0;
         transition: all 0.3s; }
-      /* line 82, ../scss/_about-team.scss */
+      /* line 85, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .hiddeable:hover {
         opacity: 1; }
-      /* line 86, ../scss/_about-team.scss */
+      /* line 89, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo h4 {
         font-family: Gilroy-Bold; }
-      /* line 90, ../scss/_about-team.scss */
+      /* line 93, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo h4, section.about-team .photo-grid .photo h5 {
         position: relative; }
-      /* line 94, ../scss/_about-team.scss */
+      /* line 97, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .black-panel {
         background: black;
         position: absolute;
@@ -1041,22 +1043,22 @@ section.about-team {
         width: 100%;
         height: 100%;
         opacity: 0.8; }
-      /* line 104, ../scss/_about-team.scss */
+      /* line 107, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo a {
         color: white; }
-      /* line 108, ../scss/_about-team.scss */
+      /* line 111, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .link-box {
         position: absolute;
         font-size: 13px;
         text-align: left;
         bottom: 25px;
         left: 25px; }
-        /* line 115, ../scss/_about-team.scss */
+        /* line 118, ../scss/_about-team.scss */
         section.about-team .photo-grid .photo .link-box span {
           font-family: Gilroy-Medium;
           font-size: 13px;
           margin-right: 15px; }
-      /* line 122, ../scss/_about-team.scss */
+      /* line 125, ../scss/_about-team.scss */
       section.about-team .photo-grid .photo .link-box:after {
         content: '';
         position: absolute;

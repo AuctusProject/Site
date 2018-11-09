@@ -1,7 +1,8 @@
 
 section.about-team {
     background: #161618;
-    height:unset;
+    height: unset;
+
     h2 {
         font-family: Gilroy-Medium;
     }
@@ -11,6 +12,8 @@ section.about-team {
         word-spacing: -6px;
         line-height: 0;
         text-align: center;
+        max-width: 1160px;
+        margin: auto;
 
         .ariny::before {
             background-image: url(../img/about/team/ariny.jpg);
