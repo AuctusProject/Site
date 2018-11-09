@@ -13,6 +13,83 @@ section.about-subscribe {
 
     .container {
         color: #343434;
-        padding-top: 100px;
+        padding-top: 125px;
+
+        input {
+            border: 0;
+            border-bottom: 1px solid #555555;
+            padding: 10px 15px;
+            width: 300px;
+            color: #343434;
+            margin-right: 35px;
+        }
+
+        input.invalid {
+            border-bottom: 2px solid #e48b8b ;
+            color: #e48b8b;
+        }
+
+        h2 {
+            font-family: Gilroy-Medium;
+            font-size: 34px;
+            line-height: 42px;
+            margin-bottom: 100px;
+        }
+
+        hr {
+            position: absolute;
+            top: 182px;
+            left: -150px;
+            border-top: solid 1px #156eff;
+            width: 150px;
+        }
+
+        .link-box {
+            border: 1px solid #555555;
+            padding: 16px 40px 16px 70px;
+            width: 300px;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+            span {
+                font-family: "Gilroy-Medium";
+                letter-spacing: 2px;
+            }
+
+            img {
+                margin-left: 20px;
+            }
+
+            .subtitle {
+                width: 100%;
+                text-align: center;
+                font-family: "Gilroy-Light";
+                font-style: italic;
+                font-size: 16px;
+                position: absolute;
+                top: 70px;
+                display: flex;
+                /* left: 64px; */
+            }
+        }
+    }
+
+    .dots:before {
+        content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+        display: block;
+        font-size: 26px;
+        font-family: Georgia;
+        color: #b7b7b7;
+        max-width: 286px;
+        height: 260px;
+        overflow: hidden;
+        letter-spacing: 16px;
+        margin: auto;
+        position: absolute;
+        left: -75px;
+        line-height: 45px;
+        z-index: 20;
+        top: 60px;
     }
 }
