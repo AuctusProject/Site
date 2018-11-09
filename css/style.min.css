@@ -368,37 +368,38 @@ body {
 
 /* line 11, ../scss/_global.scss */
 a {
-  cursor: pointer; }
+  cursor: pointer;
+  color: inherit !important; }
 
-/* line 15, ../scss/_global.scss */
+/* line 16, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 18, ../scss/_global.scss */
+/* line 19, ../scss/_global.scss */
 .container {
   height: 100%; }
 
-/* line 21, ../scss/_global.scss */
+/* line 22, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 25, ../scss/_global.scss */
+/* line 26, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 30, ../scss/_global.scss */
+  /* line 31, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 36, ../scss/_global.scss */
+  /* line 37, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 41, ../scss/_global.scss */
+/* line 42, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 45, ../scss/_global.scss */
+/* line 46, ../scss/_global.scss */
 .invert-horizontally {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -409,7 +410,7 @@ a:hover {
   filter: fliph;
   /*IE*/ }
 
-/* line 54, ../scss/_global.scss */
+/* line 55, ../scss/_global.scss */
 .border-bar {
   height: 12px;
   width: 480px;
@@ -881,6 +882,10 @@ section.about-subscribe {
     background-color: #1c1c1c;
     position: absolute;
     left: 0%; }
+  /* line 14, ../scss/_about-subscribe.scss */
+  section.about-subscribe .container {
+    color: #343434;
+    padding-top: 100px; }
 
 /* line 2, ../scss/_about-team.scss */
 section.about-team {
