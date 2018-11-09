@@ -32,7 +32,7 @@ function subscribeToNewsletter(inputName, inputEmail) {
             'Content-Type': 'application/json'
         },
         success: function () {
-            alert('Great success');
+            $('.link-box .subtitle').text('Thanks for registering, ' + $('#name').val());
         }
     });
 }
