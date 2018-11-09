@@ -1,19 +1,27 @@
+$.fn.attachDragger = function () {
+    var attachment = false, lastPosition, position, difference;
+    $(this).on("mousedown mouseup mousemove", function (e) {
+        if (e.type == "mousedown") attachment = true, lastPosition = [e.clientX, e.clientY];
+        if (e.type == "mouseup") attachment = false;
+        if (e.type == "mousemove" && attachment == true) {
+            position = [e.clientX, e.clientY];
+            difference = [(position[0] - lastPosition[0]), (position[1] - lastPosition[1])];
+            $(this).scrollLeft($(this).scrollLeft() - difference[0]);
+            $(this).scrollTop($(this).scrollTop() - difference[1]);
+            lastPosition = [e.clientX, e.clientY];
+        }
+    });
+    $(window).on("mouseup", function () {
+        attachment = false;
+    });
+}
+
 $(function () {
     $yearBox = $('.timeline .year-box');
     totalSize = $yearBox.width() * $yearBox.length + ($yearBox.length - 1) * 4 + 10;
     $('.roadmap .timeline').width(totalSize);
-});
 
-$(document).ready(function () {
-    $('.scrollable').on('mousemove', function (e) {
-        var leftOffset = $(this).offset().left;
-        if (leftOffset < 300) {
-            leftOffset = 300;
-        }
-        if (leftOffset > $('.roadmap .timeline').width() - 300){
-            leftOffset -= 300;
-        }
-        $('.roadmap .timeline').css('left', -e.clientX + leftOffset - 300);       
+    $(document).ready(function () {
+        $(".scrollable").attachDragger();
     });
 });
-

@@ -19,11 +19,25 @@
         margin-top: 100px;
         width: 100%;
         position: relative;
+        overflow-x: hidden;
     }
 
+    .scrollable.smooth {
+        scroll-behavior: smooth;
+    }
+
+
+
     .timeline {
-        transition:all 0.5s;
-        position: absolute;
+        * {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+        }
 
         .year-box {
             display: inline-block;
@@ -85,6 +99,7 @@
                 height: calc(100% + 2px);
                 position: relative;
                 border-bottom: solid 4px transparent;
+                padding-left: 7px;
 
                 .circle {
                     position: absolute;
