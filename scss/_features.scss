@@ -1,7 +1,7 @@
 section.features {
     position: relative;
     height: 120%;
-
+    overflow-x:hidden;
 
 
     .back-panel {
@@ -27,6 +27,7 @@ section.features {
         position: absolute;
         top: 0;
         left: 50%;
+        display:flex;
     }
 
     .container {

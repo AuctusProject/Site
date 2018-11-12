@@ -191,7 +191,8 @@ section.blog {
 /* line 1, ../scss/_features.scss */
 section.features {
   position: relative;
-  height: 120%; }
+  height: 120%;
+  overflow-x: hidden; }
   /* line 7, ../scss/_features.scss */
   section.features .back-panel {
     width: 100%;
@@ -212,58 +213,59 @@ section.features {
   section.features .feature-img {
     position: absolute;
     top: 0;
-    left: 50%; }
-  /* line 32, ../scss/_features.scss */
+    left: 50%;
+    display: flex; }
+  /* line 33, ../scss/_features.scss */
   section.features .container {
     position: relative;
     background: #1c1c1c;
     padding-left: 100px; }
-    /* line 37, ../scss/_features.scss */
+    /* line 38, ../scss/_features.scss */
     section.features .container span {
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0.5px; }
-    /* line 43, ../scss/_features.scss */
+    /* line 44, ../scss/_features.scss */
     section.features .container .latest-features {
       position: absolute;
       top: 70px; }
-      /* line 47, ../scss/_features.scss */
+      /* line 48, ../scss/_features.scss */
       section.features .container .latest-features > * + * {
         margin-top: 30px; }
-      /* line 51, ../scss/_features.scss */
+      /* line 52, ../scss/_features.scss */
       section.features .container .latest-features h1 {
         font-size: 48px;
         letter-spacing: 3.4px; }
-      /* line 56, ../scss/_features.scss */
+      /* line 57, ../scss/_features.scss */
       section.features .container .latest-features .latest-feature-title {
         font-family: Gilroy-Medium; }
-      /* line 60, ../scss/_features.scss */
+      /* line 61, ../scss/_features.scss */
       section.features .container .latest-features .access {
         cursor: pointer;
         background: #126efd;
         width: 260px;
         padding: 20px 60px; }
-      /* line 67, ../scss/_features.scss */
+      /* line 68, ../scss/_features.scss */
       section.features .container .latest-features img {
         margin-left: 20px; }
-    /* line 73, ../scss/_features.scss */
+    /* line 74, ../scss/_features.scss */
     section.features .container .other-features {
       position: absolute;
       bottom: 30px; }
-      /* line 77, ../scss/_features.scss */
+      /* line 78, ../scss/_features.scss */
       section.features .container .other-features h2 {
         font-size: 30px;
         letter-spacing: 2.1px;
         margin-bottom: 30px; }
-      /* line 83, ../scss/_features.scss */
+      /* line 84, ../scss/_features.scss */
       section.features .container .other-features ul {
         margin-top: 50px;
         list-style-type: none;
         font-size: 17.5px; }
-        /* line 88, ../scss/_features.scss */
+        /* line 89, ../scss/_features.scss */
         section.features .container .other-features ul li + li {
           margin-top: 30px; }
-        /* line 92, ../scss/_features.scss */
+        /* line 93, ../scss/_features.scss */
         section.features .container .other-features ul li:before {
           font-family: 'FontAwesome';
           content: '\f054';
@@ -364,48 +366,42 @@ body {
   height: 100%;
   font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
-  overflow-x: hidden;
-  min-width: 1349px; }
-  @media (max-width: 1633px) {
-    /* line 2, ../scss/_global.scss */
-    html,
-    body {
-      overflow-x: auto; } }
+  overflow-x: no-content; }
 
-/* line 16, ../scss/_global.scss */
+/* line 11, ../scss/_global.scss */
 a {
   cursor: pointer;
   color: inherit !important; }
 
-/* line 21, ../scss/_global.scss */
+/* line 16, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 24, ../scss/_global.scss */
+/* line 19, ../scss/_global.scss */
 .container {
   height: 100%; }
 
-/* line 27, ../scss/_global.scss */
+/* line 22, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 31, ../scss/_global.scss */
+/* line 26, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 36, ../scss/_global.scss */
+  /* line 31, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 42, ../scss/_global.scss */
+  /* line 37, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 47, ../scss/_global.scss */
+/* line 42, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 51, ../scss/_global.scss */
+/* line 46, ../scss/_global.scss */
 .invert-horizontally {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -416,7 +412,7 @@ a:hover {
   filter: fliph;
   /*IE*/ }
 
-/* line 60, ../scss/_global.scss */
+/* line 55, ../scss/_global.scss */
 .border-bar {
   height: 12px;
   width: 480px;
@@ -437,50 +433,51 @@ header.masthead {
     position: absolute;
     width: 100%;
     top: 30px;
-    padding: 0 90px; }
-    /* line 15, ../scss/_masthead.scss */
+    padding: 0 90px;
+    margin-left: -15px; }
+    /* line 16, ../scss/_masthead.scss */
     header.masthead .top-menu div {
       display: inline-block; }
-    /* line 20, ../scss/_masthead.scss */
+    /* line 21, ../scss/_masthead.scss */
     header.masthead .top-menu > div:first-child div {
       padding: 10px 20px; }
-    /* line 24, ../scss/_masthead.scss */
+    /* line 25, ../scss/_masthead.scss */
     header.masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 30, ../scss/_masthead.scss */
+    /* line 31, ../scss/_masthead.scss */
     header.masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
-    /* line 36, ../scss/_masthead.scss */
+    /* line 37, ../scss/_masthead.scss */
     header.masthead .top-menu a {
       color: white; }
-    /* line 40, ../scss/_masthead.scss */
+    /* line 41, ../scss/_masthead.scss */
     header.masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 45, ../scss/_masthead.scss */
+  /* line 46, ../scss/_masthead.scss */
   header.masthead .container {
     width: 100%;
     height: 100%;
     padding-top: 15%;
     position: relative; }
-    /* line 51, ../scss/_masthead.scss */
+    /* line 52, ../scss/_masthead.scss */
     header.masthead .container .center-panel {
       position: absolute;
       top: 25%;
       left: 50%;
       transform: translate(-50%); }
-      /* line 57, ../scss/_masthead.scss */
+      /* line 58, ../scss/_masthead.scss */
       header.masthead .container .center-panel img {
         margin: 60px; }
-      /* line 61, ../scss/_masthead.scss */
+      /* line 62, ../scss/_masthead.scss */
       header.masthead .container .center-panel span {
         font-size: 22px;
         margin: auto; }
-  /* line 68, ../scss/_masthead.scss */
+  /* line 69, ../scss/_masthead.scss */
   header.masthead .connection-line {
     z-index: 10;
     position: relative; }
-    /* line 72, ../scss/_masthead.scss */
+    /* line 73, ../scss/_masthead.scss */
     header.masthead .connection-line div {
       margin: -120px auto;
       background-color: white;
@@ -780,23 +777,26 @@ section.about-advisors {
   section.about-advisors .container-advisors {
     padding-top: 100px;
     padding-left: 32px; }
-  /* line 17, ../scss/_about-advisors.scss */
-  section.about-advisors .advisor-card {
-    text-transform: uppercase;
-    margin-bottom: 88px;
-    display: block;
-    position: relative; }
-  /* line 24, ../scss/_about-advisors.scss */
-  section.about-advisors .advisor-card i {
-    visibility: hidden;
-    position: absolute;
-    left: -24px;
-    top: 3px; }
-  /* line 31, ../scss/_about-advisors.scss */
-  section.about-advisors .advisor-card:hover i {
-    visibility: visible;
-    color: #126efd; }
-  /* line 36, ../scss/_about-advisors.scss */
+    /* line 16, ../scss/_about-advisors.scss */
+    section.about-advisors .container-advisors .advisor-card {
+      text-transform: uppercase;
+      margin-bottom: 88px;
+      display: block;
+      position: relative; }
+    /* line 23, ../scss/_about-advisors.scss */
+    section.about-advisors .container-advisors .advisor-card i {
+      visibility: hidden;
+      position: absolute;
+      left: -24px;
+      top: 3px; }
+    /* line 30, ../scss/_about-advisors.scss */
+    section.about-advisors .container-advisors .advisor-card:hover i {
+      visibility: visible;
+      color: #126efd; }
+    /* line 35, ../scss/_about-advisors.scss */
+    section.about-advisors .container-advisors .row {
+      margin-right: 0px; }
+  /* line 41, ../scss/_about-advisors.scss */
   section.about-advisors h2 {
     font-size: 38px;
     font-weight: 300;
@@ -804,11 +804,11 @@ section.about-advisors {
     font-stretch: normal;
     line-height: 2.63;
     letter-spacing: 2.7px; }
-  /* line 45, ../scss/_about-advisors.scss */
+  /* line 50, ../scss/_about-advisors.scss */
   section.about-advisors h5 {
     font-size: 17.5px;
     font-weight: 600; }
-  /* line 50, ../scss/_about-advisors.scss */
+  /* line 55, ../scss/_about-advisors.scss */
   section.about-advisors span {
     font-size: 14px;
     font-weight: 300; }
@@ -826,7 +826,8 @@ header.about-masthead {
     position: absolute;
     width: 100%;
     top: 30px;
-    padding: 0 90px; }
+    padding: 0 90px;
+    margin-left: -15px; }
     /* line 16, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu div {
       display: inline-block; }
