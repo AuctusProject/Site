@@ -1,0 +1,73 @@
+section.token {
+    background: #f5f5f5;
+    color: #383838;
+    padding-top: 115px;
+    height: unset;
+
+    .gray-block {
+        position: absolute;
+        width: 70%;
+        height: 30px;
+        top: 0;
+        left: 0;
+        margin-top: -115px;
+        background: #1c1c1c;
+    }
+
+    h1 {
+        margin: 0 0 90px 130px;
+        font-size: 38px;
+        letter-spacing: 2.7px;
+    }
+
+    hr {
+        position: absolute;
+        top: 60px;
+        left: -30px;
+        border-top: solid 1px #156eff;
+        width: 150px;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-between;
+
+        .token-card {
+            text-align: center;
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        .hold {
+            max-width: 240px;
+        }
+
+        .vote {
+            max-width: 335px;
+        }
+
+        .earn {
+            max-width: 200px;
+        }
+    }
+
+    .buyback {
+        border-left: solid 1px #1a1c1f;
+        padding: 15px 0 15px 40px;
+        margin: 120px 0 105px 90px;
+
+        span {
+            font-family: Gilroy-Bold;
+            font-size: 28px;
+            font-style: italic;
+            line-height: 34px;
+            letter-spacing: 0.7px;
+        }
+    }
+}

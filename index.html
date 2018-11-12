@@ -1,1241 +1,371 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="An investment platform made for the digital age. Follow your favourite expert, recognize trends early, stay in control.">
     <meta name="keywords" content="Ethereum,Smart Contract,Smart Contracts,Cryptocurrency,Retirement Plans, Pension Fund, Pension Funds, Blockchain">
-    <meta property="og:title" content="Auctus | Next generation Investment and Retirement solutions">
+    <meta property="og:title" content="Auctus | We develop the best cryptocurrency financial tools">
     <meta property="og:description" content="An investment platform made for the digital age. Follow your favourite expert, recognize trends early, stay in control.">
     <meta property="og:image" content="https://dl.auctus.org/auctusite.png">
     <meta property="og:url" content="https://auctus.org">
     <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0073/6846.js" async="async"></script>
-    <title>Auctus | Next generation Investment and Retirement solutions</title>
-
+    <title>Auctus | We develop the best cryptocurrency financial tools</title>
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
     <!-- Custom styles for this template -->
-    <link href="css/style.min.css?v=34" rel="stylesheet">
+    <link href="css/style.min.css?v=35" rel="stylesheet" />
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="css/slick.css?v=5" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css?v=5" />
-    <!-- Temporary navbar container fix -->
-    <style>
-        .navbar-toggler {
-            z-index: 1;
-        }
-
-        @media (max-width: 576px) {
-            nav>.container {
-                width: 100%;
-            }
-        }
-    </style>
-
 </head>
-
 <body id="page-top" class="auctus">
-  
-    <div class="cookie-toast close-toast">
-        <span>
-            This website uses cookies to offer you a better browsing experience. You can find more details in our
-            <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
-        </span>
-        <button  onclick="acceptCookies($('.cookie-toast'));">
-            <span>OK</span>
-        </button>
-    </div>
-    <!--<div class="sale-live-toast web-only">
-        <div class="row">
-            <div class="col-lg-6" >
-                <div class="title-box">
-                    <h3>TOKEN SALE IS LIVE!</h3>
-                    <a href="./tokensale"><div class="join-button">JOIN TOKEN SALE</div></a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="timer">
-                    <div>
-                        <div class="time-part days">
-                            <div class="box">
-                                <div class="time-value">0</div>
-                                <div class="time-label">DAYS</div>
-                            </div>
-                        </div>
-                        <div class="time-part hours">
-                            <div class="box">
-                                <div class="time-value">0</div>
-                                <div class="time-label">HOURS</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="time-part minutes">
-                            <div class="box">
-                                <div class="time-value">0</div>
-                                <div class="time-label">MINUTES</div>
-                            </div>
-                        </div>
-                        <div class="time-part seconds">
-                            <div class="box">
-                                <div class="time-value">0</div>
-                                <div class="time-label">SECONDS</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
     <header class="masthead">
-        <div class="left-blue-div"></div>
-        <div class="right-blue-div"></div>
-        <div class="bottom-white-div"></div>
-        <!--<img class="col-md-5 computer-image" src="img/header/group.png">-->
-        <div id="topMenu" class="mobile-only">
-            <div class="quarter-circle menu">
-            </div>
-            <div class="menu-btn" onclick="$('#topMenu').toggleClass('open'); $('#topLanguage.open').toggleClass('open') ">
-                <i class="fa fa-bars" id="bars"></i>
-                <i class="fa fa-close" id="close"></i>
-            </div>
-            <div class="menu-container">
-                <div class="menu-content">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#page-top">
-                                    <img src="img/header/greenlogo.png" />
-                                </a>
-                            </li>
-                            <li>
-                                <span class="icon-arrow-right arr"></span>
-                                <a onclick="downloadPresentation()">PRESENTATION</a>
-                            </li>                          
-                            <li>
-                                <span class="icon-arrow-right arr"></span>
-                                <a  href="https://blog.auctus.org/" target="_blank">BLOG</a>
-                            </li>
-                            <li>
-                                <span class="icon-arrow-right arr"></span>
-                                <a  href="https://experts.auctus.org"  target="_blank">AFFILIATE PROGRAM</a>
-                            </li>
-                            <li>
-                                <span class="icon-arrow-right arr"></span>
-                                <a  href="https://twitter.com/AuctusProject" target="_blank">TWITTER</a>
-                            </li>
-                            <li>
-                                <span class="icon-arrow-right arr"></span>
-                                <a  href="https://facebook.com/auctusproject" target="_blank">FACEBOOK</a>
-                            </li>
-                            <li>
-                                <span class="icon-arrow-right arr"></span>
-                                <a href="https://t.me/AuctusProject" target="_blank">TELEGRAM</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <div class="top-header blue">
-            <div class="container">
-                <a href="#page-top">
-                    <img class="img-responsive logo" src="img/header/headerlogo.png" />
-                </a>
-                <div class="menu web-only">
-                    <a href="https://blog.auctus.org/" target="_blank">
-                        <span i18n="BLOG">BLOG</span>
-                    </a>
-                    <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://facebook.com/auctusproject" title="Facebook" target="_blank">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
-                        <i class="fa fa-telegram"></i>
-                    </a>
-                    <a href="https://github.com/AuctusProject" title="Github" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="https://reddit.com/r/AuctusProject" title="Reddit" target="_blank">
-                        <i class="fa fa-reddit-alien"></i>
-                    </a>
-                    <a href="mailto:contact@auctus.org" title="Email">
-                        <i class="fa fa-envelope-o"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
         <div class="container">
-            <div class="device-container">
-                <div class="text-container">
-                    <div class="days-to-sale row row-fluid">
-                        <div class="col-lg-6 col-sm-12 no-padding">
-                            <h4 i18n="THE FUTURE OF">NEXT GENERATION</h4>
-                            <h4 i18n="RETIREMENT PLANNING IS HERE!">
-                                <strong>INVESTMENT</strong> AND <strong>RETIREMENT</strong><br class="mobile-only" /> SOLUTIONS!</h4>
-                            <h5 class="subtitle col-lg-11 no-padding web-only" i18n="INVEST IN MULTIPLE CRYPTOCURRENCIES">
-                                An investment platform made for the digital age.<br/> Follow your favourite expert, recognize trends early, stay in control.
-                            </h5>
-                            <br />
-                            <div class="icon-buttons">
-                                <div onclick="downloadPresentation()" class="button-div">                                    
-                                    <a onclick="downloadPresentation()" class="wp-button" i18n="PRESENTATION">PRESENTATION</a>
-                                </div>  
-                                <div onclick="ExpertsPlatform()" class="button-div">
-                                    <a onclick="ExpertsPlatform()" class="wp-button">EXPERTS PLATFORM</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 eth-machine">
-                            <div class="maquina">
-                                <div class="machine">
-                                    <div class="mach"></div>
-                                    <div class="ondas">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <div class="circulo"></div>
-                                    <div class="circulo c2"></div>
-                                    <div class="quadro"></div>
-                                    <div class="quadro q2"></div>
-                                    <div class="p1"><span></span></div>
-                                    <div class="p2"><span></span></div>
-                                    <div class="p3"><span></span></div>
-                                    <div class="p4"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="top-menu">
+                <div>
+                    <div class="active">
+                        <a href="./#"><span>HOME</span></a>
+                    </div>
+                    <div>
+                        <a  href="./about"><span>ABOUT</span></a>
                     </div>
                 </div>
+                <div class="pull-right ">
+                    <div>
+                        <a href="https://facebook.com/auctusproject" title="Facebook" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="center-panel center">
+                <img src="./img/masthead/headerlogo.png" />
+                <br />
+                <span>We develop the best <br /> cryptocurrency financial tools</span>
+            </div>
+        </div>
+        <div class="connection-line center">
+            <div>
             </div>
         </div>
     </header>
-    <div class="sections-video-countdown"></div>
-    <div class="blue-background"></div> 
-    <section class="supported-by" id="asSeenOn">
-        <div class="section-heading text-center">
-            <h2>SUPPORTED BY</h2>
-            <hr />
-        </div>
-        <div class="links container">
-            <div class="row">
-                <div class="col-6 col-sm-4 col-lg-3 ">
-                    <a href="https://blog.auctus.org/launch-of-auctus-labs-9ff5ffe26e32" target="_blank">
-                        <div class="link-box bluzelle">
-                        </div>
-                    </a>
-                </div>               
-                <div class="col-6 col-sm-6 col-lg-3 ">
-                    <a href="https://blog.auctus.org/auctus-announces-0x-protocol-integration-e0f842e247d6" target="_blank">
-                        <div class="link-box zrx">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3 ">
-                    <a href="https://blog.auctus.org/auctus-to-leverage-aragon-to-become-a-truly-decentralized-platform-2fd6b4d1178c" target="_blank">
-                        <div class="link-box aragon">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3 ">
-                    <a href="https://blog.auctus.org/makerdao-to-join-auctus-labs-c8def5c0ac04" target="_blank">
-                        <div class="link-box maker">
-                        </div>
-                    </a>
-                </div>
-             </div>
-             <div class="row">
-                 <div class="col-6 col-sm-6 col-lg-3 ">
-                     <a href="https://blog.auctus.org/auctus-partners-with-rcn-global-lending-f1190ae7da51" target="_blank">
-                         <div class="link-box rcn">
-                         </div>
-                     </a>
-                 </div>
-                <div class="col-6 col-sm-4 col-lg-3 ">
-                    <a href="https://medium.com/amadeus-relay/amadeus-auctus-are-partners-since-the-beginning-abb68c8e3faa" target="_blank">
-                        <div class="link-box amadeus">
-                        </div>
-                    </a>
-                </div>   
-                 <div class="col-6 col-sm-4 col-lg-3 ">
-                     <a href="https://blog.auctus.org/launch-of-auctus-labs-9ff5ffe26e32" target="_blank">
-                         <div class="link-box request">
-                         </div>
-                     </a>
-                 </div>
-                 <div class="col-6 col-sm-4 col-lg-3 ">
-                     <a href="https://medium.com/amadeus-relay/amadeus-auctus-are-partners-since-the-beginning-abb68c8e3faa" target="_blank">
-                         <div class="link-box melon">
-                         </div>
-                     </a>
-                 </div>   
-            </div>
-        </div>
-    </section>
-    <section class="affiliate" id="affiliate">
-        <img src="img/video/side-triangle.svg" class="side-triangle" />
-        <div class="section-heading text-center">
-            <h2>AFFILIATE PROGRAM</h2>
-            <hr />
+    <section class="products" id="products">
+        <div class="black-top-right-block"></div>
         </div>
         <div class="container">
-                       
-            <div class="row text-center">
-                <div class="col-sm-12 col-lg-12">
-                    <span class="give-get">GIVE 20% GET 20%</span>
-                </div>
-            </div>
-            <div class="row text-center pig-container">
-                <div>
-                    <hr />
-                </div>
-                
-                    <div class="pig-coin"></div>
-               
-                <div >
-                    <hr />
-                </div>
-            </div>
-          
-            <div class="row text-center">
-                <div class="col-sm-12 col-lg-12">
-                    <span>Get a 1000 AUC (20% of 5000 AUC) every time you refer a friend to Auctus. They'll also receive 1000 AUC discount to access the platform.</span>
-                </div>
-            </div>
-            <div  onclick="ExpertsPlatform()" class="button-div">
-                <span  onclick="ExpertsPlatform()" > JOIN THE PROGRAM </span>
-            </div>
-            <div class="row experts-row">
-                <div class="col-lg-6 col-sm-12 video-text-container ">
-                    <div class="video-text">
-                        <h3>
-                            EXPERTS PLATFORM
-                        </h3>
-                        <span>                            
-                            Hold AUC and get access to experts’ investment recommendations in real time.
-                            <br />
-                            <br /> Be in the know in our transparent platform to stay up to date on trends, movements and trading  fundamentals.
-                            <br />
-                            <br /> Not satisfied? No worries! No locking, no spending. You can resell your AUC anytime you want.
+            <div class="product-box experts">
+                <h2>AUCTUS EXPERTS</h2>
+                <div><span>A social trading and investing platform made for the digital age. Get access to expert trading recommendations, reports, breaking news, powerful analytics and world-class execution with top crypto exchanges.</span></div>
+                <a href="https://experts.auctus.org/" target="_blank">
+                    <div class="learn-more ">
+                        <span>
+                            LEARN MORE
                         </span>
+                        <img class="turn-white-blue" src="img/global/arrow.png" />
                     </div>
-                </div>
-                <div class="col-lg-6 col-sm-12 video-play">
-                    <div class="text-center">
-                        <div class="text-center">
-                            <img class="experts" src="img/video/dispExperts.png" />
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="row monitor-row">
-                <div class="col-lg-5 col-sm-12 text-center">
-                    <img class="monitor" src="img/video/disp1.png" />
-                </div>
-                <div class="col-lg-7 col-sm-12 video-text-container">
-                    <div>
-                        <div class="row">
-                            <div class="col-6 active" meta-monitor-id="1">
-                                <h4>SET YOUR RETIREMENT GOALS</h4>
-                                <span>Risk/return adjusted recommendations, based on your individual circumstances.</span>
-                            </div>
-                            <div class="col-6" meta-monitor-id="2">
-                                <h4>PICK THE INVESTMENTS</h4>
-                                <span>
-                                    Choose from stocks, bonds and cryptocurrencies, or select from dozen template portfolio handpicked by financial experts.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6" meta-monitor-id="3">
-                                <h4>GET AN OPTIMIZED PORTFOLIO</h4>
-                                <span>We build an optimized portfolio to help improve your return while reducing risk.</span>
-                            </div>
-                            <div class="col-6" meta-monitor-id="4">
-                                <h4>RELAX AND ENJOY YOUR LIFE</h4>
-                                <span>We maintain your target allocation, automatically rebalancing your portfolio when needed.</span>
-                            </div>
-                        </div>
+            <div class="product-box portfolio">
+                <h2>AUCTUS PORTFOLIO MANAGER</h2>
+                <div><span>The best cryptocurrency portfolio manager. Automatically invest your money in smart portfolios, based on predetermined investment strategies.</span></div>
+                <a href="http://dl.auctus.org/Auctus_Project_Overview.pdf" target="_blank">
+                    <div class="download">
+                        <span>
+                            DOWNLOAD PDF
+                        </span>
+                        <img class="turn-white-blue" src="img/global/download.png" />
+                        <hr />
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
-    <section class="supported-by without-margin-top" id="whereToBuy">
-        <div class="section-heading text-center where">
-            <h2>WHERE TO BUY</h2>
-            <h3>EXCHANGES THAT HAVE AUCTUS LISTED</h3>
-            <hr />
-        </div>
-        <div class="links container">
-            <div class="row" style="padding: 25px 0 65px 0">
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <a href="https://www.bitfinex.com/" target="_blank">
-                        <div class="buy-link-box bitfinex">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-12  col-sm-12">
-                    <a href="https://idex.market/eth/auc" target="_blank">
-                        <div class="buy-link-box idex">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <a href="https://www.bancor.network/communities/5ad9c1c5c7d1460001bc9bfa" target="_blank">
-                        <div class="buy-link-box bancor">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <a href="https://www.coinbene.com/#/market?pairId=AUCBTC" target="_blank">
-                        <div class="buy-link-box coinbene">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>       
-    </section>
-    <section class="advisors" id="advisors">
-        <div class="section-heading text-center">
-            <h2 i18n="ADVISORY BOARD">ADVISORY BOARD</h2>
-            <h3 i18n="INDUSTRY EXPERTS ADVISING AUCTUS">INDUSTRY EXPERTS ADVISING AUCTUS</h3>
-            <hr />
-        </div>
-        <div class="advisors-content">
-            <div class="advisor-card">
-                <div class="card-picture-name">
-                    <div class="text-center">
-                        <img class="img-responsive card-picture img-circle border" src="img/advisors/martjin.png">
-                    </div>
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/martijnvaneck/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Martijn van Eck
-                            </div>
-                            <div class="card-position">
-                                HOLLAND FINTECH
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" full-description="Martijn van Eck is Head of PensionTech at Holland FinTech, a global marketplace for industry stakeholders to come together, as well as a former co-founder of Symetrics, a European FinTech 50 actuarial and risk analytics company. Furthermore, he is a frequent speaker, as well as a renowned start-up trainer, mentor and coach. <br/><br/>He holds a B.A. from Hogeschool van Arnhem en Nijmegen, Netherlands. <br/><br/>Martijn is advising Auctus on the development of the Auctus Platform, business plan, actuarial related questions and general PensionTech questions.">
-                        Head of Pension at Holland Fintech, co-founder of Symetrics, a European FinTech 50 actuarial and risk analytics company.
-                    </div>
-                    <div class="card-read-more">
-                        <span>Read more about Martijn</span>
-                    </div>
-                </div>
-            </div>
-            <div class="advisor-card">
-                <div class="card-picture-name">
-                    <div class="text-center">
-                        <img class="img-responsive card-picture img-circle border" src="img/advisors/mitja.jpg">
-                    </div>
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/mitja-pirc-586262/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Mitja Pirc
-                            </div>
-                            <div class="card-position">
-                                COFOUND.IT
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" full-description="Mitja is a partner at Cofound.it, responsible for advising startups and giving insight in new business models, blockchain, data and analytics. He has held top management positions at A.T. Kearney, SAS, Pristop and Indigo. <br/><br/>He received his PhD in Economics and Management from the University of Pompeu Fabra in Barcelona. <br/><br/>Mitja is advising Auctus in business plan and token sale related questions, opening up partnerships with other projects and exchanges.">
-                    Partner at Cofound.it, responsible for advising startups and giving insight in new business models, blockchain, data and analytics.
-                    </div>
-                    <div class="card-read-more">
-                        <span>Read more about Mitja</span>
-                    </div>
-                </div>
-            </div>
-            <div class="advisor-card">
-                <div class="card-picture-name">
-                    <div class="text-center">
-                        <img class="img-responsive card-picture img-circle border" src="img/advisors/philippe.jpg">
-                    </div>
-                    <a class="card-name-position-linkedin" href="https://medium.com/@PhABC" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Philippe Castonguay
-                            </div>
-                            <div class="card-position">
-                                0x PROJECT
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                            <i class="fa fa-medium"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" full-description="Philippe is a well connected advisor within the development community of cryptocurrencies. Having worked as relationship manager for developers at 0x project, he is very familiar with collaborations between cryptocurrency projects, as well as network effects. <br/><br/>Philippe studied statistics at the University of Montreal. <br/><br/>Philippe is advising Auctus on development related topics, such as integration of other protocols into the Auctus Platform, collaboration with other cryptocurrency projects, as well as best practice implementations.">
-                        Former relationship manager for developers at 0x. Focused on cryptocurrency development and collaborations.
-                    </div>
-                    <div class="card-read-more">
-                        <span>Read more about Philippe</span>
-                    </div>
-                </div>
-            </div>
-            <div class="advisor-card">
-                <div class="card-picture-name">
-                    <div class="text-center">
-                        <img class="img-responsive card-picture img-circle border" src="img/advisors/eric.png">
-                    </div>
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/ericpaley/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Eric Paley
-                            </div>
-                            <div class="card-position">
-                                NIXON PEABODY
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" full-description="Eric Paley is a Partner and member of the Employee Benefits team at Nixon Peabody LLP, a global law firm, with more than 650 attorneys collaborating across major practice areas in the U.S., Europe and Asia. <br/><br/>He holds a B.A. from Cornell University and a J.D. from Syracuse University College of Law. <br/><br/>Eric is advising Auctus in legal compliance, implementation feedback, as well as further establish our footprint within the retirement industry.">
-                        Partner at Nixon Peabody and member of the Employee Benefits team. J.D. from Syracuse University College Law.
-                    </div>
-                    <div class="card-read-more">
-                        <span>Read more about Eric</span>
-                    </div>
-                </div>
-            </div>
-            <div class="advisor-card">
-                <div class="card-picture-name">
-                    <div class="text-center">
-                        <img class="img-responsive card-picture img-circle border" src="img/advisors/clark.jpg">
-                    </div>
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/steven-clark-421239b/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Steven Clark
-                            </div>
-                            <div class="card-position">
-                                HORIZON INVESTMENTS
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" full-description="Steven is an Associate Professor of Finance at UNC Charlotte where he conducts research in the areas of mathematical finance, derivative securities, asset pricing, and financial econometrics and a Partner at Horizon Investments. <br/><br/>He has a Ph.D. in Mathematical Sciences and a Ph.D. in Applied Economics, both from Clemson University. <br/><br/>Steven is advising Auctus in general management questions, with focus on implementation of robo-advisory technology, analytics and financial product offering.">
-                        Partner at Horizon Investments, Associate Professor of Finance at UNC Charlotte. Ph.D. in Mathematical Sciences and Economics.
-                    </div>
-                    <div class="card-read-more">
-                        <span>Read more about Steven</span>
-                    </div>
-                </div>
-            </div>
-            <div class="advisor-card">
-                <div class="card-picture-name">
-                    <div class="text-center">
-                        <img class="img-responsive card-picture img-circle border" src="img/advisors/adam.png">
-                    </div>
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/adam-greetis-45b6634/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Adam Greetis
-                            </div>
-                            <div class="card-position">
-                                SEYFARTH SHAW
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" full-description="Adam is a Partner at Seyfarth Shaw LLP, an international law firm with more than 900 attorneys in the U.S. and around the world. <br/><br/>He holds a B.A. from the University of Illinois at Urbana-Campaign and a J.D. from Chicago-Kent College of Law, Illinois Institute of Technology. <br/><br/>Adam is supporting Auctus with market feedback, as well as advise how to roll out the business globally from a legal and compliance perspective.">
-                        Partner at Seyfarth Shaw, member of Employee Benefits and Executive Compensation Department. J.D. from Chicago-Kent College
-                        of Law.
-                    </div>
-                    <div class="card-read-more">
-                        <span>Read more about Adam</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-back-panel" id="advisor-member">
-            <div class="modal-card">
-                <div class="modal-name">
-                    <span>Martijn Van Eck</span>
-                    <div class="close">
-                        <i class="fa fa-close"></i>
-                    </div>
-                </div>
-                <div class="modal-position" i18n="PENSION LEGAL ADVISOR">
-                    PENSION LEGAL ADVISOR
-                </div>
-                <div class="modal-description">
-                    Felipe has more than 12 years of software development experience. He brings along more than 7 years experience as Operations
-                    Manager and Partner at DTI Digital.
-                    <br>
-                    <br> Within seven years, they grew DTI Digital to a nationwide IT consulting and development enterprise with
-                    more than 150 employees. Prior to DTI Digital, Felipe was a Software Developer at Accenture, responsible
-                    for a larger team of developers.
-                </div>
+    <section class="experts" id="experts">
 
-            </div>
-        </div>
-    </section>
-
-    <section class="team" id="team">
-        <div class="section-heading inverted text-center">
-            <h2 i18n="TEAM">TEAM</h2>
-            <h3 i18n="MEET THE TEAM BEHIND AUCTUS">MEET THE TEAM BEHIND AUCTUS</h3>
-            <hr />
-        </div>
-        <div class="content team-content">
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/raphael.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/vantroost/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Raphael Vantroost
-                            </div>
-                            <div class="card-position">
-                                CEO
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Raphael brings along 12 years of financial services experience. He has successfully held various strategy and M&A positions at UBS Investment Bank in Zurich, Deutsche Bank in London and Noor Advisors in Geneva and Dubai. <br /><br />He founded Swissline Real Estate in 2012 and holds a portfolio of more than 70 units, including a serviced apartments business with more than 20 units.<br /><br />Raphael studied Economics at Basel and Yale University and holds an Executive MBA from INSEAD. He is fluent in 5 languages.<br /><br />At Auctus, Raphael is responsible for general management tasks, such as day-to-day management decisions, as well as implementing Auctus’ long and short term plans.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/daniel_figueiredo.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/daniel-duarte-figueiredo-b46589a4/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Daniel Duarte
-                            </div>
-                            <div class="card-position">
-                                CTO
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Daniel brings along more than 7 years of senior software engineering experience, having led multiple projects at DTI Digital, promoting blockchain technology and leading various blockchain initiatives. <br /><br />He holds a BSc in Control and Automation Engineering and has further certifications in Machine Learning and Salesforce Development & Management. <br /><br />Daniel is Chief Technology Officer at Auctus and overseeing the technical development. He is working closely with the development team and bridging between technical development and general management.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/vinicius.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/vinicius-melo-03a68b134/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Vinicius Melo
-                            </div>
-                            <div class="card-position">
-                                HEAD OF STRATEGY
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Vinicius brings along retirement fund experience, having worked at one of Brazil's main pension fund companies (FUNPRESP-JUD). <br /><br />He is a certified professional by the Certification Institute of Social Security Professionals (ICSS), mandatory for Executive, Supervisory and Governing Board members, as well as for investment committee members and other pension fund employees directly responsible for investing benefit plans’ guaranteeing resources. <br /><br />At Auctus, Vinicius is responsible for all strategy related tasks, such as token economics, token sale related strategies, as well as corporate strategy related questions.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/ludmila.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/ludmila-lopes-a0008017/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Ludmila Lopes
-                            </div>
-                            <div class="card-position">
-                                HEAD OF MARKETING
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Ludmila brings more than 5 years of software engineering experience, as well as time working as Director for a university enterprise, where she oversaw the marketing team.<br /><br />She holds a BSc in Software Engineering. <br /><br />At Auctus, Ludmila is responsible to develop and regularly update the community. Her deep understanding of software, combined with her interest in marketing and community management, allow her to effectively spread Auctus’ values.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/boaventura.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/daniel-boaventura-38839632/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Daniel Boaventura
-                            </div>
-                            <div class="card-position">
-                                HEAD OF OPERATIONS
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Daniel brings along international experience working as manager and supply chain management expert with 7 years of supply chain experience working for ESAB. <br /><br />He holds a BSc in Mechanical Engineering and a CBA certification in supply chain. <br /><br />At Auctus, Daniel is leveraging his experience in supply chain, by overseeing the operations. He is coordinating and guaranteeing timely execution of the platform, making sure our timeline is met. Furthermore, he is also coordinating bounty campaigns and other operational initiatives.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/felipe.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/felipe-silveira-2739121b/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Felipe Silveira
-                            </div>
-                            <div class="card-position">
-                                PROJECT MANAGER
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Felipe has more than 12 years of software development experience. He brings along more than 7 years experience as Operations Manager and Partner at DTI Digital. Felipe grew DTI Digital with 4 other partners within 7 years, from a small team of 5, to a nationwide IT consulting and development enterprise with more than 150 employees.<br /><br />Prior to DTI Digital, Felipe was a Software Developer at Accenture, responsible for a larger team of developers. <br /><br />He holds a BSc in Engineering and a postgraduate degree in Interaction Design. <br /><br />At Auctus, Felipe is responsible to coordinate the development of the Auctus Platform and bridging between general management and development.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/thiago.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/thiago-ara%C3%BAjo-092aa033/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Thiago Araújo
-                            </div>
-                            <div class="card-position">
-                                LEAD DEVELOPER
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Thiago brings along 7 years of experience with DTI Digital as Senior Software Engineer. Prior to joining Auctus, he led numerous large scale software and automation projects with a focus on risk management and cyber security. <br /><br />He holds a BSc in Engineering, Automation and Robotics. <br /><br />At Auctus, Thiago plays a key role in the development team. He focuses on making the Auctus platform stable and secure, minimizing risks such as hacking, blockchain overload, server overload and wrong transactions.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/gusman.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/guilherme-gusman-brand%C3%A3o-14128718/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Guilherme Gusman
-                            </div>
-                            <div class="card-position">
-                                SENIOR SOFTWARE ENGINEER
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Guilherme has more than 10 years of software development experience. He brings along experience as a co-founder and CTO of LG7. <br /><br />He started his career as a software engineer at DTI Digital and went on founding Livobooks. With his current partner at LG7, Guilherme started another business called ‘VG Resíduos’, a waste management software that reduces environmental impact, lowers the risk to be sanctioned and ultimately saves costs. <br /><br />Guilherme holds a BSc in Engineering.<br /><br />At Auctus, he was chosen as the brain behind our platform, ensuring that our users have a smooth experience managing their funds.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/ariny.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/ariny-guedes-51501215a/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Ariny Guedes
-                            </div>
-                            <div class="card-position">
-                                LEAD ETHEREUM ENGINEER
-                            </div>
-                            <div class="card-linkedin">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Ariny brings more than 6 years of experience as Senior Software Engineer at DTI Digital. He is an expert in C#, Java, C++ and Ethereum Blockchain. <br /><br />He holds a BSc in Control and Automation Engineering. <br /><br />At Auctus, Ariny is our most productive developer and can virtually program anything. He is responsible for defining the structure of the Ethereum blockchain layer of the platform.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/vitorino.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/daniel-vitorino-b939a484/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Daniel Vitorino
-                            </div>
-                            <div class="card-position">
-                                SENIOR SOFTWARE ARCHITECT
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Daniel has more than 8 years experience in software engineering, working as Senior Software Engineer at DTI Digital and as Tech Leader at Itaú - the largest bank in Latin America. He is an experienced full-stack developer, his know-how extends from database modeling and tuning, to fine mobile/web layout adjustments. <br /><br />He holds a BSc in Control and Automation Engineering. <br /><br />At Auctus Daniel is responsible for designing and developing our platform. He makes sure we're adopting the best development practices in a lean and efficient way.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/mariana.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/marianaazzi/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Mariana Azzi
-                            </div>
-                            <div class="card-position">
-                                UX/UI DESIGNER
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="Mariana brings along more than 6 years experience as UX/UI Designer at DTI Digital. <br /><br />She holds a BSc in Graphic Design. <br /><br />At Auctus she is responsible for ultimately enhancing user experience on our platform and is working closely with the developing team.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card-picture-name">
-                    <div class="card-behance">
-                        <i class="fa fa-behance"></i>
-                    </div>
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/samir.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.behance.net/samirtaiar" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Samir Taiar
-                            </div>
-                            <div class="card-position">
-                                BRAND INTERACTION DESIGNER
-                            </div>
-                        </div>
-                        <div class="card-behance">
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" short-description="" expanded-description="With over 10 years of experience, Samir is the cofounder of Onrizon, an online games studio responsible for developing Gartic, a draw and guess mobile game. With almost 3,000 followers on Behance. <br /><br />At Auctus, he is our Illustrator and Photoshop wizard, responsible for the design of the website and amazing illustrations. His design helps to communicate our values and business model to our stakeholders.">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-back-panel" id="team-member">
-            <div class="modal-card team-card">
-                <div class="card-picture-name">
-                    <img class="img-responsive profile-img img-circle border card-picture" src="img/team/felipe.jpg">
-                    <a class="card-name-position-linkedin" href="https://www.linkedin.com/in/felipe-silveira-2739121b/" target="_blank">
-                        <div class="card-name-position">
-                            <div class="card-name">
-                                Felipe Silveira
-                            </div>
-                            <div class="card-position" i18n="LEAD DEVELOPER">
-                                LEAD DEVELOPER
-                            </div>
-                        </div>
-                        <div class="card-linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-content" i18n="Felipe" short-description="" expanded-description="">
-                    </div>
-                    <div class="shrink-content">
-                        <span>-</span>
-                    </div>
-                    <div class="expand-content">
-                        <span>+</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="roadmap" id="roadmap">
-        <div class="transition-gradient-after adjust-top"></div>
         <div class="container">
-            <div class="dots-vert"></div>
-            <div class="section-heading text-center">
-                <h2 i18n="ROADMAP">ROADMAP</h2>
-                <h3 i18n="CHECK THE PROJECT MILESTONES">CHECK THE PROJECT MILESTONES</h3>
-                <hr width="100px"></hr>
+            <div class="quote">
+                <div class="dots"></div>
+                <hr />
+                <span>We empower individual investors by giving them <br /> access to professional financial technology.</span>
             </div>
-            <div class="row clearfix">
-                <div class="col-lg-12">
-                    <div class="container-fluid">
-                        <div class="row clearfix left">
-                            <div class="col-lg-5 box left first">
-                                <div class="dots pull-right">
-                                    <span class="year">2017</span>
+            
+            <div class="blue-box-container">
+                <a href="https://experts.auctus.org/top-experts" target="_blank">
+                    <div class="blue-box follow">
+                        <div class="blue-panel">
+                            <div>
+                                <h3>
+                                    FOLLOW THE BEST TRADERS
+                                </h3>
+                                <div>
+                                    <span>
+                                        Follow the leading traders in our platform ranked by a transparent ranking algorithm
+                                    </span>
                                 </div>
-                                <br />
-                                <span class="heading green">QUARTER 3</span>
-                                <br />
-                                <div class="milestones vertical-line right">
-                                    <span class="text-right">Pre-Sale</span>
-                                    <br />
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="lines first">
-                                    <div class="roadmap-line active"></div>
-                                    <div class="roadmap-line active"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 box right first">
-                                <div class="dots pull-left">
-                                    <span class="year">2017</span>
-                                </div>
-                                <br>
-                                <span class="heading green">QUARTER 4</span>
-                                <br />
-                                <div class="milestones vertical-line left">
-                                    <span class="text-right">Advisory Board</span>
-                                    <br />
-                                    <span class="text-right">Auctus Demo Launch</span>
-
-
+                                <div class="link-box">
+                                    <span>DISCOVER EXPERTS</span><img src="img/global/arrow.png" />
                                 </div>
                             </div>
                         </div>
-                        <div class="row clearfix left">
-                            <div class="col-lg-5 box left second">
-                                <div class="dots pull-right">
-                                    <span class="year">2018</span>
+                    </div>
+                </a>
+                <a href="https://experts.auctus.org/asset-events" target="_blank">
+                    <div class="blue-box powerful">
+                        <div class="blue-panel">
+                            <div>
+                                <h3>
+                                    POWERFUL ANALYTICS & MARKET SENTIMENT TOOLS
+                                </h3>
+                                <div>
+                                    <span>
+                                        News, events, reports and more to help you taking the best trading decisions
+                                    </span>
                                 </div>
-                                <br>
-                                <span class="heading green">QUARTER 1</span>
-                                <br />
-                                <div class="milestones vertical-line right">
-                                    <span class="text-right">Strategic Partnerships</span>
-                                    <br />
-                                    <span class="text-right">Development of Alpha Auctus Platform</span>
-                                    <br />
-                                    <span class="text-right">Initial Token Sale</span>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="lines second">
-                                    <div class="roadmap-line active"></div>
-                                    <div class="roadmap-line active"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 box right second">
-                                <div class="dots pull-left">
-                                    <span class="year">2018</span>
-                                </div>
-                                <br>
-                                <span class="heading green">QUARTER 2</span>
-                                <br />
-                                <div class="milestones vertical-line left">
-                                    <span class="text-right">Alpha promotion (feedback & adjustments)</span>
-                                    <br>
-                                    <span class="text-right">Development of Beta Platform</span>
-                                    <br>
-                                    <span class="text-right">Partnerships with Exchanges</span>
-                                    <br>
-
+                                <div class="link-box">
+                                    <span>FIND EVENTS</span><img src="img/global/arrow.png" />
                                 </div>
                             </div>
                         </div>
-                        <div class="row clearfix left">
-                            <div class="col-lg-5 box left third">
-                                <div class="dots pull-right">
-                                    <span class="year">2018</span>
-                                </div>
-                                <br>
-                                <span class="heading green">QUARTER 3</span>
-                                <br />
-                                <div class="milestones vertical-line right">
-                                    <span class="text-right">Experts Platform (analytics & advisory)</span>
-                                </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="back-panel">
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+        <div class="container">
+            <div class="latest-features">
+                <h1>LATEST FEATURES!</h1>
+                <div>
+                    <span class="latest-feature-title">TERMINAL</span><br />
+                    <span>Real-time charts, prices and news</span>
+                </div>
+                <a href="https://experts.auctus.org/terminal" target="_blank">
+                    <div class="access">
+                        <span>
+                            ACCESS
+                        </span>
+                        <img src="img/global/arrow.png" />
+                    </div>
+                </a>
+            </div>
+            <div class="other-features">
+                <h2>OTHER FEATURES</h2>
+                <span>Effective tools to help you having well<br />thought out investment decisions.</span>
+                <ul>
+                    <li>Execute your trades on top exchanges</li>
+                    <li>Benefit from the best trading tools of our Marketplace</li>
+                    <li>Latest News</li>
+                    <li class="web-only">Rating Agency Reports</li>
+                </ul>
+            </div>
+        </div>
+        <img class="feature-img" src="img/features/feature.png" />
+    </section>
+    <section class="token" id="token">
+        <div class="container">
+            <div class="gray-block"></div>
+            <hr />
+            <h1>TRANSPARENT PAYMENT AND <br />GOVERNANCE SYSTEM WITH AUC</h1>
+            <div class="cards-container">
+                <div class="token-card earn">
+                    <div class="dots"></div>
+                    <div><img src="img/token/earn.png" /></div>
+                    <div>
+                        <span>Pay reduced fees by using AUC</span>
+                    </div>
+                </div>
+                <div class="token-card hold">
+                    <div class="dots"></div>
+                    <div><img src="img/token/hold.png" /></div>
+                    <div>
+                        <span>Unlock exclusive features by holding AUC</span>
+                    </div>
+                </div>
+                <div class="token-card vote">
+                    <div class="dots"></div>
+                    <div><img src="img/token/vote.png" /></div>
+                    <div>
+                        <span>Vote for important decisions inside the platform as a token holder</span>
+                    </div>
+                </div>                
+            </div>
+            <div class="buyback">
+                <span>BUYBACK-AND-BURN<br />Every quarter, we will use 30% of our profits<br />to buy back AUC and burn them</span>
+            </div>
+        </div>
+    </section>
+    <section class="where-to-buy" id="whereToBuy">
+        <div class="container">
+            <h2>
+                WHERE TO BUY
+            </h2>
+            <div class="exchanges">
+                <a href="https://www.bitfinex.com/" target="_blank"><img src="img/exchanges/bitfinex.png" /></a>
+                <a href="https://idex.market/eth/auc" target="_blank"><img src="img/exchanges/idex.png" /></a>
+                <a href="https://hitbtc.com/AUC-to-ETH" target="_blank"><img src="img/exchanges/hitbtc.png" /></a>
+                <a href="https://www.coinbene.com/#/market?pairId=AUCBTC" target="_blank"><img src="img/exchanges/coinbene.png" /></a>
+                <a href="https://www.bancor.network/communities/5ad9c1c5c7d1460001bc9bfa" target="_blank"><img src="img/exchanges/bancor.png" /></a>
+            </div>
+        </div>
+    </section>
+    <section class="roadmap" id="roadmap">
+        <div class="border-bar"></div>
+        <div class="container-roadmap">
+            <h2>ROAD MAP</h2>
+            <div class="scrollable">
+                <div class="timeline">
+                    <div class="year-box">
+                        <div class="year-title">
+                            <h2 class="pull-left">2018</h2>
+                            <h2 class="pull-right">2018</h2>
+                        </div>
+                        <div class="quarter-titles current">
+                            <div class="q-title past">
+                                <h3>1st Qtr</h3>
+                                <h5>2018</h5>
+                                <div class="circle"></div>
                             </div>
-                            <div class="col-lg-2">
-                                <div class="lines third">
-                                    <div class="roadmap-line active"></div>
-                                    <div class="roadmap-line"></div>
-                                </div>
+                            <div class="q-title past">
+                                <h3>2nd Qtr</h3>                                
+                                <h5>2018</h5>
+                                <div class="circle"></div>
                             </div>
-                            <div class="col-lg-5 box right third">
-                                <div class="dots pull-left">
-                                    <span class="year">2018</span>
-                                </div>
-                                <br>
-                                <span class="heading green">QUARTER 4</span>
-                                <br />
-                                <div class="milestones vertical-line left">
-                                    <span class="text-right">Auctus Experts Promotion (feedback & adjustments)</span>
-                                    <br>
-                                    <span class="text-right">Development of Auctus Fund Management Solution</span>
-                                </div>
+                            <div class="q-title past">
+                                <h3>3rd Qtr</h3>
+                                <h5>2018</h5>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="q-title current">
+                                <h3>4th Qtr</h3>
+                                <h5>2018</h5>
+                                <div class="circle"></div>
                             </div>
                         </div>
-                        <div class="row clearfix left">
-                            <div class="col-lg-5 box left fourth">
-                                <div class="dots pull-right">
-                                    <span class="year">2019</span>
-                                </div>
-                                <br>
-                                <span class="heading green">QUARTER 1</span>
-                                <br />
-                                <div class="milestones vertical-line right">
-                                    <span class="text-right">Auctus Fund Management Solution Release</span>
-                                    <br>
-                                </div>
+                        <div class="quarter-bullets">
+                            <div class="q-bullet past">
+                                <ul>
+                                    <li><span>Initial Token Sale</span></li>
+                                    <li><span>Strategic Partnerships</span></li>
+                                    <li><span>Development of Alpha Auctus Platform</span></li>
+                                </ul>
                             </div>
-                            <div class="col-lg-2">
-                                <div class="lines fourth">
-                                    <div class="roadmap-line"></div>
-                                </div>
+                            <div class="q-bullet past">
+                                <ul>
+                                    <li><span>Alpha promotion (feedback & adjustments) </span></li>
+                                    <li><span>Development of Beta Platform (Experts) </span></li>
+                                    <li><span>Partnerships with Exchanges</span></li>
+                                </ul>
                             </div>
-                            <div class="col-lg-5 box right fourth">
-                                <div class="dots pull-left">
-                                    <span class="year">2019</span>
-                                </div>
-                                <br>
-                                <span class="heading green">QUARTER 2</span>
-                                <br />
-                                <div class="milestones vertical-line left">
-                                    <span class="text-right">Development of Auctus Retirement Solutions</span>
-                                    <br>
-                                </div>
+                            <div class="q-bullet past">
+                                <ul>
+                                    <li><span>Experts Platform (analytics & advisory)</span></li>
+                                </ul>
                             </div>
-                       
+                            <div class="q-bullet">
+                                <ul>
+                                    <li><span>Terminal</span></li>
+                                    <li><span>UX Improvements</span></li>
+                                    <li><span>Virtual Money Trading Phase</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="year-box">
+                        <div class="year-title">
+                            <h2 class="pull-left">2019</h2>
+                            <h2 class="pull-right">2019</h2>
+                        </div>
+                        <div class="quarter-titles">
+                            <div class="q-title">
+                                <h3>1st Qtr</h3>
+                                <h5>2019</h5>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="q-title">
+                                <h3>2nd Qtr</h3>
+                                <h5>2019</h5>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="q-title">
+                                <h3>3rd Qtr</h3>
+                                <h5>2019</h5>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="q-title">
+                                <h3>4th Qtr</h3>
+                                <h5>2019</h5>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="quarter-bullets">
+                            <div class="q-bullet">
+                                <ul>
+                                    <li><span> Mobile App</span></li>
+                                    <li><span>Trades Execution Phase 1 (1 exchange, top 5 assets, limit/market orders)</span></li>
+                                </ul>
+                            </div>
+                            <div class="q-bullet">
+                                <ul>
+                                    <li><span>Copy Trading </span></li>
+                                    <li><span>Services Marketplace Phase 1 (reports, special ratings)</span></li>
+                                    <li><span> Trades Execution Phase 2  ( add more exchanges, all avl. assets, + order types)</span></li>
+                                </ul>
+                            </div>
+                            <div class="q-bullet">
+                                <ul>
+                                    <li><span>Auctus Portfolio Manager: Portfolio Analytics (Virtual Money)</span></li>
+                                    <li><span>Community Governance</span></li>
+                                </ul>
+                            </div>
+                            <div class="q-bullet">
+                                <ul>
+                                    <li><span>Auctus Portfolio Manager: Portfolio Management (Real money/automatic rebalancing)</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <img src="img/auctus-wm.png" class="auctus-wm"></div>  -->
     </section>
-
-    <section class="latestnews" style="display:none">
-        <div class="section-heading text-center">
-            <h2 i18n="OUR LATEST NEWS">OUR LATEST NEWS</h2>
-            <hr width="100px" />
-        </div>
+    <section class="blog" style="display:none">
+        <h2 i18n="OUR LATEST NEWS">Blog</h2>
         <div class="news-container" id="newsContainer">
             <a href="NEWS_URL" target="_blank">
                 <div class="news-card">
                     <div class="img-div" style="background: url(IMG_URL)"></div>
-                    <div class="dots news-card-dots"></div>
-                    <div class="news-card-title">NEWS_TITLE</div>
                     <div class="news-card-date">NEWS_DATE</div>
+                    <div class="news-card-title">NEWS_TITLE</div>
+                    <div class="read-more">
+                        <span>READ MORE</span> <img class="turn-white-blue" src="img/global/arrow.png" />
+                    </div>
                 </div>
             </a>
-        </div>
-    </section>
-    <section class="as-seen-on" id="asSeenOn">
-        <div class="section-heading text-center">
-            <h2 i18n="AS SEEN ON">AS SEEN ON</h2>
-            <hr width="100px"></hr>
-        </div>
-        <div class="links container">
-            <div class="top-white-div"></div>
-            <div class="left-blue-div"></div>
-            <div class="right-blue-div"></div>
-            <div class="row">
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://www.forbes.com/sites/andrewrossow/2018/04/04/millennials-can-now-reinvent-their-investment-portfolios-on-the-blockchain/#2c3eaa56208d"
-                       target="_blank">
-                        <div class="link-box forbes">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://www.bna.com/blockchain-technology-hits-n73014470448/" target="_blank">
-                        <div class="link-box bloomberg">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://venturebeat.com/2018/02/19/auctus-is-bringing-blockchain-tech-to-the-36-trillion-retirement-plan-market/"
-                        target="_blank">
-                        <div class="link-box venturebeat">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://www.cnbc.com/2018/03/05/people-are-putting-bitcoin-into-their-retirement-savings-.html" target="_blank">
-                        <div class="link-box cnbc">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="https://www.reuters.com/article/us-crypto-currencies-usa/cryptocurrency-issuers-clean-up-shun-u-s-investors-as-sec-gets-tough-idUSKBN1GX2OX" target="_blank">
-                        <div class="link-box reuters">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 ">
-                    <a href="http://bitcoinist.com/ethfinex-0x-project-request-network-others-cooperate-auctus-lab-initiative/" target="_blank">
-                        <div class="link-box bitcoinist">
-                        </div>
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
     <footer style="background-color: #fafafa;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-6">
                 </div>
-                <div class="col-md-6">
+                <div class="col-6">
                     <div class="row pull-right">
                         <div class="navigation-icons text-center">
                             <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
@@ -1262,9 +392,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-12">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <div class="row association-box">
                                 <div>
                                     <img src="img/footer/mama_logo.svg" style="width: 280px;padding: 15px 0px 10px 0px; opacity:0.5; margin-left: -18px;">
@@ -1279,7 +409,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <div class="row association-box">
                                 <div>
                                     <img src="./img/footer/eea.png" style="padding: 5px 0px 10px 0px;">
@@ -1296,16 +426,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-12">
                             <div class="row association-box">
                                 <div class="text-center" style="margin: auto;">Legal Support</div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-12">
                             <div class="row association-box text-center" style=" padding-top: 0px;  margin-top:  0px;">
-                                <a style="margin: auto;" href="https://aurum.expert/en/uslugi/it-and-technologies/legal-support-for-initial-coin-offering-ico-procedure/" target="_blank"><img src="img/footer/aurum.png" ></a>
+                                <a style="margin: auto;" href="https://aurum.expert/en/uslugi/it-and-technologies/legal-support-for-initial-coin-offering-ico-procedure/" target="_blank"><img src="img/footer/aurum.png"></a>
                             </div>
                         </div>
                     </div>
@@ -1313,7 +443,7 @@
             </div>
             <hr class="separator" />
             <div class="row legal-container">
-                <div class="col-lg-12">
+                <div class="col-12">
                     <div class="row disclaimer">
                         <span>
                             The AUC Token Sale, Terms of Token Sale, the Whitepaper and any documents related to the Token Sale do not constitute a prospectus
@@ -1326,10 +456,7 @@
                             of money (including electronic money). Accordingly, any protections offered by applicable law
                             in relation to the purchase, holding and/or sale of the abovementioned instruments and investments
                             shall not apply to any contribution made during the AUC Token Sale. AUCTUS PROJECT INC is not
-                            licensed in any jurisdiction. The Token Sale involves the development and use of experimental
-                            software and technologies that may not achieve the objectives specified in the
-                            <a onclick="downloadWhitepaper('en')">Auctus’ Whitepaper</a> and related documents. The purchase of AUC Tokens represents a high risk
-                            to any purchaser.
+                            licensed in any jurisdiction.
                             <br /> You can find more details regarding Auctus' website in our
                             <a target="_blank" href="https://dl.auctus.org/Terms_of_Use.pdf">Terms of Use</a> and
                             <a target="_blank" href="https://dl.auctus.org/Privacy_Policy.pdf">Privacy Policy</a>.
@@ -1342,135 +469,18 @@
             </div>
         </div>
     </footer>
-    <img class="v" src="img/tokensale/v.png" />
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/translation.js"></script>
-    <script src="js/script.min.js?v=34"></script>
-    <script>
-        $(".menu-content a").click(function (e) {
-            if ($(window).width() <= 768)
-                $('#topMenu').toggleClass('open');
-        });
-        $("#topMenu").click(function (e) {
-            if (e.target !== this)
-                return;
-            $('#topMenu').toggleClass('open');
-        });
-        $('a').click(function () {
-            var href = $(this).attr('href');
-            if (href) {
-                $('html, body').animate({
-                    scrollTop: $(href).offset().top
-                }, 500);
-            }
-            return false;
-        });
-        sum = 0;
-        var count = 0;
-
-
-        $(document).keypress(function (e) {
-            if (e.which === 118)
-                sum = 118;
-            else if (sum === 118 && e.which === 105)
-                sum += 105;
-            else if (sum === 223 && e.which === 116)
-                sum += 116;
-            else if (sum === 339 && e.which === 97)
-                sum += 97;
-            else if (sum === 436 && e.which === 108)
-                sum += 108;
-            else if (sum === 544 && e.which === 105)
-                sum += 105;
-            else if (sum === 649 && e.which === 107) {
-                $('img.v').toggleClass('visible'); new Audio('img/tokensale/t.mp3').play(); setTimeout(function () { $('img.v').toggleClass('visible'); }, 700);
-            }
-            else sum = 0;
-        });
-    </script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-106121445-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2025966277638951');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2025966277638951&ev=PageView&noscript=1"
-        />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-    <!-- Twitter universal website tag code -->
-    <script>
-        !function (e, t, n, s, u, a) {
-            e.twq || (s = e.twq = function () {
-                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
-            }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
-                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
-        }(window, document, 'script');
-        // Insert Twitter Pixel ID and Standard Event data below
-        twq('init', 'ny69k');
-        twq('track', 'PageView');
-    </script>
-    <!-- End Twitter universal website tag code -->
-    <script>
-        window.intercomSettings = {
-            app_id: "vccdldj3"
-        };
-    </script>
-
-    <script>
-
-        function monitorInterval() {
-            var id = (count % 4) + 1;
-            updateMonitor($('[meta-monitor-id="' + id + '"]'));
-            count++;
-        }
-
-        var intervalHandler = setInterval(monitorInterval, 3000);
-
-        $(function () {
-            $('[meta-monitor-id]').click(function () {
-                updateMonitor(this);
-            });
-        });
-
-        function updateMonitor(element) {
-            var src = 'img/video/disp' + $(element).attr('meta-monitor-id') + '.png';
-            $('.monitor').attr('src', src)
-            $('[meta-monitor-id]').removeClass('active');
-            $(element).addClass('active');
-            clearInterval(intervalHandler);
-            intervalHandler = setInterval(monitorInterval, 3000);
-        };
-
+    <script src="js/roadmap.js"></script>
+    <script src="js/script.js?v=35"></script>
+    <script title="blog-script">
         var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
         $(function () {
             var $content = $('#newsContainer');
-            var $section = $('.latestnews');
+            var $section = $('.blog');
             var $template = $('#newsContainer').html();
             var data = {
                 rss_url: 'https://blog.auctus.org/feed/'
@@ -1501,7 +511,6 @@
                 }
             });
         });
-
         function createSlider() {
             $('#newsContainer').slick({
                 dots: true,
@@ -1511,96 +520,58 @@
             });
         }
     </script>
-
     <script>
-        $('.advisors .card-read-more > span').click(function (e) {
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-            var advisorCard = $(e.target).parent().parent().parent();
-            $('.advisors .modal-back-panel .modal-name > span').html(advisorCard.find('.card-name').html());
-            $('.advisors .modal-back-panel .modal-position').html(advisorCard.find('.card-position').html());
-            $('.advisors .modal-back-panel .modal-description').html(advisorCard.find('.card-description-content').attr('full-description'));
-            $('.advisors .modal-back-panel').addClass('show');
-            $('.advisors .modal-back-panel').fadeIn();
-            window.location.href = '#advisor-member';
-        });
-        $('.advisors .modal-back-panel').click(function (e) {
-            if (e.target !== this)
-                return;
-            closeAdvisorCard();
-        });
-        $('.advisors .modal-back-panel .close').click(function () {
-            closeAdvisorCard();
-        });
-
-        function closeAdvisorCard() {
-            $('.advisors .modal-back-panel').removeClass('show');
-        }
+        ga('create', 'UA-106121445-1', 'auto');
+        ga('send', 'pageview');
     </script>
+    <!-- Facebook Pixel Code -->
     <script>
-        $('.expand-content > span').click(function (e) {
-            var teamCard = $(e.target).parent().parent().parent();
-            teamCard.addClass('show')
-            $('.team .modal-back-panel').addClass('show');
-            $('.show .expand-content').css('display', 'none')
-            $('.show .shrink-content').css('display', 'block')
-            $('.team .modal-card').scrollTop();
-            $('.team .modal-back-panel').fadeIn();
-            $('.modal-back-panel .modal-card img').attr('src', teamCard.find('img').attr('src'));
-            $('.modal-back-panel .modal-card .card-name-position-linkedin').attr('href', teamCard.find('.card-name-position-linkedin').attr('href'));
-            $('.modal-back-panel .modal-card .card-name').html(teamCard.find('.card-name').html());
-            $('.modal-back-panel .modal-card .card-position').html(teamCard.find('.card-position').html());
-            if ($(document).width() <= 490) {
-                $('body').addClass('block-scroll');
-                $('.modal-back-panel .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
-                window.location.href = '#team-member';
-            }
-            else {
-                $('.show .card-description-content').html($('.show .card-description-content').attr('expanded-description'));
-            }
-
-        });
-
-        $('.team .modal-back-panel').click(function (e) {
-            if (e.target !== this)
-                return;
-            closeCard();
-        });
-
-
-
-        $('.shrink-content').click(function (e) {
-            closeCard();
-        });
-        function closeCard() {
-            $('.show .expand-content').css('display', 'block')
-            $('.show .shrink-content').css('display', 'none')
-            $('.show .card-description-content').html($('.show .card-description-content').attr('short-description'));
-            $('.team .show').removeClass('show');
-            $('body').removeClass('block-scroll');
-        }
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2025966277638951');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2025966277638951&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Twitter universal website tag code -->
+    <script>
+        !function (e, t, n, s, u, a) {
+            e.twq || (s = e.twq = function () {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, 'script');
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init', 'ny69k');
+        twq('track', 'PageView');
+    </script>
+    <!-- End Twitter universal website tag code -->
+    <script>
+        window.intercomSettings = {
+            app_id: "vccdldj3"
+        };
     </script>
 
     <script>
-        if ($(document).width() <= 490) {
-            $('.content.team-content').slick({
-                dots: true
-            });
-            $('.advisors-content').slick({
-                dots: true
-            });
-            $('.modal-back-panel').addClass('horizontal-scroll');
-        }
-        else {
-            $('.team .modal-card').hide();
-        }
 
-        window.onpopstate = function () {
-            if (document.location.href.indexOf("#team-member") == -1)
-                closeCard();
-            if (document.location.href.indexOf("#advisor-member") == -1)
-                closeAdvisorCard();
-        }
     </script>
 </body>
-
 </html>

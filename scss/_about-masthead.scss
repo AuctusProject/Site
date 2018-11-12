@@ -1,0 +1,98 @@
+
+header.about-masthead {
+    width: 100%;
+    height: 100%;
+    background: #161618;
+    background-image: url(/img/about/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .top-menu {
+        position: absolute;
+        width: 100%;
+        top: 30px;
+        padding: 0 90px;
+        margin-left: -15px;
+
+        div {
+            display: inline-block;
+        }
+
+        > div:first-child {
+            div {
+                padding: 10px 20px;
+            }
+
+            div.active {
+                border-bottom: 2px solid #126efd;
+            }
+        }
+
+        > div:last-child {
+            div {
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+
+        a {
+            color: white;
+        }
+
+        i {
+            color: #b7b7b7;
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .center-panel {
+            margin: auto;
+            width: 80%;
+            position: relative;
+
+            .left {
+                text-align: right;
+                position: absolute;
+                width: 505px;
+                top: 45%;
+            }
+
+            .right {
+                text-align: left;
+                position: absolute;
+                width: 505px;
+                top: 70%;
+                right:0;
+            }
+
+
+            img {
+                margin: 70px auto 30% auto;
+                zoom: 0.7;
+            }
+
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .connection-line {
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin-left: -15px;
+
+        div {
+            margin: 5% auto;
+            background-color: white;
+            height: 90px;
+            width: 1px;
+        }
+    }
+}

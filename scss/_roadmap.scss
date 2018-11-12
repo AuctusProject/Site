@@ -1,225 +1,157 @@
-// Styling for the download section
-section.roadmap {
-    padding-top: 0;
-    padding-bottom: 5em;
+﻿section.roadmap {
+    background-color: #141414;
+    position: relative;
 
-
-    @media (max-width: 768px) {
-        padding-bottom: 1em;
+    .container-roadmap {
+        padding-top: 90px;
     }
 
-    .year {
-        color: #002d78;
-        font-family: 'Myriad Pro Bold';
-        font-size: 20px;
-        top: -4px;
+    h2 {
+        font-size: 37.5px;
+        font-weight: 600;
+        line-height: 1.12;
+        letter-spacing: 0.9px;
+        text-align: center;
+        color: #ffffff;
     }
 
-    .box {
-        -webkit-box-shadow: 0px 0px 7px 0px rgba(179,179,179,1);
-        -moz-box-shadow: 0px 0px 7px 0px rgba(179,179,179,1);
-        box-shadow: 0px 0px 7px 0px rgba(179,179,179,1);
-        border-radius: 7px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        min-height: 175px;
-        height: 100%;
-    }
-
-    .box.left {
-        padding-right: 40px;
-        text-align: right;
-    }
-
-    .box.right {
-        padding-left: 40px;
-    }
-
-    @media (max-width: 991px) {
-        .box {
-            margin-top: 30px;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .box.left:after {
-            content: 'after';
-            width: 80px;
-            height: 3px;
-            background: #cccccc;
-            position: absolute;
-            top: 50%;
-            right: -80px;
-            color: #FFF;
-            text-align: center;
-            z-index: 1;
-        }
-
-        .box.right:after {
-            content: 'after';
-            width: 70px;
-            height: 3px;
-            background: #cccccc;
-            position: absolute;
-            top: 50%;
-            left: -70px;
-            color: #FFF;
-            text-align: center;
-            z-index: 1;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .box.right.first {
-            margin-top: 110px;
-        }
-
-        .box.right.second {
-            top: 45px;
-        }
-
-        .box.right.third {
-            top: 88px;
-        }
-
-        .box.right.fourth {
-            top: 128px;
-        }
-
-        .box.left.first {
-        }
-
-        .box.left.second {
-            top: -65px;
-        }
-
-        .box.left.third {
-            top: -20px;
-        }
-
-        .box.left.fourth {
-            top: 24px;
-        }
-    }
-
-    span.heading {
-        font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold';
-        font-size: 20px;
-        top: -4px;
-    }
-
-    .green {
-        color: #09D8BA
-    }
-
-    .dots {
-        width: 50%;
-    }
-
-    .dots.pull-right {
-        margin-right: 50px;
-
-        span {
-            position: relative;
-            right: -50px;
-        }
-    }
-
-    .dots.pull-left {
-        margin-left: 50px;
-
-        span {
-            position: relative;
-            left: -50px;
-        }
-    }
-
-
-    .vertical-line.right {
-        border-right: 2px solid black;
-        margin-right: 0px;
-        padding-right: 20px;
-        margin-top: 10px;
-    }
-
-    .vertical-line.left {
-        border-left: 2px solid black;
-        margin-left: 0px;
-        padding-left: 20px;
-        margin-top: 10px;
-    }
-
-    .row.right, .row.left {
+    .scrollable {
+        margin-top: 100px;
+        width: 100%;
         position: relative;
+        overflow-x: hidden;
+
+        @media (max-width: 992px) {
+            overflow-x: auto;
+        }
     }
 
-    .milestones span {
-        font-family: 'Helvetica Neue Light','HelveticaNeue-Light';
+    .scrollable.smooth {
+        scroll-behavior: smooth;
     }
 
-    @media (min-width: 992px) {
 
-        .lines {
-            position: absolute;
-            left: 50%;
+
+    .timeline {
+        * {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
         }
 
-        .lines.second {
-            top: 5px;
-        }
+        .year-box {
+            display: inline-block;
+            width: 1200px;
+            height: 360px;
+            padding-right: 0.5px;
+            border-right: solid 0.5px #292929;
 
-        .lines.first {
-            top: 70px;
-        }
+            > div {
+                width: 100%;
+            }
 
-        .lines.third {
-            top: 48px;
-        }
+            .year-title {
+                height: 60px;
+                padding: 0 23px 0 10px;
 
-        .lines.fourth {
-            top: 93px;
-        }
+                h2 {
+                    text-align: left;
+                    font-family: Gilroy-Medium;
+                    font-style: italic;
+                    font-size: 45px;
+                    color: #242424;
+                }
+            }
 
-        .lines.fifth {
-            top: 128px;
-        }
+            .quarter-titles {
+                height: 105px;
+                border-bottom: solid 1px #d9d9d9;
+                font-style: italic;
+                padding-top: 25px;
 
-        .roadmap-line {
-            background: #CCCCCC;
-            width: 7px;
-            height: 70px;
-            position: relative;
-            margin-top: 40px;
-        }
+                h3 {
+                    font-family: Gilroy-Medium;
+                    font-size: 27px;
+                }
 
-        .roadmap-line.higher {
-            height: 135px;
-        }
+                h5 {
+                    font-size: 16px;
+                }
+            }
 
-        .roadmap-line:after {
-            content: "";
-            width: 200px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            position: absolute;
-            top: -30px;
-            left: -6px;
-            color: #FFF;
-            text-align: center;
-            z-index: 2;
-        }
+            .current > h3 {
+                border-left: 4px solid #126efd;
+                padding-left: 5px;
+                margin-left: -10px;
+            }
 
-        .roadmap-line.active {
-            background: #00BDFF !important;
-        }
+            .quarter-titles.current {
+                background: #1b1b1b;
+            }
 
-        .roadmap-line.active:after {
-            background: #00BDFF !important;
-        }
+            .past * {
+                color: #595959;
+            }
 
-        .roadmap-line:after {
-            background: #CCCCCC !important;
+            .q-title {
+                display: inline-block;
+                width: 295px;
+                height: calc(100% + 2px);
+                position: relative;
+                border-bottom: solid 4px transparent;
+                padding-left: 7px;
+
+                .circle {
+                    position: absolute;
+                    bottom: -7px;
+                    left: -9px;
+                    height: 10px;
+                    width: 10px;
+                    background: #141414;
+                    border: solid 1px #d9d9d9;
+                    border-radius: 50%;
+                }
+            }
+
+            .q-title.past {
+                border-bottom: solid 4px #595959;
+
+                .circle {
+                    border: solid 1px #595959;
+                    background: #595959;
+                }
+            }
+
+            .quarter-bullets {
+                font-size: 14px;
+
+
+                .q-bullet {
+                    padding-top: 25px;
+                    width: 295px;
+                    display: inline-flex;
+
+                    ul {
+                        padding-left: 20px;
+
+                        li {
+                            font-size: 10px;
+
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+
+                        li + li {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

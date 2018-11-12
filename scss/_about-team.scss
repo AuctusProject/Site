@@ -1,0 +1,139 @@
+
+section.about-team {
+    background: #161618;
+    height: unset;
+
+    h2 {
+        font-family: Gilroy-Medium;
+    }
+
+    .photo-grid {
+        padding-top: 50px;
+        word-spacing: -6px;
+        line-height: 0;
+        text-align: center;
+        max-width: 1160px;
+        margin: auto;
+
+        .ariny::before {
+            background-image: url(../img/about/team/ariny.jpg);
+        }
+
+        .boaventura::before {
+            background-image: url(../img/about/team/boaventura.jpg);
+        }
+
+        .duarte::before {
+            background-image: url(../img/about/team/duarte.jpg);
+        }
+
+        .felipe::before {
+            background-image: url(../img/about/team/felipe.jpg);
+        }
+
+        .gusman::before {
+            background-image: url(../img/about/team/gusman.jpg);
+        }
+
+        .ludmila::before {
+            background-image: url(../img/about/team/ludmila.jpg);
+        }
+
+        .raphael::before {
+            background-image: url(../img/about/team/raphael.jpg);
+        }
+
+        .thiago::before {
+            background-image: url(../img/about/team/thiago.jpg);
+        }
+
+        .vinicius::before {
+            background-image: url(../img/about/team/vinicius.jpg);
+        }
+
+        .vitorino::before {
+            background-image: url(../img/about/team/vitorino.jpg);
+        }
+
+        .photo::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            filter: grayscale(85%);
+        }
+
+        .photo {
+            position: relative;
+            text-align: left;
+            word-spacing: normal;
+            width: 230px;
+            height: 230px;
+            display: inline-flex;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 15px 25px;
+
+            .hiddeable {
+                opacity: 0;
+                transition: all 0.3s;
+            }
+
+            .hiddeable:hover {
+                opacity: 1;
+            }
+
+            h4 {
+                font-family: Gilroy-Bold;
+            }
+
+            h4, h5 {
+                position: relative;
+            }
+
+            .black-panel {
+                background: black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.8;
+            }
+
+            a {
+                color: white;
+            }
+
+            .link-box {
+                position: absolute;
+                font-size: 13px;
+                text-align: left;
+                bottom: 25px;
+                left: 25px;
+
+                span {
+                    font-family: Gilroy-Medium;
+                    font-size: 13px;
+                    margin-right: 15px;
+                }
+            }
+
+            .link-box:after {
+                content: '';
+                position: absolute;
+                width: 44px;
+                height: 2px;
+                background: #126efd;
+                left: 0;
+                top: 15px;
+            }
+        }
+
+        .photo.active {
+        }
+    }
+}

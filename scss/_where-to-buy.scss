@@ -1,0 +1,23 @@
+section.where-to-buy {
+    color: #262626;
+    background-color: #e9e9e9;
+    text-align: center;
+    height: unset;
+    padding: 70px 0 100px 0;
+
+    h2 {
+        font-family: Gilroy-Bold;
+        font-size: 37.5px;
+        letter-spacing: 0.9px;
+        margin-bottom: 56px;
+    }
+
+    .exchanges {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            align-self: flex-end;
+        }
+    }
+}
