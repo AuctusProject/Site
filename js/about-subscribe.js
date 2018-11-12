@@ -24,7 +24,7 @@ function validateEmail(email) {
 function subscribeToNewsletter(inputName, inputEmail) {
     $.ajax({
         type: 'POST',
-        url: 'https://auctusplatformapidev.azurewebsites.net/api/v1/website/emails',
+        url: 'https://auctusplatformapi.azurewebsites.net/api/v1/website/emails',
         data: JSON.stringify({ name: inputName, email: inputEmail }),
         contentType: 'application/json',
         dataType: 'json',
