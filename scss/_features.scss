@@ -2,6 +2,7 @@ section.features {
     position: relative;
     overflow-x: hidden;
     height: 120%;
+    z-index: 1;
 
     @media(max-width:600px) {
         height: auto;
@@ -32,13 +33,14 @@ section.features {
 
     .feature-img {
         position: absolute;
-        top: 0;
+        top: -80px;
         left: 50%;
         display: flex;
         height: 100%;
+        z-index: 0;
 
         @media(max-width:600px) {
-            left:35px;
+            left: 35px;
         }
     }
 
@@ -66,10 +68,11 @@ section.features {
         .latest-features {
             position: absolute;
             top: 70px;
+            z-index: 1;
 
             @media(max-width:600px) {
-                padding-top: 24px;
-                position: static;
+                top: 24px;
+                position: relative;
             }
 
             > * + * {
@@ -115,13 +118,14 @@ section.features {
 
         .other-features {
             position: absolute;
+            z-index: 1;
 
             @media(min-width:601px) {
                 bottom: 30px;
             }
 
             @media(max-width:600px) {
-                position: static;
+                position: relative;
                 margin-top: 220px;
                 margin-bottom: 40px;
             }
@@ -130,9 +134,9 @@ section.features {
                 font-size: 30px;
                 letter-spacing: 2.1px;
                 margin-bottom: 30px;
-                @media(max-width:600px){
-                    width:60px;
 
+                @media(max-width:600px) {
+                    width: 200px;
                 }
             }
 
