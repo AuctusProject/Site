@@ -52,6 +52,10 @@ section.experts {
         align-items: center;
         width: calc(100% - 30px);
 
+        @media(max-width:600px) {
+            flex-direction: column;
+        }
+
         .blue-box {
             width: 530px;
             height: 240px;
