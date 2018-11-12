@@ -57,6 +57,9 @@ a:hover{
 .border-bar {
     height: 12px;
     width: 480px;
+    @media(max-width:600px) {
+        width: 100%;
+    }
     margin-left: -240px;
     background-image: linear-gradient(to left, #07d1ff, #126efd);
     position: absolute;
