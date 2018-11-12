@@ -12,12 +12,18 @@ section.token {
         left: 0;
         margin-top: -115px;
         background: #1c1c1c;
+
+        @media(max-width:600px) {
+            top: -1px;
+            left: -30px;
+        }
     }
 
     h1 {
         @media(min-width:601px) {
             margin: 0 0 90px 130px;
         }
+
         font-size: 38px;
         letter-spacing: 2.7px;
     }

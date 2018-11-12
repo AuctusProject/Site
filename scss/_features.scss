@@ -1,14 +1,21 @@
 section.features {
     position: relative;
-    height: 120%;
     overflow-x: hidden;
+    height: 120%;
 
+    @media(max-width:600px) {
+        height: auto;
+    }
 
     .back-panel {
         width: 100%;
         height: 100%;
         display: block;
         position: absolute;
+
+        @media(max-width:600px) {
+            display: none;
+        }
 
         .black {
             width: 100%;
@@ -29,6 +36,10 @@ section.features {
         left: 50%;
         display: flex;
         height: 100%;
+
+        @media(max-width:600px) {
+            left:35px;
+        }
     }
 
     .container {
@@ -36,23 +47,48 @@ section.features {
         background: #1c1c1c;
         padding-left: 100px;
 
+
+        @media(max-width:600px) {
+            padding-left: 40px;
+            width: 100%;
+        }
+
         span {
             font-size: 16px;
             line-height: 22px;
             letter-spacing: 0.5px;
+
+            @media(max-width:600px) {
+                font-size: 12px;
+            }
         }
 
         .latest-features {
             position: absolute;
             top: 70px;
 
+            @media(max-width:600px) {
+                padding-top: 24px;
+                position: static;
+            }
+
             > * + * {
                 margin-top: 30px;
+
+                @media(max-width:600px) {
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
             }
 
             h1 {
                 font-size: 48px;
                 letter-spacing: 3.4px;
+
+                @media(max-width:600px) {
+                    font-size: 36px;
+                    letter-spacing: 2.5px;
+                }
             }
 
             .latest-feature-title {
@@ -64,6 +100,11 @@ section.features {
                 background: #126efd;
                 width: 260px;
                 padding: 20px 60px;
+
+                @media(max-width:600px) {
+                    width: 196px;
+                    padding: 8px 44px;
+                }
             }
 
             img {
@@ -74,12 +115,25 @@ section.features {
 
         .other-features {
             position: absolute;
-            bottom: 30px;
+
+            @media(min-width:601px) {
+                bottom: 30px;
+            }
+
+            @media(max-width:600px) {
+                position: static;
+                margin-top: 220px;
+                margin-bottom: 40px;
+            }
 
             h2 {
                 font-size: 30px;
                 letter-spacing: 2.1px;
-                margin-bottom: 30px
+                margin-bottom: 30px;
+                @media(max-width:600px){
+                    width:60px;
+
+                }
             }
 
             ul {
