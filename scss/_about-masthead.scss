@@ -12,7 +12,8 @@ header.about-masthead {
         width: 100%;
         top: 30px;
         padding: 0 90px;
-        margin-left:-15px;
+        margin-left: -15px;
+
         div {
             display: inline-block;
         }
@@ -50,8 +51,24 @@ header.about-masthead {
 
         .center-panel {
             margin: auto;
-            width: 70%;
-            max-width: 560px;
+            width: 80%;
+            position: relative;
+
+            .left {
+                text-align: right;
+                position: absolute;
+                width: 505px;
+                top: 45%;
+            }
+
+            .right {
+                text-align: left;
+                position: absolute;
+                width: 505px;
+                top: 70%;
+                right:0;
+            }
+
 
             img {
                 margin: 70px auto 30% auto;

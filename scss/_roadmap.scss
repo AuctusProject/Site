@@ -20,6 +20,10 @@
         width: 100%;
         position: relative;
         overflow-x: hidden;
+
+        @media (max-width: 992px) {
+            overflow-x: auto;
+        }
     }
 
     .scrollable.smooth {

@@ -4,7 +4,7 @@ section.experts {
   /* line 4, ../scss/_experts.scss */
   section.experts .quote {
     position: absolute;
-    width: 100%; }
+    width: 90%; }
     /* line 8, ../scss/_experts.scss */
     section.experts .quote .dots:before {
       content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
@@ -214,58 +214,59 @@ section.features {
     position: absolute;
     top: 0;
     left: 50%;
-    display: flex; }
-  /* line 33, ../scss/_features.scss */
+    display: flex;
+    height: 100%; }
+  /* line 34, ../scss/_features.scss */
   section.features .container {
     position: relative;
     background: #1c1c1c;
     padding-left: 100px; }
-    /* line 38, ../scss/_features.scss */
+    /* line 39, ../scss/_features.scss */
     section.features .container span {
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0.5px; }
-    /* line 44, ../scss/_features.scss */
+    /* line 45, ../scss/_features.scss */
     section.features .container .latest-features {
       position: absolute;
       top: 70px; }
-      /* line 48, ../scss/_features.scss */
+      /* line 49, ../scss/_features.scss */
       section.features .container .latest-features > * + * {
         margin-top: 30px; }
-      /* line 52, ../scss/_features.scss */
+      /* line 53, ../scss/_features.scss */
       section.features .container .latest-features h1 {
         font-size: 48px;
         letter-spacing: 3.4px; }
-      /* line 57, ../scss/_features.scss */
+      /* line 58, ../scss/_features.scss */
       section.features .container .latest-features .latest-feature-title {
         font-family: Gilroy-Medium; }
-      /* line 61, ../scss/_features.scss */
+      /* line 62, ../scss/_features.scss */
       section.features .container .latest-features .access {
         cursor: pointer;
         background: #126efd;
         width: 260px;
         padding: 20px 60px; }
-      /* line 68, ../scss/_features.scss */
+      /* line 69, ../scss/_features.scss */
       section.features .container .latest-features img {
         margin-left: 20px; }
-    /* line 74, ../scss/_features.scss */
+    /* line 75, ../scss/_features.scss */
     section.features .container .other-features {
       position: absolute;
       bottom: 30px; }
-      /* line 78, ../scss/_features.scss */
+      /* line 79, ../scss/_features.scss */
       section.features .container .other-features h2 {
         font-size: 30px;
         letter-spacing: 2.1px;
         margin-bottom: 30px; }
-      /* line 84, ../scss/_features.scss */
+      /* line 85, ../scss/_features.scss */
       section.features .container .other-features ul {
         margin-top: 50px;
         list-style-type: none;
         font-size: 17.5px; }
-        /* line 89, ../scss/_features.scss */
+        /* line 90, ../scss/_features.scss */
         section.features .container .other-features ul li + li {
           margin-top: 30px; }
-        /* line 93, ../scss/_features.scss */
+        /* line 94, ../scss/_features.scss */
         section.features .container .other-features ul li:before {
           font-family: 'FontAwesome';
           content: '\f054';
@@ -366,7 +367,7 @@ body {
   height: 100%;
   font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
-  overflow-x: no-content; }
+  min-width: 1349px; }
 
 /* line 11, ../scss/_global.scss */
 a {
@@ -572,10 +573,14 @@ section.roadmap {
     width: 100%;
     position: relative;
     overflow-x: hidden; }
-  /* line 25, ../scss/_roadmap.scss */
+    @media (max-width: 992px) {
+      /* line 18, ../scss/_roadmap.scss */
+      section.roadmap .scrollable {
+        overflow-x: auto; } }
+  /* line 29, ../scss/_roadmap.scss */
   section.roadmap .scrollable.smooth {
     scroll-behavior: smooth; }
-  /* line 32, ../scss/_roadmap.scss */
+  /* line 36, ../scss/_roadmap.scss */
   section.roadmap .timeline * {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -590,52 +595,52 @@ section.roadmap {
     user-select: none;
     /* Non-prefixed version, currently
      supported by Chrome and Opera */ }
-  /* line 42, ../scss/_roadmap.scss */
+  /* line 46, ../scss/_roadmap.scss */
   section.roadmap .timeline .year-box {
     display: inline-block;
     width: 1200px;
     height: 360px;
     padding-right: 0.5px;
     border-right: solid 0.5px #292929; }
-    /* line 49, ../scss/_roadmap.scss */
+    /* line 53, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box > div {
       width: 100%; }
-    /* line 53, ../scss/_roadmap.scss */
+    /* line 57, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .year-title {
       height: 60px;
       padding: 0 23px 0 10px; }
-      /* line 57, ../scss/_roadmap.scss */
+      /* line 61, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .year-title h2 {
         text-align: left;
         font-family: Gilroy-Medium;
         font-style: italic;
         font-size: 45px;
         color: #242424; }
-    /* line 66, ../scss/_roadmap.scss */
+    /* line 70, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-titles {
       height: 105px;
       border-bottom: solid 1px #d9d9d9;
       font-style: italic;
       padding-top: 25px; }
-      /* line 72, ../scss/_roadmap.scss */
+      /* line 76, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-titles h3 {
         font-family: Gilroy-Medium;
         font-size: 27px; }
-      /* line 77, ../scss/_roadmap.scss */
+      /* line 81, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-titles h5 {
         font-size: 16px; }
-    /* line 82, ../scss/_roadmap.scss */
+    /* line 86, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .current > h3 {
       border-left: 4px solid #126efd;
       padding-left: 5px;
       margin-left: -10px; }
-    /* line 88, ../scss/_roadmap.scss */
+    /* line 92, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-titles.current {
       background: #1b1b1b; }
-    /* line 92, ../scss/_roadmap.scss */
+    /* line 96, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .past * {
       color: #595959; }
-    /* line 96, ../scss/_roadmap.scss */
+    /* line 100, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .q-title {
       display: inline-block;
       width: 295px;
@@ -643,7 +648,7 @@ section.roadmap {
       position: relative;
       border-bottom: solid 4px transparent;
       padding-left: 7px; }
-      /* line 104, ../scss/_roadmap.scss */
+      /* line 108, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .q-title .circle {
         position: absolute;
         bottom: -7px;
@@ -653,31 +658,31 @@ section.roadmap {
         background: #141414;
         border: solid 1px #d9d9d9;
         border-radius: 50%; }
-    /* line 116, ../scss/_roadmap.scss */
+    /* line 120, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .q-title.past {
       border-bottom: solid 4px #595959; }
-      /* line 119, ../scss/_roadmap.scss */
+      /* line 123, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .q-title.past .circle {
         border: solid 1px #595959;
         background: #595959; }
-    /* line 125, ../scss/_roadmap.scss */
+    /* line 129, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-bullets {
       font-size: 14px; }
-      /* line 129, ../scss/_roadmap.scss */
+      /* line 133, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-bullets .q-bullet {
         padding-top: 25px;
         width: 295px;
         display: inline-flex; }
-        /* line 134, ../scss/_roadmap.scss */
+        /* line 138, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul {
           padding-left: 20px; }
-          /* line 137, ../scss/_roadmap.scss */
+          /* line 141, ../scss/_roadmap.scss */
           section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li {
             font-size: 10px; }
-            /* line 140, ../scss/_roadmap.scss */
+            /* line 144, ../scss/_roadmap.scss */
             section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li span {
               font-size: 14px; }
-          /* line 145, ../scss/_roadmap.scss */
+          /* line 149, ../scss/_roadmap.scss */
           section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li + li {
             margin-top: 10px; }
 
@@ -828,50 +833,63 @@ header.about-masthead {
     top: 30px;
     padding: 0 90px;
     margin-left: -15px; }
-    /* line 16, ../scss/_about-masthead.scss */
+    /* line 17, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu div {
       display: inline-block; }
-    /* line 21, ../scss/_about-masthead.scss */
+    /* line 22, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div {
       padding: 10px 20px; }
-    /* line 25, ../scss/_about-masthead.scss */
+    /* line 26, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 31, ../scss/_about-masthead.scss */
+    /* line 32, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
-    /* line 37, ../scss/_about-masthead.scss */
+    /* line 38, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu a {
       color: white; }
-    /* line 41, ../scss/_about-masthead.scss */
+    /* line 42, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 46, ../scss/_about-masthead.scss */
+  /* line 47, ../scss/_about-masthead.scss */
   header.about-masthead .container {
     width: 100%;
     height: 100%;
     position: relative; }
-    /* line 51, ../scss/_about-masthead.scss */
+    /* line 52, ../scss/_about-masthead.scss */
     header.about-masthead .container .center-panel {
       margin: auto;
-      width: 70%;
-      max-width: 560px; }
-      /* line 56, ../scss/_about-masthead.scss */
+      width: 80%;
+      position: relative; }
+      /* line 57, ../scss/_about-masthead.scss */
+      header.about-masthead .container .center-panel .left {
+        text-align: right;
+        position: absolute;
+        width: 505px;
+        top: 45%; }
+      /* line 64, ../scss/_about-masthead.scss */
+      header.about-masthead .container .center-panel .right {
+        text-align: left;
+        position: absolute;
+        width: 505px;
+        top: 70%;
+        right: 0; }
+      /* line 73, ../scss/_about-masthead.scss */
       header.about-masthead .container .center-panel img {
         margin: 70px auto 30% auto;
         zoom: 0.7; }
-      /* line 61, ../scss/_about-masthead.scss */
+      /* line 78, ../scss/_about-masthead.scss */
       header.about-masthead .container .center-panel span {
         font-size: 18px; }
-  /* line 67, ../scss/_about-masthead.scss */
+  /* line 84, ../scss/_about-masthead.scss */
   header.about-masthead .connection-line {
     z-index: 10;
     position: absolute;
     bottom: 0;
     width: 100%;
     margin-left: -15px; }
-    /* line 74, ../scss/_about-masthead.scss */
+    /* line 91, ../scss/_about-masthead.scss */
     header.about-masthead .connection-line div {
       margin: 5% auto;
       background-color: white;
