@@ -14,6 +14,10 @@ section.where-to-buy {
 
     .exchanges {
         display: flex;
+        @media(max-width:600px) {
+            flex-direction: column;
+        }
+
         justify-content: space-between;
 
         a {
