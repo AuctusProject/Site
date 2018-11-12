@@ -5,7 +5,9 @@ body {
     height: 100%;
     font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    min-width:1349px;
+    @media(min-width:601px) {
+        min-width: 1349px;
+    }
 }
 
 a{
