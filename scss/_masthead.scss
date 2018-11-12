@@ -5,8 +5,8 @@ header.masthead {
     background-size: cover;
     background-image: url(/img/masthead/background.jpg);
     background-repeat: no-repeat;
-    
-    @media(max-width: 600px){
+
+    @media(max-width: 600px) {
         height: 310px;
     }
 
@@ -17,10 +17,10 @@ header.masthead {
         padding: 0 90px;
         margin-left: -15px;
 
-        @media(max-width: 600px){
+        @media(max-width: 600px) {
             padding: 0 20px;
             font-size: 12px;
-            top:15px;
+            top: 15px;
         }
 
         div {
@@ -43,7 +43,7 @@ header.masthead {
                 font-size: 20px;
                 padding: 10px;
 
-                @media(max-width:600px){
+                @media(max-width:600px) {
                     font-size: 16px;
                     padding: 8px 12px;
                 }
@@ -65,8 +65,12 @@ header.masthead {
         padding-top: 15%;
         position: relative;
 
+        @media(max-width: 600px) {
+            padding-top: 40px;
+        }
+
         .center-panel {
-            @media(min-width: 601px){
+            @media(min-width: 601px) {
                 position: absolute;
                 top: 25%;
                 left: 50%;
@@ -75,7 +79,8 @@ header.masthead {
 
             img {
                 margin: 60px;
-                @media(max-width: 600px){
+
+                @media(max-width: 600px) {
                     height: 35px;
                     margin: 60px 60px 30px 60px;
                 }
@@ -84,7 +89,8 @@ header.masthead {
             span {
                 font-size: 22px;
                 margin: auto;
-                @media(max-width: 600px){
+
+                @media(max-width: 600px) {
                     font-size: 16px;
                 }
             }
@@ -100,7 +106,8 @@ header.masthead {
             background-color: white;
             height: 180px;
             width: 1px;
-            @media(max-width: 600px){
+
+            @media(max-width: 600px) {
                 margin: -60px auto;
                 height: 90px;
             }
