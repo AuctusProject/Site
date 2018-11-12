@@ -350,34 +350,21 @@ header.masthead {
   background-size: cover;
   background-image: url(/img/masthead/background.jpg);
   background-repeat: no-repeat; }
-  @media (max-width: 600px) {
-    header.masthead {
-      height: 310px; } }
   header.masthead .top-menu {
     position: absolute;
     width: 100%;
     top: 30px;
     padding: 0 90px;
     margin-left: -15px; }
-    @media (max-width: 600px) {
-      header.masthead .top-menu {
-        padding: 0 20px;
-        font-size: 12px;
-        top: 15px; } }
     header.masthead .top-menu div {
       display: inline-block; }
     header.masthead .top-menu > div:first-child div {
-      padding: 10px 10px;
-      margin-right: 10px; }
+      padding: 10px 20px; }
     header.masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
     header.masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
-      @media (max-width: 600px) {
-        header.masthead .top-menu > div:last-child div {
-          font-size: 16px;
-          padding: 8px 12px; } }
     header.masthead .top-menu a {
       color: white; }
     header.masthead .top-menu i {
@@ -387,24 +374,16 @@ header.masthead {
     height: 100%;
     padding-top: 15%;
     position: relative; }
-    @media (min-width: 601px) {
-      header.masthead .container .center-panel {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%); } }
-    header.masthead .container .center-panel img {
-      margin: 60px; }
-      @media (max-width: 600px) {
-        header.masthead .container .center-panel img {
-          height: 35px;
-          margin: 60px 60px 30px 60px; } }
-    header.masthead .container .center-panel span {
-      font-size: 22px;
-      margin: auto; }
-      @media (max-width: 600px) {
-        header.masthead .container .center-panel span {
-          font-size: 16px; } }
+    header.masthead .container .center-panel {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%); }
+      header.masthead .container .center-panel img {
+        margin: 60px; }
+      header.masthead .container .center-panel span {
+        font-size: 22px;
+        margin: auto; }
   header.masthead .connection-line {
     z-index: 10;
     position: relative; }
@@ -413,10 +392,6 @@ header.masthead {
       background-color: white;
       height: 180px;
       width: 1px; }
-      @media (max-width: 600px) {
-        header.masthead .connection-line div {
-          margin: -60px auto;
-          height: 90px; } }
 
 section.products {
   width: 100%;
@@ -687,34 +662,25 @@ header.about-masthead {
   background-image: url(/img/about/background.jpg);
   background-repeat: no-repeat;
   background-position: center; }
-  @media (max-width: 600px) {
-    header.about-masthead {
-      height: 310px; } }
   header.about-masthead .top-menu {
     position: absolute;
     width: 100%;
-    top: 10px;
+    top: 30px;
     padding: 0 90px;
     margin-left: -15px; }
     @media (max-width: 600px) {
       header.about-masthead .top-menu {
-        padding: 0 20px;
-        font-size: 12px;
-        top: 15px; } }
+        padding: 0 10px;
+        font-size: 12px; } }
     header.about-masthead .top-menu div {
       display: inline-block; }
     header.about-masthead .top-menu > div:first-child div {
-      padding: 10px 10px;
-      margin-right: 10px; }
+      padding: 10px 20px; }
     header.about-masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
     header.about-masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
-      @media (max-width: 600px) {
-        header.about-masthead .top-menu > div:last-child div {
-          font-size: 16px;
-          padding: 8px 12px; } }
     header.about-masthead .top-menu a {
       color: white; }
     header.about-masthead .top-menu i {
@@ -906,4 +872,4 @@ section.about-team {
         left: 0;
         top: 15px; }
 
-/*# sourceMappingURL=style.min.css.map */
+/*# sourceMappingURL=style.css.map */
