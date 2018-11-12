@@ -39,8 +39,11 @@ section.experts {
                 font-size: 18px;
             }
 
-            line-height: 34px;
-            letter-spacing: 0.7px;
+            @media(min-width:601px) {
+                line-height: 34px;
+                letter-spacing: 0.7px;
+            }
+
             position: absolute;
             top: 87px;
             left: 65px;
