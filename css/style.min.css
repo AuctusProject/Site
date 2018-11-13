@@ -489,28 +489,33 @@ section {
 /* line 21, ../scss/_global.scss */
 .container {
   height: 100%; }
+  @media (min-width: 576px) and (max-width: 600px) {
+    /* line 21, ../scss/_global.scss */
+    .container {
+      width: unset;
+      max-width: unset; } }
 
-/* line 24, ../scss/_global.scss */
+/* line 29, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 28, ../scss/_global.scss */
+/* line 33, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
 @media (max-width: 991px) {
-  /* line 33, ../scss/_global.scss */
+  /* line 38, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
 @media (min-width: 992px) {
-  /* line 39, ../scss/_global.scss */
+  /* line 44, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 44, ../scss/_global.scss */
+/* line 49, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 48, ../scss/_global.scss */
+/* line 53, ../scss/_global.scss */
 .invert-horizontally {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -521,14 +526,14 @@ a:hover {
   filter: fliph;
   /*IE*/ }
 
-/* line 57, ../scss/_global.scss */
+/* line 62, ../scss/_global.scss */
 .border-bar {
   height: 12px;
   background-image: linear-gradient(to left, #07d1ff, #126efd);
   width: 480px;
   margin: auto; }
   @media (max-width: 600px) {
-    /* line 57, ../scss/_global.scss */
+    /* line 62, ../scss/_global.scss */
     .border-bar {
       width: 70%; } }
 
@@ -878,7 +883,11 @@ section.token {
   color: #383838;
   padding-top: 115px;
   height: unset; }
-  /* line 7, ../scss/_token.scss */
+  @media (max-width: 600px) {
+    /* line 1, ../scss/_token.scss */
+    section.token {
+      padding-top: 55px; } }
+  /* line 11, ../scss/_token.scss */
   section.token .gray-block {
     position: absolute;
     width: 70%;
@@ -888,63 +897,98 @@ section.token {
     margin-top: -115px;
     background: #1c1c1c; }
     @media (max-width: 600px) {
-      /* line 7, ../scss/_token.scss */
+      /* line 11, ../scss/_token.scss */
       section.token .gray-block {
         top: -1px;
         left: -30px; } }
-  /* line 22, ../scss/_token.scss */
+  /* line 26, ../scss/_token.scss */
   section.token h1 {
     font-size: 38px;
-    letter-spacing: 2.7px; }
+    letter-spacing: 2.7px;
+    max-width: 680px; }
     @media (min-width: 601px) {
-      /* line 22, ../scss/_token.scss */
+      /* line 26, ../scss/_token.scss */
       section.token h1 {
         margin: 0 0 90px 130px; } }
-  /* line 31, ../scss/_token.scss */
+    @media (max-width: 600px) {
+      /* line 26, ../scss/_token.scss */
+      section.token h1 {
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 1.4px;
+        margin: 0 0 40px 40px;
+        max-width: 350px; } }
+  /* line 44, ../scss/_token.scss */
   section.token hr {
     position: absolute;
     top: 60px;
     left: -30px;
     border-top: solid 1px #156eff;
     width: 150px; }
-  /* line 39, ../scss/_token.scss */
+    @media (max-width: 600px) {
+      /* line 44, ../scss/_token.scss */
+      section.token hr {
+        top: 5px;
+        left: 0px;
+        width: 34px; } }
+  /* line 58, ../scss/_token.scss */
   section.token .cards-container {
     display: flex;
     justify-content: space-between; }
     @media (max-width: 600px) {
-      /* line 39, ../scss/_token.scss */
+      /* line 58, ../scss/_token.scss */
       section.token .cards-container {
         flex-direction: column; } }
-    /* line 48, ../scss/_token.scss */
+    /* line 67, ../scss/_token.scss */
     section.token .cards-container .token-card {
-      text-align: center; }
-      /* line 51, ../scss/_token.scss */
+      text-align: center;
+      margin: auto; }
+      @media (max-width: 600px) {
+        /* line 67, ../scss/_token.scss */
+        section.token .cards-container .token-card {
+          margin-bottom: 40px; } }
+      /* line 75, ../scss/_token.scss */
       section.token .cards-container .token-card img {
         margin-bottom: 20px; }
-      /* line 55, ../scss/_token.scss */
+      /* line 79, ../scss/_token.scss */
       section.token .cards-container .token-card span {
         font-size: 20px; }
-    /* line 60, ../scss/_token.scss */
+        @media (max-width: 600px) {
+          /* line 79, ../scss/_token.scss */
+          section.token .cards-container .token-card span {
+            font-size: 16px; } }
+    /* line 88, ../scss/_token.scss */
     section.token .cards-container .hold {
       max-width: 240px; }
-    /* line 64, ../scss/_token.scss */
+    /* line 92, ../scss/_token.scss */
     section.token .cards-container .vote {
       max-width: 335px; }
-    /* line 68, ../scss/_token.scss */
+    /* line 96, ../scss/_token.scss */
     section.token .cards-container .earn {
       max-width: 200px; }
-  /* line 73, ../scss/_token.scss */
+  /* line 101, ../scss/_token.scss */
   section.token .buyback {
     border-left: solid 1px #1a1c1f;
     padding: 15px 0 15px 40px;
     margin: 120px 0 105px 90px; }
-    /* line 78, ../scss/_token.scss */
+    @media (max-width: 600px) {
+      /* line 101, ../scss/_token.scss */
+      section.token .buyback {
+        padding: 15px 0 15px 23px;
+        margin: 20px 0 30px 13px; } }
+    /* line 111, ../scss/_token.scss */
     section.token .buyback span {
       font-family: Gilroy-Bold;
       font-size: 28px;
       font-style: italic;
       line-height: 34px;
       letter-spacing: 0.7px; }
+      @media (max-width: 600px) {
+        /* line 111, ../scss/_token.scss */
+        section.token .buyback span {
+          font-size: 20px;
+          line-height: 1.2;
+          letter-spacing: 0.5px; } }
 
 /* line 1, ../scss/_where-to-buy.scss */
 section.where-to-buy {
