@@ -472,51 +472,46 @@ body {
   height: 100%;
   font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
   color: white; }
-  @media (min-width: 601px) {
-    /* line 2, ../scss/_global.scss */
-    html,
-    body {
-      min-width: 1349px; } }
 
-/* line 13, ../scss/_global.scss */
+/* line 10, ../scss/_global.scss */
 a {
   cursor: pointer;
   color: inherit !important; }
 
-/* line 18, ../scss/_global.scss */
+/* line 15, ../scss/_global.scss */
 section {
   height: 100%; }
 
-/* line 21, ../scss/_global.scss */
+/* line 18, ../scss/_global.scss */
 .container {
   height: 100%; }
   @media (min-width: 576px) and (max-width: 600px) {
-    /* line 21, ../scss/_global.scss */
+    /* line 18, ../scss/_global.scss */
     .container {
       width: unset;
       max-width: unset; } }
 
-/* line 29, ../scss/_global.scss */
+/* line 26, ../scss/_global.scss */
 .center {
   text-align: center; }
 
-/* line 33, ../scss/_global.scss */
+/* line 30, ../scss/_global.scss */
 .turn-white-blue {
   filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg); }
 
-@media (max-width: 991px) {
-  /* line 38, ../scss/_global.scss */
+@media (max-width: 600px) {
+  /* line 35, ../scss/_global.scss */
   .web-only {
     display: none !important; } }
-@media (min-width: 992px) {
-  /* line 44, ../scss/_global.scss */
+@media (min-width: 601px) {
+  /* line 41, ../scss/_global.scss */
   .mobile-only {
     display: none !important; } }
-/* line 49, ../scss/_global.scss */
+/* line 46, ../scss/_global.scss */
 a:hover {
   text-decoration: none !important; }
 
-/* line 53, ../scss/_global.scss */
+/* line 50, ../scss/_global.scss */
 .invert-horizontally {
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -527,14 +522,14 @@ a:hover {
   filter: fliph;
   /*IE*/ }
 
-/* line 62, ../scss/_global.scss */
+/* line 59, ../scss/_global.scss */
 .border-bar {
   height: 12px;
   background-image: linear-gradient(to left, #07d1ff, #126efd);
   width: 480px;
   margin: auto; }
   @media (max-width: 600px) {
-    /* line 62, ../scss/_global.scss */
+    /* line 59, ../scss/_global.scss */
     .border-bar {
       width: 70%;
       height: 7px; } }
@@ -1089,16 +1084,16 @@ header.about-masthead {
   @media (max-width: 600px) {
     /* line 2, ../scss/_about-masthead.scss */
     header.about-masthead {
-      height: 310px; } }
-  /* line 14, ../scss/_about-masthead.scss */
+      height: 350px;
+      background-size: contain; } }
+  /* line 15, ../scss/_about-masthead.scss */
   header.about-masthead .top-menu {
     position: absolute;
     width: 100%;
     top: 10px;
-    padding: 0 90px;
-    margin-left: -15px; }
+    padding: 0 90px; }
     @media (max-width: 600px) {
-      /* line 14, ../scss/_about-masthead.scss */
+      /* line 15, ../scss/_about-masthead.scss */
       header.about-masthead .top-menu {
         padding: 0 20px;
         font-size: 12px;
@@ -1128,49 +1123,62 @@ header.about-masthead {
     /* line 58, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 63, ../scss/_about-masthead.scss */
-  header.about-masthead .container {
-    width: 100%;
-    height: 100%;
+  /* line 65, ../scss/_about-masthead.scss */
+  header.about-masthead .center-panel {
+    margin: auto;
+    width: 80%;
     position: relative; }
-    /* line 68, ../scss/_about-masthead.scss */
-    header.about-masthead .container .center-panel {
-      margin: auto;
-      width: 80%;
-      position: relative; }
-      /* line 73, ../scss/_about-masthead.scss */
-      header.about-masthead .container .center-panel .left {
-        text-align: right;
-        position: absolute;
-        width: 505px;
-        top: 45%; }
-      /* line 80, ../scss/_about-masthead.scss */
-      header.about-masthead .container .center-panel .right {
-        text-align: left;
-        position: absolute;
-        width: 505px;
-        top: 70%;
-        right: 0; }
-      /* line 89, ../scss/_about-masthead.scss */
-      header.about-masthead .container .center-panel img {
-        margin: 70px auto 30% auto;
-        zoom: 0.7; }
-      /* line 94, ../scss/_about-masthead.scss */
-      header.about-masthead .container .center-panel span {
-        font-size: 18px; }
-  /* line 100, ../scss/_about-masthead.scss */
-  header.about-masthead .connection-line {
-    z-index: 10;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-left: -15px; }
-    /* line 107, ../scss/_about-masthead.scss */
-    header.about-masthead .connection-line div {
-      margin: 5% auto;
-      background-color: white;
-      height: 90px;
-      width: 1px; }
+    /* line 70, ../scss/_about-masthead.scss */
+    header.about-masthead .center-panel .left {
+      text-align: right;
+      position: absolute;
+      width: 505px;
+      top: 45%; }
+    /* line 77, ../scss/_about-masthead.scss */
+    header.about-masthead .center-panel .right {
+      text-align: left;
+      position: absolute;
+      width: 505px;
+      top: 70%;
+      right: 0; }
+    /* line 86, ../scss/_about-masthead.scss */
+    header.about-masthead .center-panel img {
+      margin: 70px auto 30% auto;
+      zoom: 0.7; }
+      @media (max-width: 600px) {
+        /* line 86, ../scss/_about-masthead.scss */
+        header.about-masthead .center-panel img {
+          margin: 180px auto 15% auto;
+          zoom: 0.55; } }
+    /* line 96, ../scss/_about-masthead.scss */
+    header.about-masthead .center-panel span {
+      font-size: 18px; }
+      @media (max-width: 600px) {
+        /* line 96, ../scss/_about-masthead.scss */
+        header.about-masthead .center-panel span {
+          font-size: 12px; } }
+
+/* line 106, ../scss/_about-masthead.scss */
+.connection-line {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  @media (max-width: 600px) {
+    /* line 106, ../scss/_about-masthead.scss */
+    .connection-line {
+      font-size: 12px;
+      position: unset; } }
+  /* line 117, ../scss/_about-masthead.scss */
+  .connection-line div {
+    margin: 5% auto;
+    background-color: white;
+    height: 90px;
+    width: 1px; }
+    @media (max-width: 600px) {
+      /* line 117, ../scss/_about-masthead.scss */
+      .connection-line div {
+        height: 60px; } }
 
 /* line 2, ../scss/_about-subscribe.scss */
 section.about-subscribe {
