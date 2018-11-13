@@ -5,6 +5,7 @@ header.masthead {
     background-size: cover;
     background-image: url(/img/masthead/background.jpg);
     background-repeat: no-repeat;
+    min-height:550px;
 
     @media(max-width: 600px) {
         height: 310px;

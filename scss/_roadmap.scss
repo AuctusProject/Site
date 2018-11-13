@@ -1,7 +1,7 @@
 ﻿section.roadmap {
     background-color: #141414;
     position: relative;
-
+    min-height:605px;
     .container-roadmap {
         padding-top: 90px;
 
@@ -25,11 +25,8 @@
         position: relative;
         overflow-x: hidden;
 
-        @media (max-width: 992px) {
-            overflow-x: auto;
-        }
-
         @media(max-width:600px) {
+            overflow-x: auto;
             margin-top: 40px;
         }
     }

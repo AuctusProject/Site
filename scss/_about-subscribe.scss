@@ -2,6 +2,7 @@
 section.about-subscribe {
     background-color: #f7f7f7;
     position: relative;
+    min-height:700px;
 
     .top-rectangle {
         height: 30px;
@@ -22,7 +23,7 @@ section.about-subscribe {
             padding: 10px 15px;
             width: 300px;
             color: #343434;
-            margin-right: 35px;
+            margin: 0 35px 35px 0;
             background: transparent;
             @media(max-width:600px){
                 width:270px;
