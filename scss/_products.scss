@@ -7,9 +7,17 @@ section.products {
     padding-top: 3%;
     background: #141414;
 
+    @media(max-width:600px) {
+        height: unset;
+    }
+
     .container {
         height: 100%;
         width: 100%;
+
+        @media(max-width:600px) {
+            height: unset;
+        }
     }
 
     .black-top-right-block {
@@ -87,6 +95,7 @@ section.products {
     }
 
     .product-box.portfolio {
+        padding-bottom:60px;
         @media(min-width:601px) {
             top: 38%;
             right: 15%;
