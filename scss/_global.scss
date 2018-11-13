@@ -13,7 +13,11 @@ a{
 }
 
 section {
-    height:100%;
+    height: 100%;
+
+    @media(max-width:600px) {
+        height: unset;
+    }
 }
 .container {
     height: 100%;
@@ -65,5 +69,28 @@ a:hover{
     @media(max-width:600px) {
         width: 70%;
         height: 7px;
+    }
+}
+
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

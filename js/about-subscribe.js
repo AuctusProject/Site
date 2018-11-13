@@ -12,6 +12,8 @@ $('#btn-subscription').click(function () {
         $('#email').removeClass('invalid');
 
     if (inputName && inputEmail && validateEmail(inputEmail)) {
+        $('#arrow-email').hide();
+        $('#loader-email').show();
         subscribeToNewsletter(inputName, inputEmail);
     }
 })
@@ -33,6 +35,10 @@ function subscribeToNewsletter(inputName, inputEmail) {
         },
         success: function () {
             $('.link-box .subtitle').text('Thanks for registering, ' + $('#name').val());
+            $('#name').val('');
+            $('#email').val('');
+            $('#arrow-email').show();
+            $('#loader-email').hide();
         }
     });
 }

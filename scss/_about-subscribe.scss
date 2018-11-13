@@ -35,6 +35,12 @@ section.about-subscribe {
             font-size: 34px;
             line-height: 42px;
             margin-bottom: 200px;
+
+            @media(max-width:600px) {
+                font-size: 22px;
+                line-height: 1.2;
+                margin-bottom: 135px;
+            }
         }
 
         hr {
@@ -52,6 +58,12 @@ section.about-subscribe {
             position: relative;
             display: inline-block;
             cursor: pointer;
+
+            @media(max-width:600px) {
+                padding: 16px 34px 16px 34px;
+                margin-top: 21px;
+                width: 180px;
+            }
 
             span {
                 font-family: "Gilroy-Medium";
@@ -92,5 +104,10 @@ section.about-subscribe {
         line-height: 45px;
         z-index: 20;
         top: 60px;
+
+        @media(max-width:600px) {
+            max-width: 240px;
+            height: 240px;
+        }
     }
 }
