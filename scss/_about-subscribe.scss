@@ -14,6 +14,7 @@ section.about-subscribe {
     .container {
         color: #343434;
         padding-top: 125px;
+        min-height: 530px;
 
         input {
             border: 0;
@@ -23,6 +24,9 @@ section.about-subscribe {
             color: #343434;
             margin-right: 35px;
             background: transparent;
+            @media(max-width:600px){
+                width:270px;
+            }
         }
 
         input.invalid {
@@ -35,6 +39,13 @@ section.about-subscribe {
             font-size: 34px;
             line-height: 42px;
             margin-bottom: 200px;
+
+            @media(max-width:600px) {
+                font-size: 22px;
+                line-height: 1.2;
+                margin-bottom: 78px;
+                margin-left: 40px;
+            }
         }
 
         hr {
@@ -43,6 +54,11 @@ section.about-subscribe {
             left: -150px;
             border-top: solid 1px #156eff;
             width: 150px;
+
+            @media(max-width:600px) {
+                top: 180px;
+                left: -122px;
+            }
         }
 
         .link-box {
@@ -52,6 +68,14 @@ section.about-subscribe {
             position: relative;
             display: inline-block;
             cursor: pointer;
+
+            @media(max-width:600px) {
+                padding: 16px 34px 16px 34px;
+                margin: auto;
+                margin-top: 21px;
+                width: 180px;
+                display: block;
+            }
 
             span {
                 font-family: "Gilroy-Medium";
@@ -71,7 +95,10 @@ section.about-subscribe {
                 position: absolute;
                 top: 70px;
                 display: flex;
-                /* left: 64px; */
+
+                @media(max-width:600px) {
+                    left: 0px;
+                }
             }
         }
     }
@@ -92,5 +119,13 @@ section.about-subscribe {
         line-height: 45px;
         z-index: 20;
         top: 60px;
+
+        @media(max-width:600px) {
+            max-width: 240px;
+            height: 240px;
+            left: -58px;
+            font-size: 22px;
+            line-height: 38px;
+        }
     }
 }

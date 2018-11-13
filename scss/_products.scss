@@ -1,14 +1,23 @@
 section.products {
+    min-height: 654px;
     width: 100%;
     height: 100%;
     position: relative;
     margin-top: -3%;
     padding-top: 3%;
+    background: #141414;
+
+    @media(max-width:600px) {
+        height: unset;
+    }
 
     .container {
         height: 100%;
         width: 100%;
-        background: #141414;
+
+        @media(max-width:600px) {
+            height: unset;
+        }
     }
 
     .black-top-right-block {
@@ -18,33 +27,61 @@ section.products {
         background: #141414;
         left: 0px;
         top: 2px;
+
+        @media(max-width: 600px) {
+            top: -12px;
+        }
     }
 
 
 
     .product-box {
-        max-width: 380px;
-        position: absolute;
+        @media(min-width:601px) {
+            max-width: 380px;
+            position: absolute;
+        }
+
+        @media(max-width:600px) {
+            margin-top: 60px;
+        }
+
         line-height: 26px;
 
         > * {
             margin-bottom: 32px;
+
+            @media(max-width:600px) {
+                margin-bottom: 26px;
+                font-size: 14px;
+            }
         }
 
         h2 {
             font-size: 38px;
             letter-spacing: 2px;
+
+            @media(max-width:600px) {
+                font-size: 26px;
+            }
         }
     }
 
     .product-box.experts {
-        top: 25%;
-        left: 15%;
+        @media(min-width:601px) {
+            top: 25%;
+            left: 15%;
+        }
 
         .learn-more {
             border: 1px solid white;
             padding: 16px 40px 16px 70px;
             width: 300px;
+
+            @media(max-width:600px) {
+                padding: 7px 20px 7px 50px;
+                width: 220px;
+                font-size: 10px;
+            }
 
             span {
                 font-family: "Gilroy-Medium";
@@ -58,10 +95,19 @@ section.products {
     }
 
     .product-box.portfolio {
-        top: 38%;
-        right: 15%;
+        padding-bottom:60px;
+        @media(min-width:601px) {
+            top: 38%;
+            right: 15%;
+        }
+
+
 
         .download {
+            @media(max-width:600px) {
+                font-size: 12px;
+            }
+
             span {
                 font-family: "Gilroy-Medium";
                 letter-spacing: 2px;
@@ -77,6 +123,11 @@ section.products {
                 height: 6px;
                 width: 120px;
                 margin: 12px;
+
+                @media(max-width:600px) {
+                    width: 105px;
+                    margin: 4px;
+                }
             }
         }
     }

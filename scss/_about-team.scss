@@ -15,6 +15,10 @@ section.about-team {
         max-width: 1160px;
         margin: auto;
 
+        @media(max-width:600px) {
+            max-width: 320px;
+        }
+
         .ariny::before {
             background-image: url(../img/about/team/ariny.jpg);
         }
@@ -76,10 +80,17 @@ section.about-team {
             background-size: contain;
             background-repeat: no-repeat;
             padding: 15px 25px;
+            cursor: pointer;
+
+            @media(max-width:600px) {
+                width: 160px;
+                height: 160px;
+                padding: 15px;
+            }
 
             .hiddeable {
                 opacity: 0;
-                transition: all 0.3s;
+                transition: all 0.3s
             }
 
             .hiddeable:hover {
@@ -88,6 +99,16 @@ section.about-team {
 
             h4 {
                 font-family: Gilroy-Bold;
+
+                @media(max-width:600px) {
+                    font-size: 16px;
+                }
+            }
+
+            h5 {
+                @media(max-width:600px) {
+                    font-size: 13px;
+                }
             }
 
             h4, h5 {
@@ -115,10 +136,23 @@ section.about-team {
                 bottom: 25px;
                 left: 25px;
 
+                @media(max-width:600px) {
+                    left: 15px;
+
+                    img {
+                        height: 7px;
+                        width: 20px;
+                    }
+                }
+
                 span {
                     font-family: Gilroy-Medium;
                     font-size: 13px;
                     margin-right: 15px;
+
+                    @media(max-width:600px) {
+                        font-size: 11px;
+                    }
                 }
             }
 
@@ -130,10 +164,11 @@ section.about-team {
                 background: #126efd;
                 left: 0;
                 top: 15px;
-            }
-        }
 
-        .photo.active {
+                @media(max-width:600px) {
+                    width: 22px;
+                }
+            }
         }
     }
 }

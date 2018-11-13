@@ -6,6 +6,10 @@ header.masthead {
     background-image: url(/img/masthead/background.jpg);
     background-repeat: no-repeat;
 
+    @media(max-width: 600px) {
+        height: 310px;
+    }
+
     .top-menu {
         position: absolute;
         width: 100%;
@@ -13,13 +17,20 @@ header.masthead {
         padding: 0 90px;
         margin-left: -15px;
 
+        @media(max-width: 600px) {
+            padding: 0 20px;
+            font-size: 12px;
+            top: 15px;
+        }
+
         div {
             display: inline-block;
         }
 
         > div:first-child {
             div {
-                padding: 10px 20px;
+                padding: 10px 10px;
+                margin-right: 10px;
             }
 
             div.active {
@@ -31,6 +42,11 @@ header.masthead {
             div {
                 font-size: 20px;
                 padding: 10px;
+
+                @media(max-width:600px) {
+                    font-size: 16px;
+                    padding: 8px 12px;
+                }
             }
         }
 
@@ -49,19 +65,34 @@ header.masthead {
         padding-top: 15%;
         position: relative;
 
+        @media(max-width: 600px) {
+            padding-top: 40px;
+        }
+
         .center-panel {
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%);
+            @media(min-width: 601px) {
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%);
+            }
 
             img {
                 margin: 60px;
+
+                @media(max-width: 600px) {
+                    height: 35px;
+                    margin: 60px 60px 30px 60px;
+                }
             }
 
             span {
                 font-size: 22px;
                 margin: auto;
+
+                @media(max-width: 600px) {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -75,6 +106,11 @@ header.masthead {
             background-color: white;
             height: 180px;
             width: 1px;
+
+            @media(max-width: 600px) {
+                margin: -60px auto;
+                height: 90px;
+            }
         }
     }
 }

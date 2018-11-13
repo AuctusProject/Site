@@ -5,6 +5,10 @@ section.where-to-buy {
     height: unset;
     padding: 70px 0 100px 0;
 
+    @media(max-width:600px) {
+        padding-bottom: 60px;
+    }
+
     h2 {
         font-family: Gilroy-Bold;
         font-size: 37.5px;
@@ -14,10 +18,22 @@ section.where-to-buy {
 
     .exchanges {
         display: flex;
-        justify-content: space-between;
 
-        a {
-            align-self: flex-end;
+        @media(max-width:600px) {
+            text-align: center;
+            flex-direction: column;
+
+            a + a {
+                margin-top: 25px;
+            }
+        }
+
+        @media(min-width:601px) {
+            justify-content: space-between;
+
+            a {
+                align-self: flex-end;
+            }
         }
     }
 }

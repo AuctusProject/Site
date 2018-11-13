@@ -4,6 +4,10 @@ section.token {
     padding-top: 115px;
     height: unset;
 
+    @media(max-width:600px) {
+        padding-top: 55px;
+    }
+
     .gray-block {
         position: absolute;
         width: 70%;
@@ -12,12 +16,29 @@ section.token {
         left: 0;
         margin-top: -115px;
         background: #1c1c1c;
+
+        @media(max-width:600px) {
+            top: -1px;
+            left: -30px;
+        }
     }
 
     h1 {
-        margin: 0 0 90px 130px;
+        @media(min-width:601px) {
+            margin: 0 0 90px 130px;
+        }
+
         font-size: 38px;
         letter-spacing: 2.7px;
+        max-width: 680px;
+
+        @media(max-width:600px) {
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 1.4px;
+            margin: 0 0 40px 40px;
+            max-width: 350px;
+        }
     }
 
     hr {
@@ -26,14 +47,30 @@ section.token {
         left: -30px;
         border-top: solid 1px #156eff;
         width: 150px;
+
+        @media(max-width:600px) {
+            top: 5px;
+            left: 0px;
+            width: 34px;
+        }
     }
 
     .cards-container {
         display: flex;
+
+        @media(max-width:600px) {
+            flex-direction: column;
+        }
+
         justify-content: space-between;
 
         .token-card {
             text-align: center;
+            margin: auto;
+
+            @media(max-width:600px) {
+                margin-bottom: 40px;
+            }
 
             img {
                 margin-bottom: 20px;
@@ -41,6 +78,10 @@ section.token {
 
             span {
                 font-size: 20px;
+
+                @media(max-width:600px) {
+                    font-size: 16px;
+                }
             }
         }
 
@@ -62,12 +103,23 @@ section.token {
         padding: 15px 0 15px 40px;
         margin: 120px 0 105px 90px;
 
+        @media(max-width:600px) {
+            padding: 15px 0 15px 23px;
+            margin: 20px 0 30px 13px;
+        }
+
         span {
             font-family: Gilroy-Bold;
             font-size: 28px;
             font-style: italic;
             line-height: 34px;
             letter-spacing: 0.7px;
+
+            @media(max-width:600px) {
+                font-size: 20px;
+                line-height: 1.2;
+                letter-spacing: 0.5px;
+            }
         }
     }
 }
