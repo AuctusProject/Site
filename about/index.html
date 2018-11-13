@@ -24,54 +24,56 @@
 </head>
 <body id="page-top" class="auctus">
     <header class="about-masthead">      
-        <div class="container">
-            <div class="top-menu">
+        <div class="top-menu">
+            <div>
                 <div>
-                    <div>
-                        <a href="../#"><span>HOME</span></a>
-                    </div>
-                    <div class="active" >
-                        <a href="./#"><span>ABOUT</span></a>
-                    </div>
+                    <a href="../#"><span>HOME</span></a>
                 </div>
-                <div class="pull-right ">
-                    <div>
-                        <a href="https://facebook.com/auctusproject" title="Facebook" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
-                            <i class="fa fa-telegram"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </div>
+                <div class="active" >
+                    <a href="./#"><span>ABOUT</span></a>
                 </div>
             </div>
-            <div class="center-panel center">
-                <img src="../img/masthead/headerlogo.png" />
-                <br />
-                <div class="left">
-                    <span>
-                        Auctus was born in April 2017 with the aim of bringing the next generation of investment solutions to the cryptospace. We set out to tackle the issue of the general lack of trust in crypto investment tools and financial advice. The solution would come from true transparency through a modern day investment platform built for the digital asset age.
-                    </span>
-                </div>
-                <div class="right">
-                    <span>
-                        The Auctus platform is an investment product where you can invest in cryptocurrencies and manage your portfolio, all in one place.  The platform addresses financial advice mistrust by enabling users to learn and receive trade signals from Auctus Experts whose success rates and average user return is tracked, publicly visible and ranked among other Experts. This transparency gives the investor all the information and data on where the advice is coming from, thus giving the investor the tools to make an education investment decision.
-                    </span>
-                </div>
-            </div>
-            <div class="connection-line center">
+            <div class="pull-right ">
                 <div>
+                    <a href="https://facebook.com/auctusproject" title="Facebook" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://t.me/AuctusProject" title="Telegram" target="_blank">
+                        <i class="fa fa-telegram"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        
+        <div class="center-panel center">
+            <img src="../img/masthead/headerlogo.png" />
+            <br />
+            <div class="mobile-only">
+                <span>
+                    Auctus was born with the aim of bringing the next generation of investment solutions to the cryptospace.
+                </span>
+            </div>
+            <div class="left web-only">
+                <span>
+                    Auctus was born in April 2017 with the aim of bringing the next generation of investment solutions to the cryptospace. We set out to tackle the issue of the general lack of trust in crypto investment tools and financial advice. The solution would come from true transparency through a modern day investment platform built for the digital asset age.
+                </span>
+            </div>
+            <div class="right web-only">
+                <span>
+                    The Auctus platform is an investment product where you can invest in cryptocurrencies and manage your portfolio, all in one place.  The platform addresses financial advice mistrust by enabling users to learn and receive trade signals from Auctus Experts whose success rates and average user return is tracked, publicly visible and ranked among other Experts. This transparency gives the investor all the information and data on where the advice is coming from, thus giving the investor the tools to make an education investment decision.
+                </span>
+            </div>
+        </div>
+        <div class="connection-line center">
+            <div>
+            </div>
+        </div>
     </header>
     <section class="about-team" id="team">       
             <h2 class="center">MEET THE TEAM</h2>
@@ -255,7 +257,8 @@
             <input id="email" type="email" placeholder="* Email" />
             <div class="link-box" id="btn-subscription">
                 <span class="subtitle">We'll keep in touch</span>
-                <span>SEND</span><img class="turn-white-blue" src="../img/global/arrow.png" />
+                <span>SEND</span><img id="arrow-email" class="turn-white-blue" src="../img/global/arrow.png" />
+                <div id="loader-email" style="display: none;" class="loader"></div>
             </div>
         </div>        
     </section>   

@@ -7,8 +7,9 @@ header.about-masthead {
     background-repeat: no-repeat;
     background-position: center;
 
-    @media(max-width: 600px){
-        height: 310px;
+    @media(max-width: 600px) {
+        height: 350px;
+        background-size: contain;
     }
 
     .top-menu {
@@ -16,12 +17,11 @@ header.about-masthead {
         width: 100%;
         top: 10px;
         padding: 0 90px;
-        margin-left:-15px;
 
-        @media(max-width: 600px){
+        @media(max-width: 600px) {
             padding: 0 20px;
             font-size: 12px;
-            top:15px;
+            top: 15px;
         }
 
         div {
@@ -44,7 +44,7 @@ header.about-masthead {
                 font-size: 20px;
                 padding: 10px;
 
-                @media(max-width:600px){
+                @media(max-width:600px) {
                     font-size: 16px;
                     padding: 8px 12px;
                 }
@@ -60,55 +60,69 @@ header.about-masthead {
         }
     }
 
-    .container {
-        width: 100%;
-        height: 100%;
+
+
+    .center-panel {
+        margin: auto;
+        width: 80%;
         position: relative;
 
-        .center-panel {
-            margin: auto;
-            width: 80%;
-            position: relative;
+        .left {
+            text-align: right;
+            position: absolute;
+            width: 505px;
+            top: 45%;
+        }
 
-            .left {
-                text-align: right;
-                position: absolute;
-                width: 505px;
-                top: 45%;
-            }
-
-            .right {
-                text-align: left;
-                position: absolute;
-                width: 505px;
-                top: 70%;
-                right:0;
-            }
+        .right {
+            text-align: left;
+            position: absolute;
+            width: 505px;
+            top: 70%;
+            right: 0;
+        }
 
 
-            img {
-                margin: 70px auto 30% auto;
-                zoom: 0.7;
-            }
+        img {
+            margin: 70px auto 30% auto;
+            zoom: 0.7;
 
-            span {
-                font-size: 18px;
+            @media(max-width:600px) {
+                margin: 180px auto 15% auto;
+                zoom: 0.55;
             }
         }
-    }
 
-    .connection-line {
-        z-index: 10;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        margin-left: -15px;
+        span {
+            font-size: 18px;
 
-        div {
-            margin: 5% auto;
-            background-color: white;
-            height: 90px;
-            width: 1px;
+            @media(max-width:600px) {
+                font-size: 12px;
+            }
         }
     }
 }
+
+.connection-line {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    @media(max-width:600px) {
+        font-size: 12px;
+        position: unset;
+    }
+
+    div {
+        margin: 5% auto;
+        background-color: white;
+        height: 90px;
+        width: 1px;
+
+        @media(max-width:600px) {
+           height:60px;
+        }
+    }
+}
+
