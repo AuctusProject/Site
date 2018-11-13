@@ -1,6 +1,6 @@
 /* line 1, ../scss/_experts.scss */
 section.experts {
-  min-height: 685px;
+  height: 685px;
   background: #141414; }
   /* line 5, ../scss/_experts.scss */
   section.experts .quote {
@@ -247,34 +247,33 @@ section.blog {
 section.features {
   position: relative;
   overflow-x: hidden;
-  height: 120%;
   z-index: 1;
-  min-height: 755px; }
+  height: 755px; }
   @media (max-width: 600px) {
     /* line 1, ../scss/_features.scss */
     section.features {
       height: auto; } }
-  /* line 12, ../scss/_features.scss */
+  /* line 11, ../scss/_features.scss */
   section.features .back-panel {
     width: 100%;
     height: 100%;
     display: block;
     position: absolute; }
     @media (max-width: 600px) {
-      /* line 12, ../scss/_features.scss */
+      /* line 11, ../scss/_features.scss */
       section.features .back-panel {
         display: none; } }
-    /* line 22, ../scss/_features.scss */
+    /* line 21, ../scss/_features.scss */
     section.features .back-panel .black {
       width: 100%;
       height: 50%;
       background: linear-gradient(to right, #141414 50%, #1c1c1c 50%); }
-    /* line 28, ../scss/_features.scss */
+    /* line 27, ../scss/_features.scss */
     section.features .back-panel .white {
       width: 100%;
       height: 50%;
       background: linear-gradient(to right, #f5f5f5 50%, #1c1c1c 50%); }
-  /* line 35, ../scss/_features.scss */
+  /* line 34, ../scss/_features.scss */
   section.features .feature-img {
     position: absolute;
     top: -80px;
@@ -283,104 +282,104 @@ section.features {
     height: 100%;
     z-index: 0; }
     @media (max-width: 600px) {
-      /* line 35, ../scss/_features.scss */
+      /* line 34, ../scss/_features.scss */
       section.features .feature-img {
         left: 35px; } }
-  /* line 48, ../scss/_features.scss */
+  /* line 47, ../scss/_features.scss */
   section.features .container {
     position: relative;
     background: #1c1c1c;
     padding-left: 100px; }
     @media (max-width: 600px) {
-      /* line 48, ../scss/_features.scss */
+      /* line 47, ../scss/_features.scss */
       section.features .container {
         padding-left: 40px;
         width: 100%; } }
-    /* line 59, ../scss/_features.scss */
+    /* line 58, ../scss/_features.scss */
     section.features .container span {
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0.5px; }
       @media (max-width: 600px) {
-        /* line 59, ../scss/_features.scss */
+        /* line 58, ../scss/_features.scss */
         section.features .container span {
           font-size: 12px; } }
-    /* line 69, ../scss/_features.scss */
+    /* line 68, ../scss/_features.scss */
     section.features .container .latest-features {
       position: absolute;
       top: 70px;
       z-index: 1; }
       @media (max-width: 600px) {
-        /* line 69, ../scss/_features.scss */
+        /* line 68, ../scss/_features.scss */
         section.features .container .latest-features {
           top: 24px;
           position: relative; } }
-      /* line 79, ../scss/_features.scss */
+      /* line 78, ../scss/_features.scss */
       section.features .container .latest-features > * + * {
         margin-top: 30px; }
         @media (max-width: 600px) {
-          /* line 79, ../scss/_features.scss */
+          /* line 78, ../scss/_features.scss */
           section.features .container .latest-features > * + * {
             margin-top: 20px;
             margin-bottom: 30px; } }
-      /* line 88, ../scss/_features.scss */
+      /* line 87, ../scss/_features.scss */
       section.features .container .latest-features h1 {
         font-size: 48px;
         letter-spacing: 3.4px; }
         @media (max-width: 600px) {
-          /* line 88, ../scss/_features.scss */
+          /* line 87, ../scss/_features.scss */
           section.features .container .latest-features h1 {
             font-size: 36px;
             letter-spacing: 2.5px; } }
-      /* line 98, ../scss/_features.scss */
+      /* line 97, ../scss/_features.scss */
       section.features .container .latest-features .latest-feature-title {
         font-family: Gilroy-Medium; }
-      /* line 102, ../scss/_features.scss */
+      /* line 101, ../scss/_features.scss */
       section.features .container .latest-features .access {
         cursor: pointer;
         background: #126efd;
         width: 260px;
         padding: 20px 60px; }
         @media (max-width: 600px) {
-          /* line 102, ../scss/_features.scss */
+          /* line 101, ../scss/_features.scss */
           section.features .container .latest-features .access {
             width: 196px;
             padding: 8px 44px; } }
-      /* line 114, ../scss/_features.scss */
+      /* line 113, ../scss/_features.scss */
       section.features .container .latest-features img {
         margin-left: 20px; }
-    /* line 120, ../scss/_features.scss */
+    /* line 119, ../scss/_features.scss */
     section.features .container .other-features {
       position: absolute;
       z-index: 1; }
       @media (min-width: 601px) {
-        /* line 120, ../scss/_features.scss */
+        /* line 119, ../scss/_features.scss */
         section.features .container .other-features {
           bottom: 30px; } }
       @media (max-width: 600px) {
-        /* line 120, ../scss/_features.scss */
+        /* line 119, ../scss/_features.scss */
         section.features .container .other-features {
           position: relative;
           margin-top: 220px;
           margin-bottom: 40px; } }
-      /* line 134, ../scss/_features.scss */
+      /* line 133, ../scss/_features.scss */
       section.features .container .other-features h2 {
         font-size: 30px;
         letter-spacing: 2.1px;
         margin-bottom: 30px; }
         @media (max-width: 600px) {
-          /* line 134, ../scss/_features.scss */
+          /* line 133, ../scss/_features.scss */
           section.features .container .other-features h2 {
             width: 200px; } }
-      /* line 144, ../scss/_features.scss */
+      /* line 143, ../scss/_features.scss */
       section.features .container .other-features ul {
         margin-top: 50px;
         list-style-type: none;
         font-size: 17.5px; }
-        /* line 149, ../scss/_features.scss */
+        /* line 148, ../scss/_features.scss */
         section.features .container .other-features ul li + li {
           margin-top: 30px; }
-        /* line 153, ../scss/_features.scss */
+        /* line 152, ../scss/_features.scss */
         section.features .container .other-features ul li:before {
           font-family: 'FontAwesome';
           content: '\f054';
@@ -574,12 +573,13 @@ header.masthead {
   background-size: cover;
   background-image: url(/img/masthead/background.jpg);
   background-repeat: no-repeat;
-  min-height: 550px; }
+  min-height: 550px;
+  max-height: 850px; }
   @media (max-width: 600px) {
     /* line 2, ../scss/_masthead.scss */
     header.masthead {
       height: 310px; } }
-  /* line 14, ../scss/_masthead.scss */
+  /* line 15, ../scss/_masthead.scss */
   header.masthead .top-menu {
     position: absolute;
     width: 100%;
@@ -587,81 +587,81 @@ header.masthead {
     padding: 0 90px;
     margin-left: -15px; }
     @media (max-width: 600px) {
-      /* line 14, ../scss/_masthead.scss */
+      /* line 15, ../scss/_masthead.scss */
       header.masthead .top-menu {
         padding: 0 20px;
         font-size: 12px;
         top: 15px; } }
-    /* line 27, ../scss/_masthead.scss */
+    /* line 28, ../scss/_masthead.scss */
     header.masthead .top-menu div {
       display: inline-block; }
-    /* line 32, ../scss/_masthead.scss */
+    /* line 33, ../scss/_masthead.scss */
     header.masthead .top-menu > div:first-child div {
       padding: 10px 10px;
       margin-right: 10px; }
-    /* line 37, ../scss/_masthead.scss */
+    /* line 38, ../scss/_masthead.scss */
     header.masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 43, ../scss/_masthead.scss */
+    /* line 44, ../scss/_masthead.scss */
     header.masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
       @media (max-width: 600px) {
-        /* line 43, ../scss/_masthead.scss */
+        /* line 44, ../scss/_masthead.scss */
         header.masthead .top-menu > div:last-child div {
           font-size: 16px;
           padding: 8px 12px; } }
-    /* line 54, ../scss/_masthead.scss */
+    /* line 55, ../scss/_masthead.scss */
     header.masthead .top-menu a {
       color: white; }
-    /* line 58, ../scss/_masthead.scss */
+    /* line 59, ../scss/_masthead.scss */
     header.masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 63, ../scss/_masthead.scss */
+  /* line 64, ../scss/_masthead.scss */
   header.masthead .container {
     width: 100%;
     height: 100%;
     padding-top: 15%;
     position: relative; }
     @media (max-width: 600px) {
-      /* line 63, ../scss/_masthead.scss */
+      /* line 64, ../scss/_masthead.scss */
       header.masthead .container {
         padding-top: 40px; } }
     @media (min-width: 601px) {
-      /* line 73, ../scss/_masthead.scss */
+      /* line 74, ../scss/_masthead.scss */
       header.masthead .container .center-panel {
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translate(-50%); } }
-    /* line 81, ../scss/_masthead.scss */
+    /* line 82, ../scss/_masthead.scss */
     header.masthead .container .center-panel img {
       margin: 60px; }
       @media (max-width: 600px) {
-        /* line 81, ../scss/_masthead.scss */
+        /* line 82, ../scss/_masthead.scss */
         header.masthead .container .center-panel img {
           height: 35px;
           margin: 60px 60px 30px 60px; } }
-    /* line 90, ../scss/_masthead.scss */
+    /* line 91, ../scss/_masthead.scss */
     header.masthead .container .center-panel span {
       font-size: 22px;
       margin: auto; }
       @media (max-width: 600px) {
-        /* line 90, ../scss/_masthead.scss */
+        /* line 91, ../scss/_masthead.scss */
         header.masthead .container .center-panel span {
           font-size: 16px; } }
-  /* line 101, ../scss/_masthead.scss */
+  /* line 102, ../scss/_masthead.scss */
   header.masthead .connection-line {
     z-index: 10;
     position: relative; }
-    /* line 105, ../scss/_masthead.scss */
+    /* line 106, ../scss/_masthead.scss */
     header.masthead .connection-line div {
       margin: -120px auto;
       background-color: white;
       height: 180px;
       width: 1px; }
       @media (max-width: 600px) {
-        /* line 105, ../scss/_masthead.scss */
+        /* line 106, ../scss/_masthead.scss */
         header.masthead .connection-line div {
           margin: -60px auto;
           height: 90px; } }
@@ -786,15 +786,16 @@ section.products {
 section.roadmap {
   background-color: #141414;
   position: relative;
-  min-height: 605px; }
-  /* line 5, ../scss/_roadmap.scss */
+  min-height: 605px;
+  height: unset; }
+  /* line 7, ../scss/_roadmap.scss */
   section.roadmap .container-roadmap {
     padding-top: 90px; }
     @media (max-width: 600px) {
-      /* line 5, ../scss/_roadmap.scss */
+      /* line 7, ../scss/_roadmap.scss */
       section.roadmap .container-roadmap {
         padding-top: 50px; } }
-  /* line 13, ../scss/_roadmap.scss */
+  /* line 15, ../scss/_roadmap.scss */
   section.roadmap h2 {
     font-size: 37.5px;
     font-weight: 600;
@@ -802,21 +803,21 @@ section.roadmap {
     letter-spacing: 0.9px;
     text-align: center;
     color: #ffffff; }
-  /* line 22, ../scss/_roadmap.scss */
+  /* line 24, ../scss/_roadmap.scss */
   section.roadmap .scrollable {
     margin-top: 100px;
     width: 100%;
     position: relative;
     overflow-x: hidden; }
     @media (max-width: 600px) {
-      /* line 22, ../scss/_roadmap.scss */
+      /* line 24, ../scss/_roadmap.scss */
       section.roadmap .scrollable {
         overflow-x: auto;
         margin-top: 40px; } }
-  /* line 34, ../scss/_roadmap.scss */
+  /* line 36, ../scss/_roadmap.scss */
   section.roadmap .scrollable.smooth {
     scroll-behavior: smooth; }
-  /* line 41, ../scss/_roadmap.scss */
+  /* line 43, ../scss/_roadmap.scss */
   section.roadmap .timeline * {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -831,52 +832,52 @@ section.roadmap {
     user-select: none;
     /* Non-prefixed version, currently
      supported by Chrome and Opera */ }
-  /* line 51, ../scss/_roadmap.scss */
+  /* line 53, ../scss/_roadmap.scss */
   section.roadmap .timeline .year-box {
     display: inline-block;
     width: 1200px;
     height: 360px;
     padding-right: 0.5px;
     border-right: solid 0.5px #292929; }
-    /* line 58, ../scss/_roadmap.scss */
+    /* line 60, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box > div {
       width: 100%; }
-    /* line 62, ../scss/_roadmap.scss */
+    /* line 64, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .year-title {
       height: 60px;
       padding: 0 23px 0 10px; }
-      /* line 66, ../scss/_roadmap.scss */
+      /* line 68, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .year-title h2 {
         text-align: left;
         font-family: Gilroy-Medium;
         font-style: italic;
         font-size: 45px;
         color: #242424; }
-    /* line 75, ../scss/_roadmap.scss */
+    /* line 77, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-titles {
       height: 105px;
       border-bottom: solid 1px #d9d9d9;
       font-style: italic;
       padding-top: 25px; }
-      /* line 81, ../scss/_roadmap.scss */
+      /* line 83, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-titles h3 {
         font-family: Gilroy-Medium;
         font-size: 27px; }
-      /* line 86, ../scss/_roadmap.scss */
+      /* line 88, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-titles h5 {
         font-size: 16px; }
-    /* line 91, ../scss/_roadmap.scss */
+    /* line 93, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .current > h3 {
       border-left: 4px solid #126efd;
       padding-left: 5px;
       margin-left: -10px; }
-    /* line 97, ../scss/_roadmap.scss */
+    /* line 99, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-titles.current {
       background: #1b1b1b; }
-    /* line 101, ../scss/_roadmap.scss */
+    /* line 103, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .past * {
       color: #595959; }
-    /* line 105, ../scss/_roadmap.scss */
+    /* line 107, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .q-title {
       display: inline-block;
       width: 295px;
@@ -884,7 +885,7 @@ section.roadmap {
       position: relative;
       border-bottom: solid 4px transparent;
       padding-left: 7px; }
-      /* line 113, ../scss/_roadmap.scss */
+      /* line 115, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .q-title .circle {
         position: absolute;
         bottom: -7px;
@@ -894,31 +895,31 @@ section.roadmap {
         background: #141414;
         border: solid 1px #d9d9d9;
         border-radius: 50%; }
-    /* line 125, ../scss/_roadmap.scss */
+    /* line 127, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .q-title.past {
       border-bottom: solid 4px #595959; }
-      /* line 128, ../scss/_roadmap.scss */
+      /* line 130, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .q-title.past .circle {
         border: solid 1px #595959;
         background: #595959; }
-    /* line 134, ../scss/_roadmap.scss */
+    /* line 136, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-bullets {
       font-size: 14px; }
-      /* line 138, ../scss/_roadmap.scss */
+      /* line 140, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-bullets .q-bullet {
         padding-top: 25px;
         width: 295px;
         display: inline-flex; }
-        /* line 143, ../scss/_roadmap.scss */
+        /* line 145, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul {
           padding-left: 20px; }
-          /* line 146, ../scss/_roadmap.scss */
+          /* line 148, ../scss/_roadmap.scss */
           section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li {
             font-size: 10px; }
-            /* line 149, ../scss/_roadmap.scss */
+            /* line 151, ../scss/_roadmap.scss */
             section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li span {
               font-size: 14px; }
-          /* line 154, ../scss/_roadmap.scss */
+          /* line 156, ../scss/_roadmap.scss */
           section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li + li {
             margin-top: 10px; }
 
@@ -1286,7 +1287,7 @@ header.about-masthead {
 section.about-subscribe {
   background-color: #f7f7f7;
   position: relative;
-  min-height: 700px; }
+  height: 700px; }
   /* line 7, ../scss/_about-subscribe.scss */
   section.about-subscribe .top-rectangle {
     height: 30px;
