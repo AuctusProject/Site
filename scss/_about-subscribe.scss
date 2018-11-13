@@ -39,7 +39,8 @@ section.about-subscribe {
             @media(max-width:600px) {
                 font-size: 22px;
                 line-height: 1.2;
-                margin-bottom: 135px;
+                margin-bottom: 78px;
+                margin-left: 40px;
             }
         }
 
@@ -49,6 +50,11 @@ section.about-subscribe {
             left: -150px;
             border-top: solid 1px #156eff;
             width: 150px;
+
+            @media(max-width:600px) {
+                top: 180px;
+                left: -122px;
+            }
         }
 
         .link-box {
@@ -108,6 +114,9 @@ section.about-subscribe {
         @media(max-width:600px) {
             max-width: 240px;
             height: 240px;
+            left: -58px;
+            font-size: 22px;
+            line-height: 38px;
         }
     }
 }
