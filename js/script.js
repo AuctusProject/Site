@@ -12,15 +12,7 @@
         return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
     };
 
-    $(document).scroll(function (event) {
-        var $scrollable = $('.scrollable');
-        if ($scrollable.visible(true)) {
-            $('.scrollable').addClass('smooth');
-            $scrollable.animate({ scrollLeft: $('.q-title.current').offset().left - 50 }, 0);
-            $('.scrollable').removeClass('smooth');
-            $(document).unbind("scroll");
-        }
-    });
+    
 })(jQuery); // End of use strict
 
 

@@ -1094,10 +1094,10 @@ section.about-advisors {
       @media (max-width: 600px) {
         /* line 16, ../scss/_about-advisors.scss */
         section.about-advisors .container-advisors .advisor-card {
-          width: calc(49% - 20px);
+          width: calc(49% - 25px);
           margin-bottom: 44px;
           display: inline-grid;
-          margin-left: 20px; } }
+          margin-left: 25px; } }
       /* line 31, ../scss/_about-advisors.scss */
       section.about-advisors .container-advisors .advisor-card span {
         font-size: 14px; }
@@ -1120,19 +1120,20 @@ section.about-advisors {
       visibility: visible; }
     /* line 55, ../scss/_about-advisors.scss */
     section.about-advisors .container-advisors .row {
-      margin-left: 0px; }
+      margin-left: 0px;
+      margin-right: 0px; }
       @media (max-width: 600px) {
-        /* line 59, ../scss/_about-advisors.scss */
+        /* line 60, ../scss/_about-advisors.scss */
         section.about-advisors .container-advisors .row .col-md-3 {
           margin-left: -15px; } }
-      /* line 65, ../scss/_about-advisors.scss */
+      /* line 66, ../scss/_about-advisors.scss */
       section.about-advisors .container-advisors .row .subtitle {
         margin-left: -15px; }
         @media (max-width: 600px) {
-          /* line 65, ../scss/_about-advisors.scss */
+          /* line 66, ../scss/_about-advisors.scss */
           section.about-advisors .container-advisors .row .subtitle {
             margin-bottom: 50px; } }
-  /* line 76, ../scss/_about-advisors.scss */
+  /* line 77, ../scss/_about-advisors.scss */
   section.about-advisors h2 {
     font-size: 38px;
     font-weight: 300;
@@ -1141,24 +1142,24 @@ section.about-advisors {
     line-height: 2.63;
     letter-spacing: 2.7px; }
     @media (max-width: 600px) {
-      /* line 76, ../scss/_about-advisors.scss */
+      /* line 77, ../scss/_about-advisors.scss */
       section.about-advisors h2 {
         font-size: 26px; } }
-  /* line 89, ../scss/_about-advisors.scss */
+  /* line 90, ../scss/_about-advisors.scss */
   section.about-advisors h5 {
     font-size: 17.5px;
     font-weight: 600; }
     @media (max-width: 600px) {
-      /* line 89, ../scss/_about-advisors.scss */
+      /* line 90, ../scss/_about-advisors.scss */
       section.about-advisors h5 {
         font-size: 13.5px;
         display: inline; } }
-  /* line 99, ../scss/_about-advisors.scss */
+  /* line 100, ../scss/_about-advisors.scss */
   section.about-advisors span {
     font-size: 20px;
     font-weight: 300; }
     @media (max-width: 600px) {
-      /* line 99, ../scss/_about-advisors.scss */
+      /* line 100, ../scss/_about-advisors.scss */
       section.about-advisors span {
         font-size: 12px;
         display: block; } }
@@ -1295,30 +1296,34 @@ section.about-subscribe {
       color: #343434;
       margin-right: 35px;
       background: transparent; }
-    /* line 28, ../scss/_about-subscribe.scss */
+      @media (max-width: 600px) {
+        /* line 18, ../scss/_about-subscribe.scss */
+        section.about-subscribe .container input {
+          width: 270px; } }
+    /* line 31, ../scss/_about-subscribe.scss */
     section.about-subscribe .container input.invalid {
       border-bottom: 2px solid #e48b8b;
       color: #e48b8b; }
-    /* line 33, ../scss/_about-subscribe.scss */
+    /* line 36, ../scss/_about-subscribe.scss */
     section.about-subscribe .container h2 {
       font-family: Gilroy-Medium;
       font-size: 34px;
       line-height: 42px;
       margin-bottom: 200px; }
       @media (max-width: 600px) {
-        /* line 33, ../scss/_about-subscribe.scss */
+        /* line 36, ../scss/_about-subscribe.scss */
         section.about-subscribe .container h2 {
           font-size: 22px;
           line-height: 1.2;
           margin-bottom: 135px; } }
-    /* line 46, ../scss/_about-subscribe.scss */
+    /* line 49, ../scss/_about-subscribe.scss */
     section.about-subscribe .container hr {
       position: absolute;
       top: 183px;
       left: -150px;
       border-top: solid 1px #156eff;
       width: 150px; }
-    /* line 54, ../scss/_about-subscribe.scss */
+    /* line 57, ../scss/_about-subscribe.scss */
     section.about-subscribe .container .link-box {
       border: 1px solid #555555;
       padding: 16px 40px 16px 70px;
@@ -1327,19 +1332,19 @@ section.about-subscribe {
       display: inline-block;
       cursor: pointer; }
       @media (max-width: 600px) {
-        /* line 54, ../scss/_about-subscribe.scss */
+        /* line 57, ../scss/_about-subscribe.scss */
         section.about-subscribe .container .link-box {
           padding: 16px 34px 16px 34px;
           margin-top: 21px;
           width: 180px; } }
-      /* line 68, ../scss/_about-subscribe.scss */
+      /* line 71, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box span {
         font-family: "Gilroy-Medium";
         letter-spacing: 2px; }
-      /* line 73, ../scss/_about-subscribe.scss */
+      /* line 76, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box img {
         margin-left: 20px; }
-      /* line 77, ../scss/_about-subscribe.scss */
+      /* line 80, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box .subtitle {
         width: 100%;
         text-align: center;
@@ -1350,7 +1355,7 @@ section.about-subscribe {
         top: 70px;
         display: flex;
         /* left: 64px; */ }
-  /* line 91, ../scss/_about-subscribe.scss */
+  /* line 94, ../scss/_about-subscribe.scss */
   section.about-subscribe .dots:before {
     content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
     display: block;
@@ -1368,7 +1373,7 @@ section.about-subscribe {
     z-index: 20;
     top: 60px; }
     @media (max-width: 600px) {
-      /* line 91, ../scss/_about-subscribe.scss */
+      /* line 94, ../scss/_about-subscribe.scss */
       section.about-subscribe .dots:before {
         max-width: 240px;
         height: 240px; } }

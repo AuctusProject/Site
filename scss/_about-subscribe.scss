@@ -23,6 +23,9 @@ section.about-subscribe {
             color: #343434;
             margin-right: 35px;
             background: transparent;
+            @media(max-width:600px){
+                width:270px;
+            }
         }
 
         input.invalid {

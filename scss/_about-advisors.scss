@@ -20,10 +20,10 @@ section.about-advisors {
             position: relative;
 
             @media(max-width:600px) {
-                width: calc(49% - 20px);
+                width: calc(49% - 25px);
                 margin-bottom: 44px;
                 display: inline-grid;
-                margin-left: 20px;
+                margin-left: 25px;
             }
 
 
@@ -54,9 +54,10 @@ section.about-advisors {
 
         .row {
             margin-left: 0px;
+            margin-right:0px;
+          
 
-
-            .col-md-3  {
+            .col-md-3 {
                 @media(max-width:600px) {
                     margin-left: -15px;
                 }
