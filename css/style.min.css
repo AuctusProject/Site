@@ -1286,8 +1286,9 @@ section.about-subscribe {
   /* line 14, ../scss/_about-subscribe.scss */
   section.about-subscribe .container {
     color: #343434;
-    padding-top: 125px; }
-    /* line 18, ../scss/_about-subscribe.scss */
+    padding-top: 125px;
+    min-height: 530px; }
+    /* line 19, ../scss/_about-subscribe.scss */
     section.about-subscribe .container input {
       border: 0;
       border-bottom: 1px solid #555555;
@@ -1297,33 +1298,39 @@ section.about-subscribe {
       margin-right: 35px;
       background: transparent; }
       @media (max-width: 600px) {
-        /* line 18, ../scss/_about-subscribe.scss */
+        /* line 19, ../scss/_about-subscribe.scss */
         section.about-subscribe .container input {
           width: 270px; } }
-    /* line 31, ../scss/_about-subscribe.scss */
+    /* line 32, ../scss/_about-subscribe.scss */
     section.about-subscribe .container input.invalid {
       border-bottom: 2px solid #e48b8b;
       color: #e48b8b; }
-    /* line 36, ../scss/_about-subscribe.scss */
+    /* line 37, ../scss/_about-subscribe.scss */
     section.about-subscribe .container h2 {
       font-family: Gilroy-Medium;
       font-size: 34px;
       line-height: 42px;
       margin-bottom: 200px; }
       @media (max-width: 600px) {
-        /* line 36, ../scss/_about-subscribe.scss */
+        /* line 37, ../scss/_about-subscribe.scss */
         section.about-subscribe .container h2 {
           font-size: 22px;
           line-height: 1.2;
-          margin-bottom: 135px; } }
-    /* line 49, ../scss/_about-subscribe.scss */
+          margin-bottom: 78px;
+          margin-left: 40px; } }
+    /* line 51, ../scss/_about-subscribe.scss */
     section.about-subscribe .container hr {
       position: absolute;
       top: 183px;
       left: -150px;
       border-top: solid 1px #156eff;
       width: 150px; }
-    /* line 57, ../scss/_about-subscribe.scss */
+      @media (max-width: 600px) {
+        /* line 51, ../scss/_about-subscribe.scss */
+        section.about-subscribe .container hr {
+          top: 180px;
+          left: -122px; } }
+    /* line 64, ../scss/_about-subscribe.scss */
     section.about-subscribe .container .link-box {
       border: 1px solid #555555;
       padding: 16px 40px 16px 70px;
@@ -1332,19 +1339,21 @@ section.about-subscribe {
       display: inline-block;
       cursor: pointer; }
       @media (max-width: 600px) {
-        /* line 57, ../scss/_about-subscribe.scss */
+        /* line 64, ../scss/_about-subscribe.scss */
         section.about-subscribe .container .link-box {
           padding: 16px 34px 16px 34px;
+          margin: auto;
           margin-top: 21px;
-          width: 180px; } }
-      /* line 71, ../scss/_about-subscribe.scss */
+          width: 180px;
+          display: block; } }
+      /* line 80, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box span {
         font-family: "Gilroy-Medium";
         letter-spacing: 2px; }
-      /* line 76, ../scss/_about-subscribe.scss */
+      /* line 85, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box img {
         margin-left: 20px; }
-      /* line 80, ../scss/_about-subscribe.scss */
+      /* line 89, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box .subtitle {
         width: 100%;
         text-align: center;
@@ -1353,9 +1362,12 @@ section.about-subscribe {
         font-size: 16px;
         position: absolute;
         top: 70px;
-        display: flex;
-        /* left: 64px; */ }
-  /* line 94, ../scss/_about-subscribe.scss */
+        display: flex; }
+        @media (max-width: 600px) {
+          /* line 89, ../scss/_about-subscribe.scss */
+          section.about-subscribe .container .link-box .subtitle {
+            left: 0px; } }
+  /* line 106, ../scss/_about-subscribe.scss */
   section.about-subscribe .dots:before {
     content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
     display: block;
@@ -1373,10 +1385,13 @@ section.about-subscribe {
     z-index: 20;
     top: 60px; }
     @media (max-width: 600px) {
-      /* line 94, ../scss/_about-subscribe.scss */
+      /* line 106, ../scss/_about-subscribe.scss */
       section.about-subscribe .dots:before {
         max-width: 240px;
-        height: 240px; } }
+        height: 240px;
+        left: -58px;
+        font-size: 22px;
+        line-height: 38px; } }
 
 /* line 2, ../scss/_about-team.scss */
 section.about-team {

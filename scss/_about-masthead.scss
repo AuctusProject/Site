@@ -7,7 +7,7 @@ header.about-masthead {
     background-repeat: no-repeat;
     background-position: center;
 
-    @media(max-width: 600px) {
+    @media(max-width: 600px)  {
         height: 350px;
         background-size: contain;
     }
