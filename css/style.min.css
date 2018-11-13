@@ -1181,92 +1181,93 @@ header.about-masthead {
     position: absolute;
     width: 100%;
     top: 10px;
-    padding: 0 90px; }
+    padding: 0 90px;
+    z-index: 10; }
     @media (max-width: 600px) {
       /* line 15, ../scss/_about-masthead.scss */
       header.about-masthead .top-menu {
         padding: 0 20px;
         font-size: 12px;
         top: 15px; } }
-    /* line 27, ../scss/_about-masthead.scss */
+    /* line 28, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu div {
       display: inline-block; }
-    /* line 32, ../scss/_about-masthead.scss */
+    /* line 33, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div {
       padding: 10px 10px;
       margin-right: 10px; }
-    /* line 37, ../scss/_about-masthead.scss */
+    /* line 38, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 43, ../scss/_about-masthead.scss */
+    /* line 44, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
       @media (max-width: 600px) {
-        /* line 43, ../scss/_about-masthead.scss */
+        /* line 44, ../scss/_about-masthead.scss */
         header.about-masthead .top-menu > div:last-child div {
           font-size: 16px;
           padding: 8px 12px; } }
-    /* line 54, ../scss/_about-masthead.scss */
+    /* line 55, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu a {
       color: white; }
-    /* line 58, ../scss/_about-masthead.scss */
+    /* line 59, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 65, ../scss/_about-masthead.scss */
+  /* line 66, ../scss/_about-masthead.scss */
   header.about-masthead .center-panel {
     margin: auto;
     width: 80%;
     position: relative; }
-    /* line 70, ../scss/_about-masthead.scss */
+    /* line 71, ../scss/_about-masthead.scss */
     header.about-masthead .center-panel .left {
       text-align: right;
       position: absolute;
       width: 505px;
       top: 45%; }
-    /* line 77, ../scss/_about-masthead.scss */
+    /* line 78, ../scss/_about-masthead.scss */
     header.about-masthead .center-panel .right {
       text-align: left;
       position: absolute;
       width: 505px;
       top: 70%;
       right: 0; }
-    /* line 86, ../scss/_about-masthead.scss */
+    /* line 87, ../scss/_about-masthead.scss */
     header.about-masthead .center-panel img {
       margin: 70px auto 30% auto;
       zoom: 0.7; }
       @media (max-width: 600px) {
-        /* line 86, ../scss/_about-masthead.scss */
+        /* line 87, ../scss/_about-masthead.scss */
         header.about-masthead .center-panel img {
           margin: 180px auto 15% auto;
           zoom: 0.55; } }
-    /* line 96, ../scss/_about-masthead.scss */
+    /* line 97, ../scss/_about-masthead.scss */
     header.about-masthead .center-panel span {
       font-size: 18px; }
       @media (max-width: 600px) {
-        /* line 96, ../scss/_about-masthead.scss */
+        /* line 97, ../scss/_about-masthead.scss */
         header.about-masthead .center-panel span {
           font-size: 12px; } }
 
-/* line 106, ../scss/_about-masthead.scss */
+/* line 107, ../scss/_about-masthead.scss */
 .connection-line {
   z-index: 10;
   position: absolute;
   bottom: 0;
   width: 100%; }
   @media (max-width: 600px) {
-    /* line 106, ../scss/_about-masthead.scss */
+    /* line 107, ../scss/_about-masthead.scss */
     .connection-line {
       font-size: 12px;
       position: unset; } }
-  /* line 117, ../scss/_about-masthead.scss */
+  /* line 118, ../scss/_about-masthead.scss */
   .connection-line div {
     margin: 5% auto;
     background-color: white;
     height: 90px;
     width: 1px; }
     @media (max-width: 600px) {
-      /* line 117, ../scss/_about-masthead.scss */
+      /* line 118, ../scss/_about-masthead.scss */
       .connection-line div {
         height: 60px; } }
 
