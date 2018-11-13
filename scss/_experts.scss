@@ -1,9 +1,10 @@
 section.experts {
+    min-height: 685px;
     background: #141414;
 
     .quote {
         position: absolute;
-        width: 90%; 
+        width: 90%;
 
         .dots:before {
             content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
