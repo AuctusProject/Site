@@ -4,6 +4,10 @@
 
     .container-roadmap {
         padding-top: 90px;
+
+        @media (max-width: 600px) {
+            padding-top: 50px;
+        }
     }
 
     h2 {
