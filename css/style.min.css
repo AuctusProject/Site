@@ -1,11 +1,12 @@
 /* line 1, ../scss/_experts.scss */
 section.experts {
+  min-height: 685px;
   background: #141414; }
-  /* line 4, ../scss/_experts.scss */
+  /* line 5, ../scss/_experts.scss */
   section.experts .quote {
     position: absolute;
     width: 90%; }
-    /* line 8, ../scss/_experts.scss */
+    /* line 9, ../scss/_experts.scss */
     section.experts .quote .dots:before {
       content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
       display: block;
@@ -21,14 +22,14 @@ section.experts {
       left: -78px;
       line-height: 45px;
       z-index: 20; }
-    /* line 25, ../scss/_experts.scss */
+    /* line 26, ../scss/_experts.scss */
     section.experts .quote hr {
       position: absolute;
       top: 130px;
       left: -110px;
       border-top: solid 1px #156eff;
       width: 150px; }
-    /* line 33, ../scss/_experts.scss */
+    /* line 34, ../scss/_experts.scss */
     section.experts .quote span {
       font-family: Gilroy-LightItalic;
       font-size: 26px;
@@ -37,19 +38,19 @@ section.experts {
       top: 87px;
       left: 65px; }
       @media (max-width: 600px) {
-        /* line 33, ../scss/_experts.scss */
+        /* line 34, ../scss/_experts.scss */
         section.experts .quote span {
           font-size: 18px; } }
       @media (min-width: 601px) {
-        /* line 33, ../scss/_experts.scss */
+        /* line 34, ../scss/_experts.scss */
         section.experts .quote span {
           line-height: 34px;
           letter-spacing: 0.7px; } }
-  /* line 53, ../scss/_experts.scss */
+  /* line 54, ../scss/_experts.scss */
   section.experts .blue-box-container {
     width: calc(100% - 30px); }
     @media (min-width: 601px) {
-      /* line 53, ../scss/_experts.scss */
+      /* line 54, ../scss/_experts.scss */
       section.experts .blue-box-container {
         position: absolute;
         bottom: 10%;
@@ -60,30 +61,30 @@ section.experts {
         place-content: center space-between;
         align-items: center; } }
     @media (max-width: 600px) {
-      /* line 53, ../scss/_experts.scss */
+      /* line 54, ../scss/_experts.scss */
       section.experts .blue-box-container {
         flex-direction: column;
         position: absolute;
         top: 280px; } }
     @media (min-width: 601px) {
-      /* line 73, ../scss/_experts.scss */
+      /* line 74, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box {
         width: 530px;
         height: 240px;
         position: relative; } }
     @media (max-width: 600px) {
-      /* line 73, ../scss/_experts.scss */
+      /* line 74, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box {
         margin-top: 12px;
         height: 178px; } }
-    /* line 85, ../scss/_experts.scss */
+    /* line 86, ../scss/_experts.scss */
     section.experts .blue-box-container .blue-box .blue-panel {
       background: #126efd;
       width: 100%;
       height: 100%;
       transition: 0.5s all; }
       @media (min-width: 601px) {
-        /* line 85, ../scss/_experts.scss */
+        /* line 86, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel {
           display: table;
           position: absolute;
@@ -91,53 +92,53 @@ section.experts {
           left: 0;
           padding: 0px 60px; } }
       @media (max-width: 600px) {
-        /* line 85, ../scss/_experts.scss */
+        /* line 86, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel {
           opacity: 0.85;
           padding: 30px; } }
       @media (min-width: 601px) {
-        /* line 105, ../scss/_experts.scss */
+        /* line 106, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel > div {
           display: table-cell;
           vertical-align: middle; }
-          /* line 109, ../scss/_experts.scss */
+          /* line 110, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel > div > * {
             position: relative; }
-          /* line 113, ../scss/_experts.scss */
+          /* line 114, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel > div > * + * {
             margin-top: 24px; } }
-      /* line 119, ../scss/_experts.scss */
+      /* line 120, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box .blue-panel h3 {
         font-family: Gilroy-Bold; }
         @media (max-width: 600px) {
-          /* line 119, ../scss/_experts.scss */
+          /* line 120, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel h3 {
             font-size: 18px; } }
-      /* line 127, ../scss/_experts.scss */
+      /* line 128, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box .blue-panel span {
         font-size: 18px;
         letter-spacing: 0.5px; }
         @media (max-width: 600px) {
-          /* line 127, ../scss/_experts.scss */
+          /* line 128, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel span {
             font-size: 14px;
             letter-spacing: normal; } }
-      /* line 137, ../scss/_experts.scss */
+      /* line 138, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box .blue-panel .link-box {
         position: relative; }
-        /* line 140, ../scss/_experts.scss */
+        /* line 141, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel .link-box span {
           font-size: 12px;
           letter-spacing: 2.4px; }
           @media (max-width: 600px) {
-            /* line 140, ../scss/_experts.scss */
+            /* line 141, ../scss/_experts.scss */
             section.experts .blue-box-container .blue-box .blue-panel .link-box span {
               font-size: 10px;
               letter-spacing: normal; } }
-        /* line 150, ../scss/_experts.scss */
+        /* line 151, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel .link-box img {
           margin-left: 20px; }
-      /* line 155, ../scss/_experts.scss */
+      /* line 156, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box .blue-panel .link-box::after {
         content: '';
         position: absolute;
@@ -146,13 +147,13 @@ section.experts {
         background: white;
         left: 0;
         top: 30px; }
-    /* line 166, ../scss/_experts.scss */
+    /* line 167, ../scss/_experts.scss */
     section.experts .blue-box-container .blue-box .blue-panel:hover {
       opacity: 0.85; }
-    /* line 172, ../scss/_experts.scss */
+    /* line 173, ../scss/_experts.scss */
     section.experts .blue-box-container .blue-box.follow {
       background-image: url(/img/about-experts/followthebest.jpg); }
-    /* line 176, ../scss/_experts.scss */
+    /* line 177, ../scss/_experts.scss */
     section.experts .blue-box-container .blue-box.powerful {
       background-image: url(/img/about-experts/powerfulanalytics.jpg); }
 
@@ -638,17 +639,18 @@ header.masthead {
 
 /* line 1, ../scss/_products.scss */
 section.products {
+  min-height: 654px;
   width: 100%;
   height: 100%;
   position: relative;
   margin-top: -3%;
   padding-top: 3%;
   background: #141414; }
-  /* line 9, ../scss/_products.scss */
+  /* line 10, ../scss/_products.scss */
   section.products .container {
     height: 100%;
     width: 100%; }
-  /* line 14, ../scss/_products.scss */
+  /* line 15, ../scss/_products.scss */
   section.products .black-top-right-block {
     position: absolute;
     width: 60%;
@@ -657,85 +659,85 @@ section.products {
     left: 0px;
     top: 2px; }
     @media (max-width: 600px) {
-      /* line 14, ../scss/_products.scss */
+      /* line 15, ../scss/_products.scss */
       section.products .black-top-right-block {
         top: -12px; } }
-  /* line 29, ../scss/_products.scss */
+  /* line 30, ../scss/_products.scss */
   section.products .product-box {
     line-height: 26px; }
     @media (min-width: 601px) {
-      /* line 29, ../scss/_products.scss */
+      /* line 30, ../scss/_products.scss */
       section.products .product-box {
         max-width: 380px;
         position: absolute; } }
     @media (max-width: 600px) {
-      /* line 29, ../scss/_products.scss */
+      /* line 30, ../scss/_products.scss */
       section.products .product-box {
         margin-top: 60px; } }
-    /* line 41, ../scss/_products.scss */
+    /* line 42, ../scss/_products.scss */
     section.products .product-box > * {
       margin-bottom: 32px; }
       @media (max-width: 600px) {
-        /* line 41, ../scss/_products.scss */
+        /* line 42, ../scss/_products.scss */
         section.products .product-box > * {
           margin-bottom: 26px;
           font-size: 14px; } }
-    /* line 50, ../scss/_products.scss */
+    /* line 51, ../scss/_products.scss */
     section.products .product-box h2 {
       font-size: 38px;
       letter-spacing: 2px; }
       @media (max-width: 600px) {
-        /* line 50, ../scss/_products.scss */
+        /* line 51, ../scss/_products.scss */
         section.products .product-box h2 {
           font-size: 26px; } }
   @media (min-width: 601px) {
-    /* line 60, ../scss/_products.scss */
+    /* line 61, ../scss/_products.scss */
     section.products .product-box.experts {
       top: 25%;
       left: 15%; } }
-  /* line 66, ../scss/_products.scss */
+  /* line 67, ../scss/_products.scss */
   section.products .product-box.experts .learn-more {
     border: 1px solid white;
     padding: 16px 40px 16px 70px;
     width: 300px; }
     @media (max-width: 600px) {
-      /* line 66, ../scss/_products.scss */
+      /* line 67, ../scss/_products.scss */
       section.products .product-box.experts .learn-more {
         padding: 7px 20px 7px 50px;
         width: 220px;
         font-size: 10px; } }
-    /* line 77, ../scss/_products.scss */
+    /* line 78, ../scss/_products.scss */
     section.products .product-box.experts .learn-more span {
       font-family: "Gilroy-Medium";
       letter-spacing: 2px; }
-    /* line 82, ../scss/_products.scss */
+    /* line 83, ../scss/_products.scss */
     section.products .product-box.experts .learn-more img {
       margin-left: 20px; }
   @media (min-width: 601px) {
-    /* line 88, ../scss/_products.scss */
+    /* line 89, ../scss/_products.scss */
     section.products .product-box.portfolio {
       top: 38%;
       right: 15%; } }
   @media (max-width: 600px) {
-    /* line 96, ../scss/_products.scss */
+    /* line 97, ../scss/_products.scss */
     section.products .product-box.portfolio .download {
       font-size: 12px; } }
-  /* line 101, ../scss/_products.scss */
+  /* line 102, ../scss/_products.scss */
   section.products .product-box.portfolio .download span {
     font-family: "Gilroy-Medium";
     letter-spacing: 2px; }
-  /* line 106, ../scss/_products.scss */
+  /* line 107, ../scss/_products.scss */
   section.products .product-box.portfolio .download img {
     margin-left: 20px;
     margin-top: -5px; }
-  /* line 111, ../scss/_products.scss */
+  /* line 112, ../scss/_products.scss */
   section.products .product-box.portfolio .download hr {
     border-top-color: white;
     height: 6px;
     width: 120px;
     margin: 12px; }
     @media (max-width: 600px) {
-      /* line 111, ../scss/_products.scss */
+      /* line 112, ../scss/_products.scss */
       section.products .product-box.portfolio .download hr {
         width: 105px;
         margin: 4px; } }
