@@ -1,11 +1,18 @@
 section.blog {
     background: #1c1c1c;
     padding-top: 72px;
+    padding-bottom: 1px;
+    height: unset;
+    
+    .container{
+        height: unset;
+    }
 
     h2 {
-        margin: 0 0 50px 110px;
+        margin: 0 0 50px 0px;
         font-family: Gilroy-Medium;
         font-size: 37px;
+        text-align: center;
     }
 
     @media(max-width:430px) {
@@ -27,7 +34,7 @@ section.blog {
 
     .news-card {
         width: 370px;
-        max-width: 100%;
+        max-width: calc(100vw - 26px);
         height: 349px;
         border-radius: 2px;
         display: inline-block;
@@ -37,6 +44,7 @@ section.blog {
 
         .img-div {
             width: 370px;
+            max-width: calc(100vw - 26px);
             height: 200px;
             background-size: cover !important;
             opacity: 0.5;
@@ -59,6 +67,7 @@ section.blog {
             text-overflow: ellipsis;
             color: white;
             width: 300px;
+            max-width: calc(100vw - 70px);
             margin: -18px auto 0 auto;
             top: -10px;
             z-index: 5;
