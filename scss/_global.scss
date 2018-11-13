@@ -13,7 +13,11 @@ a{
 }
 
 section {
-    height:100%;
+    height: 100%;
+
+    @media(max-width:600px) {
+        height: unset;
+    }
 }
 .container {
     height: 100%;
