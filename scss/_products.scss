@@ -7,7 +7,7 @@ section.products {
     padding-top: 3%;
     background: #141414;
 
-    @media(max-width:600px) {
+    @media(max-width:1110px) {
         height: unset;
     }
 
@@ -15,7 +15,7 @@ section.products {
         height: 100%;
         width: 100%;
 
-        @media(max-width:600px) {
+        @media(max-width:1110px) {
             height: unset;
         }
     }
@@ -36,12 +36,12 @@ section.products {
 
 
     .product-box {
-        @media(min-width:601px) {
+        @media(min-width:1111px) {
             max-width: 380px;
             position: absolute;
         }
 
-        @media(max-width:600px) {
+        @media(max-width:1110px) {
             margin-top: 60px;
         }
 
@@ -50,7 +50,7 @@ section.products {
         > * {
             margin-bottom: 32px;
 
-            @media(max-width:600px) {
+            @media(max-width:1110px) {
                 margin-bottom: 26px;
                 font-size: 14px;
             }
@@ -60,14 +60,14 @@ section.products {
             font-size: 38px;
             letter-spacing: 2px;
 
-            @media(max-width:600px) {
+            @media(max-width:1110px) {
                 font-size: 26px;
             }
         }
     }
 
     .product-box.experts {
-        @media(min-width:601px) {
+        @media(min-width:1111px) {
             top: 25%;
             left: 15%;
         }
@@ -77,7 +77,7 @@ section.products {
             padding: 16px 40px 16px 70px;
             width: 300px;
 
-            @media(max-width:600px) {
+            @media(max-width:1110px) {
                 padding: 7px 20px 7px 50px;
                 width: 220px;
                 font-size: 10px;
@@ -96,7 +96,7 @@ section.products {
 
     .product-box.portfolio {
         padding-bottom:60px;
-        @media(min-width:601px) {
+        @media(min-width:1111px) {
             top: 38%;
             right: 15%;
         }
@@ -104,7 +104,7 @@ section.products {
 
 
         .download {
-            @media(max-width:600px) {
+            @media(max-width:1110px) {
                 font-size: 12px;
             }
 
@@ -124,7 +124,7 @@ section.products {
                 width: 120px;
                 margin: 12px;
 
-                @media(max-width:600px) {
+                @media(max-width:1110px) {
                     width: 105px;
                     margin: 4px;
                 }

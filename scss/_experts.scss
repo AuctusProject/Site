@@ -1,5 +1,5 @@
 section.experts {
-    min-height: 685px;
+    height: 685px;
     background: #141414;
 
     .quote {
@@ -36,11 +36,11 @@ section.experts {
             font-size: 26px;
             z-index: 100;
 
-            @media(max-width:600px) {
+            @media(max-width:1200px) {
                 font-size: 18px;
             }
 
-            @media(min-width:601px) {
+            @media(min-width:1201px) {
                 line-height: 34px;
                 letter-spacing: 0.7px;
             }
@@ -54,7 +54,7 @@ section.experts {
     .blue-box-container {
         width: calc(100% - 30px);
 
-        @media(min-width:601px) {
+        @media(min-width:1201px) {
             position: absolute;
             bottom: 10%;
             flex-direction: row;
@@ -65,26 +65,26 @@ section.experts {
             align-items: center;
         }
 
-        @media(max-width:600px) {
+        @media(max-width:1200px) {
             flex-direction: column;
             position: absolute;
             top: 280px;
         }
 
         .blue-box {
-            @media(min-width:601px) {
+            @media(min-width:1201px) {
                 width: 530px;
                 height: 240px;
                 position: relative;
             }
 
-            @media(max-width:600px) {
+            @media(max-width:1200px) {
                 margin-top: 12px;
                 height: 178px;
             }
 
             .blue-panel {
-                @media(min-width:601px) {
+                @media(min-width:1201px) {
                     display: table;
                     position: absolute;
                     top: 0;
@@ -97,12 +97,12 @@ section.experts {
                 height: 100%;
                 transition: 0.5s all;
 
-                @media(max-width:600px) {
+                @media(max-width:1200px) {
                     opacity: 0.85;
                     padding: 30px;
                 }
 
-                @media(min-width:601px) {
+                @media(min-width:1201px) {
                     > div {
                         display: table-cell;
                         vertical-align: middle;
@@ -120,7 +120,7 @@ section.experts {
                 h3 {
                     font-family: Gilroy-Bold;
 
-                    @media(max-width:600px) {
+                    @media(max-width:1200px) {
                         font-size: 18px;
                     }
                 }
@@ -129,7 +129,7 @@ section.experts {
                     font-size: 18px;
                     letter-spacing: 0.5px;
 
-                    @media(max-width:600px) {
+                    @media(max-width:1200px) {
                         font-size: 14px;
                         letter-spacing: normal;
                     }
@@ -142,7 +142,7 @@ section.experts {
                         font-size: 12px;
                         letter-spacing: 2.4px;
 
-                        @media(max-width:600px) {
+                        @media(max-width:1200px) {
                             font-size: 10px;
                             letter-spacing: normal;
                         }

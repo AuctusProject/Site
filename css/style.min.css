@@ -1,6 +1,6 @@
 /* line 1, ../scss/_experts.scss */
 section.experts {
-  min-height: 685px;
+  height: 685px;
   background: #141414; }
   /* line 5, ../scss/_experts.scss */
   section.experts .quote {
@@ -37,11 +37,11 @@ section.experts {
       position: absolute;
       top: 87px;
       left: 65px; }
-      @media (max-width: 600px) {
+      @media (max-width: 1200px) {
         /* line 34, ../scss/_experts.scss */
         section.experts .quote span {
           font-size: 18px; } }
-      @media (min-width: 601px) {
+      @media (min-width: 1201px) {
         /* line 34, ../scss/_experts.scss */
         section.experts .quote span {
           line-height: 34px;
@@ -49,7 +49,7 @@ section.experts {
   /* line 54, ../scss/_experts.scss */
   section.experts .blue-box-container {
     width: calc(100% - 30px); }
-    @media (min-width: 601px) {
+    @media (min-width: 1201px) {
       /* line 54, ../scss/_experts.scss */
       section.experts .blue-box-container {
         position: absolute;
@@ -60,19 +60,19 @@ section.experts {
         max-height: 100%;
         place-content: center space-between;
         align-items: center; } }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       /* line 54, ../scss/_experts.scss */
       section.experts .blue-box-container {
         flex-direction: column;
         position: absolute;
         top: 280px; } }
-    @media (min-width: 601px) {
+    @media (min-width: 1201px) {
       /* line 74, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box {
         width: 530px;
         height: 240px;
         position: relative; } }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       /* line 74, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box {
         margin-top: 12px;
@@ -83,7 +83,7 @@ section.experts {
       width: 100%;
       height: 100%;
       transition: 0.5s all; }
-      @media (min-width: 601px) {
+      @media (min-width: 1201px) {
         /* line 86, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel {
           display: table;
@@ -91,12 +91,12 @@ section.experts {
           top: 0;
           left: 0;
           padding: 0px 60px; } }
-      @media (max-width: 600px) {
+      @media (max-width: 1200px) {
         /* line 86, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel {
           opacity: 0.85;
           padding: 30px; } }
-      @media (min-width: 601px) {
+      @media (min-width: 1201px) {
         /* line 106, ../scss/_experts.scss */
         section.experts .blue-box-container .blue-box .blue-panel > div {
           display: table-cell;
@@ -110,7 +110,7 @@ section.experts {
       /* line 120, ../scss/_experts.scss */
       section.experts .blue-box-container .blue-box .blue-panel h3 {
         font-family: Gilroy-Bold; }
-        @media (max-width: 600px) {
+        @media (max-width: 1200px) {
           /* line 120, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel h3 {
             font-size: 18px; } }
@@ -118,7 +118,7 @@ section.experts {
       section.experts .blue-box-container .blue-box .blue-panel span {
         font-size: 18px;
         letter-spacing: 0.5px; }
-        @media (max-width: 600px) {
+        @media (max-width: 1200px) {
           /* line 128, ../scss/_experts.scss */
           section.experts .blue-box-container .blue-box .blue-panel span {
             font-size: 14px;
@@ -130,7 +130,7 @@ section.experts {
         section.experts .blue-box-container .blue-box .blue-panel .link-box span {
           font-size: 12px;
           letter-spacing: 2.4px; }
-          @media (max-width: 600px) {
+          @media (max-width: 1200px) {
             /* line 141, ../scss/_experts.scss */
             section.experts .blue-box-container .blue-box .blue-panel .link-box span {
               font-size: 10px;
@@ -247,8 +247,8 @@ section.blog {
 section.features {
   position: relative;
   overflow-x: hidden;
-  height: 120%;
-  z-index: 1; }
+  z-index: 1;
+  height: 755px; }
   @media (max-width: 600px) {
     /* line 1, ../scss/_features.scss */
     section.features {
@@ -572,12 +572,14 @@ header.masthead {
   height: 110%;
   background-size: cover;
   background-image: url(/img/masthead/background.jpg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  min-height: 550px;
+  max-height: 850px; }
   @media (max-width: 600px) {
     /* line 2, ../scss/_masthead.scss */
     header.masthead {
       height: 310px; } }
-  /* line 13, ../scss/_masthead.scss */
+  /* line 15, ../scss/_masthead.scss */
   header.masthead .top-menu {
     position: absolute;
     width: 100%;
@@ -585,81 +587,81 @@ header.masthead {
     padding: 0 90px;
     margin-left: -15px; }
     @media (max-width: 600px) {
-      /* line 13, ../scss/_masthead.scss */
+      /* line 15, ../scss/_masthead.scss */
       header.masthead .top-menu {
         padding: 0 20px;
         font-size: 12px;
         top: 15px; } }
-    /* line 26, ../scss/_masthead.scss */
+    /* line 28, ../scss/_masthead.scss */
     header.masthead .top-menu div {
       display: inline-block; }
-    /* line 31, ../scss/_masthead.scss */
+    /* line 33, ../scss/_masthead.scss */
     header.masthead .top-menu > div:first-child div {
       padding: 10px 10px;
       margin-right: 10px; }
-    /* line 36, ../scss/_masthead.scss */
+    /* line 38, ../scss/_masthead.scss */
     header.masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 42, ../scss/_masthead.scss */
+    /* line 44, ../scss/_masthead.scss */
     header.masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
       @media (max-width: 600px) {
-        /* line 42, ../scss/_masthead.scss */
+        /* line 44, ../scss/_masthead.scss */
         header.masthead .top-menu > div:last-child div {
           font-size: 16px;
           padding: 8px 12px; } }
-    /* line 53, ../scss/_masthead.scss */
+    /* line 55, ../scss/_masthead.scss */
     header.masthead .top-menu a {
       color: white; }
-    /* line 57, ../scss/_masthead.scss */
+    /* line 59, ../scss/_masthead.scss */
     header.masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 62, ../scss/_masthead.scss */
+  /* line 64, ../scss/_masthead.scss */
   header.masthead .container {
     width: 100%;
     height: 100%;
     padding-top: 15%;
     position: relative; }
     @media (max-width: 600px) {
-      /* line 62, ../scss/_masthead.scss */
+      /* line 64, ../scss/_masthead.scss */
       header.masthead .container {
         padding-top: 40px; } }
     @media (min-width: 601px) {
-      /* line 72, ../scss/_masthead.scss */
+      /* line 74, ../scss/_masthead.scss */
       header.masthead .container .center-panel {
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translate(-50%); } }
-    /* line 80, ../scss/_masthead.scss */
+    /* line 82, ../scss/_masthead.scss */
     header.masthead .container .center-panel img {
       margin: 60px; }
       @media (max-width: 600px) {
-        /* line 80, ../scss/_masthead.scss */
+        /* line 82, ../scss/_masthead.scss */
         header.masthead .container .center-panel img {
           height: 35px;
           margin: 60px 60px 30px 60px; } }
-    /* line 89, ../scss/_masthead.scss */
+    /* line 91, ../scss/_masthead.scss */
     header.masthead .container .center-panel span {
       font-size: 22px;
       margin: auto; }
       @media (max-width: 600px) {
-        /* line 89, ../scss/_masthead.scss */
+        /* line 91, ../scss/_masthead.scss */
         header.masthead .container .center-panel span {
           font-size: 16px; } }
-  /* line 100, ../scss/_masthead.scss */
+  /* line 102, ../scss/_masthead.scss */
   header.masthead .connection-line {
     z-index: 10;
     position: relative; }
-    /* line 104, ../scss/_masthead.scss */
+    /* line 106, ../scss/_masthead.scss */
     header.masthead .connection-line div {
       margin: -120px auto;
       background-color: white;
       height: 180px;
       width: 1px; }
       @media (max-width: 600px) {
-        /* line 104, ../scss/_masthead.scss */
+        /* line 106, ../scss/_masthead.scss */
         header.masthead .connection-line div {
           margin: -60px auto;
           height: 90px; } }
@@ -673,7 +675,7 @@ section.products {
   margin-top: -3%;
   padding-top: 3%;
   background: #141414; }
-  @media (max-width: 600px) {
+  @media (max-width: 1110px) {
     /* line 1, ../scss/_products.scss */
     section.products {
       height: unset; } }
@@ -681,7 +683,7 @@ section.products {
   section.products .container {
     height: 100%;
     width: 100%; }
-    @media (max-width: 600px) {
+    @media (max-width: 1110px) {
       /* line 14, ../scss/_products.scss */
       section.products .container {
         height: unset; } }
@@ -700,19 +702,19 @@ section.products {
   /* line 38, ../scss/_products.scss */
   section.products .product-box {
     line-height: 26px; }
-    @media (min-width: 601px) {
+    @media (min-width: 1111px) {
       /* line 38, ../scss/_products.scss */
       section.products .product-box {
         max-width: 380px;
         position: absolute; } }
-    @media (max-width: 600px) {
+    @media (max-width: 1110px) {
       /* line 38, ../scss/_products.scss */
       section.products .product-box {
         margin-top: 60px; } }
     /* line 50, ../scss/_products.scss */
     section.products .product-box > * {
       margin-bottom: 32px; }
-      @media (max-width: 600px) {
+      @media (max-width: 1110px) {
         /* line 50, ../scss/_products.scss */
         section.products .product-box > * {
           margin-bottom: 26px;
@@ -721,11 +723,11 @@ section.products {
     section.products .product-box h2 {
       font-size: 38px;
       letter-spacing: 2px; }
-      @media (max-width: 600px) {
+      @media (max-width: 1110px) {
         /* line 59, ../scss/_products.scss */
         section.products .product-box h2 {
           font-size: 26px; } }
-  @media (min-width: 601px) {
+  @media (min-width: 1111px) {
     /* line 69, ../scss/_products.scss */
     section.products .product-box.experts {
       top: 25%;
@@ -735,7 +737,7 @@ section.products {
     border: 1px solid white;
     padding: 16px 40px 16px 70px;
     width: 300px; }
-    @media (max-width: 600px) {
+    @media (max-width: 1110px) {
       /* line 75, ../scss/_products.scss */
       section.products .product-box.experts .learn-more {
         padding: 7px 20px 7px 50px;
@@ -751,12 +753,12 @@ section.products {
   /* line 97, ../scss/_products.scss */
   section.products .product-box.portfolio {
     padding-bottom: 60px; }
-    @media (min-width: 601px) {
+    @media (min-width: 1111px) {
       /* line 97, ../scss/_products.scss */
       section.products .product-box.portfolio {
         top: 38%;
         right: 15%; } }
-    @media (max-width: 600px) {
+    @media (max-width: 1110px) {
       /* line 106, ../scss/_products.scss */
       section.products .product-box.portfolio .download {
         font-size: 12px; } }
@@ -774,7 +776,7 @@ section.products {
       height: 6px;
       width: 120px;
       margin: 12px; }
-      @media (max-width: 600px) {
+      @media (max-width: 1110px) {
         /* line 121, ../scss/_products.scss */
         section.products .product-box.portfolio .download hr {
           width: 105px;
@@ -783,15 +785,17 @@ section.products {
 /* line 1, ../scss/_roadmap.scss */
 section.roadmap {
   background-color: #141414;
-  position: relative; }
-  /* line 5, ../scss/_roadmap.scss */
+  position: relative;
+  min-height: 605px;
+  height: unset; }
+  /* line 7, ../scss/_roadmap.scss */
   section.roadmap .container-roadmap {
     padding-top: 90px; }
     @media (max-width: 600px) {
-      /* line 5, ../scss/_roadmap.scss */
+      /* line 7, ../scss/_roadmap.scss */
       section.roadmap .container-roadmap {
         padding-top: 50px; } }
-  /* line 13, ../scss/_roadmap.scss */
+  /* line 15, ../scss/_roadmap.scss */
   section.roadmap h2 {
     font-size: 37.5px;
     font-weight: 600;
@@ -799,24 +803,21 @@ section.roadmap {
     letter-spacing: 0.9px;
     text-align: center;
     color: #ffffff; }
-  /* line 22, ../scss/_roadmap.scss */
+  /* line 24, ../scss/_roadmap.scss */
   section.roadmap .scrollable {
     margin-top: 100px;
     width: 100%;
     position: relative;
     overflow-x: hidden; }
-    @media (max-width: 992px) {
-      /* line 22, ../scss/_roadmap.scss */
-      section.roadmap .scrollable {
-        overflow-x: auto; } }
     @media (max-width: 600px) {
-      /* line 22, ../scss/_roadmap.scss */
+      /* line 24, ../scss/_roadmap.scss */
       section.roadmap .scrollable {
+        overflow-x: auto;
         margin-top: 40px; } }
-  /* line 37, ../scss/_roadmap.scss */
+  /* line 36, ../scss/_roadmap.scss */
   section.roadmap .scrollable.smooth {
     scroll-behavior: smooth; }
-  /* line 44, ../scss/_roadmap.scss */
+  /* line 43, ../scss/_roadmap.scss */
   section.roadmap .timeline * {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -831,52 +832,52 @@ section.roadmap {
     user-select: none;
     /* Non-prefixed version, currently
      supported by Chrome and Opera */ }
-  /* line 54, ../scss/_roadmap.scss */
+  /* line 53, ../scss/_roadmap.scss */
   section.roadmap .timeline .year-box {
     display: inline-block;
     width: 1200px;
     height: 360px;
     padding-right: 0.5px;
     border-right: solid 0.5px #292929; }
-    /* line 61, ../scss/_roadmap.scss */
+    /* line 60, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box > div {
       width: 100%; }
-    /* line 65, ../scss/_roadmap.scss */
+    /* line 64, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .year-title {
       height: 60px;
       padding: 0 23px 0 10px; }
-      /* line 69, ../scss/_roadmap.scss */
+      /* line 68, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .year-title h2 {
         text-align: left;
         font-family: Gilroy-Medium;
         font-style: italic;
         font-size: 45px;
         color: #242424; }
-    /* line 78, ../scss/_roadmap.scss */
+    /* line 77, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-titles {
       height: 105px;
       border-bottom: solid 1px #d9d9d9;
       font-style: italic;
       padding-top: 25px; }
-      /* line 84, ../scss/_roadmap.scss */
+      /* line 83, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-titles h3 {
         font-family: Gilroy-Medium;
         font-size: 27px; }
-      /* line 89, ../scss/_roadmap.scss */
+      /* line 88, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-titles h5 {
         font-size: 16px; }
-    /* line 94, ../scss/_roadmap.scss */
+    /* line 93, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .current > h3 {
       border-left: 4px solid #126efd;
       padding-left: 5px;
       margin-left: -10px; }
-    /* line 100, ../scss/_roadmap.scss */
+    /* line 99, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-titles.current {
       background: #1b1b1b; }
-    /* line 104, ../scss/_roadmap.scss */
+    /* line 103, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .past * {
       color: #595959; }
-    /* line 108, ../scss/_roadmap.scss */
+    /* line 107, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .q-title {
       display: inline-block;
       width: 295px;
@@ -884,7 +885,7 @@ section.roadmap {
       position: relative;
       border-bottom: solid 4px transparent;
       padding-left: 7px; }
-      /* line 116, ../scss/_roadmap.scss */
+      /* line 115, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .q-title .circle {
         position: absolute;
         bottom: -7px;
@@ -894,31 +895,31 @@ section.roadmap {
         background: #141414;
         border: solid 1px #d9d9d9;
         border-radius: 50%; }
-    /* line 128, ../scss/_roadmap.scss */
+    /* line 127, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .q-title.past {
       border-bottom: solid 4px #595959; }
-      /* line 131, ../scss/_roadmap.scss */
+      /* line 130, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .q-title.past .circle {
         border: solid 1px #595959;
         background: #595959; }
-    /* line 137, ../scss/_roadmap.scss */
+    /* line 136, ../scss/_roadmap.scss */
     section.roadmap .timeline .year-box .quarter-bullets {
       font-size: 14px; }
-      /* line 141, ../scss/_roadmap.scss */
+      /* line 140, ../scss/_roadmap.scss */
       section.roadmap .timeline .year-box .quarter-bullets .q-bullet {
         padding-top: 25px;
         width: 295px;
         display: inline-flex; }
-        /* line 146, ../scss/_roadmap.scss */
+        /* line 145, ../scss/_roadmap.scss */
         section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul {
           padding-left: 20px; }
-          /* line 149, ../scss/_roadmap.scss */
+          /* line 148, ../scss/_roadmap.scss */
           section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li {
             font-size: 10px; }
-            /* line 152, ../scss/_roadmap.scss */
+            /* line 151, ../scss/_roadmap.scss */
             section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li span {
               font-size: 14px; }
-          /* line 157, ../scss/_roadmap.scss */
+          /* line 156, ../scss/_roadmap.scss */
           section.roadmap .timeline .year-box .quarter-bullets .q-bullet ul li + li {
             margin-top: 10px; }
 
@@ -1041,8 +1042,8 @@ section.where-to-buy {
   background-color: #e9e9e9;
   text-align: center;
   height: unset;
-  padding: 70px 0 100px 0; }
-  @media (max-width: 600px) {
+  padding: 70px 0; }
+  @media (max-width: 992px) {
     /* line 1, ../scss/_where-to-buy.scss */
     section.where-to-buy {
       padding-bottom: 60px; } }
@@ -1054,16 +1055,17 @@ section.where-to-buy {
     margin-bottom: 56px; }
   /* line 19, ../scss/_where-to-buy.scss */
   section.where-to-buy .exchanges {
-    display: flex; }
-    @media (max-width: 600px) {
+    display: flex;
+    padding: 0 70px; }
+    @media (max-width: 992px) {
       /* line 19, ../scss/_where-to-buy.scss */
       section.where-to-buy .exchanges {
         text-align: center;
         flex-direction: column; }
         /* line 26, ../scss/_where-to-buy.scss */
         section.where-to-buy .exchanges a + a {
-          margin-top: 25px; } }
-    @media (min-width: 601px) {
+          margin-top: 45px; } }
+    @media (min-width: 993px) {
       /* line 19, ../scss/_where-to-buy.scss */
       section.where-to-buy .exchanges {
         justify-content: space-between; }
@@ -1167,17 +1169,22 @@ section.about-advisors {
 /* line 2, ../scss/_about-masthead.scss */
 header.about-masthead {
   width: 100%;
-  height: 100%;
+  height: unset;
+  position: relative;
   background: #161618;
   background-image: url(/img/about/background.jpg);
   background-repeat: no-repeat;
   background-position: center; }
+  @media (min-width: 601px) {
+    /* line 2, ../scss/_about-masthead.scss */
+    header.about-masthead {
+      min-height: 700px; } }
   @media (max-width: 600px) {
     /* line 2, ../scss/_about-masthead.scss */
     header.about-masthead {
       height: 350px;
       background-size: contain; } }
-  /* line 15, ../scss/_about-masthead.scss */
+  /* line 20, ../scss/_about-masthead.scss */
   header.about-masthead .top-menu {
     position: absolute;
     width: 100%;
@@ -1185,140 +1192,145 @@ header.about-masthead {
     padding: 0 90px;
     z-index: 10; }
     @media (max-width: 600px) {
-      /* line 15, ../scss/_about-masthead.scss */
+      /* line 20, ../scss/_about-masthead.scss */
       header.about-masthead .top-menu {
         padding: 0 20px;
         font-size: 12px;
         top: 15px; } }
-    /* line 28, ../scss/_about-masthead.scss */
+    /* line 33, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu div {
       display: inline-block; }
-    /* line 33, ../scss/_about-masthead.scss */
+    /* line 38, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div {
       padding: 10px 10px;
       margin-right: 10px; }
-    /* line 38, ../scss/_about-masthead.scss */
+    /* line 43, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:first-child div.active {
       border-bottom: 2px solid #126efd; }
-    /* line 44, ../scss/_about-masthead.scss */
+    /* line 49, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu > div:last-child div {
       font-size: 20px;
       padding: 10px; }
       @media (max-width: 600px) {
-        /* line 44, ../scss/_about-masthead.scss */
+        /* line 49, ../scss/_about-masthead.scss */
         header.about-masthead .top-menu > div:last-child div {
           font-size: 16px;
           padding: 8px 12px; } }
-    /* line 55, ../scss/_about-masthead.scss */
+    /* line 60, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu a {
       color: white; }
-    /* line 59, ../scss/_about-masthead.scss */
+    /* line 64, ../scss/_about-masthead.scss */
     header.about-masthead .top-menu i {
       color: #b7b7b7; }
-  /* line 66, ../scss/_about-masthead.scss */
+  /* line 71, ../scss/_about-masthead.scss */
   header.about-masthead .center-panel {
     margin: auto;
     width: 80%;
     position: relative; }
-    /* line 71, ../scss/_about-masthead.scss */
+    /* line 76, ../scss/_about-masthead.scss */
+    header.about-masthead .center-panel .left, header.about-masthead .center-panel .right {
+      position: absolute;
+      width: 48%; }
+    /* line 81, ../scss/_about-masthead.scss */
     header.about-masthead .center-panel .left {
       text-align: right;
-      position: absolute;
-      width: 505px;
       top: 45%; }
-    /* line 78, ../scss/_about-masthead.scss */
+    /* line 86, ../scss/_about-masthead.scss */
     header.about-masthead .center-panel .right {
       text-align: left;
-      position: absolute;
-      width: 505px;
       top: 70%;
       right: 0; }
-    /* line 87, ../scss/_about-masthead.scss */
+    /* line 93, ../scss/_about-masthead.scss */
     header.about-masthead .center-panel img {
       margin: 70px auto 30% auto;
       zoom: 0.7; }
       @media (max-width: 600px) {
-        /* line 87, ../scss/_about-masthead.scss */
+        /* line 93, ../scss/_about-masthead.scss */
         header.about-masthead .center-panel img {
           margin: 180px auto 15% auto;
           zoom: 0.55; } }
-    /* line 97, ../scss/_about-masthead.scss */
+    /* line 103, ../scss/_about-masthead.scss */
     header.about-masthead .center-panel span {
       font-size: 18px; }
+      @media (max-width: 900px) {
+        /* line 103, ../scss/_about-masthead.scss */
+        header.about-masthead .center-panel span {
+          font-size: 16px; } }
       @media (max-width: 600px) {
-        /* line 97, ../scss/_about-masthead.scss */
+        /* line 103, ../scss/_about-masthead.scss */
         header.about-masthead .center-panel span {
           font-size: 12px; } }
 
-/* line 107, ../scss/_about-masthead.scss */
+/* line 117, ../scss/_about-masthead.scss */
 .connection-line {
   z-index: 10;
   position: absolute;
   bottom: 0;
   width: 100%; }
   @media (max-width: 600px) {
-    /* line 107, ../scss/_about-masthead.scss */
+    /* line 117, ../scss/_about-masthead.scss */
     .connection-line {
       font-size: 12px;
       position: unset; } }
-  /* line 118, ../scss/_about-masthead.scss */
+  /* line 128, ../scss/_about-masthead.scss */
   .connection-line div {
     margin: 5% auto;
     background-color: white;
     height: 90px;
     width: 1px; }
     @media (max-width: 600px) {
-      /* line 118, ../scss/_about-masthead.scss */
+      /* line 128, ../scss/_about-masthead.scss */
       .connection-line div {
         height: 60px; } }
 
 /* line 2, ../scss/_about-subscribe.scss */
 section.about-subscribe {
   background-color: #f7f7f7;
-  position: relative; }
-  /* line 6, ../scss/_about-subscribe.scss */
+  position: relative;
+  height: 700px; }
+  /* line 7, ../scss/_about-subscribe.scss */
   section.about-subscribe .top-rectangle {
     height: 30px;
     width: 60%;
     background-color: #1c1c1c;
     position: absolute;
     left: 0%; }
-  /* line 14, ../scss/_about-subscribe.scss */
+  /* line 15, ../scss/_about-subscribe.scss */
   section.about-subscribe .container {
     color: #343434;
     padding-top: 125px;
     min-height: 530px; }
-    /* line 19, ../scss/_about-subscribe.scss */
+    /* line 20, ../scss/_about-subscribe.scss */
     section.about-subscribe .container input {
       border: 0;
       border-bottom: 1px solid #555555;
       padding: 10px 15px;
       width: 300px;
       color: #343434;
-      margin-right: 35px;
+      margin: 0 35px 35px 0;
       background: transparent; }
       @media (max-width: 600px) {
-        /* line 19, ../scss/_about-subscribe.scss */
+        /* line 20, ../scss/_about-subscribe.scss */
         section.about-subscribe .container input {
           width: 270px; } }
-    /* line 32, ../scss/_about-subscribe.scss */
+    /* line 33, ../scss/_about-subscribe.scss */
     section.about-subscribe .container input.invalid {
       border-bottom: 2px solid #e48b8b;
       color: #e48b8b; }
-    /* line 37, ../scss/_about-subscribe.scss */
+    /* line 38, ../scss/_about-subscribe.scss */
     section.about-subscribe .container h2 {
       font-family: Gilroy-Medium;
       font-size: 34px;
       line-height: 42px;
       margin-bottom: 200px; }
       @media (max-width: 600px) {
-        /* line 37, ../scss/_about-subscribe.scss */
+        /* line 38, ../scss/_about-subscribe.scss */
         section.about-subscribe .container h2 {
           font-size: 22px;
           line-height: 1.2;
           margin-bottom: 78px;
           margin-left: 40px; } }
-    /* line 51, ../scss/_about-subscribe.scss */
+    /* line 52, ../scss/_about-subscribe.scss */
     section.about-subscribe .container hr {
       position: absolute;
       top: 183px;
@@ -1326,11 +1338,11 @@ section.about-subscribe {
       border-top: solid 1px #156eff;
       width: 150px; }
       @media (max-width: 600px) {
-        /* line 51, ../scss/_about-subscribe.scss */
+        /* line 52, ../scss/_about-subscribe.scss */
         section.about-subscribe .container hr {
           top: 180px;
           left: -122px; } }
-    /* line 64, ../scss/_about-subscribe.scss */
+    /* line 65, ../scss/_about-subscribe.scss */
     section.about-subscribe .container .link-box {
       border: 1px solid #555555;
       padding: 16px 40px 16px 70px;
@@ -1339,21 +1351,21 @@ section.about-subscribe {
       display: inline-block;
       cursor: pointer; }
       @media (max-width: 600px) {
-        /* line 64, ../scss/_about-subscribe.scss */
+        /* line 65, ../scss/_about-subscribe.scss */
         section.about-subscribe .container .link-box {
           padding: 16px 34px 16px 34px;
           margin: auto;
           margin-top: 21px;
           width: 180px;
           display: block; } }
-      /* line 80, ../scss/_about-subscribe.scss */
+      /* line 81, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box span {
         font-family: "Gilroy-Medium";
         letter-spacing: 2px; }
-      /* line 85, ../scss/_about-subscribe.scss */
+      /* line 86, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box img {
         margin-left: 20px; }
-      /* line 89, ../scss/_about-subscribe.scss */
+      /* line 90, ../scss/_about-subscribe.scss */
       section.about-subscribe .container .link-box .subtitle {
         width: 100%;
         text-align: center;
@@ -1364,10 +1376,10 @@ section.about-subscribe {
         top: 70px;
         display: flex; }
         @media (max-width: 600px) {
-          /* line 89, ../scss/_about-subscribe.scss */
+          /* line 90, ../scss/_about-subscribe.scss */
           section.about-subscribe .container .link-box .subtitle {
             left: 0px; } }
-  /* line 106, ../scss/_about-subscribe.scss */
+  /* line 107, ../scss/_about-subscribe.scss */
   section.about-subscribe .dots:before {
     content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
     display: block;
@@ -1385,7 +1397,7 @@ section.about-subscribe {
     z-index: 20;
     top: 60px; }
     @media (max-width: 600px) {
-      /* line 106, ../scss/_about-subscribe.scss */
+      /* line 107, ../scss/_about-subscribe.scss */
       section.about-subscribe .dots:before {
         max-width: 240px;
         height: 240px;

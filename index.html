@@ -16,7 +16,7 @@
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
     <!-- Custom styles for this template -->
-    <link href="css/style.min.css?v=35" rel="stylesheet" />
+    <link href="css/style.min.css?v=36" rel="stylesheet" />
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="css/slick.css?v=5" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css?v=5" />
@@ -210,17 +210,15 @@
         </div>
     </section>
     <section class="where-to-buy" id="whereToBuy">
-        <div class="container">
-            <h2>
-                WHERE TO BUY
-            </h2>
-            <div class="exchanges">
-                <a href="https://hitbtc.com/AUC-to-ETH" target="_blank"><img src="img/exchanges/hitbtc.png" /></a>
-                <a href="https://www.bitfinex.com/" target="_blank"><img src="img/exchanges/bitfinex.png" /></a>
-                <a href="https://idex.market/eth/auc" target="_blank"><img src="img/exchanges/idex.png" /></a>
-                <a href="https://www.coinbene.com/#/market?pairId=AUCBTC" target="_blank"><img src="img/exchanges/coinbene.png" /></a>
-                <a href="https://www.bancor.network/communities/5ad9c1c5c7d1460001bc9bfa" target="_blank"><img src="img/exchanges/bancor.png" /></a>
-            </div>
+        <h2>
+            WHERE TO BUY
+        </h2>
+        <div class="exchanges">
+            <a href="https://hitbtc.com/AUC-to-ETH" target="_blank"><img src="img/exchanges/hitbtc.png" /></a>
+            <a href="https://www.bitfinex.com/" target="_blank"><img src="img/exchanges/bitfinex.png" /></a>
+            <a href="https://idex.market/eth/auc" target="_blank"><img src="img/exchanges/idex.png" /></a>
+            <a href="https://www.coinbene.com/#/market?pairId=AUCBTC" target="_blank"><img src="img/exchanges/coinbene.png" /></a>
+            <a href="https://www.bancor.network/communities/5ad9c1c5c7d1460001bc9bfa" target="_blank"><img src="img/exchanges/bancor.png" /></a>
         </div>
     </section>
     <section class="roadmap" id="roadmap">
@@ -472,7 +470,7 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/translation.js"></script>
     <script src="js/roadmap.js"></script>
-    <script src="js/script.js?v=35"></script>
+    <script src="js/script.js?v=36"></script>
     <script title="blog-script">
         var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
@@ -514,6 +512,8 @@
                 dots: true,
                 variableWidth: true,
                 slidesToShow: 1,
+                prevArrow: false,
+                nextArrow: false,
                 slidesToScroll: 1
             });
         }
