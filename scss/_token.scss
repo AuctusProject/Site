@@ -57,13 +57,13 @@ section.token {
 
     .cards-container {
         display: flex;
-
-        @media(max-width:600px) {
+        margin-bottom:60px;
+        
+        @media(max-width:600px) { 
             flex-direction: column;
         }
 
         justify-content: space-between;
-
         .token-card {
             text-align: center;
             margin: auto;

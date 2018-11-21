@@ -980,6 +980,7 @@ section.token {
   /* line 58, ../scss/_token.scss */
   section.token .cards-container {
     display: flex;
+    margin-bottom: 60px;
     justify-content: space-between; }
     @media (max-width: 600px) {
       /* line 58, ../scss/_token.scss */
