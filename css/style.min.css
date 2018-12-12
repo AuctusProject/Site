@@ -154,8 +154,11 @@ section.experts {
     section.experts .blue-box-container .blue-box.follow {
       background-image: url(/img/about-experts/followthebest.jpg); }
     /* line 177, ../scss/_experts.scss */
-    section.experts .blue-box-container .blue-box.powerful {
+    section.experts .blue-box-container .blue-box.competition {
       background-image: url(/img/about-experts/powerfulanalytics.jpg); }
+    /* line 181, ../scss/_experts.scss */
+    section.experts .blue-box-container .competition .blue-panel {
+      padding: 15px 30px; }
 
 /* line 1, ../scss/_blog.scss */
 section.blog {
@@ -1639,7 +1642,7 @@ header.trading-masthead {
       margin: auto; }
       /* line 89, ../scss/_trading-masthead.scss */
       header.trading-masthead .container .left-panel span strong {
-        font-size: 22px; }
+        font-size: 40px; }
       @media (max-width: 600px) {
         /* line 88, ../scss/_trading-masthead.scss */
         header.trading-masthead .container .left-panel span {

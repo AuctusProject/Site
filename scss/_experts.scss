@@ -174,8 +174,12 @@ section.experts {
             background-image: url(/img/about-experts/followthebest.jpg);
         }
 
-        .blue-box.powerful {
+        .blue-box.competition {
             background-image: url(/img/about-experts/powerfulanalytics.jpg);
+        }
+
+        .competition .blue-panel {
+            padding: 15px 30px;
         }
     }
 }
