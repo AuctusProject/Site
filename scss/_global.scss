@@ -35,6 +35,10 @@ section {
     filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg);
 }
 
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
 @media (max-width: 600px) {
     .web-only {
         display: none !important;

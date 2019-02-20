@@ -1,0 +1,296 @@
+header.trading-header{
+
+    background-color: black;
+
+    @media(max-width: 600px) {
+        height: 90px;
+    }
+
+    .top-menu {
+        //position: absolute;
+        top: 30px;
+        padding: 20px 90px;
+        //margin-left: -15px;
+        background-color: black;
+
+        @media(max-width: 600px) {
+            padding: 5px 5px;
+            font-size: 10px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        > div:first-child {
+            div {
+                padding: 10px 10px;
+                margin-right: 10px;
+            }
+            div:last-child{
+                margin-right:0px;
+            }
+
+            div.active {
+                border-bottom: 2px solid #126efd;
+            }
+        }
+
+        > div:last-child {
+            div {
+                font-size: 20px;
+                padding: 10px;
+
+                @media(max-width:600px) {
+                    font-size: 16px;
+                    padding: 8px 12px;
+                }
+            }
+        }
+    }
+
+}
+
+section.top-links {
+    height: unset;
+    padding: 20px 200px 20px 130px;
+    background-color: #f7f7f7;
+
+    .nav-links {
+        color: #126efd;
+        font-style: italic;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    @media(max-width: 600px) {
+        padding: 20px 50px 10px 100px;
+    }
+}
+
+section.trading-intro {
+    background-color: #f7f7f7;
+    height: unset;
+    padding-top: 30px;
+
+    h2 {
+        color: black;
+        padding: 0 98px 0 98px;
+        font-weight: bold;
+    }
+
+    .summary {
+        padding-left: 98px;
+        color:#404040;
+        font-size: 15.5px;
+        font-weight: 100;
+        width: 50%;
+        line-height: 1.39;
+        letter-spacing: 0.4px;    
+        padding-top: 15px;
+        
+        @media(max-width:600px) {
+            width: 90%;
+            padding-left: 48px;
+        }
+    }
+}
+
+section.trading-sources {
+    height: unset;
+    background-color: #f7f7f7;
+    padding-top: 2%;
+    padding-bottom: 4%;
+
+    .source-card {
+        max-width: calc(100vw - 26px);
+        height: unset;
+        border-radius: 2px;
+        display: flex;
+        margin: 13px 13px 13px 100px;
+        position: relative;
+        vertical-align: top;
+
+        @media (max-width:600px)
+        {
+            max-width: calc(100vw - 26px);
+            margin: 20px;
+            display: flow-root;
+        }
+
+        .logo {
+            width: 266px;
+           // max-width: calc(100vw - 26px);
+            background-size: cover !important;
+            //opacity: 0.5;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+        }
+
+        .source-title {
+            background-color: #404040;
+            display: flex;
+            padding: 20px;
+            width: 40%;
+
+            @media(max-width:600px) {
+                width: 100%;
+            }
+        }
+
+        .source-info {
+            background-color: #404040;
+            padding: 20px;  
+            font-family: Gilroy;
+            font-size: 14px;
+            line-height: 1.43;            
+            letter-spacing: 0.7px;            
+            text-align: left;             
+            color: #ffffff;
+            width: 17%;
+
+            @media(max-width:600px) {
+                width: 100%;
+            }
+            
+            .source-info-author {
+                font-weight: 600;
+            }
+            .source-info-date {
+                font-weight: 100;
+            }
+        }
+
+        .view-button-container {
+            padding: 20px;
+            background-color: #404040;
+           
+
+            .view-button {        
+                border-radius: 3px;          
+                background-color: #126efd;
+                padding: 10px 70px 10px 70px;
+
+                @media(max-width:600px) {
+                    margin: 0px 5% 0px 5%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+section.trading-cards {
+    background-color: black;
+    padding: 0 98px 0 98px;
+    height: 120%;
+
+    @media (max-width: 600px)
+    {
+        padding: 0 8px 0 8px;
+    }
+
+    h2 {
+        color: white;
+        font-family: Gilroy;
+        font-weight: 300;
+        line-height: 3.57;
+        letter-spacing: 2px;
+        text-align: left;
+
+        @media (max-width:600px)
+        {
+            text-align: center;
+        }
+    }
+
+    .slick-dots li button:before {
+        color: #f7f7f7;
+    }
+
+    .trading-card {
+        width: 370px;
+        max-width: calc(100vw - 26px);
+        height: unset;
+        border-radius: 2px;
+        display: inline-block;
+        margin: 13px;
+        position: relative;
+        vertical-align: top;
+        background-color: white;
+
+        @media (max-width:600px)
+        {
+            max-width: calc(100vw - 26px);
+        }
+
+        .img-div {
+            height: 234px;
+           // max-width: calc(100vw - 26px);
+            background-size: cover !important;
+            //opacity: 0.5;
+            background-position: center;
+        }
+
+        .trading-card-title {
+            font-family: Gilroy;
+            font-size: 24.5px;      
+            font-weight: 600;       
+            line-height: 1.58;         
+            letter-spacing: 1.3px; 
+            text-align: center;     
+            color: #404040;
+            margin: 20px 0 20px 0px;
+        }
+
+        .trading-card-summary {
+           // width: 234px;
+            //height: 51px;         
+            font-family: Gilroy;       
+            font-size: 14px;      
+            font-weight: 100;    
+            line-height: 1.43;     
+            letter-spacing: 0.4px;     
+            text-align: center;       
+            color: #404040;
+            padding: 10px;
+            height: 160px;
+
+            @media (max-width:600px)
+            {
+                padding-left: 48px;
+            }
+        }
+
+        .link-box {
+            border: 1px solid #555555;
+            padding: 16px 40px 16px 70px;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            margin: 30px 0 40px 80px;
+
+            @media(max-width:600px) {
+                padding: 16px 34px 16px 34px;
+                margin: auto;
+                margin-top: 21px;
+                width: 180px;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            span {
+                font-family: "Gilroy-Medium";
+                letter-spacing: 2px;
+                color: #343434;
+            }
+
+            img {
+                margin-left: 20px;
+            }  
+        }
+    }
+}

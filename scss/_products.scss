@@ -72,6 +72,15 @@ section.products {
             left: 15%;
         }
 
+        .googleplay-button {
+            background-image: url("../img/global/googlePlay.png");
+            width: 220px;
+            height: 90px;
+            background-size: cover;
+            background-position-x: right;
+            visibility: hidden;
+        }
+
         .learn-more {
             border: 1px solid white;
             padding: 16px 40px 16px 70px;
