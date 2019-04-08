@@ -41,7 +41,7 @@ function validateEmail(email) {
 function submitAcademyContent(inputName, inputEmail, inputSubject, inputMessage) {
     $.ajax({
         type: 'POST',
-        url: 'https://auctustradingapi.azurewebsites.net/api/v1/website/submitContent',
+        url: 'https://auctusplatformapi.azurewebsites.net/general/api/v1/website/submitContent',
         data: JSON.stringify({ name: inputName, email: inputEmail, subject: inputSubject, message: inputMessage }),
         contentType: 'application/json',
         dataType: 'json',
