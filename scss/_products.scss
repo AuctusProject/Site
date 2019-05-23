@@ -1,11 +1,8 @@
 section.products {
     min-height: 654px;
     width: 100%;
-    height: 100%;
     position: relative;
-    margin-top: -3%;
-    padding-top: 3%;
-    background: #141414;
+    background: #1c1c1c;
 
     @media(max-width:1110px) {
         height: unset;
@@ -13,26 +10,12 @@ section.products {
 
     .container {
         height: 100%;
-        width: 100%;
+        min-height: 654px;
 
         @media(max-width:1110px) {
             height: unset;
         }
     }
-
-    .black-top-right-block {
-        position: absolute;
-        width: 60%;
-        height: 40px;
-        background: #141414;
-        left: 0px;
-        top: 2px;
-
-        @media(max-width: 600px) {
-            top: -12px;
-        }
-    }
-
 
 
     .product-box {
@@ -42,7 +25,7 @@ section.products {
         }
 
         @media(max-width:1110px) {
-            margin-top: 60px;
+            padding-top: 60px;
         }
 
         line-height: 26px;
@@ -69,7 +52,7 @@ section.products {
     .product-box.experts {
         @media(min-width:1111px) {
             top: 25%;
-            left: 15%;
+            left: 10%;
         }
 
         .googleplay-button {
@@ -82,12 +65,12 @@ section.products {
 
         .learn-more {
             border: 1px solid white;
-            padding: 16px 40px 16px 70px;
+            padding: 16px 20px;
             width: 300px;
+            text-align:center;
 
             @media(max-width:1110px) {
-                padding: 7px 20px 7px 50px;
-                width: 220px;
+                padding: 7px 15px;
                 font-size: 10px;
             }
 
@@ -106,7 +89,7 @@ section.products {
         padding-bottom:60px;
         @media(min-width:1111px) {
             top: 38%;
-            right: 15%;
+            right: 10%;
         }
 
 

@@ -28,8 +28,14 @@ section.token {
             margin: 0 0 90px 130px;
         }
 
+        font-family: Gilroy-Bold;
         font-size: 38px;
+        font-weight: bold;
+        line-height: 1.21;
         letter-spacing: 2.7px;
+        text-align: left;
+        color: #383838;
+
         max-width: 680px;
 
         @media(max-width:600px) {
@@ -57,13 +63,14 @@ section.token {
 
     .cards-container {
         display: flex;
-        margin-bottom:60px;
-        
-        @media(max-width:600px) { 
+        padding-bottom: 60px;
+
+        @media(max-width:600px) {
             flex-direction: column;
         }
 
         justify-content: space-between;
+
         .token-card {
             text-align: center;
             margin: auto;

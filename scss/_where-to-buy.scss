@@ -18,7 +18,6 @@ section.where-to-buy {
 
     .exchanges {
         display: flex;
-        padding:0 70px;
         @media(max-width:992px) {
             text-align: center; 
             flex-direction: column;

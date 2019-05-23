@@ -12,16 +12,7 @@ a{
     color:inherit !important;
 }
 
-section {
-    height: 100%;
-
-    @media(max-width:600px) {
-        height: unset;
-    }
-}
 .container {
-    height: 100%;
-
     @media (min-width: 576px) and (max-width: 600px){
         width: unset;
         max-width: unset;
