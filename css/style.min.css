@@ -619,6 +619,14 @@ section.products {
       section.products .product-box.portfolio {
         top: 38%;
         right: 10%; } }
+    section.products .product-box.portfolio .upcoming {
+      font-family: Gilroy-LightItalic;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.63;
+      letter-spacing: 0.4px;
+      color: #2b73e1; }
     @media (max-width: 1110px) {
       section.products .product-box.portfolio .download {
         font-size: 12px; } }

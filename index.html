@@ -30,10 +30,10 @@
                         <img src="./img/masthead/headerlogo.png" />
                     </div>
                     <div>
-                        <a href="https://trading.aucuts.org" target="_blank"><span>TRADING</span></a>
+                        <a href="https://trading.auctus.org" target="_blank"><span>TRADING</span></a>
                     </div>
                     <div>
-                        <a href="https://trading.aucuts.org/simulator" target="_blank"><span>SIMULATOR</span></a>
+                        <a href="https://trading.auctus.org/simulator" target="_blank"><span>SIMULATOR</span></a>
                     </div>
                 </div>
                 <div class="pull-right ">
@@ -94,21 +94,18 @@
             <div class="product-box experts">
                 <h2>AUCTUS SIMULATOR</h2>
                 <div><span>A free cryptocurrency simulator for beginners. Play virtual crypto trading to learn, compete, and share trading ideas.</span></div>
-                <a href="https://trading.auctus.org/" target="_blank">
+                <a href="https://trading.auctus.org/simulator" target="_blank">
                     <div class="learn-more ">
                         <span>
                             GO TO AUCTUS SIMULATOR
                         </span>
                     </div>
                 </a>
-                <!--<a target="_blank" href="https://play.google.com/store/apps/details?id=org.auctus.auctustrading">
-                    <div class="googleplay-button"></div>
-                </a>-->
             </div>
             <div class="product-box portfolio">
                 <h2>AUCTUS SMART PORTFOLIOS</h2>
                 <div><span>The best cryptocurrency portfolio manager. Automatically invest your money in smart portfolios, based on predetermined investment strategies.</span></div>
-                <div class="upcoming">Upcoming - ETA: Q2, 2019</div>
+                <div class="upcoming">Upcoming - ETA: Q3, 2019</div>
                 <a href="http://dl.auctus.org/Auctus_Project_Overview.pdf" target="_blank">
                     <div class="download">
                         <span>
@@ -461,6 +458,8 @@
         var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
         $(function () {
+            checkAndroidAndChangeAppButton();
+
             var $content = $('#newsContainer');
             var $section = $('.blog');
             var $template = $('#newsContainer').html();
@@ -502,6 +501,13 @@
                 nextArrow: false,
                 slidesToScroll: 1
             });
+        }
+
+        function checkAndroidAndChangeAppButton{
+            var isAndroid = /(android)/i.test(navigator.userAgent);
+            if (isAndroid) {
+
+            }
         }
     </script>
     <script>

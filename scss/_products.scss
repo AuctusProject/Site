@@ -60,14 +60,14 @@ section.products {
             width: 220px;
             height: 90px;
             background-size: cover;
-            background-position-x: right; 
+            background-position-x: right;
         }
 
         .learn-more {
             border: 1px solid white;
             padding: 16px 20px;
             width: 300px;
-            text-align:center;
+            text-align: center;
 
             @media(max-width:1110px) {
                 padding: 7px 15px;
@@ -86,13 +86,22 @@ section.products {
     }
 
     .product-box.portfolio {
-        padding-bottom:60px;
+        padding-bottom: 60px;
+
         @media(min-width:1111px) {
             top: 38%;
             right: 10%;
         }
 
-
+        .upcoming {
+            font-family: Gilroy-LightItalic;
+            font-size: 16px;
+            font-weight: 300;
+            font-style: italic;
+            line-height: 1.63;
+            letter-spacing: 0.4px;
+            color: #2b73e1;
+        }
 
         .download {
             @media(max-width:1110px) {
