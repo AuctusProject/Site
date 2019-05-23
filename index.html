@@ -7,7 +7,7 @@
     <meta name="keywords" content="Ethereum,Smart Contract,Smart Contracts,Cryptocurrency,Retirement Plans, Pension Fund, Pension Funds, Blockchain">
     <meta property="og:title" content="Auctus | Stay ahead of the crypto market">
     <meta property="og:description" content="We help you make the most of your crypto investments.">
-    <meta property="og:image" content="./img/thumb/thumb.png?v=1">
+    <meta property="og:image" content="https://auctus.org/img/thumb/thumb.png?v=1">
     <meta property="og:url" content="https://auctus.org">
     <title>Auctus | Stay ahead of the crypto market</title>
     <!-- Bootstrap core CSS -->
@@ -19,11 +19,10 @@
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="css/slick.css?v=5" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css?v=5" />
-
     <!-- Begin Inspectlet Asynchronous Code -->
     <script type="text/javascript">
         (function () {
-            window._insp = window._insp || [];
+            window.__insp = window.__insp || [];
             __insp.push(['wid', 2005743282]);
             var ldinsp = function () {
                 if (typeof window._inspld != "undefined") return; window._inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=2005743282&r=' + Math.floor(new Date().getTime() / 3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);
@@ -469,7 +468,6 @@
         var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
         $(function () {
-            checkAndroidAndChangeAppButton();
 
             var $content = $('#newsContainer');
             var $section = $('.blog');
@@ -512,13 +510,6 @@
                 nextArrow: false,
                 slidesToScroll: 1
             });
-        }
-
-        function checkAndroidAndChangeAppButton{
-            var isAndroid = /(android)/i.test(navigator.userAgent);
-            if (isAndroid) {
-
-            }
         }
     </script>
     <script>
