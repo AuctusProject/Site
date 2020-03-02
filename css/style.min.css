@@ -639,7 +639,7 @@ section.products {
     section.products .product-box.portfolio .download hr {
       border-top-color: white;
       height: 6px;
-      width: 120px;
+      width: 82px;
       margin: 12px; }
       @media (max-width: 1110px) {
         section.products .product-box.portfolio .download hr {
@@ -885,8 +885,9 @@ section.where-to-buy {
 
 section.about {
   background-color: #141414;
-  padding-top: 80px;
   padding-bottom: 80px; }
+  section.about .container {
+    padding-top: 80px; }
   section.about h2 {
     font-family: Gilroy-Bold;
     font-size: 38px;

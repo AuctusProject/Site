@@ -1,7 +1,10 @@
 section.about {
     background-color: #141414;
-    padding-top: 80px;
     padding-bottom: 80px;
+
+    .container {
+        padding-top: 80px;
+    }
 
     h2 {
         font-family: Gilroy-Bold;
