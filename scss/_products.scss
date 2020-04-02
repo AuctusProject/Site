@@ -1,134 +1,114 @@
-section.products {
-    min-height: 654px;
-    width: 100%;
-    position: relative;
-    background: #1c1c1c;
+section.products {    
+    background-color: #252525;
 
-    @media(max-width:1110px) {
-        height: unset;
-    }
+    .simulator-product {
+        background-image: url("../img/products/simulator.png");
+        background-size: cover;
 
-    .container {
-        height: 100%;
-        min-height: 654px;
-
-        @media(max-width:1110px) {
-            height: unset;
+        .go-to-product-btn {
+            background-color: #4562fc;
+            color: #ffffff;
         }
     }
 
+    .trading-product {
+        .go-to-product-btn {
+            background-color: #45cb88;
+            color: #252525;
+        }
 
-    .product-box {
-        @media(min-width:1111px) {
-            max-width: 380px;
+        img {
             position: absolute;
+            right: 0;
+            max-height: 100%;
+            max-width: 300px;
+            top: 100px;
+            z-index: 0;
         }
 
-        @media(max-width:1110px) {
-            padding-top: 60px;
-        }
-
-        line-height: 26px;
-
-        > * {
-            margin-bottom: 32px;
-
-            @media(max-width:1110px) {
-                margin-bottom: 26px;
-                font-size: 14px;
-            }
-        }
-
-        h2 {
-            font-size: 38px;
-            letter-spacing: 2px;
-
-            @media(max-width:1110px) {
-                font-size: 26px;
+        .product-details {    
+            @media (max-width: 991px) {
+                margin-top: 80px;
+                height: unset;
             }
         }
     }
 
-    .product-box.experts {
-        @media(min-width:1111px) {
-            top: 25%;
-            left: 10%;
-        }
-
-        .googleplay-button {
-            background-image: url("../img/global/googlePlay.png");
-            width: 220px;
-            height: 90px;
-            background-size: cover;
-            background-position-x: right;
-        }
-
-        .learn-more {
-            border: 1px solid white;
-            padding: 16px 20px;
-            width: 300px;
-            text-align: center;
-
-            @media(max-width:1110px) {
-                padding: 7px 15px;
-                font-size: 10px;
-            }
-
-            span {
-                font-family: "Gilroy-Medium";
-                letter-spacing: 2px;
-            }
-
-            img {
-                margin-left: 20px;
-            }
-        }
+    .product-details {
+        width: 360px;
+        max-width: calc(100% - 30px);
+        margin: auto;
+        margin-top: 140px;
+        margin-bottom: 80px;
+        height: calc(100% - 220px);
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
     }
 
-    .product-box.portfolio {
-        padding-bottom: 60px;
+    h1 {
+        font-size: 41px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.16;
+        letter-spacing: 1.03px;
+        text-align: center;
+        color: #ffffff;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        margin-top: 60px;
+    }
 
-        @media(min-width:1111px) {
-            top: 38%;
-            right: 10%;
-        }
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.58;
+        letter-spacing: 0.75px;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 35px;
+    }
 
-        .upcoming {
-            font-family: Gilroy-LightItalic;
-            font-size: 16px;
-            font-weight: 300;
-            font-style: italic;
-            line-height: 1.63;
-            letter-spacing: 0.4px;
-            color: #2b73e1;
-        }
+    p {
+        font-size: 18.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: 0.46px;
+        text-align: left;
+        color: #fefefe;        
+        margin-bottom: 25px;
+    }
 
-        .download {
-            @media(max-width:1110px) {
-                font-size: 12px;
-            }
+    .green-highlight {
+        color: #50d693;
+        max-width: 240px;
+    }
 
-            span {
-                font-family: "Gilroy-Medium";
-                letter-spacing: 2px;
-            }
+    .go-to-product-btn {
+        width: 260px;
+        height: 60px;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.43px;
+        text-align: center;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
 
-            img {
-                margin-left: 20px;
-                margin-top: -5px;
-            }
-
-            hr {
-                border-top-color: white;
-                height: 6px;
-                width: 82px;
-                margin: 12px;
-
-                @media(max-width:1110px) {
-                    width: 105px;
-                    margin: 4px;
-                }
-            }
-        }
+    .go-to-product-btn:hover {
+        opacity: 0.85;
     }
 }

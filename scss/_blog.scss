@@ -1,8 +1,9 @@
 section.blog {
-    background: #1c1c1c;
+    background: white;
     padding-top: 72px;
     padding-bottom: 1px;
     height: unset;
+    color: #1b1b1b;
 
     .container {
         height: unset;
@@ -10,9 +11,14 @@ section.blog {
 
     h2 {
         margin: 0 0 50px 0px;
-        font-family: Gilroy-Medium;
-        font-size: 37px;
+        font-size: 41px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.16;
+        letter-spacing: 1.03px;
         text-align: center;
+        color: #1b1b1b;
     }
 
     @media(max-width:600px) {
@@ -35,7 +41,7 @@ section.blog {
     .news-card {
         width: 370px;
         max-width: calc(100vw - 26px);
-        height: 349px;
+        height: 355px;
         border-radius: 2px;
         display: inline-block;
         margin: 13px;
@@ -47,7 +53,6 @@ section.blog {
             max-width: calc(100vw - 26px);
             height: 200px;
             background-size: cover !important;
-            opacity: 0.5;
         }
 
         .news-card-dots {
@@ -56,41 +61,45 @@ section.blog {
         }
 
         .news-card-title {
-            font-family: Gilroy-Medium;
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 28px;
-            letter-spacing: 0.5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.25;
+            letter-spacing: 0.55px;
+            text-align: left;
+            color: #404040;
             height: 80px;
             overflow: hidden;
             text-transform: uppercase;
             text-overflow: ellipsis;
-            color: white;
-            width: 300px;
             max-width: calc(100vw - 70px);
-            margin: -18px auto 0 auto;
-            top: -10px;
+            margin: 5px 0;
             z-index: 5;
-            position: relative;
         }
 
         .news-card-date {
-            position: absolute;
             display: block;
-            bottom: 20px;
-            left: 34px;
-            color: white;
-            top: 145px;
+            color: #404040;
             font-size: 12px;
+            margin-top: 18px;
         }
 
         .read-more {
-            margin: 35px;
-            font-size: 12px;
-            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: 0.35px;
+            text-align: left;
+            color: #4562fc;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
+            margin-top: 16px;
 
-            img {
-                margin-left: 30px;
+            i {
+                margin-left: 10px;
             }
         }
     }

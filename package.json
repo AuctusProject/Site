@@ -26,13 +26,12 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "aos": "^2.2.0",
     "bootstrap": "^4.0.0-alpha.6",
     "express": "^4.16.2",
-    "font-awesome": "4.7.0",
     "jquery": "^3.2.1",
     "jquery.easing": "^1.4.1",
-    "simple-line-icons": "2.4.1",
     "tether": "^1.4.0"
   },
   "devDependencies": {

@@ -2,89 +2,43 @@
 footer {
     position: relative;
     color: #3f3f3f;
-    .navigation-icons {
-        padding-top: 40px;
-
-        a {
-            text-decoration: unset;
-
-            i {
-                font-size: 25px;
-                border: 2px solid #626669;
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                padding-top: 7px;
-                margin: 3px;
-                color: #626669;
-            }
-        }
-    }
-
-    @media (max-width: 768px) {
-        .navigation-icons {
-            margin-top: 20px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .logo {
-            text-align: center;
-        }
-    }
-
-
-
-    .separator {
-        border-top: 2px solid #282828;
-        margin: 15px -15px;
-    }
 
     .legal-container {
-        font-size: 0.9rem;
-        color: #828282;
-        padding-left: 25px;
-        padding-right: 25px;
+        font-size: 12px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.83;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #8b8b8b;
+        padding: 60px 0px;
 
         a {
             color: #828282 !important;
             text-decoration: underline !important;
             font-weight: bold;
         }
-
-        .disclaimer {
-            @media (min-width: 991px) {
-                margin-left: 10px;
-            }
-
-            @media (max-width: 991px) {
-                margin-top: 25px;
-            }
-        }
-    }
-
-    .association-box {
-        padding-top: 10px;
-        margin: 10px 35px;
-        
-        @media(max-width:490px) {
-            margin: 10px;
-        }
-
-        img {
-            max-height: 105px;
-        }
-
-        img:last-child {
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(100%);
-        }
     }
 
     .copyright {
-        margin: 15px -15px;
+        padding: 20px 0;
+        background-color: #252525;
+        font-size: 9.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 1.9px;
         text-align: center;
+        color: #ffffff;
+    }   
+
+    .social-icons {
+        font-size: 20px;
+        color: #464646;
     }
 
-   
+    .social-icons i {
+        margin: 5px;
+    }
 }

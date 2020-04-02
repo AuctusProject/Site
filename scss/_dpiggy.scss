@@ -1,0 +1,74 @@
+section.dpiggy {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 1440px;
+    margin: auto;
+
+    .dpiggy-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            margin: auto;
+            max-width: 460px;
+            width: 90%;
+        }
+        
+        @media(min-width: 992px) {
+            position: absolute;
+            height: 100%;
+            top: 0px;
+            left: 0;
+            margin-left: -210px;
+        }
+    }
+
+    .dpiggy-info {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-color: #091e88;        
+        position: relative;    
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+
+        @media(min-width: 992px) {
+            margin-left: calc(25% + 100px);
+            padding-left: calc(10% + 140px);
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 38px;
+            font-weight: bold;
+            line-height: 1.16;
+            letter-spacing: 2.7px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 430px;
+        }
+
+        p {
+            font-size: 19.5px;
+            line-height: 1.56;
+            letter-spacing: normal;
+            color: #ffffff;
+            margin-bottom: 40px;
+            max-width: 430px;
+        }
+
+        .try-button {
+            background-color: #21d39a;
+            padding: 16px 40px;
+            width: 300px;
+            max-width: 100%;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 2.4px;
+            color: #141414;
+            text-align: center;
+        }
+    }
+}
