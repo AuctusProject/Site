@@ -38,12 +38,17 @@
             width: 80%;
 
             h2 {
-                font-size: 41px;
+                font-size: 34px;
                 font-weight: bold;
                 font-stretch: normal;
                 font-style: normal;
                 line-height: 1.16;
                 letter-spacing: 1.03px;
+
+                i.fa-telegram-plane {
+                    font-size: inherit;
+                    margin: 0 10px 0 0;
+                }        
             }
 
             p {
