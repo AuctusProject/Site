@@ -74,7 +74,7 @@
             <div class="dpiggy-img"><img src="img/dpiggy/img_dpiggy.png" /></div>
             <img class="dpiggy-logo d-none d-lg-block" src="img/dpiggy/logo_dpiggy.png" />
             <h2 class="mx-auto mx-lg-0">No-Loss Crypto Investing Platform</h2>
-            <p class="mx-auto mx-lg-0">Earn 7.0% interest on your DAI and buy crypto of your choice solely with the interest earned</p>
+            <p class="mx-auto mx-lg-0">Earn <span id="suply_rate"></span> interest on your DAI and buy crypto of your choice solely with the interest earned</p>
             <a href="https://dpiggy.com/" target="_blank" class="try-button m-auto m-lg-0">
                 <span>
                     TRY THE PRODUCT
@@ -303,6 +303,14 @@
                     $section.show();
                 }
             });
+
+            $.get('https://api.compound.finance/api/v2/ctoken?addresses=0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643&network=mainnet', null, function (response) { 
+                if (response && response.cToken && response.cToken.length > 0 && response.cToken[0] && response.cToken[0].supply_rate && response.cToken[0].supply_rate.value) {
+                    var value = response.cToken[0].supply_rate.value * 100
+                    var $content = $('#suply_rate').html(value.toFixed(2) + "%");
+                }                
+            })
+            
         });
         function createSlider() {
             $('#newsContainer').slick({
