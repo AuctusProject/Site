@@ -1,0 +1,87 @@
+﻿section.get-involved {
+    background: #61bbe7;
+    background-image: linear-gradient(to top, #61bbe7, #4aa6d2);
+    position: relative;    
+    height: unset;
+    color: #ffffff;
+
+    .container-get-involved {
+        padding-top: 90px;
+        display: flex;
+        padding-bottom: 90px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 600px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        i.fa-telegram-plane {
+            font-size: 80px;
+            margin: 0 50px;
+        }
+
+        .background-image {        
+            position: absolute;
+            top: 0;
+            height: 100%;
+            max-width: 100%;
+            left: 0;
+            z-index: 0;
+        }
+
+        .get-involved-details {
+            max-width: 540px;
+            z-index: 1;
+            width: 80%;
+
+            h2 {
+                font-size: 34px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.16;
+                letter-spacing: 1.03px;
+
+                i.fa-telegram-plane {
+                    font-size: inherit;
+                    margin: 0 10px 0 0;
+                }        
+            }
+
+            p {
+                font-size: 19.5px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.74;
+                letter-spacing: normal;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+
+            .connect-link {
+                font-size: 22px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.27;
+                letter-spacing: normal;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                i.fa-chevron-right {
+                    font-size: 14px;
+                }
+            }
+
+            .connect-link:hover {
+                color: #eeeeee;
+            }
+        }
+    }
+}

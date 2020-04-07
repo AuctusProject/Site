@@ -1,6 +1,4 @@
 section.where-to-buy {
-    color: #262626;
-    background-color: #e9e9e9;
     text-align: center;
     height: unset;
     padding: 70px 0 ;
@@ -10,10 +8,15 @@ section.where-to-buy {
     }
 
     h2 {
-        font-family: Gilroy-Bold;
-        font-size: 37.5px;
-        letter-spacing: 0.9px;
-        margin-bottom: 56px;
+        font-size: 41px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.16;
+        letter-spacing: 1.03px;
+        text-align: center;
+        color: #1b1b1b;
+        margin-bottom: 50px;
     }
 
     .exchanges {

@@ -3,7 +3,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Gilroy-Light','GilroyLight','Gilroy Light','Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Gilroy,'Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
 
@@ -18,16 +18,8 @@ a{
         max-width: unset;
     }
 }
-.center{
+.center {
     text-align:center;
-}
-
-.turn-white-blue {
-    filter: brightness(75%) sepia(100) saturate(100) hue-rotate(210deg);
-}
-
-.rotate-180 {
-    transform: rotate(180deg);
 }
 
 @media (max-width: 600px) {
@@ -44,48 +36,4 @@ a{
 
 a:hover{
     text-decoration:none !important;
-}
-
-.invert-horizontally {
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -ms-filter: fliph; /*IE*/
-    filter: fliph; /*IE*/
-}
-
-.border-bar {
-    height: 12px;
-    background-image: linear-gradient(to left, #07d1ff, #126efd);
-    width: 480px;
-    margin: auto;
-
-    @media(max-width:600px) {
-        width: 70%;
-        height: 7px;
-    }
-}
-
-.loader {
-    border: 4px solid #f3f3f3; /* Light grey */
-    border-top: 4px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    animation: spin 1s linear infinite;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -5px;
-    margin-left: 10px;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }

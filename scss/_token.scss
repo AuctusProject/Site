@@ -1,132 +1,49 @@
 section.token {
-    background: #f5f5f5;
-    color: #383838;
     padding-top: 115px;
-    height: unset;
+
+    img {
+        height: 64px;
+    }
 
     @media(max-width:600px) {
         padding-top: 55px;
     }
 
-    .gray-block {
-        position: absolute;
-        width: 70%;
-        height: 30px;
-        top: 0;
-        left: 0;
-        margin-top: -115px;
-        background: #1c1c1c;
-
-        @media(max-width:600px) {
-            top: -1px;
-            left: -30px;
-        }
+    h2 {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 2.02;
+        letter-spacing: 0.59px;
+        text-align: center;
+        color: #4562fc;
     }
 
     h1 {
-        @media(min-width:601px) {
-            margin: 0 0 90px 130px;
-        }
-
-        font-family: Gilroy-Bold;
-        font-size: 38px;
+        font-size: 41px;
         font-weight: bold;
-        line-height: 1.21;
-        letter-spacing: 2.7px;
-        text-align: left;
-        color: #383838;
-
-        max-width: 680px;
-
-        @media(max-width:600px) {
-            font-size: 20px;
-            font-weight: 300;
-            letter-spacing: 1.4px;
-            margin: 0 0 40px 40px;
-            max-width: 350px;
-        }
+        line-height: 1.16;
+        letter-spacing: 1.03px;
+        text-align: center;
+        color: #1b1b1b;
     }
 
-    hr {
-        position: absolute;
-        top: 60px;
-        left: -30px;
-        border-top: solid 1px #156eff;
-        width: 150px;
-
-        @media(max-width:600px) {
-            top: 5px;
-            left: 0px;
-            width: 34px;
-        }
+    h3 {
+        max-width: 440px;
+        margin: auto;
+        font-size: 19.5px;
+        line-height: 1.44;
+        text-align: center;
+        color: #666666;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
 
-    .cards-container {
-        display: flex;
-        padding-bottom: 60px;
-
-        @media(max-width:600px) {
-            flex-direction: column;
-        }
-
-        justify-content: space-between;
-
-        .token-card {
-            text-align: center;
-            margin: auto;
-
-            @media(max-width:600px) {
-                margin-bottom: 40px;
-            }
-
-            img {
-                margin-bottom: 20px;
-            }
-
-            span {
-                font-size: 20px;
-
-                @media(max-width:600px) {
-                    font-size: 16px;
-                }
-            }
-        }
-
-        .hold {
-            max-width: 240px;
-        }
-
-        .vote {
-            max-width: 335px;
-        }
-
-        .earn {
-            max-width: 200px;
-        }
-    }
-
-    .buyback {
-        border-left: solid 1px #1a1c1f;
-        padding: 15px 0 15px 40px;
-        margin: 120px 0 105px 90px;
-
-        @media(max-width:600px) {
-            padding: 15px 0 15px 23px;
-            margin: 20px 0 30px 13px;
-        }
-
-        span {
-            font-family: Gilroy-Bold;
-            font-size: 28px;
-            font-style: italic;
-            line-height: 34px;
-            letter-spacing: 0.7px;
-
-            @media(max-width:600px) {
-                font-size: 20px;
-                line-height: 1.2;
-                letter-spacing: 0.5px;
-            }
-        }
+    p {
+        font-size: 18.5px;
+        line-height: 1.51;
+        text-align: center;
+        color: #1b1b1b;
+        max-width: 280px;
+        margin: 40px auto;
     }
 }
