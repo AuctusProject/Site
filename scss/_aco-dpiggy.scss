@@ -1,0 +1,104 @@
+section.aco-dpiggy {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .aco-logo {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .dpiggy-info {
+        background-color: #091e88;
+
+        .try-button {
+            color: #301851 !important;
+            box-shadow: 9.4px 11.7px 29px 0 rgba(20, 0, 85, 0.49);
+            background-color: #31bcee;            
+        }
+
+        .try-button:hover {
+            background-color: #31bceeDD;
+        }
+    }
+
+    .aco-info {
+        background-color: #000000;
+        background-image: url('../img/aco-dpiggy/bg_aco.jpg');
+        background-size: cover;
+
+        .try-button {
+            color: #000000 !important;
+            box-shadow: 9.4px 11.7px 29px 0 rgba(0, 0, 0, 0.49);
+            background-color: #a8c708;            
+        }
+
+        .try-button:hover {
+            background-color: #a8c708DD;
+        }
+    }
+
+    .dpiggy-info,
+    .aco-info {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        position: relative;    
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+        width: 100%;
+
+        @media(min-width: 992px) {        
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align: left;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-size: 38px;
+            font-weight: bold;
+            line-height: 1.16;
+            letter-spacing: 2.7px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 460px;
+        }
+
+        p {
+            font-size: 19.5px;
+            line-height: 1.56;
+            letter-spacing: normal;
+            color: #ffffff;
+            margin-bottom: 40px;
+            max-width: 430px;
+        }
+
+        .try-button {
+            padding: 16px 40px;
+            width: 260px;
+            max-width: 100%;
+            font-size: 17.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: 0.88px;
+            text-align: center;
+            border-radius: 27.5px;
+            text-transform: none; 
+            display: block;
+        }
+
+        .try-button:hover {
+            text-transform: none;
+        }
+    }
+}
