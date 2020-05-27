@@ -309,6 +309,8 @@ section.where-to-buy {
         justify-content: space-between; }
         section.where-to-buy .exchanges a {
           align-self: flex-end; } }
+    section.where-to-buy .exchanges img {
+      max-width: 100%; }
 
 section.get-involved {
   background: #61bbe7;
