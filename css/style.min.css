@@ -460,98 +460,11 @@ section.blog {
       section.blog .news-card .read-more i {
         margin-left: 10px; }
 
-section.products {
-  background-color: #252525; }
-  section.products .simulator-product {
-    background-image: url("../img/products/simulator.png");
-    background-size: cover; }
-    section.products .simulator-product .go-to-product-btn {
-      background-color: #4562fc;
-      color: #ffffff;
-      text-decoration: none; }
-  section.products .trading-product .go-to-product-btn {
-    background-color: #45cb88;
-    color: #252525; }
-  section.products .trading-product img {
-    position: absolute;
-    right: 0;
-    max-height: 100%;
-    max-width: 300px;
-    top: 100px;
-    z-index: 0; }
-  @media (max-width: 991px) {
-    section.products .trading-product .product-details {
-      margin-top: 80px;
-      height: unset; } }
-  section.products .product-details {
-    width: 360px;
-    max-width: calc(100% - 30px);
-    margin: auto;
-    margin-top: 140px;
-    margin-bottom: 80px;
-    height: calc(100% - 220px);
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 1; }
-  section.products h1 {
-    font-size: 41px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.16;
-    letter-spacing: 1.03px;
-    text-align: center;
-    color: #ffffff;
-    position: absolute;
-    z-index: 1;
-    text-align: center;
-    width: 100%;
-    margin-top: 60px; }
-  section.products h2 {
-    font-size: 30px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.58;
-    letter-spacing: 0.75px;
-    text-align: left;
-    color: #ffffff;
-    margin-bottom: 35px; }
-  section.products p {
-    font-size: 18.5px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.51;
-    letter-spacing: 0.46px;
-    text-align: left;
-    color: #fefefe;
-    margin-bottom: 25px; }
-  section.products .green-highlight {
-    color: #50d693;
-    max-width: 240px; }
-  section.products .go-to-product-btn {
-    width: 260px;
-    height: 60px;
-    font-size: 17px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: 0.43px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer; }
-  section.products .go-to-product-btn:hover {
-    opacity: 0.85; }
-
 footer {
   position: relative;
   color: #3f3f3f; }
   footer .legal-container {
+    border-top: 1px solid #cacaca;
     font-size: 12px;
     font-weight: 300;
     font-stretch: normal;
