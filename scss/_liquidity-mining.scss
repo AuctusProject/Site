@@ -1,0 +1,411 @@
+.liquidity-mining {
+    header.masthead {
+        height: unset;
+        min-height: unset;
+        max-height: unset;    
+        max-width: unset;
+        background-image: url('/img/liquidity-mining/header_background.png');
+        background-size: cover;
+        background-position: center;
+        padding-top: 0;
+
+        .top-menu {
+            z-index: 1;
+
+            .social-icons {
+                color: #4562fc;
+            }
+        }
+
+        .container {
+            padding-top: unset;
+
+            
+            @media(max-width: 991px) {
+                padding-top: 40px;
+            }
+
+            .message-panel {
+                position: relative;
+                top: unset;
+                width: 100%;
+                text-align: center;
+                max-width: none;
+                padding-top: 140px;
+                padding-bottom: 50px;
+
+                @media(max-width: 991px) {
+                    padding-top: 0px;
+                }
+
+                span {
+                    max-width: none;
+                    color: #1b1b1b;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .nav-tabs {
+            border-bottom: none;
+            .nav-item {
+                color: #545454;
+                margin-bottom: 0;
+            }
+
+            .nav-link {
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: 0.49px;
+                text-align: center;
+                
+            }
+
+            .nav-link.active,
+            .nav-link:hover {
+                font-weight: bold;
+                color: #4562fc !important;
+                background-color: transparent;
+                border: 0;                
+            }
+
+            .nav-link.active {
+                border-bottom: 4px solid;
+                border-bottom-color: #4562fc;
+            }
+        }
+    }
+
+    .liquidity-content {
+        .balancer-pools-title {
+            width: 100%;
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 140px;
+            color: #ffffff;
+
+            h1 {
+                font-size: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+
+                img {
+                    height: 42px;
+                }
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+        }
+
+        .tab-content {
+            margin-top: -120px;
+
+            .pool-cards {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .pool-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 342px;
+                border-radius: 8px;
+                box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2);
+                margin: 0 40px 40px;
+
+                .pool-title {
+                    width: 100%;
+                    height: 55px;
+                    background-color: #414141;
+                    font-size: 21.5px;
+                    font-weight: bold;
+                    letter-spacing: 0.54px;
+                    text-align: center;
+                    color: #ffffff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px 8px 0 0;
+
+                    &.blue-title {
+                        background-color: #4370c9;
+                    }
+                }
+
+                .pool-card-content {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: white;
+
+                    .pool-icons {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+
+                        .icon-wrapper {
+                            width: 64px;
+                            height: 64px;
+                            background-color: #ebebeb;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 12px;
+
+                            img {
+                                max-height: calc(100% - 18px);
+                                max-width: calc(100% - 18px);
+                            }
+
+                            .auc-img {                            
+                                margin-bottom: 6px;
+                            }
+                        }
+                    }
+
+                    .pool-composition {
+                        font-size: 18px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        text-align: center;
+                        color: #2e2e2e;
+                    }
+
+                    .pool-address {
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #666666;
+                        text-decoration: underline;
+                    }
+
+                    .pool-reward-title {
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        color: #4c4c4c;
+                        margin-top: 20px;
+                    }
+
+                    .pool-reward-value {
+                        font-size: 20px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        font-weight: 900;
+                        color: #4562fc;
+                    }
+
+                    .go-to-balancer-btn {
+                        border-radius: 14px;
+                        background-color: #4562fc;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: 0.35px;
+                        text-align: center;
+                        color: #ffffff;
+                        padding: 12px 24px;
+                        margin-top: 12px;
+
+                        &:hover {
+                            background-color: #2340cf;
+                        }
+                    }
+
+                    .pool-footer {
+                        background-color: #f2f2f2;                
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        border-radius: 0 0 8px 8px;                
+                        padding: 12px;
+                        margin-top: 20px;
+
+                        .footer-title {
+                            font-size: 16px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+                            color: #2d2d2d;
+                            margin-bottom: 8px;
+                        }
+
+                        .tutorial-link {
+                            font-size: 14px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+                            color: #4d4d4d;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #2d2d2d;
+                                font-weight: bold;
+                            }
+
+                            i {
+                                color: #2d2d2d;
+                                margin-left: 6px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .rules-section {
+                background-color: #f2f2f2;
+                padding-top: 45px;
+                padding-bottom: 45px;
+                color: #252525;
+                text-align: left;
+
+                .rules-title {
+                    font-size: 19.5px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: 0.49px;
+                    color: #252525;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    padding-inline-start: 15px;
+                }
+
+                li {
+                    font-size: 13.5px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: 0.34px;
+                    color: #252525;
+                    margin-bottom: 14px;
+                }
+            }
+
+            .stay-tuned-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 40px;
+
+                div {
+                    margin: auto;
+                }
+
+                .stay-tuned-title {
+                    font-size: 34.5px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: 0.86px;
+                    text-align: center;
+                    color: #4562fc;
+                    margin-top: 40px;
+                    margin-bottom: 26px;
+                    line-height: 1.1;
+
+                    @media (max-width: 991px) {
+                        font-size: 30px;
+                    }
+                }
+
+                .stay-tuned-subtitle {
+                    max-width: 620px;
+                    font-size: 18.5px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.32;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #2e2e2e;
+
+                    @media (max-width: 991px) {
+                        font-size: 16px;
+                    }
+                }
+
+                .blue-separator {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    width: 34px;
+                    height: 5px;
+                    background-color: #4562fc;
+                }
+
+                .join-us {
+                    max-width: 390px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #2e2e2e;
+                }
+
+                .social-buttons {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                
+                    a {
+                        margin: 10px 5px;
+                        max-width: calc(50% - 10px);
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

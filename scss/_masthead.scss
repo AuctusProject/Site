@@ -7,6 +7,15 @@ header.masthead {
     background-repeat: no-repeat;
     min-height: 450px;
     max-height: 753px;
+    padding-top: 20px;
+
+    &.banner-removed {
+        padding-top: 0px;
+    }
+    
+    @media(max-width: 720px) {
+        padding-top: 80px;
+    }
 
     @media(max-width: 600px) {
         height: 310px;
