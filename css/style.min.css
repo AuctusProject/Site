@@ -660,7 +660,8 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: white; }
+      background-color: white;
+      border-radius: 0 0 8px 8px; }
       .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-icons {
         display: flex;
         flex-direction: row;
