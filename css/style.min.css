@@ -99,7 +99,8 @@ a:hover {
       color: #3fcf63; }
   .top-banner .banner-dismiss {
     position: absolute;
-    right: 20px; }
+    right: 20px;
+    cursor: pointer; }
 
 header.masthead {
   width: 100%;
