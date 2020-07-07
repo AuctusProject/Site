@@ -12,10 +12,11 @@
     <title>Auctus | Decentralized Financial Applications for everyone</title>
     <!-- Bootstrap core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendor/pagination/pagination.css" rel="stylesheet" />
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" />
     <!-- Custom styles for this template -->
-    <link href="/css/style.min.css?v=43" rel="stylesheet" />
+    <link href="/css/style.min.css?v=45" rel="stylesheet" />
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <link rel="stylesheet" type="text/css" href="/css/slick.css?v=5" />
     <link rel="stylesheet" type="text/css" href="/css/slick-theme.css?v=5" />
@@ -69,6 +70,9 @@
             <ul class="nav nav-tabs justify-content-center" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="programs-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="true">Join Available Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="track-tab" data-toggle="tab" href="#track" role="tab" aria-controls="track" aria-selected="true">Track My Rewards</a>
                 </li>
             </ul>
         </div>
@@ -132,10 +136,10 @@
                     <div class="container">
                         <div class="rules-title">RULES</div>
                         <ul>
-                            <li>This incentive will run for 10 weeks, starting July 7.</li>
+                            <li>This incentive will run for 10 weeks, starting 7 July at 23:59 pm UTC.</li>
                             <li>Once you provide liquidity on Balancer, you’ll automatically start accumulating AUC rewards.</li>
                             <li>Each day a snapshot is taken to capture the liquidity contribution of each participant and rewards will be allocated proportionately to liquidity contribution. This is in addition to any BAL rewards or fees generated.</li>
-                            <li>Rewards will be sent out on a weekly basis to all wallets with at least 300 AUC to be received.</li>
+                            <li>Rewards will be sent out on a weekly basis.</li>
                             <li>After July 7, you will be able to track your rewards by accessing this same website.</li>
                         </ul>
                     </div>
@@ -153,7 +157,174 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="track" role="tabpanel" aria-labelledby="track-tab">Tracks</div>
+            <div class="tab-pane fade" id="track" role="tabpanel" aria-labelledby="track-tab">
+                <div class="disconnected-container">
+                    <div class="go-to-balancer-btn btn-connect">CONNECT WALLET TO CHECK YOUR REWARDS</div>
+                </div>
+                <div class="connected-container" style="display: none;">
+                    <div class="global-info">
+                        <div class="total-rewards-col">
+                            <div class="total-accumulated-rewards">
+                                <div>Total Accumulated Rewards:</div>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="col-separator"></div>
+                        <div class="payment-info-col">
+                            <div class="total-paid-rewards">
+                                <div>Paid:</div>
+                                <span>-</span>
+                            </div>
+                            <div class="total-pending-rewards">
+                                <div>Pending:</div>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="col-separator"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown metamask">
+                                <div class="dropdown-toggle nav-link clickable" target="_self" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="user-nav-container">
+                                        <div class="user-nav-wrap">
+                                            <img class="provider-logo" src="" alt="">
+                                            <div>
+                                                <span class="wallet-address"></span>
+                                                <span class="connected-label">Connected</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="navbarProfile">
+                                    <a class="dropdown-item clickable" rel="noopener noreferrer" href="https://etherscan.io/address/0xd1B10607921C78D9a00529294C4b99f1bd250E1c" target="_blank">
+                                        <i class="fa fa-external-link"></i>
+                                        &nbsp;OPEN IN ETHERSCAN
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-item clickable btn-disconnect">
+                                        <i class="fa fa-leave"></i>
+                                        &nbsp;SIGN OUT
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pool-info usdc-pool">
+                        <div class="pool-title">AUC + USDC</div>
+                        <div class="pool-content">
+                            <div class="pool-details">
+                                <div class="pool-icons">
+                                    <div class="icon-wrapper">
+                                        <img class="auc-img" src="/img/liquidity-mining/auc.svg">
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <img src="/img/liquidity-mining/usdc.svg">
+                                    </div>
+                                </div>
+                                <div class="pool-composition">80% AUC - 20% USDC</div>
+                                <div class="pool-address"><a target="_blank" href="https://pools.balancer.exchange/#/pool/0xf64F38AE6B1e6144F292ECFA0A7C9236885F032e">0xf64F...032e</a></div>
+                            </div>
+                            <div class="pool-reward-details">
+                                <div class="share-estimated-col">
+                                    <div class="current-pool-share">
+                                        <div>Current pool share</div>
+                                        <span>-</span>
+                                    </div>
+                                    <div class="current-estimated-rewards">
+                                        <div>Current estimated rewards</div>
+                                        <span>-</span>
+                                    </div>
+                                </div>
+                                <div class="pool-reward-separator"></div>
+                                <div class="accumulated-col">
+                                    <div class="accumulated-rewards">
+                                        <div>Your accumulated rewards</div>
+                                        <span>-</span>
+                                    </div>
+                                    <a target="_blank" href="https://pools.balancer.exchange/#/pool/0xf64F38AE6B1e6144F292ECFA0A7C9236885F032e"><div class="go-to-balancer-btn">ADD LIQUIDITY</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pool-info eth-pool">
+                        <div class="pool-title blue-title">AUC + ETH</div>
+                        <div class="pool-content">
+                            <div class="pool-details">
+                                <div class="pool-icons">
+                                    <div class="icon-wrapper">
+                                        <img class="auc-img" src="/img/liquidity-mining/auc.svg">
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <img src="/img/liquidity-mining/eth.svg">
+                                    </div>
+                                </div>
+                                <div class="pool-composition">80% AUC - 20% ETH</div>
+                                <div class="pool-address"><a target="_blank" href="https://pools.balancer.exchange/#/pool/0x7Fc95945eAa14e7a2954052A4C9bFBaA79d170AE">0x7Fc9...70AE</a></div>
+                            </div>
+                            <div class="pool-reward-details">
+                                <div class="share-estimated-col">
+                                    <div class="current-pool-share">
+                                        <div>Current pool share</div>
+                                        <span>-</span>
+                                    </div>
+                                    <div class="current-estimated-rewards">
+                                        <div>Current estimated rewards</div>
+                                        <span>-</span>
+                                    </div>
+                                </div>
+                                <div class="pool-reward-separator"></div>
+                                <div class="accumulated-col">
+                                    <div class="accumulated-rewards">
+                                        <div>Your accumulated rewards</div>
+                                        <span>-</span>
+                                    </div>
+                                    <a target="_blank" href="https://pools.balancer.exchange/#/pool/0x7Fc95945eAa14e7a2954052A4C9bFBaA79d170AE"><div class="go-to-balancer-btn">ADD LIQUIDITY</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="report-separator"></div>
+                    <div class="detailed-report-section">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="payments-tab" data-toggle="tab" href="#payments" role="tab" aria-controls="payments" aria-selected="true">PAYMENTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="rewards-tab" data-toggle="tab" href="#rewards" role="tab" aria-controls="rewards" aria-selected="true">REWARDS</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="payments" role="tabpanel" aria-labelledby="payments-tab">
+                                <table id="payments-table" class="table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Tx</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <div class="payments-pagination">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="rewards" role="tabpanel" aria-labelledby="rewards-tab">
+                                <table id="rewards-table" class="table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Pool</th>
+                                            <th>Pool Share</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <div class="rewards-pagination">                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer style="background-color: #fafafa;">
@@ -187,9 +358,12 @@
             <span>Copyright © 2018 AUCTUS PROJECT INC</span>
         </div>
     </footer>
-    <script src="/vendor/web3modal/index.js"></script>
-    <script src="/vendor/web3modal/walletconnect.min.js"></script>    
+    <script src="/vendor/web3/web3.min.js"></script>
+    <script type="text/javascript" src="/vendor/web3modal/index.js"></script>
+    <script type="text/javascript" src="/vendor/web3modal/walletconnect.min.js"></script>
     <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/pagination/pagination.js"></script>
+    <script src="/js/liquidityMining.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/cookies.js"></script>
     <script src="/js/script.js?v=40"></script>

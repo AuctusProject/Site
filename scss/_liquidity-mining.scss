@@ -77,6 +77,25 @@
         }
     }
 
+    .go-to-balancer-btn {
+        border-radius: 14px;
+        background-color: #4562fc;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.35px;
+        text-align: center;
+        color: #ffffff;
+        padding: 12px 24px;
+        margin-top: 12px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #2340cf;
+        }
+    }
+
     .liquidity-content {
         .balancer-pools-title {
             width: 100%;
@@ -106,7 +125,54 @@
             }
         }
 
-        .tab-content {
+        .pool-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .icon-wrapper {
+                width: 64px;
+                height: 64px;
+                background-color: #ebebeb;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 12px;
+
+                img {
+                    max-height: calc(100% - 18px);
+                    max-width: calc(100% - 18px);
+                }
+
+                .auc-img {                            
+                    margin-bottom: 6px;
+                }
+            }
+        }
+
+        .pool-composition {
+            font-size: 18px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            text-align: center;
+            color: #2e2e2e;
+        }
+
+        .pool-address {
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #666666;
+            text-decoration: underline;
+        }
+
+        > .tab-content {
             margin-top: -120px;
 
             .pool-cards {
@@ -154,53 +220,6 @@
                     justify-content: center;
                     background-color: white;
                     border-radius: 0 0 8px 8px;
-                    
-                    .pool-icons {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: center;
-
-                        .icon-wrapper {
-                            width: 64px;
-                            height: 64px;
-                            background-color: #ebebeb;
-                            border-radius: 50%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            margin: 12px;
-
-                            img {
-                                max-height: calc(100% - 18px);
-                                max-width: calc(100% - 18px);
-                            }
-
-                            .auc-img {                            
-                                margin-bottom: 6px;
-                            }
-                        }
-                    }
-
-                    .pool-composition {
-                        font-size: 18px;
-                        font-weight: bold;
-                        font-stretch: normal;
-                        font-style: normal;
-                        text-align: center;
-                        color: #2e2e2e;
-                    }
-
-                    .pool-address {
-                        font-size: 16px;
-                        font-weight: normal;
-                        font-stretch: normal;
-                        font-style: normal;
-                        letter-spacing: normal;
-                        text-align: center;
-                        color: #666666;
-                        text-decoration: underline;
-                    }
 
                     .pool-reward-title {
                         font-size: 14px;
@@ -220,24 +239,6 @@
                         letter-spacing: normal;
                         font-weight: 900;
                         color: #4562fc;
-                    }
-
-                    .go-to-balancer-btn {
-                        border-radius: 14px;
-                        background-color: #4562fc;
-                        font-size: 14px;
-                        font-weight: bold;
-                        font-stretch: normal;
-                        font-style: normal;
-                        letter-spacing: 0.35px;
-                        text-align: center;
-                        color: #ffffff;
-                        padding: 12px 24px;
-                        margin-top: 12px;
-
-                        &:hover {
-                            background-color: #2340cf;
-                        }
                     }
 
                     .pool-footer {
@@ -408,5 +409,376 @@
                 }
             }
         }
-    }    
+
+        .disconnected-container {        
+            display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
+        }
+
+        .connected-container {
+            .global-info {
+                display: flex;
+                flex-direction: row;        
+                justify-content: center;
+                align-items: center;
+                margin-top: 36px;
+                margin-bottom: 66px;
+                height: 48px;
+
+                @media (max-width: 724px) {
+                    flex-direction: column;
+                    margin-top: unset;
+                    padding-bottom: 24px;
+                    height: unset;
+                    background-color: #333333;
+                }
+
+
+                .total-rewards-col {    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .total-accumulated-rewards { 
+                        display: flex;
+                        flex-direction: column;                   
+                        justify-content: center;
+                        align-items: center;
+
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #ffffff;
+
+                        div {
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+                }            
+
+                .payment-info-col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    > div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        font-size: 14px;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #ffffff;
+
+                        div {                        
+                            font-weight: 300;
+                            margin-right: 4px;
+                        }
+
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .col-separator {
+                    width: 1px;
+                    background-color: #676767;
+                    margin-left: 24px;
+                    margin-right: 24px;
+                    align-self: stretch;
+
+                    @media (max-width: 724px) {
+                        margin-top: 12px;
+                        margin-bottom: 12px;
+                        width: calc(100% - 48px);
+                        height: 1px;
+                    }
+                }
+            
+
+                .metamask {
+                    border-radius: 3px;
+                    border: solid 1px #666666;
+
+                    @media (max-width: 724px) {                    
+                        margin-top: 8px;
+                    }
+
+                    .dropdown-toggle {            
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;            
+                        padding-left: 12px;
+                        padding-right: 12px;
+                    }
+                }
+
+                .user-nav-wrap {        
+                    display: flex;
+                    flex-direction: row;
+                    margin-right: 8px;
+
+                    img {
+                        max-width: 25px;
+                        margin-right: 6px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .wallet-address {
+                        font-size: 13px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1;
+                        letter-spacing: 0.33px;
+                        text-align: left;
+                        color: #ffffff;
+                    }
+
+                    .connected-label {            
+                        font-size: 10.5px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: 0.26px;
+                        text-align: left;
+                        color: #38e22b;
+                    }
+                }
+            }
+
+            .pool-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: 824px;
+                width: calc(100% - 24px);
+                margin: 30px auto;                
+
+                .pool-title {
+                    font-size: 19.5px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: 0.49px;
+                    text-align: center;
+                    color: #ffffff;                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px 8px 0 0;
+                    height: 55px;
+                    width: 100%;
+                    background-color: #414141;
+                    
+
+                    &.blue-title {
+                        background-color: #4370c9;
+                    }
+                }
+
+                .pool-content {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+
+                    @media (max-width: 724px) {
+                        flex-direction: column;
+                    }
+
+                    .pool-details {
+                        width: 262px;
+	                    padding: 12px;
+                    }
+
+                    .pool-reward-details {                    
+                        background-color: #f2f2f2;
+                        width: calc(100% - 262px);
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+
+                        
+                        @media (max-width: 724px) {
+                            width: 100%;
+                        }
+
+                        .share-estimated-col {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+                            padding: 30px 12px;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .accumulated-col {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+                            padding: 30px 12px;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .pool-reward-separator {
+                            width: 1px;
+                            background-color: #b7b7b7;
+                            align-self: stretch;
+                            margin: 24px 0;
+                        }
+
+                        .current-pool-share,
+                        .current-estimated-rewards,
+                        .accumulated-rewards {
+                            font-stretch: normal;
+                            font-style: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+
+                            div {
+                                font-size: 15px;
+                                font-weight: normal;
+                                color: #666666;
+                            }
+
+                            span {
+                                font-size: 20px;
+                                font-weight: bold;
+                                color: #2e2e2e;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .detailed-report-section {
+                max-width: 824px;
+                width: calc(100% - 24px);
+                margin: auto;
+                margin-bottom: 40px;
+                padding-top: 30px;
+                border-top: solid 2px #999999;
+                
+                .nav-tabs {
+                    border-bottom: none;
+
+                    .nav-link {
+                        font-size: 16px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: 0.8px;
+                        text-align: center;
+                        color: #b2aeae !important;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                    }
+
+                    .nav-link.active {
+                        font-size: 16px;
+                        font-weight: bold;
+                        letter-spacing: 0.8px;
+                        text-align: center;
+                        color: #2e2e2e !important;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                    }
+                }
+
+                table {                
+                    width: calc(100% - 40px);
+                    margin: 20px;
+
+                    thead {
+                        background-color: #4d4d4d;
+
+                        th {
+                            padding: 8px;
+                            text-align: center;
+                        }
+                    }
+
+                    tbody {
+                        td {
+                            padding: 8px;
+                            text-align: center;
+                            font-size: 14px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+                            color: #4d4d4d;
+
+                            a {                            
+                                color: #2340cf !important;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .payments-pagination,
+                .rewards-pagination {                
+                    width: calc(100% - 40px);
+                    color: #4d4d4d;
+                    margin: 20px;
+
+                    .paginationjs {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        li {
+                            border: none !important;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            letter-spacing: 1.1px;
+                            text-align: center;
+                            color: #333333;
+
+                            &.active {
+                                border-bottom: solid 2px #333333 !important;
+
+                                a {
+                                    font-weight: bold;
+                                    background: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tab-content {
+                    box-shadow: 0px 3px 20px 0 rgba(28, 28, 28, 0.18);
+                    border: solid 1px rgba(28, 28, 28, 0.18);
+                }
+            }
+        }
+    }
 }

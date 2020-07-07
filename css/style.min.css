@@ -102,6 +102,9 @@ a:hover {
     right: 20px;
     cursor: pointer; }
 
+.clickable {
+  cursor: pointer; }
+
 header.masthead {
   width: 100%;
   max-width: 1440px;
@@ -604,6 +607,21 @@ footer {
     .liquidity-mining header.masthead .nav-tabs .nav-link.active {
       border-bottom: 4px solid;
       border-bottom-color: #4562fc; }
+.liquidity-mining .go-to-balancer-btn {
+  border-radius: 14px;
+  background-color: #4562fc;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: #ffffff;
+  padding: 12px 24px;
+  margin-top: 12px;
+  cursor: pointer; }
+  .liquidity-mining .go-to-balancer-btn:hover {
+    background-color: #2340cf; }
 .liquidity-mining .liquidity-content .balancer-pools-title {
   width: 100%;
   background-color: #333333;
@@ -623,15 +641,50 @@ footer {
       height: 42px; }
   .liquidity-mining .liquidity-content .balancer-pools-title h3 {
     font-size: 16px; }
-.liquidity-mining .liquidity-content .tab-content {
+.liquidity-mining .liquidity-content .pool-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .liquidity-mining .liquidity-content .pool-icons .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px; }
+    .liquidity-mining .liquidity-content .pool-icons .icon-wrapper img {
+      max-height: calc(100% - 18px);
+      max-width: calc(100% - 18px); }
+    .liquidity-mining .liquidity-content .pool-icons .icon-wrapper .auc-img {
+      margin-bottom: 6px; }
+.liquidity-mining .liquidity-content .pool-composition {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  color: #2e2e2e; }
+.liquidity-mining .liquidity-content .pool-address {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+  text-decoration: underline; }
+.liquidity-mining .liquidity-content > .tab-content {
   margin-top: -120px; }
-  .liquidity-mining .liquidity-content .tab-content .pool-cards {
+  .liquidity-mining .liquidity-content > .tab-content .pool-cards {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap; }
-  .liquidity-mining .liquidity-content .tab-content .pool-card {
+  .liquidity-mining .liquidity-content > .tab-content .pool-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -640,7 +693,7 @@ footer {
     border-radius: 8px;
     box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2);
     margin: 0 40px 40px; }
-    .liquidity-mining .liquidity-content .tab-content .pool-card .pool-title {
+    .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-title {
       width: 100%;
       height: 55px;
       background-color: #414141;
@@ -653,9 +706,9 @@ footer {
       justify-content: center;
       align-items: center;
       border-radius: 8px 8px 0 0; }
-      .liquidity-mining .liquidity-content .tab-content .pool-card .pool-title.blue-title {
+      .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-title.blue-title {
         background-color: #4370c9; }
-    .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content {
+    .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-card-content {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -663,42 +716,7 @@ footer {
       justify-content: center;
       background-color: white;
       border-radius: 0 0 8px 8px; }
-      .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-icons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center; }
-        .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-icons .icon-wrapper {
-          width: 64px;
-          height: 64px;
-          background-color: #ebebeb;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 12px; }
-          .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-icons .icon-wrapper img {
-            max-height: calc(100% - 18px);
-            max-width: calc(100% - 18px); }
-          .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-icons .icon-wrapper .auc-img {
-            margin-bottom: 6px; }
-      .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-composition {
-        font-size: 18px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        text-align: center;
-        color: #2e2e2e; }
-      .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-address {
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #666666;
-        text-decoration: underline; }
-      .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-reward-title {
+      .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-card-content .pool-reward-title {
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
@@ -706,7 +724,7 @@ footer {
         letter-spacing: normal;
         color: #4c4c4c;
         margin-top: 20px; }
-      .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-reward-value {
+      .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-card-content .pool-reward-value {
         font-size: 20px;
         font-weight: normal;
         font-stretch: normal;
@@ -714,21 +732,7 @@ footer {
         letter-spacing: normal;
         font-weight: 900;
         color: #4562fc; }
-      .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .go-to-balancer-btn {
-        border-radius: 14px;
-        background-color: #4562fc;
-        font-size: 14px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: 0.35px;
-        text-align: center;
-        color: #ffffff;
-        padding: 12px 24px;
-        margin-top: 12px; }
-        .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .go-to-balancer-btn:hover {
-          background-color: #2340cf; }
-      .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-footer {
+      .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-card-content .pool-footer {
         background-color: #f2f2f2;
         display: flex;
         flex-direction: column;
@@ -738,7 +742,7 @@ footer {
         border-radius: 0 0 8px 8px;
         padding: 12px;
         margin-top: 20px; }
-        .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-footer .footer-title {
+        .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-card-content .pool-footer .footer-title {
           font-size: 16px;
           font-weight: bold;
           font-stretch: normal;
@@ -747,7 +751,7 @@ footer {
           text-align: center;
           color: #2d2d2d;
           margin-bottom: 8px; }
-        .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-footer .tutorial-link {
+        .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-card-content .pool-footer .tutorial-link {
           font-size: 14px;
           font-weight: normal;
           font-stretch: normal;
@@ -760,19 +764,19 @@ footer {
           align-items: center;
           justify-content: center;
           cursor: pointer; }
-          .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-footer .tutorial-link:hover {
+          .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-card-content .pool-footer .tutorial-link:hover {
             color: #2d2d2d;
             font-weight: bold; }
-          .liquidity-mining .liquidity-content .tab-content .pool-card .pool-card-content .pool-footer .tutorial-link i {
+          .liquidity-mining .liquidity-content > .tab-content .pool-card .pool-card-content .pool-footer .tutorial-link i {
             color: #2d2d2d;
             margin-left: 6px; }
-  .liquidity-mining .liquidity-content .tab-content .rules-section {
+  .liquidity-mining .liquidity-content > .tab-content .rules-section {
     background-color: #f2f2f2;
     padding-top: 45px;
     padding-bottom: 45px;
     color: #252525;
     text-align: left; }
-    .liquidity-mining .liquidity-content .tab-content .rules-section .rules-title {
+    .liquidity-mining .liquidity-content > .tab-content .rules-section .rules-title {
       font-size: 19.5px;
       font-weight: bold;
       font-stretch: normal;
@@ -780,9 +784,9 @@ footer {
       letter-spacing: 0.49px;
       color: #252525;
       margin-bottom: 20px; }
-    .liquidity-mining .liquidity-content .tab-content .rules-section ul {
+    .liquidity-mining .liquidity-content > .tab-content .rules-section ul {
       padding-inline-start: 15px; }
-    .liquidity-mining .liquidity-content .tab-content .rules-section li {
+    .liquidity-mining .liquidity-content > .tab-content .rules-section li {
       font-size: 13.5px;
       font-weight: normal;
       font-stretch: normal;
@@ -790,15 +794,15 @@ footer {
       letter-spacing: 0.34px;
       color: #252525;
       margin-bottom: 14px; }
-  .liquidity-mining .liquidity-content .tab-content .stay-tuned-section {
+  .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px; }
-    .liquidity-mining .liquidity-content .tab-content .stay-tuned-section div {
+    .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section div {
       margin: auto; }
-    .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .stay-tuned-title {
+    .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .stay-tuned-title {
       font-size: 34.5px;
       font-weight: bold;
       font-stretch: normal;
@@ -810,9 +814,9 @@ footer {
       margin-bottom: 26px;
       line-height: 1.1; }
       @media (max-width: 991px) {
-        .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .stay-tuned-title {
+        .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .stay-tuned-title {
           font-size: 30px; } }
-    .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .stay-tuned-subtitle {
+    .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .stay-tuned-subtitle {
       max-width: 620px;
       font-size: 18.5px;
       font-weight: normal;
@@ -823,15 +827,15 @@ footer {
       text-align: center;
       color: #2e2e2e; }
       @media (max-width: 991px) {
-        .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .stay-tuned-subtitle {
+        .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .stay-tuned-subtitle {
           font-size: 16px; } }
-    .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .blue-separator {
+    .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .blue-separator {
       margin-top: 40px;
       margin-bottom: 40px;
       width: 34px;
       height: 5px;
       background-color: #4562fc; }
-    .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .join-us {
+    .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .join-us {
       max-width: 390px;
       font-size: 14px;
       font-weight: normal;
@@ -840,18 +844,292 @@ footer {
       letter-spacing: normal;
       text-align: center;
       color: #2e2e2e; }
-    .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .social-buttons {
+    .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .social-buttons {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap; }
-      .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .social-buttons a {
+      .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .social-buttons a {
         margin: 10px 5px;
         max-width: calc(50% - 10px); }
-        .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .social-buttons a:hover {
+        .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .social-buttons a:hover {
           opacity: 0.8; }
-        .liquidity-mining .liquidity-content .tab-content .stay-tuned-section .social-buttons a img {
+        .liquidity-mining .liquidity-content > .tab-content .stay-tuned-section .social-buttons a img {
           max-width: 100%; }
+.liquidity-mining .liquidity-content .disconnected-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px; }
+.liquidity-mining .liquidity-content .connected-container .global-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 66px;
+  height: 48px; }
+  @media (max-width: 724px) {
+    .liquidity-mining .liquidity-content .connected-container .global-info {
+      flex-direction: column;
+      margin-top: unset;
+      padding-bottom: 24px;
+      height: unset;
+      background-color: #333333; } }
+  .liquidity-mining .liquidity-content .connected-container .global-info .total-rewards-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .liquidity-mining .liquidity-content .connected-container .global-info .total-rewards-col .total-accumulated-rewards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff; }
+      .liquidity-mining .liquidity-content .connected-container .global-info .total-rewards-col .total-accumulated-rewards div {
+        font-size: 14px;
+        font-weight: 300; }
+      .liquidity-mining .liquidity-content .connected-container .global-info .total-rewards-col .total-accumulated-rewards span {
+        font-size: 18px;
+        font-weight: bold; }
+  .liquidity-mining .liquidity-content .connected-container .global-info .payment-info-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .liquidity-mining .liquidity-content .connected-container .global-info .payment-info-col > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff; }
+      .liquidity-mining .liquidity-content .connected-container .global-info .payment-info-col > div div {
+        font-weight: 300;
+        margin-right: 4px; }
+      .liquidity-mining .liquidity-content .connected-container .global-info .payment-info-col > div span {
+        font-weight: bold; }
+  .liquidity-mining .liquidity-content .connected-container .global-info .col-separator {
+    width: 1px;
+    background-color: #676767;
+    margin-left: 24px;
+    margin-right: 24px;
+    align-self: stretch; }
+    @media (max-width: 724px) {
+      .liquidity-mining .liquidity-content .connected-container .global-info .col-separator {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        width: calc(100% - 48px);
+        height: 1px; } }
+  .liquidity-mining .liquidity-content .connected-container .global-info .metamask {
+    border-radius: 3px;
+    border: solid 1px #666666; }
+    @media (max-width: 724px) {
+      .liquidity-mining .liquidity-content .connected-container .global-info .metamask {
+        margin-top: 8px; } }
+    .liquidity-mining .liquidity-content .connected-container .global-info .metamask .dropdown-toggle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 12px;
+      padding-right: 12px; }
+  .liquidity-mining .liquidity-content .connected-container .global-info .user-nav-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-right: 8px; }
+    .liquidity-mining .liquidity-content .connected-container .global-info .user-nav-wrap img {
+      max-width: 25px;
+      margin-right: 6px; }
+    .liquidity-mining .liquidity-content .connected-container .global-info .user-nav-wrap div {
+      display: flex;
+      flex-direction: column; }
+    .liquidity-mining .liquidity-content .connected-container .global-info .user-nav-wrap .wallet-address {
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0.33px;
+      text-align: left;
+      color: #ffffff; }
+    .liquidity-mining .liquidity-content .connected-container .global-info .user-nav-wrap .connected-label {
+      font-size: 10.5px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 0.26px;
+      text-align: left;
+      color: #38e22b; }
+.liquidity-mining .liquidity-content .connected-container .pool-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 824px;
+  width: calc(100% - 24px);
+  margin: 30px auto; }
+  .liquidity-mining .liquidity-content .connected-container .pool-info .pool-title {
+    font-size: 19.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.49px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    height: 55px;
+    width: 100%;
+    background-color: #414141; }
+    .liquidity-mining .liquidity-content .connected-container .pool-info .pool-title.blue-title {
+      background-color: #4370c9; }
+  .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%; }
+    @media (max-width: 724px) {
+      .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content {
+        flex-direction: column; } }
+    .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-details {
+      width: 262px;
+      padding: 12px; }
+    .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details {
+      background-color: #f2f2f2;
+      width: calc(100% - 262px);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      @media (max-width: 724px) {
+        .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details {
+          width: 100%; } }
+      .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .share-estimated-col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 30px 12px;
+        justify-content: center;
+        align-items: center; }
+      .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .accumulated-col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 30px 12px;
+        justify-content: center;
+        align-items: center; }
+      .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .pool-reward-separator {
+        width: 1px;
+        background-color: #b7b7b7;
+        align-self: stretch;
+        margin: 24px 0; }
+      .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .current-pool-share,
+      .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .current-estimated-rewards,
+      .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .accumulated-rewards {
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center; }
+        .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .current-pool-share div,
+        .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .current-estimated-rewards div,
+        .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .accumulated-rewards div {
+          font-size: 15px;
+          font-weight: normal;
+          color: #666666; }
+        .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .current-pool-share span,
+        .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .current-estimated-rewards span,
+        .liquidity-mining .liquidity-content .connected-container .pool-info .pool-content .pool-reward-details .accumulated-rewards span {
+          font-size: 20px;
+          font-weight: bold;
+          color: #2e2e2e; }
+.liquidity-mining .liquidity-content .connected-container .detailed-report-section {
+  max-width: 824px;
+  width: calc(100% - 24px);
+  margin: auto;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  border-top: solid 2px #999999; }
+  .liquidity-mining .liquidity-content .connected-container .detailed-report-section .nav-tabs {
+    border-bottom: none; }
+    .liquidity-mining .liquidity-content .connected-container .detailed-report-section .nav-tabs .nav-link {
+      font-size: 16px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 0.8px;
+      text-align: center;
+      color: #b2aeae !important;
+      padding-left: 24px;
+      padding-right: 24px; }
+    .liquidity-mining .liquidity-content .connected-container .detailed-report-section .nav-tabs .nav-link.active {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      text-align: center;
+      color: #2e2e2e !important;
+      padding-left: 24px;
+      padding-right: 24px; }
+  .liquidity-mining .liquidity-content .connected-container .detailed-report-section table {
+    width: calc(100% - 40px);
+    margin: 20px; }
+    .liquidity-mining .liquidity-content .connected-container .detailed-report-section table thead {
+      background-color: #4d4d4d; }
+      .liquidity-mining .liquidity-content .connected-container .detailed-report-section table thead th {
+        padding: 8px;
+        text-align: center; }
+    .liquidity-mining .liquidity-content .connected-container .detailed-report-section table tbody td {
+      padding: 8px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #4d4d4d; }
+      .liquidity-mining .liquidity-content .connected-container .detailed-report-section table tbody td a {
+        color: #2340cf !important;
+        text-decoration: underline; }
+  .liquidity-mining .liquidity-content .connected-container .detailed-report-section .payments-pagination,
+  .liquidity-mining .liquidity-content .connected-container .detailed-report-section .rewards-pagination {
+    width: calc(100% - 40px);
+    color: #4d4d4d;
+    margin: 20px; }
+    .liquidity-mining .liquidity-content .connected-container .detailed-report-section .payments-pagination .paginationjs,
+    .liquidity-mining .liquidity-content .connected-container .detailed-report-section .rewards-pagination .paginationjs {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .liquidity-mining .liquidity-content .connected-container .detailed-report-section .payments-pagination .paginationjs li,
+      .liquidity-mining .liquidity-content .connected-container .detailed-report-section .rewards-pagination .paginationjs li {
+        border: none !important;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 1.1px;
+        text-align: center;
+        color: #333333; }
+        .liquidity-mining .liquidity-content .connected-container .detailed-report-section .payments-pagination .paginationjs li.active,
+        .liquidity-mining .liquidity-content .connected-container .detailed-report-section .rewards-pagination .paginationjs li.active {
+          border-bottom: solid 2px #333333 !important; }
+          .liquidity-mining .liquidity-content .connected-container .detailed-report-section .payments-pagination .paginationjs li.active a,
+          .liquidity-mining .liquidity-content .connected-container .detailed-report-section .rewards-pagination .paginationjs li.active a {
+            font-weight: bold;
+            background: none; }
+  .liquidity-mining .liquidity-content .connected-container .detailed-report-section .tab-content {
+    box-shadow: 0px 3px 20px 0 rgba(28, 28, 28, 0.18);
+    border: solid 1px rgba(28, 28, 28, 0.18); }
 
 /*# sourceMappingURL=style.min.css.map */
