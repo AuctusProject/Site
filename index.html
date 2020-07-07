@@ -15,7 +15,7 @@
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
     <!-- Custom styles for this template -->
-    <link href="css/style.min.css?v=43" rel="stylesheet" />
+    <link href="css/style.min.css?v=44" rel="stylesheet" />
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="css/slick.css?v=5" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css?v=5" />
@@ -33,6 +33,12 @@
     <!-- End Inspectlet Asynchronous Code -->
 </head>
 <body id="page-top" class="auctus">
+    <div class="top-banner">
+        <div class="banner-title">Auctus Liquidity Incentives</div>
+        <div class="banner-subtitle">Earn rewards by becoming a liquidity provider</div>
+        <a href="/liquidity-mining/"><div class="banner-button">Access</div></a>
+        <div class="banner-dismiss"><i class="fas fa-times"></i></div>
+    </div>
     <header class="masthead">
         <div class="background-images d-none d-lg-block">
             <img class="left" src="./img/masthead/img_banner2.png" />
@@ -46,6 +52,9 @@
                     </div>
                 </div>
                 <div class="social-icons">
+                    <a href="https://discord.gg/9JqeMxs" title="Discord" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
                     <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
                         <i class="fab fa-twitter"></i>
                     </a>
@@ -182,6 +191,9 @@
                 </div>
                 <div class="col-sm-6 text-sm-right text-center">
                     <div class="social-icons my-3">
+                        <a href="https://discord.gg/9JqeMxs" title="Discord" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
                         <a href="https://twitter.com/AuctusProject" title="Twitter" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
@@ -262,6 +274,14 @@
                 slidesToScroll: 1
             });
         }
+        function onDismissBanner(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $(".top-banner").remove();
+            $('header').addClass("banner-removed");
+        }
+        
+        $(".banner-dismiss").click(onDismissBanner);
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
