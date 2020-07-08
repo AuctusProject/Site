@@ -48,7 +48,7 @@ async function fetchAccountData() {
                 var className = getPoolClassNameFromAddress(reward.contract);
                 var poolHtml = $('.' + className)
                 poolHtml.find('.current-pool-share > span').html(convertValueToPercentage(reward.poolShare))
-                poolHtml.find('.current-estimated-rewards > span').html(convertValueToDecimals(reward.weeklyProjection) + " AUC")
+                poolHtml.find('.current-estimated-rewards > span').html(convertValueToDecimals(reward.weeklyProjection) + " AUC / week")
                 poolHtml.find('.accumulated-rewards > span').html(convertValueToDecimals(reward.aucAmount) + " AUC")
             }
 
@@ -142,7 +142,7 @@ function convertValueToPercentage(value) {
 }
 
 function formatDate(time) {
-    var options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'UTC' }
+    var options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hourCycle: "h23", timeZone: 'UTC' }
     return new Date(time).toLocaleString("en-US", options) + " UTC"
 }
 
@@ -176,7 +176,7 @@ function convertValueToDecimals(value) {
     const web3 = new Web3(provider);
     var value = web3.utils.fromWei(value, "ether");
     var number = new Number(value)
-    if (number > 0) {
+    if (number >= 1) {
         return number.toLocaleString(undefined, {maximumFractionDigits: 2})
     }
     else {
