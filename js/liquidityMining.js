@@ -88,7 +88,7 @@ function setUserCurrentPagePayments() {
 
 var userRewards = []
 function setUserCurrentPageRewards() {
-    var rewardRowTemplate = "<tr><td>{date}</td><td>{contract}</td><td>{share}</td><td>{amount}</td></tr>"
+    var rewardRowTemplate = "<tr><td>{date} - #{blockNumber}</td><td>{contract}</td><td>{share}</td><td>{amount}</td></tr>"
     var rewardsTab = $('#rewards')
     var tableBody = rewardsTab.children('table').children('tbody')
     tableBody.html('')
@@ -101,6 +101,7 @@ function setUserCurrentPageRewards() {
                 var reward = data[i]
                 var row = rewardRowTemplate
                     .replace("{date}", formatDate(reward.t))
+                    .replace("{blockNumber}", reward.b)
                     .replace("{contract}", getPoolNameFromContract(reward.c))
                     .replace("{share}", convertValueToPercentage(reward.s))
                     .replace("{amount}", convertValueToDecimals(reward.a) + " AUC")
@@ -142,8 +143,8 @@ function convertValueToPercentage(value) {
 }
 
 function formatDate(time) {
-    var options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hourCycle: "h23", timeZone: 'UTC' }
-    return new Date(time).toLocaleString("en-US", options) + " UTC"
+    var options = { year: 'numeric', month: 'numeric', day: 'numeric', timeZone: 'UTC' }
+    return new Date(time).toLocaleString("en-US", options)
 }
 
 function getPoolClassNameFromAddress(address) {
