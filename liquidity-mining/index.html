@@ -39,7 +39,7 @@
             <div class="top-menu">
                 <div>
                     <div class="d-none d-lg-block">
-                        <a href="/"><img src="/img/global/logo_auctus.png" /></a>
+                        <a href="/"><img class="logo-auctus" src="/img/global/logo_auctus.svg"/></a>
                     </div>
                 </div>
                 <div class="social-icons">
@@ -61,18 +61,18 @@
                 </div>
             </div>
             <div class="d-block d-lg-none center my-5">
-                <img src="/img/global/logo_auctus.png" />
+                <img class="logo-auctus" src="/img/global/logo_auctus.svg" />
             </div>
             <div class="message-panel">
                 <h1>Auctus Liquidity Incentives</h1>
                 <span>Earn rewards by becoming a liquidity provider</span>
             </div>
-            <ul class="nav nav-tabs justify-content-center" role="tablist">
+            <ul class="nav nav-tabs justify-content-center" role="tablist" id="liquidity-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" id="programs-tab" data-toggle="tab" href="#programs" role="tab" aria-controls="programs" aria-selected="true">Join Available Programs</a>
+                    <a class="nav-link active" id="programs-tab" href="#programs" role="tab" aria-controls="programs" aria-selected="true">Join Available Programs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="track-tab" data-toggle="tab" href="#track" role="tab" aria-controls="track" aria-selected="true">Track My Rewards</a>
+                    <a class="nav-link" id="track-tab" href="#track" role="tab" aria-controls="track" aria-selected="true">Track My Rewards</a>
                 </li>
             </ul>
         </div>
@@ -418,7 +418,11 @@
     </script>
 
     <script>
-
+        $('#liquidity-tabs a').on('click', function (e) {
+            e.preventDefault()
+            window.location.hash = this.hash;
+            $(this).tab('show')
+        })
     </script>
 </body>
 </html>

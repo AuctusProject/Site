@@ -1,6 +1,5 @@
 ﻿section.get-involved {
-    background: #61bbe7;
-    background-image: linear-gradient(to top, #61bbe7, #4aa6d2);
+    background-color: #23272a;
     position: relative;    
     height: unset;
     color: #ffffff;
@@ -18,24 +17,16 @@
             padding-bottom: 50px;
         }
 
-        i.fa-telegram-plane {
-            font-size: 80px;
+        img {
             margin: 0 50px;
-        }
-
-        .background-image {        
-            position: absolute;
-            top: 0;
-            height: 100%;
-            max-width: 100%;
-            left: 0;
-            z-index: 0;
         }
 
         .get-involved-details {
             max-width: 540px;
             z-index: 1;
-            width: 80%;
+            width: 80%;        
+            padding-left: 10px;
+            padding-right: 10px;
 
             h2 {
                 font-size: 34px;
@@ -45,7 +36,7 @@
                 line-height: 1.16;
                 letter-spacing: 1.03px;
 
-                i.fa-telegram-plane {
+                i.fa-discord {
                     font-size: inherit;
                     margin: 0 10px 0 0;
                 }        

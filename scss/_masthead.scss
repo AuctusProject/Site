@@ -12,6 +12,14 @@ header.masthead {
     &.banner-removed {
         padding-top: 0px;
     }
+
+    .logo-auctus {
+        height: 40px;
+
+        @media(max-width: 991px) {
+            height: 46px;
+        }
+    }
     
     @media(max-width: 720px) {
         padding-top: 80px;
@@ -45,10 +53,6 @@ header.masthead {
         align-content: space-between;
         justify-content: space-between;
         display: flex;
-
-        img {
-            height: 37px;
-        }
 
         > div:first-child {
             img {

@@ -117,6 +117,11 @@ header.masthead {
   padding-top: 20px; }
   header.masthead.banner-removed {
     padding-top: 0px; }
+  header.masthead .logo-auctus {
+    height: 40px; }
+    @media (max-width: 991px) {
+      header.masthead .logo-auctus {
+        height: 46px; } }
   @media (max-width: 720px) {
     header.masthead {
       padding-top: 80px; } }
@@ -141,8 +146,6 @@ header.masthead {
     align-content: space-between;
     justify-content: space-between;
     display: flex; }
-    header.masthead .top-menu img {
-      height: 37px; }
     header.masthead .top-menu > div:first-child img {
       margin-right: 80px; }
     header.masthead .top-menu > div:first-child div {
@@ -373,8 +376,7 @@ section.where-to-buy {
       max-width: 100%; }
 
 section.get-involved {
-  background: #61bbe7;
-  background-image: linear-gradient(to top, #61bbe7, #4aa6d2);
+  background-color: #23272a;
   position: relative;
   height: unset;
   color: #ffffff; }
@@ -389,20 +391,14 @@ section.get-involved {
       section.get-involved .container-get-involved {
         padding-top: 50px;
         padding-bottom: 50px; } }
-    section.get-involved .container-get-involved i.fa-telegram-plane {
-      font-size: 80px;
+    section.get-involved .container-get-involved img {
       margin: 0 50px; }
-    section.get-involved .container-get-involved .background-image {
-      position: absolute;
-      top: 0;
-      height: 100%;
-      max-width: 100%;
-      left: 0;
-      z-index: 0; }
     section.get-involved .container-get-involved .get-involved-details {
       max-width: 540px;
       z-index: 1;
-      width: 80%; }
+      width: 80%;
+      padding-left: 10px;
+      padding-right: 10px; }
       section.get-involved .container-get-involved .get-involved-details h2 {
         font-size: 34px;
         font-weight: bold;
@@ -410,7 +406,7 @@ section.get-involved {
         font-style: normal;
         line-height: 1.16;
         letter-spacing: 1.03px; }
-        section.get-involved .container-get-involved .get-involved-details h2 i.fa-telegram-plane {
+        section.get-involved .container-get-involved .get-involved-details h2 i.fa-discord {
           font-size: inherit;
           margin: 0 10px 0 0; }
       section.get-involved .container-get-involved .get-involved-details p {
