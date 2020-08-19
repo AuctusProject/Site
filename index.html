@@ -120,6 +120,87 @@
                 </div>
             </div>
         </div>
+    </section>    
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Who we are?</h2>
+            <h3>Our team has a lot of experience in building software and we apply agile approach to deliver exceptional DeFi products.</h3>
+            <div class="row team-cards">
+                <div class="team-card-wrapper">
+                    <div class="team-card">
+                        <img class="member-picture" src="./img/team/img_vinicius.png"></img>
+                        <div class="member-name">VINICIUS MELO</div>
+                        <div class="member-position">Head of Strategy</div>
+                        <div class="blue-separator"></div>
+                        <div class="member-description">
+                            Previously Investment Analyst, having worked at one of Brazil's main pension funds (FUNPRESP-JUD). He has the Brazilian market certifications of Investment Analyst. <br/><br/>He holds a BSc in Mechanical Engineering.
+                        </div>
+                        <div class="member-social">
+                            <a href="https://twitter.com/viniciusfbm" title="Twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vinicius-melo-03a68b134/" title="Twitter" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-wrapper">
+                    <div class="team-card">
+                        <img class="member-picture" src="./img/team/img_thiago.png"></img>
+                        <div class="member-name">THIAGO ARAÚJO</div>
+                        <div class="member-position">Senior Software Engineer</div>
+                        <div class="blue-separator"></div>
+                        <div class="member-description">
+                            Thiago brings along 10 years of experience as a Software engineer. Prior to joining Auctus, he led numerous large scale software while working at dti digital. <br/><br/>He holds a BSc in Control and Automation Engineering.
+                        </div>
+                        <div class="member-social">
+                            <a href="https://github.com/thiagomva" title="Github" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/thiago-ara%C3%BAjo-092aa033/" title="Twitter" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-wrapper">
+                    <div class="team-card">
+                        <img class="member-picture" src="./img/team/img_ariny.png"></img>
+                        <div class="member-name">ARINY GUEDES</div>
+                        <div class="member-position">Lead Ethereum Engineer</div>
+                        <div class="blue-separator"></div>
+                        <div class="member-description">
+                            Ariny brings more than 10 years of experience as a Software engineer, 7 years at dti digital. He is an expert in C#, Java, C++ and Ethereum Blockchain. <br/><br/>He holds a BSc in Control and Automation Engineering.
+                        </div>
+                        <div class="member-social">
+                            <a href="https://github.com/arinyguedes" title="Github" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ariny-guedes-51501215a/" title="Twitter" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-wrapper">
+                    <div class="team-card">
+                        <img class="member-picture" src="./img/team/img_iuri.png"></img>
+                        <div class="member-name">IURI SANTOS</div>
+                        <div class="member-position">UI/UX Lead Designer</div>
+                        <div class="blue-separator"></div>
+                        <div class="member-description">
+                            Iuri brings more than 10 years of experience as a UX designer. He is responsible for discovering and developing ways to design and improve user experiences. <br/><br/>He holds a BSc in Social Communication.
+                        </div>
+                        <div class="member-social">
+                            <a href="https://www.linkedin.com/in/iuri-santo-a83b4548/" title="Twitter" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="where-to-buy" id="whereToBuy">
         <div class="container">
@@ -281,6 +362,21 @@
         }
         
         $(".banner-dismiss").click(onDismissBanner);
+
+        function createTeamSlider() {
+            var width = $(window).width();
+            if (width < 1140) {
+                $('.team-cards').slick({
+                    dots: true,
+                    variableWidth: true,
+                    slidesToShow: 1,
+                    prevArrow: false,
+                    nextArrow: false,
+                    slidesToScroll: 1
+                });
+            }
+        }
+        createTeamSlider();        
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
