@@ -20,6 +20,7 @@ section.where-to-buy {
     }
 
     .exchanges {
+        margin-top: 45px;
         display: flex;
         @media(max-width:992px) {
             text-align: center; 
@@ -31,10 +32,11 @@ section.where-to-buy {
         }
 
         @media(min-width:993px) {
-            justify-content: space-between;
+            justify-content: center;
 
             a {
                 align-self: flex-end;
+                margin: 0 40px;
             }
         }
 

@@ -441,6 +441,7 @@ section.where-to-buy {
     color: #1b1b1b;
     margin-bottom: 50px; }
   section.where-to-buy .exchanges {
+    margin-top: 45px;
     display: flex; }
     @media (max-width: 992px) {
       section.where-to-buy .exchanges {
@@ -450,9 +451,10 @@ section.where-to-buy {
           margin-top: 45px; } }
     @media (min-width: 993px) {
       section.where-to-buy .exchanges {
-        justify-content: space-between; }
+        justify-content: center; }
         section.where-to-buy .exchanges a {
-          align-self: flex-end; } }
+          align-self: flex-end;
+          margin: 0 40px; } }
     section.where-to-buy .exchanges img {
       max-width: 100%; }
 
