@@ -39,68 +39,128 @@ section.team {
         margin-bottom: 10px;
     }
 
-    .team-cards {
-        .team-card-wrapper {
-            padding: 10px;
-            outline: none;
+    .team-card-wrapper {
+        padding: 10px;
+        outline: none;
+    }
+
+    .team-card {
+        max-width: 264px;
+        border-radius: 8px;
+        box-shadow: 8px 6px 8px 0 rgba(38, 38, 38, 0.16);
+        background-color: #ffffff;
+        padding: 30px 26px;
+        margin: auto;
+        margin-top: 40px;
+        height: calc(100% - 40px);
+    }
+
+    .member-name {
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.45px;
+        text-align: center;
+        color: #444444;
+        margin-top: 6px;
+    }
+
+    .member-position {
+        font-size: 12px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #31bcee;
+    }
+
+    .blue-separator {
+        width: 24px;
+        height: 4px;
+        background-color: #31bcee;
+        margin: 9px auto;
+    }
+
+    .member-description {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.54;
+        letter-spacing: 0.43px;
+        color: #737373;
+    }
+
+    .member-social {                
+        color: #444444;
+        margin-top: 8px;
+        font-size: 22px;
+        
+        a {
+            padding: 0 6px;
+            text-decoration: none !important;
         }
+    }
 
-        .team-card {
-            max-width: 264px;
-            border-radius: 8px;
-            box-shadow: 8px 6px 8px 0 rgba(38, 38, 38, 0.16);
-            background-color: #ffffff;
-            padding: 30px 26px;
-            margin: auto;
-            margin-top: 40px;
-            height: calc(100% - 40px);
+    .advisor-section {
+        .title-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
 
-            .member-name {
-                font-size: 18px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                letter-spacing: 0.45px;
-                text-align: center;
-                color: #444444;
-                margin-top: 6px;
-            }
-
-            .member-position {
-                font-size: 12px;
-                font-weight: 500;
-                font-stretch: normal;
-                font-style: normal;
-                letter-spacing: 0.3px;
-                text-align: center;
-                color: #31bcee;
-            }
-
-            .blue-separator {
-                width: 24px;
-                height: 4px;
+            div {
+                height: 1px;
                 background-color: #31bcee;
-                margin: 9px auto;
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 30px;
+                letter-spacing: 0.75px;
+                color: #31bcee;
+                margin: 40px;
+                margin-bottom: 40px;
+            }
+        }
+        
+        .advisor-card {
+            display: flex;    
+            max-width: 700px;
+            margin: auto;
+
+            @media(max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .advisor-row {            
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin-bottom: 14px;
+
+                @media(max-width: 768px) {
+                    justify-content: center;
+                }
+            }
+
+            .advisor-col {            
+                flex-direction: column;
+                display: flex;
+                width: 165px;
+                align-items: flex-start;
+                margin-left: 15px;
             }
 
             .member-description {
-                font-size: 14px;
-                font-weight: 300;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.54;
-                letter-spacing: 0.43px;
-                color: #737373;
-            }
+                text-align: left;
+                max-width: 365px;
 
-            .member-social {                
-                color: #444444;
-                margin-top: 8px;
-                font-size: 22px;
-                
-                a {
-                    padding: 0 6px;
-                    text-decoration: none !important;
+                @media(max-width: 768px) {
+                    text-align: center;
                 }
             }
         }
