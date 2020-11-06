@@ -1,0 +1,35 @@
+section.why-use {
+    .container-fluid {
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    text-align: inherit;
+
+    .laptop-img {
+        margin-left: -15px;
+        max-width: 100%;
+    }
+
+    .why-title {
+        font-size: 41px;
+        font-weight: bold;
+        letter-spacing: 1.03px;
+        color: #1b1b1b;
+        margin-bottom: 14px;
+    }
+
+    .why-item {
+        font-size: 22px;
+        font-weight: bold;
+        color: #595959;    
+        margin-top: 16px;
+        margin-bottom: 4px;
+    }
+
+    .why-item-desc {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        color: #656565;
+    }
+}

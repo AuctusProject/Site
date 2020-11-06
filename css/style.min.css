@@ -127,7 +127,7 @@ header.masthead {
       padding-top: 80px; } }
   @media (max-width: 600px) {
     header.masthead {
-      height: 310px; } }
+      height: 540px; } }
   header.masthead .background-images .right {
     position: absolute;
     right: 0;
@@ -141,8 +141,6 @@ header.masthead {
     position: absolute;
     width: 100%;
     top: 30px;
-    padding: 0 90px;
-    margin-left: -15px;
     align-content: space-between;
     justify-content: space-between;
     display: flex; }
@@ -164,7 +162,8 @@ header.masthead {
       header.masthead .top-menu {
         padding: 0 5px;
         font-size: 10px;
-        top: 15px; } }
+        top: 15px;
+        margin-left: -15px; } }
     header.masthead .top-menu .social-icons {
       font-size: 20px;
       color: white;
@@ -187,38 +186,147 @@ header.masthead {
     header.masthead .container .message-panel {
       position: absolute;
       top: 25%;
-      max-width: 500px;
-      width: 70%; }
+      max-width: 585px;
+      width: 55%;
+      margin: 10px; }
       header.masthead .container .message-panel h1 {
-        font-size: 40px;
+        font-size: 39px;
         font-weight: bold;
         line-height: 1.16;
         letter-spacing: 1px;
         color: #1b1b1b; }
-      header.masthead .container .message-panel span {
-        max-width: 460px;
-        display: block;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 1.55;
-        letter-spacing: normal;
-        color: #1b1b1b;
-        margin-top: 32px; }
-        @media (max-width: 600px) {
-          header.masthead .container .message-panel span {
-            font-size: 16px; } }
       @media (max-width: 991px) {
         header.masthead .container .message-panel {
           left: unset;
           text-align: center;
           margin: auto;
           width: 90%;
+          max-width: 90%;
           position: relative;
           top: unset; }
-          header.masthead .container .message-panel span {
-            margin: auto; }
           header.masthead .container .message-panel h1 {
             font-size: 30px; } }
+      header.masthead .container .message-panel .action-buttons {
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px; }
+        header.masthead .container .message-panel .action-buttons .try-button,
+        header.masthead .container .message-panel .action-buttons .read-button {
+          padding: 16px 40px;
+          width: 220px;
+          max-width: 100%;
+          font-size: 17.5px;
+          font-weight: bold;
+          letter-spacing: 0.43px;
+          text-align: center;
+          border-radius: 0; }
+          @media (max-width: 600px) {
+            header.masthead .container .message-panel .action-buttons .try-button,
+            header.masthead .container .message-panel .action-buttons .read-button {
+              padding: 16px;
+              font-size: 16px; } }
+        header.masthead .container .message-panel .action-buttons .try-button {
+          color: white !important;
+          background-color: #4562fc;
+          text-decoration: none;
+          text-transform: none; }
+        header.masthead .container .message-panel .action-buttons .try-button:hover {
+          background-color: #1782fc;
+          text-transform: none; }
+        header.masthead .container .message-panel .action-buttons .read-button {
+          text-decoration: underline;
+          color: #4562fc !important;
+          background-color: white; }
+        header.masthead .container .message-panel .action-buttons .read-button:hover {
+          color: #1782fc !important; }
+
+section.why-use {
+  text-align: inherit; }
+  section.why-use .container-fluid {
+    width: 100%;
+    max-width: 1440px; }
+  section.why-use .laptop-img {
+    margin-left: -15px;
+    max-width: 100%; }
+  section.why-use .why-title {
+    font-size: 41px;
+    font-weight: bold;
+    letter-spacing: 1.03px;
+    color: #1b1b1b;
+    margin-bottom: 14px; }
+  section.why-use .why-item {
+    font-size: 22px;
+    font-weight: bold;
+    color: #595959;
+    margin-top: 16px;
+    margin-bottom: 4px; }
+  section.why-use .why-item-desc {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: #656565; }
+
+#audit {
+  background-color: #2a2646;
+  color: #ffffff;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  position: relative; }
+  #audit .container {
+    z-index: 1;
+    position: relative; }
+  #audit .bug-bounty-value {
+    font-size: 36px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    line-height: 1; }
+  #audit .bug-bounty-value span {
+    font-size: 16px;
+    padding-top: 3px; }
+  #audit h1 {
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 0.58px; }
+  #audit p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.7px; }
+  #audit a {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+    color: #ffffff;
+    text-decoration: underline; }
+  #audit .audit-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100%; }
+  #audit .arrow-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1782fc;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin-top: 16px; }
+  #audit .arrow-link svg {
+    margin-left: 10px;
+    line-height: 1; }
+  #audit .open-zeppelin-col {
+    border-right: 1px solid #7d7d7d80; }
+  #audit .open-zeppelin-col a,
+  #audit .bug-bounty-col a {
+    text-decoration: none; }
+  #audit .logo-openzeppelin {
+    margin-top: 4px;
+    margin-bottom: 5px; }
+  @media (max-width: 767px) {
+    #audit .open-zeppelin-col {
+      border-right: none;
+      border-bottom: 1px solid #7d7d7d80;
+      width: auto;
+      margin: auto; } }
 
 section.aco-dpiggy {
   width: 100%;

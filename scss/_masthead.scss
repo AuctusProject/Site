@@ -26,7 +26,7 @@ header.masthead {
     }
 
     @media(max-width: 600px) {
-        height: 310px;
+        height: 540px;
     }
 
     .background-images {
@@ -48,8 +48,6 @@ header.masthead {
         position: absolute;
         width: 100%;
         top: 30px;
-        padding: 0 90px;
-        margin-left: -15px;
         align-content: space-between;
         justify-content: space-between;
         display: flex;
@@ -85,6 +83,7 @@ header.masthead {
             padding: 0 5px;
             font-size: 10px;
             top: 15px;
+            margin-left: -15px;
         }
 
         .social-icons {
@@ -117,30 +116,16 @@ header.masthead {
         .message-panel {
             position: absolute;
             top: 25%;
-            max-width: 500px;
-            width: 70%;
+            max-width: 585px;
+            width: 55%;
+            margin:10px;
 
             h1 {
-                font-size: 40px;
+                font-size: 39px;
                 font-weight: bold;
                 line-height: 1.16;
                 letter-spacing: 1px;
                 color: #1b1b1b;
-            }
-
-            span {
-                max-width: 460px;
-                display: block;
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 1.55;
-                letter-spacing: normal;
-                color: #1b1b1b;
-                margin-top: 32px;
-
-                @media(max-width: 600px) {
-                    font-size: 16px;
-                }
             }
 
             @media(max-width: 991px) {
@@ -148,15 +133,57 @@ header.masthead {
                 text-align: center;
                 margin: auto;
                 width: 90%;
+                max-width: 90%;
                 position: relative;
                 top: unset;
 
-                span {
-                    margin: auto;
-                }
-
                 h1 {
                     font-size: 30px;
+                }
+            }
+
+            .action-buttons {
+                display: flex;
+                flex-direction: row;
+                margin-top: 60px;
+
+                .try-button,
+                .read-button {
+                    padding: 16px 40px;
+                    width: 220px;
+                    max-width: 100%;
+                    font-size: 17.5px;
+                    font-weight: bold;
+                    letter-spacing: 0.43px;
+                    text-align: center;
+                    border-radius: 0;
+
+                    @media(max-width: 600px) {
+                        padding: 16px;
+                        font-size: 16px;
+                    }
+                }
+
+                .try-button {
+                    color: white !important;
+                    background-color: #4562fc;
+                    text-decoration: none;
+                    text-transform: none;
+                }
+    
+                .try-button:hover {
+                    background-color: #1782fc;
+                    text-transform: none;
+                }
+
+                .read-button {
+                    text-decoration: underline; 
+                    color: #4562fc !important;
+                    background-color: white;
+                }
+
+                .read-button:hover {
+                    color: #1782fc !important;
                 }
             }
         }
