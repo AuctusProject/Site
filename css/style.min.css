@@ -310,8 +310,8 @@ section.why-use {
     cursor: pointer;
     display: block;
     margin-top: 16px; }
-  #audit .arrow-link svg {
-    margin-left: 10px;
+  #audit .arrow-link i {
+    margin-left: 6px;
     line-height: 1; }
   #audit .open-zeppelin-col {
     border-right: 1px solid #7d7d7d80; }
@@ -449,6 +449,19 @@ section.token {
     color: #1b1b1b;
     max-width: 280px;
     margin: 40px auto; }
+  section.token .arrow-link-wrapper {
+    margin: auto; }
+  section.token .arrow-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1782fc;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 32px; }
+  section.token .arrow-link i {
+    margin-left: 6px;
+    line-height: 1; }
 
 section.team {
   text-align: center;

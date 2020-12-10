@@ -46,4 +46,23 @@ section.token {
         max-width: 280px;
         margin: 40px auto;
     }
+    
+    .arrow-link-wrapper {
+        margin: auto;
+    }
+
+    .arrow-link {
+        font-size: 16px;
+        font-weight: 500;
+        color: #1782fc;
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    .arrow-link i {
+        margin-left: 6px;
+        line-height: 1;
+    }
 }
