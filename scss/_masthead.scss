@@ -147,20 +147,29 @@ header.masthead {
                 flex-direction: row;
                 margin-top: 60px;
 
+                @media(max-width: 600px) {
+                    flex-direction: column;
+                    margin-top: 20px;
+                }
+
                 .try-button,
                 .read-button {
-                    padding: 16px 40px;
-                    width: 220px;
+                    padding: 8px 16px;
+                    width: 230px;
                     max-width: 100%;
-                    font-size: 17.5px;
+                    font-size: 16px;
                     font-weight: bold;
                     letter-spacing: 0.43px;
                     text-align: center;
                     border-radius: 0;
 
                     @media(max-width: 600px) {
-                        padding: 16px;
-                        font-size: 16px;
+                        padding: 12px;
+                        font-size: 14px;
+                    }
+
+                    img {
+                        margin-right: 4px;
                     }
                 }
 
@@ -176,10 +185,32 @@ header.masthead {
                     text-transform: none;
                 }
 
+                .bsc-button {
+                    color: white !important;
+                    background-color: #ebbd36;
+                    text-decoration: none;
+                    text-transform: none;
+
+                    img {                    
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                    }
+                }
+    
+                .bsc-button:hover {
+                    background-color: #e0ad11;
+                    text-transform: none;
+                }
+
                 .read-button {
                     text-decoration: underline; 
                     color: #4562fc !important;
-                    background-color: white;
+                    background-color: white;                
+                    
+                    @media(min-width: 992px) {
+                        padding-left: 0;
+                        text-align: left;
+                    }
                 }
 
                 .read-button:hover {

@@ -210,12 +210,16 @@ header.masthead {
         display: flex;
         flex-direction: row;
         margin-top: 60px; }
+        @media (max-width: 600px) {
+          header.masthead .container .message-panel .action-buttons {
+            flex-direction: column;
+            margin-top: 20px; } }
         header.masthead .container .message-panel .action-buttons .try-button,
         header.masthead .container .message-panel .action-buttons .read-button {
-          padding: 16px 40px;
-          width: 220px;
+          padding: 8px 16px;
+          width: 230px;
           max-width: 100%;
-          font-size: 17.5px;
+          font-size: 16px;
           font-weight: bold;
           letter-spacing: 0.43px;
           text-align: center;
@@ -223,8 +227,11 @@ header.masthead {
           @media (max-width: 600px) {
             header.masthead .container .message-panel .action-buttons .try-button,
             header.masthead .container .message-panel .action-buttons .read-button {
-              padding: 16px;
-              font-size: 16px; } }
+              padding: 12px;
+              font-size: 14px; } }
+          header.masthead .container .message-panel .action-buttons .try-button img,
+          header.masthead .container .message-panel .action-buttons .read-button img {
+            margin-right: 4px; }
         header.masthead .container .message-panel .action-buttons .try-button {
           color: white !important;
           background-color: #4562fc;
@@ -233,10 +240,25 @@ header.masthead {
         header.masthead .container .message-panel .action-buttons .try-button:hover {
           background-color: #1782fc;
           text-transform: none; }
+        header.masthead .container .message-panel .action-buttons .bsc-button {
+          color: white !important;
+          background-color: #ebbd36;
+          text-decoration: none;
+          text-transform: none; }
+          header.masthead .container .message-panel .action-buttons .bsc-button img {
+            padding-top: 3px;
+            padding-bottom: 3px; }
+        header.masthead .container .message-panel .action-buttons .bsc-button:hover {
+          background-color: #e0ad11;
+          text-transform: none; }
         header.masthead .container .message-panel .action-buttons .read-button {
           text-decoration: underline;
           color: #4562fc !important;
           background-color: white; }
+          @media (min-width: 992px) {
+            header.masthead .container .message-panel .action-buttons .read-button {
+              padding-left: 0;
+              text-align: left; } }
         header.masthead .container .message-panel .action-buttons .read-button:hover {
           color: #1782fc !important; }
 
@@ -617,7 +639,7 @@ section.where-to-buy {
       section.where-to-buy .exchanges {
         justify-content: center; }
         section.where-to-buy .exchanges a {
-          align-self: flex-end;
+          align-self: flex-start;
           margin: 0 40px; } }
     section.where-to-buy .exchanges img {
       max-width: 100%; }
@@ -639,7 +661,8 @@ section.get-involved {
         padding-top: 50px;
         padding-bottom: 50px; } }
     section.get-involved .container-get-involved img {
-      margin: 0 50px; }
+      margin: 0 50px;
+      max-width: 360px; }
     section.get-involved .container-get-involved .get-involved-details {
       max-width: 540px;
       z-index: 1;
