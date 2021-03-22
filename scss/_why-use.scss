@@ -13,6 +13,7 @@ section.why-use {
         min-height: 100px;
         max-width: 1000px;
         margin: auto;
+        padding: 8px;
     }
 
     .why-title {
@@ -31,6 +32,10 @@ section.why-use {
         letter-spacing: normal;
         color: #5de9d4;
         margin-left: 20px;
+        @media(max-width:767px) {
+            text-align: center;
+            margin: auto;
+        }
     }
 
     .why-item-desc {
@@ -39,7 +44,12 @@ section.why-use {
         letter-spacing: 0.39px;
         text-align: left;
         color: #ffffff;
-        max-width: 340px;
+        max-width: 333px;
         margin-left: 20px;
+
+        @media(max-width:767px) {
+            text-align: center;
+            margin: auto;
+        }
     }
 }

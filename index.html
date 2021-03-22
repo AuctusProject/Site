@@ -37,10 +37,8 @@
 </head>
 <body id="page-top" class="auctus">
     <header class="masthead banner-removed">
-        <canvas id="nokey" width="800" height="800">
-            Your Browser Don't Support Canvas, Please Download Chrome ^_^``
-        </canvas>
-        <div class="container">
+        <div class="header-background"></div>
+        <div class="container">            
             <div class="top-menu">
                 <div class="ml-auto social-icons">
                     <a href="https://discord.gg/9JqeMxs" title="Discord" target="_blank">
@@ -66,13 +64,13 @@
             <div class="message-panel">
                 <h1>Auctus brings on-chain options to the DeFi ecosystem</h1>
                 <div class="action-buttons">
-                    <a href="https://app.auctus.org/" target="_blank" class="try-button m-auto m-lg-0 mr-lg-4">
+                    <a href="https://app.auctus.org/" target="_blank" class="try-button m-2">
                         <img class="launch-icon" src="/img/masthead/icon_eth.png">
                         <span>
                             LAUNCH APP
                         </span>
                     </a>
-                    <a href="https://bsc.auctus.org/" target="_blank" class="try-button bsc-button m-auto m-lg-0">
+                    <a href="https://bsc.auctus.org/" target="_blank" class="try-button bsc-button m-2">
                         <img class="launch-icon" src="/img/masthead/icon_bsc.png">
                         <span>
                             LAUNCH APP ON BSC
@@ -97,34 +95,34 @@
                 </div>
             </div>
             <div class="row why-row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="why-item">Flash Exercise</div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="why-item-desc">At any time before expiration, holders can exercise options at their discretion.</div>
                 </div>
             </div>
             <div class="row why-row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="why-item">ERC-20</div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="why-item-desc">Making options transferable, fungible, and ready for further DeFi integrations.</div>
                 </div>
             </div>
             <div class="row why-row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="why-item">Non-Custodial</div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="why-item-desc">You’re always in control of all of your funds.</div>
                 </div>
             </div>
             <div class="row why-row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="why-item">No counterparty risk</div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="why-item-desc">No counterparty risk since all positions are fully collateralized.</div>
                 </div>
             </div>
@@ -154,15 +152,18 @@
         <img alt="" class="audit-background" src="/images/audit_bg.png"></img>
     </section>
     <section class="token" id="token">
+        <div class="token-background"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Auctus Token (AUC)</h2>
-                    <h1>What is AUC?</h1>
-                    <h3>AUC is directly tied to the success of the Auctus network.</h3>
-                    <a href="https://github.com/AuctusProject/AIP/issues/1#issuecomment-721382763" target="_blank" class="try-button">
-                        <span class="arrow-link">AUCTUS' BLACK HOLE<i class="fas fa-chevron-right"></i></span>
-                    </a>
+                    <div class="pl-lg-5">
+                        <h2>Auctus Token (AUC)</h2>
+                        <h1>What is AUC?</h1>
+                        <h3>AUC is directly tied to the success of the Auctus network.</h3>
+                        <a href="https://github.com/AuctusProject/AIP/issues/1#issuecomment-721382763" target="_blank" class="try-button">
+                            <span class="arrow-link">AUCTUS' BLACK HOLE<i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 auc-token-items-col">
                     <div class="auc-token-item">
@@ -306,14 +307,19 @@
     </section>
     
     <section class="get-involved">
-        <div class="container-get-involved">
-            <div class="get-involved-details">
-                <img src="./img/getinvolved/discord-logo.png">
-                <h2><i class="fab fa-discord d-inline-block d-md-none"></i>Get Involved</h2>
-                <p>Join our community to learn more about Auctus, participate in discussions with the team, and contribute to future of the decentralized finance apps.</p>
-                <a href="https://discord.gg/9JqeMxs" title="Discord" target="_blank" class="try-button">
-                    <span class="arrow-link">CONNECT<i class="fas fa-chevron-right"></i></span>
-                </a>
+        <div class="involved-background"></div>
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-6 col-md-6">
+                    <div class="get-involved-details">
+                        <img src="./img/getinvolved/discord-logo.png">
+                        <h2>Get Involved</h2>
+                        <p>Join our community to learn more about Auctus, participate in discussions with the team, and contribute to future of the decentralized finance apps.</p>
+                        <a href="https://discord.gg/9JqeMxs" title="Discord" target="_blank" class="try-button">
+                            <span class="arrow-link">CONNECT<i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </div>
+                </div>            
             </div>
         </div>
     </section>
@@ -391,7 +397,6 @@
     <script src="vendor/owl/owl.carousel.min.js"></script>
     <script src="js/cookies.js"></script>
     <script src="js/script.js?v=40"></script>
-    <script src="js/canvas.js"></script>
     <script title="blog-script">
         var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
         $(function () {

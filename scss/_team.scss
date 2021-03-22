@@ -120,6 +120,7 @@ section.team {
       max-width: 700px;
       margin: auto;
       margin-bottom: 40px;
+      padding: 12px;
 
       @media (max-width: 768px) {
         flex-direction: column;
@@ -163,6 +164,12 @@ section.team {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  max-width: 100%;
+
+  @media(max-width:430px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }  
 }
 
 .owl_wrapper .owl-item {

@@ -5,9 +5,19 @@ header.masthead {
     position: relative;
     height: 100%;
     background-repeat: no-repeat;
-    min-height: 450px;
+    min-height: 624px;
     max-height: 753px;
     padding-top: 20px;
+
+    .header-background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-image: url('/img/masthead/background.png');
+        background-position-x: right;
+        background-repeat: no-repeat;
+    }
 
     canvas {
         position: absolute;
@@ -29,10 +39,6 @@ header.masthead {
     
     @media(max-width: 720px) {
         padding-top: 80px;
-    }
-
-    @media(max-width: 600px) {
-        height: 540px;
     }
 
     .background-images {
@@ -99,10 +105,6 @@ header.masthead {
             display: flex;
             align-items: center;
             justify-content: center;
-
-            @media(max-width: 991px) {
-                color: #1b1b1b;
-            }
         }
     
         .social-icons i {
