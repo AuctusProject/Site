@@ -19,6 +19,9 @@
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="css/slick.css?v=5" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css?v=5" />
+    <link href="vendor/owl/owl.carousel.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Begin Inspectlet Asynchronous Code -->
     <script type="text/javascript">
         (function () {
@@ -34,18 +37,12 @@
 </head>
 <body id="page-top" class="auctus">
     <header class="masthead banner-removed">
-        <div class="background-images d-none d-lg-block">
-            <img class="left" src="./img/masthead/img_banner2.png" />
-            <img class="right" src="./img/masthead/img_banner1.png" />            
-        </div>
+        <canvas id="nokey" width="800" height="800">
+            Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+        </canvas>
         <div class="container">
             <div class="top-menu">
-                <div>
-                    <div class="d-none d-lg-block">
-                        <img class="logo-auctus" src="./img/global/logo_auctus.svg" />
-                    </div>
-                </div>
-                <div class="social-icons">
+                <div class="ml-auto social-icons">
                     <a href="https://discord.gg/9JqeMxs" title="Discord" target="_blank">
                         <i class="fab fa-discord"></i>
                     </a>
@@ -63,8 +60,8 @@
                     </a>
                 </div>
             </div>
-            <div class="d-block d-lg-none center my-5">
-                <img class="logo-auctus" src="./img/global/logo_auctus.svg" />
+            <div class="logo-wrapper">
+                <img class="logo-auctus" src="./img/global/logo_white.svg" />
             </div>
             <div class="message-panel">
                 <h1>Auctus brings on-chain options to the DeFi ecosystem</h1>
@@ -72,13 +69,13 @@
                     <a href="https://app.auctus.org/" target="_blank" class="try-button m-auto m-lg-0 mr-lg-4">
                         <img class="launch-icon" src="/img/masthead/icon_eth.png">
                         <span>
-                            Launch app
+                            LAUNCH APP
                         </span>
                     </a>
                     <a href="https://bsc.auctus.org/" target="_blank" class="try-button bsc-button m-auto m-lg-0">
                         <img class="launch-icon" src="/img/masthead/icon_bsc.png">
                         <span>
-                            Launch app on BSC
+                            LAUNCH APP ON BSC
                         </span>
                     </a>
                 </div>
@@ -95,18 +92,39 @@
     <section class="why-use">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 d-none d-lg-block">
-                    <img class="laptop-img" src="/img/why-use/img_laptop.png">
-                </div>
-                <div class="col-lg-6 mb-5 text-center text-lg-left">
+                <div class="col-lg-12">
                     <div class="why-title">Why use Auctus?</div>
+                </div>
+            </div>
+            <div class="row why-row">
+                <div class="col-lg-6">
                     <div class="why-item">Flash Exercise</div>
+                </div>
+                <div class="col-lg-6">
                     <div class="why-item-desc">At any time before expiration, holders can exercise options at their discretion.</div>
+                </div>
+            </div>
+            <div class="row why-row">
+                <div class="col-lg-6">
                     <div class="why-item">ERC-20</div>
+                </div>
+                <div class="col-lg-6">
                     <div class="why-item-desc">Making options transferable, fungible, and ready for further DeFi integrations.</div>
+                </div>
+            </div>
+            <div class="row why-row">
+                <div class="col-lg-6">
                     <div class="why-item">Non-Custodial</div>
+                </div>
+                <div class="col-lg-6">
                     <div class="why-item-desc">You’re always in control of all of your funds.</div>
+                </div>
+            </div>
+            <div class="row why-row">
+                <div class="col-lg-6">
                     <div class="why-item">No counterparty risk</div>
+                </div>
+                <div class="col-lg-6">
                     <div class="why-item-desc">No counterparty risk since all positions are fully collateralized.</div>
                 </div>
             </div>
@@ -121,13 +139,15 @@
               <p>To ensure top-notch security, Auctus protocol smart contracts were audited by Open Zeppelin and have undergone rigorous internal testing.</p>
               <p>We also have an ongoing bug bounty program where community members can report any bugs or vulnerabilities.</p>
             </div>
-            <div class="offset-lg-0 offset-md-2 col-md-4 text-center my-auto py-3 open-zeppelin-col">
+            <div class="offset-lg-0 offset-md-2 col-md-4 text-center my-auto py-4 open-zeppelin-col">
               <img alt="" class="logo-openzeppelin" src="/img/audit/logo_openzeppelin.svg"></img>
-              <a href="https://blog.openzeppelin.com/aco-protocol-audit/" target="_blank" rel="noopener noreferrer"><span class="arrow-link">Protocol Security<i class="fas fa-arrow-right"></i></span></a>
+              <a href="https://blog.openzeppelin.com/aco-protocol-audit/" target="_blank" rel="noopener noreferrer">
+                <span class="arrow-link">PROTOCOL SECURITY<i class="fas fa-chevron-right"></i></span>
+              </a>
             </div>
-            <div class="col-md-4 text-center my-auto py-3 bug-bounty-col">
+            <div class="col-md-4 text-center my-auto py-4 bug-bounty-col">
               <div class="bug-bounty-value"><span>$</span>15,000<span>.00</span></div>
-              <a href="https://docs.auctus.org/security#bug-bounty" target="_blank" rel="noopener noreferrer"><span class="arrow-link">Bug Bounty<i class="fas fa-arrow-right"></i></span></a>
+              <a href="https://docs.auctus.org/security#bug-bounty" target="_blank" rel="noopener noreferrer"><span class="arrow-link">BUG BOUNTY<i class="fas fa-chevron-right"></i></span></a>
             </div>
           </div>
         </div>
@@ -135,25 +155,29 @@
     </section>
     <section class="token" id="token">
         <div class="container">
-            <h2>Auctus Token (AUC)</h2>
-            <h1>What is AUC?</h1>
-            <h3>AUC is directly tied to the success of the Auctus network.</h3>
             <div class="row">
-                <div class="col-md-4 text-center">
-                    <img src="img/token/buy.svg" />
-                    <p>50% of fees are used to buy AUC</p>
+                <div class="col-lg-6">
+                    <h2>Auctus Token (AUC)</h2>
+                    <h1>What is AUC?</h1>
+                    <h3>AUC is directly tied to the success of the Auctus network.</h3>
+                    <a href="https://github.com/AuctusProject/AIP/issues/1#issuecomment-721382763" target="_blank" class="try-button">
+                        <span class="arrow-link">AUCTUS' BLACK HOLE<i class="fas fa-chevron-right"></i></span>
+                    </a>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img src="img/token/liquidity.svg" />
-                    <p>50% of fees are used to provide support and liquidity for AUC on DEXs</p>
+                <div class="col-lg-6 auc-token-items-col">
+                    <div class="auc-token-item">
+                        <img src="img/token/buy.svg" />
+                        <p>50% of fees are used to buy AUC</p>
+                    </div>
+                    <div class="auc-token-item">
+                        <img src="img/token/liquidity.svg" />
+                        <p>50% of fees are used to provide support and liquidity for AUC on DEXs</p>
+                    </div>
+                    <div class="auc-token-item">
+                        <img src="img/token/governance.svg" />
+                        <p>Governance rights coming 2021</p>
+                    </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img src="img/token/governance.svg" />
-                    <p>Governance rights coming 2021</p>
-                </div>
-            </div>
-            <div class="row">
-                <a class="arrow-link-wrapper" href="https://github.com/AuctusProject/AIP/issues/1#issuecomment-721382763" target="_blank" rel="noopener noreferrer"><span class="arrow-link">Read more about Auctus' Black Hole token model<i class="fas fa-arrow-right"></i></span></a>
             </div>
         </div>
     </section>    
@@ -161,86 +185,88 @@
         <div class="container">
             <h2>Who we are?</h2>
             <h3>Our team has a lot of experience in building software and we apply agile approach to deliver exceptional DeFi products.</h3>
-            <div class="row team-cards">
-                <div class="team-card-wrapper">
-                    <div class="team-card">
-                        <img class="member-picture" src="./img/team/img_vinicius.png"></img>
-                        <div class="member-name">VINICIUS MELO</div>
-                        <div class="member-position">Head of Strategy</div>
-                        <div class="blue-separator"></div>
-                        <div class="member-description">
-                            Previously Investment Analyst, having worked at one of Brazil's main pension funds (FUNPRESP-JUD). He has the Brazilian market certifications of Investment Analyst. <br/><br/>He holds a BSc in Mechanical Engineering.
-                        </div>
-                        <div class="member-social">
-                            <a href="https://twitter.com/viniciusfbm" title="Twitter" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/vinicius-melo-03a68b134/" title="Linkedin" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
+            <div class="owl_wrapper">
+                <div class="owl_selectors">
+                    <div class="prev no_select"><i class="fas fa-chevron-left"></i></div>
+                    <div class="next no_select"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="team-card-wrapper item" style="width: 284px">
+                        <div class="team-card">
+                            <img class="member-picture" src="./img/team/img_vinicius.png"></img>
+                            <div class="member-name">VINICIUS MELO</div>
+                            <div class="member-position">Head of Strategy</div>
+                            <div class="member-description">
+                                Previously Investment Analyst, having worked at one of Brazil's main pension funds (FUNPRESP-JUD). He has the Brazilian market certifications of Investment Analyst. <br/><br/>He holds a BSc in Mechanical Engineering.
+                            </div>
+                            <div class="member-social">
+                                <a href="https://twitter.com/viniciusfbm" title="Twitter" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/vinicius-melo-03a68b134/" title="Linkedin" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="team-card-wrapper">
-                    <div class="team-card">
-                        <img class="member-picture" src="./img/team/img_thiago.png"></img>
-                        <div class="member-name">THIAGO ARAÚJO</div>
-                        <div class="member-position">Senior Software Engineer</div>
-                        <div class="blue-separator"></div>
-                        <div class="member-description">
-                            Thiago brings along 10 years of experience as a Software engineer. Prior to joining Auctus, he led numerous large scale software while working at dti digital. <br/><br/>He holds a BSc in Control and Automation Engineering.
-                        </div>
-                        <div class="member-social">
-                            <a href="https://github.com/thiagomva" title="Github" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/thiago-ara%C3%BAjo-092aa033/" title="Linkedin" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="team-card-wrapper">
-                    <div class="team-card">
-                        <img class="member-picture" src="./img/team/img_ariny.png"></img>
-                        <div class="member-name">ARINY GUEDES</div>
-                        <div class="member-position">Lead Ethereum Engineer</div>
-                        <div class="blue-separator"></div>
-                        <div class="member-description">
-                            Ariny brings more than 10 years of experience as a Software engineer, 7 years at dti digital. He is an expert in C#, Java, C++ and Ethereum Blockchain. <br/><br/>He holds a BSc in Control and Automation Engineering.
-                        </div>
-                        <div class="member-social">
-                            <a href="https://github.com/arinyguedes" title="Github" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/ariny-guedes-51501215a/" title="Linkedin" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
+                    <div class="team-card-wrapper item">
+                        <div class="team-card">
+                            <img class="member-picture" src="./img/team/img_thiago.png"></img>
+                            <div class="member-name">THIAGO ARAÚJO</div>
+                            <div class="member-position">Senior Software Engineer</div>
+                            <div class="member-description">
+                                Thiago brings along 10 years of experience as a Software engineer. Prior to joining Auctus, he led numerous large scale software while working at dti digital. <br/><br/>He holds a BSc in Control and Automation Engineering.
+                            </div>
+                            <div class="member-social">
+                                <a href="https://github.com/thiagomva" title="Github" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/thiago-ara%C3%BAjo-092aa033/" title="Linkedin" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>                            
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="team-card-wrapper">
-                    <div class="team-card">
-                        <img class="member-picture" src="./img/team/img_iuri.png"></img>
-                        <div class="member-name">IURI SANTOS</div>
-                        <div class="member-position">UI/UX Lead Designer</div>
-                        <div class="blue-separator"></div>
-                        <div class="member-description">
-                            Iuri brings more than 10 years of experience as a UX designer. He is responsible for discovering and developing ways to design and improve user experiences. <br/><br/>He holds a BSc in Social Communication.
-                        </div>
-                        <div class="member-social">
-                            <a href="https://www.linkedin.com/in/iuri-santo-a83b4548/" title="Linkedin" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
+                    <div class="team-card-wrapper item">
+                        <div class="team-card">
+                            <img class="member-picture" src="./img/team/img_ariny.png"></img>
+                            <div class="member-name">ARINY GUEDES</div>
+                            <div class="member-position">Lead Ethereum Engineer</div>
+                            <div class="member-description">
+                                Ariny brings more than 10 years of experience as a Software engineer, 7 years at dti digital. He is an expert in C#, Java, C++ and Ethereum Blockchain. <br/><br/>He holds a BSc in Control and Automation Engineering.
+                            </div>
+                            <div class="member-social">
+                                <a href="https://github.com/arinyguedes" title="Github" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ariny-guedes-51501215a/" title="Linkedin" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="team-card-wrapper item">
+                        <div class="team-card">
+                            <img class="member-picture" src="./img/team/img_iuri.png"></img>
+                            <div class="member-name">IURI SANTOS</div>
+                            <div class="member-position">UI/UX Lead Designer</div>
+                            <div class="member-description">
+                                Iuri brings more than 10 years of experience as a UX designer. He is responsible for discovering and developing ways to design and improve user experiences. <br/><br/>He holds a BSc in Social Communication.
+                            </div>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/iuri-santo-a83b4548/" title="Linkedin" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
             </div>
             <div class="row advisor-section">
                 <div class="title-row">
-                    <div></div>
+                    <div class="separator"></div>
                     <h2>Advisor</h2>
-                    <div></div>
+                    <div class="separator"></div>
                 </div>
                 <div class="advisor-card">
                     <div class="advisor-row">
@@ -265,6 +291,7 @@
                         Felix brings nearly 10 years of experience as a derivatives trader, and 3 years as a crypto asset hedge fund manager. His focus is architecting an improved token economy and governance structure.<br /><br />He's a regular university guest lecturer on crypto economics.
                     </div>                    
                 </div>
+                <div class="separator"></div>
             </div>
         </div>
     </section>
@@ -280,11 +307,13 @@
     
     <section class="get-involved">
         <div class="container-get-involved">
-            <img class="d-none d-md-block" src="./img/getinvolved/discord-logo.svg">
             <div class="get-involved-details">
+                <img src="./img/getinvolved/discord-logo.png">
                 <h2><i class="fab fa-discord d-inline-block d-md-none"></i>Get Involved</h2>
                 <p>Join our community to learn more about Auctus, participate in discussions with the team, and contribute to future of the decentralized finance apps.</p>
-                <a href="https://discord.gg/9JqeMxs" title="Discord" target="_blank" class="connect-link">Connect&nbsp;<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                <a href="https://discord.gg/9JqeMxs" title="Discord" target="_blank" class="try-button">
+                    <span class="arrow-link">CONNECT<i class="fas fa-chevron-right"></i></span>
+                </a>
             </div>
         </div>
     </section>
@@ -303,7 +332,7 @@
             </a>
         </div>
     </section>
-    <footer style="background-color: #fafafa;">
+    <footer>
         <div class="container">
             <div class="row legal-container">
                 <div class="col-lg-12">
@@ -329,7 +358,7 @@
             </div>
             <div class="row mb-4 align-items-center">
                 <div class="col-sm-6 text-sm-left text-center">
-                    <img src="./img/footer/logo_black.png" />
+                    <img class="footer-logo" src="./img/global/logo_white.svg"/>
                 </div>
                 <div class="col-sm-6 text-sm-right text-center">
                     <div class="social-icons my-3">
@@ -359,13 +388,13 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="vendor/owl/owl.carousel.min.js"></script>
     <script src="js/cookies.js"></script>
     <script src="js/script.js?v=40"></script>
+    <script src="js/canvas.js"></script>
     <script title="blog-script">
         var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-
         $(function () {
-
             var $content = $('#newsContainer');
             var $section = $('.blog');
             var $template = $('#newsContainer').html();
@@ -426,17 +455,38 @@
         $(".banner-dismiss").click(onDismissBanner);
 
         function createTeamSlider() {
-            var width = $(window).width();
-            if (width < 1140) {
-                $('.team-cards').slick({
-                    dots: true,
-                    variableWidth: true,
-                    slidesToShow: 1,
-                    prevArrow: false,
-                    nextArrow: false,
-                    slidesToScroll: 1
-                });
+            var owl = $('.owl-carousel');
+            var setPositionsClasses = function(event) {
+                setTimeout(() => {
+                    $('.owl-item')
+                        .removeClass('middle')
+                        .removeClass('middle_beside')
+                        .removeClass('next_to_mid')
+                        .removeClass('prev_to_mid');
+                    $('.active').eq(0).addClass('middle');
+                    $('.active').eq(1).addClass('middle_beside');
+                    $('.active').eq(1).nextAll().addClass('next_to_mid');
+                    $('.active').eq(0).prevAll().addClass('prev_to_mid');
+                },1)
             }
+            owl.on('translate.owl.carousel', setPositionsClasses);
+            owl.on('initialized.owl.carousel', setPositionsClasses);
+
+            owl.owlCarousel({
+                addClassActive: true, //important
+                loop: true,
+                items: 2,
+                autoWidth: true,
+                margin: 10,
+                dots: false
+            });
+            
+            $('.owl_wrapper .next').click(function() {
+                owl.trigger('next.owl.carousel');
+            })
+            $('.owl_wrapper .prev').click(function() {
+                owl.trigger('prev.owl.carousel');
+            })
         }
         createTeamSlider();        
     </script>
@@ -488,10 +538,6 @@
         window.intercomSettings = {
             app_id: "vccdldj3"
         };
-    </script>
-
-    <script>
-
     </script>
 </body>
 </html>

@@ -1,10 +1,12 @@
 // Styling for the footer
 footer {
     position: relative;
-    color: #3f3f3f;
+
+    .footer-logo {
+        height: 38px;
+    }
 
     .legal-container {
-        border-top: 1px solid #cacaca;
         font-size: 12px;
         font-weight: 300;
         font-stretch: normal;
@@ -12,11 +14,11 @@ footer {
         line-height: 1.83;
         letter-spacing: 0.3px;
         text-align: left;
-        color: #8b8b8b;
+        color: white;
         padding: 60px 0px;
 
         a {
-            color: #828282 !important;
+            color: white !important;
             text-decoration: underline !important;
             font-weight: bold;
         }
@@ -24,7 +26,6 @@ footer {
 
     .copyright {
         padding: 20px 0;
-        background-color: #252525;
         font-size: 9.5px;
         font-weight: 300;
         font-stretch: normal;
@@ -36,7 +37,7 @@ footer {
 
     .social-icons {
         font-size: 20px;
-        color: #464646;
+        color: #5de9d4;
     }
 
     .social-icons i {

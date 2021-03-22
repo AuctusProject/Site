@@ -9,6 +9,12 @@ header.masthead {
     max-height: 753px;
     padding-top: 20px;
 
+    canvas {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
     &.banner-removed {
         padding-top: 0px;
     }
@@ -106,26 +112,31 @@ header.masthead {
 
     .container {
         height: 100%;
-        padding-top: 15%;
         position: relative;
 
-        @media(max-width: 600px) {
-            padding-top: 40px;
+        .logo-wrapper {
+            padding-top: 120px;
+            padding-bottom: 80px;
+            text-align: center;
         }
 
         .message-panel {
-            position: absolute;
-            top: 25%;
-            max-width: 585px;
-            width: 55%;
-            margin:10px;
+            max-width: 740px;
+            width: calc(100% - 20px);
+            margin: 10px auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
 
             h1 {
-                font-size: 39px;
-                font-weight: bold;
-                line-height: 1.16;
-                letter-spacing: 1px;
-                color: #1b1b1b;
+                font-size: 46px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: 1.15px;
+                text-align: center;
+                color: #ffffff;
             }
 
             @media(max-width: 991px) {
@@ -150,71 +161,6 @@ header.masthead {
                 @media(max-width: 600px) {
                     flex-direction: column;
                     margin-top: 20px;
-                }
-
-                .try-button,
-                .read-button {
-                    padding: 8px 16px;
-                    width: 230px;
-                    max-width: 100%;
-                    font-size: 16px;
-                    font-weight: bold;
-                    letter-spacing: 0.43px;
-                    text-align: center;
-                    border-radius: 0;
-
-                    @media(max-width: 600px) {
-                        padding: 12px;
-                        font-size: 14px;
-                    }
-
-                    img {
-                        margin-right: 4px;
-                    }
-                }
-
-                .try-button {
-                    color: white !important;
-                    background-color: #4562fc;
-                    text-decoration: none;
-                    text-transform: none;
-                }
-    
-                .try-button:hover {
-                    background-color: #1782fc;
-                    text-transform: none;
-                }
-
-                .bsc-button {
-                    color: white !important;
-                    background-color: #ebbd36;
-                    text-decoration: none;
-                    text-transform: none;
-
-                    img {                    
-                        padding-top: 3px;
-                        padding-bottom: 3px;
-                    }
-                }
-    
-                .bsc-button:hover {
-                    background-color: #e0ad11;
-                    text-transform: none;
-                }
-
-                .read-button {
-                    text-decoration: underline; 
-                    color: #4562fc !important;
-                    background-color: white;                
-                    
-                    @media(min-width: 992px) {
-                        padding-left: 0;
-                        text-align: left;
-                    }
-                }
-
-                .read-button:hover {
-                    color: #1782fc !important;
                 }
             }
         }

@@ -1,9 +1,7 @@
 section.blog {
-    background: white;
     padding-top: 72px;
     padding-bottom: 1px;
     height: unset;
-    color: #1b1b1b;
 
     .container {
         height: unset;
@@ -12,13 +10,11 @@ section.blog {
     h2 {
         margin: 0 0 50px 0px;
         font-size: 41px;
-        font-weight: bold;
+        font-weight: normal;
         font-stretch: normal;
         font-style: normal;
-        line-height: 1.16;
         letter-spacing: 1.03px;
         text-align: center;
-        color: #1b1b1b;
     }
 
     @media(max-width:600px) {
@@ -61,46 +57,56 @@ section.blog {
         }
 
         .news-card-title {
-            font-size: 21px;
-            font-weight: bold;
+            font-size: 16px;
+            font-weight: 100;
             font-stretch: normal;
             font-style: normal;
-            line-height: 1.25;
-            letter-spacing: 0.55px;
+            line-height: 1.63;
+            letter-spacing: 0.4px;
             text-align: left;
-            color: #404040;
             height: 80px;
             overflow: hidden;
             text-transform: uppercase;
             text-overflow: ellipsis;
             max-width: calc(100vw - 70px);
             margin: 5px 0;
-            z-index: 5;
+            z-index: 5;            
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
         }
 
         .news-card-date {
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: 0.35px;            
             display: block;
-            color: #404040;
-            font-size: 12px;
             margin-top: 18px;
         }
 
         .read-more {
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 600;
             font-stretch: normal;
             font-style: normal;
             letter-spacing: 0.35px;
             text-align: left;
-            color: #4562fc;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical; 
+            color: #5de9d4;            
             margin-top: 16px;
 
             i {
                 margin-left: 10px;
             }
         }
+    }
+
+    .slick-dots li button:before {
+        color: white;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #5de9d4 !important;
     }
 }

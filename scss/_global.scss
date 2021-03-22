@@ -3,8 +3,9 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: Gilroy,'Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
+    background-color: #000000;
 }
 
 a{
@@ -104,4 +105,80 @@ a:hover{
 
 .clickable {
     cursor: pointer;
+}
+
+.try-button,
+.read-button {
+    padding: 8px;
+    width: 235px;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-align: center;
+    border: solid 1px #5de9d4;
+    border-radius: 32.5px;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: 600px) {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    img {
+        margin-right: 8px;
+    }
+}
+
+.try-button {
+    color: black !important;
+    background-color: #5de9d4;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.try-button:hover {
+    background-color: #5de9d4cc;
+    text-transform: none;
+}
+
+.bsc-button {
+    color: #5de9d4 !important;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: none;
+
+    img {                    
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+.bsc-button:hover {
+    background-color: #5de9d420;
+    text-transform: none;
+}
+
+.read-button {
+    border: none;
+    text-decoration: underline; 
+    color: #ffffff !important;
+}
+
+.read-button:hover {
+    color: #e2e2e2 !important;
+}
+
+.arrow-link {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.arrow-link i {
+    margin-left: 14px;
+    line-height: 1;
 }

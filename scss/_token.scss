@@ -1,8 +1,10 @@
 section.token {
-    padding-top: 115px;
+    padding-top: 155px;
+    padding-bottom: 100px;
 
     img {
-        height: 64px;
+        height: 39px;
+        margin-right: 38px;
     }
 
     @media(max-width:600px) {
@@ -10,59 +12,57 @@ section.token {
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 13px;
         font-weight: bold;
-        line-height: 2.02;
-        letter-spacing: 0.59px;
-        text-align: center;
-        color: #4562fc;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.33px;
+        color: #5de9d4;
     }
 
     h1 {
-        font-size: 41px;
-        font-weight: bold;
-        line-height: 1.16;
-        letter-spacing: 1.03px;
-        text-align: center;
-        color: #1b1b1b;
+        font-size: 28px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.7px;
+        color: #ffffff;
+        margin-top: 8px;
     }
 
     h3 {
-        max-width: 440px;
-        margin: auto;
-        font-size: 19.5px;
-        line-height: 1.44;
-        text-align: center;
-        color: #666666;
-        margin-top: 20px;
-        margin-bottom: 50px;
+        font-size: 16px;
+        font-weight: 100;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        max-width: 260px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .auc-token-items-col {
+        padding-top: 170px;
+    }
+
+    .auc-token-item {    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 60px;
     }
 
     p {
-        font-size: 18.5px;
-        line-height: 1.51;
-        text-align: center;
-        color: #1b1b1b;
-        max-width: 280px;
-        margin: 40px auto;
-    }
-    
-    .arrow-link-wrapper {
-        margin: auto;
-    }
-
-    .arrow-link {
         font-size: 16px;
-        font-weight: 500;
-        color: #1782fc;
-        text-decoration: none;
-        cursor: pointer;
-        display: block;
-        margin-bottom: 32px;
-    }
-
-    .arrow-link i {
-        margin-left: 6px;
-        line-height: 1;
+        font-weight: 100;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        max-width: 310px;
+        margin: auto 0;
     }
 }
