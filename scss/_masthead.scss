@@ -7,7 +7,19 @@ header.masthead {
     background-repeat: no-repeat;
     min-height: 724px;
     max-height: 753px;
-    padding-top: 76px;
+    padding-top: 74px;
+
+    @media(max-width: 991.9px) {
+        padding-top: 108px;
+    }
+
+    @media(max-width: 720px) {
+        padding-top: 122px;
+    }
+
+    @media(max-width: 440px) {
+        padding-top: 156px;
+    }
 
     .header-background {
         position: absolute;
@@ -36,10 +48,6 @@ header.masthead {
         @media(max-width: 991px) {
             height: 46px;
         }
-    }
-    
-    @media(max-width: 720px) {
-        padding-top: 80px;
     }
 
     .background-images {
@@ -121,6 +129,11 @@ header.masthead {
             padding-top: 120px;
             padding-bottom: 80px;
             text-align: center;
+
+            @media(max-width: 440px) {
+                padding-top: 90px;
+                padding-bottom: 60px;
+            }
         }
 
         .message-panel {
