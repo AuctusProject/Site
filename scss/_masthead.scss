@@ -5,9 +5,9 @@ header.masthead {
     position: relative;
     height: 100%;
     background-repeat: no-repeat;
-    min-height: 624px;
+    min-height: 724px;
     max-height: 753px;
-    padding-top: 20px;
+    padding-top: 76px;
 
     .header-background {
         position: absolute;
@@ -27,6 +27,7 @@ header.masthead {
 
     &.banner-removed {
         padding-top: 0px;
+        min-height: 624px;
     }
 
     .logo-auctus {
