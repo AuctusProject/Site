@@ -3,8 +3,9 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: Gilroy,'Gill Sans Light', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
+    background-color: #000000;
 }
 
 a{
@@ -39,8 +40,8 @@ a:hover{
 }
 
 .top-banner {
-    padding: 6px 30px;
-    background-color: #3fcf63;
+    padding: 12px 30px;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: row;
@@ -52,47 +53,28 @@ a:hover{
     width: 100%;
     z-index: 1000;
     flex-wrap: wrap;
+    box-shadow: 0px 6px 20px 5px #5de9d433 !important;
 
     @media (max-width: 720px) {
         flex-direction: column;
     }
 
     .banner-title {
-        font-size: 17px;
-        font-weight: bold;
-        letter-spacing: 0.43px;
-    }
-
-    .banner-subtitle {
-        font-size: 13px;
-        font-weight: 300;
-        letter-spacing: 0.33px;
-        margin-left: 15px;
-        margin-right: 15px;
+        font-size: 16px;
+        font-weight: 500;
         text-align: center;
+        color: #ffffff;
+        margin: 5px 10px;
+
+        @media(max-width: 991.9px) {
+            width: calc(100% - 20px);
+        }
     }
 
     .banner-button {
-        font-size: 14px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: 0.65px;
-        text-align: center;
-        color: #ffffff;
-        padding: 5px 26px;
-        line-height: 1;
-        border-radius: 14px;
-        border: 2px solid white;
-
-        @media (max-width: 720px) {
-            margin: 5px 0;
-        }
-
-        &:hover {
-            background-color: #ffffff;
-            color: #3fcf63;
-        }
+        height: 50px;
+        width: 200px;
+        margin: 0 5px;
     }
 
     .banner-dismiss {
@@ -104,4 +86,80 @@ a:hover{
 
 .clickable {
     cursor: pointer;
+}
+
+.try-button,
+.read-button {
+    padding: 8px;
+    width: 235px;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-align: center;
+    border: solid 1px #5de9d4;
+    border-radius: 32.5px;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: 600px) {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    img {
+        margin-right: 8px;
+    }
+}
+
+.try-button {
+    color: black !important;
+    background-color: #5de9d4;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.try-button:hover {
+    box-shadow: 0px 0px 12px 0 #5de9d4 !important;
+    text-transform: none;
+}
+
+.bsc-button {
+    color: #5de9d4 !important;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: none;
+
+    img {                    
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+.bsc-button:hover {
+    box-shadow: 0px 0px 12px 0 #5de9d4 !important;
+    text-transform: none;
+}
+
+.read-button {
+    border: none;
+    text-decoration: underline; 
+    color: #ffffff !important;
+}
+
+.read-button:hover {
+    color: #e2e2e2 !important;
+}
+
+.arrow-link {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.arrow-link i {
+    margin-left: 14px;
+    line-height: 1;
 }

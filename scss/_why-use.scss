@@ -2,34 +2,54 @@ section.why-use {
     .container-fluid {
         width: 100%;
         max-width: 1440px;
+        margin-bottom: 36px;
     }
 
     text-align: inherit;
 
-    .laptop-img {
-        margin-left: -15px;
-        max-width: 100%;
+    .why-row{
+        border-top: solid 1px #94949480;
+        align-items: center;
+        min-height: 100px;
+        max-width: 1000px;
+        margin: auto;
+        padding: 8px;
     }
 
     .why-title {
-        font-size: 41px;
-        font-weight: bold;
-        letter-spacing: 1.03px;
-        color: #1b1b1b;
-        margin-bottom: 14px;
+        font-size: 28px;
+        font-weight: normal;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 36px;
+        margin-bottom: 36px;
     }
 
     .why-item {
-        font-size: 22px;
-        font-weight: bold;
-        color: #595959;    
-        margin-top: 16px;
-        margin-bottom: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: normal;
+        color: #5de9d4;
+        margin-left: 20px;
+        @media(max-width:767px) {
+            text-align: center;
+            margin: auto;
+        }
     }
 
     .why-item-desc {
-        font-size: 14px;
-        letter-spacing: 0.35px;
-        color: #656565;
+        font-size: 15.5px;
+        font-weight: 100;
+        letter-spacing: 0.39px;
+        text-align: left;
+        color: #ffffff;
+        max-width: 333px;
+        margin-left: 20px;
+
+        @media(max-width:767px) {
+            text-align: center;
+            margin: auto;
+        }
     }
 }

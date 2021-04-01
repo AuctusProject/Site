@@ -1,8 +1,8 @@
 #audit {
-    background-color: #2a2646;
-    color: #ffffff;
-    padding-top: 52px;
-    padding-bottom: 52px;
+    background-color: #141414;
+    color: #ffffff;    
+    padding-top: 78px;
+    padding-bottom: 78px;
     position: relative;
 
     .container {
@@ -20,27 +20,50 @@
 
     .bug-bounty-value span {
         font-size: 16px;
-        padding-top: 3px;
+        padding-top: 6px;
+    }
+
+    .bug-bounty-value span:first-of-type {
+        margin-right: 4px;
     }
 
     h1 {
-        font-size: 23px;
-        font-weight: 500;
-        letter-spacing: 0.58px;
+        font-size: 28.5px;
+        font-weight: normal;
+        letter-spacing: 0.71px;
+        color: #5de9d4;
+        margin-bottom: 24px;
     }
 
     p {
         font-size: 14px;
-        font-weight: 300;
-        letter-spacing: 0.7px;    
+        font-weight: 100;
+        letter-spacing: 0.7px;
+        color: #ffffff;
     }
 
     a {
-        font-size: 15px;
-        font-weight: 300;
-        letter-spacing: 0.75px;
-        color: #ffffff;
-        text-decoration: underline;
+        padding: 8px;
+        width: 235px;
+        max-width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: normal;
+        text-align: center;
+        border: solid 1px white;
+        border-radius: 32.5px;
+        height: 65px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: auto;
+        margin-top: 26px;
+    }
+
+    a:hover {
+        box-shadow: 0px 0px 12px 0 white !important;
     }
 
     .audit-background {
@@ -51,18 +74,7 @@
     }
 
     .arrow-link {
-        font-size: 16px;
-        font-weight: 500;
-        color: #1782fc;
-        text-decoration: none;
-        cursor: pointer;
-        display: block;
-        margin-top: 16px;
-    }
-
-    .arrow-link i {
-        margin-left: 6px;
-        line-height: 1;
+        color: white;
     }
 
     .open-zeppelin-col {

@@ -1,168 +1,241 @@
 section.team {
-    text-align: center;
-    height: unset;
-    padding: 70px 0;
-    background-color: #f7f7f7;
+  height: unset;
 
-    
-    @media (min-width: 992px) {
-        .container {
-            width: 1140px;
-            max-width: 100%;
+  @media (min-width: 992px) {
+    .container {
+      width: 1140px;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding-bottom: 60px;
+  }
+
+  h2 {
+    font-size: 32.5px;
+    letter-spacing: 0.81px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 100;
+    max-width: 380px;
+    line-height: 1.75;
+  }
+
+  .team-card-wrapper {
+    padding: 10px;
+    outline: none;
+    width: 284px;
+  }
+
+  .team-card {
+    max-width: 264px;
+    border-radius: 8px;
+    border: solid 1px #5de9d4;
+    padding: 30px 26px;
+    margin: auto;
+    margin-top: 40px;
+    height: calc(100% - 40px);
+  }
+
+  .member-name {
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.45px;
+    text-align: left;
+  }
+
+  .member-position {
+    font-size: 10px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #5de9d4;
+    margin-bottom: 24px;
+  }
+
+  .blue-separator {
+    width: 24px;
+    height: 4px;
+    background-color: #5de9d4;
+    margin: 9px 0;
+  }
+
+  .member-description {
+    font-size: 11px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.45;
+    color: white;
+  }
+
+  .member-social {
+    color: white;
+    margin-top: 8px;
+    font-size: 22px;
+
+    a {
+      padding: 0 6px;
+      text-decoration: none !important;
+    }
+  }
+
+  .advisor-section {
+    .separator {
+        height: 1px;
+        background-color: #5de9d4;
+        width: 100%;
+    }
+
+    .title-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      
+
+      h2 {
+        font-size: 30px;
+        letter-spacing: 0.75px;
+        color: #5de9d4;
+        margin: 40px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .advisor-card {
+      display: flex;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 40px;
+      padding: 12px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .advisor-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 14px;
+
+        @media (max-width: 768px) {
+          justify-content: center;
         }
-    }
+      }
 
-    @media(max-width:992px) {
-        padding-bottom: 60px;
-    }
+      .advisor-col {
+        flex-direction: column;
+        display: flex;
+        width: 165px;
+        align-items: flex-start;
+        margin-left: 15px;
+      }
 
-    h2 {
-        font-size: 41px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.16;
-        letter-spacing: 1.03px;
-        text-align: center;
-        color: #1b1b1b;
-        margin-bottom: 20px;
-    }
+      .member-description {
+        text-align: left;
+        max-width: 365px;
 
-    h3 {
-        max-width: 560px;
-        margin: auto;
-        font-size: 19.5px;
-        line-height: 1.44;
-        text-align: center;
-        color: #666666;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
     }
+  }
+}
 
-    .team-card-wrapper {
-        padding: 10px;
-        outline: none;
-    }
+.owl_wrapper {
+  overflow: hidden;
+  width: calc(50% + 212px);
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  max-width: 100%;
+
+  @media(max-width:430px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }  
+}
+
+.owl_wrapper .owl-item {
+  opacity: 0;
+  transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transition: all 0.2s;
+  -webkit-transform: all 0.2s;
+  z-index: 1;
+  width: auto !important;
+}
+.owl_wrapper .active {
+  opacity: 0.5;
+}
+.owl_wrapper .active.middle_beside {
+    transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    opacity: 0.8;
+    z-index: 2;
+    margin-left: -14px;
 
     .team-card {
-        max-width: 264px;
-        border-radius: 8px;
-        box-shadow: 8px 6px 8px 0 rgba(38, 38, 38, 0.16);
-        background-color: #ffffff;
-        padding: 30px 26px;
-        margin: auto;
-        margin-top: 40px;
-        height: calc(100% - 40px);
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -o-filter: blur(1px);
+        -ms-filter: blur(1px);
+        filter: blur(1px);
     }
+}
+.owl_wrapper .active.middle {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+.owl_wrapper .active.next_to_mid{
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    margin-left:-42px;
 
-    .member-name {
-        font-size: 18px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: 0.45px;
-        text-align: center;
-        color: #444444;
-        margin-top: 6px;
+    .team-card {
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px);
     }
+}
 
-    .member-position {
-        font-size: 12px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: 0.3px;
-        text-align: center;
-        color: #31bcee;
-    }
 
-    .blue-separator {
-        width: 24px;
-        height: 4px;
-        background-color: #31bcee;
-        margin: 9px auto;
-    }
+.owl_wrapper .owl-carousel .owl-item img {
+    width: unset;
+}
 
-    .member-description {
-        font-size: 14px;
-        font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.54;
-        letter-spacing: 0.43px;
-        color: #737373;
-    }
+.owl_selectors {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    color: #5de9d4;
+    min-width: 50px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 20px;
 
-    .member-social {                
-        color: #444444;
-        margin-top: 8px;
-        font-size: 22px;
-        
-        a {
-            padding: 0 6px;
-            text-decoration: none !important;
-        }
-    }
-
-    .advisor-section {
-        .title-row {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-
-            div {
-                height: 1px;
-                background-color: #31bcee;
-                width: 100%;
-            }
-
-            h2 {
-                font-size: 30px;
-                letter-spacing: 0.75px;
-                color: #31bcee;
-                margin: 40px;
-                margin-bottom: 40px;
-            }
-        }
-        
-        .advisor-card {
-            display: flex;    
-            max-width: 700px;
-            margin: auto;
-
-            @media(max-width: 768px) {
-                flex-direction: column;
-            }
-
-            .advisor-row {            
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                margin-bottom: 14px;
-
-                @media(max-width: 768px) {
-                    justify-content: center;
-                }
-            }
-
-            .advisor-col {            
-                flex-direction: column;
-                display: flex;
-                width: 165px;
-                align-items: flex-start;
-                margin-left: 15px;
-            }
-
-            .member-description {
-                text-align: left;
-                max-width: 365px;
-
-                @media(max-width: 768px) {
-                    text-align: center;
-                }
-            }
-        }
+    .next,
+    .prev {
+        cursor: pointer;
     }
 }

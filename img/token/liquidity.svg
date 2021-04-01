@@ -3,9 +3,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#C4DFC8;stroke:#729277;stroke-width:3;stroke-miterlimit:10;}
+	.st0{fill:#5DE9D4;}
 </style>
-<path class="st0" d="M13,136h46c0,0,1,18,0,18s30,0,30,0v21h36v29h16v19h19v17h14v24h19v12.5h20v6.5h13v7h17v10h24v5h17v8h15v19h22
-	v6h17v5h10v9h25v21h18v18h22v7h22v17h17v7h23v75H13V136z"/>
-<path d="M20,492V10c0-5.5-4.5-10-10-10S0,4.5,0,10v492c0,5.5,4.5,10,10,10h492c5.5,0,10-4.5,10-10s-4.5-10-10-10H20z"/>
+<path class="st0" d="M502,492h-25.5v-71.5h-23v-7h-17v-17h-22v-7h-22v-18h-18v-21h-25v-9h-10v-5h-17v-6h-22v-19h-15v-8h-17v-5h-24
+	v-10h-17v-7h-13V275h-20v-12.5h-19v-24h-14v-17h-19v-19h-16v-29h-36v-21H60.8c0.2-2.3,0.2-7-0.3-16.6l-0.1-1.4H20V10
+	c0-5.5-4.5-10-10-10S0,4.5,0,10v492c0,5.5,4.5,10,10,10h492c5.5,0,10-4.5,10-10S507.5,492,502,492z"/>
 </svg>
