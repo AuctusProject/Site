@@ -37,8 +37,8 @@
 </head>
 <body id="page-top" class="auctus">
     <div class="top-banner">
-        <div class="banner-title">New Auctus Airdrop & Incentive Program launching in <b class="remaining-time"></b></div>
-        <a href="https://app.auctus.org/farm"><div class="try-button banner-button">Check eligibility</div></a>
+        <div class="banner-title">Liquidity Incentive Program launched</div>
+        <a href="https://app.auctus.org/farm"><div class="try-button banner-button">GO TO FARM</div></a>
         <div class="banner-dismiss"><i class="fas fa-times"></i></div>
     </div>
     <header class="masthead">
@@ -461,51 +461,6 @@
             $(".top-banner").remove();
             $('header').addClass("banner-removed");
         }
-
-        function setTimeRemaining() {
-            var startTime = 1617386400
-            var timeInSeconds = startTime - (new Date().getTime()/1000)
-
-            if (timeInSeconds < 0) {
-                $(".banner-title").html("New Auctus Airdrop & Incentive Program launched")                
-            }
-            else {
-                let seconds = timeInSeconds;
-                const days = Math.floor(seconds / (3600 * 24))
-                seconds -= days * 3600 * 24
-                const hours = Math.floor(seconds / 3600)
-                seconds -= hours * 3600
-                const minutes = Math.floor(seconds / 60)
-
-                var label = ""
-                if (days > 0) {
-                    label += days
-                    label += " day"
-                    if (days > 1) {
-                        label += "s"
-                    }
-                    label += ", "
-                }
-
-                label += hours
-                label += " hour"
-                if (hours !== 0) {
-                    label += "s"
-                }
-                label += " and "
-
-                label += minutes
-                label += " minute"
-                if (minutes !== 0) {
-                    label += "s"
-                }
-                $(".remaining-time").html(label)
-
-                setTimeout(setTimeRemaining, 60000)
-            }
-        }
-
-        setTimeRemaining();
         
         $(".banner-dismiss").click(onDismissBanner);
 
