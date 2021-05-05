@@ -31,9 +31,9 @@ section.where-to-buy {
 
         @media(min-width:993px) {
             justify-content: center;
+            align-items: center;
 
             a {
-                align-self: flex-start;
                 margin: 0 40px;
             }
         }
