@@ -74,10 +74,6 @@ header.masthead {
         display: flex;
 
         > div:first-child {
-            img {
-                margin-right: 80px;
-            }
-
             div {
                 padding: 10px 10px;
                 margin-right: 10px;
@@ -94,10 +90,6 @@ header.masthead {
 
         @media(max-width: 800px) {
             padding: 0 20px;
-
-            > div:first-child img {
-                margin-right: 40px;
-            }
         }
 
         @media(max-width: 600px) {
@@ -118,6 +110,11 @@ header.masthead {
     
         .social-icons i {
             margin: 0 10px;
+        }
+       
+        .coingecko-icon {    
+            height: 20px;
+            margin: 0 10px 4px;
         }
     }
 
